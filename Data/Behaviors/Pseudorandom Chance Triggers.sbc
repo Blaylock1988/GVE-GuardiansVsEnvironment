@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Trigger-PseudoChance-CounterUp</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+	  [Type:Timer]
+	  [UseTrigger:true]	
+	  [StartsReady:false]
+	  [MinCooldownMs:1000]
+	  [MaxCooldownMs:1000]
+	  
+	  [Actions:GVE-RE-Action-PseudoChance-CounterUp]
+      
+      </Description>
+      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Action-PseudoChance-CounterUp</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [IncreaseCounters:SelfDestructCounter]
+      
+      </Description>
+      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Trigger-PseudoChance50-CounterReset</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+	  [Type:Timer]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MinCooldownMs:10000]
+	  [MaxCooldownMs:10000]
+	  
+	  [Conditions:GVE-RE-Condition-PseudoChance-CounterReset]
+      
+	  [Actions:GVE-RE-Action-PseudoChance-CounterReset]
+      
+      </Description>
+      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Condition-PseudoChance-CounterReset</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Condition]
+      
+	  [UseConditions:true]
+      [MatchAnyCondition:true]
+	  
+	  [CheckCustomCounters:true]
+	  [CustomCounters:SelfDestructCounter]
+	  [CustomCountersTargets:10]
+      
+      </Description>
+      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Action-PseudoChance-CounterReset</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      
+	  [ResetCounters:SelfDestructCounter]
+      
+      </Description>
+      
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

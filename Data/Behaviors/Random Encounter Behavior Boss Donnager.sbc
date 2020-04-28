@@ -214,30 +214,14 @@
 	  [Triggers:GVE-RE-Boss-Donnager-Trigger-Attack]
 	  
 	  [Triggers:GVE-RE-Boss-Donnager-Trigger-Defeated]
-
-      </Description>
-      
-    </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-Donnager-Condition-Defeated</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Condition]
-      
-      [UseConditions:true]
-      [MatchAnyCondition:true]
 	  
-	  [UseRequiredFunctionalBlocks:true]
-	  [RequiredNoneFunctionalBlockNames:NPC Remote Control]
-      
+	  [Triggers:GVE-RE-Trigger-PseudoChance-CounterUp]
+	  
+	  [Triggers:GVE-RE-Trigger-PseudoChance-CounterReset]
+
       </Description>
       
     </EntityComponent>
-
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
@@ -255,6 +239,31 @@
       </Description>
       
     </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Donnager-Condition-Defeated</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Condition]
+      
+      [UseConditions:true]
+      [MatchAnyCondition:false]
+	  
+	  [UseRequiredFunctionalBlocks:true]
+	  [RequiredNoneFunctionalBlockNames:NPC Remote Control]
+	  
+	  [CheckCustomCounters:true]
+	  [CustomCounters:SelfDestructCounter]
+	  [CustomCountersTargets:10]
+      
+      </Description>
+      
+    </EntityComponent>
+
+	
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
