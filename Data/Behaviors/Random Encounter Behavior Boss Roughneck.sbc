@@ -56,7 +56,7 @@
 	  [KnownPlayerAreaRadius:25000]
 	  [KnownPlayerAreaTimer:30]
 	  
-	  [ChangeReputationWithPlayers:true]
+	  [ChangeReputationWithPlayers:false]
 	  [ReputationChangeRadius:50000]
 	  [ReputationChangeFactions:SPRT]
 	  [ReputationChangeAmount:-1500]
@@ -159,7 +159,7 @@
       [MaxChats:1]
       [BroadcastRandomly:true]
       
-      [Author:{AntennaName}]
+      [Author:SPRT]
       [Color:Red]
       
       [ChatMessages:Lets dance!]
@@ -222,10 +222,10 @@
 	  [RotationMultiplier:1]
 	  [WaypointTolerance:400]
 	  [UseStuckMovementCorrection:true]
+	  
 	  [UseAmmoReplenish:true]
 	  [AmmoReplenishClipAmount:100]
-	  
-	  [Triggers:GVE-RE-Boss-Roughneck-Trigger-Backup]
+	  	  
 	  [Triggers:GVE-RE-Boss-Roughneck-Trigger-NoWeapon]
 
       </Description>
