@@ -1,2 +1,0 @@
-- name: workshop-upload
-  uses: arma-actions/workshop-upload@v1
