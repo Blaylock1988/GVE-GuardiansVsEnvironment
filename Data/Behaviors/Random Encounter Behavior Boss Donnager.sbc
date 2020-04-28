@@ -189,7 +189,7 @@
 
       [RivalAI Behavior]
 	  
-      [BehaviorName:Fighter]
+      [BehaviorName:passive]
 	  [IdealMaxSpeed:100]
 	  [OffsetSpaceMinDistFromTarget:700]
 	  [OffsetSpaceMaxDistFromTarget:9000]
@@ -263,8 +263,6 @@
       
     </EntityComponent>
 
-	
-	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
