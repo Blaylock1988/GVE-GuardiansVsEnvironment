@@ -1,0 +1,324 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Donnager-Behavior-Spawn</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Passive]
+	  
+	  [Triggers:GVE-RE-Boss-Donnager-Trigger-Near]
+	  [Triggers:GVE-RE-Boss-Donnager-Trigger-Attack]
+
+      </Description>
+      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Donnager-Trigger-Near</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [TargetDistance:3000]
+	  [MaxActions:1]
+	  
+	  [Actions:GVE-RE-Boss-Donnager-Action-Near]
+	  
+      </Description>
+      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Donnager-Action-Near</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      
+      [UseChatBroadcast:true]
+      [ChatData:GVE-RE-Boss-Donnager-Chat-Near]
+	  
+	  [CreateKnownPlayerArea:true]
+	  [KnownPlayerAreaRadius:25000]
+	  [KnownPlayerAreaTimer:30]
+	  
+	  [ChangeReputationWithPlayers:true]
+	  [ReputationChangeRadius:50000]
+	  [ReputationChangeFactions:SPRT]
+	  [ReputationChangeAmount:-1500]
+	  [ReputationChangesForAllRadiusPlayerFactionMembers:true]
+
+
+      </Description>
+      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Donnager-Chat-Near</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      
+      [Author:SPRT]
+      [Color:Red]
+      
+      [ChatMessages:Looks like we have a contestant! Are you ready?]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+      
+      [ChatMessages:Get a load of this guy, {PlayerName} thinks they can take us?]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>
+      
+    </EntityComponent>
+	
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Donnager-Trigger-Attack</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [TargetDistance:2000]
+	  [MaxActions:2]
+	  [StartsReady:true]
+	  [MinCooldownMs:100000]
+	  [MaxCooldownMs:180000]
+	  
+	  [Actions:GVE-RE-Boss-Donnager-Action-Attack]
+	  
+      </Description>
+      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Donnager-Action-Attack</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      
+      [UseChatBroadcast:true]
+	  [ChatData:GVE-RE-Boss-Donnager-Chat-Attack]
+	  
+	  [SwitchToBehavior:true]
+	  [NewBehavior:GVE-RE-Boss-Donnager-Behavior-Horsefly]
+	  [PreserveSettingsOnBehaviorSwitch:true]
+	  [PreserveTriggersOnBehaviorSwitch:true]
+	  [PreserveTargetDataOnBehaviorSwitch:true]
+
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-RE-Boss-Roughneck-DDS-Fighter-Spawner]	  
+
+      </Description>
+      
+    </EntityComponent>
+	
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Donnager-Chat-Attack</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      
+      [Author:SPRT]
+      [Color:Red]
+      
+      [ChatMessages:Lets dance!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:You don't stand a chance.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:You're going to regret this.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>
+      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Donnager-Behavior-Horsefly</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Fighter]
+	  [IdealMaxSpeed:100]
+	  [OffsetSpaceMinDistFromTarget:700]
+	  [OffsetSpaceMaxDistFromTarget:9000]
+	  [AngleAllowedForForwardThrust:45]
+	  [RotationMultiplier:0.5]
+	  [WaypointTolerance:200]
+	  
+	  [AllowStrafing:true]
+	  [StrafeMinDurationMs:10000]
+	  [StrafeMaxDurationMs:15000]
+	  [StrafeMinCooldownMs:10000]
+	  [StrafeMaxCooldownMs:20000]
+	  [StrafeSpeedCutOff:70]
+	  [StrafeDistanceCutOff:600]
+	  [FighterEngageDistanceSpace:600]
+	  [FighterDisengageDistanceSpace:900]
+
+	  
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  
+	  [Triggers:GVE-RE-Boss-Donnager-Trigger-Attack]
+	  
+	  [Triggers:GVE-RE-Boss-Donnager-Trigger-Defeated]
+
+      </Description>
+      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Donnager-Condition-Defeated</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Condition]
+      
+      [UseConditions:true]
+      [MatchAnyCondition:true]
+	  
+	  [UseRequiredFunctionalBlocks:true]
+	  [RequiredNoneFunctionalBlockNames:NPC Remote Control]
+      
+      </Description>
+      
+    </EntityComponent>
+
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Donnager-Trigger-Defeated</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	    
+	  [Conditions:GVE-RE-Boss-Donnager-Condition-Defeated]
+	  
+	  [Actions:GVE-RE-Boss-Donnager-Action-Defeated]
+
+      </Description>
+      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Donnager-Action-Defeated</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+      [SelfDestruct:true]
+
+      [UseChatBroadcast:true]
+      [ChatData:GVE-RE-Boss-Donnager-Chat-Defeated]
+
+      </Description>
+      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Donnager-Chat-Defeated</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      
+      [Author:SPRT]
+      [Color:Red]
+      
+      [ChatMessages:BLAHGLAHGLAHGHALH]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:NOOOOOOOOOOOOOO]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:GHAAAAAAHHHH....]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:It appears I've underestimated {PlayerName}]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:gg]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:How Could this happen!?!?]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>
+      
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

@@ -1,0 +1,438 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<SpawnGroups>
+	<!--Do Not Edit Above Here-->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) Stalinium Territory Donnager</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[SpaceCargoShip:false]
+			[LunarCargoShip:false]
+			[BossEncounterSpace:false]
+			[SpaceRandomEncounter:true]
+			[AtmosphericCargoShip:false]
+			[PlanetaryInstallation:false]
+			[RivalAiSpawn:true]
+			[FactionOwner:SPRT]
+			
+			[Territory:Stalinium Asteroid Territory]
+			[MaxDistanceFromTerritoryCenter:10000]
+			[UseThreatLevelCheck:false]
+			[ThreatLevelCheckRange:25000]
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatScoreMaximum:50]
+				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[DisableDampeners:true]
+			[ReplenishSystems:true]
+			[UniqueEncounter:true]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+			[GridsAreEditable:false]
+			
+			[UseKnownPlayerLocations:false]
+			[KnownPlayerLocationMustMatchFaction:false]
+			[KnownPlayerLocationMaxSpawnedEncounters:1]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Donnager GreekLetter RandomNumber-RandomChar]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Donnager">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+					<Behaviour>GVE-RE-Boss-Donnager-Behavior-Spawn</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) Stalinium Territory Roughneck</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[SpaceCargoShip:false]
+			[LunarCargoShip:false]
+			[BossEncounterSpace:false]
+			[SpaceRandomEncounter:true]
+			[AtmosphericCargoShip:false]
+			[PlanetaryInstallation:false]
+			[RivalAiSpawn:false]
+			[FactionOwner:SPRT]
+			
+			[Territory:Stalinium Asteroid Territory]
+			[MaxDistanceFromTerritoryCenter:10000]
+			[UseThreatLevelCheck:false]
+			[ThreatLevelCheckRange:25000]
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatScoreMaximum:50]
+				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[DisableDampeners:true]
+			[ReplenishSystems:true]
+			[UniqueEncounter:true]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+			[GridsAreEditable:false]
+			
+			[UseKnownPlayerLocations:false]
+			[KnownPlayerLocationMustMatchFaction:false]
+			[KnownPlayerLocationMaxSpawnedEncounters:1]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Roughneck GreekLetter RandomNumber-RandomChar]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:50]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Roughneck Corvette">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+					<Behaviour>GVE-RE-Boss-Roughneck-Behavior-Spawn</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) DDS Fighter Cyclone</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[SpaceCargoShip:false]
+			[LunarCargoShip:false]
+			[BossEncounterSpace:false]
+			[SpaceRandomEncounter:false]
+			[AtmosphericCargoShip:false]
+			[PlanetaryInstallation:false]
+			[RivalAiSpawn:true]
+			[FactionOwner:SPRT]
+							
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[DisableDampeners:false]
+			[ReplenishSystems:true]
+			[UniqueEncounter:false]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:50]
+			
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Fighter Cyclone - InsectNoun]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Cyclone Fighter Bomber">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<BeaconText>Cyclone-Fighter</BeaconText>
+					<Speed>50</Speed>
+					<Behaviour>GVE-RE-DDS-Fighter</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) DDS Strike Cyclone</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[SpaceCargoShip:false]
+			[LunarCargoShip:false]
+			[BossEncounterSpace:false]
+			[SpaceRandomEncounter:false]
+			[AtmosphericCargoShip:false]
+			[PlanetaryInstallation:false]
+			[RivalAiSpawn:true]
+			[FactionOwner:SPRT]
+							
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[DisableDampeners:false]
+			[ReplenishSystems:true]
+			[UniqueEncounter:false]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:50]
+			
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Strike Cyclone - InsectNoun]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>2.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Cyclone Fighter Bomber">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<BeaconText>Cyclone-Strike</BeaconText>
+					<Speed>50</Speed>
+					<Behaviour>GVE-RE-DDS-Strike</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) DDS Fighter Wildfire</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[SpaceCargoShip:false]
+			[LunarCargoShip:false]
+			[BossEncounterSpace:false]
+			[SpaceRandomEncounter:false]
+			[AtmosphericCargoShip:false]
+			[PlanetaryInstallation:false]
+			[RivalAiSpawn:true]
+			[FactionOwner:SPRT]
+							
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[DisableDampeners:false]
+			[ReplenishSystems:true]
+			[UniqueEncounter:false]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:50]
+			
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: BaddieNoun Wildfire Fighter]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>1.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Wildfire Heavy Fighter">
+					<Position>
+						<X>50</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<BeaconText>Cyclone-Fighter</BeaconText>
+					<Speed>50</Speed>
+					<Behaviour>GVE-RE-DDS-Fighter</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) Stalinium Territory Player Announcer</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[BossEncounterSpace:true]
+			[RivalAiSpawn:false]
+			[FactionOwner:SPRT]
+			
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:SPRT]
+			[BossCustomAnnounceMessage:Activity Alert in Stalinium Nebula]
+			[BossCustomGPSLabel:Activity Alert]
+			
+			[Territory:Stalinium Asteroid Territory]
+			[MaxDistanceFromTerritoryCenter:10000]
+			[UseThreatLevelCheck:false]
+			[ThreatLevelCheckRange:25000]
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatScoreMaximum:50]
+				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ReplenishSystems:true]
+			[UniqueEncounter:true]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+					
+			[UseKnownPlayerLocations:false]
+			[KnownPlayerLocationMustMatchFaction:false]
+			[KnownPlayerLocationMaxSpawnedEncounters:1]
+			
+			[GridsAreDestructable:false]
+			[GridsAreEditable:false]
+			[ForceStaticGrid:true]
+			
+			[UsePlayerCountCheck:false]
+			[PlayerCountCheckRadius:25000]
+			[MinimumPlayers:1]
+			
+			
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Alert: NatoLetter-RandomNumberRandomChar]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Player Announcer">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>
+		   <Id>
+			  <TypeId>SpawnGroupDefinition</TypeId>
+			  <SubtypeId>(NPC-GVE) Stalinium Asteroid Territory</SubtypeId>
+		   </Id>
+		   <Description>
+
+		   [Modular Encounters Territory]
+		   
+		   [Name:Stalinium Asteroid Territory]
+		   [Type:Static]
+		   [Radius:20000]
+		   [CoordsX:600000]
+		   [CoordsY:-20000]
+		   [CoordsZ:0]
+		   [AnnounceArriveDepart:true]
+		   [CustomArriveMessage:Now entering the Stalinium Asteroid Territory. Safezones won't work here.]
+		   [CustomDepartMessage:Now leaving the Stalinium Asteroid Territory.]
+
+		   </Description>
+		   <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+		   <Frequency>30.0</Frequency>
+		   <IsPirate>true</IsPirate>
+		   <Prefabs>
+			  <Prefab SubtypeId="GVE-NPC Donnager">
+				 <Position>
+					<X>0.0</X>
+					<Y>0.0</Y>
+					<Z>0.0</Z>
+				 </Position>
+				 <BeaconText>Super Gremlin</BeaconText>
+				 <Speed>25.0</Speed>
+			  </Prefab>
+		   </Prefabs>
+		</SpawnGroup>
+
+	<!--Do Not Edit Below Here-->
+	</SpawnGroups>
+</Definitions>

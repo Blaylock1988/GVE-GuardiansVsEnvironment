@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+        <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Roughneck-Behavior-Spawn</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Passive]
+	  
+	  [Triggers:GVE-RE-Boss-Roughneck-Trigger-Near]
+	  [Triggers:GVE-RE-Boss-Roughneck-Trigger-Attack]
+
+      </Description>
+      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Roughneck-Trigger-Near</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [TargetDistance:3000]
+	  [MaxActions:1]
+	  
+	  [Actions:GVE-RE-Boss-Roughneck-Action-Near]
+	  
+      </Description>
+      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Roughneck-Action-Near</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      
+      [UseChatBroadcast:true]
+      [ChatData:GVE-RE-Boss-Roughneck-Chat-Near]
+	  
+	  [CreateKnownPlayerArea:false]
+	  [KnownPlayerAreaRadius:25000]
+	  [KnownPlayerAreaTimer:30]
+	  
+	  [ChangeReputationWithPlayers:true]
+	  [ReputationChangeRadius:50000]
+	  [ReputationChangeFactions:SPRT]
+	  [ReputationChangeAmount:-1500]
+	  [ReputationChangesForAllRadiusPlayerFactionMembers:true]
+	  
+      </Description>
+      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Roughneck-Chat-Near</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      
+      [Author:{AntennaName}]
+      [Color:Red]
+      
+      [ChatMessages:Looks like we have a contestant! Are you ready?]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+      
+      [ChatMessages:Get a load of this guy, {PlayerName} thinks they can take us?]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>
+      
+    </EntityComponent>
+	
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Roughneck-Trigger-Attack</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [TargetDistance:2000]
+	  [MaxActions:5]
+	  [StartsReady:true]
+	  [MinCooldownMs:15000]
+	  [MaxCooldownMs:30000]
+	  
+	  [Actions:GVE-RE-Boss-Roughneck-Action-Attack]
+	  
+      </Description>
+      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Roughneck-Action-Attack</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      
+      [UseChatBroadcast:true]
+	  [ChatData:GVE-RE-Boss-Roughneck-Chat-Attack]
+	  
+	  [SwitchToBehavior:true]
+	  [NewBehavior:GVE-RE-Boss-Roughneck-Behavior-Horsefly]
+	  [PreserveSettingsOnBehaviorSwitch:true]
+	  [PreserveTriggersOnBehaviorSwitch:true]
+	  [PreserveTargetDataOnBehaviorSwitch:true]
+
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-RE-Boss-Roughneck-DDS-Fighter-Spawner]
+	  
+      </Description>
+      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Roughneck-Chat-Attack</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      
+      [Author:{AntennaName}]
+      [Color:Red]
+      
+      [ChatMessages:Lets dance!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:You don't stand a chance.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:You're going to regret this.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>
+      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Roughneck-DDS-Fighter-Spawner</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Spawn]
+      
+      [UseSpawn:true]
+      
+      [StartsReady:true]
+      [MaxSpawns:5]
+      
+      [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
+	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
+	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
+
+      [UseRelativeSpawnPosition:false]
+      [MinDistance:500]
+      [MaxDistance:700]
+      [IgnoreSafetyChecks:false]
+      
+      </Description>
+      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Roughneck-Behavior-Horsefly</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Horsefly]
+	  [IdealMaxSpeed:100]
+	  [OffsetSpaceMinDistFromTarget:3000]
+	  [OffsetSpaceMaxDistFromTarget:6000]
+	  [AngleAllowedForForwardThrust:45]
+	  [RotationMultiplier:1]
+	  [WaypointTolerance:400]
+	  [UseStuckMovementCorrection:true]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  
+	  [Triggers:GVE-RE-Boss-Roughneck-Trigger-Backup]
+	  [Triggers:GVE-RE-Boss-Roughneck-Trigger-NoWeapon]
+
+      </Description>
+      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Roughneck-Trigger-NoWeapon</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+	  [Type:NoWeapon]
+	  
+	  [Actions:GVE-RE-Boss-Roughneck-Action-NoWeapon]
+      
+      </Description>
+      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Roughneck-Action-NoWeapon</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+      [Retreat:True]
+
+      [UseChatBroadcast:true]
+      [ChatData:GVE-RE-Boss-Roughneck-Chat-NoWeapon]
+
+      </Description>
+      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Roughneck-Chat-NoWeapon</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      
+      [Author:{AntennaName}]
+      [Color:Red]
+      
+      [ChatMessages:It's been fun {PlayerName}, time to head home]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:Out of ammo, retreat!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>
+      
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
