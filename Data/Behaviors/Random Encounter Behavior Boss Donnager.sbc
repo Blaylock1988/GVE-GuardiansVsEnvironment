@@ -11,15 +11,58 @@
 
       [RivalAI Behavior]
 	  
-      [BehaviorName:Passive]
+      [BehaviorName:Fighter]
+	  [IdealMaxSpeed:100]
+	  [AngleAllowedForForwardThrust:45]
+	  [RotationMultiplier:0.5]
+	  [WaypointTolerance:200]
+	  [AllowStrafing:true]
+	  [StrafeMinDurationMs:10000]
+	  [StrafeMaxDurationMs:15000]
+	  [StrafeMinCooldownMs:10000]
+	  [StrafeMaxCooldownMs:20000]
+	  [StrafeSpeedCutOff:70]
+	  [StrafeDistanceCutOff:900]
+	  [FighterEngageDistanceSpace:600]
+	  [FighterDisengageDistanceSpace:900]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
 	  
 	  [Triggers:GVE-RE-Boss-Donnager-Trigger-PlayerApproach]
 	  [Triggers:GVE-RE-Boss-Donnager-Trigger-TakeDamage]
-	  [Triggers:GVE-RE-Boss-Donnager-Trigger-AttackPlayer]
 	  [Triggers:GVE-RE-Boss-Donnager-Trigger-CallBackup]
 	  [Triggers:GVE-RE-Boss-Donnager-Trigger-Defeated]
 	  
-      </Description>      
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Donnager-TargetProfile</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Target]
+      
+      [UseCustomTargeting:false]
+      [Target:Block]
+      [BlockTargets:Guns]
+      [BlockTargets:Turrets]
+	  [BlockTargets:GravityBlocks]
+	  [BlockTargets:ShipControllers]
+	  [BlockTargets:Propulsion]
+	  [BlockTargets:JumpDrive]
+	  [BlockTargets:Tools]
+	  [Distance:Any]
+	  [MaxDistance:4000]
+	  [UseTimeout:true]
+	  [MinTimeout:15]
+	  [MaxTimeout:60]
+      [Owners:Player]
+      [Relations:Enemy]
+      
+      </Description>
     </EntityComponent>
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -33,7 +76,7 @@
 	  
       [Type:PlayerNear]
 	  [UseTrigger:true]
-	  [TargetDistance:4000]
+	  [TargetDistance:7000]
 	  [MaxActions:1]
 	  
 	  [Actions:GVE-RE-Boss-Donnager-Action-WarnPlayer]
@@ -41,44 +84,6 @@
       </Description>      
     </EntityComponent>
 
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-Donnager-Trigger-TakeDamage</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Trigger]
-	  
-      [Type:Damage]
-	  [UseTrigger:true]
-	  [DamageTypes:Any]
-	  [MaxActions:1]
-
-	  [Actions:GVE-RE-Boss-Donnager-Action-AttackPlayer]
-	  
-      </Description>      
-    </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-Donnager-Trigger-AttackPlayer</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Trigger]
-	  
-      [Type:PlayerNear]
-	  [UseTrigger:true]
-	  [TargetDistance:2000]
-	  [MaxActions:1]
-
-	  [Actions:GVE-RE-Boss-Donnager-Action-AttackPlayer]
-	  
-      </Description>      
-    </EntityComponent>
-	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -109,7 +114,7 @@
       [MaxChats:1]
       [BroadcastRandomly:true]
       
-      [Author:SPRT]
+      [Author:{GridName}]
       [Color:Red]
       
       [ChatMessages:Brown Alert! Hope you brought a change of pants!]
@@ -130,32 +135,45 @@
 
       </Description>      
     </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Donnager-Trigger-TakeDamage</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Damage]
+	  [UseTrigger:true]
+	  [DamageTypes:Any]
+	  [MaxActions:1]
+
+	  [Actions:GVE-RE-Boss-Donnager-Action-BattleChatter]
+	  
+      </Description>      
+    </EntityComponent>
 		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-Donnager-Action-AttackPlayer</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-Donnager-Action-BattleChatter</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Action]
       
       [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-Donnager-Chat-AttackPlayer]
+	  [ChatData:GVE-RE-Boss-Donnager-Chat-BattleChatter]
 	  
-	  [SwitchToBehavior:true]
-	  [NewBehavior:GVE-RE-Boss-Donnager-Behavior-AttackPlayer]
-	  [PreserveSettingsOnBehaviorSwitch:true]
-	  [PreserveTriggersOnBehaviorSwitch:true]
-	  [PreserveTargetDataOnBehaviorSwitch:true]
-
       </Description>
     </EntityComponent>
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-Donnager-Chat-AttackPlayer</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-Donnager-Chat-BattleChatter</SubtypeId>
       </Id>
       <Description>
 
@@ -166,7 +184,7 @@
       [Chance:100]
       [MaxChats:1]
       [BroadcastRandomly:true]
-      [Author:SPRT]
+      [Author:{GridName}]
       [Color:Red]
       
       [ChatMessages:Lets dance!]
@@ -191,36 +209,7 @@
 
       </Description>
     </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-Donnager-Behavior-AttackPlayer</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Behavior]
-	  
-      [BehaviorName:Fighter]
-	  [IdealMaxSpeed:100]
-	  [AngleAllowedForForwardThrust:45]
-	  [RotationMultiplier:0.5]
-	  [WaypointTolerance:200]
-	  [AllowStrafing:true]
-	  [StrafeMinDurationMs:10000]
-	  [StrafeMaxDurationMs:15000]
-	  [StrafeMinCooldownMs:10000]
-	  [StrafeMaxCooldownMs:20000]
-	  [StrafeSpeedCutOff:70]
-	  [StrafeDistanceCutOff:900]
-	  [FighterEngageDistanceSpace:600]
-	  [FighterDisengageDistanceSpace:900]
-	  [UseAmmoReplenish:true]
-	  [AmmoReplenishClipAmount:100]
-	  
-      </Description>
-    </EntityComponent>
-	
+		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -276,7 +265,7 @@
       [MaxChats:1]
       [BroadcastRandomly:true]
       
-      [Author:SPRT]
+      [Author:{GridName}]
       [Color:Red]
       
       [ChatMessages:Brining Reinforcements]
@@ -309,7 +298,7 @@
 	  [SpawnMinCooldown:30]
       [SpawnMinCooldown:60]
 
-      [MaxSpawns:1]
+      [MaxSpawns:2]
       
       [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
@@ -322,7 +311,6 @@
       
       </Description>
     </EntityComponent>
-
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
@@ -335,7 +323,7 @@
 	  
       [Type:PlayerNear]
 	  [UseTrigger:true]
-	  [TargetDistance:8]
+	  [TargetDistance:7]
 	  [StartsReady:true]
 	  [MaxActions:1]
 	  
@@ -398,7 +386,7 @@
       [MaxChats:1]
       [BroadcastRandomly:true]
       
-      [Author:SPRT]
+      [Author:{GridName}]
       [Color:Red]
       
       [ChatMessages:BLAHGLAHGLAHGHALH]
