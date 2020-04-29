@@ -68,7 +68,7 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>50</Speed>
-					<Behaviour>GVE-RE-Boss-Donnager-Behavior-Spawn</Behaviour>
+					<Behaviour>GVE-RE-Boss-Donnager-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -141,7 +141,7 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>50</Speed>
-					<Behaviour>GVE-RE-Boss-Roughneck-Behavior-Spawn</Behaviour>
+					<Behaviour>GVE-RE-Boss-Roughneck-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
