@@ -136,6 +136,102 @@
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) Boss Fighter Swarm</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[BossEncounterSpace:true]
+			[SpaceRandomEncounter:false]
+			[RivalAiSpawn:true]
+			[FactionOwner:SPRT]
+			
+			[Territory:Stalinium Asteroid Territory]
+			[MaxDistanceFromTerritoryCenter:10000]
+				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[DisableDampeners:true]
+			[ReplenishSystems:true]
+			[UniqueEncounter:true]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:true]
+			[ForceStaticGrid:false]
+			[BlockDamageModifier:20]
+						
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Squadron Leader GreekLetter RandomNumber-RandomChar]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:GV+ Listening Post]
+			[BossCustomAnnounceMessage:Pirate Activity Alert in Stalinium Nebula]
+			[BossCustomGPSLabel:Pirate Activity Alert]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>2.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Wildfire Heavy Fighter">
+					<Position>
+						<X>50.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+					<Behaviour>GVE-RE-Boss-SwarmLeader-Behavior-Start</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="GVE-NPC Wildfire Heavy Fighter">
+					<Position>
+						<X>-50.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+					<Behaviour>GVE-RE-DDS-Fighter</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="GVE-NPC Cyclone Fighter Bomber">
+					<Position>
+						<X>0.0</X>
+						<Y>-50</Y>
+						<Z>0.0</Z>
+					</Position>
+					<BeaconText>Cyclone-Fighter</BeaconText>
+					<Speed>50</Speed>
+					<Behaviour>GVE-RE-DDS-Fighter</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="GVE-NPC Cyclone Fighter Bomber">
+					<Position>
+						<X>0.0</X>
+						<Y>50</Y>
+						<Z>0.0</Z>
+					</Position>
+					<BeaconText>Cyclone-Fighter</BeaconText>
+					<Speed>50</Speed>
+					<Behaviour>GVE-RE-DDS-Strike</Behaviour>
+				</Prefab>
+
+			</Prefabs>
+		</SpawnGroup>
 
 		<SpawnGroup>
 			<Id>
