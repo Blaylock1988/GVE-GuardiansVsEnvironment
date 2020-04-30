@@ -6,27 +6,19 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Stalinium Territory Donnager</SubtypeId>
+				<SubtypeId>(NPC-GVE) Boss Donnager</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 			
-			[SpaceCargoShip:false]
-			[LunarCargoShip:false]
-			[BossEncounterSpace:false]
-			[SpaceRandomEncounter:true]
-			[AtmosphericCargoShip:false]
-			[PlanetaryInstallation:false]
+			[BossEncounterSpace:true]
+			[SpaceRandomEncounter:false]
 			[RivalAiSpawn:true]
 			[FactionOwner:SPRT]
 			
 			[Territory:Stalinium Asteroid Territory]
 			[MaxDistanceFromTerritoryCenter:10000]
-			[UseThreatLevelCheck:false]
-			[ThreatLevelCheckRange:25000]
-			[ThreatIncludeOtherNpcOwners:true]
-			[ThreatScoreMaximum:50]
 				
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
@@ -35,12 +27,10 @@
 			[UniqueEncounter:true]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
+			[GridsAreDestructable:true]
 			[GridsAreEditable:false]
-			
-			[UseKnownPlayerLocations:false]
-			[KnownPlayerLocationMustMatchFaction:false]
-			[KnownPlayerLocationMaxSpawnedEncounters:1]
-			
+			[ForceStaticGrid:false]
+						
 			[ChangeTurretSettings:true]
 			[TurretRange:800]
 			[TurretIdleRotation:false]
@@ -55,11 +45,16 @@
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Donnager GreekLetter RandomNumber-RandomChar]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
-
+			
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:GV+ Listening Post]
+			[BossCustomAnnounceMessage:Pirate Activity Alert in Stalinium Nebula]
+			[BossCustomGPSLabel:Pirate Activity Alert]
+			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
 			<IsPirate>true</IsPirate>
-			<Frequency>5.0</Frequency>
+			<Frequency>2.0</Frequency>
 			<Prefabs>
 				<Prefab SubtypeId="GVE-NPC Donnager">
 					<Position>
@@ -68,7 +63,7 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>50</Speed>
-					<Behaviour>GVE-RE-Boss-Donnager-Behavior-Spawn</Behaviour>
+					<Behaviour>GVE-RE-Boss-Donnager-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -76,27 +71,19 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Stalinium Territory Roughneck</SubtypeId>
+				<SubtypeId>(NPC-GVE) Boss Roughneck</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 			
-			[SpaceCargoShip:false]
-			[LunarCargoShip:false]
-			[BossEncounterSpace:false]
-			[SpaceRandomEncounter:true]
-			[AtmosphericCargoShip:false]
-			[PlanetaryInstallation:false]
-			[RivalAiSpawn:false]
+			[BossEncounterSpace:true]
+			[SpaceRandomEncounter:false]
+			[RivalAiSpawn:true]
 			[FactionOwner:SPRT]
 			
 			[Territory:Stalinium Asteroid Territory]
 			[MaxDistanceFromTerritoryCenter:10000]
-			[UseThreatLevelCheck:false]
-			[ThreatLevelCheckRange:25000]
-			[ThreatIncludeOtherNpcOwners:true]
-			[ThreatScoreMaximum:50]
 				
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
@@ -105,12 +92,10 @@
 			[UniqueEncounter:true]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
+			[GridsAreDestructable:true]
 			[GridsAreEditable:false]
-			
-			[UseKnownPlayerLocations:false]
-			[KnownPlayerLocationMustMatchFaction:false]
-			[KnownPlayerLocationMaxSpawnedEncounters:1]
-			
+			[ForceStaticGrid:false]
+						
 			[ChangeTurretSettings:true]
 			[TurretRange:800]
 			[TurretIdleRotation:false]
@@ -129,10 +114,15 @@
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:50]
 			
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:GV+ Listening Post]
+			[BossCustomAnnounceMessage:Pirate Activity Alert in Stalinium Nebula]
+			[BossCustomGPSLabel:Pirate Activity Alert]
+			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
 			<IsPirate>true</IsPirate>
-			<Frequency>5.0</Frequency>
+			<Frequency>2.0</Frequency>
 			<Prefabs>
 				<Prefab SubtypeId="GVE-NPC Roughneck Corvette">
 					<Position>
@@ -141,7 +131,7 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>50</Speed>
-					<Behaviour>GVE-RE-Boss-Roughneck-Behavior-Spawn</Behaviour>
+					<Behaviour>GVE-RE-Boss-Roughneck-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -255,7 +245,7 @@
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
 			<IsPirate>true</IsPirate>
-			<Frequency>2.0</Frequency>
+			<Frequency>3.0</Frequency>
 			<Prefabs>
 				<Prefab SubtypeId="GVE-NPC Cyclone Fighter Bomber">
 					<Position>
@@ -317,7 +307,7 @@
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
 			<IsPirate>true</IsPirate>
-			<Frequency>1.0</Frequency>
+			<Frequency>2.0</Frequency>
 			<Prefabs>
 				<Prefab SubtypeId="GVE-NPC Wildfire Heavy Fighter">
 					<Position>
@@ -342,43 +332,29 @@
 			[Modular Encounters SpawnGroup]
 			
 			[BossEncounterSpace:true]
-			[RivalAiSpawn:false]
-			[FactionOwner:SPRT]
+			[FactionOwner:GV+]
 			
 			[BossCustomAnnounceEnable:true]
-			[BossCustomAnnounceAuthor:SPRT]
-			[BossCustomAnnounceMessage:Activity Alert in Stalinium Nebula]
-			[BossCustomGPSLabel:Activity Alert]
+			[BossCustomAnnounceAuthor:GV+ Listening Post]
+			[BossCustomAnnounceMessage:Player Activity Alert in Stalinium Nebula]
+			[BossCustomGPSLabel:Player Activity Alert]
 			
 			[Territory:Stalinium Asteroid Territory]
 			[MaxDistanceFromTerritoryCenter:10000]
-			[UseThreatLevelCheck:false]
-			[ThreatLevelCheckRange:25000]
-			[ThreatIncludeOtherNpcOwners:true]
-			[ThreatScoreMaximum:50]
 				
-			[UseRivalAi:true]
-			[RivalAiReplaceRemoteControl:true]
+			[UseRivalAi:false]
+			[RivalAiReplaceRemoteControl:false]
 			[ReplenishSystems:true]
 			[UniqueEncounter:true]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
-					
-			[UseKnownPlayerLocations:false]
-			[KnownPlayerLocationMustMatchFaction:false]
-			[KnownPlayerLocationMaxSpawnedEncounters:1]
-			
+								
 			[GridsAreDestructable:false]
 			[GridsAreEditable:false]
 			[ForceStaticGrid:true]
-			
-			[UsePlayerCountCheck:false]
-			[PlayerCountCheckRadius:25000]
-			[MinimumPlayers:1]
-			
-			
+						
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Alert: NatoLetter-RandomNumberRandomChar]
+			[RandomGridNamePattern: Listening Post: Player Alert NatoLetter-RandomNumberRandomChar]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 
 			</Description>
@@ -392,11 +368,11 @@
 						<Y>0.0</Y>
 						<Z>0.0</Z>
 					</Position>
-					<Speed>50</Speed>
+					<Speed>0</Speed>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
-
+		
 		<SpawnGroup>
 		   <Id>
 			  <TypeId>SpawnGroupDefinition</TypeId>
