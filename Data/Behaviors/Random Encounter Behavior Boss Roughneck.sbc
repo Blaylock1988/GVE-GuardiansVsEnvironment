@@ -217,9 +217,9 @@
 	  [UseTrigger:true]
 	  [TargetDistance:2000]
 	  [StartsReady:true]
-	  [MaxActions:5]
-	  [MinCooldownMs:15000]
-	  [MaxCooldownMs:30000]
+	  [MaxActions:15]
+	  [MinCooldownMs:1000]
+	  [MaxCooldownMs:2000]
 
 	  [Actions:GVE-RE-Boss-Roughneck-Action-CallBackup]
 
@@ -289,9 +289,9 @@
       [UseSpawn:true]
       
       [StartsReady:true]
-	  [SpawnMinCooldown:30]
-      [SpawnMinCooldown:60]
-      [MaxSpawns:5]
+	  [SpawnMinCooldown:1]
+      [SpawnMinCooldown:2]
+      [MaxSpawns:15]
       
       [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
@@ -299,7 +299,7 @@
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:500]
-      [MaxDistance:700]
+      [MaxDistance:1200]
       [IgnoreSafetyChecks:false]
       
       </Description>
