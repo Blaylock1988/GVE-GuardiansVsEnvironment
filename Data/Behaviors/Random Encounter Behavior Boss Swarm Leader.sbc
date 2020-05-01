@@ -47,7 +47,7 @@
 	  
       [Type:PlayerNear]
 	  [UseTrigger:true]
-	  [TargetDistance:50000]
+	  [TargetDistance:60000]
 	  [MaxActions:1]
 	  
 	  [Actions:GVE-RE-Boss-SwarmLeader-Action-PlayerDistant]
@@ -347,8 +347,6 @@
       [UseSpawn:true]
       
       [StartsReady:true]
-	  [SpawnMinCooldown:0]
-      [SpawnMaxCooldown:2]
 
       [MaxSpawns:30]
       

@@ -295,8 +295,6 @@
       [UseSpawn:true]
       
       [StartsReady:true]
-	  [SpawnMinCooldown:0]
-      [SpawnMaxCooldown:2]
 
       [MaxSpawns:15]
       
