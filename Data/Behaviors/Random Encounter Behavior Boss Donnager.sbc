@@ -221,11 +221,11 @@
 	  
       [Type:PlayerNear]
 	  [UseTrigger:true]
-	  [TargetDistance:2000]
+	  [TargetDistance:3000]
 	  [StartsReady:true]
 	  [MaxActions:15]
-	  [MinCooldownMs:1000]
-	  [MaxCooldownMs:2000]
+	  [MinCooldownMs:250]
+	  [MaxCooldownMs:1000]
 
 	  [Actions:GVE-RE-Boss-Donnager-Action-CallBackup]
 
@@ -295,8 +295,8 @@
       [UseSpawn:true]
       
       [StartsReady:true]
-	  [SpawnMinCooldown:1]
-      [SpawnMinCooldown:2]
+	  [SpawnMinCooldown:0]
+      [SpawnMaxCooldown:2]
 
       [MaxSpawns:15]
       
