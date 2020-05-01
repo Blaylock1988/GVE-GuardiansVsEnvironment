@@ -529,7 +529,7 @@
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
 			<IsPirate>true</IsPirate>
-			<Frequency>5.0</Frequency>
+			<Frequency>2.0</Frequency>
 			<Prefabs>
 				<Prefab SubtypeId="GVE-NPC Nauvoo">
 					<Position>
