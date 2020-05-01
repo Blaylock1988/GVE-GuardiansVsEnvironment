@@ -52,6 +52,111 @@
 	  
       </Description>
     </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Behavior-Strike-Test</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Strike]
+	  [WeaponMaxAngleFromTarget:5]
+	  [UseBarrageFire:true]
+	  [MaxFireRateForBarrageWeapons:20]
+	  [OffsetSpaceMinDistFromTarget:1000]
+	  [OffsetSpaceMaxDistFromTarget:1500]
+	  [WaypointTolerance:50]
+	  [UseStaticGuns:true]
+	  [UseTurrets:true]
+	  [IdealMaxSpeed:80]
+	  [StrikeBeginSpaceAttackRunDistance:700]
+	  [StrikeBreakawayDistance:600]
+	  [UseVelocityCollisionEvasion:true]
+	  [StrikeEngageUseCollisionEvasion:true]
+	  [RotationMultiplier:1.25]
+	  [AngleAllowedForForwardThrust:60]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Behavior-Fighter-Test</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Fighter]
+	  [UseBarrageFire:false]
+	  [UseTurrets:true]
+	  [IdealMaxSpeed:140]
+	  [UseVanillaCollisionAvoidance:false]
+	  [UseStuckMovementCorrection:true]
+	  [AllowStrafing:true]
+	  [StrafeMinDurationMs:1500]
+	  [StrafeMaxDurationMs:20000]
+	  [StrafeMinCooldownMs:1]
+	  [StrafeMaxCooldownMs:1]
+	  [StrafeSpeedCutOff:140]
+	  [StrafeDistanceCutOff:1500]
+	  [FighterEngageDistanceSpace:700]
+	  [FighterDisengageDistanceSpace:900]
+	  [UseVelocityCollisionEvasion:true]
+	  [CollisionEvasionWaypointDistance:600]
+	  [CollisionEvasionResumeDistance:300]
+	  [CollisionEvasionResumeTime:10]
+	  [RotationMultiplier:1]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  
+	  [Triggers:GVE-Behavior-Fighter-Test-Trigger]
+	  	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Behavior-Fighter-Test-Trigger</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Damage]
+	  [UseTrigger:true]
+	  [DamageTypes:Any]
+
+	  [Actions:GVE-Behavior-Fighter-Test-Action]
+	  
+      </Description>      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Behavior-Fighter-Test-Action</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [SwitchToReceivedTarget:true]
+	  
+	  [ChangeAttackerReputation:true]
+	  [ChangeAttackerReputationFaction:GVE+]
+	  [ChangeAttackerReputationAmount:+1]
+	  [ReputationChangesForAllAttackPlayerFactionMembers:true]
+      	  	  
+      </Description>
+    </EntityComponent>
 
   </EntityComponents>
 </Definitions>
