@@ -290,7 +290,7 @@
 					</Position>
 					<BeaconText>Cyclone-Fighter</BeaconText>
 					<Speed>50</Speed>
-					<Behaviour>GVE-RE-DDS-Fighter</Behaviour>
+					<Behaviour>GVE-Behavior-Fighter-Test</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -353,7 +353,7 @@
 					</Position>
 					<BeaconText>Cyclone-Strike</BeaconText>
 					<Speed>50</Speed>
-					<Behaviour>GVE-RE-DDS-Strike</Behaviour>
+					<Behaviour>GVE-Behavior-Strike-Test</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -415,7 +415,7 @@
 					</Position>
 					<BeaconText>Cyclone-Fighter</BeaconText>
 					<Speed>50</Speed>
-					<Behaviour>GVE-RE-DDS-Fighter</Behaviour>
+					<Behaviour>GVE-Behavior-Fighter-Test</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -472,6 +472,141 @@
 		</SpawnGroup>
 		
 		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) Stalinium Territory Nauvoo Distress</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[BossEncounterSpace:true]
+			[FactionOwner:GVE+]
+			
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:GV+ Listening Post]
+			[BossCustomAnnounceMessage:Distress Signal Alert in Stalinium Nebula]
+			[BossCustomGPSLabel:Distress Signal Alert]
+			
+			[Territory:Stalinium Asteroid Territory]
+			[MaxDistanceFromTerritoryCenter:10000]
+				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[DisableDampeners:false]
+			[ReplenishSystems:true]
+			[UniqueEncounter:true]
+			[ShiftBlockColorsHue:false]
+			[RandomHueShift:true]	
+			[UseBlockReplacerProfile:true]
+			[ConvertToHeavyArmor:false]
+			[GridsAreDestructable:false]
+			[GridsAreEditable:false]
+			[ForceStaticGrid:true]
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:5]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:0]
+			[MaximumBuildPercent:100]
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:5]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:false]
+						
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Nauvoo Distress Signal: NatoLetter-RandomNumberRandomChar]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Nauvoo">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>GVE-RE-Boss-Nauvoo-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) Tempano Ravager</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[SpaceCargoShip:false]
+			[LunarCargoShip:false]
+			[BossEncounterSpace:false]
+			[SpaceRandomEncounter:false]
+			[AtmosphericCargoShip:false]
+			[PlanetaryInstallation:false]
+			[RivalAiSpawn:true]
+			[FactionOwner:SPRT]
+							
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[DisableDampeners:false]
+			[ReplenishSystems:true]
+			[UniqueEncounter:false]
+			[ShiftBlockColorsHue:false]
+			[RandomHueShift:true]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:20]
+			
+			[UseRandomNameGenerator:false]
+			[RandomGridNamePattern: Tempano BaddieNoun]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>3.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Tempano Ravager">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+					<Behaviour>GVE-Behavior-Fighter-Test</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>
 		   <Id>
 			  <TypeId>SpawnGroupDefinition</TypeId>
 			  <SubtypeId>(NPC-GVE) Stalinium Asteroid Territory</SubtypeId>
@@ -495,7 +630,7 @@
 		   <Frequency>30.0</Frequency>
 		   <IsPirate>true</IsPirate>
 		   <Prefabs>
-			  <Prefab SubtypeId="GVE-NPC Donnager">
+			  <Prefab SubtypeId="GVE-NPC Player Announcer">
 				 <Position>
 					<X>0.0</X>
 					<Y>0.0</Y>
