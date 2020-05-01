@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Factions>
+	<!--Do Not Edit Above Here-->
+
+		<!--Copy From This Line-->
+		<Faction Tag="GVE+" Founder="The Guardians">
+			<Id>
+				<TypeId>MyObjectBuilder_FactionDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) Guardians Faction</SubtypeId> <!--Must Be Unique-->
+			</Id>
+			<DisplayName>Guardians Vanilla</DisplayName>
+			<IsDefault>true</IsDefault>
+			<DefaultRelation>Friends</DefaultRelation> <!--Enemies, Neutral, Friends-->
+			<AcceptHumans>false</AcceptHumans>
+			<AutoAcceptMember>false</AutoAcceptMember>
+			<StartingBalance>1000000</StartingBalance>
+			<Type>None</Type> <!--None, Miner, Trader, Builder-->
+			<DiscoveredByDefault>true</DiscoveredByDefault>
+			<FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon> <!--Game or Mod Path For Texture File-->
+		</Faction>
+		<!--Copy To This Line And Paste Directly Below-->
+
+	<!--Do Not Edit Below Here-->
+	</Factions>
+</Definitions>
