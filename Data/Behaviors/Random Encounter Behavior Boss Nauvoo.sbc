@@ -1,0 +1,463 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Nauvoo-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Passive]
+	  [RotationMultiplier:0.5]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  
+	  [Triggers:GVE-RE-Boss-Nauvoo-Trigger-PlayerDistant]
+	  [Triggers:GVE-RE-Boss-Nauvoo-Trigger-PlayerApproach]
+	  [Triggers:GVE-RE-Boss-Nauvoo-Trigger-SpawnPirates]
+	  [Triggers:GVE-RE-Boss-Nauvoo-Trigger-Defeated]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Nauvoo-Trigger-PlayerDistant</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [TargetDistance:50000]
+	  [MaxActions:1]
+	  
+	  [Actions:GVE-RE-Boss-Nauvoo-Action-PlayerDistant]
+	  
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Nauvoo-Action-PlayerDistant</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [ChangeAntennaRanges:true]
+	  [AntennaNamesForRangeChange:NPC Antenna]
+	  [AntennaRangeChangeType:Set]
+	  [AntennaRangeChangeAmount:50000]
+      
+      [UseChatBroadcast:true]
+      [ChatData:GVE-RE-Boss-Nauvoo-Chat-PlayerDistant]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Nauvoo-Chat-PlayerDistant</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+	  [IgnoreAntennaRequirement:true]
+	  [IgnoredAntennaRangeOverride:60000]
+      
+      [Author:Nauvoo]
+      [Color:White]
+      
+      [ChatMessages:Please help us! We are under attack!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+      [ChatMessages:Please {PlayerName}, you're our only hope!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      [ChatMessages:If anyone is reading this, we are under attack by pirates!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+      
+      [ChatMessages:We can't hold out much longer. Life support systems are failing...]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>      
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Nauvoo-Trigger-PlayerApproach</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [TargetDistance:5000]
+	  [MaxActions:1]
+	  
+	  [Actions:GVE-RE-Boss-Nauvoo-Action-WarnPlayer]
+	  
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Nauvoo-Action-WarnPlayer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      
+      [UseChatBroadcast:true]
+      [ChatData:GVE-RE-Boss-Nauvoo-Chat-WarnPlayer]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Nauvoo-Chat-WarnPlayer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      
+      [Author:SPRT Raiders]
+      [Color:Red]
+      
+      [ChatMessages:Brown Alert! Hope you brought a change of pants!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+      [ChatMessages:Pilot {PlayerName}, stand down and leave the area. This is a restricted sector.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      [ChatMessages:Looks like we have a contestant! Are you ready?]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+      
+      [ChatMessages:Get a load of this guy, {PlayerName} thinks they can take us?]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Nauvoo-Trigger-TakeDamage</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Damage]
+	  [UseTrigger:true]
+	  [DamageTypes:Any]
+	  [MaxActions:1]
+
+	  [Actions:GVE-RE-Boss-Nauvoo-Action-TakeDamage]
+	  
+      </Description>      
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Nauvoo-Action-TakeDamage</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [ChangeAttackerReputation:true]
+	  [ChangeAttackerReputationFaction:GVE+]
+	  [ChangeAttackerReputationAmount:-1]
+	  [ReputationChangesForAllAttackPlayerFactionMembers:true]
+      
+      [UseChatBroadcast:true]
+	  [ChatData:GVE-RE-Boss-Nauvoo-Chat-TakeDamage]
+	  
+	  [IncreaseCounters:NauvooDamageCounter]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Nauvoo-Chat-TakeDamage</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      [Author:Nauvoo]
+      [Color:White]
+      
+      [ChatMessages:No don't shoot us!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:We're venting atmosphere!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      [ChatMessages:Damage reports on multiple levels. We won't last much longer!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:Please help us!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:Don't let them hit us!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Nauvoo-Trigger-SpawnPirates</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [TargetDistance:5000]
+	  [StartsReady:true]
+	  [MaxActions:20]
+	  [MinCooldownMs:250]
+	  [MaxCooldownMs:500]
+
+	  [Actions:GVE-RE-Boss-Nauvoo-Action-SpawnPirates]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Nauvoo-Action-SpawnPirates</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [UseChatBroadcast:true]
+	  [ChatData:GVE-RE-Boss-Nauvoo-Chat-SpawnPirates]
+
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-RE-Boss-Nauvoo-Spawner-SpawnPirates]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Nauvoo-Chat-SpawnPirates</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      
+      [Author:SPRT Raiders]
+      [Color:Red]
+      
+      [ChatMessages:Give up now, and surrender your cargo!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:Hand it over or risk being destroyed.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:Captain of the Nauvoo, we have you surrounded.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Nauvoo-Spawner-SpawnPirates</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Spawn]
+      
+      [UseSpawn:true]
+      
+      [StartsReady:true]
+
+      [MaxSpawns:20]
+      
+	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
+	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
+	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
+
+      [UseRelativeSpawnPosition:false]
+      [MinDistance:850]
+      [MaxDistance:1100]
+      [IgnoreSafetyChecks:false]
+      
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Nauvoo-Trigger-Defeated</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Timer]
+	  [UseTrigger:true]
+	  [MinCooldownMs:20000]
+	  [MaxCooldownMs:20000]
+	  [StartsReady:false]
+	  
+	  [Conditions:GVE-RE-Boss-Nauvoo-Condition-Defeated]
+	  
+	  [Actions:GVE-RE-Boss-Nauvoo-Action-Defeated]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Nauvoo-Condition-Defeated</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Condition]
+      
+      [UseConditions:true]
+      [MatchAnyCondition:false]
+	  
+	  [CheckCustomCounters:true]
+	  [CustomCounters:NauvooDamageCounter]
+	  [CustomCountersTargets:250]
+	        
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Nauvoo-Action-Defeated</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+      [SelfDestruct:true]
+	  
+      [UseChatBroadcast:true]
+      [ChatData:GVE-RE-Boss-Nauvoo-Chat-Defeated]
+	  
+	  [TerminateBehavior:true]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Nauvoo-Chat-Defeated</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      
+      [Author:{GridName}]
+      [Color:Red]
+      
+      [ChatMessages:BLAHGLAHGLAHGHALH]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:NOOOOOOOOOOOOOO]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:GHAAAAAAHHHH....]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:How could {PlayerName} let this happen?!?!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:*Radio static*]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:You've killed us all!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
