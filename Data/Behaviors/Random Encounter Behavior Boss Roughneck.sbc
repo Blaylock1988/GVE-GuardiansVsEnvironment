@@ -2,7 +2,7 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <EntityComponents>
 
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">	<!--Starts here-->
       <Id>
           <TypeId>Inventory</TypeId>
           <SubtypeId>GVE-RE-Boss-Roughneck-Behavior-Start</SubtypeId>
@@ -17,7 +17,7 @@
 	  [OffsetSpaceMaxDistFromTarget:6000]
 	  [AngleAllowedForForwardThrust:45]
 	  [RotationMultiplier:1]
-	  [WaypointTolerance:400]
+	  [WaypointTolerance:200]
 	  [UseStuckMovementCorrection:true]
 	  [UseAmmoReplenish:true]
 	  [AmmoReplenishClipAmount:100]
@@ -25,12 +25,13 @@
 	  [Triggers:GVE-RE-Boss-Roughneck-Trigger-PlayerApproach]
 	  [Triggers:GVE-RE-Boss-Roughneck-Trigger-TakeDamage]
 	  [Triggers:GVE-RE-Boss-Roughneck-Trigger-CallBackup]
+	  [Triggers:GVE-RE-Boss-Roughneck-Trigger-FireMissiles]
 	  [Triggers:GVE-RE-Boss-Roughneck-Trigger-Defeated]
 	  
       </Description>
     </EntityComponent>
 	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">	<!--Do not use until RAI Targeting v2 release-->
       <Id>
           <TypeId>Inventory</TypeId>
           <SubtypeId>GVE-RE-Boss-Roughneck-TargetProfile</SubtypeId>
@@ -59,7 +60,7 @@
       </Description>
     </EntityComponent>
 	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">	<!--Detect when player is in the area-->
       <Id>
           <TypeId>Inventory</TypeId>
           <SubtypeId>GVE-RE-Boss-Roughneck-Trigger-PlayerApproach</SubtypeId>
@@ -78,7 +79,7 @@
       </Description>      
     </EntityComponent>
 
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">	<!--long range taunt action-->
       <Id>
           <TypeId>Inventory</TypeId>
           <SubtypeId>GVE-RE-Boss-Roughneck-Action-WarnPlayer</SubtypeId>
@@ -93,7 +94,7 @@
       </Description>
     </EntityComponent>
 	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">	<!--Long range taunch chat-->
       <Id>
           <TypeId>Inventory</TypeId>
           <SubtypeId>GVE-RE-Boss-Roughneck-Chat-WarnPlayer</SubtypeId>
@@ -130,7 +131,7 @@
       </Description>      
     </EntityComponent>
 	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">	<!--Attack and/or chat when damaged-->
       <Id>
           <TypeId>Inventory</TypeId>
           <SubtypeId>GVE-RE-Boss-Roughneck-Trigger-TakeDamage</SubtypeId>
@@ -164,7 +165,7 @@
       </Description>
     </EntityComponent>
 	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">	
       <Id>
           <TypeId>Inventory</TypeId>
           <SubtypeId>GVE-RE-Boss-Roughneck-Chat-BattleChatter</SubtypeId>
@@ -204,6 +205,45 @@
       </Description>
     </EntityComponent>
 	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">	<!--Only for use after Adv PID target prediction is added to RAI-->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Roughneck-Trigger-FireMissiles</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:false]
+	  [TargetDistance:5000]
+	  [StartsReady:true]
+	  [MinCooldownMs:10000]
+	  [MaxCooldownMs:15000]
+
+	  [Actions:GVE-RE-Boss-Roughneck-Action-FireMissiles]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Roughneck-Action-FireMissiles</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [IncreaseCounters:MissileVolley]
+	  
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-RE-Boss-Roughneck-Spawner-Missile1]
+	  [Spawner:GVE-RE-Boss-Roughneck-Spawner-Missile2]
+	  	  
+      </Description>
+    </EntityComponent>
+
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -217,7 +257,6 @@
 	  [UseTrigger:true]
 	  [TargetDistance:3000]
 	  [StartsReady:true]
-	  [MaxActions:15]
 	  [MinCooldownMs:250]
 	  [MaxCooldownMs:1000]
 
@@ -238,9 +277,9 @@
 	  [UseChatBroadcast:true]
 	  [ChatData:GVE-RE-Boss-Roughneck-Chat-CallBackup]
 
-	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-Roughneck-DDS-Fighter-Spawner]
-	  
+	  [SpawnEncounter:false]
+	  [Spawner:GVE-RE-Boss-Roughneck-Spawner-Fighter]
+	  	  
       </Description>
     </EntityComponent>
 	
@@ -280,17 +319,15 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-Roughneck-DDS-Fighter-Spawner</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-Roughneck-Spawner-Fighter</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Spawn]
       
       [UseSpawn:true]
-      
       [StartsReady:true]
-
-      [MaxSpawns:15]
+	  [MaxSpawns:15]
       
       [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
@@ -303,7 +340,53 @@
       
       </Description>
     </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Roughneck-Spawner-Missile1</SubtypeId>
+      </Id>
+      <Description>
 
+      [RivalAI Spawn]
+      
+      [UseSpawn:true]
+      [StartsReady:true]
+	  [MaxSpawns:8]
+      
+      [SpawnGroups:(NPC-GVE) Roughneck Missile]
+
+      [UseRelativeSpawnPosition:true]
+	  [RelativeSpawnOffset:{X:0 Y:22.5 Z:22.5}]
+	  [RelativeSpawnVelocity:{X:0 Y:50 Z:0}]
+      [IgnoreSafetyChecks:true]
+      
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Roughneck-Spawner-Missile2</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Spawn]
+      
+      [UseSpawn:true]
+      [StartsReady:true]
+	  [MaxSpawns:8]
+      
+      [SpawnGroups:(NPC-GVE) Roughneck Missile]
+
+      [UseRelativeSpawnPosition:true]
+	  [RelativeSpawnOffset:{X:0 Y:-22.5 Z:22.5}]
+	  [RelativeSpawnVelocity:{X:0 Y:-50 Z:0}]
+      [IgnoreSafetyChecks:true]
+      
+      </Description>
+    </EntityComponent>
+	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -404,6 +487,90 @@
 	  [ChatMessages:How Could this happen!?!?]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Roughneck-Missile-Behavior</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Strike]
+	  [OffsetSpaceMinDistFromTarget:800]
+	  [OffsetSpaceMaxDistFromTarget:1200]
+	  [IdealMaxSpeed:100]
+	  [StrikeBeginSpaceAttackRunDistance:150]
+	  [StrikeBreakawayDistance:30]
+	  [StrikeEngageUseCollisionEvasion:false]
+	  [RotationMultiplier:1]
+	  [UseAmmoReplenish:false]
+	  [AmmoReplenishClipAmount:100]
+	  
+	  [Triggers:Roughneck-Missile-Trigger-DetonateProx]
+	  [Triggers:Roughneck-Missile-Trigger-DetonateTime]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Roughneck-Missile-Trigger-DetonateProx</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [MaxCooldownMs:50]
+	  [TargetDistance:30]
+	  [MaxActions:1]
+	  
+	  [Actions:Roughneck-Missile-Action-Detonate]
+	  
+      </Description>      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Roughneck-Missile-Trigger-DetonateTime</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Timer]
+	  [UseTrigger:true]
+	  [MaxCooldownMs:60000]
+	  [MaxCooldownMs:60000]
+	  [StartsReady:false]
+	  [MaxActions:1]
+	  
+	  [Actions:Roughneck-Missile-Action-Detonate]
+	  
+      </Description>      
+    </EntityComponent>
+
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Roughneck-Missile-Action-Detonate</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      	  
+	  [SelfDestruct:true]
+	  
+	  [TerminateBehavior:true]
 
       </Description>
     </EntityComponent>

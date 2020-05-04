@@ -96,7 +96,7 @@
 			[GridsAreDestructable:true]
 			[GridsAreEditable:false]
 			[ForceStaticGrid:false]
-						
+			[EraseIngameScripts:true]
 			[ChangeTurretSettings:true]
 			[TurretRange:800]
 			[TurretIdleRotation:false]
@@ -134,6 +134,66 @@
 					<Speed>50</Speed>
 					<Behaviour>GVE-RE-Boss-Roughneck-Behavior-Start</Behaviour>
 				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+				<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) Roughneck Missile</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[SpaceCargoShip:false]
+			[LunarCargoShip:false]
+			[BossEncounterSpace:false]
+			[SpaceRandomEncounter:false]
+			[AtmosphericCargoShip:false]
+			[PlanetaryInstallation:false]
+			[RivalAiSpawn:true]
+			[FactionOwner:SPRT]
+							
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[DisableDampeners:true]
+			[ReplenishSystems:true]
+			[UniqueEncounter:false]
+			
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:50]
+			
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Roughneck Fox-RandomNumber]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Roughneck Missile">
+					<Position>
+						<X>10</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<BeaconText>Missile</BeaconText>
+					<Speed>0</Speed>
+					<Behaviour>Roughneck-Missile-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="GVE-NPC Roughneck Missile">
+					<Position>
+						<X>-10</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<BeaconText>Missile</BeaconText>
+					<Speed>0</Speed>
+					<Behaviour>Roughneck-Missile-Behavior</Behaviour>
+				</Prefab>
+
 			</Prefabs>
 		</SpawnGroup>
 		
