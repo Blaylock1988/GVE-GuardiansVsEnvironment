@@ -164,7 +164,7 @@
 			[GridsAreDestructable:true]
 			[GridsAreEditable:true]
 			[ForceStaticGrid:false]
-			[BlockDamageModifier:20]
+			[BlockDamageModifier:40]
 						
 			[ChangeTurretSettings:true]
 			[TurretRange:800]
@@ -200,14 +200,14 @@
 					<Speed>50</Speed>
 					<Behaviour>GVE-RE-Boss-SwarmLeader-Behavior-Start</Behaviour>
 				</Prefab>
-				<Prefab SubtypeId="GVE-NPC Wildfire Heavy Fighter">
+				<Prefab SubtypeId="GVE-NPC Tempano Ravager">
 					<Position>
 						<X>-50.0</X>
 						<Y>0.0</Y>
 						<Z>0.0</Z>
 					</Position>
 					<Speed>50</Speed>
-					<Behaviour>GVE-RE-DDS-Fighter</Behaviour>
+					<Behaviour>GVE-Behavior-Fighter-Test</Behaviour>
 				</Prefab>
 				<Prefab SubtypeId="GVE-NPC Cyclone Fighter Bomber">
 					<Position>

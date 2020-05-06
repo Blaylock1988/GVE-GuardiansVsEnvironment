@@ -223,7 +223,7 @@
 	  [UseTrigger:true]
 	  [TargetDistance:3000]
 	  [StartsReady:true]
-	  [MaxActions:15]
+	  [MaxActions:10]
 	  [MinCooldownMs:250]
 	  [MaxCooldownMs:1000]
 
@@ -296,11 +296,13 @@
       
       [StartsReady:true]
 
-      [MaxSpawns:15]
+      [MaxSpawns:10]
       
       [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
+	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
+
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:500]

@@ -345,6 +345,8 @@
 	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
+	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
+
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:850]
