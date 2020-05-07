@@ -275,9 +275,9 @@
 	  [UseTrigger:true]
 	  [TargetDistance:2000]
 	  [StartsReady:true]
-	  [MaxActions:20]
-	  [MinCooldownMs:250]
-	  [MaxCooldownMs:1000]
+	  [MaxActions:15]
+	  [MinCooldownMs:1000]
+	  [MaxCooldownMs:5000]
 
 	  [Actions:GVE-RE-Boss-SwarmLeader-Action-CallBackup]
 

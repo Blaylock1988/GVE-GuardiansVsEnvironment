@@ -268,8 +268,8 @@
 	  [TargetDistance:5000]
 	  [StartsReady:true]
 	  [MaxActions:20]
-	  [MinCooldownMs:250]
-	  [MaxCooldownMs:500]
+	  [MinCooldownMs:1000]
+	  [MaxCooldownMs:5000]
 
 	  [Actions:GVE-RE-Boss-Nauvoo-Action-SpawnPirates]
 
@@ -340,7 +340,7 @@
       
       [StartsReady:true]
 
-      [MaxSpawns:20]
+      [MaxSpawns:15]
       
 	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]

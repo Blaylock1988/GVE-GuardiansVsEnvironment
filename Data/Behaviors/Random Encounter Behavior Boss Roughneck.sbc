@@ -218,8 +218,8 @@
 	  [TargetDistance:3000]
 	  [StartsReady:true]
 	  [MaxActions:10]
-	  [MinCooldownMs:250]
-	  [MaxCooldownMs:1000]
+	  [MinCooldownMs:1000]
+	  [MaxCooldownMs:5000]
 
 	  [Actions:GVE-RE-Boss-Roughneck-Action-CallBackup]
 
@@ -300,7 +300,7 @@
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:500]
-      [MaxDistance:1200]
+      [MaxDistance:3000]
       [IgnoreSafetyChecks:false]
       
       </Description>

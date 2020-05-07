@@ -224,8 +224,8 @@
 	  [TargetDistance:3000]
 	  [StartsReady:true]
 	  [MaxActions:10]
-	  [MinCooldownMs:250]
-	  [MaxCooldownMs:1000]
+	  [MinCooldownMs:1000]
+	  [MaxCooldownMs:5000]
 
 	  [Actions:GVE-RE-Boss-Donnager-Action-CallBackup]
 
@@ -296,7 +296,7 @@
       
       [StartsReady:true]
 
-      [MaxSpawns:10]
+      [MaxSpawns:8]
       
       [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
@@ -306,7 +306,7 @@
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:500]
-      [MaxDistance:1200]
+      [MaxDistance:3000]
       [IgnoreSafetyChecks:false]
       
       </Description>
