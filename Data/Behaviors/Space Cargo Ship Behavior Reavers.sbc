@@ -5,7 +5,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-SwarmLeader-Behavior-Start</SubtypeId>
+          <SubtypeId>GVE-SCS-Reavers-Behavior-Start</SubtypeId>
       </Id>
       <Description>
 
@@ -15,31 +15,95 @@
 	  [UseBarrageFire:false]
 	  [UseTurrets:true]
 	  [IdealMaxSpeed:100]
+	  [AngleAllowedForForwardThrust:45]
+	  [UseVanillaCollisionAvoidance:false]
+	  [UseStuckMovementCorrection:true]
 	  [AllowStrafing:true]
-	  [StrafeMinDurationMs:5000]
-	  [StrafeMaxDurationMs:15000]
-	  [StrafeMinCooldownMs:10000]
-	  [StrafeMaxCooldownMs:20000]
-	  [StrafeSpeedCutOff:70]
-	  [StrafeDistanceCutOff:800]
-	  [FighterEngageDistanceSpace:600]
-	  [FighterDisengageDistanceSpace:850]
-	  [RotationMultiplier:1.25]
+	  [StrafeMinDurationMs:1500]
+	  [StrafeMaxDurationMs:20000]
+	  [StrafeMinCooldownMs:1]
+	  [StrafeMaxCooldownMs:1]
+	  [StrafeSpeedCutOff:140]
+	  [StrafeDistanceCutOff:1500]
+	  [FighterEngageDistanceSpace:700]
+	  [FighterDisengageDistanceSpace:900]
+	  [UseVelocityCollisionEvasion:true]
+	  [CollisionEvasionWaypointDistance:600]
+	  [CollisionEvasionResumeDistance:300]
+	  [CollisionEvasionResumeTime:10]
+	  [RotationMultiplier:1]
 	  [UseAmmoReplenish:true]
 	  [AmmoReplenishClipAmount:100]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:15000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
+
 	  
-	  [Triggers:GVE-RE-Boss-SwarmLeader-Trigger-PlayerDistant]
-	  [Triggers:GVE-RE-Boss-SwarmLeader-Trigger-PlayerApproach]
-	  [Triggers:GVE-RE-Boss-SwarmLeader-Trigger-TakeDamage]
-	  [Triggers:GVE-RE-Boss-SwarmLeader-Trigger-CallBackup]
+	  [Triggers:GVE-SCS-Reavers-Trigger-NoticeBroadcasts]
+	  [Triggers:GVE-SCS-Reavers-Trigger-TakeDamage]
+	  
+	  [TargetData:GVE-SCS-Reavers-Target-Broadcasts]
 	  
       </Description>
     </EntityComponent>
 	
-		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-SwarmLeader-Trigger-PlayerDistant</SubtypeId>
+          <SubtypeId>GVE-SCS-Reavers-Target-Broadcasts</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Target]
+      
+      [UseCustomTargeting:true]
+      
+      [Target:Player]
+	  [TimeUntilTargetAcquisition:15]
+	  [MaxDistance:5000]
+	  [Distance:Closest]
+	  [Relations:Enemy]
+	  [Filters:IgnoreSafeZone]
+	  [Filters:IsBroadcasting]
+	  [UseTimeout:true]
+	  [MinTimeout:300]
+	  [MaxTimeout:400]
+	  
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-SCS-Reavers-TargetUnstable-Broadcasts</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Target]
+      
+      [UseCustomTargeting:false]
+      
+      [Target:Grid]
+	  [TimeUntilTargetAcquisition:15]
+	  [MaxDistance:5000]
+	  [MatchAllFilters:Broadcasting]
+	  [MatchAllFilters:OutsideOfSafezone]
+	  [MatchAllFilters:Relation]
+	  [GetTargetBy:ClosestDistance]
+	  [Relations:Enemy]
+	  [UseTargetRefresh:true]
+	  [TimeUntilNextRefresh:300]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-SCS-Reavers-Trigger-NoticeBroadcasts</SubtypeId>
       </Id>
       <Description>
 
@@ -47,10 +111,10 @@
 	  
       [Type:PlayerNear]
 	  [UseTrigger:true]
-	  [TargetDistance:60000]
+	  [TargetDistance:5000]
 	  [MaxActions:1]
 	  
-	  [Actions:GVE-RE-Boss-SwarmLeader-Action-PlayerDistant]
+	  [Actions:GVE-SCS-Reavers-Action-NoticeBroadcasts]
 	  
       </Description>      
     </EntityComponent>
@@ -58,19 +122,14 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-SwarmLeader-Action-PlayerDistant</SubtypeId>
+          <SubtypeId>GVE-SCS-Reavers-Action-NoticeBroadcasts</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Action]
-	  
-	  [ChangeAntennaRanges:true]
-	  [AntennaNamesForRangeChange:NPC Antenna]
-	  [AntennaRangeChangeType:Set]
-	  [AntennaRangeChangeAmount:25000]
-      
+	       
       [UseChatBroadcast:true]
-      [ChatData:GVE-RE-Boss-SwarmLeader-Chat-PlayerDistant]
+      [ChatData:GVE-SCS-Reavers-Chat-NoticeBroadcasts]
 
       </Description>
     </EntityComponent>
@@ -78,7 +137,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-SwarmLeader-Chat-PlayerDistant</SubtypeId>
+          <SubtypeId>GVE-SCS-Reavers-Chat-NoticeBroadcasts</SubtypeId>
       </Id>
       <Description>
 
@@ -90,27 +149,15 @@
       [MaxChats:1]
       [BroadcastRandomly:true]
 	  [IgnoreAntennaRequirement:true]
-	  [IgnoredAntennaRangeOverride:60000]
+	  [IgnoredAntennaRangeOverride:50000]
 
       
       [Author:{GridName}]
       [Color:Red]
-      
-      [ChatMessages:Sensors are picking up activity nearby.]
+      	  
+      [ChatMessages:Nearby Reavers are searching for active signals]
       [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Chat]
-	  
-      [ChatMessages:The target,{PlayerName}, is in the area keep searching]
-      [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Chat]
-
-      [ChatMessages:What do you mean you FORGOT? How are we supposed to mine without a miner?...wait, did you hear that?]
-      [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Chat]
-      
-      [ChatMessages:No signs of {PlayerName} yet. Intel shows they should be in this area though.]
-      [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Chat]
+      [BroadcastChatType:Notify]
 
       </Description>      
     </EntityComponent>
@@ -118,78 +165,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-SwarmLeader-Trigger-PlayerApproach</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Trigger]
-	  
-      [Type:PlayerNear]
-	  [UseTrigger:true]
-	  [TargetDistance:5000]
-	  [MaxActions:1]
-	  
-	  [Actions:GVE-RE-Boss-SwarmLeader-Action-WarnPlayer]
-	  
-      </Description>      
-    </EntityComponent>
-
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-SwarmLeader-Action-WarnPlayer</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Action]
-      
-      [UseChatBroadcast:true]
-      [ChatData:GVE-RE-Boss-SwarmLeader-Chat-WarnPlayer]
-
-      </Description>
-    </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-SwarmLeader-Chat-WarnPlayer</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Chat]
-      
-      [UseChat:true]
-      [StartsReady:true]
-      [Chance:100]
-      [MaxChats:1]
-      [BroadcastRandomly:true]
-      
-      [Author:{GridName}]
-      [Color:Red]
-      
-      [ChatMessages:Brown Alert! Hope you brought a change of pants!]
-      [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Chat]
-	  
-      [ChatMessages:Pilot {PlayerName}, stand down and leave the area. This is a restricted sector.]
-      [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Chat]
-
-      [ChatMessages:Looks like we have a contestant! Are you ready?]
-      [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Chat]
-      
-      [ChatMessages:Get a load of this guy, {PlayerName} thinks they can take us?]
-      [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Chat]
-
-      </Description>      
-    </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-SwarmLeader-Trigger-TakeDamage</SubtypeId>
+          <SubtypeId>GVE-SCS-Reavers-Trigger-TakeDamage</SubtypeId>
       </Id>
       <Description>
 
@@ -198,147 +174,35 @@
       [Type:Damage]
 	  [UseTrigger:true]
 	  [DamageTypes:Any]
-	  [MaxActions:3]
-	  [MinCooldownMs:3000]
-	  [MaxCooldownMs:5000]
+	  [MaxActions:2]
+	  [MinCooldownMs:60000]
+	  [MaxCooldownMs:90000]
 
-	  [Actions:GVE-RE-Boss-SwarmLeader-Action-BattleChatter]
+	  [Actions:GVE-SCS-Reavers-Action-CallBackup]
 	  
       </Description>      
     </EntityComponent>
-		
+			
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-SwarmLeader-Action-BattleChatter</SubtypeId>
+          <SubtypeId>GVE-SCS-Reavers-Action-CallBackup</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Action]
-      
-      [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-SwarmLeader-Chat-BattleChatter]
-	  
-      </Description>
-    </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-SwarmLeader-Chat-BattleChatter</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Chat]
-      
-      [UseChat:true]
-      [StartsReady:true]
-      [Chance:100]
-      [MaxChats:3]
-      [BroadcastRandomly:true]
-      [Author:{GridName}]
-      [Color:Red]
-      
-      [ChatMessages:You can't take all of us.]
-      [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Chat]
-	  
-	  [ChatMessages:We have you far outnumbered. Give up now.]
-      [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Chat]
-
-      [ChatMessages:We have children on board, please hold you fire.]
-      [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Chat]
-	  
-	  [ChatMessages:You don't stand a chance.]
-      [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Chat]
-
-	  [ChatMessages:You're going to regret this.]
-      [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Chat]
-
-      </Description>
-    </EntityComponent>
-		
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-SwarmLeader-Trigger-CallBackup</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Trigger]
-	  
-      [Type:PlayerNear]
-	  [UseTrigger:true]
-	  [TargetDistance:2000]
-	  [StartsReady:true]
-	  [MaxActions:15]
-	  [MinCooldownMs:1000]
-	  [MaxCooldownMs:5000]
-
-	  [Actions:GVE-RE-Boss-SwarmLeader-Action-CallBackup]
-
-      </Description>
-    </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-SwarmLeader-Action-CallBackup</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Action]
-	  
-	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-SwarmLeader-Chat-CallBackup]
-
+	  [SwitchToReceivedTarget:true]
+		  
 	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-SwarmLeader-DDS-Fighter-Spawner]
+	  [Spawner:GVE-SCS-Reavers-Spawner-Backup]
 	  
       </Description>
     </EntityComponent>
-	
+		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-SwarmLeader-Chat-CallBackup</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Chat]
-      
-      [UseChat:true]
-      [StartsReady:true]
-      [Chance:100]
-      [MaxChats:1]
-      [BroadcastRandomly:true]
-      
-      [Author:{GridName}]
-      [Color:Red]
-      
-      [ChatMessages:Disengage stealth mode and attack.]
-      [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Chat]
-	  
-	  [ChatMessages:Lock S-Foils in attack position.]
-      [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Chat]
-
-	  [ChatMessages:Squadron, form up on me.]
-      [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Chat]
-
-      </Description>
-    </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-SwarmLeader-DDS-Fighter-Spawner</SubtypeId>
+          <SubtypeId>GVE-SCS-Reavers-Spawner-Backup</SubtypeId>
       </Id>
       <Description>
 
@@ -350,10 +214,15 @@
 
       [MaxSpawns:20]
       
-      [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
-	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
-	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
-	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
+      [SpawnGroups:(NPC-RVR) Reaver Fighter]
+	  [SpawnGroups:(NPC-RVR) Reaver Assault Corvette]
+	  [SpawnGroups:(NPC-RVR) Reaver Strike Corvette]
+	  [SpawnGroups:(NPC-RVR) Reaver Harpoon Corvette]
+	  [SpawnGroups:(NPC-RVR) Reaver Heavy Corvette]
+	  [SpawnGroups:(NPC-RVR) Reaver Trans-U]
+	  [SpawnGroups:(NPC-RVR) Reaver Heavy Frigate]
+	  [SpawnGroups:(NPC-RVR) Reaver Team 1]
+	  [SpawnGroups:(NPC-RVR) Reaver Team 2]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:1000]
@@ -363,5 +232,49 @@
       </Description>
     </EntityComponent>
 	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-SCS-Reavers-Behavior-Backup</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Fighter]
+	  [UseBarrageFire:false]
+	  [UseTurrets:true]
+	  [IdealMaxSpeed:100]
+	  [AngleAllowedForForwardThrust:45]
+	  [UseVanillaCollisionAvoidance:false]
+	  [UseStuckMovementCorrection:true]
+	  [AllowStrafing:true]
+	  [StrafeMinDurationMs:1500]
+	  [StrafeMaxDurationMs:20000]
+	  [StrafeMinCooldownMs:1]
+	  [StrafeMaxCooldownMs:1]
+	  [StrafeSpeedCutOff:140]
+	  [StrafeDistanceCutOff:1500]
+	  [FighterEngageDistanceSpace:700]
+	  [FighterDisengageDistanceSpace:900]
+	  [UseVelocityCollisionEvasion:true]
+	  [CollisionEvasionWaypointDistance:600]
+	  [CollisionEvasionResumeDistance:300]
+	  [CollisionEvasionResumeTime:7]
+	  [RotationMultiplier:1]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:15000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
+	  	  
+	  [TargetData:GVE-SCS-Reavers-Target-Broadcasts]
+	  
+      </Description>
+    </EntityComponent>
+
   </EntityComponents>
 </Definitions>
