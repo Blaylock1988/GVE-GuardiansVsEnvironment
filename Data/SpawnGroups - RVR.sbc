@@ -11,6 +11,10 @@
 
 			[Modular Encounters SpawnGroup]
 			[SpaceCargoShip:true]
+			[DisableDampeners:true]
+			[UseRivalAi:true]
+			[RivalAiSpaceSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
 			[FactionOwner:REAVER]
 			[ReplenishSystems:true]
 			[AssignGridSkin:Battered_Armor]
@@ -21,11 +25,21 @@
 			[MaximumBlocksPercent:25]
 			[MinimumBuildPercent:0]
 			[MaximumBuildPercent:100]
-			
 			[MinSpawnFromWorldCenter:4000000]
 			[GridsAreEditable:false]
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:75]
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			[IgnoreCleanupRules:true]
 
       </Description>
 	  <IsPirate>true</IsPirate>
@@ -40,6 +54,7 @@
           </Position>
           <BeaconText>Fighter</BeaconText>
           <Speed>25.0</Speed>
+		  <Behaviour>GVE-SCS-Reavers-Behavior-Start</Behaviour>
         </Prefab>
       </Prefabs>
     </SpawnGroup>
@@ -53,6 +68,9 @@
 
 			[Modular Encounters SpawnGroup]
 			[SpaceCargoShip:true]
+			[UseRivalAi:true]
+			[RivalAiSpaceSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
 			[FactionOwner:REAVER]
 			[ReplenishSystems:true]
 			[AssignGridSkin:Battered_Armor]
@@ -63,11 +81,21 @@
 			[MaximumBlocksPercent:25]
 			[MinimumBuildPercent:0]
 			[MaximumBuildPercent:100]
-			
 			[MinSpawnFromWorldCenter:4000000]
 			[GridsAreEditable:false]
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:75]
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			[IgnoreCleanupRules:true]
 
       </Description>
 	  <IsPirate>true</IsPirate>
@@ -82,6 +110,7 @@
           </Position>
           <BeaconText>Assault Corvette</BeaconText>
           <Speed>25.0</Speed>
+		  <Behaviour>GVE-SCS-Reavers-Behavior-Start</Behaviour>
         </Prefab>
       </Prefabs>
     </SpawnGroup>
@@ -95,6 +124,9 @@
 
 			[Modular Encounters SpawnGroup]
 			[SpaceCargoShip:true]
+			[UseRivalAi:true]
+			[RivalAiSpaceSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
 			[FactionOwner:REAVER]
 			[ReplenishSystems:true]
 			[AssignGridSkin:Battered_Armor]
@@ -105,11 +137,21 @@
 			[MaximumBlocksPercent:25]
 			[MinimumBuildPercent:0]
 			[MaximumBuildPercent:100]
-			
 			[MinSpawnFromWorldCenter:4000000]
 			[GridsAreEditable:false]
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:75]
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			[IgnoreCleanupRules:true]
 
       </Description>
 	  <IsPirate>true</IsPirate>
@@ -124,6 +166,7 @@
           </Position>
           <BeaconText>Strike Corvette</BeaconText>
           <Speed>25.0</Speed>
+		  <Behaviour>GVE-SCS-Reavers-Behavior-Start</Behaviour>
         </Prefab>
       </Prefabs>
     </SpawnGroup>
@@ -137,6 +180,9 @@
 
 			[Modular Encounters SpawnGroup]
 			[SpaceCargoShip:true]
+			[UseRivalAi:true]
+			[RivalAiSpaceSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
 			[FactionOwner:REAVER]
 			[ReplenishSystems:true]
 			[AssignGridSkin:Battered_Armor]
@@ -147,11 +193,21 @@
 			[MaximumBlocksPercent:25]
 			[MinimumBuildPercent:0]
 			[MaximumBuildPercent:100]
-			
 			[MinSpawnFromWorldCenter:4000000]
 			[GridsAreEditable:false]
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:75]
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			[IgnoreCleanupRules:true]
 
       </Description>
 	  <IsPirate>true</IsPirate>
@@ -166,6 +222,7 @@
           </Position>
           <BeaconText>Harpoon Corvette</BeaconText>
           <Speed>25.0</Speed>
+		  <Behaviour>GVE-SCS-Reavers-Behavior-Start</Behaviour>
         </Prefab>
       </Prefabs>
     </SpawnGroup>
@@ -179,6 +236,9 @@
 
 			[Modular Encounters SpawnGroup]
 			[SpaceCargoShip:true]
+			[UseRivalAi:true]
+			[RivalAiSpaceSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
 			[FactionOwner:REAVER]
 			[ReplenishSystems:true]
 			[AssignGridSkin:Battered_Armor]
@@ -189,11 +249,21 @@
 			[MaximumBlocksPercent:25]
 			[MinimumBuildPercent:0]
 			[MaximumBuildPercent:100]
-			
 			[MinSpawnFromWorldCenter:4000000]
 			[GridsAreEditable:false]
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:75]
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			[IgnoreCleanupRules:true]
 
       </Description>
 	  <IsPirate>true</IsPirate>
@@ -208,6 +278,7 @@
           </Position>
           <BeaconText>Heavy Corvette</BeaconText>
           <Speed>25.0</Speed>
+		  <Behaviour>GVE-SCS-Reavers-Behavior-Start</Behaviour>
         </Prefab>
       </Prefabs>
     </SpawnGroup>
@@ -221,6 +292,9 @@
 
 			[Modular Encounters SpawnGroup]
 			[SpaceCargoShip:true]
+			[UseRivalAi:true]
+			[RivalAiSpaceSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
 			[FactionOwner:REAVER]
 			[ReplenishSystems:true]
 			[AssignGridSkin:Battered_Armor]
@@ -231,11 +305,21 @@
 			[MaximumBlocksPercent:25]
 			[MinimumBuildPercent:0]
 			[MaximumBuildPercent:100]
-			
 			[MinSpawnFromWorldCenter:4000000]
 			[GridsAreEditable:false]
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:75]
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			[IgnoreCleanupRules:true]
 
       </Description>
 	  <IsPirate>true</IsPirate>
@@ -250,6 +334,7 @@
           </Position>
           <BeaconText>Trans-U</BeaconText>
           <Speed>25.0</Speed>
+		  <Behaviour>GVE-SCS-Reavers-Behavior-Start</Behaviour>
         </Prefab>
       </Prefabs>
     </SpawnGroup>
@@ -263,6 +348,9 @@
 
 			[Modular Encounters SpawnGroup]
 			[SpaceCargoShip:true]
+			[UseRivalAi:true]
+			[RivalAiSpaceSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
 			[FactionOwner:REAVER]
 			[ReplenishSystems:true]
 			[AssignGridSkin:Battered_Armor]
@@ -273,11 +361,21 @@
 			[MaximumBlocksPercent:25]
 			[MinimumBuildPercent:0]
 			[MaximumBuildPercent:100]
-			
 			[MinSpawnFromWorldCenter:4000000]
 			[GridsAreEditable:false]
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:75]
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			[IgnoreCleanupRules:true]
 
       </Description>
 	  <IsPirate>true</IsPirate>
@@ -292,6 +390,7 @@
           </Position>
           <BeaconText>Heavy Frigate</BeaconText>
           <Speed>25.0</Speed>
+		  <Behaviour>GVE-SCS-Reavers-Behavior-Start</Behaviour>
         </Prefab>
       </Prefabs>
     </SpawnGroup>
@@ -306,6 +405,9 @@
 
 			[Modular Encounters SpawnGroup]
 			[SpaceCargoShip:true]
+			[UseRivalAi:true]
+			[RivalAiSpaceSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
 			[FactionOwner:REAVER]
 			[ReplenishSystems:true]
 			[AssignGridSkin:Battered_Armor]
@@ -316,11 +418,21 @@
 			[MaximumBlocksPercent:25]
 			[MinimumBuildPercent:0]
 			[MaximumBuildPercent:100]
-			
 			[MinSpawnFromWorldCenter:4000000]
 			[GridsAreEditable:false]
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:75]
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			[IgnoreCleanupRules:true]
 
       </Description>
 	  <IsPirate>true</IsPirate>
@@ -334,6 +446,7 @@
           </Position>
           <BeaconText>Fighter</BeaconText>
           <Speed>25.0</Speed>
+		  <Behaviour>GVE-SCS-Reavers-Behavior-Backup</Behaviour>
         </Prefab>
 		<Prefab SubtypeId="(NPC-RVR) Reaver Assault Corvette">
           <Position>
@@ -341,8 +454,9 @@
             <Y>300.0</Y>
             <Z>0.0</Z>
           </Position>
-          <BeaconText>Fighter</BeaconText>
+          <BeaconText>Assault Corvette</BeaconText>
           <Speed>25.0</Speed>
+		  <Behaviour>GVE-SCS-Reavers-Behavior-Start</Behaviour>
         </Prefab>
 		<Prefab SubtypeId="(NPC-RVR) Reaver Strike Corvette">
           <Position>
@@ -352,6 +466,7 @@
           </Position>
           <BeaconText>Strike Corvette</BeaconText>
           <Speed>25.0</Speed>
+		  <Behaviour>GVE-SCS-Reavers-Behavior-Backup</Behaviour>
         </Prefab>
       </Prefabs>
     </SpawnGroup>
@@ -366,6 +481,9 @@
 
 			[Modular Encounters SpawnGroup]
 			[SpaceCargoShip:true]
+			[UseRivalAi:true]
+			[RivalAiSpaceSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
 			[FactionOwner:REAVER]
 			[ReplenishSystems:true]
 			[AssignGridSkin:Battered_Armor]
@@ -376,11 +494,21 @@
 			[MaximumBlocksPercent:25]
 			[MinimumBuildPercent:0]
 			[MaximumBuildPercent:100]
-			
 			[MinSpawnFromWorldCenter:4000000]
 			[GridsAreEditable:false]
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:75]
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			[IgnoreCleanupRules:true]
 
       </Description>
 	  <IsPirate>true</IsPirate>
@@ -394,6 +522,7 @@
           </Position>
           <BeaconText>Harpoon Corvette</BeaconText>
           <Speed>25.0</Speed>
+		  <Behaviour>GVE-SCS-Reavers-Behavior-Backup</Behaviour>
         </Prefab>
 		<Prefab SubtypeId="(NPC-RVR) Reaver Heavy Corvette">
           <Position>
@@ -403,6 +532,7 @@
           </Position>
           <BeaconText>Heavy Corvette</BeaconText>
           <Speed>25.0</Speed>
+		  <Behaviour>GVE-SCS-Reavers-Behavior-Backup</Behaviour>
         </Prefab>
 		<Prefab SubtypeId="(NPC-RVR) Reaver Trans-U">
           <Position>
@@ -412,6 +542,7 @@
           </Position>
           <BeaconText>Reaver Trans-U</BeaconText>
           <Speed>25.0</Speed>
+		  <Behaviour>GVE-SCS-Reavers-Behavior-Start</Behaviour>
         </Prefab>
       </Prefabs>
     </SpawnGroup>
