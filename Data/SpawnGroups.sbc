@@ -46,6 +46,7 @@
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Donnager GreekLetter RandomNumber-RandomChar]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			[IgnoreCleanupRules:true]
 			
 			[BossCustomAnnounceEnable:true]
 			[BossCustomAnnounceAuthor:GV+ Listening Post]
@@ -111,6 +112,7 @@
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Roughneck GreekLetter RandomNumber-RandomChar]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			[IgnoreCleanupRules:true]
 			
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:35]
@@ -180,6 +182,7 @@
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Squadron Leader GreekLetter RandomNumber-RandomChar]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			[IgnoreCleanupRules:true]
 			
 			[BossCustomAnnounceEnable:true]
 			[BossCustomAnnounceAuthor:GV+ Listening Post]
@@ -269,6 +272,7 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
+			[IgnoreCleanupRules:true]
 			
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:50]
@@ -332,6 +336,7 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
+			[IgnoreCleanupRules:true]
 			
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:50]
@@ -394,6 +399,7 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
+			[IgnoreCleanupRules:true]
 			
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:40]
@@ -450,6 +456,7 @@
 			[GridsAreDestructable:false]
 			[GridsAreEditable:false]
 			[ForceStaticGrid:true]
+			[IgnoreCleanupRules:true]
 						
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Listening Post: Player Alert NatoLetter-RandomNumberRandomChar]
@@ -521,6 +528,7 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:false]
+			[IgnoreCleanupRules:true]
 						
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Nauvoo Distress Signal: NatoLetter-RandomNumberRandomChar]
@@ -581,6 +589,7 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
+			[IgnoreCleanupRules:true]
 			
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:20]
@@ -637,10 +646,47 @@
 					<Z>0.0</Z>
 				 </Position>
 				 <BeaconText>Super Gremlin</BeaconText>
-				 <Speed>25.0</Speed>
+				 <Speed>0</Speed>
 			  </Prefab>
 		   </Prefabs>
 		</SpawnGroup>
+		
+		<SpawnGroup>
+		   <Id>
+			  <TypeId>SpawnGroupDefinition</TypeId>
+			  <SubtypeId>(NPC-GVE) Inner Worlds Territory</SubtypeId>
+		   </Id>
+		   <Description>
+
+		   [Modular Encounters Territory]
+		   
+		   [Name:Inner Worlds Territory]
+		   [Type:Static]
+		   [Radius:4000000]
+		   [CoordsX:0]
+		   [CoordsY:0]
+		   [CoordsZ:0]
+		   [AnnounceArriveDepart:true]
+		   [CustomArriveMessage:Returning to inner worlds region.]
+		   [CustomDepartMessage:Approaching deep space. Beware of unknown dangers.]
+
+		   </Description>
+		   <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+		   <Frequency>30.0</Frequency>
+		   <IsPirate>true</IsPirate>
+		   <Prefabs>
+			  <Prefab SubtypeId="GVE-NPC Player Announcer">
+				 <Position>
+					<X>0.0</X>
+					<Y>0.0</Y>
+					<Z>0.0</Z>
+				 </Position>
+				 <BeaconText>Super Gremlin</BeaconText>
+				 <Speed>0</Speed>
+			  </Prefab>
+		   </Prefabs>
+		</SpawnGroup>
+
 
 	<!--Do Not Edit Below Here-->
 	</SpawnGroups>

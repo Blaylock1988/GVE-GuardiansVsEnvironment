@@ -27,6 +27,12 @@
 	  [RotationMultiplier:1.25]
 	  [UseAmmoReplenish:true]
 	  [AmmoReplenishClipAmount:100]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
 	  
 	  [Triggers:GVE-RE-Boss-SwarmLeader-Trigger-PlayerDistant]
 	  [Triggers:GVE-RE-Boss-SwarmLeader-Trigger-PlayerApproach]
@@ -36,7 +42,7 @@
       </Description>
     </EntityComponent>
 	
-		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
           <SubtypeId>GVE-RE-Boss-SwarmLeader-Trigger-PlayerDistant</SubtypeId>

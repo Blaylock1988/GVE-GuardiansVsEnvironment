@@ -27,6 +27,12 @@
 	  [RotationMultiplier:1.25]
 	  [UseAmmoReplenish:true]
 	  [AmmoReplenishClipAmount:100]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
 	  
       </Description>
     </EntityComponent>
@@ -49,6 +55,12 @@
 	  [RotationMultiplier:1.25]
 	  [UseAmmoReplenish:true]
 	  [AmmoReplenishClipAmount:100]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
 	  
       </Description>
     </EntityComponent>
@@ -77,9 +89,16 @@
 	  [UseVelocityCollisionEvasion:true]
 	  [StrikeEngageUseCollisionEvasion:true]
 	  [RotationMultiplier:1.25]
-	  [AngleAllowedForForwardThrust:60]
 	  [UseAmmoReplenish:true]
 	  [AmmoReplenishClipAmount:100]
+	  [AngleAllowedForForwardThrust:60]
+	  [UseAmmoReplenish:true]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
 	  
       </Description>
     </EntityComponent>
@@ -115,6 +134,12 @@
 	  [RotationMultiplier:1]
 	  [UseAmmoReplenish:true]
 	  [AmmoReplenishClipAmount:100]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
 	  
 	  [Triggers:GVE-Behavior-Fighter-Test-Trigger]
 	  	  

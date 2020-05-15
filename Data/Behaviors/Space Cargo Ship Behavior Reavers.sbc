@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-SCS-Reavers-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Fighter]
+	  [UseBarrageFire:false]
+	  [UseTurrets:true]
+	  [IdealMaxSpeed:100]
+	  [AngleAllowedForForwardThrust:45]
+	  [UseVanillaCollisionAvoidance:false]
+	  [UseStuckMovementCorrection:true]
+	  [AllowStrafing:true]
+	  [StrafeMinDurationMs:1500]
+	  [StrafeMaxDurationMs:20000]
+	  [StrafeMinCooldownMs:1]
+	  [StrafeMaxCooldownMs:1]
+	  [StrafeSpeedCutOff:140]
+	  [StrafeDistanceCutOff:1500]
+	  [FighterEngageDistanceSpace:700]
+	  [FighterDisengageDistanceSpace:900]
+	  [UseVelocityCollisionEvasion:true]
+	  [CollisionEvasionWaypointDistance:600]
+	  [CollisionEvasionResumeDistance:300]
+	  [CollisionEvasionResumeTime:10]
+	  [RotationMultiplier:1]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:15000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
+
+	  
+	  [Triggers:GVE-SCS-Reavers-Trigger-NoticeBroadcasts]
+	  [Triggers:GVE-SCS-Reavers-Trigger-TakeDamage]
+	  
+	  [TargetData:GVE-SCS-Reavers-Target-Broadcasts]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-SCS-Reavers-Target-Broadcasts</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Target]
+      
+      [UseCustomTargeting:true]
+      
+      [Target:Player]
+	  [TimeUntilTargetAcquisition:15]
+	  [MaxDistance:5000]
+	  [Distance:Closest]
+	  [Relations:Enemy]
+	  [Filters:IgnoreSafeZone]
+	  [Filters:IsBroadcasting]
+	  [UseTimeout:true]
+	  [MinTimeout:300]
+	  [MaxTimeout:400]
+	  
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-SCS-Reavers-TargetUnstable-Broadcasts</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Target]
+      
+      [UseCustomTargeting:false]
+      
+      [Target:Grid]
+	  [TimeUntilTargetAcquisition:15]
+	  [MaxDistance:5000]
+	  [MatchAllFilters:Broadcasting]
+	  [MatchAllFilters:OutsideOfSafezone]
+	  [MatchAllFilters:Relation]
+	  [GetTargetBy:ClosestDistance]
+	  [Relations:Enemy]
+	  [UseTargetRefresh:true]
+	  [TimeUntilNextRefresh:300]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-SCS-Reavers-Trigger-NoticeBroadcasts</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [TargetDistance:5000]
+	  [MaxActions:1]
+	  
+	  [Actions:GVE-SCS-Reavers-Action-NoticeBroadcasts]
+	  
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-SCS-Reavers-Action-NoticeBroadcasts</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	       
+      [UseChatBroadcast:true]
+      [ChatData:GVE-SCS-Reavers-Chat-NoticeBroadcasts]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-SCS-Reavers-Chat-NoticeBroadcasts</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+	  [IgnoreAntennaRequirement:true]
+	  [IgnoredAntennaRangeOverride:50000]
+
+      
+      [Author:{GridName}]
+      [Color:Red]
+      	  
+      [ChatMessages:Nearby Reavers are searching for active signals]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Notify]
+
+      </Description>      
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-SCS-Reavers-Trigger-TakeDamage</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Damage]
+	  [UseTrigger:true]
+	  [DamageTypes:Any]
+	  [MaxActions:2]
+	  [MinCooldownMs:60000]
+	  [MaxCooldownMs:90000]
+
+	  [Actions:GVE-SCS-Reavers-Action-CallBackup]
+	  
+      </Description>      
+    </EntityComponent>
+			
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-SCS-Reavers-Action-CallBackup</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  [SwitchToReceivedTarget:true]
+		  
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-SCS-Reavers-Spawner-Backup]
+	  
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-SCS-Reavers-Spawner-Backup</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Spawn]
+      
+      [UseSpawn:true]
+      
+      [StartsReady:true]
+
+      [MaxSpawns:20]
+      
+      [SpawnGroups:(NPC-RVR) Reaver Fighter]
+	  [SpawnGroups:(NPC-RVR) Reaver Assault Corvette]
+	  [SpawnGroups:(NPC-RVR) Reaver Strike Corvette]
+	  [SpawnGroups:(NPC-RVR) Reaver Harpoon Corvette]
+	  [SpawnGroups:(NPC-RVR) Reaver Heavy Corvette]
+	  [SpawnGroups:(NPC-RVR) Reaver Trans-U]
+	  [SpawnGroups:(NPC-RVR) Reaver Heavy Frigate]
+	  [SpawnGroups:(NPC-RVR) Reaver Team 1]
+	  [SpawnGroups:(NPC-RVR) Reaver Team 2]
+
+      [UseRelativeSpawnPosition:false]
+      [MinDistance:1000]
+      [MaxDistance:4000]
+      [IgnoreSafetyChecks:false]
+      
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-SCS-Reavers-Behavior-Backup</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Fighter]
+	  [UseBarrageFire:false]
+	  [UseTurrets:true]
+	  [IdealMaxSpeed:100]
+	  [AngleAllowedForForwardThrust:45]
+	  [UseVanillaCollisionAvoidance:false]
+	  [UseStuckMovementCorrection:true]
+	  [AllowStrafing:true]
+	  [StrafeMinDurationMs:1500]
+	  [StrafeMaxDurationMs:20000]
+	  [StrafeMinCooldownMs:1]
+	  [StrafeMaxCooldownMs:1]
+	  [StrafeSpeedCutOff:140]
+	  [StrafeDistanceCutOff:1500]
+	  [FighterEngageDistanceSpace:700]
+	  [FighterDisengageDistanceSpace:900]
+	  [UseVelocityCollisionEvasion:true]
+	  [CollisionEvasionWaypointDistance:600]
+	  [CollisionEvasionResumeDistance:300]
+	  [CollisionEvasionResumeTime:7]
+	  [RotationMultiplier:1]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:15000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
+	  	  
+	  [TargetData:GVE-SCS-Reavers-Target-Broadcasts]
+	  
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

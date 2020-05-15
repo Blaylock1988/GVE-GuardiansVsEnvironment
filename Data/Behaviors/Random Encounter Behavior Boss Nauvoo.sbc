@@ -15,6 +15,12 @@
 	  [RotationMultiplier:0.5]
 	  [UseAmmoReplenish:true]
 	  [AmmoReplenishClipAmount:100]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
 	  
 	  [Triggers:GVE-RE-Boss-Nauvoo-Trigger-PlayerDistant]
 	  [Triggers:GVE-RE-Boss-Nauvoo-Trigger-PlayerApproach]
@@ -346,7 +352,6 @@
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
 	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
-
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:850]
