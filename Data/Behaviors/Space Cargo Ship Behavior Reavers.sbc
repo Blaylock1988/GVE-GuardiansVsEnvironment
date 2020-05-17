@@ -36,9 +36,9 @@
 	  [AmmoReplenishClipAmount:100]
 	  [UsePlayerDistanceTimer:true]
 	  [PlayerDistanceTimerTrigger:5]
-	  [PlayerDistanceTrigger:15000]
+	  [PlayerDistanceTrigger:10000]
 	  [UseNoTargetTimer:true]
-	  [NoTargetTimerTrigger:600]
+	  [NoTargetTimerTrigger:300]
 	  [UseRetreatTimer:false]
 
 	  
@@ -49,8 +49,8 @@
 	  
       </Description>
     </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
           <SubtypeId>GVE-SCS-Reavers-Target-Broadcasts</SubtypeId>
@@ -64,38 +64,14 @@
       [Target:Player]
 	  [TimeUntilTargetAcquisition:15]
 	  [MaxDistance:5000]
-	  [Distance:Closest]
-	  [Relations:Enemy]
-	  [Filters:IgnoreSafeZone]
-	  [Filters:IsBroadcasting]
-	  [UseTimeout:true]
-	  [MinTimeout:300]
-	  [MaxTimeout:400]
-	  
-      </Description>
-    </EntityComponent>
-	
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-SCS-Reavers-TargetUnstable-Broadcasts</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Target]
-      
-      [UseCustomTargeting:false]
-      
-      [Target:Grid]
-	  [TimeUntilTargetAcquisition:15]
-	  [MaxDistance:5000]
 	  [MatchAllFilters:Broadcasting]
 	  [MatchAllFilters:OutsideOfSafezone]
-	  [MatchAllFilters:Relation]
-	  [GetTargetBy:ClosestDistance]
+	  [MatchAnyFilters:Relation]
 	  [Relations:Enemy]
+	  [Relations:Neutral]
+	  [GetTargetBy:HighestTargetValue]
 	  [UseTargetRefresh:true]
-	  [TimeUntilNextRefresh:300]
+	  [TimeUntilNextRefresh:120]
 	  
       </Description>
     </EntityComponent>
@@ -109,9 +85,8 @@
 
       [RivalAI Trigger]
 	  
-      [Type:PlayerNear]
+      [Type:AcquiredTarget]
 	  [UseTrigger:true]
-	  [TargetDistance:5000]
 	  [MaxActions:1]
 	  
 	  [Actions:GVE-SCS-Reavers-Action-NoticeBroadcasts]
@@ -127,7 +102,7 @@
       <Description>
 
       [RivalAI Action]
-	       
+	  	       
       [UseChatBroadcast:true]
       [ChatData:GVE-SCS-Reavers-Chat-NoticeBroadcasts]
 
@@ -155,7 +130,7 @@
       [Author:{GridName}]
       [Color:Red]
       	  
-      [ChatMessages:Nearby Reavers are searching for active signals]
+      [ChatMessages:{PlayerName}'s antenna or beacon has drawn the attention of Nearby Reavers]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Notify]
 
@@ -174,9 +149,9 @@
       [Type:Damage]
 	  [UseTrigger:true]
 	  [DamageTypes:Any]
-	  [MaxActions:2]
-	  [MinCooldownMs:60000]
-	  [MaxCooldownMs:90000]
+	  [MaxActions:20]
+	  [MinCooldownMs:15000]
+	  [MaxCooldownMs:30000]
 
 	  [Actions:GVE-SCS-Reavers-Action-CallBackup]
 	  
@@ -191,6 +166,7 @@
       <Description>
 
       [RivalAI Action]
+	  
 	  [SwitchToReceivedTarget:true]
 		  
 	  [SpawnEncounter:true]
@@ -212,7 +188,7 @@
       
       [StartsReady:true]
 
-      [MaxSpawns:20]
+      [MaxSpawns:1]
       
       [SpawnGroups:(NPC-RVR) Reaver Fighter]
 	  [SpawnGroups:(NPC-RVR) Reaver Assault Corvette]
