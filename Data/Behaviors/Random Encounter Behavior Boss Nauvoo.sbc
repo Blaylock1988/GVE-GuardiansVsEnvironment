@@ -83,8 +83,7 @@
       [Chance:100]
       [MaxChats:1]
       [BroadcastRandomly:true]
-	  [IgnoreAntennaRequirement:true]
-	  [IgnoredAntennaRangeOverride:60000]
+	  [SendToAllOnlinePlayers:true]
       
       [Author:Nauvoo]
       [Color:White]
@@ -98,6 +97,10 @@
       [BroadcastChatType:Chat]
 
       [ChatMessages:If anyone is reading this, we are under attack by pirates!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:Requesting assistance from all nearby pilots. Our ship is under attack by pirates in the Red Nebula!]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Chat]
       
