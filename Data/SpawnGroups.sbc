@@ -48,9 +48,7 @@
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			[IgnoreCleanupRules:true]
 			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
-			[DisableBlocksWithName:Beacon] <!--because disposable beacons default on-->
-			[AllowPartialNames:true]			
+			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]			
 			[BossCustomAnnounceEnable:true]
 			[BossCustomAnnounceAuthor:GV+ Listening Post]
 			[BossCustomAnnounceMessage:Pirate Activity Alert in Stalinium Nebula]
@@ -117,9 +115,7 @@
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			[IgnoreCleanupRules:true]
 			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
-			[DisableBlocksWithName:Beacon] <!--because disposable beacons default on-->
-			[AllowPartialNames:true]			
+			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]			
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:35]
 			
@@ -190,9 +186,7 @@
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			[IgnoreCleanupRules:true]
 			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
-			[DisableBlocksWithName:Beacon] <!--because disposable beacons default on-->
-			[AllowPartialNames:true]			
+			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]			
 			[BossCustomAnnounceEnable:true]
 			[BossCustomAnnounceAuthor:GV+ Listening Post]
 			[BossCustomAnnounceMessage:Pirate Activity Alert in Stalinium Nebula]
@@ -283,9 +277,7 @@
 			[TurretTargetNeutrals:true]
 			[IgnoreCleanupRules:true]
 			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
-			[DisableBlocksWithName:Beacon] <!--because disposable beacons default on-->
-			[AllowPartialNames:true]			
+			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]			
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:50]
 			
@@ -350,9 +342,7 @@
 			[TurretTargetNeutrals:true]
 			[IgnoreCleanupRules:true]
 			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
-			[DisableBlocksWithName:Beacon] <!--because disposable beacons default on-->
-			[AllowPartialNames:true]			
+			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]			
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:50]
 			
@@ -416,9 +406,7 @@
 			[TurretTargetNeutrals:true]
 			[IgnoreCleanupRules:true]
 			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
-			[DisableBlocksWithName:Beacon] <!--because disposable beacons default on-->
-			[AllowPartialNames:true]
+			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]			
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:40]
 			
@@ -476,10 +464,7 @@
 			[ForceStaticGrid:true]
 			[IgnoreCleanupRules:true]
 			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
-			[DisableBlocksWithName:Beacon] <!--because disposable beacons default on-->
-			[AllowPartialNames:true]
-			
+			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]						
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Listening Post: Player Alert NatoLetter-RandomNumberRandomChar]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
@@ -553,8 +538,6 @@
 			[IgnoreCleanupRules:true]
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
-			[DisableBlocksWithName:Beacon] <!--because disposable beacons default on-->
-			[AllowPartialNames:true]
 						
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Nauvoo Distress Signal: NatoLetter-RandomNumberRandomChar]
@@ -628,7 +611,7 @@
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
 			<IsPirate>true</IsPirate>
-			<Frequency>2.0</Frequency>
+			<Frequency>3.0</Frequency>
 			<Prefabs>
 				<Prefab SubtypeId="GVE-NPC Tempano Ravager">
 					<Position>
@@ -636,7 +619,6 @@
 						<Y>0.0</Y>
 						<Z>0.0</Z>
 					</Position>
-					<BeaconText>Tempano Ravager</BeaconText>
 					<Speed>50</Speed>
 					<Behaviour>GVE-Behavior-Fighter-Test</Behaviour>
 				</Prefab>

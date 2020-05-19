@@ -281,7 +281,7 @@
 	  [UseTrigger:true]
 	  [TargetDistance:2000]
 	  [StartsReady:true]
-	  [MaxActions:8]
+	  [MaxActions:15]
 	  [MinCooldownMs:1000]
 	  [MaxCooldownMs:5000]
 
@@ -354,7 +354,7 @@
       
       [StartsReady:true]
 
-      [MaxSpawns:8]
+      [MaxSpawns:20]
       
       [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
