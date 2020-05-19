@@ -276,7 +276,7 @@
 	  [UseTrigger:true]
 	  [TargetDistance:5000]
 	  [StartsReady:true]
-	  [MaxActions:20]
+	  [MaxActions:8]
 	  [MinCooldownMs:1000]
 	  [MaxCooldownMs:5000]
 
@@ -349,7 +349,7 @@
       
       [StartsReady:true]
 
-      [MaxSpawns:15]
+      [MaxSpawns:8]
       
 	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
