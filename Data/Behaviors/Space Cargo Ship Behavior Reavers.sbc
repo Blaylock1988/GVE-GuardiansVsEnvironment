@@ -62,14 +62,14 @@
       [UseCustomTargeting:true]
       
       [Target:Player]
-	  [TimeUntilTargetAcquisition:15]
+	  [TimeUntilTargetAcquisition:1]
 	  [MaxDistance:5000]
 	  [MatchAllFilters:Broadcasting]
 	  [MatchAllFilters:OutsideOfSafezone]
 	  [MatchAnyFilters:Relation]
 	  [Relations:Enemy]
 	  [Relations:Neutral]
-	  [GetTargetBy:HighestTargetValue]
+	  [GetTargetBy:FurthestDistance]
 	  [UseTargetRefresh:true]
 	  [TimeUntilNextRefresh:120]
 	  
