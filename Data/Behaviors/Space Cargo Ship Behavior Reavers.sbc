@@ -61,7 +61,7 @@
       
       [UseCustomTargeting:true]
       
-      [Target:Player]
+      [Target:Grid]
 	  [TimeUntilTargetAcquisition:1]
 	  [MaxDistance:5000]
 	  [MatchAllFilters:Broadcasting]
@@ -69,7 +69,7 @@
 	  [MatchAnyFilters:Relation]
 	  [Relations:Enemy]
 	  [Relations:Neutral]
-	  [GetTargetBy:FurthestDistance]
+	  [GetTargetBy:ClosestDistance]
 	  [UseTargetRefresh:true]
 	  [TimeUntilNextRefresh:120]
 	  
