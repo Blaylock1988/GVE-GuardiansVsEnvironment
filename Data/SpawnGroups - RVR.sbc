@@ -40,8 +40,6 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
 			[IgnoreCleanupRules:true]
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
 			[EraseIngameScripts:true]
 
       </Description>
@@ -99,8 +97,6 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
 			[IgnoreCleanupRules:true]
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
 			[EraseIngameScripts:true]
 
       </Description>
@@ -158,8 +154,6 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
 			[IgnoreCleanupRules:true]
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
 			[EraseIngameScripts:true]
 
       </Description>
@@ -217,9 +211,9 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
 			[IgnoreCleanupRules:true]
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
 			[EraseIngameScripts:true]
+			[DisableBlocksWithName:Artificial,Antenna]
+			[AllowPartialNames:true]
 
       </Description>
 	  <IsPirate>true</IsPirate>
@@ -276,8 +270,6 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
 			[IgnoreCleanupRules:true]
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
 			[EraseIngameScripts:true]
 
       </Description>
@@ -335,8 +327,6 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
 			[IgnoreCleanupRules:true]
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
 			[EraseIngameScripts:true]
 
       </Description>
@@ -394,8 +384,6 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
 			[IgnoreCleanupRules:true]
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
 			[EraseIngameScripts:true]
 
       </Description>
@@ -454,8 +442,6 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
 			[IgnoreCleanupRules:true]
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
 			[EraseIngameScripts:true]
 
       </Description>
@@ -533,8 +519,6 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
 			[IgnoreCleanupRules:true]
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
 			[EraseIngameScripts:true]
 
       </Description>
