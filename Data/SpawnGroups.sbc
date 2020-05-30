@@ -19,7 +19,7 @@
 			
 			[Territory:Stalinium Asteroid Territory]
 			[MaxDistanceFromTerritoryCenter:10000]
-				
+			
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
 			[DisableDampeners:true]
@@ -31,7 +31,7 @@
 			[GridsAreEditable:false]
 			[ForceStaticGrid:false]
 			[BlockDamageModifier:80]
-						
+			
 			[ChangeTurretSettings:true]
 			[TurretRange:800]
 			[TurretIdleRotation:false]
@@ -47,8 +47,6 @@
 			[RandomGridNamePattern: Donnager GreekLetter RandomNumber-RandomChar]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			[IgnoreCleanupRules:true]
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:true]	
 			[BossCustomAnnounceEnable:true]
@@ -100,7 +98,7 @@
 			[GridsAreDestructable:true]
 			[GridsAreEditable:false]
 			[ForceStaticGrid:false]
-						
+			
 			[ChangeTurretSettings:true]
 			[TurretRange:800]
 			[TurretIdleRotation:false]
@@ -116,10 +114,9 @@
 			[RandomGridNamePattern: Roughneck GreekLetter RandomNumber-RandomChar]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			[IgnoreCleanupRules:true]
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
-			[AllowPartialNames:false]			[OverrideBlockDamageModifier:true]
+			[AllowPartialNames:false]			
+			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:35]
 			
 			[BossCustomAnnounceEnable:true]
@@ -188,8 +185,6 @@
 			[RandomGridNamePattern: Squadron Leader GreekLetter RandomNumber-RandomChar]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			[IgnoreCleanupRules:true]
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:false]
 			[BossCustomAnnounceEnable:true]
@@ -281,10 +276,9 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
 			[IgnoreCleanupRules:true]
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
-			[AllowPartialNames:false]			[OverrideBlockDamageModifier:true]
+			[AllowPartialNames:false]			
+			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:50]
 			
 			[UseRandomNameGenerator:true]
@@ -347,10 +341,9 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
 			[IgnoreCleanupRules:true]
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
-			[AllowPartialNames:false]			[OverrideBlockDamageModifier:true]
+			[AllowPartialNames:false]			
+			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:50]
 			
 			[UseRandomNameGenerator:true]
@@ -412,8 +405,6 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
 			[IgnoreCleanupRules:true]
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:false]			
 			[OverrideBlockDamageModifier:true]
@@ -451,7 +442,7 @@
 			[Modular Encounters SpawnGroup]
 			
 			[BossEncounterSpace:true]
-			[FactionOwner:GV+]
+			[FactionOwner:GVE+]
 			
 			[BossCustomAnnounceEnable:true]
 			[BossCustomAnnounceAuthor:GV+ Listening Post]
@@ -472,8 +463,6 @@
 			[GridsAreEditable:false]
 			[ForceStaticGrid:true]
 			[IgnoreCleanupRules:true]
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:false]
 			[UseRandomNameGenerator:true]
@@ -523,7 +512,7 @@
 			[UniqueEncounter:true]
 			[ShiftBlockColorsHue:false]
 			[RandomHueShift:true]	
-			[UseBlockReplacerProfile:true]
+
 			[ConvertToHeavyArmor:false]
 			[GridsAreDestructable:false]
 			[GridsAreEditable:false]
@@ -547,8 +536,6 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:false]
 			[IgnoreCleanupRules:true]
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:false]
 			[UseRandomNameGenerator:true]
@@ -611,8 +598,6 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
 			[IgnoreCleanupRules:true]
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-DisposableNpcBeacons,MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks]			
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:20]
 			
