@@ -61,7 +61,7 @@
       
       [UseCustomTargeting:true]
       
-      [Target:Grid]
+      [Target:Player]
 	  [TimeUntilTargetAcquisition:1]
 	  [MaxDistance:5000]
 	  [MatchAllFilters:Broadcasting]
