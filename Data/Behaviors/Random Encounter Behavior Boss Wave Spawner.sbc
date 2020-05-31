@@ -1,0 +1,440 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Passive]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:false]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
+	  
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-PlayerDistant]
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave1]
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave2]
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave3]
+	  
+	  [TargetData:RAI-ExampleTargetProfile]
+	  
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-TargetProfile</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Target]
+      
+      [UseCustomTargeting:true]
+      [Target:Player]
+      
+      [MaxDistance:5000]
+      
+      [MatchAllFilters:OutsideOfSafezone]
+      [MatchAllFilters:Owner]
+      [GetTargetBy:ClosestDistance]
+      
+      [Owners:Player]
+
+      </Description>
+      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-PlayerDistant</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [TargetDistance:50000]
+	  [MaxActions:1]
+	  
+	  [Actions:GVE-RE-Boss-WaveSpawner-Action-PlayerDistant]
+	  
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-PlayerDistant</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [ChangeAntennaRanges:true]
+	  [AntennaNamesForRangeChange:NPC Antenna]
+	  [AntennaRangeChangeType:Set]
+	  [AntennaRangeChangeAmount:50000]
+      
+      [UseChatBroadcast:true]
+      [ChatData:GVE-RE-Boss-WaveSpawner-Chat-PlayerDistant]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-PlayerDistant</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:2]
+      [BroadcastRandomly:false]
+	  [SendToAllOnlinePlayers:true]
+      
+      [Author:GVE+ Listening Post]
+      [Color:White]
+      
+      [ChatMessages:Pirate Hoard Preparing to attack.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Both]
+	  
+	  [ChatMessages:Approach Listening Post within 2km to begin Wave 1.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Both]
+	  
+      </Description>      
+    </EntityComponent>
+		
+	<!--Start Wave 1-->
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave1</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [TargetDistance:2000]
+	  [MaxActions:1]
+	  
+	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave1]
+	  
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave1</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [UseChatBroadcast:true]
+	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave1]
+
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave1]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave1</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      
+      [Author:GVE+ Listening Post]
+      [Color:White]
+      
+      [ChatMessages:Wave 1 incoming]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Both]
+
+      </Description>      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave1</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Spawn]
+      
+      [UseSpawn:true]
+      [StartsReady:true]
+      [MaxSpawns:1]
+      
+	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
+
+      [UseRelativeSpawnPosition:false]
+      [MinDistance:4000]
+      [MaxDistance:5000]
+      [IgnoreSafetyChecks:false]
+      
+      </Description>
+    </EntityComponent>
+	
+	<!--Start Wave 2-->
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave2</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [TargetDistance:2000]
+	  [StartsReady:false]
+	  [MaxActions:2]
+	  [MinCooldownMs:60000]
+	  [MaxCooldownMs:60000]
+
+	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave2]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave2</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [UseChatBroadcast:true]
+	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave2]
+
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave2]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave2</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      
+      [Author:GVE+ Listening Post]
+      [Color:White]
+      
+      [ChatMessages:Wave 2 incoming]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Both]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave2</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Spawn]
+      
+      [UseSpawn:true]
+      [StartsReady:true]
+      [MaxSpawns:2]
+      
+	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
+	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
+
+      [UseRelativeSpawnPosition:false]
+      [MinDistance:4000]
+      [MaxDistance:5000]
+      [IgnoreSafetyChecks:false]
+      
+      </Description>
+    </EntityComponent>
+	
+	<!--Start Wave 3-->
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave3</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [TargetDistance:2000]
+	  [StartsReady:false]
+	  [MaxActions:2]
+	  [MinCooldownMs:120000]
+	  [MaxCooldownMs:120000]
+
+	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave3]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave3</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [UseChatBroadcast:true]
+	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave3]
+
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave3]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave3</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      
+      [Author:GVE+ Listening Post]
+      [Color:White]
+      
+      [ChatMessages:Wave 2 incoming]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Both]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave3</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Spawn]
+      
+      [UseSpawn:true]
+      [StartsReady:true]
+      [MaxSpawns:3]
+      
+	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
+	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
+	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
+
+      [UseRelativeSpawnPosition:false]
+      [MinDistance:2000]
+      [MaxDistance:5000]
+      [IgnoreSafetyChecks:false]
+      
+      </Description>
+    </EntityComponent>
+	
+	<!--Completed Hoard-->
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Completed</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+      [UseChatBroadcast:true]
+      [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Completed]
+	  
+	  [TerminateBehavior:true]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Completed</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      
+      [Author:GVE+ Listening Post]
+      [Color:White]
+      
+      [ChatMessages:Hoard Completed!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

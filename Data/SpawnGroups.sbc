@@ -50,7 +50,7 @@
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:true]	
 			[BossCustomAnnounceEnable:true]
-			[BossCustomAnnounceAuthor:GV+ Listening Post]
+			[BossCustomAnnounceAuthor:GVE+ Listening Post]
 			[BossCustomAnnounceMessage:Pirate Activity Alert in Stalinium Nebula]
 			[BossCustomGPSLabel:Pirate Activity Alert]
 			
@@ -120,7 +120,7 @@
 			[BlockDamageModifier:35]
 			
 			[BossCustomAnnounceEnable:true]
-			[BossCustomAnnounceAuthor:GV+ Listening Post]
+			[BossCustomAnnounceAuthor:GVE+ Listening Post]
 			[BossCustomAnnounceMessage:Pirate Activity Alert in Stalinium Nebula]
 			[BossCustomGPSLabel:Pirate Activity Alert]
 			
@@ -188,7 +188,7 @@
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:false]
 			[BossCustomAnnounceEnable:true]
-			[BossCustomAnnounceAuthor:GV+ Listening Post]
+			[BossCustomAnnounceAuthor:GVE+ Listening Post]
 			[BossCustomAnnounceMessage:Pirate Activity Alert in Stalinium Nebula]
 			[BossCustomGPSLabel:Pirate Activity Alert]
 			
@@ -445,7 +445,7 @@
 			[FactionOwner:GVE+]
 			
 			[BossCustomAnnounceEnable:true]
-			[BossCustomAnnounceAuthor:GV+ Listening Post]
+			[BossCustomAnnounceAuthor:GVE+ Listening Post]
 			[BossCustomAnnounceMessage:Player Activity Alert in Stalinium Nebula]
 			[BossCustomGPSLabel:Player Activity Alert]
 			
@@ -498,7 +498,7 @@
 			[FactionOwner:GVE+]
 			
 			[BossCustomAnnounceEnable:true]
-			[BossCustomAnnounceAuthor:GV+ Listening Post]
+			[BossCustomAnnounceAuthor:GVE+ Listening Post]
 			[BossCustomAnnounceMessage:Distress Signal Alert in Stalinium Nebula]
 			[BossCustomGPSLabel:Distress Signal Alert]
 			
@@ -555,6 +555,60 @@
 					</Position>
 					<Speed>0</Speed>
 					<Behaviour>GVE-RE-Boss-Nauvoo-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) Wave Spawner</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[BossEncounterSpace:true]
+			[FactionOwner:GVE+]
+			
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:GVE+ Listening Post]
+			[BossCustomAnnounceMessage:Pirate Hoard Alert!]
+			[BossCustomGPSLabel:Pirate Hoard Event]
+			
+			[Territory:Pirate Hoard Territory]
+			[MaxDistanceFromTerritoryCenter:10000]
+				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ReplenishSystems:true]
+			[UniqueEncounter:true]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+								
+			[GridsAreDestructable:false]
+			[GridsAreEditable:false]
+			[ForceStaticGrid:true]
+			[IgnoreCleanupRules:true]
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:false]
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Listening Post: Pirate Hoard Alert NatoLetter-RandomNumberRandomChar]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Player Announcer">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>GVE-RE-Boss-WaveSpawner-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -641,6 +695,42 @@
 		   [AnnounceArriveDepart:true]
 		   [CustomArriveMessage:Now entering the Stalinium Asteroid Territory. Safezones won't work here.]
 		   [CustomDepartMessage:Now leaving the Stalinium Asteroid Territory.]
+
+		   </Description>
+		   <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+		   <Frequency>30.0</Frequency>
+		   <IsPirate>true</IsPirate>
+		   <Prefabs>
+			  <Prefab SubtypeId="GVE-NPC Player Announcer">
+				 <Position>
+					<X>0.0</X>
+					<Y>0.0</Y>
+					<Z>0.0</Z>
+				 </Position>
+				 <BeaconText>Super Gremlin</BeaconText>
+				 <Speed>0</Speed>
+			  </Prefab>
+		   </Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>
+		   <Id>
+			  <TypeId>SpawnGroupDefinition</TypeId>
+			  <SubtypeId>(NPC-GVE) Wave Spawner Territory</SubtypeId>
+		   </Id>
+		   <Description>
+
+		   [Modular Encounters Territory]
+		   
+		   [Name:Pirate Hoard Territory]
+		   [Type:Static]
+		   [Radius:20000]
+		   [CoordsX:0]
+		   [CoordsY:0]
+		   [CoordsZ:0]
+		   [AnnounceArriveDepart:true]
+		   [CustomArriveMessage:Entering SPRT Territory. Beware of enemies.]
+		   [CustomDepartMessage:Exiting SPRT Territory]
 
 		   </Description>
 		   <Icon>Textures\GUI\Icons\Fake.dds</Icon>
