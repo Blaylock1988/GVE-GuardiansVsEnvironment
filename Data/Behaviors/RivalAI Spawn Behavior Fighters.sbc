@@ -34,6 +34,11 @@
 	  [NoTargetTimerTrigger:600]
 	  [UseRetreatTimer:false]
 	  
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
+		  
+	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  
       </Description>
     </EntityComponent>
 	
@@ -61,6 +66,11 @@
 	  [UseNoTargetTimer:true]
 	  [NoTargetTimerTrigger:600]
 	  [UseRetreatTimer:false]
+	  
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
+		  
+	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  
       </Description>
     </EntityComponent>
@@ -99,6 +109,11 @@
 	  [UseNoTargetTimer:true]
 	  [NoTargetTimerTrigger:600]
 	  [UseRetreatTimer:false]
+	  
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
+		  
+	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  
       </Description>
     </EntityComponent>
@@ -141,47 +156,13 @@
 	  [NoTargetTimerTrigger:600]
 	  [UseRetreatTimer:false]
 	  
-	  [Triggers:GVE-Behavior-Fighter-Test-Trigger]
-	  	  
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
+		  
+	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  
       </Description>
     </EntityComponent>
 	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-Behavior-Fighter-Test-Trigger</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Trigger]
-	  
-      [Type:Damage]
-	  [UseTrigger:true]
-	  [DamageTypes:Any]
-
-	  [Actions:GVE-Behavior-Fighter-Test-Action]
-	  
-      </Description>      
-    </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-Behavior-Fighter-Test-Action</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Action]
-	  
-	  [SwitchToReceivedTarget:true]
-	  
-	  [ChangeAttackerReputation:true]
-	  [ChangeAttackerReputationFaction:GVE+]
-	  [ChangeAttackerReputationAmount:+1]
-	  [ReputationChangesForAllAttackPlayerFactionMembers:true]
-      	  	  
-      </Description>
-    </EntityComponent>
-
   </EntityComponents>
 </Definitions>

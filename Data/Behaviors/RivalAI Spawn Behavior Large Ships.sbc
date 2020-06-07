@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Donnager-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Fighter]
+	  [IdealMaxSpeed:100]
+	  [AngleAllowedForForwardThrust:45]
+	  [RotationMultiplier:0.5]
+	  [WaypointTolerance:200]
+	  [AllowStrafing:true]
+	  [StrafeMinDurationMs:10000]
+	  [StrafeMaxDurationMs:15000]
+	  [StrafeMinCooldownMs:10000]
+	  [StrafeMaxCooldownMs:20000]
+	  [StrafeSpeedCutOff:70]
+	  [StrafeDistanceCutOff:900]
+	  [FighterEngageDistanceSpace:600]
+	  [FighterDisengageDistanceSpace:900]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
+	  
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
+		  
+	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-SPRTCallDDSFighters]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Roughneck-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+	  [BehaviorName:Horsefly]
+	  [IdealMaxSpeed:100]
+	  [OffsetSpaceMinDistFromTarget:3000]
+	  [OffsetSpaceMaxDistFromTarget:6000]
+	  [AngleAllowedForForwardThrust:45]
+	  [RotationMultiplier:1]
+	  [WaypointTolerance:400]
+	  [UseStuckMovementCorrection:true]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
+	  	  
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
+		  
+	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-SPRTCallDDSFighters]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Lexington-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+	  [BehaviorName:Horsefly]
+	  [IdealMaxSpeed:100]
+	  [OffsetSpaceMinDistFromTarget:9000]
+	  [OffsetSpaceMaxDistFromTarget:11000]
+	  [AngleAllowedForForwardThrust:45]
+	  [RotationMultiplier:1]
+	  [WaypointTolerance:400]
+	  [UseStuckMovementCorrection:true]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
+	  	  
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
+		  
+	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-SPRTCallDDSFighters]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  
+      </Description>
+    </EntityComponent>
+	
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-TempanoRavager-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+	  [BehaviorName:Horsefly]
+	  [IdealMaxSpeed:100]
+	  [OffsetSpaceMinDistFromTarget:9000]
+	  [OffsetSpaceMaxDistFromTarget:11000]
+	  [AngleAllowedForForwardThrust:45]
+	  [RotationMultiplier:1]
+	  [WaypointTolerance:400]
+	  [UseStuckMovementCorrection:true]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
+	  	  
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
+		  
+	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-SPRTCallDDSFighters]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  
+      </Description>
+    </EntityComponent>
+	
+  </EntityComponents>
+</Definitions>

@@ -1,0 +1,538 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+  
+  <!--=== Target Profiles ===-->
+  
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-TargetProfile-EnemyPlayers</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Target]
+      
+      [UseCustomTargeting:true]
+      [Target:Player]
+	  [UseTargetRefresh:true]
+	  [TimeUntilNextRefresh:30]
+	  [TimeUntilNextEvaluation:15]
+	  [MaxDistance:10000]
+      [GetTargetBy:ClosestDistance]
+	  [MatchAllFilters:Relation]
+	  [MatchAllFilters:OutsideOfSafezone]
+      [Relations:Enemy]
+      
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-TargetProfile-EnemyBlocks</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Target]
+      
+      [UseCustomTargeting:true]
+      [Target:Block]
+      [BlockTargets:Guns]
+      [BlockTargets:Turrets]
+	  [BlockTargets:GravityBlocks]
+	  [BlockTargets:ShipControllers]
+	  [BlockTargets:Propulsion]
+	  [BlockTargets:JumpDrive]
+	  [BlockTargets:Tools]
+	  [Distance:Any]
+	  [MaxDistance:10000]
+	  [UseTimeout:true]
+	  [MinTimeout:15]
+	  [MaxTimeout:60]
+      [Owners:Player]
+      [Relations:Enemy]
+      
+      </Description>
+    </EntityComponent>
+	
+	<!--=== Trigger Sequence ===-->
+	
+	<!--Call DDS Fighters 1 every 60-120 seconds with Chat-->
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Trigger-SPRTCallDDSFighters</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:HasTarget]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:20]
+	  [MinCooldownMs:60000]
+	  [MaxCooldownMs:120000]
+
+	  [Actions:GVE-Generic-Action-SPRTCallDDSFighters]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Action-SPRTCallDDSFighters</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [UseChatBroadcast:true]
+	  [ChatData:GVE-Generic-Chat-SPRTCallDDSFighters]
+
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-Generic-Spawner-SPRTCallDDSFighters]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Chat-SPRTCallDDSFighters</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:60]
+      [BroadcastRandomly:true]
+      
+      [Author:{GridName}]
+      [Color:Red]
+      
+      [ChatMessages:Brining Reinforcements]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:Calling Backup]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:Deploying Fighters]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Spawner-SPRTCallDDSFighters</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Spawn]
+      
+      [UseSpawn:true]
+      [StartsReady:true]
+      
+      [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
+	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
+	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
+
+      [MinDistance:500]
+      [MaxDistance:1000]
+      
+      </Description>
+    </EntityComponent>
+	
+	<!--Upon SPRT Taking Damage: Switch Target, Generic Battle Chatter, Raise rep with GVE+-->
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Trigger-SPRTTakeDamage</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Damage]
+	  [UseTrigger:true]
+	  [DamageTypes:Any]
+	  [MinCooldownMs:5000]
+	  [MaxCooldownMs:10000]
+
+	  [Actions:GVE-Generic-Action-SPRTTakeDamage]
+	  
+      </Description>      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Action-SPRTTakeDamage</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [SwitchToReceivedTarget:true]
+      
+      [UseChatBroadcast:true]
+	  [ChatData:GVE-Generic-Chat-SPRTBattleChatter]
+	  
+	  [ChangeAttackerReputation:true]
+	  [ChangeAttackerReputationFaction:GVE+]
+	  [ChangeAttackerReputationAmount:1]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<!--NPC Defeated: Trigger warheads, generic SPRT Defeated Chat-->
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Trigger-SPRTDefeated</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Compromised]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	  	  
+	  [Actions:GVE-Generic-Action-SPRTDefeated]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Action-SPRTDefeated</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+      [SelfDestruct:true]
+	  [StaggerWarheadDetonation:true]
+	  
+      [UseChatBroadcast:true]
+      [ChatData:GVE-Generic-Chat-SPRTDefeated]
+
+      </Description>
+    </EntityComponent>
+	
+	<!--Player within 60km, set antenna range 25k, chat w/ range override-->
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Trigger-SPRTPlayerDistant</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [TargetDistance:60000]
+	  [MaxActions:1]
+	  
+	  [Actions:GVE-Generic-Action-SPRTPlayerDistant]
+	  
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Action-SPRTPlayerDistant</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [ChangeAntennaRanges:true]
+	  [AntennaNamesForRangeChange:NPC Antenna]
+	  [AntennaRangeChangeType:Set]
+	  [AntennaRangeChangeAmount:25000]
+      
+      [UseChatBroadcast:true]
+      [ChatData:GVE-Generic-Chat-SPRTPlayerDistant]
+
+      </Description>
+    </EntityComponent>
+	
+	<!--Player within 7km, warn player Chat-->
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Trigger-SPRTPlayerApproach</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [TargetDistance:7000]
+	  [MaxActions:1]
+	  
+	  [Actions:GVE-Generic-Action-SPRTPlayerApproach]
+	  
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Action-SPRTPlayerApproach</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      
+      [UseChatBroadcast:true]
+      [ChatData:GVE-Generic-Chat-SPRTPlayerApproach]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Chat-SPRTPlayerApproach</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      
+      [Author:{GridName}]
+      [Color:Red]
+      
+      [ChatMessages:Brown Alert! Hope you brought a change of pants!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+      [ChatMessages:Pilot {PlayerName}, stand down and leave the area. This is a restricted sector.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      [ChatMessages:Looks like we have a contestant! Are you ready?]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+      
+      [ChatMessages:Get a load of this guy, {PlayerName} thinks they can take us?]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>      
+    </EntityComponent>
+		
+	<!--=== Chat ===-->
+	
+	<!--Generic SPRT Battle Chatter-->
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Chat-SPRTBattleChatter</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+	  [MinTime:30]
+	  [MaxTime:60]
+      [StartsReady:true]
+      [Chance:100]
+      [BroadcastRandomly:true]
+      [Author:{GridName}]
+      [Color:Red]
+      
+      [ChatMessages:Lets dance!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:Your mother was a hamster and your father smelt of elderberries!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      [ChatMessages:We have children on board, please hold you fire.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:You don't stand a chance.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:You're going to regret this.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:I’m a leaf on the wind!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:Tis but a scratch]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:Please enjoy the music while your party is being reached.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:Target is continuing to attack, requesting fire support!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:ouch, I felt that sim speed hit]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:I'm doing my part!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:This is pretty boring, you should drop your base coords in the chat]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:Hmmm, RBH fights better than this, and that’s saying something]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:I'm gonna whip yer sorry hide like a mule!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+	
+	<!--Generic SPRT Player Distant Chat-->
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Chat-SPRTPlayerDistant</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+	  [IgnoreAntennaRequirement:true]
+	  [IgnoredAntennaRangeOverride:60000]
+      
+      [Author:{GridName}]
+      [Color:Red]
+      
+      [ChatMessages:Sensors are picking up activity nearby.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+      [ChatMessages:The target,{PlayerName}, is in the area keep searching]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      [ChatMessages:What do you mean you FORGOT? How are we supposed to mine without a miner?...wait, did you hear that?]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+      
+      [ChatMessages:No signs of {PlayerName} yet. Intel shows they should be in this area though.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>      
+    </EntityComponent>
+	
+	<!--Generic SPRT Defeated Chat-->
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Chat-SPRTDefeated</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      
+      [Author:{GridName}]
+      [Color:Red]
+      
+      [ChatMessages:BLAHGLAHGLAHGHALH]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:NOOOOOOOOOOOOOO]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:GHAAAAAAHHHH....]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:It appears I've underestimated {PlayerName}]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:gg]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:How Could this happen!?!?]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:And I would have gotten away with it, too, if it weren't for you meddling kids!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:oof]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:Ship was rubbish anyway.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:Well, them's the brakes I s'pose]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-Donnager-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:HorseFighter]
+	  [IdealMaxSpeed:100]
+	  [AngleAllowedForForwardThrust:45]
+	  [RotationMultiplier:0.5]
+	  [WaypointTolerance:200]
+	  [OffsetSpaceMinDistFromTarget:700]
+	  [OffsetSpaceMinDistFromTarget:1000]
+	  [StrafeMinDurationMs:10000]
+	  [StrafeMaxDurationMs:15000]
+	  [StrafeMinCooldownMs:1000]
+	  [StrafeMaxCooldownMs:2000]
+	  [StrafeSpeedCutOff:70]
+	  [StrafeDistanceCutOff:900]
+	  [HorseFighterWaypointWaitTimeTrigger:0]
+	  [HorseFighterWaypointAbandonTimeTrigger:20]
+	  [HorseFighterTimeApproaching:20]
+	  [HorseFighterTimeEngaging:15]
+	  [HorseFighterEngageDistanceSpace:600]
+	  [HorseFighterDisengageDistanceSpace:900]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
+	  
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
+	  
+	  [Triggers:GVE-Generic-Trigger-SPRTPlayerDistant]
+	  [Triggers:GVE-Generic-Trigger-SPRTPlayerApproach]
+	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-SPRTCallDDSFighters]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  
+      </Description>
+    </EntityComponent>
+				
+  </EntityComponents>
+</Definitions>

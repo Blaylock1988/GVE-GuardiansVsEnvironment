@@ -6,41 +6,41 @@
       <CubeGrids>
         <CubeGrid>
           <SubtypeName />
-          <EntityId>73589440717797098</EntityId>
+          <EntityId>140223449433165211</EntityId>
           <PersistentFlags>CastShadows InScene</PersistentFlags>
           <PositionAndOrientation>
             <Position x="0" y="0" z="0" />
-            <Forward x="-0" y="-1" z="-3.13916473E-07" />
-            <Up x="0" y="3.13916473E-07" z="-1" />
+            <Forward x="1" y="-7.271807E-07" z="3.576279E-07" />
+            <Up x="3.57627925E-07" y="2.98023259E-08" z="-1" />
             <Orientation>
-              <X>-0.70710665</X>
-              <Y>0</Y>
-              <Z>-0</Z>
-              <W>0.7071069</W>
+              <X>-0.500000238</X>
+              <Y>-0.499999881</Y>
+              <Z>0.4999997</Z>
+              <W>0.5000001</W>
             </Orientation>
           </PositionAndOrientation>
           <GridSizeEnum>Large</GridSizeEnum>
           <CubeBlocks>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Beacon">
               <SubtypeName>LargeBlockBeacon</SubtypeName>
-              <EntityId>87190563532896888</EntityId>
+              <EntityId>118823071670791377</EntityId>
               <Min x="1" y="0" z="-1" />
               <BlockOrientation Forward="Left" Up="Backward" />
               <ColorMaskHSV x="0" y="0.2" z="0.27" />
               <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
               <ShareMode>Faction</ShareMode>
-              <CustomName>Beacon 5</CustomName>
+              <CustomName>NPC Beacon</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <Enabled>false</Enabled>
-              <BroadcastRadius>5000</BroadcastRadius>
+              <BroadcastRadius>1</BroadcastRadius>
               <HudText />
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RadioAntenna">
               <SubtypeName>LargeBlockRadioAntennaDish</SubtypeName>
-              <EntityId>116986633566408735</EntityId>
+              <EntityId>88870316880551445</EntityId>
               <Min x="-1" y="-2" z="1" />
               <BlockOrientation Forward="Left" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
@@ -62,7 +62,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RemoteControl">
               <SubtypeName>LargeBlockRemoteControl</SubtypeName>
-              <EntityId>132625753756583609</EntityId>
+              <EntityId>111099667208612415</EntityId>
               <Min x="1" y="0" z="-2" />
               <BlockOrientation Forward="Forward" Up="Right" />
               <ColorMaskHSV x="0" y="0.2" z="0.27" />
@@ -102,7 +102,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RadioAntenna">
               <SubtypeName>LargeBlockRadioAntennaDish</SubtypeName>
-              <EntityId>93541313429444407</EntityId>
+              <EntityId>74040094394880095</EntityId>
               <Min x="-1" y="-2" z="-5" />
               <BlockOrientation Forward="Left" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
@@ -124,7 +124,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RadioAntenna">
               <SubtypeName>LargeBlockRadioAntennaDish</SubtypeName>
-              <EntityId>75684016021070168</EntityId>
+              <EntityId>80825380996039677</EntityId>
               <Min x="-5" y="-2" z="-3" />
               <BlockOrientation Forward="Down" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
@@ -146,7 +146,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Wheel">
               <SubtypeName>Wheel1x1</SubtypeName>
-              <EntityId>89737609468923243</EntityId>
+              <EntityId>73972290773964184</EntityId>
               <Min x="-1" y="0" z="-1" />
               <BlockOrientation Forward="Down" Up="Left" />
               <ColorMaskHSV x="0" y="0.2" z="0.27" />
@@ -155,7 +155,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RadioAntenna">
               <SubtypeName>LargeBlockRadioAntennaDish</SubtypeName>
-              <EntityId>101447228163298199</EntityId>
+              <EntityId>112005644558373777</EntityId>
               <Min x="5" y="-2" z="-3" />
               <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
@@ -177,7 +177,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Wheel">
               <SubtypeName>Wheel1x1</SubtypeName>
-              <EntityId>89227542985231907</EntityId>
+              <EntityId>115915574800013665</EntityId>
               <Min x="-2" y="0" z="-1" />
               <BlockOrientation Forward="Down" Up="Left" />
               <ColorMaskHSV x="0" y="0.2" z="0.27" />
@@ -186,7 +186,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Wheel">
               <SubtypeName>Wheel1x1</SubtypeName>
-              <EntityId>138051936973291908</EntityId>
+              <EntityId>130534713299725783</EntityId>
               <Min x="3" y="0" z="-1" />
               <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="0.2" z="0.27" />
@@ -195,7 +195,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>LargeBlockBatteryBlock</SubtypeName>
-              <EntityId>104558930628262586</EntityId>
+              <EntityId>129328851459088395</EntityId>
               <Min x="0" y="0" z="-1" />
               <BlockOrientation Forward="Forward" Up="Left" />
               <ColorMaskHSV x="0" y="0.2" z="0.27" />
@@ -216,7 +216,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RadioAntenna">
               <SubtypeName>LargeBlockRadioAntennaDish</SubtypeName>
-              <EntityId>106359282728861144</EntityId>
+              <EntityId>127708608413871114</EntityId>
               <Min x="-1" y="4" z="-3" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
               <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -237,7 +237,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Wheel">
               <SubtypeName>Wheel1x1</SubtypeName>
-              <EntityId>109713747303912184</EntityId>
+              <EntityId>101396152311217717</EntityId>
               <Min x="1" y="2" z="-1" />
               <ColorMaskHSV x="0" y="0.2" z="0.27" />
               <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -245,7 +245,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RadioAntenna">
               <SubtypeName>LargeBlockRadioAntennaDish</SubtypeName>
-              <EntityId>129170582542128912</EntityId>
+              <EntityId>89708840097661497</EntityId>
               <Min x="-1" y="-6" z="-3" />
               <BlockOrientation Forward="Forward" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
@@ -267,7 +267,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Wheel">
               <SubtypeName>Wheel1x1</SubtypeName>
-              <EntityId>107605047574284072</EntityId>
+              <EntityId>87208309853365700</EntityId>
               <Min x="1" y="3" z="-1" />
               <ColorMaskHSV x="0" y="0.2" z="0.27" />
               <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -275,7 +275,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Wheel">
               <SubtypeName>Wheel1x1</SubtypeName>
-              <EntityId>114554132855679066</EntityId>
+              <EntityId>125006281270972686</EntityId>
               <Min x="1" y="-2" z="-1" />
               <BlockOrientation Forward="Forward" Up="Down" />
               <ColorMaskHSV x="0" y="0.2" z="0.27" />
@@ -284,7 +284,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>LargeBlockBatteryBlock</SubtypeName>
-              <EntityId>127652675861801864</EntityId>
+              <EntityId>131843154970870952</EntityId>
               <Min x="1" y="1" z="-1" />
               <ColorMaskHSV x="0" y="0.2" z="0.27" />
               <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -304,7 +304,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Wheel">
               <SubtypeName>Wheel1x1</SubtypeName>
-              <EntityId>104308040463664564</EntityId>
+              <EntityId>133929570666587448</EntityId>
               <Min x="1" y="-3" z="-1" />
               <BlockOrientation Forward="Forward" Up="Down" />
               <ColorMaskHSV x="0" y="0.2" z="0.27" />
@@ -313,7 +313,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>LargeBlockBatteryBlock</SubtypeName>
-              <EntityId>123563296784219571</EntityId>
+              <EntityId>113393122334700398</EntityId>
               <Min x="1" y="-1" z="-1" />
               <BlockOrientation Forward="Forward" Up="Down" />
               <ColorMaskHSV x="0" y="0.2" z="0.27" />
@@ -334,7 +334,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Wheel">
               <SubtypeName>Wheel1x1</SubtypeName>
-              <EntityId>74882645989546836</EntityId>
+              <EntityId>88799183038394312</EntityId>
               <Min x="4" y="0" z="-1" />
               <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="0.2" z="0.27" />
@@ -343,7 +343,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>LargeBlockBatteryBlock</SubtypeName>
-              <EntityId>122470786443719680</EntityId>
+              <EntityId>84050627483802373</EntityId>
               <Min x="2" y="0" z="-1" />
               <BlockOrientation Forward="Forward" Up="Right" />
               <ColorMaskHSV x="0" y="0.2" z="0.27" />

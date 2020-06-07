@@ -3,6 +3,61 @@
 	<SpawnGroups>
 	<!--Do Not Edit Above Here-->
 
+		<!--Boss Encounters-->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) Stalinium Territory Player Announcer</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[BossEncounterSpace:true]
+			[FactionOwner:GVE+]
+			
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:GVE+ Listening Post]
+			[BossCustomAnnounceMessage:Player Activity Alert in Stalinium Nebula]
+			[BossCustomGPSLabel:Player Activity Alert]
+			
+			[Territory:Stalinium Asteroid Territory]
+			[MaxDistanceFromTerritoryCenter:10000]
+				
+			[UseRivalAi:false]
+			[RivalAiReplaceRemoteControl:false]
+			[ReplenishSystems:true]
+			[UniqueEncounter:true]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+								
+			[GridsAreDestructable:false]
+			[GridsAreEditable:false]
+			[ForceStaticGrid:true]
+			[IgnoreCleanupRules:true]
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 5,Disposable Beacon,Disposable Beacon 5]
+			[AllowPartialNames:false]
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Listening Post: Player Alert NatoLetter-RandomNumberRandomChar]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Player Announcer">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
@@ -30,7 +85,7 @@
 			[GridsAreDestructable:true]
 			[GridsAreEditable:false]
 			[ForceStaticGrid:false]
-			[BlockDamageModifier:80]
+			[BlockDamageModifier:100]
 			
 			[ChangeTurretSettings:true]
 			[TurretRange:800]
@@ -117,7 +172,7 @@
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:false]			
 			[OverrideBlockDamageModifier:true]
-			[BlockDamageModifier:35]
+			[BlockDamageModifier:60]
 			
 			[BossCustomAnnounceEnable:true]
 			[BossCustomAnnounceAuthor:GVE+ Listening Post]
@@ -168,7 +223,7 @@
 			[GridsAreDestructable:true]
 			[GridsAreEditable:true]
 			[ForceStaticGrid:false]
-			[BlockDamageModifier:40]
+			[BlockDamageModifier:70]
 						
 			[ChangeTurretSettings:true]
 			[TurretRange:800]
@@ -235,256 +290,9 @@
 					<Speed>50</Speed>
 					<Behaviour>GVE-RE-DDS-Strike</Behaviour>
 				</Prefab>
-
 			</Prefabs>
 		</SpawnGroup>
 
-		<SpawnGroup>
-			<Id>
-				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) DDS Fighter Cyclone</SubtypeId>
-			</Id>
-			<Description>
-
-			[Modular Encounters SpawnGroup]
-			
-			[SpaceCargoShip:false]
-			[LunarCargoShip:false]
-			[BossEncounterSpace:false]
-			[SpaceRandomEncounter:false]
-			[AtmosphericCargoShip:false]
-			[PlanetaryInstallation:false]
-			[RivalAiSpawn:true]
-			[FactionOwner:SPRT]
-							
-			[UseRivalAi:true]
-			[RivalAiReplaceRemoteControl:true]
-			[DisableDampeners:false]
-			[ReplenishSystems:true]
-			[UniqueEncounter:false]
-			[ShiftBlockColorsHue:true]
-			[RandomHueShift:true]
-			
-			[ChangeTurretSettings:true]
-			[TurretRange:800]
-			[TurretIdleRotation:false]
-			[TurretTargetMeteors:false]
-			[TurretTargetMissiles:false]
-			[TurretTargetCharacters:true]
-			[TurretTargetSmallGrids:true]
-			[TurretTargetLargeGrids:true]
-			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
-			[IgnoreCleanupRules:true]
-			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
-			[AllowPartialNames:false]			
-			[OverrideBlockDamageModifier:true]
-			[BlockDamageModifier:50]
-			
-			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Fighter Cyclone - InsectNoun]
-			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
-			
-			</Description>
-			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
-			<IsPirate>true</IsPirate>
-			<Frequency>5.0</Frequency>
-			<Prefabs>
-				<Prefab SubtypeId="GVE-NPC Cyclone Fighter Bomber">
-					<Position>
-						<X>0.0</X>
-						<Y>0.0</Y>
-						<Z>0.0</Z>
-					</Position>
-					<BeaconText>Cyclone-Fighter</BeaconText>
-					<Speed>50</Speed>
-					<Behaviour>GVE-Behavior-Fighter-Test</Behaviour>
-				</Prefab>
-			</Prefabs>
-		</SpawnGroup>
-
-		<SpawnGroup>
-			<Id>
-				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) DDS Strike Cyclone</SubtypeId>
-			</Id>
-			<Description>
-
-			[Modular Encounters SpawnGroup]
-			
-			[SpaceCargoShip:false]
-			[LunarCargoShip:false]
-			[BossEncounterSpace:false]
-			[SpaceRandomEncounter:false]
-			[AtmosphericCargoShip:false]
-			[PlanetaryInstallation:false]
-			[RivalAiSpawn:true]
-			[FactionOwner:SPRT]
-							
-			[UseRivalAi:true]
-			[RivalAiReplaceRemoteControl:true]
-			[DisableDampeners:false]
-			[ReplenishSystems:true]
-			[UniqueEncounter:false]
-			[ShiftBlockColorsHue:true]
-			[RandomHueShift:true]
-			
-			[DisableBlocksWithName:NPC Antenna]
-			[ChangeTurretSettings:true]
-			[TurretRange:800]
-			[TurretIdleRotation:false]
-			[TurretTargetMeteors:false]
-			[TurretTargetMissiles:false]
-			[TurretTargetCharacters:true]
-			[TurretTargetSmallGrids:true]
-			[TurretTargetLargeGrids:true]
-			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
-			[IgnoreCleanupRules:true]
-			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
-			[AllowPartialNames:false]			
-			[OverrideBlockDamageModifier:true]
-			[BlockDamageModifier:50]
-			
-			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Strike Cyclone - InsectNoun]
-			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
-			
-			</Description>
-			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
-			<IsPirate>true</IsPirate>
-			<Frequency>3.0</Frequency>
-			<Prefabs>
-				<Prefab SubtypeId="GVE-NPC Cyclone Fighter Bomber">
-					<Position>
-						<X>0.0</X>
-						<Y>0.0</Y>
-						<Z>0.0</Z>
-					</Position>
-					<BeaconText>Cyclone-Strike</BeaconText>
-					<Speed>50</Speed>
-					<Behaviour>GVE-Behavior-Strike-Test</Behaviour>
-				</Prefab>
-			</Prefabs>
-		</SpawnGroup>
-		
-		<SpawnGroup>
-			<Id>
-				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) DDS Fighter Wildfire</SubtypeId>
-			</Id>
-			<Description>
-
-			[Modular Encounters SpawnGroup]
-			
-			[SpaceCargoShip:false]
-			[LunarCargoShip:false]
-			[BossEncounterSpace:false]
-			[SpaceRandomEncounter:false]
-			[AtmosphericCargoShip:false]
-			[PlanetaryInstallation:false]
-			[RivalAiSpawn:true]
-			[FactionOwner:SPRT]
-							
-			[UseRivalAi:true]
-			[RivalAiReplaceRemoteControl:true]
-			[DisableDampeners:false]
-			[ReplenishSystems:true]
-			[UniqueEncounter:false]
-			[ShiftBlockColorsHue:true]
-			[RandomHueShift:true]
-			
-			[ChangeTurretSettings:true]
-			[TurretRange:800]
-			[TurretIdleRotation:false]
-			[TurretTargetMeteors:false]
-			[TurretTargetMissiles:false]
-			[TurretTargetCharacters:true]
-			[TurretTargetSmallGrids:true]
-			[TurretTargetLargeGrids:true]
-			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
-			[IgnoreCleanupRules:true]
-			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
-			[AllowPartialNames:false]			
-			[OverrideBlockDamageModifier:true]
-			[BlockDamageModifier:40]
-			
-			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: BaddieNoun Wildfire Fighter]
-			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
-			
-			</Description>
-			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
-			<IsPirate>true</IsPirate>
-			<Frequency>2.0</Frequency>
-			<Prefabs>
-				<Prefab SubtypeId="GVE-NPC Wildfire Heavy Fighter">
-					<Position>
-						<X>50</X>
-						<Y>0.0</Y>
-						<Z>0.0</Z>
-					</Position>
-					<BeaconText>Cyclone-Fighter</BeaconText>
-					<Speed>50</Speed>
-					<Behaviour>GVE-Behavior-Fighter-Test</Behaviour>
-				</Prefab>
-			</Prefabs>
-		</SpawnGroup>
-
-		<SpawnGroup>
-			<Id>
-				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Stalinium Territory Player Announcer</SubtypeId>
-			</Id>
-			<Description>
-
-			[Modular Encounters SpawnGroup]
-			
-			[BossEncounterSpace:true]
-			[FactionOwner:GVE+]
-			
-			[BossCustomAnnounceEnable:true]
-			[BossCustomAnnounceAuthor:GVE+ Listening Post]
-			[BossCustomAnnounceMessage:Player Activity Alert in Stalinium Nebula]
-			[BossCustomGPSLabel:Player Activity Alert]
-			
-			[Territory:Stalinium Asteroid Territory]
-			[MaxDistanceFromTerritoryCenter:10000]
-				
-			[UseRivalAi:false]
-			[RivalAiReplaceRemoteControl:false]
-			[ReplenishSystems:true]
-			[UniqueEncounter:true]
-			[ShiftBlockColorsHue:true]
-			[RandomHueShift:true]
-								
-			[GridsAreDestructable:false]
-			[GridsAreEditable:false]
-			[ForceStaticGrid:true]
-			[IgnoreCleanupRules:true]
-			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
-			[AllowPartialNames:false]
-			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Listening Post: Player Alert NatoLetter-RandomNumberRandomChar]
-			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
-
-			</Description>
-			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
-			<IsPirate>true</IsPirate>
-			<Frequency>5.0</Frequency>
-			<Prefabs>
-				<Prefab SubtypeId="GVE-NPC Player Announcer">
-					<Position>
-						<X>0.0</X>
-						<Y>0.0</Y>
-						<Z>0.0</Z>
-					</Position>
-					<Speed>0</Speed>
-				</Prefab>
-			</Prefabs>
-		</SpawnGroup>
-		
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
@@ -559,6 +367,441 @@
 			</Prefabs>
 		</SpawnGroup>
 		
+		<!--Generic Encounters-->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) Donnager</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[SpaceCargoShip:false]
+			[LunarCargoShip:false]
+			[BossEncounterSpace:false]
+			[SpaceRandomEncounter:false]
+			[AtmosphericCargoShip:false]
+			[PlanetaryInstallation:false]
+			[RivalAiSpawn:true]
+			[FactionOwner:SPRT]
+			
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[DisableDampeners:true]
+			[ReplenishSystems:true]
+			[UniqueEncounter:true]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+			[ForceStaticGrid:false]
+			[BlockDamageModifier:100]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Donnager GreekLetter RandomNumber-RandomChar]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			[IgnoreCleanupRules:true]
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:true]	
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Donnager">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+					<Behaviour>GVE-RE-Donnager-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) Roughneck</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[SpaceCargoShip:false]
+			[LunarCargoShip:false]
+			[BossEncounterSpace:false]
+			[SpaceRandomEncounter:false]
+			[AtmosphericCargoShip:false]
+			[PlanetaryInstallation:false]
+			[RivalAiSpawn:true]
+			[FactionOwner:SPRT]
+							
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[DisableDampeners:true]
+			[ReplenishSystems:true]
+			[UniqueEncounter:true]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+			[ForceStaticGrid:false]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Roughneck GreekLetter RandomNumber-RandomChar]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			[IgnoreCleanupRules:true]
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:false]			
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:60]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Roughneck Corvette">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+					<Behaviour>GVE-RE-Roughneck-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) Lexington</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[SpaceCargoShip:false]
+			[LunarCargoShip:false]
+			[BossEncounterSpace:false]
+			[SpaceRandomEncounter:false]
+			[AtmosphericCargoShip:false]
+			[PlanetaryInstallation:false]
+			[RivalAiSpawn:true]
+			[FactionOwner:SPRT]
+			
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[DisableDampeners:true]
+			[ReplenishSystems:true]
+			[UniqueEncounter:true]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+			[ForceStaticGrid:false]
+			[BlockDamageModifier:80]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Lexington GreekLetter RandomNumber-RandomChar]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			[IgnoreCleanupRules:true]
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:true]	
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>3.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Lexington Frigate">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+					<Behaviour>GVE-RE-Lexington-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) DDS Fighter Cyclone</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[SpaceCargoShip:false]
+			[LunarCargoShip:false]
+			[BossEncounterSpace:false]
+			[SpaceRandomEncounter:false]
+			[AtmosphericCargoShip:false]
+			[PlanetaryInstallation:false]
+			[RivalAiSpawn:true]
+			[FactionOwner:SPRT]
+							
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[DisableDampeners:false]
+			[ReplenishSystems:true]
+			[UniqueEncounter:false]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			[IgnoreCleanupRules:true]
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:false]			
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:65]
+			
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Fighter Cyclone - InsectNoun]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Cyclone Fighter Bomber">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<BeaconText>Cyclone-Fighter</BeaconText>
+					<Speed>50</Speed>
+					<Behaviour>GVE-Behavior-Fighter-Test</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) DDS Strike Cyclone</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[RivalAiSpawn:true]
+			[FactionOwner:SPRT]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[DisableDampeners:false]
+			[ReplenishSystems:true]
+			[UniqueEncounter:false]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+			[DisableBlocksWithName:NPC Antenna]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[IgnoreCleanupRules:true]
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:false]			
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:65]
+			[EraseIngameScripts:true]
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Strike Cyclone - InsectNoun]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>3.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Cyclone Fighter Bomber">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<BeaconText>Cyclone-Strike</BeaconText>
+					<Speed>50</Speed>
+					<Behaviour>GVE-Behavior-Strike-Test</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) DDS Fighter Wildfire</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[RivalAiSpawn:true]
+			[FactionOwner:SPRT]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[DisableDampeners:false]
+			[ReplenishSystems:true]
+			[UniqueEncounter:false]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[IgnoreCleanupRules:true]
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:false]			
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:65]
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: BaddieNoun Wildfire Fighter]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>3.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Wildfire Heavy Fighter">
+					<Position>
+						<X>50</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<BeaconText>Wildfire-Fighter</BeaconText>
+					<Speed>50</Speed>
+					<Behaviour>GVE-Behavior-Fighter-Test</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) Tempano Ravager</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[RivalAiSpawn:true]
+			[FactionOwner:SPRT]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[DisableDampeners:false]
+			[ReplenishSystems:true]
+			[UniqueEncounter:false]
+			[ShiftBlockColorsHue:false]
+			[RandomHueShift:true]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[IgnoreCleanupRules:true]
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:55]
+			[UseRandomNameGenerator:false]
+			[RandomGridNamePattern: Tempano BaddieNoun]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>3.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Tempano Ravager">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<BeaconText>Tempano Ravager</BeaconText>
+					<Speed>50</Speed>
+					<Behaviour>GVE-Behavior-Fighter-Test</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<!--Wave Spawners-->
+		
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
@@ -570,7 +813,6 @@
 			
 			[BossEncounterSpace:true]
 			[FactionOwner:GVE+]
-			
 			[BossCustomAnnounceEnable:true]
 			[BossCustomAnnounceAuthor:GVE+ Listening Post]
 			[BossCustomAnnounceMessage:Pirate Hoard Alert!]
@@ -585,10 +827,10 @@
 			[UniqueEncounter:true]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
-								
 			[GridsAreDestructable:false]
 			[GridsAreEditable:false]
 			[ForceStaticGrid:true]
+			
 			[IgnoreCleanupRules:true]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:false]
@@ -613,69 +855,52 @@
 			</Prefabs>
 		</SpawnGroup>
 		
+		<!--Reward and loot drops-->
+		
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Tempano Ravager</SubtypeId>
+				<SubtypeId>(NPC-GVE) Reward Drop</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 			
-			[SpaceCargoShip:false]
-			[LunarCargoShip:false]
-			[BossEncounterSpace:false]
-			[SpaceRandomEncounter:false]
-			[AtmosphericCargoShip:false]
-			[PlanetaryInstallation:false]
 			[RivalAiSpawn:true]
 			[FactionOwner:SPRT]
-							
-			[UseRivalAi:true]
-			[RivalAiReplaceRemoteControl:true]
-			[DisableDampeners:false]
+			[UseRivalAi:false]
+			[RivalAiReplaceRemoteControl:false]
 			[ReplenishSystems:true]
-			[UniqueEncounter:false]
-			[ShiftBlockColorsHue:false]
+			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
-			[GridsAreDestructable:true]
+			[GridsAreDestructable:false]
 			[GridsAreEditable:false]
+			[ForceStaticGrid:true]
 			
-			[ChangeTurretSettings:true]
-			[TurretRange:800]
-			[TurretIdleRotation:false]
-			[TurretTargetMeteors:false]
-			[TurretTargetMissiles:false]
-			[TurretTargetCharacters:true]
-			[TurretTargetSmallGrids:true]
-			[TurretTargetLargeGrids:true]
-			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
 			[IgnoreCleanupRules:true]
-			[OverrideBlockDamageModifier:true]
-			[BlockDamageModifier:20]
-			
-			[UseRandomNameGenerator:false]
-			[RandomGridNamePattern: Tempano BaddieNoun]
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:false]
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Reward Drop NatoLetter-RandomNumberRandomChar]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
-			
+
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
 			<IsPirate>true</IsPirate>
-			<Frequency>3.0</Frequency>
+			<Frequency>5.0</Frequency>
 			<Prefabs>
-				<Prefab SubtypeId="GVE-NPC Tempano Ravager">
+				<Prefab SubtypeId="GVE-NPC Reward Drop">
 					<Position>
 						<X>0.0</X>
 						<Y>0.0</Y>
 						<Z>0.0</Z>
 					</Position>
-					<BeaconText>Tempano Ravager</BeaconText>
-					<Speed>50</Speed>
-					<Behaviour>GVE-Behavior-Fighter-Test</Behaviour>
+					<Speed>0</Speed>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
+		
+		<!--Territories-->
 
 		<SpawnGroup>
 		   <Id>

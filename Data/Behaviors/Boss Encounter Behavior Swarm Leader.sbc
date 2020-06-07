@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-SwarmLeader-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Fighter]
+	  [UseBarrageFire:false]
+	  [UseTurrets:true]
+	  [IdealMaxSpeed:100]
+	  [AllowStrafing:true]
+	  [StrafeMinDurationMs:5000]
+	  [StrafeMaxDurationMs:15000]
+	  [StrafeMinCooldownMs:10000]
+	  [StrafeMaxCooldownMs:20000]
+	  [StrafeSpeedCutOff:70]
+	  [StrafeDistanceCutOff:800]
+	  [FighterEngageDistanceSpace:600]
+	  [FighterDisengageDistanceSpace:850]
+	  [RotationMultiplier:1.25]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
+	  
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
+	  
+	  [Triggers:GVE-Generic-Trigger-SPRTPlayerDistant]
+	  [Triggers:GVE-Generic-Trigger-SPRTPlayerApproach]
+	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
+	  [Triggers:GVE-RE-Boss-SwarmLeader-Trigger-CallBackup]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  
+      </Description>
+    </EntityComponent>
+				
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-SwarmLeader-Trigger-CallBackup</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [TargetDistance:2000]
+	  [StartsReady:true]
+	  [MaxActions:8]
+	  [MinCooldownMs:1000]
+	  [MaxCooldownMs:5000]
+
+	  [Actions:GVE-RE-Boss-SwarmLeader-Action-CallBackup]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-SwarmLeader-Action-CallBackup</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [UseChatBroadcast:true]
+	  [ChatData:GVE-RE-Boss-SwarmLeader-Chat-CallBackup]
+
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-RE-Boss-SwarmLeader-DDS-Fighter-Spawner]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-SwarmLeader-Chat-CallBackup</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      
+      [Author:{GridName}]
+      [Color:Red]
+      
+      [ChatMessages:Disengage stealth mode and attack.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:Lock S-Foils in attack position.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:Squadron, form up on me.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-SwarmLeader-DDS-Fighter-Spawner</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Spawn]
+      
+      [UseSpawn:true]
+      
+      [StartsReady:true]
+
+      [MaxSpawns:8]
+      
+      [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
+	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
+	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
+	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
+
+      [UseRelativeSpawnPosition:false]
+      [MinDistance:1000]
+      [MaxDistance:4000]
+      [IgnoreSafetyChecks:false]
+      
+      </Description>
+    </EntityComponent>
+	
+  </EntityComponents>
+</Definitions>
