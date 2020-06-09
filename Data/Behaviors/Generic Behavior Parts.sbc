@@ -72,9 +72,9 @@
       [Type:HasTarget]
 	  [UseTrigger:true]
 	  [StartsReady:true]
-	  [MaxActions:20]
+	  [MaxActions:10]
 	  [MinCooldownMs:60000]
-	  [MaxCooldownMs:120000]
+	  [MaxCooldownMs:180000]
 
 	  [Actions:GVE-Generic-Action-SPRTCallDDSFighters]
 
@@ -169,6 +169,11 @@
 	  [DamageTypes:Any]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
+	  
+	  [DamageTypes:Explosion]
+	  [DamageTypes:Rocket]
+	  [DamageTypes:Bullet]
+	  [DamageTypes:Destruction]
 
 	  [Actions:GVE-Generic-Action-SPRTTakeDamage]
 	  
@@ -364,9 +369,9 @@
       
       [UseChat:true]
 	  [MinTime:30]
-	  [MaxTime:60]
+	  [MaxTime:90]
       [StartsReady:true]
-      [Chance:100]
+      [Chance:20]
       [BroadcastRandomly:true]
       [Author:{GridName}]
       [Color:Red]
