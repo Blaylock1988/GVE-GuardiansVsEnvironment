@@ -84,7 +84,7 @@
       
       [UseCustomTargeting:true]
       [Target:Block]
-	  [BlockTargets:Controllers]
+	  [BlockTargets:RivalAi]
 	  [UseTargetRefresh:true]
 	  [TimeUntilNextRefresh:30]
 	  [TimeUntilNextEvaluation:10]
