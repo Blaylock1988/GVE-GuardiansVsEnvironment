@@ -23,16 +23,23 @@
 	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-StartWaves]
 	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-NoPiratesRemainingTrue]
 	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-NoPiratesRemainingFalse]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave1]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave2]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave3]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave4]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave5]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave6]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave7]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave8]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave9]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave10]
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave1A]
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave2A]
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave3A]
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave4A]
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave4B]
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave5A]
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave5B]
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave6A]
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave6B]
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave7A]
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave7B]
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave8A]
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave8B]
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave9A]
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave9B]
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave10A]
+	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave10B]
 	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Reward]
 
 	  [TargetData:GVE-RE-Boss-WaveSpawner-TargetProfile-PlayerStart]
@@ -195,16 +202,23 @@
 	  [EnableTriggers:true]
 	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-NoPiratesRemainingTrue]
 	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-NoPiratesRemainingFalse]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave1]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave2]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave3]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave4]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave5]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave6]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave7]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave8]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave9]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave10]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave1A]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave2A]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave3A]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave4A]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave4B]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave5A]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave5B]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave6A]	  
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave6B]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave7A]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave7B]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave8A]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave8B]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave9A]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave9B]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave10A]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave10B]
 	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Reward]
 		  
       [UseChatBroadcast:true]
@@ -287,7 +301,7 @@
 
       [RivalAI Chat]
       
-      [UseChat:true]
+      [UseChat:false]
       [StartsReady:true]
       [Chance:100]
       [BroadcastRandomly:true]
@@ -350,7 +364,7 @@
 
       [RivalAI Chat]
       
-      [UseChat:true]
+      [UseChat:false]
       [StartsReady:true]
       [Chance:100]
       [BroadcastRandomly:true]
@@ -363,13 +377,15 @@
 
       </Description>      
     </EntityComponent>
+	
+	<!--=== Hoard Waves ===-->
 
 	<!--Start Wave 1-->
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave1</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave1A</SubtypeId>
       </Id>
       <Description>
 
@@ -379,11 +395,13 @@
 	  [UseTrigger:false]
 	  [StartsReady:true]
 	  [MaxActions:1]
+	  [MinCooldownMs:5000]
+	  [MaxCooldownMs:10000]
 	 
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave1]
+	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave1A]
 	  [ConditionCheckResetsTimer:true]
 	  
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave1]
+	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave1A]
 	  
       </Description>      
     </EntityComponent>
@@ -391,7 +409,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave1</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave1A</SubtypeId>
       </Id>
       <Description>
 
@@ -409,7 +427,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave1</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave1A</SubtypeId>
       </Id>
       <Description>
 
@@ -418,10 +436,10 @@
 	  [SetBooleansFalse:NoPiratesRemaining]
 	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave1]
+	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave1A]
 
 	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave1]
+	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave1A]
 
       </Description>
     </EntityComponent>
@@ -429,7 +447,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave1</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave1A</SubtypeId>
       </Id>
       <Description>
 
@@ -453,7 +471,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave1</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave1A</SubtypeId>
       </Id>
       <Description>
 
@@ -462,9 +480,9 @@
       [UseSpawn:true]
       [StartsReady:false]
       [MaxSpawns:1]
-	  [MinCooldownMs:50000]
+	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-
+	 
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
 
       [UseRelativeSpawnPosition:false]
@@ -480,7 +498,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave2</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave2A</SubtypeId>
       </Id>
       <Description>
 
@@ -492,11 +510,11 @@
 	  [MaxActions:2]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-	  
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave2]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave2A]
 	  [ConditionCheckResetsTimer:true]
 
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave2]
+	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave2A]
 
       </Description>
     </EntityComponent>
@@ -504,7 +522,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave2</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave2A</SubtypeId>
       </Id>
       <Description>
 
@@ -523,7 +541,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave2</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave2A</SubtypeId>
       </Id>
       <Description>
 
@@ -532,10 +550,10 @@
 	  [SetBooleansFalse:NoPiratesRemaining]
 	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave2]
+	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave2A]
 
 	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave2]
+	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave2A]
 	  
       </Description>
     </EntityComponent>
@@ -543,7 +561,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave2</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave2A</SubtypeId>
       </Id>
       <Description>
 
@@ -567,7 +585,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave2</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave2A</SubtypeId>
       </Id>
       <Description>
 
@@ -576,9 +594,9 @@
       [UseSpawn:true]
       [StartsReady:false]
       [MaxSpawns:2]
-	  [MinCooldownMs:50000]
+	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-
+	 
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
 
@@ -595,7 +613,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave3</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave3A</SubtypeId>
       </Id>
       <Description>
 
@@ -607,11 +625,11 @@
 	  [MaxActions:4]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-	  
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave3]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave3A]
 	  [ConditionCheckResetsTimer:true]
 
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave3]
+	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave3A]
 
       </Description>
     </EntityComponent>
@@ -619,7 +637,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave3</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave3A</SubtypeId>
       </Id>
       <Description>
 
@@ -638,7 +656,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave3</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave3A</SubtypeId>
       </Id>
       <Description>
 
@@ -647,10 +665,10 @@
 	  [SetBooleansFalse:NoPiratesRemaining]
 	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave3]
+	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave3A]
 
 	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave3]
+	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave3A]
 	  
       </Description>
     </EntityComponent>
@@ -658,7 +676,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave3</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave3A</SubtypeId>
       </Id>
       <Description>
 
@@ -682,7 +700,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave3</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave3A</SubtypeId>
       </Id>
       <Description>
 
@@ -691,9 +709,9 @@
       [UseSpawn:true]
       [StartsReady:false]
       [MaxSpawns:1]
-	  [MinCooldownMs:50000]
+	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-
+	 
 	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
 
       [UseRelativeSpawnPosition:false]
@@ -709,7 +727,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave4</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave4A</SubtypeId>
       </Id>
       <Description>
 
@@ -721,12 +739,11 @@
 	  [MaxActions:1]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-	  
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave4]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave4A]
 	  [ConditionCheckResetsTimer:true]
 
 	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave4A]
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave4B]
 
       </Description>
     </EntityComponent>
@@ -734,7 +751,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave4</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave4A</SubtypeId>
       </Id>
       <Description>
 
@@ -762,7 +779,7 @@
 	  [SetBooleansFalse:NoPiratesRemaining]
 	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave4]
+	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave4A]
 
 	  [SpawnEncounter:true]
 	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave4A]
@@ -773,22 +790,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave4B</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Action]
-	  
-	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave4B]
-	  
-      </Description>
-    </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave4</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave4A</SubtypeId>
       </Id>
       <Description>
 
@@ -821,9 +823,9 @@
       [UseSpawn:true]
       [StartsReady:false]
       [MaxSpawns:1]
-	  [MinCooldownMs:50000]
+	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-
+	 
 	  [SpawnGroups:(NPC-GVE) Lexington]
 
       [UseRelativeSpawnPosition:false]
@@ -831,6 +833,45 @@
       [MaxDistance:5000]
       [IgnoreSafetyChecks:false]
       
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave4B</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Timer]
+	  [UseTrigger:false]
+	  [StartsReady:false]
+	  [MaxActions:0]
+	  [MinCooldownMs:5000]
+	  [MaxCooldownMs:10000]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave4A]
+	  [ConditionCheckResetsTimer:true]
+
+	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave4B]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave4B</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave4B]
+	  
       </Description>
     </EntityComponent>
 	
@@ -846,9 +887,9 @@
       [UseSpawn:true]
       [StartsReady:false]
       [MaxSpawns:1]
-	  [MinCooldownMs:50000]
+	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-
+	 
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
@@ -866,7 +907,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave5</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave5A</SubtypeId>
       </Id>
       <Description>
 
@@ -878,12 +919,11 @@
 	  [MaxActions:5]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-	  
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave4]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave5A]
 	  [ConditionCheckResetsTimer:true]
 
 	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave5A]
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave5B]
 
       </Description>
     </EntityComponent>
@@ -891,7 +931,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave5</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave5A</SubtypeId>
       </Id>
       <Description>
 
@@ -919,7 +959,7 @@
 	  [SetBooleansFalse:NoPiratesRemaining]
 	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave5]
+	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave5A]
 
 	  [SpawnEncounter:true]
 	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave5A]
@@ -945,7 +985,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave5</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave5A</SubtypeId>
       </Id>
       <Description>
 
@@ -977,18 +1017,56 @@
       
       [UseSpawn:true]
       [StartsReady:false]
-      [MaxSpawns:2]
-	  [MinCooldownMs:50000]
+      [MaxSpawns:1]
+	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-
-	  [SpawnGroups:Lexington]
-	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
+	 
+	  [SpawnGroups:(NPC-GVE) Lexington]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:4000]
       [MaxDistance:5000]
       [IgnoreSafetyChecks:false]
       
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave5B</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Timer]
+	  [UseTrigger:false]
+	  [StartsReady:false]
+	  [MaxActions:5]
+	  [MinCooldownMs:5000]
+	  [MaxCooldownMs:10000]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave5A]
+	  [ConditionCheckResetsTimer:true]
+
+	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave5B]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave5B</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave5B]
+	  
       </Description>
     </EntityComponent>
 	
@@ -1004,12 +1082,13 @@
       [UseSpawn:true]
       [StartsReady:false]
       [MaxSpawns:4]
-	  [MinCooldownMs:50000]
+	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-
+	 
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
+	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:4000]
@@ -1024,7 +1103,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave6</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave6A</SubtypeId>
       </Id>
       <Description>
 
@@ -1036,14 +1115,11 @@
 	  [MaxActions:6]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-	  
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave6]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave6A]
 	  [ConditionCheckResetsTimer:true]
 
 	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave6A]
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave6B]
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave6C]
-
 
       </Description>
     </EntityComponent>
@@ -1051,7 +1127,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave6</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave6A</SubtypeId>
       </Id>
       <Description>
 
@@ -1079,48 +1155,18 @@
 	  [SetBooleansFalse:NoPiratesRemaining]
 	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave6]
+	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave6A]
 
 	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave6]
+	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave6A]
 	  
       </Description>
     </EntityComponent>
-	
+		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave6B</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Action]
-
-	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave6B]
-	  
-      </Description>
-    </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave6C</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Action]
-
-	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave6C]
-	  
-      </Description>
-    </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave6</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave6A</SubtypeId>
       </Id>
       <Description>
 
@@ -1144,7 +1190,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave6</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave6A</SubtypeId>
       </Id>
       <Description>
 
@@ -1153,9 +1199,9 @@
       [UseSpawn:true]
       [StartsReady:false]
       [MaxSpawns:1]
-	  [MinCooldownMs:50000]
+	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-
+	 
 	  [SpawnGroups:(NPC-GVE) Roughneck]
 
       [UseRelativeSpawnPosition:false]
@@ -1165,11 +1211,50 @@
       
       </Description>
     </EntityComponent>
-	
+		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave6</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave6B</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Timer]
+	  [UseTrigger:false]
+	  [StartsReady:false]
+	  [MaxActions:6]
+	  [MinCooldownMs:5000]
+	  [MaxCooldownMs:10000]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave6A]
+	  [ConditionCheckResetsTimer:true]
+
+	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave6B]
+
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave6B</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave6B]
+	  
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave6B</SubtypeId>
       </Id>
       <Description>
 
@@ -1177,10 +1262,10 @@
       
       [UseSpawn:true]
       [StartsReady:false]
-      [MaxSpawns:6]
-	  [MinCooldownMs:50000]
+      [MaxSpawns:5]
+	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-
+	 
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
 
@@ -1191,13 +1276,13 @@
       
       </Description>
     </EntityComponent>
-
+	
 	<!--Start Wave 7-->
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave7</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave7A</SubtypeId>
       </Id>
       <Description>
 
@@ -1209,12 +1294,11 @@
 	  [MaxActions:7]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-	  
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave7]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave7A]
 	  [ConditionCheckResetsTimer:true]
 
 	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave7A]
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave7B]
 
       </Description>
     </EntityComponent>
@@ -1222,7 +1306,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave7</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave7A</SubtypeId>
       </Id>
       <Description>
 
@@ -1250,33 +1334,18 @@
 	  [SetBooleansFalse:NoPiratesRemaining]
 	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave7]
+	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave7A]
 
 	  [SpawnEncounter:true]
 	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave7A]
 	  
       </Description>
     </EntityComponent>
-	
+		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave7B</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Action]
-
-	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave7B]
-	  
-      </Description>
-    </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave7</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave7A</SubtypeId>
       </Id>
       <Description>
 
@@ -1308,10 +1377,11 @@
       
       [UseSpawn:true]
       [StartsReady:false]
-      [MaxSpawns:1]
-	  [MinCooldownMs:50000]
+      [MaxSpawns:2]
+	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-
+	 
+	  [SpawnGroups:(NPC-GVE) Lexington]
 	  [SpawnGroups:(NPC-GVE) Roughneck]
 
       [UseRelativeSpawnPosition:false]
@@ -1321,7 +1391,46 @@
       
       </Description>
     </EntityComponent>
-	
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave7B</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Timer]
+	  [UseTrigger:false]
+	  [StartsReady:false]
+	  [MaxActions:7]
+	  [MinCooldownMs:5000]
+	  [MaxCooldownMs:10000]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave7A]
+	  [ConditionCheckResetsTimer:true]
+
+	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave7B]
+
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave7B</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave7B]
+	  
+      </Description>
+    </EntityComponent>
+		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -1334,9 +1443,9 @@
       [UseSpawn:true]
       [StartsReady:false]
       [MaxSpawns:6]
-	  [MinCooldownMs:50000]
+	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-
+	 
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
@@ -1355,7 +1464,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave8</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave8A</SubtypeId>
       </Id>
       <Description>
 
@@ -1367,12 +1476,11 @@
 	  [MaxActions:8]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-	  
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave8]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave8A]
 	  [ConditionCheckResetsTimer:true]
 
 	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave8A]
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave8B]
 
       </Description>
     </EntityComponent>
@@ -1380,7 +1488,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave7</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave8A</SubtypeId>
       </Id>
       <Description>
 
@@ -1408,33 +1516,18 @@
 	  [SetBooleansFalse:NoPiratesRemaining]
 	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave8]
+	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave8A]
 
 	  [SpawnEncounter:true]
 	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave8A]
 	  
       </Description>
     </EntityComponent>
-	
+		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave8B</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Action]
-
-	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave8B]
-	  
-      </Description>
-    </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave8</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave8A</SubtypeId>
       </Id>
       <Description>
 
@@ -1467,9 +1560,9 @@
       [UseSpawn:true]
       [StartsReady:false]
       [MaxSpawns:1]
-	  [MinCooldownMs:50000]
+	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-
+	 
 	  [SpawnGroups:(NPC-GVE) Donnager]
 
       [UseRelativeSpawnPosition:false]
@@ -1483,6 +1576,45 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave8B</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Timer]
+	  [UseTrigger:false]
+	  [StartsReady:false]
+	  [MaxActions:8]
+	  [MinCooldownMs:5000]
+	  [MaxCooldownMs:10000]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave8A]
+	  [ConditionCheckResetsTimer:true]
+
+	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave8B]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave8B</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave8B]
+	  
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
           <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave8B</SubtypeId>
       </Id>
       <Description>
@@ -1492,12 +1624,13 @@
       [UseSpawn:true]
       [StartsReady:false]
       [MaxSpawns:5]
-	  [MinCooldownMs:50000]
+	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-
+	 
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
+	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:4000]
@@ -1512,7 +1645,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave9</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave9A</SubtypeId>
       </Id>
       <Description>
 
@@ -1524,12 +1657,11 @@
 	  [MaxActions:9]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-	  
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave9]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave9A]
 	  [ConditionCheckResetsTimer:true]
 
 	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave9A]
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave9B]
 
       </Description>
     </EntityComponent>
@@ -1537,7 +1669,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave9</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave9A</SubtypeId>
       </Id>
       <Description>
 
@@ -1565,33 +1697,18 @@
 	  [SetBooleansFalse:NoPiratesRemaining]
 	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave9]
+	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave9A]
 
 	  [SpawnEncounter:true]
 	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave9A]
 	  
       </Description>
     </EntityComponent>
-	
+		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave9B</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Action]
-
-	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave9B]
-	  
-      </Description>
-    </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave9</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave9A</SubtypeId>
       </Id>
       <Description>
 
@@ -1623,17 +1740,56 @@
       
       [UseSpawn:true]
       [StartsReady:false]
-      [MaxSpawns:1]
-	  [MinCooldownMs:50000]
+      [MaxSpawns:3]
+	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-
-	  [SpawnGroups:(NPC-GVE) Donnager]
+	 
+	  [SpawnGroups:(NPC-GVE) Lexington]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:4000]
       [MaxDistance:5000]
       [IgnoreSafetyChecks:false]
       
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave9B</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Timer]
+	  [UseTrigger:false]
+	  [StartsReady:false]
+	  [MaxActions:9]
+	  [MinCooldownMs:5000]
+	  [MaxCooldownMs:10000]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave9A]
+	  [ConditionCheckResetsTimer:true]
+
+	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave9B]
+
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave9B</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave9B]
+	  
       </Description>
     </EntityComponent>
 	
@@ -1648,10 +1804,10 @@
       
       [UseSpawn:true]
       [StartsReady:false]
-      [MaxSpawns:10]
-	  [MinCooldownMs:50000]
+      [MaxSpawns:8]
+	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-
+	 
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
@@ -1670,7 +1826,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave10</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave10A</SubtypeId>
       </Id>
       <Description>
 
@@ -1682,12 +1838,11 @@
 	  [MaxActions:20]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-	  
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave10]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave10A]
 	  [ConditionCheckResetsTimer:true]
 
 	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave10A]
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave10B]
 
       </Description>
     </EntityComponent>
@@ -1695,7 +1850,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave10</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave10A</SubtypeId>
       </Id>
       <Description>
 
@@ -1723,33 +1878,18 @@
 	  [SetBooleansFalse:NoPiratesRemaining]
 	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave10]
+	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave10A]
 
 	  [SpawnEncounter:true]
 	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave10A]
 	  
       </Description>
     </EntityComponent>
-	
+		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave10B</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Action]
-
-	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave10B]
-	  
-      </Description>
-    </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave10</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave10A</SubtypeId>
       </Id>
       <Description>
 
@@ -1781,12 +1921,13 @@
       
       [UseSpawn:true]
       [StartsReady:false]
-      [MaxSpawns:2]
-	  [MinCooldownMs:50000]
+      [MaxSpawns:4]
+	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-
+	 
 	  [SpawnGroups:(NPC-GVE) Donnager]
 	  [SpawnGroups:(NPC-GVE) Roughneck]
+	  [SpawnGroups:(NPC-GVE) Lexington]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:4000]
@@ -1799,6 +1940,45 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave10B</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Timer]
+	  [UseTrigger:false]
+	  [StartsReady:false]
+	  [MaxActions:10]
+	  [MinCooldownMs:5000]
+	  [MaxCooldownMs:10000]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave10A]
+	  [ConditionCheckResetsTimer:true]
+
+	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave10B]
+
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave10B</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave10B]
+	  
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
           <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave10B</SubtypeId>
       </Id>
       <Description>
@@ -1807,10 +1987,10 @@
       
       [UseSpawn:true]
       [StartsReady:false]
-      [MaxSpawns:20]
-	  [MinCooldownMs:50000]
+      [MaxSpawns:10]
+	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-
+	 
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
@@ -1841,7 +2021,7 @@
 	  [MaxActions:1]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-	  
+	 
 	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Reward]
 	  [ConditionCheckResetsTimer:true]
 
@@ -1925,13 +2105,13 @@
       [UseSpawn:true]
       [StartsReady:false]
       [MaxSpawns:1]
-	  [MinCooldownMs:50000]
+	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
-
+	 
 	  [SpawnGroups:(NPC-GVE) Reward Drop]
 
       [UseRelativeSpawnPosition:false]
-      [MinDistance:4000]
+      [MinDistance:2000]
       [MaxDistance:5000]
       [IgnoreSafetyChecks:false]
       
