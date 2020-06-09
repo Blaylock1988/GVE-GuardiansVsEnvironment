@@ -419,7 +419,7 @@
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
 			<IsPirate>true</IsPirate>
-			<Frequency>5.0</Frequency>
+			<Frequency>2.0</Frequency>
 			<Prefabs>
 				<Prefab SubtypeId="GVE-NPC Donnager">
 					<Position>
@@ -480,12 +480,12 @@
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:false]			
 			[OverrideBlockDamageModifier:true]
-			[BlockDamageModifier:60]
+			[BlockDamageModifier:75]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
 			<IsPirate>true</IsPirate>
-			<Frequency>5.0</Frequency>
+			<Frequency>2.0</Frequency>
 			<Prefabs>
 				<Prefab SubtypeId="GVE-NPC Roughneck Corvette">
 					<Position>
@@ -603,7 +603,7 @@
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:false]			
 			[OverrideBlockDamageModifier:true]
-			[BlockDamageModifier:65]
+			[BlockDamageModifier:75]
 			
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Fighter Cyclone - InsectNoun]
@@ -662,7 +662,7 @@
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:false]			
 			[OverrideBlockDamageModifier:true]
-			[BlockDamageModifier:65]
+			[BlockDamageModifier:75]
 			[EraseIngameScripts:true]
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Strike Cyclone - InsectNoun]
@@ -720,7 +720,7 @@
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:false]			
 			[OverrideBlockDamageModifier:true]
-			[BlockDamageModifier:65]
+			[BlockDamageModifier:75]
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: BaddieNoun Wildfire Fighter]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
@@ -777,7 +777,7 @@
 			
 			[IgnoreCleanupRules:true]
 			[OverrideBlockDamageModifier:true]
-			[BlockDamageModifier:55]
+			[BlockDamageModifier:75]
 			[UseRandomNameGenerator:false]
 			[RandomGridNamePattern: Tempano BaddieNoun]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
@@ -867,7 +867,7 @@
 			[Modular Encounters SpawnGroup]
 			
 			[RivalAiSpawn:true]
-			[FactionOwner:SPRT]
+			[FactionOwner:GVE+]
 			[UseRivalAi:false]
 			[RivalAiReplaceRemoteControl:false]
 			[ReplenishSystems:true]
