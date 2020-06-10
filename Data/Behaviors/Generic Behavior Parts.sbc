@@ -22,7 +22,10 @@
       [GetTargetBy:ClosestDistance]
 	  [MatchAllFilters:Relation]
 	  [MatchAllFilters:OutsideOfSafezone]
+	  [MatchNoneFilters:Name]
       [Relations:Enemy]
+	  [Names:Listening Post]
+	  [UsePartialNameMatching:true]
       
       </Description>
     </EntityComponent>
