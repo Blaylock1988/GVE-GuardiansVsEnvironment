@@ -113,7 +113,7 @@
       
       [UseChat:true]
       [StartsReady:true]
-      [Chance:60]
+      [Chance:50]
       [BroadcastRandomly:true]
       
       [Author:{GridName}]
@@ -169,7 +169,6 @@
 	  
       [Type:Damage]
 	  [UseTrigger:true]
-	  [DamageTypes:Any]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	  
@@ -374,7 +373,7 @@
 	  [MinTime:30]
 	  [MaxTime:90]
       [StartsReady:true]
-      [Chance:20]
+      [Chance:15]
       [BroadcastRandomly:true]
       [Author:{GridName}]
       [Color:Red]
