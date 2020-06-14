@@ -447,7 +447,7 @@
       [Author:GVE+ Listening Post]
       [Color:White]
       
-      [ChatMessages:Wave 1 Incoming]
+      [ChatMessages:Wave 1 of 10 incoming]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
 
@@ -561,7 +561,7 @@
       [Author:GVE+ Listening Post]
       [Color:White]
       
-      [ChatMessages:Wave 2 Incoming]
+      [ChatMessages:Wave 2 of 10 incoming]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
 
@@ -676,7 +676,7 @@
       [Author:GVE+ Listening Post]
       [Color:White]
       
-      [ChatMessages:Wave 3 Incoming]
+      [ChatMessages:Wave 3 of 10 incoming]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
 
@@ -777,7 +777,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave4A</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave4</SubtypeId>
       </Id>
       <Description>
 
@@ -791,7 +791,7 @@
       [Author:GVE+ Listening Post]
       [Color:White]
       
-      [ChatMessages:Wave 4 Incoming]
+      [ChatMessages:Wave 4 of 10 incoming]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
 
@@ -933,7 +933,7 @@
       [Author:GVE+ Listening Post]
       [Color:White]
       
-      [ChatMessages:Wave 5 Incoming]
+      [ChatMessages:Wave 5 of 10 incoming]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
 
@@ -1076,7 +1076,7 @@
       [Author:GVE+ Listening Post]
       [Color:White]
       
-      [ChatMessages:Wave 6 Incoming]
+      [ChatMessages:Wave 6 of 10 incoming]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
 
@@ -1217,7 +1217,7 @@
       [Author:GVE+ Listening Post]
       [Color:White]
       
-      [ChatMessages:Wave 7 Incoming]
+      [ChatMessages:Wave 7 of 10 incoming]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
 
@@ -1362,7 +1362,7 @@
       [Author:GVE+ Listening Post]
       [Color:White]
       
-      [ChatMessages:Wave 8 Incoming]
+      [ChatMessages:Wave 8 of 10 incoming]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
 
@@ -1505,7 +1505,7 @@
       [Author:GVE+ Listening Post]
       [Color:White]
       
-      [ChatMessages:Wave 9 Incoming]
+      [ChatMessages:Wave 9 of 10 incoming]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
 
@@ -1648,7 +1648,7 @@
       [Author:GVE+ Listening Post]
       [Color:White]
       
-      [ChatMessages:Wave 10 Incoming]
+      [ChatMessages:Wave 10 of 10 incoming]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
 
