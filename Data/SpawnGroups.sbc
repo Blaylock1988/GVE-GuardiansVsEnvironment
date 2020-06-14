@@ -419,7 +419,7 @@
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
 			<IsPirate>true</IsPirate>
-			<Frequency>2.0</Frequency>
+			<Frequency>3.0</Frequency>
 			<Prefabs>
 				<Prefab SubtypeId="GVE-NPC Donnager">
 					<Position>
@@ -485,7 +485,7 @@
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
 			<IsPirate>true</IsPirate>
-			<Frequency>2.0</Frequency>
+			<Frequency>3.0</Frequency>
 			<Prefabs>
 				<Prefab SubtypeId="GVE-NPC Roughneck Corvette">
 					<Position>
@@ -507,12 +507,13 @@
 			<Description>
 
 			[Modular Encounters SpawnGroup]
-			[SpaceCargoShip:false]
+			[SpaceCargoShip:true]
 			[LunarCargoShip:false]
 			[BossEncounterSpace:false]
 			[SpaceRandomEncounter:false]
 			[AtmosphericCargoShip:false]
 			[PlanetaryInstallation:false]
+			[AdminSpawnOnly:true]
 			[RivalAiSpawn:true]
 			[FactionOwner:SPRT]
 			
@@ -752,6 +753,13 @@
 
 			[Modular Encounters SpawnGroup]
 			
+			[SpaceCargoShip:true]
+			[LunarCargoShip:false]
+			[BossEncounterSpace:false]
+			[SpaceRandomEncounter:false]
+			[AtmosphericCargoShip:false]
+			[PlanetaryInstallation:false]
+			[AdminSpawnOnly:true]
 			[RivalAiSpawn:true]
 			[FactionOwner:SPRT]
 			[UseRivalAi:true]
@@ -780,7 +788,7 @@
 			[BlockDamageModifier:75]
 			[UseRandomNameGenerator:false]
 			[RandomGridNamePattern: Tempano BaddieNoun]
-			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			[ReplaceAntennaNameWithRandomizedName:Tempano Ravager]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -795,7 +803,7 @@
 					</Position>
 					<BeaconText>Tempano Ravager</BeaconText>
 					<Speed>50</Speed>
-					<Behaviour>GVE-Behavior-Fighter-Test</Behaviour>
+					<Behaviour>GVE-RE-TempanoRavager-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -949,9 +957,9 @@
 		   
 		   [Name:Pirate Hoard Territory]
 		   [Type:Static]
-		   [Radius:20000]
-		   [CoordsX:0]
-		   [CoordsY:0]
+		   [Radius:2000000]
+		   [CoordsX:450000.00]
+		   [CoordsY:250000.00]
 		   [CoordsZ:0]
 		   [AnnounceArriveDepart:true]
 		   [CustomArriveMessage:Entering SPRT Territory. Beware of enemies.]
