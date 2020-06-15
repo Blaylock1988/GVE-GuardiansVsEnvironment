@@ -976,7 +976,7 @@
       
       [UseSpawn:true]
       [StartsReady:false]
-      [MaxSpawns:4]
+      [MaxSpawns:3]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
@@ -1119,7 +1119,7 @@
       
       [UseSpawn:true]
       [StartsReady:false]
-      [MaxSpawns:5]
+      [MaxSpawns:4]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
@@ -1261,7 +1261,7 @@
       
       [UseSpawn:true]
       [StartsReady:false]
-      [MaxSpawns:6]
+      [MaxSpawns:4]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
@@ -1548,13 +1548,10 @@
       
       [UseSpawn:true]
       [StartsReady:false]
-      [MaxSpawns:8]
+      [MaxSpawns:5]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
-	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
-	  [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
-	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
 	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
 
       [UseRelativeSpawnPosition:false]
@@ -1666,13 +1663,12 @@
       
       [UseSpawn:true]
       [StartsReady:false]
-      [MaxSpawns:4]
+      [MaxSpawns:3]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
 	  [SpawnGroups:(NPC-GVE) Donnager]
 	  [SpawnGroups:(NPC-GVE) Roughneck]
-	  [SpawnGroups:(NPC-GVE) Lexington]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:4000]
@@ -1693,13 +1689,11 @@
       
       [UseSpawn:true]
       [StartsReady:false]
-      [MaxSpawns:10]
+      [MaxSpawns:6]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
-	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
-	  [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
-	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
+	  [SpawnGroups:(NPC-GVE) Lexington]
 	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
 
       [UseRelativeSpawnPosition:false]

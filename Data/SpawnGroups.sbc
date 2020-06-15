@@ -377,12 +377,13 @@
 			<Description>
 
 			[Modular Encounters SpawnGroup]
-			[SpaceCargoShip:false]
+			[SpaceCargoShip:true]
 			[LunarCargoShip:false]
 			[BossEncounterSpace:false]
 			[SpaceRandomEncounter:false]
 			[AtmosphericCargoShip:false]
 			[PlanetaryInstallation:false]
+			[AdminSpawnOnly:true]
 			[RivalAiSpawn:true]
 			[FactionOwner:SPRT]
 			
@@ -442,12 +443,13 @@
 
 			[Modular Encounters SpawnGroup]
 			
-			[SpaceCargoShip:false]
+			[SpaceCargoShip:true]
 			[LunarCargoShip:false]
 			[BossEncounterSpace:false]
 			[SpaceRandomEncounter:false]
 			[AtmosphericCargoShip:false]
 			[PlanetaryInstallation:false]
+			[AdminSpawnOnly:true]
 			[RivalAiSpawn:true]
 			[FactionOwner:SPRT]
 							
@@ -803,7 +805,7 @@
 					</Position>
 					<BeaconText>Tempano Ravager</BeaconText>
 					<Speed>50</Speed>
-					<Behaviour>GVE-RE-TempanoRavager-Behavior-Start</Behaviour>
+					<Behaviour>GVE-Behavior-Strike-LargeFighter</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>

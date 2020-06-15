@@ -150,8 +150,8 @@
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
 
-      [MinDistance:500]
-      [MaxDistance:1000]
+      [MinDistance:400]
+      [MaxDistance:700]
       
       </Description>
     </EntityComponent>
