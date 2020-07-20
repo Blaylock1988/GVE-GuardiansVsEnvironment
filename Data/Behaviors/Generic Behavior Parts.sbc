@@ -236,6 +236,10 @@
       [SelfDestruct:true]
 	  [StaggerWarheadDetonation:true]
 	  
+	  [GenerateExplosion:true]
+	  [ExplosionRange:30]
+	  [ExplosionDamage:15000]
+	  
       [UseChatBroadcast:true]
       [ChatData:GVE-Generic-Chat-SPRTDefeated]
 

@@ -11,27 +11,11 @@
 
       [RivalAI Behavior]
 	  
-      [BehaviorName:Fighter]
+	  [BehaviorName:Fighter]
 	  [UseBarrageFire:false]
 	  [UseTurrets:true]
-	  [IdealMaxSpeed:100]
-	  [AngleAllowedForForwardThrust:45]
-	  [UseVanillaCollisionAvoidance:false]
-	  [UseStuckMovementCorrection:true]
-	  [AllowStrafing:true]
-	  [StrafeMinDurationMs:1500]
-	  [StrafeMaxDurationMs:20000]
-	  [StrafeMinCooldownMs:1]
-	  [StrafeMaxCooldownMs:1]
-	  [StrafeSpeedCutOff:140]
-	  [StrafeDistanceCutOff:1500]
 	  [FighterEngageDistanceSpace:700]
 	  [FighterDisengageDistanceSpace:900]
-	  [UseVelocityCollisionEvasion:true]
-	  [CollisionEvasionWaypointDistance:600]
-	  [CollisionEvasionResumeDistance:300]
-	  [CollisionEvasionResumeTime:10]
-	  [RotationMultiplier:1]
 	  [UseAmmoReplenish:true]
 	  [AmmoReplenishClipAmount:100]
 	  [UsePlayerDistanceTimer:true]
@@ -40,10 +24,12 @@
 	  [UseNoTargetTimer:true]
 	  [NoTargetTimerTrigger:300]
 	  [UseRetreatTimer:false]
-
+	  
+	  [AutopilotData:GVE-SCS-Reavers-Autopilot-Generic]
 	  
 	  [Triggers:GVE-SCS-Reavers-Trigger-NoticeBroadcasts]
 	  [Triggers:GVE-SCS-Reavers-Trigger-TakeDamage]
+	  [Triggers:GVE-SCS-Reavers-Trigger-Defeated]
 	  
 	  [TargetData:GVE-SCS-Reavers-Target-Broadcasts]
 	  
@@ -61,7 +47,7 @@
       
       [UseCustomTargeting:true]
       
-      [Target:Player]
+      [Target:Grid]
 	  [TimeUntilTargetAcquisition:1]
 	  [MaxDistance:5000]
 	  [MatchAllFilters:Broadcasting]
@@ -102,6 +88,14 @@
       <Description>
 
       [RivalAI Action]
+	  
+	  [ChangeInertiaDampeners:true]
+	  [InertiaDampenersEnable:true]
+	  
+	  [CreateKnownPlayerArea:true]
+	  [KnownPlayerAreaRadius:50000]
+	  [KnownPlayerAreaTimer:30]
+	  [KnownPlayerAreaMaxSpawns:5]
 	  	       
       [UseChatBroadcast:true]
       [ChatData:GVE-SCS-Reavers-Chat-NoticeBroadcasts]
@@ -126,7 +120,6 @@
 	  [IgnoreAntennaRequirement:true]
 	  [IgnoredAntennaRangeOverride:50000]
 
-      
       [Author:{GridName}]
       [Color:Red]
       	  
@@ -168,6 +161,8 @@
       [RivalAI Action]
 	  
 	  [SwitchToReceivedTarget:true]
+	  [ChangeInertiaDampeners:true]
+	  [InertiaDampenersEnable:true]
 		  
 	  [SpawnEncounter:true]
 	  [Spawner:GVE-SCS-Reavers-Spawner-Backup]
@@ -186,8 +181,9 @@
       
       [UseSpawn:true]
       
-      [StartsReady:true]
-
+      [StartsReady:false]
+	  [SpawnMinCooldown:300]
+	  [SpawnMaxCooldown:600]
       [MaxSpawns:1]
       
       [SpawnGroups:(NPC-RVR) Reaver Fighter]
@@ -201,10 +197,45 @@
 	  [SpawnGroups:(NPC-RVR) Reaver Team 2]
 
       [UseRelativeSpawnPosition:false]
-      [MinDistance:1000]
+      [MinDistance:2000]
       [MaxDistance:4000]
       [IgnoreSafetyChecks:false]
       
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-SCS-Reavers-Trigger-Defeated</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Compromised]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:1]
+
+	  [Actions:GVE-SCS-Reavers-Action-Detonate]
+
+      </Description>      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-SCS-Reavers-Action-Detonate</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [GenerateExplosion:true]
+	  [ExplosionRange:100]
+	  [ExplosionDamage:10000000]
+	  
       </Description>
     </EntityComponent>
 	
@@ -217,13 +248,40 @@
 
       [RivalAI Behavior]
 	  
-      [BehaviorName:Fighter]
+	  [BehaviorName:Fighter]
 	  [UseBarrageFire:false]
 	  [UseTurrets:true]
+	  [FighterEngageDistanceSpace:700]
+	  [FighterDisengageDistanceSpace:900]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:10000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:300]
+	  [UseRetreatTimer:false]
+	  
+	  [AutopilotData:GVE-SCS-Reavers-Autopilot-Generic]
+	  
+	  [Triggers:GVE-SCS-Reavers-Trigger-Defeated]
+	  
+	  [TargetData:GVE-SCS-Reavers-Target-Broadcasts]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-SCS-Reavers-Autopilot-Generic</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Autopilot]
+      
 	  [IdealMaxSpeed:100]
 	  [AngleAllowedForForwardThrust:45]
-	  [UseVanillaCollisionAvoidance:false]
-	  [UseStuckMovementCorrection:true]
 	  [AllowStrafing:true]
 	  [StrafeMinDurationMs:1500]
 	  [StrafeMaxDurationMs:20000]
@@ -231,24 +289,14 @@
 	  [StrafeMaxCooldownMs:1]
 	  [StrafeSpeedCutOff:140]
 	  [StrafeDistanceCutOff:1500]
-	  [FighterEngageDistanceSpace:700]
-	  [FighterDisengageDistanceSpace:900]
 	  [UseVelocityCollisionEvasion:true]
 	  [CollisionEvasionWaypointDistance:600]
 	  [CollisionEvasionResumeDistance:300]
-	  [CollisionEvasionResumeTime:7]
+	  [CollisionEvasionResumeTime:10]
 	  [RotationMultiplier:1]
-	  [UseAmmoReplenish:true]
-	  [AmmoReplenishClipAmount:100]
-	  [UsePlayerDistanceTimer:true]
-	  [PlayerDistanceTimerTrigger:5]
-	  [PlayerDistanceTrigger:15000]
-	  [UseNoTargetTimer:true]
-	  [NoTargetTimerTrigger:600]
-	  [UseRetreatTimer:false]
-	  	  
-	  [TargetData:GVE-SCS-Reavers-Target-Broadcasts]
-	  
+	  [DisableInertiaDampeners:true]
+	  [UseProjectileLeadPrediction:true]
+      
       </Description>
     </EntityComponent>
 
