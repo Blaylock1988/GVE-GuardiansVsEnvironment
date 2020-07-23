@@ -470,6 +470,7 @@
 	  [MaxCooldownMs:10000]
 	 
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
+	  [SpawnGroups:(NPC-GVE) Impaler]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:4000]
@@ -585,6 +586,7 @@
 	 
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
+	  [SpawnGroups:(NPC-GVE) Impaler]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:4000]
@@ -814,6 +816,8 @@
 	  [MaxCooldownMs:10000]
 	 
 	  [SpawnGroups:(NPC-GVE) Lexington]
+	  [SpawnGroups:(NPC-GVE) Proteus]
+	  [SpawnGroups:(NPC-GVE) Eclipse]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:4000]
@@ -841,6 +845,7 @@
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
+	  [SpawnGroups:(NPC-GVE) Impaler]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:4000]
@@ -956,6 +961,8 @@
 	  [MaxCooldownMs:10000]
 	 
 	  [SpawnGroups:(NPC-GVE) Lexington]
+	  [SpawnGroups:(NPC-GVE) Proteus]
+	  [SpawnGroups:(NPC-GVE) Eclipse]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:4000]
@@ -984,6 +991,7 @@
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
 	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
+	  [SpawnGroups:(NPC-GVE) Impaler]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:4000]
@@ -1241,6 +1249,8 @@
 	 
 	  [SpawnGroups:(NPC-GVE) Lexington]
 	  [SpawnGroups:(NPC-GVE) Roughneck]
+	  [SpawnGroups:(NPC-GVE) Proteus]
+	  [SpawnGroups:(NPC-GVE) Eclipse]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:4000]
@@ -1269,6 +1279,7 @@
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
 	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
+	  [SpawnGroups:(NPC-GVE) Impaler]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:4000]
@@ -1413,6 +1424,7 @@
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
 	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
+	  [SpawnGroups:(NPC-GVE) Impaler]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:4000]
@@ -1528,6 +1540,8 @@
 	  [MaxCooldownMs:10000]
 	 
 	  [SpawnGroups:(NPC-GVE) Lexington]
+	  [SpawnGroups:(NPC-GVE) Proteus]
+	  [SpawnGroups:(NPC-GVE) Eclipse]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:4000]
@@ -1663,7 +1677,7 @@
       
       [UseSpawn:true]
       [StartsReady:false]
-      [MaxSpawns:3]
+      [MaxSpawns:2]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
@@ -1695,6 +1709,10 @@
 	 
 	  [SpawnGroups:(NPC-GVE) Lexington]
 	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
+	  [SpawnGroups:(NPC-GVE) Lexington]
+	  [SpawnGroups:(NPC-GVE) Proteus]
+	  [SpawnGroups:(NPC-GVE) Eclipse]
+
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:4000]
