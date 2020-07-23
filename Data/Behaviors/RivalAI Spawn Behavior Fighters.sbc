@@ -12,6 +12,7 @@
       [RivalAI Behavior]
 	  
       [BehaviorName:Fighter]
+	  [UseProjectileLeadPrediction:true]
 	  [UseBarrageFire:false]
 	  [UseTurrets:true]
 	  [IdealMaxSpeed:100]
@@ -52,6 +53,7 @@
       [RivalAI Behavior]
 	  
       [BehaviorName:Strike]
+	  [UseProjectileLeadPrediction:true]
 	  [UseBarrageFire:true]
 	  [UseTurrets:true]
 	  [IdealMaxSpeed:70]
@@ -85,6 +87,7 @@
       [RivalAI Behavior]
 	  
       [BehaviorName:Strike]
+	  [UseProjectileLeadPrediction:true]
 	  [WeaponMaxAngleFromTarget:5]
 	  [UseBarrageFire:true]
 	  [MaxFireRateForBarrageWeapons:20]
@@ -128,6 +131,7 @@
       [RivalAI Behavior]
 	  
       [BehaviorName:Strike]
+	  [UseProjectileLeadPrediction:true]
 	  [WeaponMaxAngleFromTarget:10]
 	  [UseBarrageFire:true]
 	  [MaxFireRateForBarrageWeapons:20]
@@ -174,6 +178,7 @@
       [RivalAI Behavior]
 	  
       [BehaviorName:Strike]
+	  [UseProjectileLeadPrediction:true]
 	  [WeaponMaxAngleFromTarget:10]
 	  [UseBarrageFire:true]
 	  [MaxFireRateForBarrageWeapons:20]
@@ -222,6 +227,7 @@
       [BehaviorName:Fighter]
 	  [UseBarrageFire:false]
 	  [UseTurrets:true]
+	  [UseProjectileLeadPrediction:true]
 	  [IdealMaxSpeed:140]
 	  [UseVanillaCollisionAvoidance:false]
 	  [UseStuckMovementCorrection:true]
