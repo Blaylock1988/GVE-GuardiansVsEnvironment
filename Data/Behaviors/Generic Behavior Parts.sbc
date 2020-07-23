@@ -149,6 +149,7 @@
       [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
+	  [SpawnGroups:(NPC-GVE) Impaler]
 
       [MinDistance:400]
       [MaxDistance:700]
