@@ -12,6 +12,7 @@
       [RivalAI Behavior]
 	  
       [BehaviorName:Fighter]
+	  [UseProjectileLeadPrediction:true]
 	  [UseBarrageFire:false]
 	  [UseTurrets:true]
 	  [IdealMaxSpeed:70]
@@ -104,9 +105,11 @@
       [RivalAI Behavior]
 	  
       [BehaviorName:HorseFighter]
+	  [UseProjectileLeadPrediction:true]
 	  [IdealMaxSpeed:70]
-	  [AngleAllowedForForwardThrust:90]
-	  [RotationMultiplier:2]
+	  [SlowDownOnWaypointApproach:false]
+	  [AngleAllowedForForwardThrust:40]
+	  [RotationMultiplier:1]
 	  [WaypointTolerance:140]
 	  [OffsetSpaceMinDistFromTarget:400]
 	  [OffsetSpaceMaxDistFromTarget:1000]
@@ -141,7 +144,58 @@
       </Description>
     </EntityComponent>
 	
-		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Proteus-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Horsefly]
+
+	  [HorseflyWaypointWaitTimeTrigger:0]
+
+	  [UseVelocityCollisionEvasion:true]
+	  [CollisionEvasionWaypointDistance:200]
+	  [CollisionEvasionResumeDistance:50]
+	  [CollisionEvasionResumeTime:10]
+	  [WaypointTolerance:140]
+	  [UseProjectileLeadPrediction:false]
+	  [OffsetSpaceMinDistFromTarget:400]
+	  [OffsetSpaceMaxDistFromTarget:1000]
+	  [RotationMultiplier:1.5]	  	
+	  [IdealMaxSpeed:90]
+	  [IdealMinSpeed:40]
+	  [MaxSpeedTolerance:10]
+	  [SlowDownOnWaypointApproach:false]
+	  [ExtraSlowDownDistance:0]
+	  [AllowStrafing:false]
+	  [AngleAllowedForForwardThrust:50]
+	  
+	  [UseStaticGuns:false]
+	  [UseTurrets:true]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
+	  
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
+		  
+	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-SPRTCallDDSFighters]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
           <SubtypeId>GVE-RE-TempanoRavager-Behavior-Start</SubtypeId>
@@ -151,6 +205,7 @@
       [RivalAI Behavior]
 	  
       [BehaviorName:HorseFighter]
+	  [UseProjectileLeadPrediction:true]
 	  [IdealMaxSpeed:100]
 	  [AngleAllowedForForwardThrust:90]
 	  [RotationMultiplier:2]
