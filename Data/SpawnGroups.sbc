@@ -959,7 +959,7 @@
 		   
 		   [Name:Pirate Hoard Territory]
 		   [Type:Static]
-		   [Radius:2000000]
+		   [Radius:200000]
 		   [CoordsX:450000.00]
 		   [CoordsY:250000.00]
 		   [CoordsZ:0]
