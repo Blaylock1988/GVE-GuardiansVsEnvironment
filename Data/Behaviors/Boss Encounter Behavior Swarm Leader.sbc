@@ -77,47 +77,14 @@
       [RivalAI Action]
 	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-SwarmLeader-Chat-CallBackup]
+	  [ChatData:GVE-Generic-Chat-SPRTCallDDSFighters]
 
 	  [SpawnEncounter:true]
 	  [Spawner:GVE-RE-Boss-SwarmLeader-DDS-Fighter-Spawner]
 	  
       </Description>
     </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-SwarmLeader-Chat-CallBackup</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Chat]
-      
-      [UseChat:true]
-      [StartsReady:true]
-      [Chance:100]
-      [MaxChats:1]
-      [BroadcastRandomly:true]
-      
-      [Author:{GridName}]
-      [Color:Red]
-      
-      [ChatMessages:Disengage stealth mode and attack.]
-      [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Chat]
-	  
-	  [ChatMessages:Lock S-Foils in attack position.]
-      [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Chat]
-
-	  [ChatMessages:Squadron, form up on me.]
-      [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Chat]
-
-      </Description>
-    </EntityComponent>
-	
+		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -137,6 +104,7 @@
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
 	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
+	  [SpawnGroups:(NPC-GVE) Impaler]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:1000]
