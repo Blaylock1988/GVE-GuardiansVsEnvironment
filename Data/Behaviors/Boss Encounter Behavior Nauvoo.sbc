@@ -349,13 +349,16 @@
       
       [StartsReady:true]
 
-      [MaxSpawns:8]
+      [MaxSpawns:7]
       
 	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
 	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
 	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
 	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
 	  [SpawnGroups:(NPC-GVE) Lexington]
+	  [SpawnGroups:(NPC-GVE) Eclipse]
+	  [SpawnGroups:(NPC-GVE) Proteus]
+	  [SpawnGroups:(NPC-GVE) Impaler]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:850]
