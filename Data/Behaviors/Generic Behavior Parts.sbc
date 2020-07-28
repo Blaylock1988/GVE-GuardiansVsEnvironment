@@ -75,7 +75,7 @@
       [Type:HasTarget]
 	  [UseTrigger:true]
 	  [StartsReady:true]
-	  [MaxActions:10]
+	  [MaxActions:5]
 	  [MinCooldownMs:60000]
 	  [MaxCooldownMs:180000]
 
@@ -119,15 +119,19 @@
       [Author:{GridName}]
       [Color:Red]
       
-      [ChatMessages:Brining Reinforcements]
+      [ChatMessages:Brining reinforcements]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Chat]
 	  
-	  [ChatMessages:Calling Backup]
+	  [ChatMessages:Calling backup]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Chat]
 
-	  [ChatMessages:Deploying Fighters]
+	  [ChatMessages:Deploying fighters]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:Additional support has arrived]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Chat]
 

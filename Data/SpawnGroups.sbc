@@ -649,7 +649,8 @@
 			[UniqueEncounter:false]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
-			[DisableBlocksWithName:NPC Antenna]
+			[DisableBlocksWithName:NPC Antenna,Rocket]
+			[AllowPartialNames:true]
 			
 			[ChangeTurretSettings:true]
 			[TurretRange:800]
