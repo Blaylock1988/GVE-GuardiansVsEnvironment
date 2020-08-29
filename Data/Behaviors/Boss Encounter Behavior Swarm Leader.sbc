@@ -41,6 +41,7 @@
 	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
 	  [Triggers:GVE-RE-Boss-SwarmLeader-Trigger-CallBackup]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  
       </Description>
     </EntityComponent>
