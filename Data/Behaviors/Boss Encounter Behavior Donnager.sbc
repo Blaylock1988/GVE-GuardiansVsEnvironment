@@ -46,6 +46,7 @@
 	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
 	  [Triggers:GVE-Generic-Trigger-SPRTCallDDSFighters]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  
       </Description>
     </EntityComponent>
