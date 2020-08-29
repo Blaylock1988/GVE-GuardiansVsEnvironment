@@ -19,7 +19,9 @@
 			<DiscoveredByDefault>false</DiscoveredByDefault>
 			<FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon> <!--Game or Mod Path For Texture File-->
 		</Faction>
-		<Faction Tag="REAVER" Founder="Miranda Survivors">
+		
+		<!--GVE needs to be loaded AFTER Reavers for this to work correctly-->
+		<Faction Tag="REAVER" Founder="Miranda Survivors"> 
 		    <Id>
 			  <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
 			  <SubtypeId>Reavers</SubtypeId>
