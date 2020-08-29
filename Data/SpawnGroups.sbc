@@ -31,7 +31,6 @@
 			[UniqueEncounter:true]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
-								
 			[GridsAreDestructable:false]
 			[GridsAreEditable:false]
 			[ForceStaticGrid:true]
@@ -83,9 +82,20 @@
 			[UniqueEncounter:true]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
+			
+			[UseBlockReplacerProfile:true]
+			[IgnoreGlobalBlockReplacer:false]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
 			[GridsAreDestructable:true]
 			[GridsAreEditable:false]
 			[ForceStaticGrid:false]
+			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:100]
 			
 			[ChangeTurretSettings:true]
@@ -151,9 +161,21 @@
 			[UniqueEncounter:true]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
+			
+			[UseBlockReplacerProfile:true]
+			[IgnoreGlobalBlockReplacer:false]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
 			[GridsAreDestructable:true]
 			[GridsAreEditable:false]
 			[ForceStaticGrid:false]
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:75]
 			
 			[ChangeTurretSettings:true]
 			[TurretRange:800]
@@ -172,8 +194,6 @@
 			[IgnoreCleanupRules:true]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:false]			
-			[OverrideBlockDamageModifier:true]
-			[BlockDamageModifier:60]
 			
 			[BossCustomAnnounceEnable:true]
 			[BossCustomAnnounceAuthor:GVE+ Listening Post]
@@ -221,10 +241,21 @@
 			[UniqueEncounter:true]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
+			
+			[UseBlockReplacerProfile:true]
+			[IgnoreGlobalBlockReplacer:false]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
 			[GridsAreDestructable:true]
 			[GridsAreEditable:true]
 			[ForceStaticGrid:false]
-			[BlockDamageModifier:70]
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:100]
 						
 			[ChangeTurretSettings:true]
 			[TurretRange:800]
@@ -269,7 +300,7 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>50</Speed>
-					<Behaviour>GVE-Behavior-Fighter-Test</Behaviour>
+					<Behaviour>GVE-RE-TempanoRavager-Behavior-Start</Behaviour>
 				</Prefab>
 				<Prefab SubtypeId="GVE-NPC Cyclone Fighter Bomber">
 					<Position>
@@ -279,7 +310,7 @@
 					</Position>
 					<BeaconText>Cyclone-Fighter</BeaconText>
 					<Speed>50</Speed>
-					<Behaviour>GVE-RE-DDS-Fighter</Behaviour>
+					<Behaviour>GVE-Behavior-Fighter-Test</Behaviour>
 				</Prefab>
 				<Prefab SubtypeId="GVE-NPC Cyclone Fighter Bomber">
 					<Position>
@@ -289,7 +320,7 @@
 					</Position>
 					<BeaconText>Cyclone-Fighter</BeaconText>
 					<Speed>50</Speed>
-					<Behaviour>GVE-RE-DDS-Strike</Behaviour>
+					<Behaviour>GVE-Behavior-Strike-Test</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -321,7 +352,16 @@
 			[UniqueEncounter:true]
 			[ShiftBlockColorsHue:false]
 			[RandomHueShift:true]	
-
+			
+			[UseBlockReplacerProfile:true]
+			[IgnoreGlobalBlockReplacer:false]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
 			[ConvertToHeavyArmor:false]
 			[GridsAreDestructable:false]
 			[GridsAreEditable:false]
@@ -395,9 +435,20 @@
 			[UniqueEncounter:true]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
+			
+			[UseBlockReplacerProfile:true]
+			[IgnoreGlobalBlockReplacer:false]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
 			[GridsAreDestructable:true]
 			[GridsAreEditable:false]
 			[ForceStaticGrid:false]
+			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:100]
 			
 			[ChangeTurretSettings:true]
@@ -414,7 +465,7 @@
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Donnager GreekLetter RandomNumber-RandomChar]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
-			[IgnoreCleanupRules:true]
+			[IgnoreCleanupRules:false]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:true]	
 			
@@ -461,9 +512,21 @@
 			[UniqueEncounter:true]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
+			
+			[UseBlockReplacerProfile:true]
+			[IgnoreGlobalBlockReplacer:false]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
 			[GridsAreDestructable:true]
 			[GridsAreEditable:false]
 			[ForceStaticGrid:false]
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:75]
 			
 			[ChangeTurretSettings:true]
 			[TurretRange:800]
@@ -479,11 +542,9 @@
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Roughneck GreekLetter RandomNumber-RandomChar]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
-			[IgnoreCleanupRules:true]
+			[IgnoreCleanupRules:false]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:false]			
-			[OverrideBlockDamageModifier:true]
-			[BlockDamageModifier:75]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -527,10 +588,21 @@
 			[UniqueEncounter:true]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
+			
+			[UseBlockReplacerProfile:true]
+			[IgnoreGlobalBlockReplacer:false]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
 			[GridsAreDestructable:true]
 			[GridsAreEditable:false]
 			[ForceStaticGrid:false]
-			[BlockDamageModifier:80]
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:90]
 			
 			[ChangeTurretSettings:true]
 			[TurretRange:800]
@@ -546,7 +618,7 @@
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Lexington GreekLetter RandomNumber-RandomChar]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
-			[IgnoreCleanupRules:true]
+			[IgnoreCleanupRules:false]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:true]	
 			
@@ -593,6 +665,21 @@
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
 			
+			[UseBlockReplacerProfile:true]
+			[IgnoreGlobalBlockReplacer:false]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
+			[GridsAreDestructable:true]
+			[GridsAreEditable:true]
+			[ForceStaticGrid:false]
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:75]
+			
 			[ChangeTurretSettings:true]
 			[TurretRange:800]
 			[TurretIdleRotation:false]
@@ -603,11 +690,9 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
-			[IgnoreCleanupRules:true]
+			[IgnoreCleanupRules:false]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:false]			
-			[OverrideBlockDamageModifier:true]
-			[BlockDamageModifier:75]
 			
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Fighter Cyclone - InsectNoun]
@@ -649,8 +734,21 @@
 			[UniqueEncounter:false]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
-			[DisableBlocksWithName:NPC Antenna,Rocket]
-			[AllowPartialNames:true]
+			
+			[UseBlockReplacerProfile:true]
+			[IgnoreGlobalBlockReplacer:false]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
+			[GridsAreDestructable:true]
+			[GridsAreEditable:true]
+			[ForceStaticGrid:false]
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:100]
 			
 			[ChangeTurretSettings:true]
 			[TurretRange:800]
@@ -663,11 +761,10 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
 			
-			[IgnoreCleanupRules:true]
-			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
-			[AllowPartialNames:false]			
-			[OverrideBlockDamageModifier:true]
-			[BlockDamageModifier:75]
+			[IgnoreCleanupRules:false]
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2,NPC Antenna,Rocket]
+			[AllowPartialNames:true]				
+			
 			[EraseIngameScripts:true]
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Strike Cyclone - InsectNoun]
@@ -710,6 +807,21 @@
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
 			
+			[UseBlockReplacerProfile:true]
+			[IgnoreGlobalBlockReplacer:false]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
+			[GridsAreDestructable:true]
+			[GridsAreEditable:true]
+			[ForceStaticGrid:false]
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:100]
+			
 			[ChangeTurretSettings:true]
 			[TurretRange:800]
 			[TurretIdleRotation:false]
@@ -721,11 +833,10 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
 			
-			[IgnoreCleanupRules:true]
+			[IgnoreCleanupRules:false]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:false]			
-			[OverrideBlockDamageModifier:true]
-			[BlockDamageModifier:75]
+			
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: BaddieNoun Wildfire Fighter]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
@@ -773,8 +884,21 @@
 			[UniqueEncounter:false]
 			[ShiftBlockColorsHue:false]
 			[RandomHueShift:true]
+			
+			[UseBlockReplacerProfile:true]
+			[IgnoreGlobalBlockReplacer:false]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
 			[GridsAreDestructable:true]
 			[GridsAreEditable:false]
+			[ForceStaticGrid:false]
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:90]
 			
 			[ChangeTurretSettings:true]
 			[TurretRange:800]
@@ -787,10 +911,8 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
 			
-			[IgnoreCleanupRules:true]
-			[OverrideBlockDamageModifier:true]
-			[BlockDamageModifier:75]
-			[UseRandomNameGenerator:false]
+			[IgnoreCleanupRules:false]
+			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Tempano BaddieNoun]
 			[ReplaceAntennaNameWithRandomizedName:Tempano Ravager]
 			
@@ -807,7 +929,7 @@
 					</Position>
 					<BeaconText>Tempano Ravager</BeaconText>
 					<Speed>50</Speed>
-					<Behaviour>GVE-Behavior-Strike-LargeFighter</Behaviour>
+					<Behaviour>GVE-RE-TempanoRavager-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -836,10 +958,21 @@
 			[UniqueEncounter:true]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
+			
+			[UseBlockReplacerProfile:true]
+			[IgnoreGlobalBlockReplacer:false]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
 			[GridsAreDestructable:true]
 			[GridsAreEditable:false]
 			[ForceStaticGrid:false]
-			[BlockDamageModifier:80]
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:100]
 			
 			[ChangeTurretSettings:true]
 			[TurretRange:800]
@@ -855,7 +988,7 @@
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Eclipse GreekLetter RandomNumber-RandomChar]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
-			[IgnoreCleanupRules:true]
+			[IgnoreCleanupRules:false]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:true]	
 			
@@ -901,11 +1034,22 @@
 			[UniqueEncounter:true]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
+			
+			[UseBlockReplacerProfile:true]
+			[IgnoreGlobalBlockReplacer:false]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
 			[GridsAreDestructable:true]
 			[GridsAreEditable:false]
 			[ForceStaticGrid:false]
+			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:100]
-			
+						
 			[ChangeTurretSettings:true]
 			[TurretRange:800]
 			[TurretIdleRotation:false]
@@ -920,7 +1064,7 @@
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Proteus GreekLetter RandomNumber-RandomChar]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
-			[IgnoreCleanupRules:true]
+			[IgnoreCleanupRules:false]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:true]	
 			
@@ -966,11 +1110,22 @@
 			[UniqueEncounter:true]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
+			
+			[UseBlockReplacerProfile:true]
+			[IgnoreGlobalBlockReplacer:false]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
 			[GridsAreDestructable:true]
 			[GridsAreEditable:false]
 			[ForceStaticGrid:false]
-			[BlockDamageModifier:80]
-			
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:100]
+						
 			[ChangeTurretSettings:true]
 			[TurretRange:800]
 			[TurretIdleRotation:false]
@@ -985,7 +1140,7 @@
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: BaddieNoun Impaler Drone]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
-			[IgnoreCleanupRules:true]
+			[IgnoreCleanupRules:false]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:true]	
 			
@@ -1006,7 +1161,155 @@
 			</Prefabs>
 		</SpawnGroup>
 		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) GVE+ Figther</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[SpaceCargoShip:true]
+			[LunarCargoShip:false]
+			[BossEncounterSpace:false]
+			[SpaceRandomEncounter:false]
+			[AtmosphericCargoShip:false]
+			[PlanetaryInstallation:false]
+			[AdminSpawnOnly:true]
+			[RivalAiSpawn:true]
+			[FactionOwner:GVE+]
+			
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[DisableDampeners:false]
+			[ReplenishSystems:true]
+			[UniqueEncounter:false]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+			
+			[UseBlockReplacerProfile:true]
+			[IgnoreGlobalBlockReplacer:false]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
+			[GridsAreDestructable:true]
+			[GridsAreEditable:true]
+			[ForceStaticGrid:false]
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:85]
+						
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:false]
+			
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern:Fighter - MilitaryNoun SurnamesNoun]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			[IgnoreCleanupRules:false]
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:true]	
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>4.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Cyclone Fighter Bomber">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+					<Behaviour>GVE-Behavior-Fighter-GVE+NPCs</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
 		<!--Wave Spawners-->
+				
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) Defend Echo Station</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[BossEncounterSpace:true]
+			[FactionOwner:GVE+]
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:GVE+ Trade Station]
+			[BossCustomAnnounceMessage:Requesting support, defend trade station from pirates!]
+			[BossCustomGPSLabel:Pirate Hoard Event (Defend)]
+			
+			[Territory:Pirate Hoard Territory]
+			[MaxDistanceFromTerritoryCenter:10000]
+				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ReplenishSystems:true]
+			[UniqueEncounter:true]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+			
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+			[ForceStaticGrid:true]
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:15]
+			
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks,MES-DisposableNpcBeacons]
+			[IgnoreGlobalBlockReplacer:true]
+			[ConvertToHeavyArmor:true]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:false]
+			
+			[IgnoreCleanupRules:false]
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:false]
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: NatoLetter Trade Station]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Echo Trade Station">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>GVE-RE-Boss-WaveSpawnerDefend-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
 		
 		<SpawnGroup>
 			<Id>
@@ -1017,7 +1320,7 @@
 
 			[Modular Encounters SpawnGroup]
 			
-			[BossEncounterSpace:true]
+			[BossEncounterSpace:false]
 			[FactionOwner:GVE+]
 			[BossCustomAnnounceEnable:true]
 			[BossCustomAnnounceAuthor:GVE+ Listening Post]
@@ -1033,11 +1336,12 @@
 			[UniqueEncounter:true]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
+			
 			[GridsAreDestructable:false]
 			[GridsAreEditable:false]
 			[ForceStaticGrid:true]
 			
-			[IgnoreCleanupRules:true]
+			[IgnoreCleanupRules:false]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:false]
 			[UseRandomNameGenerator:true]
@@ -1079,6 +1383,7 @@
 			[ReplenishSystems:true]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
+			
 			[GridsAreDestructable:false]
 			[GridsAreEditable:false]
 			[ForceStaticGrid:true]
