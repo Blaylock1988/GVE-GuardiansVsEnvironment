@@ -1,82 +1,7 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <EntityComponents>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-DDS-Fighter</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Behavior]
-	  
-      [BehaviorName:Fighter]
-	  [UseProjectileLeadPrediction:true]
-	  [UseBarrageFire:false]
-	  [UseTurrets:true]
-	  [IdealMaxSpeed:100]
-	  [AllowStrafing:true]
-	  [StrafeMinDurationMs:5000]
-	  [StrafeMaxDurationMs:15000]
-	  [StrafeMinCooldownMs:10000]
-	  [StrafeMaxCooldownMs:20000]
-	  [StrafeSpeedCutOff:100]
-	  [StrafeDistanceCutOff:700]
-	  [FighterEngageDistanceSpace:600]
-	  [FighterDisengageDistanceSpace:850]
-	  [RotationMultiplier:1.25]
-	  [UseAmmoReplenish:true]
-	  [AmmoReplenishClipAmount:100]
-	  [UsePlayerDistanceTimer:true]
-	  [PlayerDistanceTimerTrigger:5]
-	  [PlayerDistanceTrigger:50000]
-	  [UseNoTargetTimer:true]
-	  [NoTargetTimerTrigger:600]
-	  [UseRetreatTimer:false]
-	  
-	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
-		  
-	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
-	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
-	  
-      </Description>
-    </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-DDS-Strike</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Behavior]
-	  
-      [BehaviorName:Strike]
-	  [UseProjectileLeadPrediction:true]
-	  [UseBarrageFire:true]
-	  [UseTurrets:true]
-	  [IdealMaxSpeed:70]
-	  [StrikeBreakawayDistance:100]
-	  [StrikeEngageUseCollisionEvasion:true]
-	  [RotationMultiplier:1.25]
-	  [UseAmmoReplenish:true]
-	  [AmmoReplenishClipAmount:100]
-	  [UsePlayerDistanceTimer:true]
-	  [PlayerDistanceTimerTrigger:5]
-	  [PlayerDistanceTrigger:50000]
-	  [UseNoTargetTimer:true]
-	  [NoTargetTimerTrigger:600]
-	  [UseRetreatTimer:false]
-	  
-	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
-		  
-	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
-	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
-	  
-      </Description>
-    </EntityComponent>
-	
+		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -87,19 +12,22 @@
       [RivalAI Behavior]
 	  
       [BehaviorName:Strike]
+	  [UseVelocityCollisionEvasion:true]
+	  [CollisionEvasionWaypointDistance:400]
+	  [CollisionEvasionResumeDistance:150]
+	  [CollisionEvasionResumeTime:10]
 	  [UseProjectileLeadPrediction:true]
 	  [WeaponMaxAngleFromTarget:5]
-	  [UseBarrageFire:true]
+	  [UseBarrageFire:false]
 	  [MaxFireRateForBarrageWeapons:20]
 	  [OffsetSpaceMinDistFromTarget:1000]
-	  [OffsetSpaceMaxDistFromTarget:1500]
+	  [OffsetSpaceMaxDistFromTarget:1200]
 	  [WaypointTolerance:50]
 	  [UseStaticGuns:true]
 	  [UseTurrets:true]
 	  [IdealMaxSpeed:80]
 	  [StrikeBeginSpaceAttackRunDistance:700]
 	  [StrikeBreakawayDistance:600]
-	  [UseVelocityCollisionEvasion:true]
 	  [StrikeEngageUseCollisionEvasion:true]
 	  [RotationMultiplier:1.25]
 	  [UseAmmoReplenish:true]
@@ -117,104 +45,11 @@
 		  
 	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
-	  
-      </Description>
-    </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-Behavior-Strike-LargeFighter</SubtypeId>
-      </Id>
-      <Description>
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 
-      [RivalAI Behavior]
-	  
-      [BehaviorName:Strike]
-	  [UseProjectileLeadPrediction:true]
-	  [WeaponMaxAngleFromTarget:10]
-	  [UseBarrageFire:true]
-	  [MaxFireRateForBarrageWeapons:20]
-	  [OffsetSpaceMinDistFromTarget:900]
-	  [OffsetSpaceMaxDistFromTarget:1400]
-	  [WaypointTolerance:75]
-	  [UseStaticGuns:true]
-	  [UseTurrets:true]
-	  [IdealMaxSpeed:120]
-	  [StrikeBeginSpaceAttackRunDistance:150]
-	  [StrikeBreakawayDistance:550]
-	  [UseVelocityCollisionEvasion:true]
-	  [CollisionEvasionWaypointDistance:300]
-	  [CollisionEvasionResumeDistance:75]
-	  [CollisionEvasionResumeTime:5]
-	  [StrikeEngageUseCollisionEvasion:true]
-	  [RotationMultiplier:1.5]
-	  [AngleAllowedForForwardThrust:45]
-	  [UseAmmoReplenish:true]
-	  [AmmoReplenishClipAmount:100]
-	  [UseAmmoReplenish:true]
-	  [UsePlayerDistanceTimer:true]
-	  [PlayerDistanceTimerTrigger:5]
-	  [PlayerDistanceTrigger:50000]
-	  [UseNoTargetTimer:true]
-	  [NoTargetTimerTrigger:600]
-	  [UseRetreatTimer:false]
-	  
-	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
-		  
-	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
-	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
-	  
       </Description>
     </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-Behavior-Strike-HorseflyTest</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Behavior]
-	  
-      [BehaviorName:Strike]
-	  [UseProjectileLeadPrediction:true]
-	  [WeaponMaxAngleFromTarget:10]
-	  [UseBarrageFire:true]
-	  [MaxFireRateForBarrageWeapons:20]
-	  [OffsetSpaceMinDistFromTarget:2000]
-	  [OffsetSpaceMaxDistFromTarget:4000]
-	  [WaypointTolerance:300]
-	  [UseStaticGuns:false]
-	  [UseTurrets:true]
-	  [IdealMaxSpeed:50]
-	  [StrikeBeginSpaceAttackRunDistance:300]
-	  [StrikeBreakawayDistance:2500]
-	  [UseVelocityCollisionEvasion:true]
-	  [CollisionEvasionWaypointDistance:300]
-	  [CollisionEvasionResumeDistance:75]
-	  [CollisionEvasionResumeTime:5]
-	  [StrikeEngageUseCollisionEvasion:false]
-	  [RotationMultiplier:0.2]
-	  [AngleAllowedForForwardThrust:45]
-	  [UseAmmoReplenish:true]
-	  [AmmoReplenishClipAmount:100]
-	  [UseAmmoReplenish:true]
-	  [UsePlayerDistanceTimer:true]
-	  [PlayerDistanceTimerTrigger:5]
-	  [PlayerDistanceTrigger:50000]
-	  [UseNoTargetTimer:true]
-	  [NoTargetTimerTrigger:600]
-	  [UseRetreatTimer:false]
-	  
-	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
-		  
-	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
-	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
-	  
-      </Description>
-    </EntityComponent>
-	
+			
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -222,42 +57,120 @@
       </Id>
       <Description>
 
-      [RivalAI Behavior]
+	  [RivalAI Behavior]
 	  
       [BehaviorName:Fighter]
-	  [UseBarrageFire:false]
-	  [UseTurrets:true]
+	  
+	  [UseVelocityCollisionEvasion:true]
+	  [CollisionEvasionWaypointDistance:400]
+	  [CollisionEvasionResumeDistance:150]
+	  [CollisionEvasionResumeTime:10]
+	  [WaypointTolerance:50]
 	  [UseProjectileLeadPrediction:true]
-	  [IdealMaxSpeed:140]
-	  [UseVanillaCollisionAvoidance:false]
-	  [UseStuckMovementCorrection:true]
+	  [PadDistanceFromTarget:0]
+	  [RotationMultiplier:1.5]
+	  [IdealMaxSpeed:90]
+	  [MaxSpeedTolerance:10]
 	  [AllowStrafing:true]
-	  [StrafeMinDurationMs:1500]
-	  [StrafeMaxDurationMs:20000]
+	  [StrafeMinDurationMs:5000]
+	  [StrafeMaxDurationMs:10000]
 	  [StrafeMinCooldownMs:1]
 	  [StrafeMaxCooldownMs:1]
-	  [StrafeSpeedCutOff:140]
-	  [StrafeDistanceCutOff:1500]
-	  [FighterEngageDistanceSpace:700]
-	  [FighterDisengageDistanceSpace:900]
-	  [UseVelocityCollisionEvasion:true]
-	  [CollisionEvasionWaypointDistance:600]
-	  [CollisionEvasionResumeDistance:300]
-	  [CollisionEvasionResumeTime:10]
-	  [RotationMultiplier:1]
+	  [StrafeSpeedCutOff:80]
+	  [StrafeDistanceCutOff:1000]
+	  [StrafeMinimumTargetDistance:450]
+	  [StrafeMinimumSafeAngleFromTarget:45]
+	  
+	  [UseStaticGuns:true]
+	  [UseTurrets:true]
+	  [MaxStaticWeaponRange:800]
+	  [WeaponMaxAngleFromTarget:5]
+	  [UseBarrageFire:true]
+	  [MaxFireRateForBarrageWeapons:10]
 	  [UseAmmoReplenish:true]
 	  [AmmoReplenishClipAmount:100]
+	  
 	  [UsePlayerDistanceTimer:true]
 	  [PlayerDistanceTimerTrigger:5]
 	  [PlayerDistanceTrigger:50000]
-	  [UseNoTargetTimer:true]
-	  [NoTargetTimerTrigger:600]
+	  [UseNoTargetTimer:false]
+	  [NoTargetTimerTrigger:0]
 	  [UseRetreatTimer:false]
+	  [RetreatTimerTrigger:0]
+	  [RetreatDespawnDistance:0]
+	  
+	  [FighterEngageDistanceSpace:700]
+	  [FighterDisengageDistanceSpace:800]
 	  
 	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 		  
 	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
+	  [Triggers:GVE-Generic-Trigger-FighterBarrelRoll]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Behavior-Fighter-GVE+NPCs</SubtypeId>
+      </Id>
+      <Description>
+
+	  [RivalAI Behavior]
+	  
+      [BehaviorName:Fighter]
+	  
+	  [UseVelocityCollisionEvasion:true]
+	  [CollisionEvasionWaypointDistance:400]
+	  [CollisionEvasionResumeDistance:150]
+	  [CollisionEvasionResumeTime:10]
+	  [WaypointTolerance:50]
+	  [UseProjectileLeadPrediction:true]
+	  [PadDistanceFromTarget:0]
+	  [RotationMultiplier:1.5]
+	  [IdealMaxSpeed:90]
+	  [MaxSpeedTolerance:10]
+	  [AllowStrafing:true]
+	  [StrafeMinDurationMs:5000]
+	  [StrafeMaxDurationMs:10000]
+	  [StrafeMinCooldownMs:1]
+	  [StrafeMaxCooldownMs:1]
+	  [StrafeSpeedCutOff:100]
+	  [StrafeDistanceCutOff:1000]
+	  [StrafeMinimumTargetDistance:350]
+	  [StrafeMinimumSafeAngleFromTarget:35]
+	  [AngleAllowedForForwardThrust:60]
+	  [MaxVelocityAngleForSpeedControl:35]
+	  
+	  [UseStaticGuns:true]
+	  [UseTurrets:true]
+	  [MaxStaticWeaponRange:800]
+	  [WeaponMaxAngleFromTarget:5]
+	  [UseBarrageFire:true]
+	  [MaxFireRateForBarrageWeapons:10]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:false]
+	  [NoTargetTimerTrigger:0]
+	  [UseRetreatTimer:false]
+	  [RetreatTimerTrigger:0]
+	  [RetreatDespawnDistance:0]
+	  
+	  [FighterEngageDistanceSpace:700]
+	  [FighterDisengageDistanceSpace:800]
+	  
+	  [TargetData:GVE-Generic-TargetProfile-GVE+NPCs]
+		  
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
+	  [Triggers:GVE-Generic-Trigger-FighterBarrelRoll]
 	  
       </Description>
     </EntityComponent>

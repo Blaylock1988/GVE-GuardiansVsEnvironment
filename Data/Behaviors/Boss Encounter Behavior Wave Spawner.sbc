@@ -1,11 +1,23 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <EntityComponents>
-
+	
+	<!--=== Pre-wave setup ===-->
+	
+	<!--This wave spanwer is station with reduced damage that the player must defend from
+	10 waves of pirates of increasing difficulty. If the player completes all waves, then 
+	a loot drop reward will	spawn. Balance is required to make it challenging yet also 
+	avoid NPC spam swarm. You should use incredibly aggressive MES Cleanup to help minimize
+	impact on the server. In my mod a strong fleet of allies is required to make it to the
+	very end. Players will need to coordinate their movement as well resupply and repair 
+	runs to be successful. If the player attacks the station or fails to defend it then
+	they will lose reputation when the station is destroyed.-->
+	
+	<!--Set up the behavior for the station that will act as the target and pirate spawner-->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Behavior-Start</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Behavior-Start</SubtypeId>
       </Id>
       <Description>
 
@@ -19,57 +31,51 @@
 	  [NoTargetTimerTrigger:600]
 	  [UseRetreatTimer:false]
 	  
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-PlayerDistant]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-StartWaves]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-NoPiratesRemainingTrue]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-NoPiratesRemainingFalse]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave1]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave2]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave3]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave4]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave5]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave6]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave7]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave8]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave9]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Wave10]
-	  [Triggers:GVE-RE-Boss-WaveSpawner-Trigger-Reward]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-PlayerDistant]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-StartWaves]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-NoPiratesRemaining]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-NextWaveCountdown]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-TimeWarning20]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-TimeWarning15]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-TimeWarning10]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-TimeWarning05]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-TimeWarning01] 
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-IncreaseWaveNumber]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave01]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave02]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave03]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave04]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave05]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave06]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave07]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave08]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave09]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave10]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave01Timer]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave02Timer]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave03Timer]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave04Timer]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave05Timer]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave06Timer]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave07Timer]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave08Timer]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave09Timer]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave10Timer]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Reward]
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-FighterDefenses]	 
+	  [Triggers:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Defeated]
+	  [Triggers:GVE-Generic-Trigger-GVE+TakeDamage]
 
-	  [TargetData:GVE-RE-Boss-WaveSpawner-TargetProfile-PlayerStart]
-	  [TargetData:GVE-RE-Boss-WaveSpawner-TargetProfile-PirateDetection]
+	  [TargetData:GVE-RE-Boss-WaveSpawnerDefend-TargetProfile-PirateDetection]
 	  
       </Description>
     </EntityComponent>
-
-	<!--Target profile detect players to begin wave spawning-->
 	
+	<!--Target profile for detecting hostile NPC RAI RCs spawned by waves-->
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-TargetProfile-PlayerStart</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Target]
-      
-      [UseCustomTargeting:true]
-      [Target:Player]
-      [MaxDistance:20000]
-	  
-      [MatchAllFilters:OutsideOfSafezone]
-      [MatchAllFilters:Owner]
-      [GetTargetBy:ClosestDistance]
-      [Owners:Player]
-
-      </Description>
-    </EntityComponent>
-	
-	<!--Target profile for detecting hostile NPCs spawned by waves-->
-	
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-TargetProfile-PirateDetection</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-TargetProfile-PirateDetection</SubtypeId>
       </Id>
       <Description>
 
@@ -78,24 +84,23 @@
       [UseCustomTargeting:true]
       [Target:Block]
 	  [BlockTargets:RivalAi]
-	  [UseTargetRefresh:true]
+	  [UseTargetRefresh:false]
 	  [TimeUntilNextRefresh:30]
-	  [TimeUntilNextEvaluation:10]
+	  [TimeUntilNextEvaluation:0]
       [MaxDistance:10000]
 	  
-      [MatchAllFilters:Owner]
       [MatchAllFilters:Faction]
-      [GetTargetBy:ClosestDistance]
-      [Owners:NPC]
       [FactionTargets:SPRT]
+	  [GetTargetBy:ClosestDistance]
 	  
       </Description>
     </EntityComponent>
 	
+	<!--Trigger sequence to message players and provide GPS coord upon station spawn-->
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-PlayerDistant</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-PlayerDistant</SubtypeId>
       </Id>
       <Description>
 
@@ -106,7 +111,7 @@
 	  [TargetDistance:50000]
 	  [MaxActions:1]
 	  
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-PlayerDistant]
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-PlayerDistant]
 	  
       </Description>      
     </EntityComponent>
@@ -114,7 +119,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-PlayerDistant</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-PlayerDistant</SubtypeId>
       </Id>
       <Description>
 
@@ -124,9 +129,10 @@
 	  [AntennaNamesForRangeChange:NPC Antenna]
 	  [AntennaRangeChangeType:Set]
 	  [AntennaRangeChangeAmount:50000]
-      
+	  
       [UseChatBroadcast:true]
-      [ChatData:GVE-RE-Boss-WaveSpawner-Chat-PlayerDistant]
+      [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-PlayerDistant]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-PlayerDistantGPS]
 
       </Description>
     </EntityComponent>
@@ -134,7 +140,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-PlayerDistant</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-PlayerDistant</SubtypeId>
       </Id>
       <Description>
 
@@ -145,23 +151,49 @@
       [Chance:100]
       [MaxChats:1]
       [BroadcastRandomly:false]
-	  [SendToAllOnlinePlayers:true]
-      [Author:GVE+ Listening Post]
+      [Author:{GridName}]
       [Color:White]
       
-      [ChatMessages:Pirate Hoard Preparing to attack. Approach Listening Post within 2km to begin Wave 1.]
+      [ChatMessages:Please help! Pirates are about to attack the station!]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
-	  
+	  [SendToAllOnlinePlayers:true]
+
       </Description>      
     </EntityComponent>
-	
-	<!--Switch target mode to detect pirates and start waves-->
-	
+
+	<!--GPS only via chat instead of notify-->
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-StartWaves</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-PlayerDistantGPS</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:false]
+      [Author:{GridName}]
+      [Color:White]
+      
+      [ChatMessages:{GPS}]
+      [ChatAudio:ArcHudGPSNotification1]
+      [BroadcastChatType:Chat]
+	  [SendToAllOnlinePlayers:true]
+	  [GPSLabel:Pirate Hoard Battlefield]
+
+      </Description>      
+    </EntityComponent>
+	
+	<!--Trigger sequence to enable triggers and begin counters and waves-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-StartWaves</SubtypeId>
       </Id>
       <Description>
 
@@ -172,43 +204,47 @@
 	  [TargetDistance:2000]
 	  [MaxActions:1]
 	  
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-StartWaves]
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-StartWaves]
 	  
       </Description>      
     </EntityComponent>
 
+	<!-- enable the rest of the wave trigger; this is required so that the NoTarget/Timer triggers below do not trigger upon spawn-->
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-StartWaves</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-StartWaves</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Action]
+	  
+	  [SetCounters:TimeCounter]
+	  [SetCountersValues:0]
 	  	  
-	  [ChangeTargetProfile:true]
-	  [RefreshTarget:true]
-	  [NewTargetProfileId:GVE-RE-Boss-WaveSpawner-TargetProfile-PirateDetection]
-	  
-	  [SetBooleansFalse:NoPiratesRemaining]
-	  
 	  [EnableTriggers:true]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-NoPiratesRemainingTrue]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-NoPiratesRemainingFalse]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave1]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave2]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave3]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave4]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave5]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave6]	  
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave7]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave8]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave9]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Wave10]
-	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawner-Trigger-Reward]
-		  
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-NoPiratesRemaining]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-NextWaveCountdown]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-TimeWarning20]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-TimeWarning15]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-TimeWarning10]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-TimeWarning05]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-TimeWarning01]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-IncreaseWaveNumber]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave01]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave02]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave03]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave04]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave05]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave06]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave07]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave08]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave09]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave10]
+	  [EnableTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Reward]
+	  		  
       [UseChatBroadcast:true]
-      [ChatData:GVE-RE-Boss-WaveSpawner-Chat-StartWaves]
+      [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-StartWaves]
 
       </Description>
     </EntityComponent>
@@ -216,7 +252,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-StartWaves</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-StartWaves</SubtypeId>
       </Id>
       <Description>
 
@@ -227,23 +263,21 @@
       [Chance:100]
       [MaxChats:1]
       [BroadcastRandomly:false]
-	  [SendToAllOnlinePlayers:true]
-      [Author:GVE+ Listening Post]
+      [Author:{GridName}]
       [Color:White]
       
-      [ChatMessages:Pirates inbound.]
+      [ChatMessages:Pirates indbound. Event will end if no players remain within 50km of the battlefield.]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
 	  	  
       </Description>      
     </EntityComponent>
 	
-	<!--Set NoPiratesRemaining Boolean to true if NPC No Targets remaining-->
-	
+	<!--When last enemy is dead, trigger the next wave early with 1 minute delay-->
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-NoPiratesRemainingTrue</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-NoPiratesRemaining</SubtypeId>
       </Id>
       <Description>
 
@@ -251,74 +285,74 @@
 	  
       [Type:NoTarget]
 	  [UseTrigger:false]
-	  [StartsReady:true]
-	  [MinCooldownMs:20000]
-	  [MaxCooldownMs:20000]
-	 	  
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-NoPiratesRemainingTrue]
+	  [StartsReady:false]
+	  [MinCooldownMs:30000]
+	  [MaxCooldownMs:30000]
+	  
+	  [Conditions:GVE-RE-Boss-WaveSpawnerDefend-Condition-NoPiratesRemaining]
+	  [ConditionCheckResetsTimer:true]
+	  
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-NoPiratesRemaining]
 	  
       </Description>      
     </EntityComponent>
 	
+	<!--condition prevents the waves from going past the reward at the end-->
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-NoPiratesRemainingTrue</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Condition-NoPiratesRemaining</SubtypeId>
       </Id>
       <Description>
 
-      [RivalAI Action]
+      [RivalAI Condition]
+      
+      [UseConditions:true]
+      [MatchAnyCondition:false]
+	  [CheckCustomCounters:true]
+	  [CustomCounters:WaveCounter]
+	  [CounterCompareTypes:Less]
+	  [CustomCountersTargets:11]
 	  
-	  [SetBooleansTrue:NoPiratesRemaining]
-	  [IncreaseCounters:WaveCounter]
-	  
-	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-NoPiratesRemainingTrue]
-
+	  [CustomCounters:TimeCounter]
+	  [CounterCompareTypes:Greater]
+	  [CustomCountersTargets:1]
+	        
       </Description>
     </EntityComponent>
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-NoPiratesRemainingTrue</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-NoPiratesRemaining</SubtypeId>
       </Id>
       <Description>
 
-      [RivalAI Chat]
-      
-      [UseChat:false]
-      [StartsReady:true]
-      [Chance:100]
-      [BroadcastRandomly:true]
-      [Author:GVE+ Listening Post]
-      [Color:White]
-      
-      [ChatMessages:No Pirates Detected]
-      [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Both]
-
-      </Description>      
+      [RivalAI Action]
+	  	  	  
+	  [SetCounters:TimeCounter]
+	  [SetCountersValues:1]
+	  
+      </Description>
     </EntityComponent>
-	
-	<!--Set NoPiratesRemaining Boolean to false if NPC Targets still remaining-->
-	
+						
+	<!--Countdown for time warnings and wave increment, triggers every 60 seconds-->
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-NoPiratesRemainingFalse</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-NextWaveCountdown</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Trigger]
 	  
-      [Type:HasTarget]
+      [Type:Timer]
 	  [UseTrigger:false]
 	  [StartsReady:true]
-	  [MinCooldownMs:20000]
-	  [MaxCooldownMs:20000]
-	 	  
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-NoPiratesRemainingFalse]
+	  [MinCooldownMs:60000]
+	  [MaxCooldownMs:60000]
+	  	 	  
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-NextWaveCountdown]
 	  
       </Description>      
     </EntityComponent>
@@ -326,17 +360,74 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-NoPiratesRemainingFalse</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-NextWaveCountdown</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Action]
 	  
-	  [SetBooleansFalse:NoPiratesRemaining]
-	  [RefreshTarget:true]
+	  [DecreaseCounters:TimeCounter]
+	  	  
+      </Description>
+    </EntityComponent>
+		
+	<!--=== Chat messages for time remaining ==-->
+	
+	<!--20 minute warning-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-TimeWarning20</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
 	  
+      [Type:Timer]
+	  [UseTrigger:false]
+	  [StartsReady:true]
+	  [MaxActions:-1]
+	  [MinCooldownMs:60500]
+	  [MaxCooldownMs:60500]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawnerDefend-Condition-TimeWarning20]
+	  [ConditionCheckResetsTimer:false]
+	  
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-TimeWarning20]
+	  
+      </Description>      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Condition-TimeWarning20</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Condition]
+      
+      [UseConditions:true]
+      [MatchAnyCondition:false]
+	  [CheckCustomCounters:true]
+	  [CustomCounters:TimeCounter]
+	  [CounterCompareTypes:Equal]
+	  [CustomCountersTargets:20]
+      
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-TimeWarning20</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-NoPiratesRemainingFalse]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-TimeWarning20]
 
       </Description>
     </EntityComponent>
@@ -344,7 +435,515 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-NoPiratesRemainingFalse</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-TimeWarning20</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:-1]
+      [BroadcastRandomly:true]
+      [Author:{GridName}]
+      [Color:White]
+      
+      [ChatMessages:20 minutes remaining.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Both]
+	  [SendToAllOnlinePlayers:true]
+
+      </Description>      
+    </EntityComponent>
+	
+	<!--15 minute warning-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-TimeWarning15</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Timer]
+	  [UseTrigger:false]
+	  [StartsReady:true]
+	  [MaxActions:-1]
+	  [MinCooldownMs:60500]
+	  [MaxCooldownMs:60500]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawnerDefend-Condition-TimeWarning15]
+	  [ConditionCheckResetsTimer:false]
+	  
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-TimeWarning15]
+	  
+      </Description>      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Condition-TimeWarning15</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Condition]
+      
+      [UseConditions:true]
+      [MatchAnyCondition:false]
+	  [CheckCustomCounters:true]
+	  [CustomCounters:TimeCounter]
+	  [CounterCompareTypes:Equal]
+	  [CustomCountersTargets:15]
+      
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-TimeWarning15</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+	  [UseChatBroadcast:true]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-TimeWarning15]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-TimeWarning15</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:-1]
+      [BroadcastRandomly:true]
+      [Author:{GridName}]
+      [Color:White]
+      
+      [ChatMessages:15 minutes remaining.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Both]
+	  [SendToAllOnlinePlayers:true]
+
+      </Description>      
+    </EntityComponent>
+	
+	<!--10 minute warning-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-TimeWarning10</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Timer]
+	  [UseTrigger:false]
+	  [StartsReady:true]
+	  [MaxActions:-1]
+	  [MinCooldownMs:60500]
+	  [MaxCooldownMs:60500]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawnerDefend-Condition-TimeWarning10]
+	  [ConditionCheckResetsTimer:true]
+	  
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-TimeWarning10]
+	  
+      </Description>      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Condition-TimeWarning10</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Condition]
+      
+      [UseConditions:true]
+      [MatchAnyCondition:false]
+	  [CheckCustomCounters:true]
+	  [CustomCounters:TimeCounter]
+	  [CounterCompareTypes:Equal]
+	  [CustomCountersTargets:10]
+      
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-TimeWarning10</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+	  [UseChatBroadcast:true]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-TimeWarning10]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-TimeWarning10</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:-1]
+      [BroadcastRandomly:true]
+      [Author:{GridName}]
+      [Color:White]
+      
+      [ChatMessages:10 minutes remaining.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Both]
+	  [SendToAllOnlinePlayers:true]
+
+      </Description>      
+    </EntityComponent>
+	
+	<!--5 minute warning-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-TimeWarning05</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Timer]
+	  [UseTrigger:false]
+	  [StartsReady:true]
+	  [MaxActions:-1]
+	  [MinCooldownMs:60000]
+	  [MaxCooldownMs:60000]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawnerDefend-Condition-TimeWarning05]
+	  [ConditionCheckResetsTimer:false]
+	  
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-TimeWarning05]
+	  
+      </Description>      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Condition-TimeWarning05</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Condition]
+      
+      [UseConditions:true]
+      [MatchAnyCondition:false]
+	  [CheckCustomCounters:true]
+	  [CustomCounters:TimeCounter]
+	  [CounterCompareTypes:Equal]
+	  [CustomCountersTargets:5]
+      
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-TimeWarning05</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+	  [UseChatBroadcast:true]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-TimeWarning05]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-TimeWarning05</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:-1]
+      [BroadcastRandomly:true]
+      [Author:{GridName}]
+      [Color:White]
+      
+      [ChatMessages:5 minutes remaining.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Both]
+	  [SendToAllOnlinePlayers:true]
+
+      </Description>      
+    </EntityComponent>
+	
+	<!--2 minute warning-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-TimeWarning02</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Timer]
+	  [UseTrigger:false]
+	  [StartsReady:true]
+	  [MaxActions:-1]
+	  [MinCooldownMs:60500]
+	  [MaxCooldownMs:60500]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawnerDefend-Condition-TimeWarning02]
+	  [ConditionCheckResetsTimer:false]
+	  
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-TimeWarning02]
+	  
+      </Description>      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Condition-TimeWarning02</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Condition]
+      
+      [UseConditions:true]
+      [MatchAnyCondition:false]
+	  [CheckCustomCounters:true]
+	  [CustomCounters:TimeCounter]
+	  [CounterCompareTypes:Equal]
+	  [CustomCountersTargets:2]
+      
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-TimeWarning02</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+	  [UseChatBroadcast:true]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-TimeWarning02]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-TimeWarning02</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:-1]
+      [BroadcastRandomly:true]
+      [Author:{GridName}]
+      [Color:White]
+      
+      [ChatMessages:2 minutes remaining.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Both]
+	  [SendToAllOnlinePlayers:true]
+
+      </Description>      
+    </EntityComponent>
+	
+	<!--1 minute warning-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-TimeWarning01</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Timer]
+	  [UseTrigger:false]
+	  [StartsReady:true]
+	  [MaxActions:-1]
+	  [MinCooldownMs:60500]
+	  [MaxCooldownMs:60500]
+	 
+	  [Conditions:GVE-RE-Boss-WaveSpawnerDefend-Condition-TimeWarning01]
+	  [ConditionCheckResetsTimer:false]
+	  
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-TimeWarning01]
+	  
+      </Description>      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Condition-TimeWarning01</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Condition]
+      
+      [UseConditions:true]
+      [MatchAnyCondition:false]
+	  [CheckCustomCounters:true]
+	  [CustomCounters:TimeCounter]
+	  [CounterCompareTypes:Equal]
+	  [CustomCountersTargets:1]
+      
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-TimeWarning01</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+	  [UseChatBroadcast:true]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-TimeWarning01]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-TimeWarning01</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:-1]
+      [BroadcastRandomly:true]
+      [Author:{GridName}]
+      [Color:White]
+      
+      [ChatMessages:1 minute remaining.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Both]
+	  [SendToAllOnlinePlayers:true]
+
+      </Description>      
+    </EntityComponent>
+
+	<!--Increase WaveCounter when TimeCounter reaches 0 to auto-advance to the next wave-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-IncreaseWaveNumber</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Timer]
+	  [UseTrigger:false]
+	  [StartsReady:false]
+	  [MinCooldownMs:15000]
+	  [MaxCooldownMs:15000]
+	  
+	  [Conditions:GVE-RE-Boss-WaveSpawnerDefend-Condition-IncreaseWaveNumber]
+	  [ConditionCheckResetsTimer:true]
+	  
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-IncreaseWaveNumber]
+	  
+      </Description>      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Condition-IncreaseWaveNumber</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Condition]
+      
+      [UseConditions:true]
+      [MatchAnyCondition:false]
+	  [CheckCustomCounters:true]
+	  [CustomCounters:TimeCounter]
+	  [CounterCompareTypes:Less]
+	  [CustomCountersTargets:1]
+      
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-IncreaseWaveNumber</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [ResetCooldownTimeOfTriggers:true]
+	  [ResetTriggerCooldownNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-NoPiratesRemaining]
+	  
+	  [IncreaseCounters:WaveCounter]
+	  
+	  [UseChatBroadcast:true]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-IncreaseWaveNumber]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-IncreaseWaveNumber</SubtypeId>
       </Id>
       <Description>
 
@@ -353,25 +952,32 @@
       [UseChat:false]
       [StartsReady:true]
       [Chance:100]
+      [MaxChats:-1]
       [BroadcastRandomly:true]
-      [Author:GVE+ Listening Post]
+      [Author:{GridName}]
       [Color:White]
       
-      [ChatMessages:Pirates Detected]
+      [ChatMessages:IncreaseWaveNumber]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
+	  [SendToAllOnlinePlayers:true]
 
       </Description>      
     </EntityComponent>
-	
+				
 	<!--=== Hoard Waves ===-->
+	
+	<!--Waves are split into 2 triggers. 1st is the wave trigger sequence that actions multiple times 
+	for the required spawns as well as manually trigger the 2nd part. The 2nd is the single activation
+	to set the countdown timer as well as spawn a single reinforcement using the multi-use reinforcement 
+	spanwer. If you wanted unique quantities of friendly reinforcements, then you'd need to add a 2nd
+	spawner to the 1st wave action with the appropriate max spawns-->
 
 	<!--Start Wave 1-->
-	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave1</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave01</SubtypeId>
       </Id>
       <Description>
 
@@ -384,10 +990,10 @@
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave1]
+	  [Conditions:GVE-RE-Boss-WaveSpawnerDefend-Condition-Wave01]
 	  [ConditionCheckResetsTimer:true]
 	  
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave1]
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Wave01]
 	  
       </Description>      
     </EntityComponent>
@@ -395,7 +1001,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave1</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Condition-Wave01</SubtypeId>
       </Id>
       <Description>
 
@@ -405,6 +1011,7 @@
       [MatchAnyCondition:false]
 	  [CheckCustomCounters:true]
 	  [CustomCounters:WaveCounter]
+	  [CounterCompareTypes:Equal]
 	  [CustomCountersTargets:1]
       
       </Description>
@@ -413,19 +1020,20 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave1</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Wave01</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Action]
 	  
-	  [SetBooleansFalse:NoPiratesRemaining]
-	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave1]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-Wave01]
 
 	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave1]
+	  [Spawner:GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave01]
+	  
+	  [ManuallyActivateTrigger:true]
+	  [ManuallyActivatedTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave01Timer]
 
       </Description>
     </EntityComponent>
@@ -433,7 +1041,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave1</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-Wave01</SubtypeId>
       </Id>
       <Description>
 
@@ -444,12 +1052,13 @@
       [Chance:100]
       [MaxChats:1]
       [BroadcastRandomly:true]
-      [Author:GVE+ Listening Post]
+      [Author:{GridName}]
       [Color:White]
       
       [ChatMessages:Wave 1 of 10 incoming]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
+	  [SendToAllOnlinePlayers:true]
 
       </Description>      
     </EntityComponent>
@@ -457,7 +1066,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave1</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave01</SubtypeId>
       </Id>
       <Description>
 
@@ -480,12 +1089,46 @@
       </Description>
     </EntityComponent>
 		
-	<!--Start Wave 2-->
+	<!--Wave 1, 5 minute timer-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave01Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Manual]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	 	  
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Wave01Timer]
+	  
+      </Description>      
+    </EntityComponent>
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave2</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Wave01Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [SetCounters:TimeCounter]
+	  [SetCountersValues:5]
+	  	  
+      </Description>
+    </EntityComponent>
+	
+	<!--Start Wave 2-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave02</SubtypeId>
       </Id>
       <Description>
 
@@ -495,13 +1138,13 @@
 	  [UseTrigger:false]
 	  [StartsReady:false]
 	  [MaxActions:2]
-	  [MinCooldownMs:5000]
-	  [MaxCooldownMs:10000]
+	  [MinCooldownMs:1000]
+	  [MaxCooldownMs:1000]
 	 
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave2]
+	  [Conditions:GVE-RE-Boss-WaveSpawnerDefend-Condition-Wave02]
 	  [ConditionCheckResetsTimer:true]
 
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave2]
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Wave02]
 
       </Description>
     </EntityComponent>
@@ -509,7 +1152,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave2</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Condition-Wave02</SubtypeId>
       </Id>
       <Description>
 
@@ -517,9 +1160,9 @@
       
       [UseConditions:true]
       [MatchAnyCondition:false]
-	  
 	  [CheckCustomCounters:true]
 	  [CustomCounters:WaveCounter]
+	  [CounterCompareTypes:Equal]
 	  [CustomCountersTargets:2]
       
       </Description>
@@ -528,27 +1171,28 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave2</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Wave02</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Action]
-
-	  [SetBooleansFalse:NoPiratesRemaining]
 	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave2]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-Wave02]
 
 	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave2]
+	  [Spawner:GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave02]
 	  
+	  [ManuallyActivateTrigger:true]
+	  [ManuallyActivatedTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave02Timer]
+
       </Description>
     </EntityComponent>
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave2</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-Wave02</SubtypeId>
       </Id>
       <Description>
 
@@ -559,12 +1203,13 @@
       [Chance:100]
       [MaxChats:1]
       [BroadcastRandomly:true]
-      [Author:GVE+ Listening Post]
+      [Author:{GridName}]
       [Color:White]
       
       [ChatMessages:Wave 2 of 10 incoming]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
+	  [SendToAllOnlinePlayers:true]
 
       </Description>
     </EntityComponent>
@@ -572,7 +1217,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave2</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave02</SubtypeId>
       </Id>
       <Description>
 
@@ -596,12 +1241,46 @@
       </Description>
     </EntityComponent>
 		
-	<!--Start Wave 3-->
+	<!--Wave 2, 5 minute timer-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave02Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Manual]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	 	  
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Wave02Timer]
+	  
+      </Description>      
+    </EntityComponent>
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave3</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Wave02Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [SetCounters:TimeCounter]
+	  [SetCountersValues:5]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<!--Start Wave 3-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave03</SubtypeId>
       </Id>
       <Description>
 
@@ -614,10 +1293,10 @@
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave3]
+	  [Conditions:GVE-RE-Boss-WaveSpawnerDefend-Condition-Wave03]
 	  [ConditionCheckResetsTimer:true]
 
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave3]
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Wave03]
 
       </Description>
     </EntityComponent>
@@ -625,7 +1304,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave3</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Condition-Wave03</SubtypeId>
       </Id>
       <Description>
 
@@ -633,9 +1312,9 @@
       
       [UseConditions:true]
       [MatchAnyCondition:false]
-	  
 	  [CheckCustomCounters:true]
 	  [CustomCounters:WaveCounter]
+	  [CounterCompareTypes:Equal]
 	  [CustomCountersTargets:3]
       
       </Description>
@@ -644,27 +1323,29 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave3</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Wave03</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Action]
-
-	  [SetBooleansFalse:NoPiratesRemaining]
+	  
 	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave3]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-Wave03]
 
 	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave3]
+	  [Spawner:GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave03]
 	  
+	  [ManuallyActivateTrigger:true]
+	  [ManuallyActivatedTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave03Timer]
+
       </Description>
     </EntityComponent>
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave3</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-Wave03</SubtypeId>
       </Id>
       <Description>
 
@@ -675,12 +1356,13 @@
       [Chance:100]
       [MaxChats:1]
       [BroadcastRandomly:true]
-      [Author:GVE+ Listening Post]
+      [Author:{GridName}]
       [Color:White]
       
       [ChatMessages:Wave 3 of 10 incoming]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
+	  [SendToAllOnlinePlayers:true]
 
       </Description>
     </EntityComponent>
@@ -688,17 +1370,17 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave3</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave03</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Spawn]
       
       [UseSpawn:true]
-      [StartsReady:false]
+      [StartsReady:true]
       [MaxSpawns:1]
-	  [MinCooldownMs:5000]
-	  [MaxCooldownMs:10000]
+	  [MinCooldownMs:1000]
+	  [MaxCooldownMs:5000]
 	 
 	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
 
@@ -709,13 +1391,50 @@
       
       </Description>
     </EntityComponent>
-	
-	<!--Start Wave 4-->
+		
+	<!--Wave 3, 5 minute timer-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave03Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Manual]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	 	  
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Wave03Timer]
+	  
+      </Description>      
+    </EntityComponent>
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave4</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Wave03Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [SetCounters:TimeCounter]
+	  [SetCountersValues:5]
+	  
+	  [ManuallyActivateTrigger:true]
+	  [ManuallyActivatedTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-FighterDefenses]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<!--Start Wave 4-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave04</SubtypeId>
       </Id>
       <Description>
 
@@ -728,10 +1447,10 @@
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave4]
+	  [Conditions:GVE-RE-Boss-WaveSpawnerDefend-Condition-Wave04]
 	  [ConditionCheckResetsTimer:true]
 
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave4]
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Wave04]
 
       </Description>
     </EntityComponent>
@@ -739,7 +1458,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave4</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Condition-Wave04</SubtypeId>
       </Id>
       <Description>
 
@@ -747,9 +1466,9 @@
       
       [UseConditions:true]
       [MatchAnyCondition:false]
-	  
 	  [CheckCustomCounters:true]
 	  [CustomCounters:WaveCounter]
+	  [CounterCompareTypes:Equal]
 	  [CustomCountersTargets:4]
       
       </Description>
@@ -758,28 +1477,29 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave4</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Wave04</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Action]
-
-	  [SetBooleansFalse:NoPiratesRemaining]
 	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave4]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-Wave04]
 
 	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave4A]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave4B]
+	  [Spawner:GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave04A]
+	  [Spawner:GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave04B]
 	  
+	  [ManuallyActivateTrigger:true]
+	  [ManuallyActivatedTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave04Timer]
+
       </Description>
     </EntityComponent>
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave4</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-Wave04</SubtypeId>
       </Id>
       <Description>
 
@@ -790,12 +1510,13 @@
       [Chance:100]
       [MaxChats:1]
       [BroadcastRandomly:true]
-      [Author:GVE+ Listening Post]
+      [Author:{GridName}]
       [Color:White]
       
       [ChatMessages:Wave 4 of 10 incoming]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
+	  [SendToAllOnlinePlayers:true]
 
       </Description>
     </EntityComponent>
@@ -803,7 +1524,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave4A</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave04A</SubtypeId>
       </Id>
       <Description>
 
@@ -830,7 +1551,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave4B</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave04B</SubtypeId>
       </Id>
       <Description>
 
@@ -854,13 +1575,50 @@
       
       </Description>
     </EntityComponent>
-	
-	<!--Start Wave 5-->
+		
+	<!--Wave 4, 10 minute timer-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave04Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Manual]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	 	  
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Wave04Timer]
+	  
+      </Description>      
+    </EntityComponent>
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave5</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Wave04Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [SetCounters:TimeCounter]
+	  [SetCountersValues:10]
+	  
+	  [ManuallyActivateTrigger:true]
+	  [ManuallyActivatedTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-FighterDefenses]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<!--Start Wave 5-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave05</SubtypeId>
       </Id>
       <Description>
 
@@ -873,10 +1631,10 @@
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave5]
+	  [Conditions:GVE-RE-Boss-WaveSpawnerDefend-Condition-Wave05]
 	  [ConditionCheckResetsTimer:true]
 
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave5]
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Wave05]
 
       </Description>
     </EntityComponent>
@@ -884,7 +1642,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave5</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Condition-Wave05</SubtypeId>
       </Id>
       <Description>
 
@@ -892,9 +1650,9 @@
       
       [UseConditions:true]
       [MatchAnyCondition:false]
-	  
 	  [CheckCustomCounters:true]
 	  [CustomCounters:WaveCounter]
+	  [CounterCompareTypes:Equal]
 	  [CustomCountersTargets:5]
       
       </Description>
@@ -903,28 +1661,29 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave5</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Wave05</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Action]
-
-	  [SetBooleansFalse:NoPiratesRemaining]
 	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave5]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-Wave05]
 
 	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave5A]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave5B]
+	  [Spawner:GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave05A]
+	  [Spawner:GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave05B]
 	  
+	  [ManuallyActivateTrigger:true]
+	  [ManuallyActivatedTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave05Timer]
+
       </Description>
     </EntityComponent>
 		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave5</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-Wave05</SubtypeId>
       </Id>
       <Description>
 
@@ -935,12 +1694,13 @@
       [Chance:100]
       [MaxChats:1]
       [BroadcastRandomly:true]
-      [Author:GVE+ Listening Post]
+      [Author:{GridName}]
       [Color:White]
       
       [ChatMessages:Wave 5 of 10 incoming]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
+	  [SendToAllOnlinePlayers:true]
 
       </Description>
     </EntityComponent>
@@ -948,7 +1708,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave5A</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave05A</SubtypeId>
       </Id>
       <Description>
 
@@ -956,7 +1716,7 @@
       
       [UseSpawn:true]
       [StartsReady:false]
-      [MaxSpawns:1]
+      [MaxSpawns:2]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
@@ -975,23 +1735,19 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave5B</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave05B</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Spawn]
       
-      [UseSpawn:true]
+      [UseSpawn:false]
       [StartsReady:false]
-      [MaxSpawns:3]
+      [MaxSpawns:1]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
-	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
-	  [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
-	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
 	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
-	  [SpawnGroups:(NPC-GVE) Impaler]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:4000]
@@ -1000,13 +1756,50 @@
       
       </Description>
     </EntityComponent>
+		
+	<!--Wave 5, 10 minute timer-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave05Timer</SubtypeId>
+      </Id>
+      <Description>
 
-	<!--Start Wave 6-->
+      [RivalAI Trigger]
+	  
+      [Type:Manual]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	 	  
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Wave05Timer]
+	  
+      </Description>      
+    </EntityComponent>
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave6</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Wave05Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [SetCounters:TimeCounter]
+	  [SetCountersValues:10]
+	  
+	  [ManuallyActivateTrigger:true]
+	  [ManuallyActivatedTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-FighterDefenses]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<!--Start Wave 6-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave06</SubtypeId>
       </Id>
       <Description>
 
@@ -1019,10 +1812,10 @@
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave6]
+	  [Conditions:GVE-RE-Boss-WaveSpawnerDefend-Condition-Wave06]
 	  [ConditionCheckResetsTimer:true]
 
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave6]
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Wave06]
 
       </Description>
     </EntityComponent>
@@ -1030,7 +1823,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave6</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Condition-Wave06</SubtypeId>
       </Id>
       <Description>
 
@@ -1038,9 +1831,9 @@
       
       [UseConditions:true]
       [MatchAnyCondition:false]
-	  
 	  [CheckCustomCounters:true]
 	  [CustomCounters:WaveCounter]
+	  [CounterCompareTypes:Equal]
 	  [CustomCountersTargets:6]
       
       </Description>
@@ -1049,28 +1842,29 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave6</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Wave06</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Action]
-
-	  [SetBooleansFalse:NoPiratesRemaining]
-	  
+	  	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave6]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-Wave06]
 
 	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave6A]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave6B]
+	  [Spawner:GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave06A]
+	  [Spawner:GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave06B]
 	  
+	  [ManuallyActivateTrigger:true]
+	  [ManuallyActivatedTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave06Timer]
+
       </Description>
     </EntityComponent>
 		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave6</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-Wave06</SubtypeId>
       </Id>
       <Description>
 
@@ -1081,12 +1875,13 @@
       [Chance:100]
       [MaxChats:1]
       [BroadcastRandomly:true]
-      [Author:GVE+ Listening Post]
+      [Author:{GridName}]
       [Color:White]
       
       [ChatMessages:Wave 6 of 10 incoming]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
+	  [SendToAllOnlinePlayers:true]
 
       </Description>
     </EntityComponent>
@@ -1094,7 +1889,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave6A</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave06A</SubtypeId>
       </Id>
       <Description>
 
@@ -1119,7 +1914,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave6B</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave06B</SubtypeId>
       </Id>
       <Description>
 
@@ -1127,7 +1922,7 @@
       
       [UseSpawn:true]
       [StartsReady:false]
-      [MaxSpawns:4]
+      [MaxSpawns:3]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
@@ -1141,13 +1936,50 @@
       
       </Description>
     </EntityComponent>
-	
-	<!--Start Wave 7-->
+		
+	<!--Wave 6, 10 minute timer-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave06Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Manual]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	 	  
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Wave06Timer]
+	  
+      </Description>      
+    </EntityComponent>
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave7</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Wave06Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [SetCounters:TimeCounter]
+	  [SetCountersValues:10]
+	  
+	  [ManuallyActivateTrigger:true]
+	  [ManuallyActivatedTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-FighterDefenses]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<!--Start Wave 7-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave07</SubtypeId>
       </Id>
       <Description>
 
@@ -1160,10 +1992,10 @@
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave7]
+	  [Conditions:GVE-RE-Boss-WaveSpawnerDefend-Condition-Wave07]
 	  [ConditionCheckResetsTimer:true]
 
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave7]
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Wave07]
 
       </Description>
     </EntityComponent>
@@ -1171,7 +2003,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave7</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Condition-Wave07</SubtypeId>
       </Id>
       <Description>
 
@@ -1179,9 +2011,9 @@
       
       [UseConditions:true]
       [MatchAnyCondition:false]
-	  
 	  [CheckCustomCounters:true]
 	  [CustomCounters:WaveCounter]
+	  [CounterCompareTypes:Equal]
 	  [CustomCountersTargets:7]
       
       </Description>
@@ -1190,28 +2022,29 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave7</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Wave07</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Action]
 
-	  [SetBooleansFalse:NoPiratesRemaining]
-	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave7]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-Wave07]
 
 	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave7A]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave7B]
+	  [Spawner:GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave07A]
+	  [Spawner:GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave07B]
 	  
+	  [ManuallyActivateTrigger:true]
+	  [ManuallyActivatedTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave07Timer]
+
       </Description>
     </EntityComponent>
 		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave7</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-Wave07</SubtypeId>
       </Id>
       <Description>
 
@@ -1222,7 +2055,7 @@
       [Chance:100]
       [MaxChats:1]
       [BroadcastRandomly:true]
-      [Author:GVE+ Listening Post]
+      [Author:{GridName}]
       [Color:White]
       
       [ChatMessages:Wave 7 of 10 incoming]
@@ -1235,7 +2068,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave7A</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave07A</SubtypeId>
       </Id>
       <Description>
 
@@ -1263,7 +2096,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave7B</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave07B</SubtypeId>
       </Id>
       <Description>
 
@@ -1271,7 +2104,7 @@
       
       [UseSpawn:true]
       [StartsReady:false]
-      [MaxSpawns:4]
+      [MaxSpawns:2]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
@@ -1288,13 +2121,50 @@
       
       </Description>
     </EntityComponent>
-	
-	<!--Start Wave 8-->
+		
+	<!--Wave 7, 15 minute timer-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave07Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Manual]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	 	  
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Wave07Timer]
+	  
+      </Description>      
+    </EntityComponent>
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave8</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Wave07Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [SetCounters:TimeCounter]
+	  [SetCountersValues:15]
+	  
+	  [ManuallyActivateTrigger:true]
+	  [ManuallyActivatedTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-FighterDefenses]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<!--Start Wave 8-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave08</SubtypeId>
       </Id>
       <Description>
 
@@ -1307,10 +2177,10 @@
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave8]
+	  [Conditions:GVE-RE-Boss-WaveSpawnerDefend-Condition-Wave08]
 	  [ConditionCheckResetsTimer:true]
 
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave8]
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Wave08]
 
       </Description>
     </EntityComponent>
@@ -1318,7 +2188,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave8</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Condition-Wave08</SubtypeId>
       </Id>
       <Description>
 
@@ -1326,9 +2196,9 @@
       
       [UseConditions:true]
       [MatchAnyCondition:false]
-	  
 	  [CheckCustomCounters:true]
 	  [CustomCounters:WaveCounter]
+	  [CounterCompareTypes:Equal]
 	  [CustomCountersTargets:8]
       
       </Description>
@@ -1337,29 +2207,29 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave8</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Wave08</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Action]
-
-	  [SetBooleansFalse:NoPiratesRemaining]
 	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave8]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-Wave08]
 
 	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave8A]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave8B]
-
+	  [Spawner:GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave08A]
+	  [Spawner:GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave08B]
 	  
+	  [ManuallyActivateTrigger:true]
+	  [ManuallyActivatedTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave08Timer]
+
       </Description>
     </EntityComponent>
 		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave8</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-Wave08</SubtypeId>
       </Id>
       <Description>
 
@@ -1370,7 +2240,7 @@
       [Chance:100]
       [MaxChats:1]
       [BroadcastRandomly:true]
-      [Author:GVE+ Listening Post]
+      [Author:{GridName}]
       [Color:White]
       
       [ChatMessages:Wave 8 of 10 incoming]
@@ -1383,7 +2253,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave8A</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave08A</SubtypeId>
       </Id>
       <Description>
 
@@ -1408,7 +2278,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave8B</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave08B</SubtypeId>
       </Id>
       <Description>
 
@@ -1416,7 +2286,7 @@
       
       [UseSpawn:true]
       [StartsReady:false]
-      [MaxSpawns:5]
+      [MaxSpawns:4]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
@@ -1433,13 +2303,50 @@
       
       </Description>
     </EntityComponent>
-	
-	<!--Start Wave 9-->
+		
+	<!--Wave 8, 15 minute timer-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave08Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Manual]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	 	  
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Wave08Timer]
+	  
+      </Description>      
+    </EntityComponent>
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave9</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Wave08Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [SetCounters:TimeCounter]
+	  [SetCountersValues:15]
+	  
+	  [ManuallyActivateTrigger:true]
+	  [ManuallyActivatedTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-FighterDefenses]
+	  
+      </Description>      
+    </EntityComponent>
+	  
+	<!--Start Wave 9-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave09</SubtypeId>
       </Id>
       <Description>
 
@@ -1452,10 +2359,10 @@
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave9]
+	  [Conditions:GVE-RE-Boss-WaveSpawnerDefend-Condition-Wave09]
 	  [ConditionCheckResetsTimer:true]
 
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave9]
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Wave09]
 
       </Description>
     </EntityComponent>
@@ -1463,7 +2370,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave9</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Condition-Wave09</SubtypeId>
       </Id>
       <Description>
 
@@ -1471,9 +2378,9 @@
       
       [UseConditions:true]
       [MatchAnyCondition:false]
-	  
 	  [CheckCustomCounters:true]
 	  [CustomCounters:WaveCounter]
+	  [CounterCompareTypes:Equal]
 	  [CustomCountersTargets:9]
       
       </Description>
@@ -1482,28 +2389,29 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave9</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Wave09</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Action]
-
-	  [SetBooleansFalse:NoPiratesRemaining]
 	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave9]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-Wave09]
 
 	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave9A]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave9B]
+	  [Spawner:GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave09A]
+	  [Spawner:GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave09B]
 	  
+	  [ManuallyActivateTrigger:true]
+	  [ManuallyActivatedTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave09Timer]
+
       </Description>
     </EntityComponent>
 		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave9</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-Wave09</SubtypeId>
       </Id>
       <Description>
 
@@ -1514,7 +2422,7 @@
       [Chance:100]
       [MaxChats:1]
       [BroadcastRandomly:true]
-      [Author:GVE+ Listening Post]
+      [Author:{GridName}]
       [Color:White]
       
       [ChatMessages:Wave 9 of 10 incoming]
@@ -1527,7 +2435,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave9A</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave09A</SubtypeId>
       </Id>
       <Description>
 
@@ -1554,7 +2462,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave9B</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave09B</SubtypeId>
       </Id>
       <Description>
 
@@ -1562,7 +2470,7 @@
       
       [UseSpawn:true]
       [StartsReady:false]
-      [MaxSpawns:5]
+      [MaxSpawns:4]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
@@ -1575,13 +2483,50 @@
       
       </Description>
     </EntityComponent>
-	
-	<!--Start Wave 10-->
+		
+	<!--Wave 9, 20 minute timer-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave09Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Manual]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	 	  
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Wave09Timer]
+	  
+      </Description>      
+    </EntityComponent>
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Wave10</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Wave09Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [SetCounters:TimeCounter]
+	  [SetCountersValues:20]
+	  
+	  [ManuallyActivateTrigger:true]
+	  [ManuallyActivatedTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-FighterDefenses]
+	  
+	  </Description>      
+    </EntityComponent>
+	  
+	<!--Start Wave 10-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave10</SubtypeId>
       </Id>
       <Description>
 
@@ -1594,10 +2539,10 @@
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Wave10]
+	  [Conditions:GVE-RE-Boss-WaveSpawnerDefend-Condition-Wave10]
 	  [ConditionCheckResetsTimer:true]
 
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Wave10]
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Wave10]
 
       </Description>
     </EntityComponent>
@@ -1605,7 +2550,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Wave10</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Condition-Wave10</SubtypeId>
       </Id>
       <Description>
 
@@ -1613,9 +2558,9 @@
       
       [UseConditions:true]
       [MatchAnyCondition:false]
-	  
 	  [CheckCustomCounters:true]
 	  [CustomCounters:WaveCounter]
+	  [CounterCompareTypes:Equal]
 	  [CustomCountersTargets:10]
       
       </Description>
@@ -1624,20 +2569,21 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Wave10</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Wave10</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Action]
-
-	  [SetBooleansFalse:NoPiratesRemaining]
 	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Wave10]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-Wave10]
 
 	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave10A]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Wave10B]
+	  [Spawner:GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave10A]
+	  [Spawner:GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave10B]
+
+	  [ManuallyActivateTrigger:true]
+	  [ManuallyActivatedTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-FighterDefenses]
 	  
       </Description>
     </EntityComponent>
@@ -1645,7 +2591,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Wave10</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-Wave10</SubtypeId>
       </Id>
       <Description>
 
@@ -1656,7 +2602,7 @@
       [Chance:100]
       [MaxChats:1]
       [BroadcastRandomly:true]
-      [Author:GVE+ Listening Post]
+      [Author:{GridName}]
       [Color:White]
       
       [ChatMessages:Wave 10 of 10 incoming]
@@ -1669,7 +2615,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave10A</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave10A</SubtypeId>
       </Id>
       <Description>
 
@@ -1695,7 +2641,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Wave10B</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Spawner-Wave10B</SubtypeId>
       </Id>
       <Description>
 
@@ -1703,7 +2649,7 @@
       
       [UseSpawn:true]
       [StartsReady:false]
-      [MaxSpawns:6]
+      [MaxSpawns:4]
 	  [MinCooldownMs:5000]
 	  [MaxCooldownMs:10000]
 	 
@@ -1713,7 +2659,6 @@
 	  [SpawnGroups:(NPC-GVE) Proteus]
 	  [SpawnGroups:(NPC-GVE) Eclipse]
 
-
       [UseRelativeSpawnPosition:false]
       [MinDistance:4000]
       [MaxDistance:5000]
@@ -1721,29 +2666,66 @@
       
       </Description>
     </EntityComponent>
-
-	<!-- Hoad Complete, Spawn Reward -->
 	
+	<!--Wave 10, infinite minute timer (just here for the reinforcements)-->
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Trigger-Reward</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Wave10Timer</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Trigger]
 	  
-      [Type:Timer]
+      [Type:Manual]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	 	  
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Wave10Timer]
+	  
+      </Description>      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Wave10Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+	  [ManuallyActivateTrigger:true]
+	  [ManuallyActivatedTriggerNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-FighterDefenses]
+	  
+	  [ResetCooldownTimeOfTriggers:true]
+	  [ResetTriggerCooldownNames:GVE-RE-Boss-WaveSpawnerDefend-Trigger-Reward]
+	  
+	  </Description>      
+    </EntityComponent>
+
+	<!--Hoad Complete, Spawn Reward with custom loot in the container-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Reward</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:NoTarget]
 	  [UseTrigger:false]
 	  [StartsReady:false]
 	  [MaxActions:1]
-	  [MinCooldownMs:5000]
-	  [MaxCooldownMs:10000]
+	  [MinCooldownMs:30000]
+	  [MaxCooldownMs:30000]
 	 
-	  [Conditions:GVE-RE-Boss-WaveSpawner-Condition-Reward]
+	  [Conditions:GVE-RE-Boss-WaveSpawnerDefend-Condition-Reward]
 	  [ConditionCheckResetsTimer:true]
 
-	  [Actions:GVE-RE-Boss-WaveSpawner-Action-Reward]
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Reward]
 
       </Description>
     </EntityComponent>
@@ -1751,7 +2733,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Condition-Reward</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Condition-Reward</SubtypeId>
       </Id>
       <Description>
 
@@ -1759,10 +2741,10 @@
       
       [UseConditions:true]
       [MatchAnyCondition:false]
-	  
 	  [CheckCustomCounters:true]
 	  [CustomCounters:WaveCounter]
-	  [CustomCountersTargets:11]
+	  [CounterCompareTypes:GreaterOrEqual]
+	  [CustomCountersTargets:10]
       
       </Description>
     </EntityComponent>
@@ -1770,19 +2752,19 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Action-Reward</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Reward</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Action]
 
-	  [SetBooleansFalse:NoPiratesRemaining]
-	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-RE-Boss-WaveSpawner-Chat-Reward]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-Reward]
 
 	  [SpawnEncounter:true]
-	  [Spawner:GVE-RE-Boss-WaveSpawner-Spawner-Reward]
+	  [Spawner:GVE-RE-Boss-WaveSpawnerDefend-Spawner-Reward]
+	  
+	  [TerminateBehavior:true]
 	  
       </Description>
     </EntityComponent>
@@ -1790,7 +2772,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Chat-Reward</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-Reward</SubtypeId>
       </Id>
       <Description>
 
@@ -1801,7 +2783,7 @@
       [Chance:100]
       [MaxChats:1]
       [BroadcastRandomly:true]
-      [Author:GVE+ Listening Post]
+      [Author:{GridName}]
       [Color:White]
       
       [ChatMessages:Contratulations! All waves completed, now claim your reward.]
@@ -1814,7 +2796,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-WaveSpawner-Spawner-Reward</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Spawner-Reward</SubtypeId>
       </Id>
       <Description>
 
@@ -1833,6 +2815,189 @@
       [MaxDistance:5000]
       [IgnoreSafetyChecks:false]
       
+      </Description>
+    </EntityComponent>
+	
+	<!--== Defend Station Systems ==-->
+	
+	<!--In the future I plan to add unique blocks that are required to be functional for
+	defense systems to operate. The hangar will require doors or a beacon, the turrets
+	will require power or a unique cargo, if you have sheilds then you could add a chat
+	message warning players that shields have been disabled-->
+	
+	<!--GVE+ manually trigger one fighter backup with Chat on each wave (needs hangar functional condition)-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-FighterDefenses</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Manual]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:-1]
+	  [MinCooldownMs:5000]
+	  [MaxCooldownMs:5000]
+
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-FighterDefenses]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-FighterDefenses</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [UseChatBroadcast:true]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-FighterDefenses]
+
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-RE-Boss-WaveSpawnerDefend-Spawner-FighterDefenses]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-FighterDefenses</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [BroadcastRandomly:true]
+      
+      [Author:{GridName}]
+      [Color:White]
+      
+      [ChatMessages:Brining reinforcements]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:Calling backup]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:Deploying fighters]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:Additional support has arrived]
+      [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Spawner-FighterDefenses</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Spawn]
+      
+      [UseSpawn:true]
+      [StartsReady:true]
+	  [SpawnMinCooldown:20]
+      [SpawnMinCooldown:20]
+      
+	  [SpawnGroups:(NPC-GVE) GVE+ Figther]
+
+      [MinDistance:300]
+      [MaxDistance:500]
+      
+      </Description>
+    </EntityComponent>
+	
+	<!--Trade Station Defeated when RAI RC compromised, generate huge explosion and drop reputation with players-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Trigger-Defeated</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Compromised]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	  	  
+	  [Actions:GVE-RE-Boss-WaveSpawnerDefend-Action-Defeated]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Action-Defeated</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+	  [GenerateExplosion:true]
+	  [ExplosionRange:50]
+	  [ExplosionDamage:15000]
+	  
+	  [ChangeReputationWithPlayers:true]
+	  [ReputationChangeRadius:50000]
+	  [ReputationChangeFactions:GVE+]
+	  [ReputationChangeAmount:-400]
+	  [ReputationChangesForAllAttackPlayerFactionMembers:false]
+	  
+      [UseChatBroadcast:true]
+      [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-Defeated]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-Defeated</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+	  [MaxChats:1]
+      [BroadcastRandomly:true]
+      
+      [Author:{GridName}]
+      [Color:White]
+      
+      [ChatMessages:I trusted you, {PlayerName} and you let me down!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:We fought bravely to the bitter end...]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:You've faild us {PlayerName}]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:I need to speak to your mana.....]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
       </Description>
     </EntityComponent>
 	

@@ -45,6 +45,7 @@
 	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
 	  [Triggers:GVE-Generic-Trigger-SPRTCallDDSFighters]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  
       </Description>
     </EntityComponent>
@@ -91,6 +92,7 @@
 	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
 	  [Triggers:GVE-Generic-Trigger-SPRTCallDDSFighters]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  
       </Description>
     </EntityComponent>
@@ -140,6 +142,7 @@
 	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
 	  [Triggers:GVE-Generic-Trigger-SPRTCallDDSFighters]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  
       </Description>
     </EntityComponent>
@@ -191,6 +194,146 @@
 	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
 	  [Triggers:GVE-Generic-Trigger-SPRTCallDDSFighters]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-TempanoRavager-Behavior-Start-Broken</SubtypeId> <!--Horsefighter not compatible with switchtoreceivedtarget-->
+      </Id>
+      <Description>
+	  
+	  [RivalAI Behavior]
+	  
+      [BehaviorName:HorseFighter]
+	  
+	  [UseVelocityCollisionEvasion:true]
+	  [CollisionEvasionWaypointDistance:400]
+	  [CollisionEvasionResumeDistance:150]
+	  [CollisionEvasionResumeTime:10]
+	  [WaypointTolerance:50]
+	  [UseProjectileLeadPrediction:true]
+	  [OffsetSpaceMinDistFromTarget:300]
+	  [OffsetSpaceMaxDistFromTarget:1000]
+	  [PadDistanceFromTarget:0]
+	  [RotationMultiplier:2]
+	  [IdealMaxSpeed:90]
+	  [IdealMinSpeed:80]
+	  [MaxSpeedTolerance:10]
+	  [SlowDownOnWaypointApproach:false]
+	  [ExtraSlowDownDistance:0]
+	  [AllowStrafing:true]
+	  [StrafeMinDurationMs:5000]
+	  [StrafeMaxDurationMs:10000]
+	  [StrafeMinCooldownMs:5000]
+	  [StrafeMaxCooldownMs:5000]
+	  [StrafeSpeedCutOff:80]
+	  [StrafeDistanceCutOff:700]
+	  [StrafeMinimumTargetDistance:350]
+	  [StrafeMinimumSafeAngleFromTarget:35]
+	  [AngleAllowedForForwardThrust:45]
+	  [MaxVelocityAngleForSpeedControl:30]
+	  
+	  [UseStaticGuns:true]
+	  [UseTurrets:true]
+	  [MaxStaticWeaponRange:800]
+	  [WeaponMaxAngleFromTarget:5]
+	  [UseBarrageFire:false]
+	  [MaxFireRateForBarrageWeapons:20]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:false]
+	  [NoTargetTimerTrigger:0]
+	  [UseRetreatTimer:false]
+	  [RetreatTimerTrigger:0]
+	  [RetreatDespawnDistance:0]
+	  
+	  [HorseFighterWaypointWaitTimeTrigger:0]
+	  [HorseFighterWaypointAbandonTimeTrigger:30]
+	  [HorseFighterTimeApproaching:10]
+	  [HorseFighterTimeEngaging:15]
+	  [HorseFighterEngageDistanceSpace:700]
+	  [HorseFighterDisengageDistanceSpace:2000]
+	  	  
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
+	
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
+	  
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-TempanoRavager-Behavior-Start-Fighter</SubtypeId>
+      </Id>
+      <Description>
+	  
+	  [RivalAI Behavior]
+	  
+      [BehaviorName:Fighter]
+	  
+	  [UseVelocityCollisionEvasion:true]
+	  [CollisionEvasionWaypointDistance:400]
+	  [CollisionEvasionResumeDistance:150]
+	  [CollisionEvasionResumeTime:10]
+	  [WaypointTolerance:50]
+	  [UseProjectileLeadPrediction:true]
+	  [OffsetSpaceMinDistFromTarget:300]
+	  [OffsetSpaceMaxDistFromTarget:1000]
+	  [PadDistanceFromTarget:0]
+	  [RotationMultiplier:2]
+	  [IdealMaxSpeed:90]
+	  [IdealMinSpeed:80]
+	  [MaxSpeedTolerance:10]
+	  [SlowDownOnWaypointApproach:false]
+	  [ExtraSlowDownDistance:0]
+	  [AllowStrafing:true]
+	  [StrafeMinDurationMs:5000]
+	  [StrafeMaxDurationMs:10000]
+	  [StrafeMinCooldownMs:1]
+	  [StrafeMaxCooldownMs:1]
+	  [StrafeSpeedCutOff:100]
+	  [StrafeDistanceCutOff:1000]
+	  [StrafeMinimumTargetDistance:350]
+	  [StrafeMinimumSafeAngleFromTarget:35]
+	  [AngleAllowedForForwardThrust:60]
+	  [MaxVelocityAngleForSpeedControl:35]
+	  
+	  [UseStaticGuns:true]
+	  [UseTurrets:true]
+	  [MaxStaticWeaponRange:500]
+	  [WeaponMaxAngleFromTarget:5]
+	  [UseBarrageFire:true]
+	  [MaxFireRateForBarrageWeapons:10]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:false]
+	  [NoTargetTimerTrigger:0]
+	  [UseRetreatTimer:false]
+	  [RetreatTimerTrigger:0]
+	  [RetreatDespawnDistance:0]
+	  
+	  [FighterEngageDistanceSpace:700]
+	  [FighterDisengageDistanceSpace:800]
+	  	  
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
+	
+	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  
       </Description>
     </EntityComponent>
@@ -202,42 +345,48 @@
       </Id>
       <Description>
 
-      [RivalAI Behavior]
+	  [RivalAI Behavior]
 	  
-      [BehaviorName:HorseFighter]
+      [BehaviorName:Strike]
+	  
+	  [UseVelocityCollisionEvasion:true]
+	  [CollisionEvasionWaypointDistance:400]
+	  [CollisionEvasionResumeDistance:150]
+	  [CollisionEvasionResumeTime:10]
 	  [UseProjectileLeadPrediction:true]
-	  [IdealMaxSpeed:100]
+	  [OffsetSpaceMinDistFromTarget:800]
+	  [OffsetSpaceMaxDistFromTarget:1100]
+	  [RotationMultiplier:1.25]
+	  [IdealMaxSpeed:90]
 	  [AngleAllowedForForwardThrust:90]
-	  [RotationMultiplier:2]
-	  [WaypointTolerance:140]
-	  [OffsetSpaceMinDistFromTarget:300]
-	  [OffsetSpaceMaxDistFromTarget:1000]
-	  [StrafeMinDurationMs:14000]
-	  [StrafeMaxDurationMs:25000]
-	  [StrafeMinCooldownMs:1]
-	  [StrafeMaxCooldownMs:2]
-	  [StrafeSpeedCutOff:80]
-	  [StrafeMinimumTargetDistance:150]
-	  [StrafeDistanceCutOff:900]
-	  [StrafeMinimumSafeAngleFromTarget:30]
-	  [HorseFighterWaypointWaitTimeTrigger:0]
-	  [HorseFighterTimeApproaching:15]
-	  [HorseFighterTimeEngaging:20]
-	  [HorseFighterEngageDistanceSpace:600]
-	  [HorseFighterDisengageDistanceSpace:900]
+	  [MaxVelocityAngleForSpeedControl:45]
+	  
+	  [UseStaticGuns:true]
+	  [UseTurrets:true]
+	  [MaxStaticWeaponRange:800]
+	  [WeaponMaxAngleFromTarget:5]
+	  [UseBarrageFire:false]
+	  [MaxFireRateForBarrageWeapons:10]
 	  [UseAmmoReplenish:true]
 	  [AmmoReplenishClipAmount:100]
+	  
 	  [UsePlayerDistanceTimer:true]
 	  [PlayerDistanceTimerTrigger:5]
 	  [PlayerDistanceTrigger:50000]
-	  [UseNoTargetTimer:true]
-	  [NoTargetTimerTrigger:600]
+	  [UseNoTargetTimer:false]
+	  [NoTargetTimerTrigger:0]
 	  [UseRetreatTimer:false]
-	  	  
+	  [RetreatTimerTrigger:0]
+	  [RetreatDespawnDistance:0]
+	  
+	  [StrikeBreakawayDistance:600]
+	  [StrikeEngageUseCollisionEvasion:true]
+	  
 	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
-		  
+	
 	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  
       </Description>
     </EntityComponent>

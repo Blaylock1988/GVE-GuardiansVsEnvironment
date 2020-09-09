@@ -14,18 +14,48 @@
       [RivalAI Target]
       
       [UseCustomTargeting:true]
-      [Target:Player]
+      [Target:PlayerAndGrid]
 	  [UseTargetRefresh:true]
-	  [TimeUntilNextRefresh:30]
-	  [TimeUntilNextEvaluation:15]
-	  [MaxDistance:10000]
-      [GetTargetBy:ClosestDistance]
+	  [TimeUntilNextRefresh:15]
+	  [TimeUntilNextEvaluation:5]
+	  [MaxDistance:15000]
+      [GetTargetBy:Random]
 	  [MatchAllFilters:Relation]
 	  [MatchAllFilters:OutsideOfSafezone]
 	  [MatchNoneFilters:Name]
+	  [MatchAllFilters:TargetValue]
       [Relations:Enemy]
 	  [Names:Listening Post]
 	  [UsePartialNameMatching:true]
+	  [MinTargetValue:10]
+	  [MaxTargetValue:99999]
+
+      
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-TargetProfile-GVE+NPCs</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Target]
+      
+      [UseCustomTargeting:true]
+      [Target:PlayerAndGrid]
+	  [UseTargetRefresh:true]
+	  [TimeUntilNextRefresh:15]
+	  [TimeUntilNextEvaluation:5]
+	  [MaxDistance:10000]
+      [GetTargetBy:HighestTargetValue]
+	  [MatchAllFilters:Relation]
+	  [MatchAllFilters:OutsideOfSafezone]
+	  [MatchNoneFilters:Faction]
+      [Relations:Enemy]
+	  [FactionTargets:GVE+]
+	  
       
       </Description>
     </EntityComponent>
@@ -40,7 +70,7 @@
       [RivalAI Target]
       
       [UseCustomTargeting:true]
-      [Target:Block]
+      [Target:PlayerAndBlock]
       [BlockTargets:Guns]
       [BlockTargets:Turrets]
 	  [BlockTargets:GravityBlocks]
@@ -58,11 +88,48 @@
       
       </Description>
     </EntityComponent>
+		
+	<!--=== Trigger Sequences ===-->
 	
-	<!--=== Trigger Sequence ===-->
+	<!--Figher Barrel Roll-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Trigger-FighterBarrelRoll</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:BehaviorTriggerA]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:-1]
+	  [MinCooldownMs:20000]
+	  [MaxCooldownMs:45000]
+
+	  [Actions:GVE-Generic-Action-FighterBarrelRoll]
+
+      </Description>
+    </EntityComponent>
 	
-	<!--Call DDS Fighters 1 every 60-120 seconds with Chat-->
-	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Action-FighterBarrelRoll</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [Chance:30]
+	  
+      [BarrelRoll:true]
+	  
+      </Description>
+    </EntityComponent>
+		
+	<!--SPRT Call DDS Fighters 1 every 60-120 seconds with Chat-->
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -186,7 +253,7 @@
 	  
       </Description>      
     </EntityComponent>
-	
+		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -196,20 +263,64 @@
 
       [RivalAI Action]
 	  
-	  [SwitchToReceivedTarget:true]
-      
       [UseChatBroadcast:true]
 	  [ChatData:GVE-Generic-Chat-SPRTBattleChatter]
 	  
 	  [ChangeAttackerReputation:true]
 	  [ChangeAttackerReputationFaction:GVE+]
 	  [ChangeAttackerReputationAmount:1]
+	  [ReputationChangesForAllAttackPlayerFactionMembers:true]
 	  
       </Description>
     </EntityComponent>
 	
-	<!--NPC Defeated: Trigger warheads, generic SPRT Defeated Chat-->
+	<!--Upon GVE+ Taking Damage: Switch Target, Generic Battle Chatter, Raise rep with GVE+-->
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Trigger-GVE+TakeDamage</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Damage]
+	  [UseTrigger:true]
+	  [MinCooldownMs:5000]
+	  [MaxCooldownMs:10000]
+	  
+	  [DamageTypes:Explosion]
+	  [DamageTypes:Rocket]
+	  [DamageTypes:Bullet]
+	  [DamageTypes:Destruction]
+
+	  [Actions:GVE-Generic-Action-GVE+TakeDamage]
+	  
+      </Description>      
+    </EntityComponent>
 	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Action-GVE+TakeDamage</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	      
+      [UseChatBroadcast:true]
+	  [ChatData:GVE-Generic-Chat-GVE+AttackedByPlayer]
+	  
+	  [ChangeAttackerReputation:true]
+	  [ChangeAttackerReputationFaction:GVE+]
+	  [ChangeAttackerReputationAmount:-5]
+	  [ReputationChangesForAllAttackPlayerFactionMembers:true]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<!--NPC Defeated when RAI RC compromised: Trigger warheads, generic SPRT Defeated Chat-->
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -251,8 +362,73 @@
       </Description>
     </EntityComponent>
 	
-	<!--Player within 60km, set antenna range 25k, chat w/ range override-->
+	<!--NPC Defeated when all thrusters or gyros offline: Trigger warheads, generic SPRT Defeated Chat-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Trigger-SPRTCantFly</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Timer]
+	  [UseTrigger:true]
+	  [MinCooldownMs:15000]
+	  [MaxCooldownMs:15000]
+	  [StartsReady:false]
+	  [MaxActions:1]
+	 
+	  [Conditions:GVE-Generic-Condition-SPRTCantFly]
+	  [ConditionCheckResetsTimer:true]
+	  	  
+	  [Actions:GVE-Generic-Action-SPRTDefeated]
+
+      </Description>
+    </EntityComponent>
 	
+		<!--future improvements coming to RAI to make this work better-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Condition-SPRTCantFly</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Condition]
+      
+      [UseConditions:true]
+      [MatchAnyCondition:true]
+	  [UseRequiredFunctionalBlocks:true]
+	  [RequiredAnyFunctionalBlockNames:NPC Thruster]
+	  [RequiredAnyFunctionalBlockNames:NPC Gyroscope]
+      
+      </Description>
+    </EntityComponent>
+	
+	<!--NPC Retreat when all guns are disabled-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Trigger-SPRTNoWeapon</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:NoWeapon]
+	  [UseTrigger:true]
+	  [MinCooldownMs:15000]
+	  [MaxCooldownMs:15000]
+	  [StartsReady:false]
+	  [MaxActions:1]
+	  	  
+	  [Actions:GVE-Generic-Action-SPRTDefeated]
+
+      </Description>
+    </EntityComponent>
+	
+	<!--Player within 60km, set antenna range 25k, chat w/ range override-->
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -293,7 +469,6 @@
     </EntityComponent>
 	
 	<!--Player within 7km, warn player Chat-->
-	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -368,7 +543,6 @@
 	<!--=== Chat ===-->
 	
 	<!--Generic SPRT Battle Chatter-->
-	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -382,7 +556,7 @@
 	  [MinTime:30]
 	  [MaxTime:90]
       [StartsReady:true]
-      [Chance:15]
+      [Chance:10]
       [BroadcastRandomly:true]
       [Author:{GridName}]
       [Color:Red]
@@ -395,7 +569,7 @@
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Chat]
 
-      [ChatMessages:We have children on board, please hold you fire.]
+      [ChatMessages:wE hAvE cHiLdReN oN bOaRd, PlEaSe HoLd YoUr FiRe.]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Chat]
 	  
@@ -446,8 +620,57 @@
       </Description>
     </EntityComponent>
 	
-	<!--Generic SPRT Player Distant Chat-->
+	<!--Generic GVE+ Chat when attacked by players-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Chat-GVE+AttackedByPlayer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+	  [MinTime:30]
+	  [MaxTime:90]
+      [StartsReady:true]
+      [Chance:100]
+      [BroadcastRandomly:true]
+      [Author:{GridName}]
+      [Color:White]
+      
+      [ChatMessages:Hey, we're friendly!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:Taking damage!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      [ChatMessages:Hey you're supposed to be helping us!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:You're going to regret this.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:{PlayerName}, please help us!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:Hull integrity is failing.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:We have children on board, please hold your fire!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
 	
+	<!--Generic SPRT Player Distant Chat-->
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -458,6 +681,8 @@
       [RivalAI Chat]
       
       [UseChat:true]
+	  [MinTime:30]
+	  [MaxTime:90]
       [StartsReady:true]
       [Chance:100]
       [MaxChats:1]
@@ -488,7 +713,6 @@
     </EntityComponent>
 	
 	<!--Generic SPRT Defeated Chat-->
-	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -499,6 +723,8 @@
       [RivalAI Chat]
       
       [UseChat:true]
+	  [MinTime:10]
+	  [MaxTime:15]
       [StartsReady:true]
       [Chance:100]
       [MaxChats:1]
