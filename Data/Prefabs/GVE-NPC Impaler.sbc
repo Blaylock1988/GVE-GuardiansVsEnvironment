@@ -6,17 +6,17 @@
       <CubeGrids>
         <CubeGrid>
           <SubtypeName />
-          <EntityId>80631449347761691</EntityId>
+          <EntityId>98713824268830391</EntityId>
           <PersistentFlags>CastShadows InScene</PersistentFlags>
           <PositionAndOrientation>
             <Position x="0" y="0" z="0" />
-            <Forward x="-0.5620519" y="0.6654419" z="0.491207033" />
-            <Up x="-0.793126762" y="-0.6020888" z="-0.0918617249" />
+            <Forward x="-0.5619961" y="0.665931761" z="0.490606457" />
+            <Up x="-0.7931855" y="-0.6020893" z="-0.0913496" />
             <Orientation>
-              <X>0.7628758</X>
-              <Y>-0.404504746</Y>
-              <Z>0.468043864</Z>
-              <W>0.187966451</W>
+              <X>0.7627668</X>
+              <Y>-0.404339164</Y>
+              <Z>0.468221724</Z>
+              <W>0.188321739</W>
             </Orientation>
           </PositionAndOrientation>
           <LocalPositionAndOrientation xsi:nil="true" />
@@ -24,14 +24,14 @@
           <CubeBlocks>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
               <SubtypeName>SmallShipConveyorHub</SubtypeName>
-              <EntityId>73826225344775570</EntityId>
+              <EntityId>140663394992304518</EntityId>
               <Min x="-1" y="-1" z="-1" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.05" />
               <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>SmallBlockBatteryBlock</SubtypeName>
-              <EntityId>129432088274496776</EntityId>
+              <EntityId>140117912161149443</EntityId>
               <Min x="-1" y="-3" z="-1" />
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.05" />
@@ -43,7 +43,7 @@
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <Enabled>true</Enabled>
-              <CurrentStoredPower>0.9963315</CurrentStoredPower>
+              <CurrentStoredPower>0.9959577</CurrentStoredPower>
               <ProducerEnabled>true</ProducerEnabled>
               <MaxStoredPower>0</MaxStoredPower>
               <SemiautoEnabled>false</SemiautoEnabled>
@@ -52,7 +52,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>109826051451829432</EntityId>
+              <EntityId>115996216671830778</EntityId>
               <Min x="0" y="-5" z="-4" />
               <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -83,7 +83,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ShipConnector">
               <SubtypeName>ConnectorMedium</SubtypeName>
-              <EntityId>117920585427371471</EntityId>
+              <EntityId>90491045133336520</EntityId>
               <Min x="-3" y="-1" z="-1" />
               <BlockOrientation Forward="Left" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -113,7 +113,7 @@
                       <TimerEnabled>true</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame10</TimerType>
-                      <FramesFromLastTrigger>60</FramesFromLastTrigger>
+                      <FramesFromLastTrigger>10</FramesFromLastTrigger>
                       <TimerTickInFrames>80</TimerTickInFrames>
                       <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
                     </Component>
@@ -135,7 +135,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
               <SubtypeName>SmallBlockConveyor</SubtypeName>
-              <EntityId>136900877970838744</EntityId>
+              <EntityId>111479749466943513</EntityId>
               <Min x="-2" y="-2" z="0" />
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.05" />
@@ -143,21 +143,21 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
               <SubtypeName>ConveyorTubeSmall</SubtypeName>
-              <EntityId>122657903177025327</EntityId>
+              <EntityId>141631564446391358</EntityId>
               <Min x="-2" y="-2" z="1" />
               <BlockOrientation Forward="Backward" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
               <SubtypeName>ConveyorTubeSmall</SubtypeName>
-              <EntityId>106080431472335450</EntityId>
+              <EntityId>119507775058501332</EntityId>
               <Min x="-2" y="-2" z="-1" />
               <BlockOrientation Forward="Backward" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
               <SubtypeName>ConveyorTubeSmall</SubtypeName>
-              <EntityId>129539163396602878</EntityId>
+              <EntityId>143177540293495317</EntityId>
               <Min x="-1" y="-2" z="2" />
               <BlockOrientation Forward="Left" Up="Down" />
               <ColorMaskHSV x="0.122222222" y="-0.1" z="0.26" />
@@ -165,7 +165,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
               <SubtypeName>ConveyorTubeSmallCurved</SubtypeName>
-              <EntityId>80856919972290251</EntityId>
+              <EntityId>97424616025490849</EntityId>
               <Min x="1" y="-2" z="3" />
               <BlockOrientation Forward="Left" Up="Backward" />
               <ColorMaskHSV x="0.122222222" y="-0.1" z="0.26" />
@@ -173,7 +173,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
               <SubtypeName>SmallBlockConveyor</SubtypeName>
-              <EntityId>114555283682840534</EntityId>
+              <EntityId>87622596682321398</EntityId>
               <Min x="0" y="-2" z="-2" />
               <BlockOrientation Forward="Left" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.05" />
@@ -181,7 +181,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
               <SubtypeName>ConveyorTubeSmallCurved</SubtypeName>
-              <EntityId>139188726544978961</EntityId>
+              <EntityId>95157486179621832</EntityId>
               <Min x="1" y="-2" z="-2" />
               <BlockOrientation Forward="Backward" Up="Right" />
               <ColorMaskHSV x="0.122222222" y="-0.1" z="0.26" />
@@ -189,7 +189,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
               <SubtypeName>ConveyorTubeSmallCurved</SubtypeName>
-              <EntityId>99392128010584220</EntityId>
+              <EntityId>126011777237201608</EntityId>
               <Min x="1" y="-2" z="2" />
               <BlockOrientation Forward="Forward" Up="Right" />
               <ColorMaskHSV x="0.122222222" y="-0.1" z="0.26" />
@@ -197,21 +197,21 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
               <SubtypeName>ConveyorTubeSmallCurved</SubtypeName>
-              <EntityId>96258051522145019</EntityId>
+              <EntityId>126075059015928159</EntityId>
               <Min x="2" y="-2" z="-3" />
               <BlockOrientation Forward="Forward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
               <SubtypeName>ConveyorTubeSmallCurved</SubtypeName>
-              <EntityId>141591599632952635</EntityId>
+              <EntityId>81930141746943491</EntityId>
               <Min x="2" y="-2" z="3" />
               <BlockOrientation Forward="Backward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockLargeThrust</SubtypeName>
-              <EntityId>121600228002936548</EntityId>
+              <EntityId>93233323007305938</EntityId>
               <Min x="0" y="-10" z="-1" />
               <BlockOrientation Forward="Down" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -242,7 +242,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
               <SubtypeName>ConveyorTubeSmallCurved</SubtypeName>
-              <EntityId>125251659233008816</EntityId>
+              <EntityId>135151290568543922</EntityId>
               <Min x="1" y="-2" z="-3" />
               <BlockOrientation Forward="Left" Up="Forward" />
               <ColorMaskHSV x="0.122222222" y="-0.1" z="0.26" />
@@ -250,7 +250,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_LargeGatlingTurret">
               <SubtypeName>SmallGatlingTurret</SubtypeName>
-              <EntityId>133559033603037166</EntityId>
+              <EntityId>72361733560596557</EntityId>
               <Min x="2" y="-4" z="-2" />
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -316,7 +316,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
               <SubtypeName>SmallBlockConveyor</SubtypeName>
-              <EntityId>83499323472370558</EntityId>
+              <EntityId>107998257870716636</EntityId>
               <Min x="0" y="-2" z="2" />
               <BlockOrientation Forward="Left" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.05" />
@@ -324,7 +324,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
               <SubtypeName>ConveyorTubeSmall</SubtypeName>
-              <EntityId>86982793954756233</EntityId>
+              <EntityId>97993538463134479</EntityId>
               <Min x="-1" y="-2" z="-2" />
               <BlockOrientation Forward="Left" Up="Down" />
               <ColorMaskHSV x="0.122222222" y="-0.1" z="0.26" />
@@ -332,14 +332,14 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
               <SubtypeName>ConveyorTubeSmallCurved</SubtypeName>
-              <EntityId>99331935920681978</EntityId>
+              <EntityId>95637319002955517</EntityId>
               <Min x="-2" y="-2" z="2" />
               <BlockOrientation Forward="Backward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
               <SubtypeName>ConveyorTubeSmallCurved</SubtypeName>
-              <EntityId>128411502244369264</EntityId>
+              <EntityId>84480825836827253</EntityId>
               <Min x="-2" y="-2" z="-2" />
               <BlockOrientation Forward="Forward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -417,7 +417,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CargoContainer">
               <SubtypeName>SmallBlockSmallContainer</SubtypeName>
-              <EntityId>79505081956540891</EntityId>
+              <EntityId>123962774035248487</EntityId>
               <Min x="0" y="-3" z="-2" />
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -487,7 +487,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CargoContainer">
               <SubtypeName>SmallBlockSmallContainer</SubtypeName>
-              <EntityId>96499446302869875</EntityId>
+              <EntityId>120820687482491279</EntityId>
               <Min x="0" y="-4" z="-2" />
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -648,7 +648,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
               <SubtypeName>SmallBlockConveyor</SubtypeName>
-              <EntityId>87898360195349474</EntityId>
+              <EntityId>89358012183089564</EntityId>
               <Min x="0" y="2" z="0" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.05" />
               <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -871,7 +871,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
               <SubtypeName>ConveyorFrameMedium</SubtypeName>
-              <EntityId>143675712506318331</EntityId>
+              <EntityId>132698249712558443</EntityId>
               <Min x="-1" y="-1" z="2" />
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.05" />
@@ -879,7 +879,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
               <SubtypeName>ConveyorFrameMedium</SubtypeName>
-              <EntityId>109719353763289534</EntityId>
+              <EntityId>119315039273067463</EntityId>
               <Min x="-1" y="-1" z="-2" />
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.05" />
@@ -887,7 +887,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_SmallMissileLauncherReload">
               <SubtypeName>SmallRocketLauncherReload</SubtypeName>
-              <EntityId>109263960848489817</EntityId>
+              <EntityId>78502772587851366</EntityId>
               <Min x="-1" y="-1" z="-3" />
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -929,7 +929,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_SmallMissileLauncherReload">
               <SubtypeName>SmallRocketLauncherReload</SubtypeName>
-              <EntityId>93731635829568060</EntityId>
+              <EntityId>79566299796220997</EntityId>
               <Min x="-1" y="-1" z="3" />
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -985,7 +985,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>125392339633717864</EntityId>
+              <EntityId>119578454815189240</EntityId>
               <Min x="1" y="-1" z="4" />
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -1016,7 +1016,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>124857013803127690</EntityId>
+              <EntityId>127024388521786809</EntityId>
               <Min x="1" y="-2" z="4" />
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -1047,7 +1047,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>115935975199097845</EntityId>
+              <EntityId>88432046075571049</EntityId>
               <Min x="1" y="-3" z="4" />
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -1078,7 +1078,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>137049291932905417</EntityId>
+              <EntityId>129491675618686667</EntityId>
               <Min x="1" y="-1" z="-4" />
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -1109,7 +1109,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>133242538098784139</EntityId>
+              <EntityId>116264389923588488</EntityId>
               <Min x="1" y="-2" z="-4" />
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -1140,7 +1140,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>130782211221363871</EntityId>
+              <EntityId>87243219147414982</EntityId>
               <Min x="1" y="-3" z="-4" />
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -1211,7 +1211,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>102619147504173494</EntityId>
+              <EntityId>105805543110785640</EntityId>
               <Min x="-1" y="-1" z="4" />
               <BlockOrientation Forward="Left" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -1248,7 +1248,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>101580690199191463</EntityId>
+              <EntityId>80917685341226349</EntityId>
               <Min x="-1" y="-3" z="-4" />
               <BlockOrientation Forward="Left" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -1286,7 +1286,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
               <SubtypeName>SmallBlockConveyor</SubtypeName>
-              <EntityId>122672762800551341</EntityId>
+              <EntityId>134552579632434224</EntityId>
               <Min x="0" y="2" z="1" />
               <BlockOrientation Forward="Backward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.05" />
@@ -1301,7 +1301,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
               <SubtypeName>SmallBlockConveyor</SubtypeName>
-              <EntityId>76895552743837801</EntityId>
+              <EntityId>92143286116845262</EntityId>
               <Min x="1" y="2" z="0" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.05" />
               <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -1314,7 +1314,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
               <SubtypeName>SmallBlockConveyor</SubtypeName>
-              <EntityId>84367459265788254</EntityId>
+              <EntityId>109520881222787329</EntityId>
               <Min x="0" y="2" z="-1" />
               <BlockOrientation Forward="Forward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.05" />
@@ -1396,7 +1396,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>127047480910140682</EntityId>
+              <EntityId>98475823292457170</EntityId>
               <Min x="0" y="0" z="4" />
               <BlockOrientation Forward="Up" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.05" />
@@ -1428,7 +1428,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>103158693570028980</EntityId>
+              <EntityId>81482988666137021</EntityId>
               <Min x="0" y="0" z="-4" />
               <BlockOrientation Forward="Up" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.05" />
@@ -1460,7 +1460,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>102283688405929230</EntityId>
+              <EntityId>141821014364784092</EntityId>
               <Min x="-1" y="-2" z="4" />
               <BlockOrientation Forward="Left" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -1491,7 +1491,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>136110470160266381</EntityId>
+              <EntityId>73425062564329022</EntityId>
               <Min x="-1" y="-3" z="4" />
               <BlockOrientation Forward="Left" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -1543,7 +1543,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>113700022369411210</EntityId>
+              <EntityId>80655458127771399</EntityId>
               <Min x="0" y="0" z="-5" />
               <BlockOrientation Forward="Up" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.05" />
@@ -1596,7 +1596,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>134558731010989772</EntityId>
+              <EntityId>107969487061328424</EntityId>
               <Min x="0" y="0" z="5" />
               <BlockOrientation Forward="Up" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.05" />
@@ -1642,7 +1642,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>107570699514298186</EntityId>
+              <EntityId>84853923556844415</EntityId>
               <Min x="-1" y="-1" z="-4" />
               <BlockOrientation Forward="Left" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -1673,7 +1673,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>142816943180925546</EntityId>
+              <EntityId>114782525436738985</EntityId>
               <Min x="-1" y="-2" z="-4" />
               <BlockOrientation Forward="Left" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -1986,7 +1986,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
               <SubtypeName>ConveyorTubeSmall</SubtypeName>
-              <EntityId>95148673578224449</EntityId>
+              <EntityId>120443348613502373</EntityId>
               <Min x="-2" y="0" z="-2" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
             </MyObjectBuilder_CubeBlock>
@@ -2034,7 +2034,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
               <SubtypeName>ConveyorTubeSmall</SubtypeName>
-              <EntityId>73032912831034873</EntityId>
+              <EntityId>100148992253752039</EntityId>
               <Min x="-2" y="0" z="2" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
             </MyObjectBuilder_CubeBlock>
@@ -2144,7 +2144,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>141493701101043029</EntityId>
+              <EntityId>136902887079099510</EntityId>
               <Min x="1" y="-6" z="-3" />
               <BlockOrientation Forward="Forward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -2175,7 +2175,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>129413333676368097</EntityId>
+              <EntityId>133374572124827082</EntityId>
               <Min x="1" y="-7" z="-3" />
               <BlockOrientation Forward="Forward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -2213,7 +2213,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>119896871051342178</EntityId>
+              <EntityId>139082633572646027</EntityId>
               <Min x="1" y="-6" z="2" />
               <BlockOrientation Forward="Backward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -2244,7 +2244,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>115796120507690477</EntityId>
+              <EntityId>143791451673466808</EntityId>
               <Min x="1" y="-7" z="2" />
               <BlockOrientation Forward="Backward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -2289,7 +2289,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_TextPanel">
               <SubtypeName>SmallTextPanel</SubtypeName>
-              <EntityId>98933287509668807</EntityId>
+              <EntityId>103379067672226777</EntityId>
               <Min x="0" y="-7" z="2" />
               <BlockOrientation Forward="Forward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38114503" />
@@ -2539,7 +2539,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>SmallBlockBatteryBlock</SubtypeName>
-              <EntityId>98951715378109140</EntityId>
+              <EntityId>133193007466224046</EntityId>
               <Min x="-1" y="-5" z="-1" />
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
@@ -2551,7 +2551,7 @@
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <Enabled>true</Enabled>
-              <CurrentStoredPower>0.99633497</CurrentStoredPower>
+              <CurrentStoredPower>0.995975256</CurrentStoredPower>
               <ProducerEnabled>true</ProducerEnabled>
               <MaxStoredPower>0</MaxStoredPower>
               <SemiautoEnabled>false</SemiautoEnabled>
@@ -2560,7 +2560,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_TextPanel">
               <SubtypeName>SmallTextPanel</SubtypeName>
-              <EntityId>139148444319665129</EntityId>
+              <EntityId>125339137225492249</EntityId>
               <Min x="0" y="-7" z="-2" />
               <BlockOrientation Forward="Backward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38114503" />
@@ -2810,7 +2810,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>102087954227516563</EntityId>
+              <EntityId>72241914096220750</EntityId>
               <Min x="0" y="-5" z="-5" />
               <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -2841,7 +2841,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
               <SubtypeName>SmallBlockGyro</SubtypeName>
-              <EntityId>79877643024860932</EntityId>
+              <EntityId>119341022338594287</EntityId>
               <Min x="-1" y="4" z="0" />
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
@@ -2855,7 +2855,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
               <SubtypeName>SmallBlockConveyor</SubtypeName>
-              <EntityId>85872878046879698</EntityId>
+              <EntityId>90993962330439820</EntityId>
               <Min x="1" y="2" z="-1" />
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.05" />
@@ -2863,7 +2863,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
               <SubtypeName>SmallBlockConveyor</SubtypeName>
-              <EntityId>84935809372456269</EntityId>
+              <EntityId>114277814200806718</EntityId>
               <Min x="1" y="2" z="1" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.05" />
               <SkinSubtypeId>Battered_Armor</SkinSubtypeId>
@@ -2882,7 +2882,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RadioAntenna">
               <SubtypeName>SmallBlockRadioAntenna</SubtypeName>
-              <EntityId>80580902822812100</EntityId>
+              <EntityId>117396700054583214</EntityId>
               <Min x="-2" y="2" z="0" />
               <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
@@ -2920,7 +2920,7 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_MyProgrammableBlock">
               <SubtypeName>SmallProgrammableBlock</SubtypeName>
-              <EntityId>137736427328866992</EntityId>
+              <EntityId>74536523008681752</EntityId>
               <Min x="-1" y="3" z="0" />
               <BlockOrientation Forward="Left" Up="Down" />
               <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
@@ -2949,7 +2949,7 @@
               <ShowInInventory>true</ShowInInventory>
               <Enabled>true</Enabled>
               <Program>//------------------------------------------------------------
-// ADN - Diamond Dome Defense Script v5.4
+// ADN - Diamond Dome Defense Script v5.5
 //------------------------------------------------------------
 
 //Minified with MDK (Malware Development Kit for Space Engineers)
@@ -2966,7 +2966,7 @@ double ͻ=0.995;public bool ͺ=true;public bool ͷ=false;public float Ͷ=1f;publ
 120;public bool ˢ=true;public bool Ή=false;public float Ξ=0f;public int Μ=500;}const double Λ=400;const double Κ=0;const
 double Ι=400;const double Θ=800;const double Η=0;const double Ζ=0;const bool Ν=false;const bool Ε=false;const double Γ=100;
 const double Β=600;const double Α=200;const double ΐ=800;const double Ώ=4;const double Ύ=1;const bool Ό=true;const bool Π=
-true;class Ί{public Ɓ χ=new Ɓ(Λ,Κ,Ι,Θ,Η,Ζ,Ν,Ε);public Ɓ Ђ=new Ɓ(Γ,Β,Α,ΐ,Ώ,Ύ,Ό,Π);}const string Ѐ="5.4";const string Ͽ=
+true;class Ί{public Ɓ χ=new Ɓ(Λ,Κ,Ι,Θ,Η,Ζ,Ν,Ε);public Ɓ Ђ=new Ɓ(Γ,Β,Α,ΐ,Ώ,Ύ,Ό,Π);}const string Ѐ="5.5";const string Ͽ=
 "Diamond Dome";const string Ͼ="DDS";const string Ͻ="AGM";const string ϼ="DDS Designator";const string ϻ="DDS Camera";const string Ϻ=
 "DDS Aiming";const string Ё="DDS Door";const string Ϲ="DDS Display";const string Ϸ="DDS Turret";const string ϵ="Azimuth";const
 string ϴ="Elevation";const string ϳ="Aiming";const string ϲ="Reload";const string ϱ="Forward";const string ϰ="Status";const
@@ -3039,204 +3039,204 @@ ToInt32(Õ.ˮ);Õ.ˬ=ˈ.Get(Ͼ,"ReloadMaxAngle").ToDouble(Õ.ˬ);Õ.ˤ=ˈ.Get(Ͼ
 ,"DisplaysRefreshInterval").ToInt32(Õ.ˣ),1);Õ.Ά=ˈ.Get(Ͼ,"AllyTrackLostTicks").ToInt32(Õ.Ά);Õ.ˢ=ˈ.Get(Ͼ,
 "CheckSelfOcclusion").ToBoolean(Õ.ˢ);Õ.Ή=ˈ.Get(Ͼ,"UseAABBOcclusionChecker").ToBoolean(Õ.Ή);Õ.Ξ=ˈ.Get(Ͼ,"OcclusionExtraClearance").ToSingle(Õ
 .Ξ);Õ.Μ=ˈ.Get(Ͼ,"OcclusionCheckerInitBlockLimit").ToInt32(Õ.Μ);}}}}void ˇ(){ˆ();ʿ();ʽ();ʦ();ʬ();}void ˆ(){List&lt;
-IMyLargeTurretBase&gt;ˁ;Я(out ˁ,ϼ);List&lt;İ&gt;ˀ=new List&lt;İ&gt;(ˁ.Count);foreach(IMyLargeTurretBase Ƅ in ˁ){ˀ.Add(new İ(Ƅ));}ɼ=ˀ;ɻ=new Р&lt;İ&gt;(ˀ,ё);ɺ=
-new Р&lt;İ&gt;(ˀ,з);}void ʿ(){List&lt;IMyCameraBlock&gt;ˉ;Я(out ˉ,ϻ,(Ť)=&gt;{Ť.EnableRaycast=true;Ť.Enabled=true;return true;});if(ˉ==null
-){ˉ=new List&lt;IMyCameraBlock&gt;(0);}ʊ=ˉ;ʓ.Æ=ʊ;}void ʽ(){Dictionary&lt;long,ý&gt;ʼ=null;{if(ʃ!=null&amp;&amp;ʃ.Count&gt;0){ʼ=new Dictionary&lt;
-long,ý&gt;();foreach(ý ʧ in ʃ){if(!ʼ.ContainsKey(ʧ.ā.EntityId)){ʼ.Add(ʧ.ā.EntityId,ʧ);}}}}HashSet&lt;IMyTerminalBlock&gt;ʻ=new
-HashSet&lt;IMyTerminalBlock&gt;();List&lt;IMyMotorStator&gt;ʺ=new List&lt;IMyMotorStator&gt;();Dictionary&lt;long,List&lt;IMyMotorStator&gt;&gt;ʹ=new
-Dictionary&lt;long,List&lt;IMyMotorStator&gt;&gt;();Dictionary&lt;long,List&lt;IMyUserControllableGun&gt;&gt;ʸ=new Dictionary&lt;long,List&lt;
-IMyUserControllableGun&gt;&gt;();Dictionary&lt;long,IMyTerminalBlock&gt;ʾ=new Dictionary&lt;long,IMyTerminalBlock&gt;();Dictionary&lt;long,IMyShipController&gt;ˋ=new
-Dictionary&lt;long,IMyShipController&gt;();Dictionary&lt;long,IMyShipConnector&gt;ˏ=new Dictionary&lt;long,IMyShipConnector&gt;();List&lt;IMyBlockGroup
-&gt;ʣ=new List&lt;IMyBlockGroup&gt;();List&lt;ý&gt;ˑ=new List&lt;ý&gt;();GridTerminalSystem.GetBlockGroups(ʣ,(Ť)=&gt;{return Ť.Name.IndexOf(Ϸ,
-StringComparison.OrdinalIgnoreCase)&gt;-1;});foreach(IMyBlockGroup v in ʣ){v.GetBlocksOfType(ʇ,(ɫ)=&gt;{if(Me.IsSameConstructAs(ɫ)&amp;&amp;ʻ.Add(ɫ)){
-if(ɫ is IMyMotorStator){if(е(ɫ,ϵ)){ʺ.Add(ɫ as IMyMotorStator);}else if(е(ɫ,ϴ)){if(ʹ.ContainsKey(ɫ.CubeGrid.EntityId)){ʹ[ɫ.
-CubeGrid.EntityId].Add(ɫ as IMyMotorStator);}else{List&lt;IMyMotorStator&gt;ː=new List&lt;IMyMotorStator&gt;();ː.Add(ɫ as IMyMotorStator);ʹ.
-Add(ɫ.CubeGrid.EntityId,ː);}}}else if(ɫ is IMyUserControllableGun){if(ʸ.ContainsKey(ɫ.CubeGrid.EntityId)){ʸ[ɫ.CubeGrid.
-EntityId].Add(ɫ as IMyUserControllableGun);}else{List&lt;IMyUserControllableGun&gt;ː=new List&lt;IMyUserControllableGun&gt;();ː.Add(ɫ as
-IMyUserControllableGun);ʸ.Add(ɫ.CubeGrid.EntityId,ː);}}else if(ɫ is IMyShipController){if(!ˋ.ContainsKey(ɫ.CubeGrid.EntityId)){ˋ.Add(ɫ.
-CubeGrid.EntityId,ɫ as IMyShipController);}}else if(ɫ is IMyShipConnector){if(!ˏ.ContainsKey(ɫ.CubeGrid.EntityId)){if(е(ɫ,ϲ)){ˏ.
-Add(ɫ.CubeGrid.EntityId,ɫ as IMyShipConnector);}}}else if(е(ɫ,ϳ)){if(!ʾ.ContainsKey(ɫ.CubeGrid.EntityId)){ʾ.Add(ɫ.CubeGrid.
-EntityId,ɫ);}}}return false;});}foreach(IMyMotorStator Ü in ʺ){if(Ü.TopGrid!=null){List&lt;IMyMotorStator&gt;ˠ;if(ʹ.TryGetValue(Ü.
-TopGrid.EntityId,out ˠ)){List&lt;IMyMotorStator&gt;Ò=new List&lt;IMyMotorStator&gt;();List&lt;List&lt;IMyUserControllableGun&gt;&gt;Ø=new List&lt;List&lt;
-IMyUserControllableGun&gt;&gt;();List&lt;IMyTerminalBlock&gt;á=new List&lt;IMyTerminalBlock&gt;();Ɓ ˎ=null;IMyTerminalBlock ˍ=null;foreach(IMyMotorStator Û in ˠ
-){if(Û.TopGrid!=null){List&lt;IMyUserControllableGun&gt;ˌ;if(ʸ.TryGetValue(Û.TopGrid.EntityId,out ˌ)){IMyTerminalBlock Ú;if(ʾ.
-ContainsKey(Û.TopGrid.EntityId)){Ú=ʾ[Û.TopGrid.EntityId];}else{Ú=ˌ[0];}Ò.Add(Û);Ø.Add(ˌ);á.Add(Ú);if(ˎ==null&amp;&amp;ˌ.Count&gt;0){ˎ=ҡ(ˌ[0]);
-}if(ˍ==null){ˍ=Ú;}}}}if(Ò.Count&gt;0){IMyShipController Ù;if(ˋ.ContainsKey(Ò[0].TopGrid.EntityId)){Ù=ˋ[Ò[0].TopGrid.EntityId
-];}else{Ù=ʄ;}if(ˎ==null){ˎ=ʅ.χ;}ý ʧ=new ý(Ü.CustomName,Ü,Ò,á,Ù,Ø,ˎ,Õ);IMyShipConnector ʫ=null;if(ˏ.ContainsKey(Ò[0].
-CubeGrid.EntityId)){ʫ=ˏ[Ò[0].CubeGrid.EntityId];}IMyShipConnector ʱ=null;if(ˏ.ContainsKey(ˍ.CubeGrid.EntityId)){ʱ=ˏ[ˍ.CubeGrid.
-EntityId];}if(ʫ!=null&amp;&amp;ʱ!=null){ʧ.ď=ʫ;ʧ.Ď=ʱ;}if(ʼ!=null&amp;&amp;ʼ.ContainsKey(ʧ.ā.EntityId)){ʧ.ũ(ʼ[ʧ.ā.EntityId]);}else{ʧ.ȶ(true);ʧ.ȡ()
-;}ˑ.Add(ʧ);}}}}if(Õ.β==0){ɿ=Math.Max((int)Math.Ceiling(Õ.Ϊ*ˑ.Count/(double)ό),1);ɾ=0;}else{if(Õ.β&lt;1f&amp;&amp;Õ.β&gt;0){ɿ=1;ɾ=Math.
-Min((int)Math.Floor(1f/Õ.β),ό);}else{ɿ=Math.Max(Math.Min(ˑ.Count,(int)Math.Ceiling(Õ.β)),1);ɾ=0;}}double ʩ=(double)ˑ.Count/
-ɿ;double ʨ=ʩ/Math.Max(Õ.ς,1);foreach(ý ʧ in ˑ){ʧ.Ē=ʨ;ʧ.ĉ=MathHelperD.ToRadians(Õ.ˬ);ʧ.Ĉ=MathHelperD.ToRadians(Õ.ˤ);ʧ.ē=ʍ;
-}ʃ=ˑ;ʈ=new Р&lt;ý&gt;(ˑ,ж);ʂ=new Р&lt;ý&gt;(ˑ,ж);}void ʦ(){List&lt;Ř&gt;ʥ=new List&lt;Ř&gt;();Dictionary&lt;string,Ř&gt;ʤ=new Dictionary&lt;string,Ř&gt;();
-List&lt;IMyBlockGroup&gt;ʣ=new List&lt;IMyBlockGroup&gt;();GridTerminalSystem.GetBlockGroups(ʣ,(Ť)=&gt;{return е(Ť,Ϻ);});foreach(
-IMyBlockGroup v in ʣ){v.GetBlocksOfType(ʇ,(Ť)=&gt;{int Ŏ=1;int ʢ=Ť.CustomName.IndexOf(Ѓ,StringComparison.OrdinalIgnoreCase);if(ʢ&gt;-1){if(
-ʢ+ϱ.Length&lt;Ť.CustomName.Length){if(int.TryParse($"{Ť.CustomName[ʢ+Ѓ.Length]}",out Ŏ)){if(Ŏ&lt;1||Ŏ&gt;9){Ŏ=1;}}else{Ŏ=1;}}}
-string ʡ=Ѓ+Ŏ;Ř ʟ;if(ʤ.ContainsKey(ʡ)){ʟ=ʤ[ʡ];}else{if(ʑ!=null&amp;&amp;ʑ.ContainsKey(ʡ)){ʟ=ʑ[ʡ];}else{ʟ=new Ř(ʡ,null,null,null);ʟ.ŏ=Õ.
-έ;}ʥ.Add(ʟ);ʤ.Add(ʡ,ʟ);}if(е(Ť,ϱ)){ʟ.Ŗ=Ť;ʟ.ŕ=Ť as IMyLargeTurretBase;}else if(е(Ť,ϸ)){ʟ.œ=Ť;}else if(е(Ť,ϰ)){
-IMyTextSurfaceProvider ʠ=Ť as IMyTextSurfaceProvider;if(ʠ!=null){try{ʟ.Ŕ=ʠ.GetSurface(0);}catch(Exception){}}}else{if(ʟ.Ŗ==null){ʟ.Ŗ=Ť;ʟ.ŕ=Ť
-as IMyLargeTurretBase;}if(ʟ.Ŕ==null&amp;&amp;Ť is IMyTextSurfaceProvider){try{ʟ.Ŕ=((IMyTextSurfaceProvider)Ť).GetSurface(0);}catch
-(Exception){}}}return false;});break;}int ʪ=0;while(ʪ&lt;ʥ.Count){Ř ʟ=ʥ[ʪ];if(ʟ.Ŗ==null){if(ʪ+1==ʥ.Count){ʥ.RemoveAt(ʪ);}
-else{ʥ[ʪ]=ʥ[ʥ.Count-1];ʥ.RemoveAt(ʥ.Count-1);}ʤ.Remove(ʟ.ŗ);}ʪ++;}ʒ=ʥ;ʑ=ʤ;}void ʬ(){Я(out ʀ,Ϲ);}void ʶ(){if(ʒ?.Count&gt;0&amp;&amp;Õ.ά&gt;
-0&amp;&amp;(ǲ%Õ.ά&lt;ʒ.Count)){Ř ʟ=ʒ[ǲ%Õ.ά];if(ҥ(ʟ.Ŗ)&amp;&amp;ʟ.Œ){Vector3D ƣ=ʟ.Ŋ();Vector3D s=ʟ.Ŗ.WorldMatrix.Translation+(ƣ*ʟ.ŏ);
-MyDetectedEntityInfo ū;ʓ.Ë(ref s,out ū,Õ.ξ);if(!ū.IsEmpty()&amp;&amp;Ҥ(ref ū)){ʟ.ř=ū.EntityId;ʟ.Ħ=(ū.HitPosition.HasValue?ū.HitPosition.Value:ū.
-Position);ʟ.ġ=ū.Velocity;ʟ.ĥ=ǲ;Vector3D ʴ=ʟ.Ħ-ʟ.Ŗ.WorldMatrix.Translation;ʴ=Vector3D.ProjectOnVector(ref ʴ,ref ƣ)+ʟ.Ŗ.
-WorldMatrix.Translation;ʟ.ĵ=Vector3D.TransformNormal(ʴ-ū.Position,MatrixD.Transpose(ū.Orientation));ĳ Ǝ;ʛ.ћ(ref ū,ǲ,out Ǝ);if(Ǝ!=
-null){ʟ.Œ=false;if(ҥ(ʟ.œ)){if(ʟ.œ is IMySoundBlock){((IMySoundBlock)ʟ.œ).Play();}else if(ʟ.œ is IMyTimerBlock){((
-IMyTimerBlock)ʟ.œ).Trigger();}else{IMyFunctionalBlock ʳ=ʟ.œ as IMyFunctionalBlock;if(ʳ!=null&amp;&amp;!ʳ.Enabled){ʳ.Enabled=true;}}}Ǝ.Ę=ʟ.Ę;Ǝ
-.Ī=ʟ.Ī;foreach(P ʵ in ɧ){if(ʵ.Ñ==ʟ){ʵ.Ñ=Ǝ;ʵ.ï=ǲ+Õ.Δ;}}}}}else if(ʟ.ř&gt;0&amp;&amp;!ʛ.Ѥ(ʟ.ř)){ʟ.ř=-1;}}}void ʲ(){ɻ.Ы();int ʰ=(Õ.Ϋ==0
-?ɼ.Count:Õ.Ϋ);for(int r=0;r&lt;ʰ;r++){İ ʯ=ɻ.Ч();if(ʯ!=null){MyDetectedEntityInfo ū=ʯ.į.GetTargetedEntity();if(ʛ.ћ(ref ū,ǲ)){
-ʗ=ǲ+Õ.σ;}ʁ=ǲ;if(Õ.Ψ){if(ǲ&gt;=ʯ.Ĭ){ʯ.į.ResetTargetingToDefault();ʯ.į.EnableIdleRotation=false;ʯ.Ĭ=ǲ+Õ.Χ;}}}else{break;}}if(Õ
-.Φ){if(ǲ&lt;=ʁ+Õ.Σ){ɺ.Ы();ʰ=(Õ.Τ==0?ɼ.Count:Õ.Τ);for(int r=0;r&lt;ʰ;r++){İ ʯ=ɺ.Ч();if(ʯ!=null){if(ǲ&gt;=ʯ.ļ){ʯ.Ƃ();ʯ.ļ=ǲ+Õ.Υ;}}
-else{break;}}}}}void ʮ(){ĳ Ǝ=ʛ.я();if(Ǝ!=null){if(ǲ-Ǝ.Ģ&gt;=Õ.φ){if(ʓ.Æ.Count&gt;0){double ʭ=(Ǝ.Ę==0?Õ.μ:Ǝ.Ę);if((Ǝ.Ħ-Me.
-WorldMatrix.Translation).LengthSquared()&lt;=ʭ*ʭ){Vector3D s=Ǝ.Ħ+(Ǝ.ġ*(ǲ-Ǝ.ĥ)*ύ);MyDetectedEntityInfo ū;if(ʓ.Ë(ref s,out ū,Õ.ξ)){ѿ(ref
-ū);}ʝ=ǲ+Õ.τ;}}ʛ.ѥ(Ǝ.ħ,ǲ);Ѹ(Ǝ);}}if(Õ.Ρ&amp;&amp;Õ.γ&gt;0&amp;&amp;ǲ%Õ.γ==0){ĳ ь=ʛ.ю();if(ь!=null&amp;&amp;ь.ĝ!=null&amp;&amp;ь.Ě&gt;=Õ.Ω*Õ.Ω){double ʭ=(ь.Ę==0?
-Õ.μ:ь.Ę);Vector3D Ѿ=ь.Ĥ+(ь.ġ*(ǲ-ь.ĥ)*ύ);if((Ѿ-Me.WorldMatrix.Translation).LengthSquared()&lt;=ʭ*ʭ){double ѽ=Math.Sqrt(ь.Ě)*
-0.5*ϙ;Vector3D Ѽ=new Vector3D(((ī.NextDouble()*2)-1)*ѽ,((ī.NextDouble()*2)-1)*ѽ,((ī.NextDouble()*2)-1)*ѽ);Vector3D s=Ѿ+
-Vector3D.TransformNormal(Ѽ,ь.ĝ.Value);MyDetectedEntityInfo ū;if(ʓ.Ë(ref s,out ū,Õ.ξ)){ѿ(ref ū);}ʝ=ǲ+Õ.τ;}}}}void ѿ(ref
-MyDetectedEntityInfo ū){if(ū.IsEmpty()){return;}if(Ҥ(ref ū)){ĳ Ǝ;ʛ.ћ(ref ū,ǲ,out Ǝ);if(Ǝ==null){return;}Ǝ.Ě=ū.BoundingBox.Extents.
-LengthSquared();if(Ǝ.Ĩ==0){Ǝ.Ĩ=Ǝ.Ě;}if(Õ.Ρ&amp;&amp;Ǝ.Ě&gt;=Õ.Ω*Õ.Ω&amp;&amp;ū.HitPosition.HasValue){if(Ǝ.ķ==null){Ǝ.ķ=new List&lt;ĵ&gt;(ϕ);}Vector3D ѻ=
-Vector3D.TransformNormal(ū.HitPosition.Value-ū.Position,MatrixD.Transpose(ū.Orientation));if(Ǝ.ķ.Count&gt;=ϕ){int Ѻ=0;double ѹ=
-double.MaxValue;for(int r=0;r&lt;Ǝ.ķ.Count;r++){if(ǲ&gt;Ǝ.ķ[r].ĺ+ϓ){Ѻ=r;ѹ=0;break;}double Ð=(Ǝ.ķ[r].Ĵ-ѻ).LengthSquared();if(Ð&lt;ѹ){Ѻ=r
-;ѹ=Ð;}}if(ѹ&lt;double.MaxValue){Ǝ.ķ[Ѻ]=new ĵ(ref ѻ,ǲ);}}else{Ǝ.ķ.Add(new ĵ(ref ѻ,ǲ));}}}else{ʛ.щ(ū.EntityId);ʛ.ѐ(ū.EntityId)
-;}}void Ѹ(ĳ Ǝ){Vector3D ȇ=Me.GetPosition();Vector3D Ҁ=(ʄ!=null?ʄ.GetShipVelocities().LinearVelocity:Vector3D.Zero);if(Ǝ.Ě
-&gt;0&amp;&amp;Ǝ.Ě&lt;Õ.υ*Õ.υ){ʛ.щ(Ǝ.ħ);ʛ.ѐ(Ǝ.ħ);}else if(ǲ-Ǝ.ĥ&lt;=Õ.ο){double Ѭ=ҁ(ɣ,ȇ,Ҁ,Ǝ);Ѭ+=ī.NextDouble()*0.000000000001;Ǝ.ę=Ѭ;ʘ=Math
-.Max(Ѭ,ʘ);if(ʄ==null||ʄ.GetShipVelocities().LinearVelocity.LengthSquared()&lt;=Õ.ͼ*Õ.ͼ){if(Ǝ.Ě&gt;=Õ.κ*Õ.κ){if(Ǝ.ĸ==0||ǲ&gt;=Ǝ.ĸ+Õ
-.Ο){Ǝ.ĸ=ǲ;double ґ=(Ǝ.Ī==0?Õ.θ:Ǝ.Ī);if((Ǝ.Ħ-Me.WorldMatrix.Translation).LengthSquared()&lt;=ґ*ґ){if(Ǝ.Ě==0){Ǝ.Ĺ=1;}else{Ǝ.Ĺ=
-(int)Math.Ceiling(Math.Sqrt(Ǝ.Ě)/Math.Max(Õ.ι,1));}}}}}}else{ʛ.ѐ(Ǝ.ħ);}}void Ґ(){ǫ ѕ=ʚ.ŀ();if(ѕ!=null){if(ǲ-ѕ.Ğ&gt;Õ.Ά){ʚ.Ŀ(
-ѕ.ħ);}}}void ҏ(){switch(ʕ){case 0:if(ǲ&gt;=ʗ){if(ʛ.Ņ()&gt;0){ʗ=ǲ+Õ.ς;ʙ.Clear();ʘ=0;List&lt;ĳ&gt;Ҏ=ʛ.ч();foreach(ĳ Ǝ in Ҏ){if(!ʙ.
-ContainsKey(Ǝ.ę)){ʙ.Add(Ǝ.ę,Ǝ);ʘ=Math.Max(Ǝ.ę,ʘ);}}ʈ.Ǥ();ʈ.Ы();ʕ=1;}}break;case 1:ý ʧ=ʈ.Ч();if(ʧ!=null){if(ʧ!=null&amp;&amp;!ʧ.Đ){double Ғ=
-0;ĳ ҍ=null;double Ҍ=0;ĳ ҋ=null;foreach(KeyValuePair&lt;double,ĳ&gt;Ҋ in ʙ){if(ʧ.ȋ(Ҋ.Value,ǲ)){Ғ=Ҋ.Key;ҍ=Ҋ.Value;if(ʧ.ø&gt;0){if(ҍ.
-Ě&gt;=ʧ.ø*ʧ.ø){Ҍ=Ғ;ҋ=ҍ;break;}}else{break;}}}if(ҋ!=null){Ғ=Ҍ;ҍ=ҋ;}if(ҍ!=null){ʧ.đ=ҍ;if(ʙ.ContainsKey(Ғ)){ʙ.Remove(Ғ);ʘ+=1000
-;Ғ=ʘ;ʙ.Add(Ғ,ҍ);}}else{if(ʧ.đ!=null&amp;&amp;!ʛ.Ѥ(ʧ.đ.ħ)){ʧ.đ=null;}ʧ.ȶ();ʧ.ȡ();}}}else{ʕ=0;}break;}}double ҁ(double ɣ,Vector3D ȇ
-,Vector3D Ҁ,ĳ Ǝ){Vector3D Ѷ=Ǝ.Ħ-ȇ;double Ѭ=Ѷ.Length();PlaneD Ѳ;if(Ҁ.LengthSquared()&lt;0.01){Ѳ=new PlaneD(ȇ,Vector3D.
-Normalize(Ѷ));}else{Ѳ=new PlaneD(ȇ,ȇ+Ҁ,ȇ+Ѷ.Cross(Ҁ));}Vector3D Ѫ=Ѳ.Intersection(ref Ǝ.Ħ,ref Ǝ.ġ);Vector3D ѩ=Ѫ-Ǝ.Ħ;if(ѩ.Dot(ref Ǝ.
-ġ)&lt;0){Ѭ+=Õ.ε*4;}else{double Ɖ=Math.Sqrt(ѩ.LengthSquared()/Math.Max(Ǝ.ġ.LengthSquared(),0.000000000000001));if((Ѫ-(ȇ+(Ҁ*Ɖ)
-)).LengthSquared()&gt;ɣ*ɣ){Ѭ+=Õ.ε*2;}else if(Ǝ.Ě&lt;=0){Ѭ+=Õ.ε;}else if(Ǝ.Ě&lt;Õ.ν*Õ.ν){Ѭ+=Õ.ε*3;}}if(Ǝ.Ĩ&gt;Ǝ.Ě){Ѭ+=Õ.ε*Math.Max(Ǝ.Ļ
-,1);}else{Ѭ+=Õ.ε*Math.Min(Ǝ.Ļ,1);}return Ѭ;}void Ѩ(){if(ɾ&gt;0){if(ǲ&gt;=ɽ){ɽ=ǲ+ɾ;}else{return;}}ʂ.Ы();int ʰ=(ɿ==0?ʃ.Count:ɿ);
-for(int r=0;r&lt;ʰ;r++){ý ʧ=ʂ.Ч();if(ʧ!=null){if(ǲ&gt;=ʧ.č+Õ.Ͱ){ʧ.č=ǲ;if(ʧ.ȏ()){if(ǲ&gt;=ʧ.ċ+Õ.ˮ){ʧ.ċ=ǲ;ʧ.ȍ(ǲ);}}}if(ʧ.Ċ==ý.Ǖ.ƹ){if(
-ʧ.đ!=null){ʧ.ɍ(ʧ.đ,ǲ);}}else{ʧ.ȍ(ǲ);}}else{break;}}}void ѧ(){List&lt;IMyBlockGroup&gt;ʣ=new List&lt;IMyBlockGroup&gt;();ʜ=new List&lt;
-IMyProgrammableBlock&gt;();GridTerminalSystem.GetBlockGroups(ʣ,(Ť)=&gt;{return е(Ť,Ќ);});foreach(IMyBlockGroup v in ʣ){v.GetBlocksOfType(ʜ,(Ť)=&gt;{
-if(Ť.Enabled&amp;&amp;Me.IsSameConstructAs(Ť)){return л.и(Ť);}else{return false;}});break;}ʣ.Clear();ʔ=new List&lt;
-IMyProgrammableBlock&gt;();GridTerminalSystem.GetBlockGroups(ʣ,(Ť)=&gt;{return е(Ť,Ж);});foreach(IMyBlockGroup v in ʣ){v.GetBlocksOfType(ʔ,(Ť)=&gt;{
-if(Ť.Enabled&amp;&amp;Me.IsSameConstructAs(Ť)){return л.и(Ť);}else{return false;}});break;}}void ѫ(){while(ʋ.HasPendingMessage){
-object Ѧ=ʋ.AcceptMessage().Data;if(Ѧ is MyTuple&lt;long,long,Vector3D,Vector3D,double&gt;){MyTuple&lt;long,long,Vector3D,Vector3D,
-double&gt;ѭ=(MyTuple&lt;long,long,Vector3D,Vector3D,double&gt;)Ѧ;if(!ʛ.Ѥ(ѭ.Item2)||ǲ-ʛ.ѡ(ѭ.Item2).Ğ&gt;=Õ.π){ǧ њ=new ǧ();њ.ħ=ѭ.Item2;њ.Ħ=ѭ
-.Item3;њ.ġ=ѭ.Item4;ʛ.ћ(њ,ǲ-1,false);if(ѭ.Item5&gt;0){ĳ Ǝ=ʛ.ѡ(њ.ħ);if(Ǝ!=null&amp;&amp;Ǝ.Ě==0){Ǝ.Ě=ѭ.Item5;}}}}}while(ɸ.
-HasPendingMessage){object Ѧ=ɸ.AcceptMessage().Data;if(Ѧ is MyTuple&lt;long,long,Vector3D,Vector3D,double&gt;){MyTuple&lt;long,Vector3D,Vector3D,
-double,int,long&gt;Ѵ=(MyTuple&lt;long,Vector3D,Vector3D,double,int,long&gt;)Ѧ;if(!ʛ.Ѥ(Ѵ.Item1)||ǲ-ʛ.ѡ(Ѵ.Item1).Ğ&gt;=Õ.π){if((Ѵ.Item5&amp;(int
-)н.м)==0){ǧ њ=new ǧ();њ.ħ=Ѵ.Item1;њ.Ħ=Ѵ.Item2;њ.ġ=Ѵ.Item3;ʛ.ћ(њ,ǲ-1,false);if(Ѵ.Item4&gt;0){ĳ Ǝ=ʛ.ѡ(њ.ħ);if(Ǝ!=null){if(Ǝ.Ě
-==0){Ǝ.Ě=Ѵ.Item4;}Ǝ.ě=(Ѵ.Item5&amp;(int)н.ě)&gt;0;}}}else{ǫ ѕ=new ǫ(Ѵ.Item1);ѕ.Ħ=Ѵ.Item2;ѕ.ġ=Ѵ.Item3;ѕ.ǥ=Ѵ.Item4;ѕ.ě=(Ѵ.Item5&amp;(
-int)н.ě)&gt;0;ʚ.є(ѕ,ǲ);}}}}}void ѳ(string ѵ){string[]в=ѵ.Split(ϛ,StringSplitOptions.RemoveEmptyEntries);if(в.Length==0)return;
-string ѱ=в[0].Trim().ToUpper();Ř ʟ=null;if(ѱ.StartsWith(Ѓ,StringComparison.OrdinalIgnoreCase)){int Ŏ;if(ѱ.Length==Ѓ.Length){Ŏ=
-1;}else if(!int.TryParse(ѱ.Substring(Ѓ.Length).Trim(),out Ŏ)){Ŏ=0;}if(Ŏ&gt;=1&amp;&amp;ʑ.ContainsKey(Ѓ+Ŏ)){ʟ=ʑ[Ѓ+Ŏ];}if(ʟ!=null&amp;&amp;в.
-Length&lt;=1){return;}}if(ʟ!=null){ѱ=в[1].Trim().ToUpper();}else if(ʒ?.Count&gt;0){ʟ=ʒ[0];}switch(ѱ){case Г:bool Ѱ=г(в,Б);List&lt;
-IMyProgrammableBlock&gt;ѯ=(Ѱ?ʔ:ʜ);if(г(в,В)){ĳ ь=ʛ.ю();if(ь!=null){Һ(ѯ,ь,ʟ?.Ő??с.ф,ʟ?.ĵ,Ѱ);}}else if(ʟ!=null){bool Ѯ=г(в,А);if(ʟ.ř&gt;0&amp;&amp;ʛ.Ѥ(ʟ.ř))
-{ĳ ѷ=ʛ.ѡ(ʟ.ř);if(ѷ!=null){if(Ѯ){ѷ.Ī=Math.Max(ʟ.ŏ,Õ.θ);}Һ(ѯ,ѷ,ʟ.Ő,ʟ.ĵ,Ѱ);}}else{ʟ.Œ=true;ʟ.ř=-1;ʟ.ĵ=Vector3D.Zero;ʟ.Ħ=ʟ.Ŗ.
-WorldMatrix.Translation+(ʟ.Ŋ()*ʟ.ŏ);ʟ.Ę=Math.Max(ʟ.ŏ,Õ.μ);ʟ.Ī=(Ѯ?Math.Max(ʟ.ŏ,Õ.θ):0);Һ(ѯ,ʟ,ʟ.Ő,ʟ.ĵ,Ѱ);}}break;case Џ:if(ʟ!=null){
-if(ʟ.Œ&amp;&amp;ʟ.ř==-1){ʟ.Œ=false;ʟ.ĵ=Vector3D.Zero;}else{bool Ѯ=г(в,А);ʟ.Œ=true;ʟ.ř=-1;ʟ.ĵ=Vector3D.Zero;ʟ.Ħ=ʟ.Ŗ.WorldMatrix.
-Translation+(ʟ.Ŋ()*ʟ.ŏ);ʟ.Ę=Math.Max(ʟ.ŏ,Õ.μ);ʟ.Ī=(Ѯ?Math.Max(ʟ.ŏ,Õ.θ):0);}}break;case Ў:if(ʟ!=null){ʟ.Œ=false;ʟ.ř=-1;ʟ.ĵ=Vector3D.
-Zero;}break;case Е:if(ʟ!=null&amp;&amp;в.Length&gt;=3){switch(в[2].ToUpper().Trim()){case Ѝ:ʟ.Ő=с.ф;break;case Ћ:ʟ.Ő=с.р;break;case Њ:ʟ
-.Ő=с.о;break;case Љ:if(в.Length&gt;=4){double ǭ;if(double.TryParse(в[3].Trim(),out ǭ)){ʟ.ŏ=Math.Min(Math.Max(ǭ,1000),100000)
-;;}}break;}}break;case І:if(ʟ!=null){ʟ.Ő=(с)(((int)ʟ.Ő+1)%3);}break;case Ј:if(ʟ!=null){ʟ.ŏ=Math.Min(Math.Max(ʟ.ŏ+1000,
-1000),100000);;}break;case Ї:if(ʟ!=null){ʟ.ŏ=Math.Min(Math.Max(ʟ.ŏ-1000,1000),100000);;}break;case Ѕ:ɟ=!ɟ;if(!ɟ){foreach(ý ʧ
-in ʃ){ʧ.đ=null;ʧ.ȶ(true);ʧ.ȡ();}}break;case Є:ɟ=true;break;case ϯ:ɟ=false;foreach(ý ʧ in ʃ){ʧ.đ=null;ʧ.ȶ(true);ʧ.ȡ();}
-break;case Ϯ:Õ.λ=!Õ.λ;break;case ψ:Õ.λ=true;break;case Ϙ:Õ.λ=false;break;case ϗ:ɝ=!ɝ;break;}}void Ҹ(){if(Õ.λ){if(ʛ.Ņ()&gt;0){ĳ Ǝ
-=ʛ.я();if(Ǝ!=null){if(Ǝ.Ĺ&gt;0&amp;&amp;ʛ.Ѥ(Ǝ.ħ)){Ǝ.Ĺ--;bool Ҷ=(Ǝ.Ĺ&lt;=0?true:(ī.NextDouble()&lt;=Õ.ζ));ҷ(Ǝ,Ҷ);ʎ=ǲ+Õ.δ;}}}}}void ҷ(ĳ Ǝ,
-bool Ҷ=false,bool ҹ=false){IMyProgrammableBlock ҵ=null;double Ǩ=double.MaxValue;foreach(IMyProgrammableBlock ɫ in ʜ){if(ɫ.
-IsWorking&amp;&amp;GridTerminalSystem.GetBlockWithId(ɫ.EntityId)!=null){double ҳ=(ɫ.WorldMatrix.Translation-Ǝ.Ħ).LengthSquared();if(ҳ&lt;Ǩ){
-Ǩ=ҳ;ҵ=ɫ;}}}if(ҵ!=null&amp;&amp;!ҹ){P ʵ=new P();ʵ.m=ҩ();ʵ.Ñ=Ǝ;ʵ.ï=ǲ+Õ.Δ;ʵ.Ā=Ҷ;ɧ.Enqueue(ʵ);P Ҳ=new P();Ҳ.Ñ=Ǝ;Ҳ.ï=int.MaxValue;Ҳ.ÿ=
-true;ɧ.Enqueue(Ҳ);MyTuple&lt;long,long,long,int,float&gt;ұ=new MyTuple&lt;long,long,long,int,float&gt;();ұ.Item1=Me.EntityId;ұ.Item2=ʵ.m
-;ұ.Item3=Me.EntityId;ұ.Item4|=(int)у.т;ұ.Item5=(Ҷ?(float)(Math.Sqrt(Ǝ.Ě)*0.5*Õ.η):0f);bool Ұ=IGC.SendUnicastMessage(ҵ.
-EntityId,"",ұ);if(!Ұ){MyIni Ҵ=new MyIni();if(ҵ.CustomData.Length&gt;0)Ҵ.TryParse(ҵ.CustomData);Ҵ.Set(Ͻ,"UniqueId",ұ.Item2);Ҵ.Set(Ͻ,
-"GroupId",ұ.Item3);if(Ҷ){Ҵ.Set(Ͻ,"OffsetTargeting",ұ.Item4);Ҵ.Set(Ͻ,"RandomOffsetAmount",ұ.Item5);}ҵ.CustomData=Ҵ.ToString();ҵ.
-TryRun("FIRE:"+Me.EntityId);}ʜ.Remove(ҵ);}}void Һ(List&lt;IMyProgrammableBlock&gt;ѯ,ĳ Ǝ,с ӂ=с.ф,Vector3D?ѻ=null,bool Ӂ=false,bool ҹ=
-false){for(int r=0;r&lt;ѯ.Count;r++){IMyProgrammableBlock Ӏ=ѯ[r];if(Ӏ.IsWorking&amp;&amp;GridTerminalSystem.GetBlockWithId(Ӏ.EntityId)!=
-null&amp;&amp;!ҹ){P ʵ=new P();ʵ.m=ҩ();ʵ.Ñ=Ǝ;ʵ.ï=ǲ+Õ.ή;if(Ӂ&amp;&amp;е(Ӏ,Д))ʵ.þ=Ӏ;ɧ.Enqueue(ʵ);MyIni Ҵ=null;MyTuple&lt;long,long,long,int,float&gt;
-ұ=new MyTuple&lt;long,long,long,int,float&gt;();ұ.Item1=Me.EntityId;ұ.Item2=ʵ.m;ұ.Item3=Me.EntityId;switch(ӂ){case с.р:ұ.Item4
-|=(int)у.т;Ҵ=new MyIni();if(Ӏ.CustomData.Length&gt;0)Ҵ.TryParse(Ӏ.CustomData);Ҵ.Set(Ͻ,"ProbeOffsetVector",ҧ(ѻ!=null?ѻ.Value:
-Vector3D.Zero));Ӏ.CustomData=Ҵ.ToString();break;case с.о:ұ.Item4|=(int)у.т;ұ.Item5=(float)(Math.Sqrt(Ǝ.Ě)*0.5*Õ.η);break;default
-:ұ.Item5=0f;break;}bool Ұ=IGC.SendUnicastMessage(Ӏ.EntityId,"",ұ);if(!Ұ){if(Ҵ==null){Ҵ=new MyIni();if(Ӏ.CustomData.Length
-&gt;0)Ҵ.TryParse(Ӏ.CustomData);}Ҵ.Set(Ͻ,"UniqueId",ұ.Item2);Ҵ.Set(Ͻ,"GroupId",ұ.Item3);switch(ӂ){case с.р:Ҵ.Set(Ͻ,
-"OffsetTargeting",ұ.Item4);Ҵ.Set(Ͻ,"ProbeOffsetVector",ҧ(ѻ!=null?ѻ.Value:Vector3D.Zero));break;case с.о:Ҵ.Set(Ͻ,"OffsetTargeting",ұ.Item4
-);Ҵ.Set(Ͻ,"RandomOffsetAmount",ұ.Item5);break;}Ӏ.CustomData=Ҵ.ToString();Ӏ.TryRun("FIRE:"+Me.EntityId);}if(ѯ.Count==1){ѯ.
-Clear();}else{ѯ[r]=ѯ[ѯ.Count-1];ѯ.RemoveAt(ѯ.Count-1);}break;}}}void ҿ(){ɥ=false;if(ɦ==0){Ҿ();if(!ɥ){һ();}ɦ=1;}else{һ();if(!ɥ
-){Ҿ();}ɦ=0;}}void Ҿ(){while(ɧ.Count&gt;0){P Ƽ=ɧ.Dequeue();if(ǲ&lt;=Ƽ.ï){if(!(Ƽ.Ñ.ħ==-1||ʛ.Ѥ(Ƽ.Ñ.ħ))){break;}if(ǲ&gt;=Ƽ.Ă){if(Ƽ.þ==
-null){MyTuple&lt;bool,long,long,long,Vector3D,Vector3D&gt;ҽ=new MyTuple&lt;bool,long,long,long,Vector3D,Vector3D&gt;();ҽ.Item1=Ƽ.ÿ;ҽ.
-Item2=(Ƽ.ÿ?Me.EntityId:Ƽ.m);ҽ.Item3=0;ҽ.Item4=Ƽ.Ñ.ħ;ҽ.Item5=Ƽ.Ñ.Ħ+(Ƽ.Ñ.ġ*(ǲ-Ƽ.Ñ.ĥ+1)*ύ);ҽ.Item6=Ƽ.Ñ.ġ;IGC.
-SendBroadcastMessage(Ƽ.ÿ?Ϛ:ϐ,ҽ);}else{Vector3D s=Ƽ.Ñ.Ħ+(Ƽ.Ñ.ġ*(ǲ-Ƽ.Ñ.ĥ+1)*ύ);MyIni Ҽ=new MyIni();Ҽ.Set(ϣ,"EntityId",Ƽ.Ñ.ħ);Ҽ.Set(ϣ,
-"PositionX",s.X);Ҽ.Set(ϣ,"PositionY",s.Y);Ҽ.Set(ϣ,"PositionZ",s.Z);Ҽ.Set(ϣ,"VelocityX",Ƽ.Ñ.ġ.X);Ҽ.Set(ϣ,"VelocityY",Ƽ.Ñ.ġ.Y);Ҽ.Set(
-ϣ,"VelocityZ",Ƽ.Ñ.ġ.Z);Ƽ.þ.TryRun(ϣ+Ҽ.ToString());}Ƽ.Ă=ǲ+Õ.ͽ;ɥ=true;}if(!Ƽ.ÿ){ɧ.Enqueue(Ƽ);}break;}}}void һ(){if(ǲ&gt;=ɢ&amp;&amp;ɯ.
-Count==0){if(ʛ.Ņ()&gt;0){List&lt;ĳ&gt;Ҏ=ʛ.ч();Ҏ.Sort(ʉ);foreach(ĳ Ǝ in Ҏ){ɯ.Enqueue(Ǝ);}}ɢ=ǲ+Õ.ί;}while(ɯ.Count&gt;0){ĳ Ǝ=ɯ.Dequeue();if(
-ʛ.ѣ(Ǝ.ħ,ǲ-Õ.ο)){MyTuple&lt;long,Vector3D,Vector3D,double,int,long&gt;Ѵ=new MyTuple&lt;long,Vector3D,Vector3D,double,int,long&gt;();Ѵ.
-Item1=Ǝ.ħ;Ѵ.Item2=Ǝ.Ħ+(Ǝ.ġ*(ǲ-Ǝ.ĥ+1)*ύ);Ѵ.Item3=Ǝ.ġ;Ѵ.Item4=Ǝ.Ě;if(Ǝ.ě)Ѵ.Item5|=(int)н.ě;Ѵ.Item6=0;IGC.SendBroadcastMessage(ϊ
-,Ѵ);ɥ=true;break;}}}void ҟ(){if(ǲ&gt;=ɡ){MyTuple&lt;long,Vector3D,Vector3D,double,int,long&gt;Ѵ=new MyTuple&lt;long,Vector3D,Vector3D
-,double,int,long&gt;();Ѵ.Item1=Me.CubeGrid.EntityId;Ѵ.Item2=Me.CubeGrid.WorldAABB.Center;Ѵ.Item3=(ʄ!=null?ʄ.
-GetShipVelocities().LinearVelocity:Vector3D.Zero);Ѵ.Item4=ɣ*ɣ*4;Ѵ.Item5|=(int)н.м;if(Me.CubeGrid.GridSizeEnum==MyCubeSize.Large)Ѵ.Item5|=
-(int)н.ě;Ѵ.Item6=0;IGC.SendBroadcastMessage(ϊ,Ѵ);ɡ=ǲ+Õ.ί;}}void Ҟ(){foreach(Ř ʟ in ʒ){if(ʟ.Ŕ!=null){IMyTextSurface ҝ=ʟ.Ŕ;
-Vector2 Ҝ;Vector2 Ҡ;if(ҝ.SurfaceSize.X==ҝ.SurfaceSize.Y){Ҝ=(ҝ.TextureSize-ҝ.SurfaceSize)*0.5f;Ҡ=new Vector2(ҝ.SurfaceSize.X)*
-0.0009765625f;}else if(ҝ.SurfaceSize.X&gt;ҝ.SurfaceSize.Y){Ҝ=(ҝ.TextureSize-ҝ.SurfaceSize+new Vector2(ҝ.SurfaceSize.X-ҝ.SurfaceSize.Y,0f
-))*0.5f;Ҡ=new Vector2(ҝ.SurfaceSize.Y)*0.0009765625f;}else{Ҝ=(ҝ.TextureSize-ҝ.SurfaceSize+new Vector2(0f,ҝ.SurfaceSize.Y-
-ҝ.SurfaceSize.X))*0.5f;Ҡ=new Vector2(ҝ.SurfaceSize.Y)*0.0009765625f;}List&lt;MySprite&gt;қ=new List&lt;MySprite&gt;();қ.Add(new
-MySprite(SpriteType.TEXTURE,"SquareSimple",ҝ.TextureSize*0.5f,null,Color.Black));Vector2 ҙ=Ҡ*new Vector2(1024f,100f);Vector2 Ҙ=
-new Vector2(ҙ.X*0.5f,0f);Vector2 җ=ҙ*0.5f;Vector2 Җ=new Vector2(0f,ҙ.Y);Vector2 ҕ=new Vector2(0f,Ҡ.Y*20f);Vector2 Ҕ=Ҡ*new
-Vector2(480f,100f);Vector2 ғ=new Vector2(Ҕ.X*0.5f,0f);Vector2 Қ=Ҕ*0.5f;Vector2 Ң=Ҡ*new Vector2(544f,0f);float Ҩ=ϫ*ҙ.Y;Vector2 ү
-=Ҝ+ҕ;string ҭ;Color Ҭ;Color ҫ;қ.Add(new MySprite(SpriteType.TEXTURE,"SquareSimple",ү+җ,ҙ,ϩ));қ.Add(new MySprite(
-SpriteType.TEXT,$"{Ͽ} v{Ѐ}",ү+Ҙ,null,Ϫ,"DEBUG",TextAlignment.CENTER,Ҩ));ү+=Җ;қ.Add(new MySprite(SpriteType.TEXTURE,"SquareSimple",
-ү+җ,ҙ,ϧ));қ.Add(new MySprite(SpriteType.TEXT,$"Manual Targeter {ʟ.ŗ}",ү+Ҙ,null,Ϩ,"DEBUG",TextAlignment.CENTER,Ҩ));ү+=Җ+ҕ;
-қ.Add(new MySprite(SpriteType.TEXT,"Status",ү+Ҙ,null,Ϧ,"DEBUG",TextAlignment.CENTER,Ҩ));ү+=Җ;if(ʟ.ř&gt;0){ҭ="Target Locked";
-Ҭ=ϡ;ҫ=Ϡ;}else if(ʟ.Œ){ҭ="Seeking";Ҭ=Ϥ;ҫ=Ϣ;}else{ҭ="No Target";Ҭ=ϥ;ҫ=Ϭ;}қ.Add(new MySprite(SpriteType.TEXTURE,
-"SquareSimple",ү+җ,ҙ,ҫ));қ.Add(new MySprite(SpriteType.TEXT,ҭ,ү+Ҙ,null,Ҭ,"DEBUG",TextAlignment.CENTER,Ҩ));ү+=Җ+ҕ;қ.Add(new MySprite(
-SpriteType.TEXT,"Current Target",ү+Ҙ,null,Ϧ,"DEBUG",TextAlignment.CENTER,Ҩ));ү+=Җ;if(ʟ.ř&gt;0){ҭ=Ү(ʟ.ř);Ҭ=ϟ;ҫ=Ϟ;}else{ҭ="-";Ҭ=ϥ;ҫ=Ϭ;}
-қ.Add(new MySprite(SpriteType.TEXTURE,"SquareSimple",ү+җ,ҙ,ҫ));қ.Add(new MySprite(SpriteType.TEXT,ҭ,ү+Ҙ,null,Ҭ,"DEBUG",
-TextAlignment.CENTER,Ҩ));ү+=Җ+ҕ;қ.Add(new MySprite(SpriteType.TEXT,"Range",ү+ғ,null,Ϧ,"DEBUG",TextAlignment.CENTER,Ҩ));қ.Add(new
-MySprite(SpriteType.TEXT,"Hit Point",ү+Ң+ғ,null,Ϧ,"DEBUG",TextAlignment.CENTER,Ҩ));ү+=Җ;ҭ=$"{Math.Round(ʟ.ŏ*0.001,1):n1}km";Ҭ=ϝ;
-ҫ=Ϝ;қ.Add(new MySprite(SpriteType.TEXTURE,"SquareSimple",ү+Қ,Ҕ,ҫ));қ.Add(new MySprite(SpriteType.TEXT,ҭ,ү+ғ,null,Ҭ,
-"DEBUG",TextAlignment.CENTER,Ҩ));ҭ=ʟ.ĩ();Ҭ=ϝ;ҫ=Ϝ;қ.Add(new MySprite(SpriteType.TEXTURE,"SquareSimple",ү+Ң+Қ,Ҕ,ҫ));қ.Add(new
-MySprite(SpriteType.TEXT,ҭ,ү+Ң+ғ,null,Ҭ,"DEBUG",TextAlignment.CENTER,Ҩ));ҝ.ContentType=ContentType.SCRIPT;ҝ.Script="";
-MySpriteDrawFrame Ҫ=ҝ.DrawFrame();Ҫ.AddRange(қ);Ҫ.Dispose();}}}void Ŕ(){ǚ.Clear();ɜ=(ɜ+1)%8;ǚ.AppendLine(
-$"====[ Diamond Dome System ]==={ˡ[ɜ]}");ǚ.AppendLine($"&lt;&lt;Version {Ѐ}&gt;&gt;\n");ǚ.AppendLine($"PDCs : {ʃ.Count(Ť=&gt;{return!Ť.Đ;})}");ǚ.AppendLine(
-$"Designators : {ɼ.Count}");ǚ.AppendLine($"Raycast Cameras : {ʊ.Count}");ǚ.AppendLine($"Guided Missiles : {ʜ.Count}");ǚ.AppendLine(
-$"Guided Torpedos : {ʔ.Count}");if(ɟ){ǚ.AppendLine($"Tracked Targets : {ʛ.Ņ()}");}else{ǚ.AppendLine("\n---&lt; DD Disabled &gt;---");}ǚ.AppendLine(
-"\n---- Runtime Performance ---\n");ɞ.ǡ(ǚ);if(ɝ){ǚ.AppendLine("\n&gt;&gt;&gt;&gt;&gt;&gt;&gt; Debug Mode &lt;&lt;&lt;&lt;&lt;&lt;&lt;");ǚ.AppendLine("\n---- Debug Performance ---\n");ɞ.Ǜ(ǚ);}Echo(
-ǚ.ToString());}long ҩ(){ī.NextBytes(ʐ);Buffer.BlockCopy(ʐ,0,ʏ,0,8);return ʏ[0];}string Ү(long Ķ){return
-$"T{Ķ%100000:00000}";}string ҧ(Vector3D Ҧ){return Convert.ToBase64String(BitConverter.GetBytes((float)Ҧ.X))+Convert.ToBase64String(
-BitConverter.GetBytes((float)Ҧ.Y))+Convert.ToBase64String(BitConverter.GetBytes((float)Ҧ.Z));}bool ҥ(IMyTerminalBlock ɫ){return(ɫ!=
-null&amp;&amp;ɫ.IsWorking);}bool Ҥ(ref MyDetectedEntityInfo ū){if(ū.Type==MyDetectedEntityType.LargeGrid||ū.Type==
-MyDetectedEntityType.SmallGrid){return ң(ref ū);}return false;}bool ң(ref MyDetectedEntityInfo ū){return!(ū.Relationship==
-MyRelationsBetweenPlayerAndBlock.Owner||ū.Relationship==MyRelationsBetweenPlayerAndBlock.FactionShare);}Ɓ ҡ(IMyUserControllableGun ȭ){if(ȭ.
-BlockDefinition.SubtypeId.Contains("Gatling")){return ʅ.χ;}else if(ȭ.BlockDefinition.SubtypeId.Contains("Missile")||ȭ.BlockDefinition.
-SubtypeId.Contains("Rocket")){return ʅ.Ђ;}return ʅ.χ;}bool ё(İ ʯ){return ʯ.į.HasTarget;}bool з(İ ʯ){return ʯ.į.IsWorking;}bool ж(
-ý ʧ){return!ʧ.Đ;}bool е(IMyTerminalBlock ɫ,string д){return(ɫ.CustomName.IndexOf(д,StringComparison.OrdinalIgnoreCase)&gt;-1
-);}bool е(IMyBlockGroup v,string д){return(v.Name.IndexOf(д,StringComparison.OrdinalIgnoreCase)&gt;-1);}bool г(string[]в,
-string б){foreach(string а in в){if(а.Trim().Equals(б,StringComparison.OrdinalIgnoreCase)){return true;}}return false;}void Я&lt;
-З&gt;(out List&lt;З&gt;Ɵ,string п,Func&lt;З,bool&gt;х=null)where З:class{Ɵ=null;List&lt;IMyBlockGroup&gt;ʣ=new List&lt;IMyBlockGroup&gt;();
-GridTerminalSystem.GetBlockGroups(ʣ,(Ť)=&gt;{return Ť.Name.IndexOf(п,StringComparison.OrdinalIgnoreCase)&gt;-1;});foreach(IMyBlockGroup v in ʣ){
-List&lt;З&gt;ɭ=new List&lt;З&gt;();v.GetBlocksOfType(ɭ,х);if(Ɵ==null){Ɵ=ɭ;}else{Ɵ.AddList(ɭ);}}}public enum у{т=1}public enum с{ф=0,р=1,
-о=2}public enum н{м=1,ě=2}static class л{const string к="AGMSAVE";const string й="[NOTREADY]";public static bool и(
-IMyProgrammableBlock Э){if(Э!=null&amp;&amp;Э.CustomName.IndexOf(й,StringComparison.OrdinalIgnoreCase)&gt;-1){Vector3I[]И={-Base6Directions.
-GetIntVector(Э.Orientation.Left),Base6Directions.GetIntVector(Э.Orientation.Up),-Base6Directions.GetIntVector(Э.Orientation.Forward)
-};MyIni ˈ=new MyIni();if(ˈ.TryParse(Э.CustomData)&amp;&amp;ˈ.ContainsSection(к)){char[]О={','};if(!П("DetachBlock",Э,ˈ,О,ref И,
-true))return false;if(!П("DampenerBlock",Э,ˈ,О,ref И,true))return false;if(!П("ForwardBlock",Э,ˈ,О,ref И,false))return false
-;if(!П("RemoteControl",Э,ˈ,О,ref И,false))return false;if(!П("Gyroscopes",Э,ˈ,О,ref И,false))return false;if(!П(
-"Thrusters",Э,ˈ,О,ref И,false))return false;if(!П("PowerBlocks",Э,ˈ,О,ref И,true))return false;if(!П("RaycastCameras",Э,ˈ,О,ref И,
-true))return false;}Э.CustomName=Э.CustomName.Replace(й,"").Trim();}return true;}static bool П(string ű,IMyTerminalBlock Й,
-MyIni ˈ,char[]О,ref Vector3I[]И,bool Н){string[]М=ˈ.Get(к,ű).ToString().Split(О,StringSplitOptions.RemoveEmptyEntries);return
-((М.Length&gt;0||Н)&amp;&amp;Л(М,Й,ref И));}static bool Л(string[]К,IMyTerminalBlock Й,ref Vector3I[]И){foreach(string Ơ in К){if(Ơ
-!=null&amp;&amp;Ơ.Length==12){Vector3I Ɵ=new Vector3I();Ɵ.X=BitConverter.ToInt16(Convert.FromBase64String(Ơ.Substring(0,4)),0);Ɵ.Y
-=BitConverter.ToInt16(Convert.FromBase64String(Ơ.Substring(4,4)),0);Ɵ.Z=BitConverter.ToInt16(Convert.FromBase64String(Ơ.
-Substring(8,4)),0);Ɵ=(Ɵ.X*И[0])+(Ɵ.Y*И[1])+(Ɵ.Z*И[2]);Ɵ+=Й.Position;if(!Й.CubeGrid.CubeExists(Ɵ)){return false;}}else{return
-false;}}return true;}}class Р&lt;З&gt;{private List&lt;З&gt;С;private Func&lt;З,bool&gt;Ь;private int Ъ;private int Ƽ;private bool Щ;public Р(
-List&lt;З&gt;Ф,Func&lt;З,bool&gt;Ш=null){С=Ф;Ь=Ш;Ъ=Ƽ=0;Щ=false;if(С==null)С=new List&lt;З&gt;();}public void Ǥ(){Ъ=Ƽ=0;}public void Ы(){Ъ=Ƽ;Щ=
-(С.Count&gt;0);}public З Ч(){if(Ъ&gt;=С.Count)Ъ=0;if(Ƽ&gt;=С.Count){Ƽ=0;Щ=(С.Count&gt;0);}З Ɵ=default(З);while(Щ){З Ц=С[Ƽ++];if(Ƽ&gt;=С.
-Count)Ƽ=0;if(Ƽ==Ъ)Щ=false;if(Ь==null||Ь(Ц)){Ɵ=Ц;break;}}return Ɵ;}public void Х(List&lt;З&gt;Ф){С=Ф;if(С==null)С=new List&lt;З&gt;();if(Ъ
-&gt;=С.Count)Ъ=0;if(Ƽ&gt;=С.Count)Ƽ=0;Щ=false;}}class У:IComparer&lt;ĳ&gt;{public int Compare(ĳ ő,ĳ Ś){if(ő==null)return(Ś==null?0:1);
-else if(Ś==null)return-1;else return(ő.ĥ&lt;Ś.ĥ?-1:(ő.ĥ&gt;Ś.ĥ?1:(ő.ħ&lt;Ś.ħ?-1:(ő.ħ&gt;Ś.ħ?1:0))));}}class Ю{Dictionary&lt;long,Ľ&gt;Т;
-SortedSet&lt;Ľ&gt;ц;HashSet&lt;long&gt;џ;public Ю(){Т=new Dictionary&lt;long,Ľ&gt;();ц=new SortedSet&lt;Ľ&gt;(new і());џ=new HashSet&lt;long&gt;();}public bool
-ћ(ref MyDetectedEntityInfo ū,int ǲ){ĳ ў;return ћ(ref ū,ǲ,out ў);}public bool ћ(ref MyDetectedEntityInfo ū,int ǲ,out ĳ Ǝ){
-if(џ.Contains(ū.EntityId)){Ǝ=null;return false;}if(Т.ContainsKey(ū.EntityId)){Ľ ł=Т[ū.EntityId];Ǝ=ł.Ñ;int ѝ=Math.Max(ǲ-Ǝ.ĥ
-,1);double ќ=1.0/ѝ;Ǝ.ğ=Ǝ.ġ;Ǝ.Ğ=Ǝ.ĥ;if(ū.HitPosition!=null){Ǝ.Ħ=ū.HitPosition.Value;Ǝ.Ĥ=ū.Position;Ǝ.ģ=ǲ;Ǝ.ĝ=ū.Orientation
-;Ǝ.Ĝ=ǲ;}else{Ǝ.Ħ=ū.Position;}Ǝ.ě=(ū.Type==MyDetectedEntityType.LargeGrid);Ǝ.ġ=ū.Velocity;Ǝ.ĥ=ǲ;Vector3D Ÿ=(Ǝ.ġ-Ǝ.ğ)*ќ*ό;
+IMyLargeTurretBase&gt;ˁ;Я(out ˁ,ϼ);if(ˁ==null){ˁ=new List&lt;IMyLargeTurretBase&gt;(0);}List&lt;İ&gt;ˀ=new List&lt;İ&gt;(ˁ.Count);foreach(IMyLargeTurretBase Ƅ
+in ˁ){ˀ.Add(new İ(Ƅ));}ɼ=ˀ;ɻ=new Р&lt;İ&gt;(ˀ,ё);ɺ=new Р&lt;İ&gt;(ˀ,з);}void ʿ(){List&lt;IMyCameraBlock&gt;ˉ;Я(out ˉ,ϻ,(Ť)=&gt;{Ť.EnableRaycast
+=true;Ť.Enabled=true;return true;});if(ˉ==null){ˉ=new List&lt;IMyCameraBlock&gt;(0);}ʊ=ˉ;ʓ.Æ=ʊ;}void ʽ(){Dictionary&lt;long,ý&gt;ʼ=
+null;{if(ʃ!=null&amp;&amp;ʃ.Count&gt;0){ʼ=new Dictionary&lt;long,ý&gt;();foreach(ý ʧ in ʃ){if(!ʼ.ContainsKey(ʧ.ā.EntityId)){ʼ.Add(ʧ.ā.
+EntityId,ʧ);}}}}HashSet&lt;IMyTerminalBlock&gt;ʻ=new HashSet&lt;IMyTerminalBlock&gt;();List&lt;IMyMotorStator&gt;ʺ=new List&lt;IMyMotorStator&gt;();
+Dictionary&lt;long,List&lt;IMyMotorStator&gt;&gt;ʹ=new Dictionary&lt;long,List&lt;IMyMotorStator&gt;&gt;();Dictionary&lt;long,List&lt;IMyUserControllableGun&gt;&gt;ʸ=
+new Dictionary&lt;long,List&lt;IMyUserControllableGun&gt;&gt;();Dictionary&lt;long,IMyTerminalBlock&gt;ʾ=new Dictionary&lt;long,IMyTerminalBlock
+&gt;();Dictionary&lt;long,IMyShipController&gt;ˋ=new Dictionary&lt;long,IMyShipController&gt;();Dictionary&lt;long,IMyShipConnector&gt;ˏ=new
+Dictionary&lt;long,IMyShipConnector&gt;();List&lt;IMyBlockGroup&gt;ʣ=new List&lt;IMyBlockGroup&gt;();List&lt;ý&gt;ˑ=new List&lt;ý&gt;();GridTerminalSystem.
+GetBlockGroups(ʣ,(Ť)=&gt;{return Ť.Name.IndexOf(Ϸ,StringComparison.OrdinalIgnoreCase)&gt;-1;});foreach(IMyBlockGroup v in ʣ){v.
+GetBlocksOfType(ʇ,(ɫ)=&gt;{if(Me.IsSameConstructAs(ɫ)&amp;&amp;ʻ.Add(ɫ)){if(ɫ is IMyMotorStator){if(е(ɫ,ϵ)){ʺ.Add(ɫ as IMyMotorStator);}else if(е(
+ɫ,ϴ)){if(ʹ.ContainsKey(ɫ.CubeGrid.EntityId)){ʹ[ɫ.CubeGrid.EntityId].Add(ɫ as IMyMotorStator);}else{List&lt;IMyMotorStator&gt;ː=
+new List&lt;IMyMotorStator&gt;();ː.Add(ɫ as IMyMotorStator);ʹ.Add(ɫ.CubeGrid.EntityId,ː);}}}else if(ɫ is IMyUserControllableGun){
+if(ʸ.ContainsKey(ɫ.CubeGrid.EntityId)){ʸ[ɫ.CubeGrid.EntityId].Add(ɫ as IMyUserControllableGun);}else{List&lt;
+IMyUserControllableGun&gt;ː=new List&lt;IMyUserControllableGun&gt;();ː.Add(ɫ as IMyUserControllableGun);ʸ.Add(ɫ.CubeGrid.EntityId,ː);}}else if(ɫ is
+IMyShipController){if(!ˋ.ContainsKey(ɫ.CubeGrid.EntityId)){ˋ.Add(ɫ.CubeGrid.EntityId,ɫ as IMyShipController);}}else if(ɫ is
+IMyShipConnector){if(!ˏ.ContainsKey(ɫ.CubeGrid.EntityId)){if(е(ɫ,ϲ)){ˏ.Add(ɫ.CubeGrid.EntityId,ɫ as IMyShipConnector);}}}else if(е(ɫ,ϳ))
+{if(!ʾ.ContainsKey(ɫ.CubeGrid.EntityId)){ʾ.Add(ɫ.CubeGrid.EntityId,ɫ);}}}return false;});}foreach(IMyMotorStator Ü in ʺ){
+if(Ü.TopGrid!=null){List&lt;IMyMotorStator&gt;ˠ;if(ʹ.TryGetValue(Ü.TopGrid.EntityId,out ˠ)){List&lt;IMyMotorStator&gt;Ò=new List&lt;
+IMyMotorStator&gt;();List&lt;List&lt;IMyUserControllableGun&gt;&gt;Ø=new List&lt;List&lt;IMyUserControllableGun&gt;&gt;();List&lt;IMyTerminalBlock&gt;á=new List&lt;
+IMyTerminalBlock&gt;();Ɓ ˎ=null;IMyTerminalBlock ˍ=null;foreach(IMyMotorStator Û in ˠ){if(Û.TopGrid!=null){List&lt;IMyUserControllableGun&gt;ˌ;if
+(ʸ.TryGetValue(Û.TopGrid.EntityId,out ˌ)){IMyTerminalBlock Ú;if(ʾ.ContainsKey(Û.TopGrid.EntityId)){Ú=ʾ[Û.TopGrid.EntityId
+];}else{Ú=ˌ[0];}Ò.Add(Û);Ø.Add(ˌ);á.Add(Ú);if(ˎ==null&amp;&amp;ˌ.Count&gt;0){ˎ=ҡ(ˌ[0]);}if(ˍ==null){ˍ=Ú;}}}}if(Ò.Count&gt;0){
+IMyShipController Ù;if(ˋ.ContainsKey(Ò[0].TopGrid.EntityId)){Ù=ˋ[Ò[0].TopGrid.EntityId];}else{Ù=ʄ;}if(ˎ==null){ˎ=ʅ.χ;}ý ʧ=new ý(Ü.
+CustomName,Ü,Ò,á,Ù,Ø,ˎ,Õ);IMyShipConnector ʫ=null;if(ˏ.ContainsKey(Ò[0].CubeGrid.EntityId)){ʫ=ˏ[Ò[0].CubeGrid.EntityId];}
+IMyShipConnector ʱ=null;if(ˏ.ContainsKey(ˍ.CubeGrid.EntityId)){ʱ=ˏ[ˍ.CubeGrid.EntityId];}if(ʫ!=null&amp;&amp;ʱ!=null){ʧ.ď=ʫ;ʧ.Ď=ʱ;}if(ʼ!=null&amp;&amp;ʼ
+.ContainsKey(ʧ.ā.EntityId)){ʧ.ũ(ʼ[ʧ.ā.EntityId]);}else{ʧ.ȶ(true);ʧ.ȡ();}ˑ.Add(ʧ);}}}}if(Õ.β==0){ɿ=Math.Max((int)Math.
+Ceiling(Õ.Ϊ*ˑ.Count/(double)ό),1);ɾ=0;}else{if(Õ.β&lt;1f&amp;&amp;Õ.β&gt;0){ɿ=1;ɾ=Math.Min((int)Math.Floor(1f/Õ.β),ό);}else{ɿ=Math.Max(Math.
+Min(ˑ.Count,(int)Math.Ceiling(Õ.β)),1);ɾ=0;}}double ʩ=(double)ˑ.Count/ɿ;double ʨ=ʩ/Math.Max(Õ.ς,1);foreach(ý ʧ in ˑ){ʧ.Ē=ʨ;
+ʧ.ĉ=MathHelperD.ToRadians(Õ.ˬ);ʧ.Ĉ=MathHelperD.ToRadians(Õ.ˤ);ʧ.ē=ʍ;}ʃ=ˑ;ʈ=new Р&lt;ý&gt;(ˑ,ж);ʂ=new Р&lt;ý&gt;(ˑ,ж);}void ʦ(){List&lt;Ř
+&gt;ʥ=new List&lt;Ř&gt;();Dictionary&lt;string,Ř&gt;ʤ=new Dictionary&lt;string,Ř&gt;();List&lt;IMyBlockGroup&gt;ʣ=new List&lt;IMyBlockGroup&gt;();
+GridTerminalSystem.GetBlockGroups(ʣ,(Ť)=&gt;{return е(Ť,Ϻ);});foreach(IMyBlockGroup v in ʣ){v.GetBlocksOfType(ʇ,(Ť)=&gt;{int Ŏ=1;int ʢ=Ť.
+CustomName.IndexOf(Ѓ,StringComparison.OrdinalIgnoreCase);if(ʢ&gt;-1){if(ʢ+ϱ.Length&lt;Ť.CustomName.Length){if(int.TryParse(
+$"{Ť.CustomName[ʢ+Ѓ.Length]}",out Ŏ)){if(Ŏ&lt;1||Ŏ&gt;9){Ŏ=1;}}else{Ŏ=1;}}}string ʡ=Ѓ+Ŏ;Ř ʟ;if(ʤ.ContainsKey(ʡ)){ʟ=ʤ[ʡ];}else{if(ʑ!=null&amp;&amp;ʑ.ContainsKey(ʡ))
+{ʟ=ʑ[ʡ];}else{ʟ=new Ř(ʡ,null,null,null);ʟ.ŏ=Õ.έ;}ʥ.Add(ʟ);ʤ.Add(ʡ,ʟ);}if(е(Ť,ϱ)){ʟ.Ŗ=Ť;ʟ.ŕ=Ť as IMyLargeTurretBase;}else
+if(е(Ť,ϸ)){ʟ.œ=Ť;}else if(е(Ť,ϰ)){IMyTextSurfaceProvider ʠ=Ť as IMyTextSurfaceProvider;if(ʠ!=null){try{ʟ.Ŕ=ʠ.GetSurface(0)
+;}catch(Exception){}}}else{if(ʟ.Ŗ==null){ʟ.Ŗ=Ť;ʟ.ŕ=Ť as IMyLargeTurretBase;}if(ʟ.Ŕ==null&amp;&amp;Ť is IMyTextSurfaceProvider){
+try{ʟ.Ŕ=((IMyTextSurfaceProvider)Ť).GetSurface(0);}catch(Exception){}}}return false;});break;}int ʪ=0;while(ʪ&lt;ʥ.Count){Ř ʟ=
+ʥ[ʪ];if(ʟ.Ŗ==null){if(ʪ+1==ʥ.Count){ʥ.RemoveAt(ʪ);}else{ʥ[ʪ]=ʥ[ʥ.Count-1];ʥ.RemoveAt(ʥ.Count-1);}ʤ.Remove(ʟ.ŗ);}ʪ++;}ʒ=ʥ;
+ʑ=ʤ;}void ʬ(){Я(out ʀ,Ϲ);}void ʶ(){if(ʒ?.Count&gt;0&amp;&amp;Õ.ά&gt;0&amp;&amp;(ǲ%Õ.ά&lt;ʒ.Count)){Ř ʟ=ʒ[ǲ%Õ.ά];if(ҥ(ʟ.Ŗ)&amp;&amp;ʟ.Œ){Vector3D ƣ=ʟ.Ŋ();
+Vector3D s=ʟ.Ŗ.WorldMatrix.Translation+(ƣ*ʟ.ŏ);MyDetectedEntityInfo ū;ʓ.Ë(ref s,out ū,Õ.ξ);if(!ū.IsEmpty()&amp;&amp;Ҥ(ref ū)){ʟ.ř=ū.
+EntityId;ʟ.Ħ=(ū.HitPosition.HasValue?ū.HitPosition.Value:ū.Position);ʟ.ġ=ū.Velocity;ʟ.ĥ=ǲ;Vector3D ʴ=ʟ.Ħ-ʟ.Ŗ.WorldMatrix.
+Translation;ʴ=Vector3D.ProjectOnVector(ref ʴ,ref ƣ)+ʟ.Ŗ.WorldMatrix.Translation;ʟ.ĵ=Vector3D.TransformNormal(ʴ-ū.Position,MatrixD.
+Transpose(ū.Orientation));ĳ Ǝ;ʛ.ћ(ref ū,ǲ,out Ǝ);if(Ǝ!=null){ʟ.Œ=false;if(ҥ(ʟ.œ)){if(ʟ.œ is IMySoundBlock){((IMySoundBlock)ʟ.œ).
+Play();}else if(ʟ.œ is IMyTimerBlock){((IMyTimerBlock)ʟ.œ).Trigger();}else{IMyFunctionalBlock ʳ=ʟ.œ as IMyFunctionalBlock;if
+(ʳ!=null&amp;&amp;!ʳ.Enabled){ʳ.Enabled=true;}}}Ǝ.Ę=ʟ.Ę;Ǝ.Ī=ʟ.Ī;foreach(P ʵ in ɧ){if(ʵ.Ñ==ʟ){ʵ.Ñ=Ǝ;ʵ.ï=ǲ+Õ.Δ;}}}}}else if(ʟ.ř&gt;0&amp;&amp;
+!ʛ.Ѥ(ʟ.ř)){ʟ.ř=-1;}}}void ʲ(){ɻ.Ы();int ʰ=(Õ.Ϋ==0?ɼ.Count:Õ.Ϋ);for(int r=0;r&lt;ʰ;r++){İ ʯ=ɻ.Ч();if(ʯ!=null){
+MyDetectedEntityInfo ū=ʯ.į.GetTargetedEntity();if(ʛ.ћ(ref ū,ǲ)){ʗ=ǲ+Õ.σ;}ʁ=ǲ;if(Õ.Ψ){if(ǲ&gt;=ʯ.Ĭ){ʯ.į.ResetTargetingToDefault();ʯ.į.
+EnableIdleRotation=false;ʯ.Ĭ=ǲ+Õ.Χ;}}}else{break;}}if(Õ.Φ){if(ǲ&lt;=ʁ+Õ.Σ){ɺ.Ы();ʰ=(Õ.Τ==0?ɼ.Count:Õ.Τ);for(int r=0;r&lt;ʰ;r++){İ ʯ=ɺ.Ч();if(ʯ!=
+null){if(ǲ&gt;=ʯ.ļ){ʯ.Ƃ();ʯ.ļ=ǲ+Õ.Υ;}}else{break;}}}}}void ʮ(){ĳ Ǝ=ʛ.я();if(Ǝ!=null){if(ǲ-Ǝ.Ģ&gt;=Õ.φ){if(ʓ.Æ.Count&gt;0){double ʭ=(Ǝ
+.Ę==0?Õ.μ:Ǝ.Ę);if((Ǝ.Ħ-Me.WorldMatrix.Translation).LengthSquared()&lt;=ʭ*ʭ){Vector3D s=Ǝ.Ħ+(Ǝ.ġ*(ǲ-Ǝ.ĥ)*ύ);
+MyDetectedEntityInfo ū;if(ʓ.Ë(ref s,out ū,Õ.ξ)){ѿ(ref ū);}ʝ=ǲ+Õ.τ;}}ʛ.ѥ(Ǝ.ħ,ǲ);Ѹ(Ǝ);}}if(Õ.Ρ&amp;&amp;Õ.γ&gt;0&amp;&amp;ǲ%Õ.γ==0){ĳ ь=ʛ.ю();if(ь!=null&amp;&amp;ь.ĝ!=
+null&amp;&amp;ь.Ě&gt;=Õ.Ω*Õ.Ω){double ʭ=(ь.Ę==0?Õ.μ:ь.Ę);Vector3D Ѿ=ь.Ĥ+(ь.ġ*(ǲ-ь.ĥ)*ύ);if((Ѿ-Me.WorldMatrix.Translation).LengthSquared
+()&lt;=ʭ*ʭ){double ѽ=Math.Sqrt(ь.Ě)*0.5*ϙ;Vector3D Ѽ=new Vector3D(((ī.NextDouble()*2)-1)*ѽ,((ī.NextDouble()*2)-1)*ѽ,((ī.
+NextDouble()*2)-1)*ѽ);Vector3D s=Ѿ+Vector3D.TransformNormal(Ѽ,ь.ĝ.Value);MyDetectedEntityInfo ū;if(ʓ.Ë(ref s,out ū,Õ.ξ)){ѿ(ref ū);
+}ʝ=ǲ+Õ.τ;}}}}void ѿ(ref MyDetectedEntityInfo ū){if(ū.IsEmpty()){return;}if(Ҥ(ref ū)){ĳ Ǝ;ʛ.ћ(ref ū,ǲ,out Ǝ);if(Ǝ==null){
+return;}Ǝ.Ě=ū.BoundingBox.Extents.LengthSquared();if(Ǝ.Ĩ==0){Ǝ.Ĩ=Ǝ.Ě;}if(Õ.Ρ&amp;&amp;Ǝ.Ě&gt;=Õ.Ω*Õ.Ω&amp;&amp;ū.HitPosition.HasValue){if(Ǝ.ķ==
+null){Ǝ.ķ=new List&lt;ĵ&gt;(ϕ);}Vector3D ѻ=Vector3D.TransformNormal(ū.HitPosition.Value-ū.Position,MatrixD.Transpose(ū.Orientation
+));if(Ǝ.ķ.Count&gt;=ϕ){int Ѻ=0;double ѹ=double.MaxValue;for(int r=0;r&lt;Ǝ.ķ.Count;r++){if(ǲ&gt;Ǝ.ķ[r].ĺ+ϓ){Ѻ=r;ѹ=0;break;}double
+Ð=(Ǝ.ķ[r].Ĵ-ѻ).LengthSquared();if(Ð&lt;ѹ){Ѻ=r;ѹ=Ð;}}if(ѹ&lt;double.MaxValue){Ǝ.ķ[Ѻ]=new ĵ(ref ѻ,ǲ);}}else{Ǝ.ķ.Add(new ĵ(ref ѻ,ǲ
+));}}}else{ʛ.щ(ū.EntityId);ʛ.ѐ(ū.EntityId);}}void Ѹ(ĳ Ǝ){Vector3D ȇ=Me.GetPosition();Vector3D Ҁ=(ʄ!=null?ʄ.
+GetShipVelocities().LinearVelocity:Vector3D.Zero);if(Ǝ.Ě&gt;0&amp;&amp;Ǝ.Ě&lt;Õ.υ*Õ.υ){ʛ.щ(Ǝ.ħ);ʛ.ѐ(Ǝ.ħ);}else if(ǲ-Ǝ.ĥ&lt;=Õ.ο){double Ѭ=ҁ(ɣ,ȇ,Ҁ,Ǝ);Ѭ+=ī.
+NextDouble()*0.000000000001;Ǝ.ę=Ѭ;ʘ=Math.Max(Ѭ,ʘ);if(ʄ==null||ʄ.GetShipVelocities().LinearVelocity.LengthSquared()&lt;=Õ.ͼ*Õ.ͼ){if(Ǝ.
+Ě&gt;=Õ.κ*Õ.κ){if(Ǝ.ĸ==0||ǲ&gt;=Ǝ.ĸ+Õ.Ο){Ǝ.ĸ=ǲ;double ґ=(Ǝ.Ī==0?Õ.θ:Ǝ.Ī);if((Ǝ.Ħ-Me.WorldMatrix.Translation).LengthSquared()&lt;=ґ
+*ґ){if(Ǝ.Ě==0){Ǝ.Ĺ=1;}else{Ǝ.Ĺ=(int)Math.Ceiling(Math.Sqrt(Ǝ.Ě)/Math.Max(Õ.ι,1));}}}}}}else{ʛ.ѐ(Ǝ.ħ);}}void Ґ(){ǫ ѕ=ʚ.ŀ()
+;if(ѕ!=null){if(ǲ-ѕ.Ğ&gt;Õ.Ά){ʚ.Ŀ(ѕ.ħ);}}}void ҏ(){switch(ʕ){case 0:if(ǲ&gt;=ʗ){if(ʛ.Ņ()&gt;0){ʗ=ǲ+Õ.ς;ʙ.Clear();ʘ=0;List&lt;ĳ&gt;Ҏ=ʛ.ч(
+);foreach(ĳ Ǝ in Ҏ){if(!ʙ.ContainsKey(Ǝ.ę)){ʙ.Add(Ǝ.ę,Ǝ);ʘ=Math.Max(Ǝ.ę,ʘ);}}ʈ.Ǥ();ʈ.Ы();ʕ=1;}}break;case 1:ý ʧ=ʈ.Ч();if(
+ʧ!=null){if(ʧ!=null&amp;&amp;!ʧ.Đ){double Ғ=0;ĳ ҍ=null;double Ҍ=0;ĳ ҋ=null;foreach(KeyValuePair&lt;double,ĳ&gt;Ҋ in ʙ){if(ʧ.ȋ(Ҋ.Value,ǲ
+)){Ғ=Ҋ.Key;ҍ=Ҋ.Value;if(ʧ.ø&gt;0){if(ҍ.Ě&gt;=ʧ.ø*ʧ.ø){Ҍ=Ғ;ҋ=ҍ;break;}}else{break;}}}if(ҋ!=null){Ғ=Ҍ;ҍ=ҋ;}if(ҍ!=null){ʧ.đ=ҍ;if(ʙ
+.ContainsKey(Ғ)){ʙ.Remove(Ғ);ʘ+=1000;Ғ=ʘ;ʙ.Add(Ғ,ҍ);}}else{if(ʧ.đ!=null&amp;&amp;!ʛ.Ѥ(ʧ.đ.ħ)){ʧ.đ=null;}ʧ.ȶ();ʧ.ȡ();}}}else{ʕ=0;}
+break;}}double ҁ(double ɣ,Vector3D ȇ,Vector3D Ҁ,ĳ Ǝ){Vector3D Ѷ=Ǝ.Ħ-ȇ;double Ѭ=Ѷ.Length();PlaneD Ѳ;if(Ҁ.LengthSquared()&lt;0.01)
+{Ѳ=new PlaneD(ȇ,Vector3D.Normalize(Ѷ));}else{Ѳ=new PlaneD(ȇ,ȇ+Ҁ,ȇ+Ѷ.Cross(Ҁ));}Vector3D Ѫ=Ѳ.Intersection(ref Ǝ.Ħ,ref Ǝ.ġ)
+;Vector3D ѩ=Ѫ-Ǝ.Ħ;if(ѩ.Dot(ref Ǝ.ġ)&lt;0){Ѭ+=Õ.ε*4;}else{double Ɖ=Math.Sqrt(ѩ.LengthSquared()/Math.Max(Ǝ.ġ.LengthSquared(),
+0.000000000000001));if((Ѫ-(ȇ+(Ҁ*Ɖ))).LengthSquared()&gt;ɣ*ɣ){Ѭ+=Õ.ε*2;}else if(Ǝ.Ě&lt;=0){Ѭ+=Õ.ε;}else if(Ǝ.Ě&lt;Õ.ν*Õ.ν){Ѭ+=Õ.ε*3;}}if(Ǝ.Ĩ&gt;Ǝ.Ě){Ѭ
++=Õ.ε*Math.Max(Ǝ.Ļ,1);}else{Ѭ+=Õ.ε*Math.Min(Ǝ.Ļ,1);}return Ѭ;}void Ѩ(){if(ɾ&gt;0){if(ǲ&gt;=ɽ){ɽ=ǲ+ɾ;}else{return;}}ʂ.Ы();int ʰ=(
+ɿ==0?ʃ.Count:ɿ);for(int r=0;r&lt;ʰ;r++){ý ʧ=ʂ.Ч();if(ʧ!=null){if(ǲ&gt;=ʧ.č+Õ.Ͱ){ʧ.č=ǲ;if(ʧ.ȏ()){if(ǲ&gt;=ʧ.ċ+Õ.ˮ){ʧ.ċ=ǲ;ʧ.ȍ(ǲ);}}}
+if(ʧ.Ċ==ý.Ǖ.ƹ){if(ʧ.đ!=null){ʧ.ɍ(ʧ.đ,ǲ);}}else{ʧ.ȍ(ǲ);}}else{break;}}}void ѧ(){List&lt;IMyBlockGroup&gt;ʣ=new List&lt;IMyBlockGroup
+&gt;();ʜ=new List&lt;IMyProgrammableBlock&gt;();GridTerminalSystem.GetBlockGroups(ʣ,(Ť)=&gt;{return е(Ť,Ќ);});foreach(IMyBlockGroup v
+in ʣ){v.GetBlocksOfType(ʜ,(Ť)=&gt;{if(Ť.Enabled&amp;&amp;Me.IsSameConstructAs(Ť)){return л.и(Ť);}else{return false;}});break;}ʣ.Clear
+();ʔ=new List&lt;IMyProgrammableBlock&gt;();GridTerminalSystem.GetBlockGroups(ʣ,(Ť)=&gt;{return е(Ť,Ж);});foreach(IMyBlockGroup v
+in ʣ){v.GetBlocksOfType(ʔ,(Ť)=&gt;{if(Ť.Enabled&amp;&amp;Me.IsSameConstructAs(Ť)){return л.и(Ť);}else{return false;}});break;}}void ѫ
+(){while(ʋ.HasPendingMessage){object Ѧ=ʋ.AcceptMessage().Data;if(Ѧ is MyTuple&lt;long,long,Vector3D,Vector3D,double&gt;){
+MyTuple&lt;long,long,Vector3D,Vector3D,double&gt;ѭ=(MyTuple&lt;long,long,Vector3D,Vector3D,double&gt;)Ѧ;if(!ʛ.Ѥ(ѭ.Item2)||ǲ-ʛ.ѡ(ѭ.Item2).Ğ
+&gt;=Õ.π){ǧ њ=new ǧ();њ.ħ=ѭ.Item2;њ.Ħ=ѭ.Item3;њ.ġ=ѭ.Item4;ʛ.ћ(њ,ǲ-1,false);if(ѭ.Item5&gt;0){ĳ Ǝ=ʛ.ѡ(њ.ħ);if(Ǝ!=null&amp;&amp;Ǝ.Ě==0){Ǝ.Ě
+=ѭ.Item5;}}}}}while(ɸ.HasPendingMessage){object Ѧ=ɸ.AcceptMessage().Data;if(Ѧ is MyTuple&lt;long,long,Vector3D,Vector3D,
+double&gt;){MyTuple&lt;long,Vector3D,Vector3D,double,int,long&gt;Ѵ=(MyTuple&lt;long,Vector3D,Vector3D,double,int,long&gt;)Ѧ;if(!ʛ.Ѥ(Ѵ.Item1)
+||ǲ-ʛ.ѡ(Ѵ.Item1).Ğ&gt;=Õ.π){if((Ѵ.Item5&amp;(int)н.м)==0){ǧ њ=new ǧ();њ.ħ=Ѵ.Item1;њ.Ħ=Ѵ.Item2;њ.ġ=Ѵ.Item3;ʛ.ћ(њ,ǲ-1,false);if(Ѵ.
+Item4&gt;0){ĳ Ǝ=ʛ.ѡ(њ.ħ);if(Ǝ!=null){if(Ǝ.Ě==0){Ǝ.Ě=Ѵ.Item4;}Ǝ.ě=(Ѵ.Item5&amp;(int)н.ě)&gt;0;}}}else{ǫ ѕ=new ǫ(Ѵ.Item1);ѕ.Ħ=Ѵ.Item2;ѕ.ġ
+=Ѵ.Item3;ѕ.ǥ=Ѵ.Item4;ѕ.ě=(Ѵ.Item5&amp;(int)н.ě)&gt;0;ʚ.є(ѕ,ǲ);}}}}}void ѳ(string ѵ){string[]в=ѵ.Split(ϛ,StringSplitOptions.
+RemoveEmptyEntries);if(в.Length==0)return;string ѱ=в[0].Trim().ToUpper();Ř ʟ=null;if(ѱ.StartsWith(Ѓ,StringComparison.OrdinalIgnoreCase)){
+int Ŏ;if(ѱ.Length==Ѓ.Length){Ŏ=1;}else if(!int.TryParse(ѱ.Substring(Ѓ.Length).Trim(),out Ŏ)){Ŏ=0;}if(Ŏ&gt;=1&amp;&amp;ʑ.ContainsKey(Ѓ+
+Ŏ)){ʟ=ʑ[Ѓ+Ŏ];}if(ʟ!=null&amp;&amp;в.Length&lt;=1){return;}}if(ʟ!=null){ѱ=в[1].Trim().ToUpper();}else if(ʒ?.Count&gt;0){ʟ=ʒ[0];}switch(ѱ
+){case Г:bool Ѱ=г(в,Б);List&lt;IMyProgrammableBlock&gt;ѯ=(Ѱ?ʔ:ʜ);if(г(в,В)){ĳ ь=ʛ.ю();if(ь!=null){Һ(ѯ,ь,ʟ?.Ő??с.ф,ʟ?.ĵ,Ѱ);}}
+else if(ʟ!=null){bool Ѯ=г(в,А);if(ʟ.ř&gt;0&amp;&amp;ʛ.Ѥ(ʟ.ř)){ĳ ѷ=ʛ.ѡ(ʟ.ř);if(ѷ!=null){if(Ѯ){ѷ.Ī=Math.Max(ʟ.ŏ,Õ.θ);}Һ(ѯ,ѷ,ʟ.Ő,ʟ.ĵ,Ѱ);}}
+else{ʟ.Œ=true;ʟ.ř=-1;ʟ.ĵ=Vector3D.Zero;ʟ.Ħ=ʟ.Ŗ.WorldMatrix.Translation+(ʟ.Ŋ()*ʟ.ŏ);ʟ.Ę=Math.Max(ʟ.ŏ,Õ.μ);ʟ.Ī=(Ѯ?Math.Max(ʟ.ŏ
+,Õ.θ):0);Һ(ѯ,ʟ,ʟ.Ő,ʟ.ĵ,Ѱ);}}break;case Џ:if(ʟ!=null){if(ʟ.Œ&amp;&amp;ʟ.ř==-1){ʟ.Œ=false;ʟ.ĵ=Vector3D.Zero;}else{bool Ѯ=г(в,А);ʟ.Œ
+=true;ʟ.ř=-1;ʟ.ĵ=Vector3D.Zero;ʟ.Ħ=ʟ.Ŗ.WorldMatrix.Translation+(ʟ.Ŋ()*ʟ.ŏ);ʟ.Ę=Math.Max(ʟ.ŏ,Õ.μ);ʟ.Ī=(Ѯ?Math.Max(ʟ.ŏ,Õ.θ)
+:0);}}break;case Ў:if(ʟ!=null){ʟ.Œ=false;ʟ.ř=-1;ʟ.ĵ=Vector3D.Zero;}break;case Е:if(ʟ!=null&amp;&amp;в.Length&gt;=3){switch(в[2].
+ToUpper().Trim()){case Ѝ:ʟ.Ő=с.ф;break;case Ћ:ʟ.Ő=с.р;break;case Њ:ʟ.Ő=с.о;break;case Љ:if(в.Length&gt;=4){double ǭ;if(double.
+TryParse(в[3].Trim(),out ǭ)){ʟ.ŏ=Math.Min(Math.Max(ǭ,1000),100000);;}}break;}}break;case І:if(ʟ!=null){ʟ.Ő=(с)(((int)ʟ.Ő+1)%3);}
+break;case Ј:if(ʟ!=null){ʟ.ŏ=Math.Min(Math.Max(ʟ.ŏ+1000,1000),100000);;}break;case Ї:if(ʟ!=null){ʟ.ŏ=Math.Min(Math.Max(ʟ.ŏ-
+1000,1000),100000);;}break;case Ѕ:ɟ=!ɟ;if(!ɟ){foreach(ý ʧ in ʃ){ʧ.đ=null;ʧ.ȶ(true);ʧ.ȡ();}}break;case Є:ɟ=true;break;case ϯ:
+ɟ=false;foreach(ý ʧ in ʃ){ʧ.đ=null;ʧ.ȶ(true);ʧ.ȡ();}break;case Ϯ:Õ.λ=!Õ.λ;break;case ψ:Õ.λ=true;break;case Ϙ:Õ.λ=false;
+break;case ϗ:ɝ=!ɝ;break;}}void Ҹ(){if(Õ.λ){if(ʛ.Ņ()&gt;0){ĳ Ǝ=ʛ.я();if(Ǝ!=null){if(Ǝ.Ĺ&gt;0&amp;&amp;ʛ.Ѥ(Ǝ.ħ)){Ǝ.Ĺ--;bool Ҷ=(Ǝ.Ĺ&lt;=0?true:(ī
+.NextDouble()&lt;=Õ.ζ));ҷ(Ǝ,Ҷ);ʎ=ǲ+Õ.δ;}}}}}void ҷ(ĳ Ǝ,bool Ҷ=false,bool ҹ=false){IMyProgrammableBlock ҵ=null;double Ǩ=
+double.MaxValue;foreach(IMyProgrammableBlock ɫ in ʜ){if(ɫ.IsWorking&amp;&amp;GridTerminalSystem.GetBlockWithId(ɫ.EntityId)!=null){
+double ҳ=(ɫ.WorldMatrix.Translation-Ǝ.Ħ).LengthSquared();if(ҳ&lt;Ǩ){Ǩ=ҳ;ҵ=ɫ;}}}if(ҵ!=null&amp;&amp;!ҹ){P ʵ=new P();ʵ.m=ҩ();ʵ.Ñ=Ǝ;ʵ.ï=ǲ+Õ.
+Δ;ʵ.Ā=Ҷ;ɧ.Enqueue(ʵ);P Ҳ=new P();Ҳ.Ñ=Ǝ;Ҳ.ï=int.MaxValue;Ҳ.ÿ=true;ɧ.Enqueue(Ҳ);MyTuple&lt;long,long,long,int,float&gt;ұ=new
+MyTuple&lt;long,long,long,int,float&gt;();ұ.Item1=Me.EntityId;ұ.Item2=ʵ.m;ұ.Item3=Me.EntityId;ұ.Item4|=(int)у.т;ұ.Item5=(Ҷ?(float)(
+Math.Sqrt(Ǝ.Ě)*0.5*Õ.η):0f);bool Ұ=IGC.SendUnicastMessage(ҵ.EntityId,"",ұ);if(!Ұ){MyIni Ҵ=new MyIni();if(ҵ.CustomData.Length
+&gt;0)Ҵ.TryParse(ҵ.CustomData);Ҵ.Set(Ͻ,"UniqueId",ұ.Item2);Ҵ.Set(Ͻ,"GroupId",ұ.Item3);if(Ҷ){Ҵ.Set(Ͻ,"OffsetTargeting",ұ.
+Item4);Ҵ.Set(Ͻ,"RandomOffsetAmount",ұ.Item5);}ҵ.CustomData=Ҵ.ToString();ҵ.TryRun("FIRE:"+Me.EntityId);}ʜ.Remove(ҵ);}}void Һ(
+List&lt;IMyProgrammableBlock&gt;ѯ,ĳ Ǝ,с ӂ=с.ф,Vector3D?ѻ=null,bool Ӂ=false,bool ҹ=false){for(int r=0;r&lt;ѯ.Count;r++){
+IMyProgrammableBlock Ӏ=ѯ[r];if(Ӏ.IsWorking&amp;&amp;GridTerminalSystem.GetBlockWithId(Ӏ.EntityId)!=null&amp;&amp;!ҹ){P ʵ=new P();ʵ.m=ҩ();ʵ.Ñ=Ǝ;ʵ.ï=ǲ+Õ.ή;if(
+Ӂ&amp;&amp;е(Ӏ,Д))ʵ.þ=Ӏ;ɧ.Enqueue(ʵ);MyIni Ҵ=null;MyTuple&lt;long,long,long,int,float&gt;ұ=new MyTuple&lt;long,long,long,int,float&gt;();ұ.
+Item1=Me.EntityId;ұ.Item2=ʵ.m;ұ.Item3=Me.EntityId;switch(ӂ){case с.р:ұ.Item4|=(int)у.т;Ҵ=new MyIni();if(Ӏ.CustomData.Length&gt;0
+)Ҵ.TryParse(Ӏ.CustomData);Ҵ.Set(Ͻ,"ProbeOffsetVector",ҧ(ѻ!=null?ѻ.Value:Vector3D.Zero));Ӏ.CustomData=Ҵ.ToString();break;
+case с.о:ұ.Item4|=(int)у.т;ұ.Item5=(float)(Math.Sqrt(Ǝ.Ě)*0.5*Õ.η);break;default:ұ.Item5=0f;break;}bool Ұ=IGC.
+SendUnicastMessage(Ӏ.EntityId,"",ұ);if(!Ұ){if(Ҵ==null){Ҵ=new MyIni();if(Ӏ.CustomData.Length&gt;0)Ҵ.TryParse(Ӏ.CustomData);}Ҵ.Set(Ͻ,"UniqueId"
+,ұ.Item2);Ҵ.Set(Ͻ,"GroupId",ұ.Item3);switch(ӂ){case с.р:Ҵ.Set(Ͻ,"OffsetTargeting",ұ.Item4);Ҵ.Set(Ͻ,"ProbeOffsetVector",ҧ(
+ѻ!=null?ѻ.Value:Vector3D.Zero));break;case с.о:Ҵ.Set(Ͻ,"OffsetTargeting",ұ.Item4);Ҵ.Set(Ͻ,"RandomOffsetAmount",ұ.Item5);
+break;}Ӏ.CustomData=Ҵ.ToString();Ӏ.TryRun("FIRE:"+Me.EntityId);}if(ѯ.Count==1){ѯ.Clear();}else{ѯ[r]=ѯ[ѯ.Count-1];ѯ.RemoveAt(ѯ
+.Count-1);}break;}}}void ҿ(){ɥ=false;if(ɦ==0){Ҿ();if(!ɥ){һ();}ɦ=1;}else{һ();if(!ɥ){Ҿ();}ɦ=0;}}void Ҿ(){while(ɧ.Count&gt;0){P
+Ƽ=ɧ.Dequeue();if(ǲ&lt;=Ƽ.ï){if(!(Ƽ.Ñ.ħ==-1||ʛ.Ѥ(Ƽ.Ñ.ħ))){break;}if(ǲ&gt;=Ƽ.Ă){if(Ƽ.þ==null){MyTuple&lt;bool,long,long,long,
+Vector3D,Vector3D&gt;ҽ=new MyTuple&lt;bool,long,long,long,Vector3D,Vector3D&gt;();ҽ.Item1=Ƽ.ÿ;ҽ.Item2=(Ƽ.ÿ?Me.EntityId:Ƽ.m);ҽ.Item3=0;ҽ.
+Item4=Ƽ.Ñ.ħ;ҽ.Item5=Ƽ.Ñ.Ħ+(Ƽ.Ñ.ġ*(ǲ-Ƽ.Ñ.ĥ+1)*ύ);ҽ.Item6=Ƽ.Ñ.ġ;IGC.SendBroadcastMessage(Ƽ.ÿ?Ϛ:ϐ,ҽ);}else{Vector3D s=Ƽ.Ñ.Ħ+(Ƽ.Ñ
+.ġ*(ǲ-Ƽ.Ñ.ĥ+1)*ύ);MyIni Ҽ=new MyIni();Ҽ.Set(ϣ,"EntityId",Ƽ.Ñ.ħ);Ҽ.Set(ϣ,"PositionX",s.X);Ҽ.Set(ϣ,"PositionY",s.Y);Ҽ.Set(ϣ
+,"PositionZ",s.Z);Ҽ.Set(ϣ,"VelocityX",Ƽ.Ñ.ġ.X);Ҽ.Set(ϣ,"VelocityY",Ƽ.Ñ.ġ.Y);Ҽ.Set(ϣ,"VelocityZ",Ƽ.Ñ.ġ.Z);Ƽ.þ.TryRun(ϣ+Ҽ.
+ToString());}Ƽ.Ă=ǲ+Õ.ͽ;ɥ=true;}if(!Ƽ.ÿ){ɧ.Enqueue(Ƽ);}break;}}}void һ(){if(ǲ&gt;=ɢ&amp;&amp;ɯ.Count==0){if(ʛ.Ņ()&gt;0){List&lt;ĳ&gt;Ҏ=ʛ.ч();Ҏ.Sort(ʉ
+);foreach(ĳ Ǝ in Ҏ){ɯ.Enqueue(Ǝ);}}ɢ=ǲ+Õ.ί;}while(ɯ.Count&gt;0){ĳ Ǝ=ɯ.Dequeue();if(ʛ.ѣ(Ǝ.ħ,ǲ-Õ.ο)){MyTuple&lt;long,Vector3D,
+Vector3D,double,int,long&gt;Ѵ=new MyTuple&lt;long,Vector3D,Vector3D,double,int,long&gt;();Ѵ.Item1=Ǝ.ħ;Ѵ.Item2=Ǝ.Ħ+(Ǝ.ġ*(ǲ-Ǝ.ĥ+1)*ύ);Ѵ.
+Item3=Ǝ.ġ;Ѵ.Item4=Ǝ.Ě;if(Ǝ.ě)Ѵ.Item5|=(int)н.ě;Ѵ.Item6=0;IGC.SendBroadcastMessage(ϊ,Ѵ);ɥ=true;break;}}}void ҟ(){if(ǲ&gt;=ɡ){
+MyTuple&lt;long,Vector3D,Vector3D,double,int,long&gt;Ѵ=new MyTuple&lt;long,Vector3D,Vector3D,double,int,long&gt;();Ѵ.Item1=Me.CubeGrid.
+EntityId;Ѵ.Item2=Me.CubeGrid.WorldAABB.Center;Ѵ.Item3=(ʄ!=null?ʄ.GetShipVelocities().LinearVelocity:Vector3D.Zero);Ѵ.Item4=ɣ*ɣ*4
+;Ѵ.Item5|=(int)н.м;if(Me.CubeGrid.GridSizeEnum==MyCubeSize.Large)Ѵ.Item5|=(int)н.ě;Ѵ.Item6=0;IGC.SendBroadcastMessage(ϊ,Ѵ
+);ɡ=ǲ+Õ.ί;}}void Ҟ(){foreach(Ř ʟ in ʒ){if(ʟ.Ŕ!=null){IMyTextSurface ҝ=ʟ.Ŕ;Vector2 Ҝ;Vector2 Ҡ;if(ҝ.SurfaceSize.X==ҝ.
+SurfaceSize.Y){Ҝ=(ҝ.TextureSize-ҝ.SurfaceSize)*0.5f;Ҡ=new Vector2(ҝ.SurfaceSize.X)*0.0009765625f;}else if(ҝ.SurfaceSize.X&gt;ҝ.
+SurfaceSize.Y){Ҝ=(ҝ.TextureSize-ҝ.SurfaceSize+new Vector2(ҝ.SurfaceSize.X-ҝ.SurfaceSize.Y,0f))*0.5f;Ҡ=new Vector2(ҝ.SurfaceSize.Y)*
+0.0009765625f;}else{Ҝ=(ҝ.TextureSize-ҝ.SurfaceSize+new Vector2(0f,ҝ.SurfaceSize.Y-ҝ.SurfaceSize.X))*0.5f;Ҡ=new Vector2(ҝ.SurfaceSize.
+Y)*0.0009765625f;}List&lt;MySprite&gt;қ=new List&lt;MySprite&gt;();қ.Add(new MySprite(SpriteType.TEXTURE,"SquareSimple",ҝ.TextureSize
+*0.5f,null,Color.Black));Vector2 ҙ=Ҡ*new Vector2(1024f,100f);Vector2 Ҙ=new Vector2(ҙ.X*0.5f,0f);Vector2 җ=ҙ*0.5f;Vector2
+Җ=new Vector2(0f,ҙ.Y);Vector2 ҕ=new Vector2(0f,Ҡ.Y*20f);Vector2 Ҕ=Ҡ*new Vector2(480f,100f);Vector2 ғ=new Vector2(Ҕ.X*0.5f
+,0f);Vector2 Қ=Ҕ*0.5f;Vector2 Ң=Ҡ*new Vector2(544f,0f);float Ҩ=ϫ*ҙ.Y;Vector2 ү=Ҝ+ҕ;string ҭ;Color Ҭ;Color ҫ;қ.Add(new
+MySprite(SpriteType.TEXTURE,"SquareSimple",ү+җ,ҙ,ϩ));қ.Add(new MySprite(SpriteType.TEXT,$"{Ͽ} v{Ѐ}",ү+Ҙ,null,Ϫ,"DEBUG",
+TextAlignment.CENTER,Ҩ));ү+=Җ;қ.Add(new MySprite(SpriteType.TEXTURE,"SquareSimple",ү+җ,ҙ,ϧ));қ.Add(new MySprite(SpriteType.TEXT,
+$"Manual Targeter {ʟ.ŗ}",ү+Ҙ,null,Ϩ,"DEBUG",TextAlignment.CENTER,Ҩ));ү+=Җ+ҕ;қ.Add(new MySprite(SpriteType.TEXT,"Status",ү+Ҙ,null,Ϧ,"DEBUG",
+TextAlignment.CENTER,Ҩ));ү+=Җ;if(ʟ.ř&gt;0){ҭ="Target Locked";Ҭ=ϡ;ҫ=Ϡ;}else if(ʟ.Œ){ҭ="Seeking";Ҭ=Ϥ;ҫ=Ϣ;}else{ҭ="No Target";Ҭ=ϥ;ҫ=Ϭ;}қ.
+Add(new MySprite(SpriteType.TEXTURE,"SquareSimple",ү+җ,ҙ,ҫ));қ.Add(new MySprite(SpriteType.TEXT,ҭ,ү+Ҙ,null,Ҭ,"DEBUG",
+TextAlignment.CENTER,Ҩ));ү+=Җ+ҕ;қ.Add(new MySprite(SpriteType.TEXT,"Current Target",ү+Ҙ,null,Ϧ,"DEBUG",TextAlignment.CENTER,Ҩ));ү+=Җ;
+if(ʟ.ř&gt;0){ҭ=Ү(ʟ.ř);Ҭ=ϟ;ҫ=Ϟ;}else{ҭ="-";Ҭ=ϥ;ҫ=Ϭ;}қ.Add(new MySprite(SpriteType.TEXTURE,"SquareSimple",ү+җ,ҙ,ҫ));қ.Add(new
+MySprite(SpriteType.TEXT,ҭ,ү+Ҙ,null,Ҭ,"DEBUG",TextAlignment.CENTER,Ҩ));ү+=Җ+ҕ;қ.Add(new MySprite(SpriteType.TEXT,"Range",ү+ғ,
+null,Ϧ,"DEBUG",TextAlignment.CENTER,Ҩ));қ.Add(new MySprite(SpriteType.TEXT,"Hit Point",ү+Ң+ғ,null,Ϧ,"DEBUG",TextAlignment.
+CENTER,Ҩ));ү+=Җ;ҭ=$"{Math.Round(ʟ.ŏ*0.001,1):n1}km";Ҭ=ϝ;ҫ=Ϝ;қ.Add(new MySprite(SpriteType.TEXTURE,"SquareSimple",ү+Қ,Ҕ,ҫ));қ.
+Add(new MySprite(SpriteType.TEXT,ҭ,ү+ғ,null,Ҭ,"DEBUG",TextAlignment.CENTER,Ҩ));ҭ=ʟ.ĩ();Ҭ=ϝ;ҫ=Ϝ;қ.Add(new MySprite(
+SpriteType.TEXTURE,"SquareSimple",ү+Ң+Қ,Ҕ,ҫ));қ.Add(new MySprite(SpriteType.TEXT,ҭ,ү+Ң+ғ,null,Ҭ,"DEBUG",TextAlignment.CENTER,Ҩ));ҝ
+.ContentType=ContentType.SCRIPT;ҝ.Script="";MySpriteDrawFrame Ҫ=ҝ.DrawFrame();Ҫ.AddRange(қ);Ҫ.Dispose();}}}void Ŕ(){ǚ.
+Clear();ɜ=(ɜ+1)%8;ǚ.AppendLine($"====[ Diamond Dome System ]==={ˡ[ɜ]}");ǚ.AppendLine($"&lt;&lt;Version {Ѐ}&gt;&gt;\n");ǚ.AppendLine(
+$"PDCs : {ʃ.Count(Ť=&gt;{return!Ť.Đ;})}");ǚ.AppendLine($"Designators : {ɼ.Count}");ǚ.AppendLine($"Raycast Cameras : {ʊ.Count}");ǚ.AppendLine(
+$"Guided Missiles : {ʜ.Count}");ǚ.AppendLine($"Guided Torpedos : {ʔ.Count}");if(ɟ){ǚ.AppendLine($"Tracked Targets : {ʛ.Ņ()}");}else{ǚ.AppendLine(
+"\n---&lt; DD Disabled &gt;---");}ǚ.AppendLine("\n---- Runtime Performance ---\n");ɞ.ǡ(ǚ);if(ɝ){ǚ.AppendLine("\n&gt;&gt;&gt;&gt;&gt;&gt;&gt; Debug Mode &lt;&lt;&lt;&lt;&lt;&lt;&lt;");ǚ.
+AppendLine("\n---- Debug Performance ---\n");ɞ.Ǜ(ǚ);}Echo(ǚ.ToString());}long ҩ(){ī.NextBytes(ʐ);Buffer.BlockCopy(ʐ,0,ʏ,0,8);
+return ʏ[0];}string Ү(long Ķ){return$"T{Ķ%100000:00000}";}string ҧ(Vector3D Ҧ){return Convert.ToBase64String(BitConverter.
+GetBytes((float)Ҧ.X))+Convert.ToBase64String(BitConverter.GetBytes((float)Ҧ.Y))+Convert.ToBase64String(BitConverter.GetBytes((
+float)Ҧ.Z));}bool ҥ(IMyTerminalBlock ɫ){return(ɫ!=null&amp;&amp;ɫ.IsWorking);}bool Ҥ(ref MyDetectedEntityInfo ū){if(ū.Type==
+MyDetectedEntityType.LargeGrid||ū.Type==MyDetectedEntityType.SmallGrid){return ң(ref ū);}return false;}bool ң(ref MyDetectedEntityInfo ū){
+return!(ū.Relationship==MyRelationsBetweenPlayerAndBlock.Owner||ū.Relationship==MyRelationsBetweenPlayerAndBlock.FactionShare)
+;}Ɓ ҡ(IMyUserControllableGun ȭ){if(ȭ.BlockDefinition.SubtypeId.Contains("Gatling")){return ʅ.χ;}else if(ȭ.BlockDefinition
+.SubtypeId.Contains("Missile")||ȭ.BlockDefinition.SubtypeId.Contains("Rocket")){return ʅ.Ђ;}return ʅ.χ;}bool ё(İ ʯ){
+return ʯ.į.HasTarget;}bool з(İ ʯ){return ʯ.į.IsWorking;}bool ж(ý ʧ){return!ʧ.Đ;}bool е(IMyTerminalBlock ɫ,string д){return(ɫ.
+CustomName.IndexOf(д,StringComparison.OrdinalIgnoreCase)&gt;-1);}bool е(IMyBlockGroup v,string д){return(v.Name.IndexOf(д,
+StringComparison.OrdinalIgnoreCase)&gt;-1);}bool г(string[]в,string б){foreach(string а in в){if(а.Trim().Equals(б,StringComparison.
+OrdinalIgnoreCase)){return true;}}return false;}void Я&lt;З&gt;(out List&lt;З&gt;Ɵ,string п,Func&lt;З,bool&gt;х=null)where З:class{Ɵ=null;List&lt;
+IMyBlockGroup&gt;ʣ=new List&lt;IMyBlockGroup&gt;();GridTerminalSystem.GetBlockGroups(ʣ,(Ť)=&gt;{return Ť.Name.IndexOf(п,StringComparison.
+OrdinalIgnoreCase)&gt;-1;});foreach(IMyBlockGroup v in ʣ){List&lt;З&gt;ɭ=new List&lt;З&gt;();v.GetBlocksOfType(ɭ,х);if(Ɵ==null){Ɵ=ɭ;}else{Ɵ.AddList(ɭ);}
+}}public enum у{т=1}public enum с{ф=0,р=1,о=2}public enum н{м=1,ě=2}static class л{const string к="AGMSAVE";const string
+й="[NOTREADY]";public static bool и(IMyProgrammableBlock Э){if(Э!=null&amp;&amp;Э.CustomName.IndexOf(й,StringComparison.
+OrdinalIgnoreCase)&gt;-1){Vector3I[]И={-Base6Directions.GetIntVector(Э.Orientation.Left),Base6Directions.GetIntVector(Э.Orientation.Up),-
+Base6Directions.GetIntVector(Э.Orientation.Forward)};MyIni ˈ=new MyIni();if(ˈ.TryParse(Э.CustomData)&amp;&amp;ˈ.ContainsSection(к)){char[]О={
+','};if(!П("DetachBlock",Э,ˈ,О,ref И,true))return false;if(!П("DampenerBlock",Э,ˈ,О,ref И,true))return false;if(!П(
+"ForwardBlock",Э,ˈ,О,ref И,false))return false;if(!П("RemoteControl",Э,ˈ,О,ref И,false))return false;if(!П("Gyroscopes",Э,ˈ,О,ref И,
+false))return false;if(!П("Thrusters",Э,ˈ,О,ref И,false))return false;if(!П("PowerBlocks",Э,ˈ,О,ref И,true))return false;if(!
+П("RaycastCameras",Э,ˈ,О,ref И,true))return false;}Э.CustomName=Э.CustomName.Replace(й,"").Trim();}return true;}static
+bool П(string ű,IMyTerminalBlock Й,MyIni ˈ,char[]О,ref Vector3I[]И,bool Н){string[]М=ˈ.Get(к,ű).ToString().Split(О,
+StringSplitOptions.RemoveEmptyEntries);return((М.Length&gt;0||Н)&amp;&amp;Л(М,Й,ref И));}static bool Л(string[]К,IMyTerminalBlock Й,ref Vector3I[]И){
+foreach(string Ơ in К){if(Ơ!=null&amp;&amp;Ơ.Length==12){Vector3I Ɵ=new Vector3I();Ɵ.X=BitConverter.ToInt16(Convert.FromBase64String(Ơ.
+Substring(0,4)),0);Ɵ.Y=BitConverter.ToInt16(Convert.FromBase64String(Ơ.Substring(4,4)),0);Ɵ.Z=BitConverter.ToInt16(Convert.
+FromBase64String(Ơ.Substring(8,4)),0);Ɵ=(Ɵ.X*И[0])+(Ɵ.Y*И[1])+(Ɵ.Z*И[2]);Ɵ+=Й.Position;if(!Й.CubeGrid.CubeExists(Ɵ)){return false;}}else
+{return false;}}return true;}}class Р&lt;З&gt;{private List&lt;З&gt;С;private Func&lt;З,bool&gt;Ь;private int Ъ;private int Ƽ;private bool
+Щ;public Р(List&lt;З&gt;Ф,Func&lt;З,bool&gt;Ш=null){С=Ф;Ь=Ш;Ъ=Ƽ=0;Щ=false;if(С==null)С=new List&lt;З&gt;();}public void Ǥ(){Ъ=Ƽ=0;}public
+void Ы(){Ъ=Ƽ;Щ=(С.Count&gt;0);}public З Ч(){if(Ъ&gt;=С.Count)Ъ=0;if(Ƽ&gt;=С.Count){Ƽ=0;Щ=(С.Count&gt;0);}З Ɵ=default(З);while(Щ){З Ц=С[Ƽ
+++];if(Ƽ&gt;=С.Count)Ƽ=0;if(Ƽ==Ъ)Щ=false;if(Ь==null||Ь(Ц)){Ɵ=Ц;break;}}return Ɵ;}public void Х(List&lt;З&gt;Ф){С=Ф;if(С==null)С=new
+List&lt;З&gt;();if(Ъ&gt;=С.Count)Ъ=0;if(Ƽ&gt;=С.Count)Ƽ=0;Щ=false;}}class У:IComparer&lt;ĳ&gt;{public int Compare(ĳ ő,ĳ Ś){if(ő==null)return(Ś
+==null?0:1);else if(Ś==null)return-1;else return(ő.ĥ&lt;Ś.ĥ?-1:(ő.ĥ&gt;Ś.ĥ?1:(ő.ħ&lt;Ś.ħ?-1:(ő.ħ&gt;Ś.ħ?1:0))));}}class Ю{Dictionary&lt;
+long,Ľ&gt;Т;SortedSet&lt;Ľ&gt;ц;HashSet&lt;long&gt;џ;public Ю(){Т=new Dictionary&lt;long,Ľ&gt;();ц=new SortedSet&lt;Ľ&gt;(new і());џ=new HashSet&lt;long&gt;(
+);}public bool ћ(ref MyDetectedEntityInfo ū,int ǲ){ĳ ў;return ћ(ref ū,ǲ,out ў);}public bool ћ(ref MyDetectedEntityInfo ū,
+int ǲ,out ĳ Ǝ){if(џ.Contains(ū.EntityId)){Ǝ=null;return false;}if(Т.ContainsKey(ū.EntityId)){Ľ ł=Т[ū.EntityId];Ǝ=ł.Ñ;int ѝ=
+Math.Max(ǲ-Ǝ.ĥ,1);double ќ=1.0/ѝ;Ǝ.ğ=Ǝ.ġ;Ǝ.Ğ=Ǝ.ĥ;if(ū.HitPosition!=null){Ǝ.Ħ=ū.HitPosition.Value;Ǝ.Ĥ=ū.Position;Ǝ.ģ=ǲ;Ǝ.ĝ=ū.
+Orientation;Ǝ.Ĝ=ǲ;}else{Ǝ.Ħ=ū.Position;}Ǝ.ě=(ū.Type==MyDetectedEntityType.LargeGrid);Ǝ.ġ=ū.Velocity;Ǝ.ĥ=ǲ;Vector3D Ÿ=(Ǝ.ġ-Ǝ.ğ)*ќ*ό;
 if(Ÿ.LengthSquared()&gt;1){Ǝ.Ġ=(Ǝ.Ġ*0.25)+(Ÿ*0.75);}else{Ǝ.Ġ=Vector3D.Zero;}ł.ы=ǲ;return false;}else{Ǝ=new ĳ(ū.EntityId);Ǝ.Ħ=
 ū.Position;Ǝ.ġ=Ǝ.ğ=ū.Velocity;Ǝ.ĥ=Ǝ.Ğ=ǲ;Ľ ł=new Ľ();ł.ħ=Ǝ.ħ;ł.Ñ=Ǝ;ł.ы=ǲ;Т.Add(ū.EntityId,ł);ц.Add(ł);return true;}}public
 bool ћ(ǧ њ,int ǲ,bool Ѡ=true){if(џ.Contains(њ.ħ)){return false;}if(Т.ContainsKey(њ.ħ)){Ľ ł=Т[њ.ħ];ĳ Ǝ=ł.Ñ;int ѝ=Math.Max(ǲ-Ǝ
@@ -3585,7 +3585,7 @@ public long ǖ;}}</Program>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RemoteControl">
               <SubtypeName>SmallBlockRemoteControl</SubtypeName>
-              <EntityId>104277165856051632</EntityId>
+              <EntityId>131426690872214239</EntityId>
               <Min x="-2" y="4" z="0" />
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
@@ -3605,7 +3605,7 @@ public long ǖ;}}</Program>
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>View</Action>
-                      <BlockEntityId>130956599845532323</BlockEntityId>
+                      <BlockEntityId>134817180714603318</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -3613,7 +3613,7 @@ public long ǖ;}}</Program>
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>OnOff</Action>
-                      <BlockEntityId>133559033603037166</BlockEntityId>
+                      <BlockEntityId>72361733560596557</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -3635,7 +3635,7 @@ public long ǖ;}}</Program>
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>View</Action>
-                      <BlockEntityId>144012217061511642</BlockEntityId>
+                      <BlockEntityId>114678433822019871</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -3643,7 +3643,7 @@ public long ǖ;}}</Program>
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>OnOff</Action>
-                      <BlockEntityId>117920585427371471</BlockEntityId>
+                      <BlockEntityId>90491045133336520</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -3651,7 +3651,7 @@ public long ǖ;}}</Program>
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>SwitchLock</Action>
-                      <BlockEntityId>117920585427371471</BlockEntityId>
+                      <BlockEntityId>90491045133336520</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -3660,7 +3660,7 @@ public long ǖ;}}</Program>
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>Recharge</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>104277165856051632</BlockEntityId>
+                      <BlockEntityId>131426690872214239</BlockEntityId>
                       <GroupName>Impaler - Batteries</GroupName>
                     </Data>
                   </Slot>
@@ -3670,7 +3670,7 @@ public long ǖ;}}</Program>
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>OnOff</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>104277165856051632</BlockEntityId>
+                      <BlockEntityId>131426690872214239</BlockEntityId>
                       <GroupName>Impaler - Ion Thrusters</GroupName>
                     </Data>
                   </Slot>
@@ -3688,7 +3688,7 @@ public long ǖ;}}</Program>
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>View</Action>
-                      <BlockEntityId>131494454120328961</BlockEntityId>
+                      <BlockEntityId>140635838822769310</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -3696,7 +3696,7 @@ public long ǖ;}}</Program>
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>Shoot</Action>
-                      <BlockEntityId>136665691225471516</BlockEntityId>
+                      <BlockEntityId>120626933442087076</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -3704,7 +3704,7 @@ public long ǖ;}}</Program>
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>Shoot</Action>
-                      <BlockEntityId>130234393696792487</BlockEntityId>
+                      <BlockEntityId>109400267086530469</BlockEntityId>
                     </Data>
                   </Slot>
                 </SlotsGamepad>
@@ -3885,7 +3885,7 @@ public long ǖ;}}</Program>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CameraBlock">
               <SubtypeName>SmallCameraBlock</SubtypeName>
-              <EntityId>130956599845532323</EntityId>
+              <EntityId>134817180714603318</EntityId>
               <Min x="-1" y="7" z="0" />
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -4129,7 +4129,7 @@ public long ǖ;}}</Program>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>128272402259725496</EntityId>
+              <EntityId>121448143861631432</EntityId>
               <Min x="0" y="-5" z="-3" />
               <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -4160,7 +4160,7 @@ public long ǖ;}}</Program>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>143005440863862225</EntityId>
+              <EntityId>106663839879723243</EntityId>
               <Min x="0" y="-5" z="5" />
               <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -4191,7 +4191,7 @@ public long ǖ;}}</Program>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>111455041722896990</EntityId>
+              <EntityId>99166935741213983</EntityId>
               <Min x="0" y="-5" z="4" />
               <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -4222,7 +4222,7 @@ public long ǖ;}}</Program>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>75799014851409836</EntityId>
+              <EntityId>108927950823004773</EntityId>
               <Min x="0" y="-5" z="3" />
               <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -4253,7 +4253,7 @@ public long ǖ;}}</Program>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>136753941448447712</EntityId>
+              <EntityId>143677736044894174</EntityId>
               <Min x="1" y="-8" z="-3" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
               <ComponentContainer>
@@ -4283,7 +4283,7 @@ public long ǖ;}}</Program>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
               <SubtypeName>SmallBlockSmallThrust</SubtypeName>
-              <EntityId>115982964298902643</EntityId>
+              <EntityId>112358155171902808</EntityId>
               <Min x="1" y="-8" z="2" />
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -4508,7 +4508,7 @@ public long ǖ;}}</Program>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>SmallArmorSide</SubtypeName>
-              <EntityId>120106654478261234</EntityId>
+              <EntityId>95431395689263884</EntityId>
               <Min x="1" y="-6" z="0" />
               <BlockOrientation Forward="Forward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -4575,7 +4575,7 @@ public long ǖ;}}</Program>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_SmallMissileLauncher">
               <SubtypeName />
-              <EntityId>90173341332069313</EntityId>
+              <EntityId>76501334003281512</EntityId>
               <Min x="-2" y="0" z="3" />
               <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.05" />
@@ -4618,7 +4618,7 @@ public long ǖ;}}</Program>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_SmallMissileLauncher">
               <SubtypeName />
-              <EntityId>107178616868458863</EntityId>
+              <EntityId>103503470289515637</EntityId>
               <Min x="-2" y="0" z="-3" />
               <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.05" />
@@ -4668,7 +4668,7 @@ public long ǖ;}}</Program>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Beacon">
               <SubtypeName>SmallBlockBeacon</SubtypeName>
-              <EntityId>102827351135940077</EntityId>
+              <EntityId>102679731993978542</EntityId>
               <Min x="2" y="-7" z="0" />
               <BlockOrientation Forward="Up" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.2" />
@@ -4789,7 +4789,7 @@ public long ǖ;}}</Program>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CargoContainer">
               <SubtypeName>SmallBlockSmallContainer</SubtypeName>
-              <EntityId>140846290370556250</EntityId>
+              <EntityId>115469078824105738</EntityId>
               <Min x="0" y="-3" z="2" />
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -4819,7 +4819,7 @@ public long ǖ;}}</Program>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CargoContainer">
               <SubtypeName>SmallBlockSmallContainer</SubtypeName>
-              <EntityId>87761408077654700</EntityId>
+              <EntityId>116293516108930627</EntityId>
               <Min x="0" y="-4" z="2" />
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -4875,7 +4875,7 @@ public long ǖ;}}</Program>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_InteriorLight">
               <SubtypeName>SmallBlockSmallLight</SubtypeName>
-              <EntityId>87331011306422572</EntityId>
+              <EntityId>132562124141540774</EntityId>
               <Min x="3" y="1" z="0" />
               <BlockOrientation Forward="Right" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -4920,7 +4920,7 @@ public long ǖ;}}</Program>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CameraBlock">
               <SubtypeName>SmallCameraBlock</SubtypeName>
-              <EntityId>144012217061511642</EntityId>
+              <EntityId>114678433822019871</EntityId>
               <Min x="-3" y="-2" z="0" />
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.38" />
@@ -4950,7 +4950,7 @@ public long ǖ;}}</Program>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
               <SubtypeName>SmallBlockGyro</SubtypeName>
-              <EntityId>131256457315078110</EntityId>
+              <EntityId>129545452987731203</EntityId>
               <Min x="-2" y="-4" z="0" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-1" z="-0.15" />
