@@ -271,7 +271,7 @@
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Squadron Leader GreekLetter RandomNumber-RandomChar]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
-			[IgnoreCleanupRules:true]
+			[IgnoreCleanupRules:false]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:false]
 			[BossCustomAnnounceEnable:true]
