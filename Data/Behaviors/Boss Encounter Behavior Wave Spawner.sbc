@@ -313,6 +313,10 @@
 	  [CustomCounters:WaveCounter]
 	  [CounterCompareTypes:Less]
 	  [CustomCountersTargets:11]
+	  
+	  [CustomCounters:TimeCounter]
+	  [CounterCompareTypes:Greater]
+	  [CustomCountersTargets:1]
 	        
       </Description>
     </EntityComponent>
