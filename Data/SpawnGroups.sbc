@@ -448,7 +448,7 @@
 			[GridsAreDestructable:true]
 			[GridsAreEditable:false]
 			[ForceStaticGrid:false]
-			[OverrideBlockDamageModifier:true]
+			[OverrideBlockDamageModifier:false]
 			[BlockDamageModifier:100]
 			
 			[ChangeTurretSettings:true]
@@ -1233,6 +1233,64 @@
 					</Position>
 					<Speed>50</Speed>
 					<Behaviour>GVE-Behavior-Fighter-GVE+NPCs</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<!--Permanent Station-->
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) Starport</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[Territory:Inner Worlds Territory]
+			[SpaceRandomEncounter:true]
+			[SpaceCargoShip:true]
+			[AdminSpawnOnly:true]
+			[FactionOwner:GVE+]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ReplenishSystems:true]
+			[ShiftBlockColorsHue:false]
+			[RandomHueShift:false]
+			
+			[GridsAreDestructable:false]
+			[GridsAreEditable:false]
+			[ForceStaticGrid:true]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:800]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:false]
+			
+			[IgnoreGlobalBlockReplacer:true]
+			[IgnoreCleanupRules:true]
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:false]
+
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Port Armistice [nozone]">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour></Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
