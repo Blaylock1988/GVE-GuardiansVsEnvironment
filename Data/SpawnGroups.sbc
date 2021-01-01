@@ -22,7 +22,7 @@
 			[BossCustomAnnounceMessage:Player Activity Alert in Stalinium Nebula]
 			[BossCustomGPSLabel:Player Activity Alert]
 			
-			[Territory:Stalinium Asteroid Territory]
+			[Territory:SPRT Territory]
 			[MaxDistanceFromTerritoryCenter:10000]
 				
 			[UseRivalAi:false]
@@ -72,7 +72,7 @@
 			[RivalAiSpawn:true]
 			[FactionOwner:SPRT]
 			
-			[Territory:Stalinium Asteroid Territory]
+			[Territory:SPRT Territory]
 			[MaxDistanceFromTerritoryCenter:10000]
 			
 			[UseRivalAi:true]
@@ -151,7 +151,7 @@
 			[RivalAiSpawn:true]
 			[FactionOwner:SPRT]
 			
-			[Territory:Stalinium Asteroid Territory]
+			[Territory:SPRT Territory]
 			[MaxDistanceFromTerritoryCenter:10000]
 				
 			[UseRivalAi:true]
@@ -231,7 +231,7 @@
 			[RivalAiSpawn:true]
 			[FactionOwner:SPRT]
 			
-			[Territory:Stalinium Asteroid Territory]
+			[Territory:SPRT Territory]
 			[MaxDistanceFromTerritoryCenter:10000]
 				
 			[UseRivalAi:true]
@@ -342,7 +342,7 @@
 			[BossCustomAnnounceMessage:Distress Signal Alert in Stalinium Nebula]
 			[BossCustomGPSLabel:Distress Signal Alert]
 			
-			[Territory:Stalinium Asteroid Territory]
+			[Territory:SPRT Territory]
 			[MaxDistanceFromTerritoryCenter:10000]
 				
 			[UseRivalAi:true]
@@ -1313,7 +1313,7 @@
 			[BossCustomAnnounceMessage:Requesting support, defend trade station from pirates!]
 			[BossCustomGPSLabel:Pirate Hoard Event (Defend)]
 			
-			[Territory:Pirate Hoard Territory]
+			[Territory:GVE+ Territory]
 			[MaxDistanceFromTerritoryCenter:10000]
 				
 			[UseRivalAi:true]
@@ -1385,7 +1385,7 @@
 			[BossCustomAnnounceMessage:Pirate Hoard Alert!]
 			[BossCustomGPSLabel:Pirate Hoard Event]
 			
-			[Territory:Pirate Hoard Territory]
+			[Territory:GVE+ Territory]
 			[MaxDistanceFromTerritoryCenter:10000]
 				
 			[UseRivalAi:true]
@@ -1474,7 +1474,7 @@
 		<SpawnGroup>
 		   <Id>
 			  <TypeId>SpawnGroupDefinition</TypeId>
-			  <SubtypeId>(NPC-GVE) Stalinium Asteroid Territory</SubtypeId>
+			  <SubtypeId>(NPC-GVE) SPRT Territory</SubtypeId>
 		   </Id>
 		   <Description>
 
@@ -1517,7 +1517,7 @@
 		   [Modular Encounters Territory]
 		   
 		   [Name:GVE+ Territory]
-		   [Type:Static] GPS:NPC Starport:442104.55:95970.11:251729.87:#FF00FFA4:
+		   [Type:Static]
 		   [Radius:50000]
 		   [CoordsX:442100]
 		   [CoordsY:96000]
