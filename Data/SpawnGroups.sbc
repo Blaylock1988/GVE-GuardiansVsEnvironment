@@ -1480,15 +1480,15 @@
 
 		   [Modular Encounters Territory]
 		   
-		   [Name:Stalinium Asteroid Territory]
+		   [Name:SPRT Territory]
 		   [Type:Static]
-		   [Radius:20000]
-		   [CoordsX:600000]
-		   [CoordsY:-20000]
-		   [CoordsZ:0]
+		   [Radius:50000]
+		   [CoordsX:-482700]
+		   [CoordsY:-102500]
+		   [CoordsZ:-271700]
 		   [AnnounceArriveDepart:true]
-		   [CustomArriveMessage:Now entering the Stalinium Asteroid Territory. Safezones won't work here.]
-		   [CustomDepartMessage:Now leaving the Stalinium Asteroid Territory.]
+		   [CustomArriveMessage:Entering SPRT Territory. Beware of enemies.]
+		   [CustomDepartMessage:Exiting SPRT Territory]
 
 		   </Description>
 		   <Icon>Textures\GUI\Icons\Fake.dds</Icon>
@@ -1516,15 +1516,15 @@
 
 		   [Modular Encounters Territory]
 		   
-		   [Name:Pirate Hoard Territory]
-		   [Type:Static]
-		   [Radius:200000]
-		   [CoordsX:450000.00]
-		   [CoordsY:250000.00]
-		   [CoordsZ:0]
+		   [Name:GVE+ Territory]
+		   [Type:Static] GPS:NPC Starport:442104.55:95970.11:251729.87:#FF00FFA4:
+		   [Radius:50000]
+		   [CoordsX:442100]
+		   [CoordsY:96000]
+		   [CoordsZ:251800]
 		   [AnnounceArriveDepart:true]
-		   [CustomArriveMessage:Entering SPRT Territory. Beware of enemies.]
-		   [CustomDepartMessage:Exiting SPRT Territory]
+		   [CustomArriveMessage:Now entering the GVE+ Territory. Beware of pirate raids.]
+		   [CustomDepartMessage:Now leaving the GVE+ Territory.]
 
 		   </Description>
 		   <Icon>Textures\GUI\Icons\Fake.dds</Icon>
