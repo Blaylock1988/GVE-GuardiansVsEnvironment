@@ -99,7 +99,7 @@
 			[BlockDamageModifier:100]
 			
 			[ChangeTurretSettings:true]
-			[TurretRange:800]
+			[TurretRange:1500]
 			[TurretIdleRotation:false]
 			[TurretTargetMeteors:false]
 			[TurretTargetMissiles:false]
@@ -178,7 +178,7 @@
 			[BlockDamageModifier:75]
 			
 			[ChangeTurretSettings:true]
-			[TurretRange:800]
+			[TurretRange:1500]
 			[TurretIdleRotation:false]
 			[TurretTargetMeteors:false]
 			[TurretTargetMissiles:false]
@@ -258,7 +258,7 @@
 			[BlockDamageModifier:100]
 						
 			[ChangeTurretSettings:true]
-			[TurretRange:800]
+			[TurretRange:1500]
 			[TurretIdleRotation:false]
 			[TurretTargetMeteors:false]
 			[TurretTargetMissiles:false]
@@ -375,7 +375,7 @@
 			[BlockDamageModifier:5]
 			
 			[ChangeTurretSettings:true]
-			[TurretRange:800]
+			[TurretRange:1500]
 			[TurretIdleRotation:false]
 			[TurretTargetMeteors:false]
 			[TurretTargetMissiles:false]
@@ -408,8 +408,86 @@
 			</Prefabs>
 		</SpawnGroup>
 		
-		<!--Generic Encounters-->
+		<!--Generic Encounters--> 
 		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) Rocinante</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[SpaceCargoShip:true]
+			[LunarCargoShip:false]
+			[BossEncounterSpace:false]
+			[SpaceRandomEncounter:false]
+			[AtmosphericCargoShip:false]
+			[PlanetaryInstallation:false]
+			[AdminSpawnOnly:true]
+			[RivalAiSpawn:true]
+			[FactionOwner:SPRT]
+			
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[DisableDampeners:true]
+			[ReplenishSystems:true]
+			[UniqueEncounter:true]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+			
+			[UseBlockReplacerProfile:true]
+			[IgnoreGlobalBlockReplacer:false]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+			[ForceStaticGrid:false]
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustForceMultiply:75]
+			[NpcIonThrustPowerMultiply:0.000001]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
+			[ChangeTurretSettings:false]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Rocinante GreekLetter RandomNumber-RandomChar]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			[IgnoreCleanupRules:false]
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:true]	
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>3.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Rocinante S4">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+					<Behaviour>GVE-RE-Rocinante-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
@@ -452,7 +530,7 @@
 			[BlockDamageModifier:100]
 			
 			[ChangeTurretSettings:true]
-			[TurretRange:800]
+			[TurretRange:1500]
 			[TurretIdleRotation:false]
 			[TurretTargetMeteors:false]
 			[TurretTargetMissiles:false]
@@ -529,7 +607,7 @@
 			[BlockDamageModifier:75]
 			
 			[ChangeTurretSettings:true]
-			[TurretRange:800]
+			[TurretRange:1500]
 			[TurretIdleRotation:false]
 			[TurretTargetMeteors:false]
 			[TurretTargetMissiles:false]
@@ -605,7 +683,7 @@
 			[BlockDamageModifier:90]
 			
 			[ChangeTurretSettings:true]
-			[TurretRange:800]
+			[TurretRange:1500]
 			[TurretIdleRotation:false]
 			[TurretTargetMeteors:false]
 			[TurretTargetMissiles:false]
@@ -681,7 +759,7 @@
 			[BlockDamageModifier:75]
 			
 			[ChangeTurretSettings:true]
-			[TurretRange:800]
+			[TurretRange:1500]
 			[TurretIdleRotation:false]
 			[TurretTargetMeteors:false]
 			[TurretTargetMissiles:false]
@@ -751,7 +829,7 @@
 			[BlockDamageModifier:100]
 			
 			[ChangeTurretSettings:true]
-			[TurretRange:800]
+			[TurretRange:1500]
 			[TurretIdleRotation:false]
 			[TurretTargetMeteors:false]
 			[TurretTargetMissiles:false]
@@ -823,7 +901,7 @@
 			[BlockDamageModifier:100]
 			
 			[ChangeTurretSettings:true]
-			[TurretRange:800]
+			[TurretRange:1500]
 			[TurretIdleRotation:false]
 			[TurretTargetMeteors:false]
 			[TurretTargetMissiles:false]
@@ -901,7 +979,7 @@
 			[BlockDamageModifier:90]
 			
 			[ChangeTurretSettings:true]
-			[TurretRange:800]
+			[TurretRange:1500]
 			[TurretIdleRotation:false]
 			[TurretTargetMeteors:false]
 			[TurretTargetMissiles:false]
@@ -975,7 +1053,7 @@
 			[BlockDamageModifier:100]
 			
 			[ChangeTurretSettings:true]
-			[TurretRange:800]
+			[TurretRange:1500]
 			[TurretIdleRotation:false]
 			[TurretTargetMeteors:false]
 			[TurretTargetMissiles:false]
@@ -1051,7 +1129,7 @@
 			[BlockDamageModifier:100]
 						
 			[ChangeTurretSettings:true]
-			[TurretRange:800]
+			[TurretRange:1500]
 			[TurretIdleRotation:false]
 			[TurretTargetMeteors:false]
 			[TurretTargetMissiles:false]
@@ -1127,7 +1205,7 @@
 			[BlockDamageModifier:100]
 						
 			[ChangeTurretSettings:true]
-			[TurretRange:800]
+			[TurretRange:1500]
 			[TurretIdleRotation:false]
 			[TurretTargetMeteors:false]
 			[TurretTargetMissiles:false]
@@ -1203,7 +1281,7 @@
 			[BlockDamageModifier:85]
 						
 			[ChangeTurretSettings:true]
-			[TurretRange:800]
+			[TurretRange:1500]
 			[TurretIdleRotation:false]
 			[TurretTargetMeteors:false]
 			[TurretTargetMissiles:false]
@@ -1263,7 +1341,7 @@
 			[ForceStaticGrid:true]
 			
 			[ChangeTurretSettings:true]
-			[TurretRange:800]
+			[TurretRange:1500]
 			[TurretIdleRotation:false]
 			[TurretTargetMeteors:false]
 			[TurretTargetMissiles:false]
@@ -1313,9 +1391,6 @@
 			[BossCustomAnnounceMessage:Requesting support, defend trade station from pirates!]
 			[BossCustomGPSLabel:Pirate Hoard Event (Defend)]
 			
-			[Territory:GVE+ Territory]
-			[MaxDistanceFromTerritoryCenter:10000]
-				
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
 			[ReplenishSystems:true]
@@ -1335,7 +1410,7 @@
 			[ConvertToHeavyArmor:true]
 			
 			[ChangeTurretSettings:true]
-			[TurretRange:800]
+			[TurretRange:1500]
 			[TurretIdleRotation:false]
 			[TurretTargetMeteors:false]
 			[TurretTargetMissiles:false]
