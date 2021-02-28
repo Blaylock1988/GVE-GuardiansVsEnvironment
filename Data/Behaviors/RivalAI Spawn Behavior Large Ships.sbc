@@ -391,5 +391,55 @@
       </Description>
     </EntityComponent>
 	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Rocinante-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:HorseFighter]
+	  [UseProjectileLeadPrediction:true]
+	  [IdealMaxSpeed:100]
+	  [SlowDownOnWaypointApproach:false]
+	  [AngleAllowedForForwardThrust:120]
+	  [RotationMultiplier:1]
+	  [WaypointTolerance:50]
+	  [OffsetSpaceMinDistFromTarget:600]
+	  [OffsetSpaceMaxDistFromTarget:1200]
+	  [StrafeMinDurationMs:10000]
+	  [StrafeMaxDurationMs:15000]
+	  [StrafeMinCooldownMs:1]
+	  [StrafeMaxCooldownMs:2]
+	  [StrafeSpeedCutOff:120]
+	  [StrafeMinimumTargetDistance:300]
+	  [StrafeDistanceCutOff:1200]
+	  [StrafeMinimumSafeAngleFromTarget:30]
+	  [HorseFighterWaypointWaitTimeTrigger:0]
+	  [HorseFighterTimeApproaching:25]
+	  [HorseFighterTimeEngaging:20]
+	  [HorseFighterEngageDistanceSpace:700]
+	  [HorseFighterDisengageDistanceSpace:900]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
+	  	  
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
+		  
+	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
+	  [Triggers:GVE-Generic-Trigger-FighterBarrelRoll]
+	  
+      </Description>
+    </EntityComponent>
+
   </EntityComponents>
 </Definitions>
