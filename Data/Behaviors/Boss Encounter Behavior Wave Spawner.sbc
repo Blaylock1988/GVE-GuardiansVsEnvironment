@@ -84,7 +84,7 @@
       [UseCustomTargeting:true]
       [Target:Block]
 	  [BlockTargets:RivalAi]
-	  [UseTargetRefresh:false]
+	  [UseTargetRefresh:true]
 	  [TimeUntilNextRefresh:30]
 	  [TimeUntilNextEvaluation:0]
       [MaxDistance:10000]
@@ -333,7 +333,35 @@
 	  [SetCounters:TimeCounter]
 	  [SetCountersValues:1]
 	  
+	  [UseChatBroadcast:true]
+	  [ChatData:GVE-RE-Boss-WaveSpawnerDefend-Chat-NoPiratesRemaining]
+	  
       </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-WaveSpawnerDefend-Chat-NoPiratesRemaining</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:-1]
+      [BroadcastRandomly:true]
+      [Author:{GridName}]
+      [Color:White]
+      
+      [ChatMessages:No Pirates Remaining. Setting TimeCounter = 1]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Both]
+	  [SendToAllOnlinePlayers:true]
+
+      </Description>      
     </EntityComponent>
 						
 	<!--Countdown for time warnings and wave increment, triggers every 60 seconds-->
