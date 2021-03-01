@@ -26,6 +26,7 @@
 	  [MatchAllFilters:TargetValue]
       [Relations:Enemy]
 	  [Names:Listening Post]
+	  [Names:KOTH]
 	  [UsePartialNameMatching:true]
 	  [MinTargetValue:10]
 	  [MaxTargetValue:99999]
@@ -267,14 +268,14 @@
 	  [ChatData:GVE-Generic-Chat-SPRTBattleChatter]
 	  
 	  [ChangeAttackerReputation:true]
-	  [ChangeAttackerReputationFaction:GVE+]
-	  [ChangeAttackerReputationAmount:1]
+	  [ChangeAttackerReputationFaction:SPRT]
+	  [ChangeAttackerReputationAmount:-5]
 	  [ReputationChangesForAllAttackPlayerFactionMembers:true]
 	  
       </Description>
     </EntityComponent>
 	
-	<!--Upon GVE+ Taking Damage: Switch Target, Generic Battle Chatter, Raise rep with GVE+-->
+	<!--Upon GVE+ Taking Damage: Switch Target, Generic Battle Chatter, drop rep with GVE+-->
 		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
@@ -315,6 +316,56 @@
 	  [ChangeAttackerReputation:true]
 	  [ChangeAttackerReputationFaction:GVE+]
 	  [ChangeAttackerReputationAmount:-5]
+	  [ChangeAttackerReputationFaction:BTFN]
+	  [ChangeAttackerReputationAmount:2]
+	  [ReputationChangesForAllAttackPlayerFactionMembers:true]
+	  
+      </Description>
+    </EntityComponent>
+
+	<!--Upon BTFN Taking Damage: Switch Target, Generic Battle Chatter, Drop rep with BTFN-->
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Trigger-BTFNTakeDamage</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Damage]
+	  [UseTrigger:true]
+	  [MinCooldownMs:5000]
+	  [MaxCooldownMs:10000]
+	  
+	  [DamageTypes:Explosion]
+	  [DamageTypes:Rocket]
+	  [DamageTypes:Bullet]
+	  [DamageTypes:Destruction]
+
+	  [Actions:GVE-Generic-Action-BTFNTakeDamage]
+	  
+      </Description>      
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Action-BTFNTakeDamage</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	      
+      [UseChatBroadcast:true]
+	  [ChatData:GVE-Generic-Chat-SPRTBattleChatter]
+	  
+	  [ChangeAttackerReputation:true]
+	  [ChangeAttackerReputationFaction:BTFN]
+	  [ChangeAttackerReputationAmount:-5]
+	  [ChangeAttackerReputationFaction:GVE+]
+	  [ChangeAttackerReputationAmount:2]
 	  [ReputationChangesForAllAttackPlayerFactionMembers:true]
 	  
       </Description>

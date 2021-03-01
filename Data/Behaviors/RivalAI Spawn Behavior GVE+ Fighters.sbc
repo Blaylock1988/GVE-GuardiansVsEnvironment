@@ -1,11 +1,13 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <EntityComponents>
+
+	<!--GVE+ Behaviors-->
 		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-Behavior-Strike-Test</SubtypeId>
+          <SubtypeId>GVE-GVE+-Behavior-Strike-Test</SubtypeId>
       </Id>
       <Description>
 
@@ -43,7 +45,7 @@
 	  
 	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 		  
-	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-GVE+TakeDamage]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 
@@ -53,7 +55,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-Behavior-Fighter-Test</SubtypeId>
+          <SubtypeId>GVE-GVE+-Behavior-Fighter-Test</SubtypeId>
       </Id>
       <Description>
 
@@ -104,7 +106,7 @@
 	  
 	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 		  
-	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-GVE+TakeDamage]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  [Triggers:GVE-Generic-Trigger-FighterBarrelRoll]
@@ -115,7 +117,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-Behavior-Fighter-GVE+NPCs</SubtypeId>
+          <SubtypeId>GVE-GVE+-Behavior-Fighter-Friendly</SubtypeId>
       </Id>
       <Description>
 
@@ -167,13 +169,15 @@
 	  [FighterDisengageDistanceSpace:800]
 	  
 	  [TargetData:GVE-Generic-TargetProfile-GVE+NPCs]
-		  
+
+	  [Triggers:GVE-Generic-Trigger-GVE+TakeDamage]		  
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  [Triggers:GVE-Generic-Trigger-FighterBarrelRoll]
 	  
       </Description>
     </EntityComponent>
+	
 	
   </EntityComponents>
 </Definitions>

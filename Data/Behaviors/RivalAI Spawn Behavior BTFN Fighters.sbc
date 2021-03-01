@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+	<!--BTFN Behaviors-->
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-BTFN-Behavior-Strike-Test</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Strike]
+	  [UseVelocityCollisionEvasion:true]
+	  [CollisionEvasionWaypointDistance:400]
+	  [CollisionEvasionResumeDistance:150]
+	  [CollisionEvasionResumeTime:10]
+	  [UseProjectileLeadPrediction:true]
+	  [WeaponMaxAngleFromTarget:5]
+	  [UseBarrageFire:false]
+	  [MaxFireRateForBarrageWeapons:20]
+	  [OffsetSpaceMinDistFromTarget:1000]
+	  [OffsetSpaceMaxDistFromTarget:1200]
+	  [WaypointTolerance:50]
+	  [UseStaticGuns:true]
+	  [UseTurrets:true]
+	  [IdealMaxSpeed:80]
+	  [StrikeBeginSpaceAttackRunDistance:700]
+	  [StrikeBreakawayDistance:600]
+	  [StrikeEngageUseCollisionEvasion:true]
+	  [RotationMultiplier:1.25]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  [AngleAllowedForForwardThrust:60]
+	  [UseAmmoReplenish:true]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
+	  
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
+		  
+	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
+
+      </Description>
+    </EntityComponent>
+			
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-BTFN-Behavior-Fighter-Test</SubtypeId>
+      </Id>
+      <Description>
+
+	  [RivalAI Behavior]
+	  
+      [BehaviorName:Fighter]
+	  
+	  [UseVelocityCollisionEvasion:true]
+	  [CollisionEvasionWaypointDistance:400]
+	  [CollisionEvasionResumeDistance:150]
+	  [CollisionEvasionResumeTime:10]
+	  [WaypointTolerance:50]
+	  [UseProjectileLeadPrediction:true]
+	  [PadDistanceFromTarget:0]
+	  [RotationMultiplier:1.5]
+	  [IdealMaxSpeed:90]
+	  [MaxSpeedTolerance:10]
+	  [AllowStrafing:true]
+	  [StrafeMinDurationMs:5000]
+	  [StrafeMaxDurationMs:10000]
+	  [StrafeMinCooldownMs:1]
+	  [StrafeMaxCooldownMs:1]
+	  [StrafeSpeedCutOff:80]
+	  [StrafeDistanceCutOff:1000]
+	  [StrafeMinimumTargetDistance:450]
+	  [StrafeMinimumSafeAngleFromTarget:45]
+	  
+	  [UseStaticGuns:true]
+	  [UseTurrets:true]
+	  [MaxStaticWeaponRange:800]
+	  [WeaponMaxAngleFromTarget:5]
+	  [UseBarrageFire:true]
+	  [MaxFireRateForBarrageWeapons:10]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:false]
+	  [NoTargetTimerTrigger:0]
+	  [UseRetreatTimer:false]
+	  [RetreatTimerTrigger:0]
+	  [RetreatDespawnDistance:0]
+	  
+	  [FighterEngageDistanceSpace:700]
+	  [FighterDisengageDistanceSpace:800]
+	  
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
+		  
+	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
+	  [Triggers:GVE-Generic-Trigger-FighterBarrelRoll]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-BTFN-Behavior-Fighter-Friendly</SubtypeId>
+      </Id>
+      <Description>
+
+	  [RivalAI Behavior]
+	  
+      [BehaviorName:Fighter]
+	  
+	  [UseVelocityCollisionEvasion:true]
+	  [CollisionEvasionWaypointDistance:400]
+	  [CollisionEvasionResumeDistance:150]
+	  [CollisionEvasionResumeTime:10]
+	  [WaypointTolerance:50]
+	  [UseProjectileLeadPrediction:true]
+	  [PadDistanceFromTarget:0]
+	  [RotationMultiplier:1.5]
+	  [IdealMaxSpeed:90]
+	  [MaxSpeedTolerance:10]
+	  [AllowStrafing:true]
+	  [StrafeMinDurationMs:5000]
+	  [StrafeMaxDurationMs:10000]
+	  [StrafeMinCooldownMs:1]
+	  [StrafeMaxCooldownMs:1]
+	  [StrafeSpeedCutOff:100]
+	  [StrafeDistanceCutOff:1000]
+	  [StrafeMinimumTargetDistance:350]
+	  [StrafeMinimumSafeAngleFromTarget:35]
+	  [AngleAllowedForForwardThrust:60]
+	  [MaxVelocityAngleForSpeedControl:35]
+	  
+	  [UseStaticGuns:true]
+	  [UseTurrets:true]
+	  [MaxStaticWeaponRange:800]
+	  [WeaponMaxAngleFromTarget:5]
+	  [UseBarrageFire:true]
+	  [MaxFireRateForBarrageWeapons:10]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:false]
+	  [NoTargetTimerTrigger:0]
+	  [UseRetreatTimer:false]
+	  [RetreatTimerTrigger:0]
+	  [RetreatDespawnDistance:0]
+	  
+	  [FighterEngageDistanceSpace:700]
+	  [FighterDisengageDistanceSpace:800]
+	  
+	  [TargetData:GVE-Generic-TargetProfile-GVE+NPCs]
+	  
+	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
+	  [Triggers:GVE-Generic-Trigger-FighterBarrelRoll]
+	  
+      </Description>
+    </EntityComponent>
+				
+  </EntityComponents>
+</Definitions>

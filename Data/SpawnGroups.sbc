@@ -1011,6 +1011,7 @@
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
+
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
@@ -1384,7 +1385,7 @@
 
 			[Modular Encounters SpawnGroup]
 			
-			[BossEncounterSpace:true]
+			[BossEncounterSpace:false]
 			[FactionOwner:GVE+]
 			[BossCustomAnnounceEnable:true]
 			[BossCustomAnnounceAuthor:GVE+ Trade Station]
@@ -1543,117 +1544,6 @@
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
-		
-		<!--Territories-->
-
-		<SpawnGroup>
-		   <Id>
-			  <TypeId>SpawnGroupDefinition</TypeId>
-			  <SubtypeId>(NPC-GVE) SPRT Territory</SubtypeId>
-		   </Id>
-		   <Description>
-
-		   [Modular Encounters Territory]
-		   
-		   [Name:SPRT Territory]
-		   [Type:Static]
-		   [Radius:50000]
-		   [CoordsX:-482700]
-		   [CoordsY:-102500]
-		   [CoordsZ:-271700]
-		   [AnnounceArriveDepart:true]
-		   [CustomArriveMessage:Entering SPRT Territory. Beware of enemies.]
-		   [CustomDepartMessage:Exiting SPRT Territory]
-
-		   </Description>
-		   <Icon>Textures\GUI\Icons\Fake.dds</Icon>
-		   <Frequency>30.0</Frequency>
-		   <IsPirate>true</IsPirate>
-		   <Prefabs>
-			  <Prefab SubtypeId="GVE-NPC Player Announcer">
-				 <Position>
-					<X>0.0</X>
-					<Y>0.0</Y>
-					<Z>0.0</Z>
-				 </Position>
-				 <BeaconText>Super Gremlin</BeaconText>
-				 <Speed>0</Speed>
-			  </Prefab>
-		   </Prefabs>
-		</SpawnGroup>
-		
-		<SpawnGroup>
-		   <Id>
-			  <TypeId>SpawnGroupDefinition</TypeId>
-			  <SubtypeId>(NPC-GVE) Wave Spawner Territory</SubtypeId>
-		   </Id>
-		   <Description>
-
-		   [Modular Encounters Territory]
-		   
-		   [Name:GVE+ Territory]
-		   [Type:Static]
-		   [Radius:50000]
-		   [CoordsX:442100]
-		   [CoordsY:96000]
-		   [CoordsZ:251800]
-		   [AnnounceArriveDepart:true]
-		   [CustomArriveMessage:Now entering the GVE+ Territory. Beware of pirate raids.]
-		   [CustomDepartMessage:Now leaving the GVE+ Territory.]
-
-		   </Description>
-		   <Icon>Textures\GUI\Icons\Fake.dds</Icon>
-		   <Frequency>30.0</Frequency>
-		   <IsPirate>true</IsPirate>
-		   <Prefabs>
-			  <Prefab SubtypeId="GVE-NPC Player Announcer">
-				 <Position>
-					<X>0.0</X>
-					<Y>0.0</Y>
-					<Z>0.0</Z>
-				 </Position>
-				 <BeaconText>Super Gremlin</BeaconText>
-				 <Speed>0</Speed>
-			  </Prefab>
-		   </Prefabs>
-		</SpawnGroup>
-		
-		<SpawnGroup>
-		   <Id>
-			  <TypeId>SpawnGroupDefinition</TypeId>
-			  <SubtypeId>(NPC-GVE) Inner Worlds Territory</SubtypeId>
-		   </Id>
-		   <Description>
-
-		   [Modular Encounters Territory]
-		   
-		   [Name:Inner Worlds Territory]
-		   [Type:Static]
-		   [Radius:4000000]
-		   [CoordsX:0]
-		   [CoordsY:0]
-		   [CoordsZ:0]
-		   [AnnounceArriveDepart:true]
-		   [CustomArriveMessage:Returning to inner worlds region.]
-		   [CustomDepartMessage:Approaching deep space. Beware of unknown dangers.]
-
-		   </Description>
-		   <Icon>Textures\GUI\Icons\Fake.dds</Icon>
-		   <Frequency>30.0</Frequency>
-		   <IsPirate>true</IsPirate>
-		   <Prefabs>
-			  <Prefab SubtypeId="GVE-NPC Player Announcer">
-				 <Position>
-					<X>0.0</X>
-					<Y>0.0</Y>
-					<Z>0.0</Z>
-				 </Position>
-				 <BeaconText>Super Gremlin</BeaconText>
-				 <Speed>0</Speed>
-			  </Prefab>
-		   </Prefabs>
-		</SpawnGroup>
-
 
 	<!--Do Not Edit Below Here-->
 	</SpawnGroups>

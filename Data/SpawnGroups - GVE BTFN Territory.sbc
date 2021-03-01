@@ -1,0 +1,436 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<SpawnGroups>
+	<!--Do Not Edit Above Here-->
+		
+		<!--BTFN Encounters-->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) BTFN Defense Roughneck</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[SpaceRandomEncounter:true]
+			
+			[IgnoreCleanupRules:false]
+			[ReplenishSystems:true]
+			[SpawnRandomCargo:false]
+			[DisableDampeners:true]
+			
+			[FactionOwner:BTFN]
+			
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:10000]
+			[MinimumPlayers:4]
+						
+			[UniqueEncounter:true]
+			
+			[Territory:BTFN Territory]		
+						
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[IgnoreGlobalBlockReplacer:false]
+			
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+
+			[ShiftBlockColorsHue:false]
+			[RandomHueShift:false]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Roughneck GreekLetter-RandomNumber]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustPowerMultiply:0.5]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[RivalAiSpawn:true]
+			[RivalAiSpaceSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]					
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Roughneck Corvette">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+					<Behaviour>GVE-RE-BTFN-Roughneck-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) BTFN Defense Eclipse</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[SpaceRandomEncounter:true]
+			
+			[IgnoreCleanupRules:false]
+			[ReplenishSystems:true]
+			[SpawnRandomCargo:false]
+			[DisableDampeners:true]
+			
+			[FactionOwner:BTFN]
+			
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:10000]
+			[MinimumPlayers:3]
+						
+			[UniqueEncounter:true]
+			
+			[Territory:BTFN Territory]		
+						
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[IgnoreGlobalBlockReplacer:false]
+			
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Eclipse GreekLetter-RandomNumber]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[RivalAiSpawn:true]
+			[RivalAiSpaceSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Eclipse">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+					<Behaviour>GVE-RE-BTFN-Eclipse-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) BTFN Defense Tempano Ravager</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[SpaceRandomEncounter:true]
+			
+			[IgnoreCleanupRules:false]
+			[ReplenishSystems:true]
+			[SpawnRandomCargo:false]
+			[DisableDampeners:true]
+			
+			[FactionOwner:BTFN]
+			
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:10000]
+			[MinimumPlayers:2]
+						
+			[UniqueEncounter:true]
+			
+			[Territory:BTFN Territory]		
+						
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[IgnoreGlobalBlockReplacer:false]
+			
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+
+			[ShiftBlockColorsHue:false]
+			[RandomHueShift:false]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Tempano Ravager RandomNumber-RandomChar]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustPowerMultiply:0.5]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[RivalAiSpawn:true]
+			[RivalAiSpaceSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]					
+
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Tempano Ravager">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<BeaconText>Tempano Ravager</BeaconText>
+					<Speed>50</Speed>
+					<Behaviour>GVE-RE-BTFN-TempanoRavager-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) BTFN Defense Strike Cyclone</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[SpaceRandomEncounter:true]
+			
+			[IgnoreCleanupRules:false]
+			[ReplenishSystems:true]
+			[SpawnRandomCargo:false]
+			[DisableDampeners:true]
+			
+			[FactionOwner:BTFN]
+			
+			[UsePlayerCountCheck:false]
+			[PlayerCountCheckRadius:10000]
+			[MinimumPlayers:1]
+						
+			[UniqueEncounter:true]
+			
+			[Territory:BTFN Territory]		
+						
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[IgnoreGlobalBlockReplacer:false]
+			
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Strike Cyclone - InsectNoun]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[RivalAiSpawn:true]
+			[RivalAiSpaceSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Cyclone Fighter Bomber">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+					<Behaviour>GVE-BTFN-Behavior-Strike-Test</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) BTFN Defense Fighter Wildfire</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[SpaceRandomEncounter:true]
+			
+			[IgnoreCleanupRules:false]
+			[ReplenishSystems:true]
+			[SpawnRandomCargo:false]
+			[DisableDampeners:true]
+			
+			[FactionOwner:BTFN]
+			
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:10000]
+			[MinimumPlayers:2]
+			
+			[UniqueEncounter:true]
+						
+			[Territory:BTFN Territory]		
+						
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[IgnoreGlobalBlockReplacer:false]
+			
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: BaddieNoun Wildfire Fighter]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[RivalAiSpawn:true]
+			[RivalAiSpaceSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Wildfire Heavy Fighter">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+					<Behaviour>GVE-BTFN-Behavior-Fighter-Test</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>		
+
+	<!--Do Not Edit Below Here-->
+	</SpawnGroups>
+</Definitions>
