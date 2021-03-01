@@ -3,6 +3,45 @@
 	<SpawnGroups>
 	<!--Do Not Edit Above Here-->
 		
+		<!--KOTH Territory Definition--> 
+
+		<SpawnGroup>
+		   <Id>
+			  <TypeId>SpawnGroupDefinition</TypeId>
+			  <SubtypeId>(NPC-GVE) KOTH Territory</SubtypeId>
+		   </Id>
+		   <Description>
+
+		   [Modular Encounters Territory]
+		   
+		   [Name:KOTH Territory]
+		   [Type:Static]
+		   [Active:true]
+		   [Radius:5000]
+		   [CoordsX:-482700]
+		   [CoordsY:-102500]
+		   [CoordsZ:-271700]
+		   [AnnounceArriveDepart:true]
+		   [CustomArriveMessage:Entering KOTH Territory. Beware of enemies.]
+		   [CustomDepartMessage:Exiting KOTH Territory]
+
+		   </Description>
+		   <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+		   <Frequency>30.0</Frequency>
+		   <IsPirate>true</IsPirate>
+		   <Prefabs>
+			  <Prefab SubtypeId="GVE-NPC Player Announcer">
+				 <Position>
+					<X>0.0</X>
+					<Y>0.0</Y>
+					<Z>0.0</Z>
+				 </Position>
+				 <BeaconText>Super Gremlin</BeaconText>
+				 <Speed>0</Speed>
+			  </Prefab>
+		   </Prefabs>
+		</SpawnGroup>
+
 		<!--SPRT Encounters--> 
 		
 		<SpawnGroup>
@@ -197,6 +236,102 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) KOTH BTFN Roughneck</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[SpaceRandomEncounter:true]
+			
+			[IgnoreCleanupRules:false]
+			[ReplenishSystems:true]
+			[SpawnRandomCargo:false]
+			[DisableDampeners:true]
+
+			[UsePlayerCredits:true]
+			[IncludeAllPlayersInRadius:true]
+			[IncludeFactionBalance:true]
+			[PlayerCreditsCheckRadius:10000]
+			[MinimumPlayerCredits:5000000]
+			
+			[FactionOwner:BTFN]
+			
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:10000]
+			[MinimumPlayers:3]
+			
+			[UsePlayerFactionReputation:true]
+			[PlayerReputationCheckRadius:10000]
+			[MinimumReputation:-1501]
+			[MaximumReputation:-500]
+			
+			[UniqueEncounter:true]
+			
+			[Territory:KOTH Territory]		
+						
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[IgnoreGlobalBlockReplacer:false]
+			
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+
+			[ShiftBlockColorsHue:false]
+			[RandomHueShift:false]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Roughneck BaddieNoun]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustPowerMultiply:0.5]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[RivalAiSpawn:true]
+			[RivalAiSpaceSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]					
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Roughneck Corvette">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+					<Behaviour>GVE-RE-BTFN-Roughneck-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
 				<SubtypeId>(NPC-GVE) KOTH BTFN Eclipse</SubtypeId>
 			</Id>
 			<Description>
@@ -246,7 +381,7 @@
 			[RandomHueShift:true]
 
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Eclipse GreekLetter-RandomNumber]
+			[RandomGridNamePattern: BaddieNoun Eclipse]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			[ConfigureSpecialNpcThrusters:true]
@@ -342,7 +477,7 @@
 			[RandomHueShift:false]
 
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Tempano Ravager RandomNumber-RandomChar]
+			[RandomGridNamePattern: Tempano Ravager BadNoun]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			[ConfigureSpecialNpcThrusters:true]
@@ -383,102 +518,6 @@
 					<BeaconText>Tempano Ravager</BeaconText>
 					<Speed>50</Speed>
 					<Behaviour>GVE-RE-BTFN-TempanoRavager-Behavior-Start</Behaviour>
-				</Prefab>
-			</Prefabs>
-		</SpawnGroup>
-
-		<SpawnGroup>
-			<Id>
-				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH BTFN Roughneck</SubtypeId>
-			</Id>
-			<Description>
-
-			[Modular Encounters SpawnGroup]
-			[SpaceRandomEncounter:true]
-			
-			[IgnoreCleanupRules:false]
-			[ReplenishSystems:true]
-			[SpawnRandomCargo:false]
-			[DisableDampeners:true]
-
-			[UsePlayerCredits:true]
-			[IncludeAllPlayersInRadius:true]
-			[IncludeFactionBalance:true]
-			[PlayerCreditsCheckRadius:10000]
-			[MinimumPlayerCredits:5000000]
-			
-			[FactionOwner:BTFN]
-			
-			[UsePlayerCountCheck:true]
-			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:3]
-			
-			[UsePlayerFactionReputation:true]
-			[PlayerReputationCheckRadius:10000]
-			[MinimumReputation:-1501]
-			[MaximumReputation:-500]
-			
-			[UniqueEncounter:true]
-			
-			[Territory:KOTH Territory]		
-						
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
-			[IgnoreGlobalBlockReplacer:false]
-			
-			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
-			[AllowPartialNames:true]	
-			
-			[OverrideBlockDamageModifier:false]
-			[BlockDamageModifier:100]
-			[GridsAreDestructable:true]
-			[GridsAreEditable:false]
-
-			[ShiftBlockColorsHue:false]
-			[RandomHueShift:false]
-
-			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Roughneck GreekLetter-RandomNumber]
-			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
-			
-			[ConfigureSpecialNpcThrusters:true]
-			[RestrictNpcIonThrust:true]
-			[NpcIonThrustPowerMultiply:0.0001]
-			[RestrictNpcAtmoThrust:true]
-			[NpcAtmoThrustPowerMultiply:0.0001]
-			[RestrictNpcHydroThrust:true]
-			[NpcHydroThrustPowerMultiply:0.5]
-			
-			[ChangeTurretSettings:true]
-			[TurretRange:1500]
-			[TurretIdleRotation:false]
-			[TurretTargetMeteors:false]
-			[TurretTargetMissiles:false]
-			[TurretTargetCharacters:true]
-			[TurretTargetSmallGrids:true]
-			[TurretTargetLargeGrids:true]
-			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
-			
-			[RivalAiSpawn:true]
-			[RivalAiSpaceSpawn:true]
-			[UseRivalAi:true]
-			[RivalAiReplaceRemoteControl:true]					
-			
-			</Description>
-			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
-			<IsPirate>true</IsPirate>
-			<Frequency>5.0</Frequency>
-			<Prefabs>
-				<Prefab SubtypeId="GVE-NPC Roughneck Corvette">
-					<Position>
-						<X>0.0</X>
-						<Y>0.0</Y>
-						<Z>0.0</Z>
-					</Position>
-					<Speed>50</Speed>
-					<Behaviour>GVE-RE-BTFN-Roughneck-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -535,7 +574,7 @@
 			[RandomHueShift:true]
 
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Strike Cyclone - InsectNoun]
+			[RandomGridNamePattern: InsectNoun Strike Cyclone]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			[ConfigureSpecialNpcThrusters:true]
@@ -631,7 +670,7 @@
 			[RandomHueShift:true]
 
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: BaddieNoun Wildfire Fighter]
+			[RandomGridNamePattern: InsectNoun Wildfire Heavy Fighter]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			[ConfigureSpecialNpcThrusters:true]
@@ -678,7 +717,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH BTFN Friendly Figther</SubtypeId>
+				<SubtypeId>(NPC-GVE) KOTH BTFN Friendly Fighter</SubtypeId>
 			</Id>
 			<Description>
 
@@ -772,6 +811,103 @@
 		</SpawnGroup>
 
 		<!--GVE+ Encounters-->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) KOTH GVE+ Rocinante</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[SpaceRandomEncounter:false]
+			
+			[IgnoreCleanupRules:false]
+			[ReplenishSystems:true]
+			[SpawnRandomCargo:false]
+			[DisableDampeners:true]
+
+			[UsePlayerCredits:true]
+			[IncludeAllPlayersInRadius:true]
+			[IncludeFactionBalance:true]
+			[PlayerCreditsCheckRadius:10000]
+			[MinimumPlayerCredits:5000000]
+			
+			[FactionOwner:GVE+]
+			
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:10000]
+			[MinimumPlayers:3]
+			
+			[UsePlayerFactionReputation:true]
+			[PlayerReputationCheckRadius:10000]
+			[MinimumReputation:-1501]
+			[MaximumReputation:-500]
+			
+			[UniqueEncounter:true]
+			
+			[Territory:KOTH Territory]		
+						
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[IgnoreGlobalBlockReplacer:false]
+			
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+
+			[ShiftBlockColorsHue:false]
+			[RandomHueShift:false]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Rocinante GreekLetter-RandomNumber]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustForceMultiply:75]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[RivalAiSpawn:true]
+			[RivalAiSpaceSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]			
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Rocinante S4">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+					<Behaviour>GVE-RE-GVE+-Rocinante-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
 
 		<SpawnGroup>
 			<Id>
@@ -921,7 +1057,7 @@
 			[RandomHueShift:false]
 
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Tempano Ravager RandomNumber-RandomChar]
+			[RandomGridNamePattern: Tempano Ravager GreekLetter-RandomNumber]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			[ConfigureSpecialNpcThrusters:true]
@@ -962,103 +1098,6 @@
 					<BeaconText>Tempano Ravager</BeaconText>
 					<Speed>50</Speed>
 					<Behaviour>GVE-RE-GVE+-TempanoRavager-Behavior-Start</Behaviour>
-				</Prefab>
-			</Prefabs>
-		</SpawnGroup>
-
-		<SpawnGroup>
-			<Id>
-				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH GVE+ Rocinante</SubtypeId>
-			</Id>
-			<Description>
-
-			[Modular Encounters SpawnGroup]
-			[SpaceRandomEncounter:false]
-			
-			[IgnoreCleanupRules:false]
-			[ReplenishSystems:true]
-			[SpawnRandomCargo:false]
-			[DisableDampeners:true]
-
-			[UsePlayerCredits:true]
-			[IncludeAllPlayersInRadius:true]
-			[IncludeFactionBalance:true]
-			[PlayerCreditsCheckRadius:10000]
-			[MinimumPlayerCredits:5000000]
-			
-			[FactionOwner:GVE+]
-			
-			[UsePlayerCountCheck:true]
-			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:3]
-			
-			[UsePlayerFactionReputation:true]
-			[PlayerReputationCheckRadius:10000]
-			[MinimumReputation:-1501]
-			[MaximumReputation:-500]
-			
-			[UniqueEncounter:true]
-			
-			[Territory:KOTH Territory]		
-						
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
-			[IgnoreGlobalBlockReplacer:false]
-			
-			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
-			[AllowPartialNames:true]	
-			
-			[OverrideBlockDamageModifier:false]
-			[BlockDamageModifier:100]
-			[GridsAreDestructable:true]
-			[GridsAreEditable:false]
-
-			[ShiftBlockColorsHue:false]
-			[RandomHueShift:false]
-
-			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Rocinante NatoLetter RandomNumber-RandomChar]
-			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
-			
-			[ConfigureSpecialNpcThrusters:true]
-			[RestrictNpcIonThrust:true]
-			[NpcIonThrustForceMultiply:75]
-			[NpcIonThrustPowerMultiply:0.0001]
-			[RestrictNpcAtmoThrust:true]
-			[NpcAtmoThrustPowerMultiply:0.0001]
-			[RestrictNpcHydroThrust:true]
-			[NpcHydroThrustPowerMultiply:0.0001]
-			
-			[ChangeTurretSettings:true]
-			[TurretRange:1500]
-			[TurretIdleRotation:false]
-			[TurretTargetMeteors:false]
-			[TurretTargetMissiles:false]
-			[TurretTargetCharacters:true]
-			[TurretTargetSmallGrids:true]
-			[TurretTargetLargeGrids:true]
-			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
-			
-			[RivalAiSpawn:true]
-			[RivalAiSpaceSpawn:true]
-			[UseRivalAi:true]
-			[RivalAiReplaceRemoteControl:true]			
-			
-			</Description>
-			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
-			<IsPirate>true</IsPirate>
-			<Frequency>5.0</Frequency>
-			<Prefabs>
-				<Prefab SubtypeId="GVE-NPC Rocinante S4">
-					<Position>
-						<X>0.0</X>
-						<Y>0.0</Y>
-						<Z>0.0</Z>
-					</Position>
-					<Speed>50</Speed>
-					<Behaviour>GVE-RE-GVE+-Rocinante-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -1115,7 +1154,7 @@
 			[RandomHueShift:true]
 
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Fighter Cyclone - InsectNoun]
+			[RandomGridNamePattern: Fighter Cyclone GreekLetter-RandomNumber]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			[ConfigureSpecialNpcThrusters:true]
@@ -1211,7 +1250,7 @@
 			[RandomHueShift:true]
 
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: BaddieNoun Impaler Drone]
+			[RandomGridNamePattern: Impaler Drone GreekLetter-RandomNumber]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			[ConfigureSpecialNpcThrusters:true]
@@ -1258,7 +1297,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH GVE+ Friendly Figther</SubtypeId>
+				<SubtypeId>(NPC-GVE) KOTH GVE+ Friendly Fighter</SubtypeId>
 			</Id>
 			<Description>
 

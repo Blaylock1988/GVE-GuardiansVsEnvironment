@@ -2,8 +2,161 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <EntityComponents>
 
-	<!--BTFN Behaviors-->
-		
+	<!-- BTFN Large Ship Behaviors -->
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-BTFN-Eclipse-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:HorseFighter]
+	  
+	  [UseProjectileLeadPrediction:true]
+	  [IdealMaxSpeed:70]
+	  [SlowDownOnWaypointApproach:false]
+	  [AngleAllowedForForwardThrust:40]
+	  [RotationMultiplier:1]
+	  [WaypointTolerance:140]
+	  [OffsetSpaceMinDistFromTarget:400]
+	  [OffsetSpaceMaxDistFromTarget:1000]
+	  [StrafeMinDurationMs:14000]
+	  [StrafeMaxDurationMs:25000]
+	  [StrafeMinCooldownMs:1]
+	  [StrafeMaxCooldownMs:2]
+	  [StrafeSpeedCutOff:60]
+	  [StrafeMinimumTargetDistance:200]
+	  [StrafeDistanceCutOff:1000]
+	  [StrafeMinimumSafeAngleFromTarget:30]
+	  [HorseFighterWaypointWaitTimeTrigger:0]
+	  [HorseFighterTimeApproaching:25]
+	  [HorseFighterTimeEngaging:20]
+	  [HorseFighterEngageDistanceSpace:700]
+	  [HorseFighterDisengageDistanceSpace:900]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
+	  	  
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
+		  
+	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-BTFNCallDDSFighters]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
+	  
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-BTFN-TempanoRavager-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+
+	  [RivalAI Behavior]
+	  
+      [BehaviorName:Strike]
+	  
+	  [UseVelocityCollisionEvasion:true]
+	  [CollisionEvasionWaypointDistance:400]
+	  [CollisionEvasionResumeDistance:150]
+	  [CollisionEvasionResumeTime:10]
+	  [UseProjectileLeadPrediction:true]
+	  [OffsetSpaceMinDistFromTarget:800]
+	  [OffsetSpaceMaxDistFromTarget:1100]
+	  [RotationMultiplier:1.25]
+	  [IdealMaxSpeed:90]
+	  [AngleAllowedForForwardThrust:90]
+	  [MaxVelocityAngleForSpeedControl:45]
+	  
+	  [UseStaticGuns:true]
+	  [UseTurrets:true]
+	  [MaxStaticWeaponRange:800]
+	  [WeaponMaxAngleFromTarget:5]
+	  [UseBarrageFire:false]
+	  [MaxFireRateForBarrageWeapons:10]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:false]
+	  [NoTargetTimerTrigger:0]
+	  [UseRetreatTimer:false]
+	  [RetreatTimerTrigger:0]
+	  [RetreatDespawnDistance:0]
+	  
+	  [StrikeBreakawayDistance:600]
+	  [StrikeEngageUseCollisionEvasion:true]
+	  
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
+	
+	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
+	  
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-BTFN-Roughneck-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Strike]
+	  [WeaponMaxAngleFromTarget:10]
+	  [UseBarrageFire:true]
+	  [MaxFireRateForBarrageWeapons:20]
+	  [OffsetSpaceMinDistFromTarget:2000]
+	  [OffsetSpaceMaxDistFromTarget:4000]
+	  [WaypointTolerance:300]
+	  [UseStaticGuns:false]
+	  [UseTurrets:true]
+	  [IdealMaxSpeed:50]
+	  [StrikeBeginSpaceAttackRunDistance:300]
+	  [StrikeBreakawayDistance:2500]
+	  [UseVelocityCollisionEvasion:true]
+	  [CollisionEvasionWaypointDistance:300]
+	  [CollisionEvasionResumeDistance:75]
+	  [CollisionEvasionResumeTime:5]
+	  [StrikeEngageUseCollisionEvasion:false]
+	  [RotationMultiplier:0.2]
+	  [AngleAllowedForForwardThrust:45]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:100]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:5]
+	  [PlayerDistanceTrigger:50000]
+	  [UseNoTargetTimer:true]
+	  [NoTargetTimerTrigger:600]
+	  [UseRetreatTimer:false]
+	  	  
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
+		  
+	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-BTFNCallDDSFighters]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
+	  
+      </Description>
+    </EntityComponent>
+
+	<!-- BTFN Fighter Behaviors -->
+
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -177,6 +330,6 @@
 	  
       </Description>
     </EntityComponent>
-				
+
   </EntityComponents>
 </Definitions>

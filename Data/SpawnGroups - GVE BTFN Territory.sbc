@@ -2,7 +2,46 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<SpawnGroups>
 	<!--Do Not Edit Above Here-->
+				
+		<!-- BTFN Territory GPS:NPC Starport:442100:96000:251700:#FF1AFF00: -->
 		
+		<SpawnGroup>
+		   <Id>
+			  <TypeId>SpawnGroupDefinition</TypeId>
+			  <SubtypeId>(NPC-GVE) BTFN Territory</SubtypeId>
+		   </Id>
+		   <Description>
+
+		   [Modular Encounters Territory]
+		   
+		   [Name:BTFN Territory]
+		   [Type:Static]
+		   [Active:true]
+		   [Radius:5000]
+		   [CoordsX:442100]
+		   [CoordsY:96000]
+		   [CoordsZ:251800]
+		   [AnnounceArriveDepart:true]
+		   [CustomArriveMessage:Entering Bylen Trade Federation Space.]
+		   [CustomDepartMessage:Exiting Bylen Trade Federation Space.]
+
+		   </Description>
+		   <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+		   <Frequency>30.0</Frequency>
+		   <IsPirate>true</IsPirate>
+		   <Prefabs>
+			  <Prefab SubtypeId="GVE-NPC Player Announcer">
+				 <Position>
+					<X>0.0</X>
+					<Y>0.0</Y>
+					<Z>0.0</Z>
+				 </Position>
+				 <BeaconText>Super Gremlin</BeaconText>
+				 <Speed>0</Speed>
+			  </Prefab>
+		   </Prefabs>
+		</SpawnGroup>
+
 		<!--BTFN Encounters-->
 
 		<SpawnGroup>
@@ -46,7 +85,7 @@
 			[RandomHueShift:false]
 
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Roughneck GreekLetter-RandomNumber]
+			[RandomGridNamePattern: Roughneck BaddieNoun]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			[ConfigureSpecialNpcThrusters:true]
@@ -131,7 +170,7 @@
 			[RandomHueShift:true]
 
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Eclipse GreekLetter-RandomNumber]
+			[RandomGridNamePattern: BaddieNoun Eclipse]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			[ConfigureSpecialNpcThrusters:true]
@@ -216,7 +255,7 @@
 			[RandomHueShift:false]
 
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Tempano Ravager RandomNumber-RandomChar]
+			[RandomGridNamePattern: Tempano Ravager BadNoun]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			[ConfigureSpecialNpcThrusters:true]
@@ -302,7 +341,7 @@
 			[RandomHueShift:true]
 
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Strike Cyclone - InsectNoun]
+			[RandomGridNamePattern: InsectNoun Strike Cyclone]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			[ConfigureSpecialNpcThrusters:true]
@@ -365,7 +404,7 @@
 			
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:2]
+			[MinimumPlayers:1]
 			
 			[UniqueEncounter:true]
 						
@@ -387,7 +426,7 @@
 			[RandomHueShift:true]
 
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: BaddieNoun Wildfire Fighter]
+			[RandomGridNamePattern: InsectNoun Wildfire Heavy Fighter]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			[ConfigureSpecialNpcThrusters:true]

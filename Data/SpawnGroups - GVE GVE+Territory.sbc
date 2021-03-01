@@ -3,6 +3,45 @@
 	<SpawnGroups>
 	<!--Do Not Edit Above Here-->
 		
+		<!-- GVE+ Territory GPS:Galados Trade Base:601820:-158900:-473400:#FF61FF00: -->
+
+		<SpawnGroup>
+		   <Id>
+			  <TypeId>SpawnGroupDefinition</TypeId>
+			  <SubtypeId>(NPC-GVE) GVE+ Territory</SubtypeId>
+		   </Id>
+		   <Description>
+
+		   [Modular Encounters Territory]
+		   
+		   [Name:GVE+ Territory]
+		   [Type:Static]
+		   [Active:true]
+		   [Radius:5000]
+		   [CoordsX:601820]
+		   [CoordsY:-158900]
+		   [CoordsZ:-473400]
+		   [AnnounceArriveDepart:true]
+		   [CustomArriveMessage:Entering The Guardians Space.]
+		   [CustomDepartMessage:Exiting The Guardians Space.]
+
+		   </Description>
+		   <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+		   <Frequency>30.0</Frequency>
+		   <IsPirate>true</IsPirate>
+		   <Prefabs>
+			  <Prefab SubtypeId="GVE-NPC Player Announcer">
+				 <Position>
+					<X>0.0</X>
+					<Y>0.0</Y>
+					<Z>0.0</Z>
+				 </Position>
+				 <BeaconText>Super Gremlin</BeaconText>
+				 <Speed>0</Speed>
+			  </Prefab>
+		   </Prefabs>
+		</SpawnGroup>
+		
 		<!--GVE+ Encounters-->
 
 		<SpawnGroup>
@@ -46,7 +85,7 @@
 			[RandomHueShift:false]
 
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Rocinante NatoLetter RandomNumber-RandomChar]
+			[RandomGridNamePattern: Rocinante GreekLetter-RandomNumber]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			[ConfigureSpecialNpcThrusters:true]
@@ -217,7 +256,7 @@
 			[RandomHueShift:false]
 
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Tempano Ravager RandomNumber-RandomChar]
+			[RandomGridNamePattern: Tempano Ravager GreekLetter-RandomNumber]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			[ConfigureSpecialNpcThrusters:true]
@@ -303,7 +342,7 @@
 			[RandomHueShift:true]
 
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Fighter Cyclone - InsectNoun]
+			[RandomGridNamePattern: Fighter Cyclone GreekLetter-RandomNumber]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			[ConfigureSpecialNpcThrusters:true]
@@ -388,7 +427,7 @@
 			[RandomHueShift:true]
 
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: BaddieNoun Impaler Drone]
+			[RandomGridNamePattern: Impaler Drone GreekLetter-RandomNumber]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			[ConfigureSpecialNpcThrusters:true]

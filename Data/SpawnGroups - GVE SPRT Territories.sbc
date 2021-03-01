@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<SpawnGroups>
+	<!--Do Not Edit Above Here-->
+	
+		<!--<SpawnGroup>
+		   <Id>
+			  <TypeId>SpawnGroupDefinition</TypeId>
+			  <SubtypeId>(NPC-GVE) Wave Spawner Territory</SubtypeId>
+		   </Id>
+		   <Description>
+
+		   [Modular Encounters Territory]
+		   
+		   [Name:GVE+ Territory]
+		   [Type:Static]
+		   [Active:false]
+		   [Radius:50000]
+		   [CoordsX:442100]
+		   [CoordsY:96000]
+		   [CoordsZ:251800]
+		   [AnnounceArriveDepart:true]
+		   [CustomArriveMessage:Now entering the GVE+ Territory. Beware of pirate raids.]
+		   [CustomDepartMessage:Now leaving the GVE+ Territory.]
+
+		   </Description>
+		   <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+		   <Frequency>30.0</Frequency>
+		   <IsPirate>true</IsPirate>
+		   <Prefabs>
+			  <Prefab SubtypeId="GVE-NPC Player Announcer">
+				 <Position>
+					<X>0.0</X>
+					<Y>0.0</Y>
+					<Z>0.0</Z>
+				 </Position>
+				 <BeaconText>Super Gremlin</BeaconText>
+				 <Speed>0</Speed>
+			  </Prefab>
+		   </Prefabs>
+		</SpawnGroup>-->
+		
+		<SpawnGroup>
+		   <Id>
+			  <TypeId>SpawnGroupDefinition</TypeId>
+			  <SubtypeId>(NPC-GVE) Inner Worlds Territory</SubtypeId>
+		   </Id>
+		   <Description>
+
+		   [Modular Encounters Territory]
+		   
+		   [Name:Inner Worlds Territory]
+		   [Type:Static]
+		   [Active:true]
+		   [Radius:4000000]
+		   [CoordsX:0]
+		   [CoordsY:0]
+		   [CoordsZ:0]
+		   [AnnounceArriveDepart:true]
+		   [CustomArriveMessage:Returning to inner worlds region.]
+		   [CustomDepartMessage:Approaching deep space. Beware of unknown dangers.]
+
+		   </Description>
+		   <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+		   <Frequency>30.0</Frequency>
+		   <IsPirate>true</IsPirate>
+		   <Prefabs>
+			  <Prefab SubtypeId="GVE-NPC Player Announcer">
+				 <Position>
+					<X>0.0</X>
+					<Y>0.0</Y>
+					<Z>0.0</Z>
+				 </Position>
+				 <BeaconText>Super Gremlin</BeaconText>
+				 <Speed>0</Speed>
+			  </Prefab>
+		   </Prefabs>
+		</SpawnGroup>
+
+	<!--Do Not Edit Below Here-->
+	</SpawnGroups>
+</Definitions>

@@ -26,11 +26,10 @@
 	  [MatchAllFilters:TargetValue]
       [Relations:Enemy]
 	  [Names:Listening Post]
-	  [Names:KOTH]
+	  [Names:GVE-NPC KOTH [nozone]]
 	  [UsePartialNameMatching:true]
 	  [MinTargetValue:10]
 	  [MaxTargetValue:99999]
-
       
       </Description>
     </EntityComponent>
@@ -229,7 +228,201 @@
       </Description>
     </EntityComponent>
 	
-	<!--Upon SPRT Taking Damage: Switch Target, Generic Battle Chatter, Raise rep with GVE+-->
+	<!--BTFN Call DDS Fighters 1 every 60-120 seconds with Chat-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Trigger-BTFNCallDDSFighters</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:HasTarget]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:5]
+	  [MinCooldownMs:60000]
+	  [MaxCooldownMs:180000]
+
+	  [Actions:GVE-Generic-Action-BTFNCallDDSFighters]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Action-BTFNCallDDSFighters</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [UseChatBroadcast:true]
+	  [ChatData:GVE-Generic-Chat-BTFNCallDDSFighters]
+
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-Generic-Spawner-BTFNCallDDSFighters]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Chat-BTFNCallDDSFighters</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:50]
+      [BroadcastRandomly:true]
+      
+      [Author:{GridName}]
+      [Color:Red]
+      
+      [ChatMessages:Brining reinforcements]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:Calling backup]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:Deploying fighters]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:Additional support has arrived]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Spawner-BTFNCallDDSFighters</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Spawn]
+      
+      [UseSpawn:true]
+      [StartsReady:true]
+      
+      [SpawnGroups:(NPC-GVE) BTFN Defense Strike Cyclone]
+	  [SpawnGroups:(NPC-GVE) BTFN Defense Fighter Wildfire]
+
+      [MinDistance:400]
+      [MaxDistance:700]
+      
+      </Description>
+    </EntityComponent>
+
+	<!--GVE+ Call DDS Fighters 1 every 60-120 seconds with Chat-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Trigger-GVE+CallDDSFighters</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:HasTarget]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:5]
+	  [MinCooldownMs:60000]
+	  [MaxCooldownMs:180000]
+
+	  [Actions:GVE-Generic-Action-GVE+CallDDSFighters]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Action-GVE+CallDDSFighters</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [UseChatBroadcast:true]
+	  [ChatData:GVE-Generic-Chat-GVE+CallDDSFighters]
+
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-Generic-Spawner-GVE+CallDDSFighters]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Chat-GVE+CallDDSFighters</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:50]
+      [BroadcastRandomly:true]
+      
+      [Author:{GridName}]
+      [Color:Red]
+      
+      [ChatMessages:Brining reinforcements]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:Calling backup]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+	  [ChatMessages:Deploying fighters]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:Additional support has arrived]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Spawner-GVE+CallDDSFighters</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Spawn]
+      
+      [UseSpawn:true]
+      [StartsReady:true]
+      
+      [SpawnGroups:(NPC-GVE) GVE+ Defense Fighter Cyclone]
+	  [SpawnGroups:(NPC-GVE) GVE+ Defense Impaler]
+
+      [MinDistance:400]
+      [MaxDistance:700]
+      
+      </Description>
+    </EntityComponent>
+
+	<!--Upon SPRT Taking Damage: Switch Target, Generic Battle Chatter, Drop rep with SPRT-->
 		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
