@@ -243,10 +243,7 @@
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
 			[IgnoreGlobalBlockReplacer:false]
-			
-			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
-			[AllowPartialNames:true]	
-			
+						
 			[OverrideBlockDamageModifier:false]
 			[BlockDamageModifier:100]
 			[GridsAreDestructable:true]
