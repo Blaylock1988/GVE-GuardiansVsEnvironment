@@ -510,7 +510,7 @@
 	  [ChangeAttackerReputationFaction:GVE+]
 	  [ChangeAttackerReputationAmount:-5]
 	  [ChangeAttackerReputationFaction:BTFN]
-	  [ChangeAttackerReputationAmount:2]
+	  [ChangeAttackerReputationAmount:5]
 	  [ReputationChangesForAllAttackPlayerFactionMembers:true]
 	  
       </Description>
@@ -558,7 +558,7 @@
 	  [ChangeAttackerReputationFaction:BTFN]
 	  [ChangeAttackerReputationAmount:-5]
 	  [ChangeAttackerReputationFaction:GVE+]
-	  [ChangeAttackerReputationAmount:2]
+	  [ChangeAttackerReputationAmount:5]
 	  [ReputationChangesForAllAttackPlayerFactionMembers:true]
 	  
       </Description>
