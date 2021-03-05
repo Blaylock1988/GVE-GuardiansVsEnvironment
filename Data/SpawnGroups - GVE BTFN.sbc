@@ -6,40 +6,72 @@
 		<!-- BTFN Territory GPS:NPC Starport:442100:96000:251700:#FF1AFF00: -->
 		
 		<SpawnGroup>
-		   <Id>
-			  <TypeId>SpawnGroupDefinition</TypeId>
-			  <SubtypeId>(NPC-GVE) BTFN Territory</SubtypeId>
-		   </Id>
-		   <Description>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) BTFN Trade Station</SubtypeId>
+			</Id>
+			<Description>
 
-		   [Modular Encounters Territory]
-		   
-		   [Name:BTFN Territory]
-		   [Type:Static]
-		   [Active:true]
-		   [Radius:5000]
-		   [CoordsX:442100]
-		   [CoordsY:96000]
-		   [CoordsZ:251800]
-		   [AnnounceArriveDepart:true]
-		   [CustomArriveMessage:Entering Bylen Trade Federation Space.]
-		   [CustomDepartMessage:Exiting Bylen Trade Federation Space.]
+			[Modular Encounters SpawnGroup]
+			
+			[BossEncounterSpace:true]
+			[FactionOwner:BTFN]
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:BTFN Trade Station]
+			[BossCustomAnnounceMessage:Bylen Trade Federation has established a new trade station.]
+			[BossCustomGPSLabel:BTFN Trade Station]
+			
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ReplenishSystems:true]
+			[UniqueEncounter:true]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+			
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+			[ForceStaticGrid:true]
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:25]
+			
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks,MES-DisposableNpcBeacons]
+			[IgnoreGlobalBlockReplacer:true]
+			[ConvertToHeavyArmor:true]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:false]
+			
+			[IgnoreCleanupRules:false]
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:false]
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Trade Station NatoLetter-RandomNumber]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 
-		   </Description>
-		   <Icon>Textures\GUI\Icons\Fake.dds</Icon>
-		   <Frequency>30.0</Frequency>
-		   <IsPirate>true</IsPirate>
-		   <Prefabs>
-			  <Prefab SubtypeId="GVE-NPC Player Announcer">
-				 <Position>
-					<X>0.0</X>
-					<Y>0.0</Y>
-					<Z>0.0</Z>
-				 </Position>
-				 <BeaconText>Super Gremlin</BeaconText>
-				 <Speed>0</Speed>
-			  </Prefab>
-		   </Prefabs>
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Echo Trade Station">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>GVE-RE-Boss-NPCTradeStation-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
 		</SpawnGroup>
 
 		<!--BTFN Encounters-->
@@ -67,7 +99,10 @@
 						
 			[UniqueEncounter:true]
 			
-			[Territory:BTFN Territory]		
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:6]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -152,7 +187,10 @@
 						
 			[UniqueEncounter:true]
 			
-			[Territory:BTFN Territory]		
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:3]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -237,7 +275,10 @@
 						
 			[UniqueEncounter:true]
 			
-			[Territory:BTFN Territory]		
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:2]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -320,7 +361,10 @@
 						
 			[UniqueEncounter:true]
 			
-			[Territory:BTFN Territory]		
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -405,7 +449,10 @@
 			
 			[UniqueEncounter:true]
 						
-			[Territory:BTFN Territory]		
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]

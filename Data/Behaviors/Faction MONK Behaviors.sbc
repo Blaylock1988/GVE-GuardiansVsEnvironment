@@ -2,12 +2,12 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <EntityComponents>
 
-	<!-- GVE+ Large Ship Behaviors -->
+	<!-- MONK Large Ship Behaviors -->
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-GVE+-Proteus-Behavior-Start</SubtypeId>
+          <SubtypeId>GVE-RE-MONK-Proteus-Behavior-Start</SubtypeId>
       </Id>
       <Description>
 
@@ -48,8 +48,8 @@
 	  
 	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 		  
-	  [Triggers:GVE-Generic-Trigger-GVE+TakeDamage]
-	  [Triggers:GVE-Generic-Trigger-GVE+CallDDSFighters]
+	  [Triggers:GVE-Generic-Trigger-MONKTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-MONKCallDDSFighters]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  
@@ -59,7 +59,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-GVE+-TempanoRavager-Behavior-Start</SubtypeId>
+          <SubtypeId>GVE-RE-MONK-TempanoRavager-Behavior-Start</SubtypeId>
       </Id>
       <Description>
 	  
@@ -127,7 +127,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-GVE+-Rocinante-Behavior-Start</SubtypeId>
+          <SubtypeId>GVE-RE-MONK-Rocinante-Behavior-Start</SubtypeId>
       </Id>
       <Description>
 
@@ -166,20 +166,20 @@
 	  	  
 	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 		  
-	  [Triggers:GVE-Generic-Trigger-GVE+TakeDamage]
-	  [Triggers:GVE-Generic-Trigger-GVE+Defeated]
+	  [Triggers:GVE-Generic-Trigger-MONKTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-MONKDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  [Triggers:GVE-Generic-Trigger-FighterBarrelRoll]
 	  
       </Description>
     </EntityComponent>
 
-	<!-- GVE+ Fighter Behaviors -->
+	<!-- MONK Fighter Behaviors -->
 		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-GVE+-Behavior-Strike-Test</SubtypeId>
+          <SubtypeId>GVE-MONK-Behavior-Strike-Test</SubtypeId>
       </Id>
       <Description>
 
@@ -217,7 +217,7 @@
 	  
 	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 		  
-	  [Triggers:GVE-Generic-Trigger-GVE+TakeDamage]
+	  [Triggers:GVE-Generic-Trigger-MONKTakeDamage]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 
@@ -227,7 +227,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-GVE+-Behavior-Fighter-Test</SubtypeId>
+          <SubtypeId>GVE-MONK-Behavior-Fighter-Test</SubtypeId>
       </Id>
       <Description>
 
@@ -278,7 +278,7 @@
 	  
 	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 		  
-	  [Triggers:GVE-Generic-Trigger-GVE+TakeDamage]
+	  [Triggers:GVE-Generic-Trigger-MONKTakeDamage]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  [Triggers:GVE-Generic-Trigger-FighterBarrelRoll]
@@ -289,7 +289,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-GVE+-Behavior-Fighter-Friendly</SubtypeId>
+          <SubtypeId>GVE-MONK-Behavior-Fighter-Friendly</SubtypeId>
       </Id>
       <Description>
 
@@ -340,9 +340,9 @@
 	  [FighterEngageDistanceSpace:700]
 	  [FighterDisengageDistanceSpace:800]
 	  
-	  [TargetData:GVE-Generic-TargetProfile-GVE+NPCs]
+	  [TargetData:GVE-Generic-TargetProfile-MONKNPCs]
 
-	  [Triggers:GVE-Generic-Trigger-GVE+TakeDamage]		  
+	  [Triggers:GVE-Generic-Trigger-MONKTakeDamage]		  
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  [Triggers:GVE-Generic-Trigger-FighterBarrelRoll]

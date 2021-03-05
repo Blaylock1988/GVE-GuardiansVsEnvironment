@@ -807,12 +807,12 @@
 			</Prefabs>
 		</SpawnGroup>
 
-		<!--GVE+ Encounters-->
+		<!--MONK Encounters-->
 
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH GVE+ Rocinante</SubtypeId>
+				<SubtypeId>(NPC-GVE) KOTH MONK Rocinante</SubtypeId>
 			</Id>
 			<Description>
 
@@ -830,7 +830,7 @@
 			[PlayerCreditsCheckRadius:10000]
 			[MinimumPlayerCredits:5000000]
 			
-			[FactionOwner:GVE+]
+			[FactionOwner:MONK]
 			
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:10000]
@@ -901,7 +901,7 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>50</Speed>
-					<Behaviour>GVE-RE-GVE+-Rocinante-Behavior-Start</Behaviour>
+					<Behaviour>GVE-RE-MONK-Rocinante-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -909,7 +909,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH GVE+ Proteus</SubtypeId>
+				<SubtypeId>(NPC-GVE) KOTH MONK Proteus</SubtypeId>
 			</Id>
 			<Description>
 
@@ -927,7 +927,7 @@
 			[PlayerCreditsCheckRadius:10000]
 			[MinimumPlayerCredits:5000000]
 			
-			[FactionOwner:GVE+]
+			[FactionOwner:MONK]
 			
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:10000]
@@ -997,7 +997,7 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>50</Speed>
-					<Behaviour>GVE-RE-GVE+-Proteus-Behavior-Start</Behaviour>
+					<Behaviour>GVE-RE-MONK-Proteus-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -1005,7 +1005,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH GVE+ Tempano Ravager</SubtypeId>
+				<SubtypeId>(NPC-GVE) KOTH MONK Tempano Ravager</SubtypeId>
 			</Id>
 			<Description>
 
@@ -1023,7 +1023,7 @@
 			[PlayerCreditsCheckRadius:10000]
 			[MinimumPlayerCredits:1000000]
 			
-			[FactionOwner:GVE+]
+			[FactionOwner:MONK]
 			
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:10000]
@@ -1094,7 +1094,7 @@
 					</Position>
 					<BeaconText>Tempano Ravager</BeaconText>
 					<Speed>50</Speed>
-					<Behaviour>GVE-RE-GVE+-TempanoRavager-Behavior-Start</Behaviour>
+					<Behaviour>GVE-RE-MONK-TempanoRavager-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -1102,7 +1102,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH GVE+ Fighter Cyclone</SubtypeId>
+				<SubtypeId>(NPC-GVE) KOTH MONK Fighter Cyclone</SubtypeId>
 			</Id>
 			<Description>
 
@@ -1120,7 +1120,7 @@
 			[PlayerCreditsCheckRadius:10000]
 			[MinimumPlayerCredits:100000]
 			
-			[FactionOwner:GVE+]
+			[FactionOwner:MONK]
 			
 			[UsePlayerCountCheck:false]
 			[PlayerCountCheckRadius:10000]
@@ -1190,7 +1190,7 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>50</Speed>
-					<Behaviour>GVE-GVE+-Behavior-Fighter-Test</Behaviour>
+					<Behaviour>GVE-MONK-Behavior-Fighter-Test</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -1198,7 +1198,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH GVE+ Impaler</SubtypeId>
+				<SubtypeId>(NPC-GVE) KOTH MONK Impaler</SubtypeId>
 			</Id>
 			<Description>
 
@@ -1221,7 +1221,7 @@
 			[MinimumReputation:-1501]
 			[MaximumReputation:-500]
 			
-			[FactionOwner:GVE+]
+			[FactionOwner:MONK]
 			
 			[UsePlayerCountCheck:false]
 			[PlayerCountCheckRadius:10000]
@@ -1286,7 +1286,7 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>50</Speed>
-					<Behaviour>GVE-GVE+-Behavior-Fighter-Test</Behaviour>
+					<Behaviour>GVE-MONK-Behavior-Fighter-Test</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -1294,7 +1294,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH GVE+ Friendly Fighter</SubtypeId>
+				<SubtypeId>(NPC-GVE) KOTH MONK Friendly Fighter</SubtypeId>
 			</Id>
 			<Description>
 
@@ -1312,7 +1312,7 @@
 			[PlayerCreditsCheckRadius:10000]
 			[MinimumPlayerCredits:5000000]
 			
-			[FactionOwner:GVE+]
+			[FactionOwner:MONK]
 			
 			[UsePlayerCountCheck:false]
 			[PlayerCountCheckRadius:10000]
@@ -1382,7 +1382,7 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>50</Speed>
-					<Behaviour>GVE-GVE+-Behavior-Fighter-Friendly</Behaviour>
+					<Behaviour>GVE-MONK-Behavior-Fighter-Friendly</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>

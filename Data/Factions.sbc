@@ -20,12 +20,28 @@
 			<FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon> <!--Game or Mod Path For Texture File-->
 		</Faction>
 		
-		<Faction Tag="BTFN" Founder="Shadow Broker">
+		<Faction Tag="BTFN" Founder="The Shadow Broker">
 			<Id>
 				<TypeId>MyObjectBuilder_FactionDefinition</TypeId> <!--Do Not Edit-->
 				<SubtypeId>(NPC-GVE) Bylen Trade Federation</SubtypeId> <!--Must Be Unique-->
 			</Id>
 			<DisplayName>Bylen Trade Federation</DisplayName>
+			<IsDefault>true</IsDefault>
+			<DefaultRelation>Enemies</DefaultRelation> <!--Enemies, Neutral, Friends-->
+			<AcceptHumans>false</AcceptHumans>
+			<AutoAcceptMember>false</AutoAcceptMember>
+			<StartingBalance>100000000</StartingBalance>
+			<Type>None</Type> <!--None, Miner, Trader, Builder-->
+			<DiscoveredByDefault>false</DiscoveredByDefault>
+			<FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon> <!--Game or Mod Path For Texture File-->
+		</Faction>
+
+		<Faction Tag="MONK" Founder="Pepe-san">
+			<Id>
+				<TypeId>MyObjectBuilder_FactionDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) MonkaSyndicate</SubtypeId> <!--Must Be Unique-->
+			</Id>
+			<DisplayName>MonkaSyndicate</DisplayName>
 			<IsDefault>true</IsDefault>
 			<DefaultRelation>Enemies</DefaultRelation> <!--Enemies, Neutral, Friends-->
 			<AcceptHumans>false</AcceptHumans>

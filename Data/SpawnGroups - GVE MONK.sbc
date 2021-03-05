@@ -3,51 +3,83 @@
 	<SpawnGroups>
 	<!--Do Not Edit Above Here-->
 		
-		<!-- GVE+ Territory GPS:Galados Trade Base:601820:-158900:-473400:#FF61FF00: -->
-
-		<SpawnGroup>
-		   <Id>
-			  <TypeId>SpawnGroupDefinition</TypeId>
-			  <SubtypeId>(NPC-GVE) GVE+ Territory</SubtypeId>
-		   </Id>
-		   <Description>
-
-		   [Modular Encounters Territory]
-		   
-		   [Name:GVE+ Territory]
-		   [Type:Static]
-		   [Active:true]
-		   [Radius:5000]
-		   [CoordsX:601820]
-		   [CoordsY:-158900]
-		   [CoordsZ:-473400]
-		   [AnnounceArriveDepart:true]
-		   [CustomArriveMessage:Entering The Guardians Space.]
-		   [CustomDepartMessage:Exiting The Guardians Space.]
-
-		   </Description>
-		   <Icon>Textures\GUI\Icons\Fake.dds</Icon>
-		   <Frequency>30.0</Frequency>
-		   <IsPirate>true</IsPirate>
-		   <Prefabs>
-			  <Prefab SubtypeId="GVE-NPC Player Announcer">
-				 <Position>
-					<X>0.0</X>
-					<Y>0.0</Y>
-					<Z>0.0</Z>
-				 </Position>
-				 <BeaconText>Super Gremlin</BeaconText>
-				 <Speed>0</Speed>
-			  </Prefab>
-		   </Prefabs>
-		</SpawnGroup>
-		
-		<!--GVE+ Encounters-->
+		<!-- MONK Territory GPS:MONKdos Trade Base:601820:-158900:-473400:#FF61FF00: -->
 
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) GVE+ Defense Rocinante</SubtypeId>
+				<SubtypeId>(NPC-GVE) MONK Trade Station</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[BossEncounterSpace:true]
+			[FactionOwner:MONK]
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:MONK Trade Station]
+			[BossCustomAnnounceMessage:MonkaSyndicate has established a new trade station.]
+			[BossCustomGPSLabel:MONK Trade Station]
+			
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ReplenishSystems:true]
+			[UniqueEncounter:true]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+			
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+			[ForceStaticGrid:true]
+			[OverrideBlockDamageModifier:true]
+			[BlockDamageModifier:25]
+			
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks,MES-DisposableNpcBeacons]
+			[IgnoreGlobalBlockReplacer:true]
+			[ConvertToHeavyArmor:true]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:false]
+			
+			[IgnoreCleanupRules:false]
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:false]
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Trade Station NatoLetter-RandomNumber]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Echo Trade Station">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>GVE-RE-Boss-NPCTradeStation-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<!--MONK Encounters-->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) MONK Defense Rocinante</SubtypeId>
 			</Id>
 			<Description>
 
@@ -59,15 +91,18 @@
 			[SpawnRandomCargo:false]
 			[DisableDampeners:true]
 
-			[FactionOwner:GVE+]
+			[FactionOwner:MONK]
 			
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:4]
+			[MinimumPlayers:1]
 			
 			[UniqueEncounter:true]
 			
-			[Territory:GVE+ Territory]		
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:6]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -125,7 +160,7 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>50</Speed>
-					<Behaviour>GVE-RE-GVE+-Rocinante-Behavior-Start</Behaviour>
+					<Behaviour>GVE-RE-MONK-Rocinante-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -133,7 +168,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) GVE+ Defense Proteus</SubtypeId>
+				<SubtypeId>(NPC-GVE) MONK Defense Proteus</SubtypeId>
 			</Id>
 			<Description>
 
@@ -145,15 +180,18 @@
 			[SpawnRandomCargo:false]
 			[DisableDampeners:true]
 			
-			[FactionOwner:GVE+]
+			[FactionOwner:MONK]
 			
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:3]
+			[MinimumPlayers:1]
 			
 			[UniqueEncounter:true]
 			
-			[Territory:GVE+ Territory]		
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:3]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -210,7 +248,7 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>50</Speed>
-					<Behaviour>GVE-RE-GVE+-Proteus-Behavior-Start</Behaviour>
+					<Behaviour>GVE-RE-MONK-Proteus-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -218,7 +256,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) GVE+ Defense Tempano Ravager</SubtypeId>
+				<SubtypeId>(NPC-GVE) MONK Defense Tempano Ravager</SubtypeId>
 			</Id>
 			<Description>
 
@@ -230,15 +268,18 @@
 			[SpawnRandomCargo:false]
 			[DisableDampeners:true]
 			
-			[FactionOwner:GVE+]
+			[FactionOwner:MONK]
 			
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:2]
+			[MinimumPlayers:1]
 			
 			[UniqueEncounter:true]
 			
-			[Territory:GVE+ Territory]		
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:2]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -293,7 +334,7 @@
 					</Position>
 					<BeaconText>Tempano Ravager</BeaconText>
 					<Speed>50</Speed>
-					<Behaviour>GVE-RE-GVE+-TempanoRavager-Behavior-Start</Behaviour>
+					<Behaviour>GVE-RE-MONK-TempanoRavager-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -301,7 +342,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) GVE+ Defense Fighter Cyclone</SubtypeId>
+				<SubtypeId>(NPC-GVE) MONK Defense Fighter Cyclone</SubtypeId>
 			</Id>
 			<Description>
 
@@ -313,7 +354,7 @@
 			[SpawnRandomCargo:false]
 			[DisableDampeners:true]
 			
-			[FactionOwner:GVE+]
+			[FactionOwner:MONK]
 			
 			[UsePlayerCountCheck:false]
 			[PlayerCountCheckRadius:10000]
@@ -321,7 +362,10 @@
 			
 			[UniqueEncounter:true]
 			
-			[Territory:GVE+ Territory]		
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -378,7 +422,7 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>50</Speed>
-					<Behaviour>GVE-GVE+-Behavior-Fighter-Test</Behaviour>
+					<Behaviour>GVE-MONK-Behavior-Fighter-Test</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -386,7 +430,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) GVE+ Defense Impaler</SubtypeId>
+				<SubtypeId>(NPC-GVE) MONK Defense Impaler</SubtypeId>
 			</Id>
 			<Description>
 
@@ -398,7 +442,7 @@
 			[SpawnRandomCargo:false]
 			[DisableDampeners:true]
 			
-			[FactionOwner:GVE+]
+			[FactionOwner:MONK]
 			
 			[UsePlayerCountCheck:false]
 			[PlayerCountCheckRadius:10000]
@@ -406,7 +450,10 @@
 			
 			[UniqueEncounter:true]
 			
-			[Territory:GVE+ Territory]		
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -424,7 +471,7 @@
 			[RandomHueShift:true]
 
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Impaler Drone GreekLetter-RandomNumber]
+			[RandomGridNamePattern: Fighter Cyclone GreekLetter-RandomNumber]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			[ConfigureSpecialNpcThrusters:true]
@@ -463,7 +510,7 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>50</Speed>
-					<Behaviour>GVE-GVE+-Behavior-Fighter-Test</Behaviour>
+					<Behaviour>GVE-MONK-Behavior-Fighter-Test</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
