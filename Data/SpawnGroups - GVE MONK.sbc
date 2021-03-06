@@ -69,7 +69,7 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
-					<Behaviour>GVE-RE-Boss-NPCTradeStation-Behavior-Start</Behaviour>
+					<Behaviour>GVE-RE-Boss-MONKTradeStation-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>

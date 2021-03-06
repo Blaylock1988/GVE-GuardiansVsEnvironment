@@ -47,7 +47,8 @@
 	  	  
 	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 		  
-	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamage]
+	  [Triggers:GVE-Generic-TriggerGroup-BTFNTakeDamage]
+
 	  [Triggers:GVE-Generic-Trigger-BTFNCallDDSFighters]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
@@ -101,7 +102,8 @@
 	  
 	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 	
-	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamage]
+	  [Triggers:GVE-Generic-TriggerGroup-BTFNTakeDamage]
+
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  
@@ -147,7 +149,8 @@
 	  	  
 	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 		  
-	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamage]
+	  [Triggers:GVE-Generic-TriggerGroup-BTFNTakeDamage]
+
 	  [Triggers:GVE-Generic-Trigger-BTFNCallDDSFighters]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
@@ -198,7 +201,8 @@
 	  
 	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 		  
-	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamage]
+	  [Triggers:GVE-Generic-TriggerGroup-BTFNTakeDamage]
+
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 
@@ -259,7 +263,8 @@
 	  
 	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 		  
-	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamage]
+	  [Triggers:GVE-Generic-TriggerGroup-BTFNTakeDamage]
+
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  [Triggers:GVE-Generic-Trigger-FighterBarrelRoll]
@@ -321,9 +326,10 @@
 	  [FighterEngageDistanceSpace:700]
 	  [FighterDisengageDistanceSpace:800]
 	  
-	  [TargetData:GVE-Generic-TargetProfile-GVE+NPCs]
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 	  
-	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamage]
+	  [Triggers:GVE-Generic-TriggerGroup-BTFNTakeDamage]
+
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  [Triggers:GVE-Generic-Trigger-FighterBarrelRoll]

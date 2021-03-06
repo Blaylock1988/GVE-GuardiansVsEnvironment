@@ -5,19 +5,54 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-NPCTradeStation-Behavior-Start</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-BTFNTradeStation-Behavior-Start</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Behavior]
 	  
       [BehaviorName:Passive]
-	  [UsePlayerDistanceTimer:true]
-	  [PlayerDistanceTimerTrigger:1200]
-	  [PlayerDistanceTrigger:1]
+
+	  [UseRetreatTimer:false]
+	  [UseNoTargetTimer:false]
+	  [UsePlayerDistanceTimer:false]  
 	  
-	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-PlayerDistant]
-	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-TargetNear]
+	  [TriggerGroups:GVE-Generic-TriggerGroup-BTFNTakeDamage]
+	  
+	  [Triggers:GVE-RE-Boss-BTFNTradeStation-Trigger-PlayerDistant]
+	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-EnemyNear]
+	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-NeutralNear]
+	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-FriendlyNear]
+	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-Despawn]
+	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-DespawnMES]
+	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-Compromised]
+	  	  
+	  [TargetData: GVE-Generic-TargetProfile-EnemyPlayers]
+	  
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-MONKTradeStation-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Passive]
+
+	  [UseRetreatTimer:false]
+	  [UseNoTargetTimer:false]
+	  [UsePlayerDistanceTimer:false]  
+	  
+	  [TriggerGroups:GVE-Generic-TriggerGroup-MONKTakeDamage]
+	  
+	  [Triggers:GVE-RE-Boss-MONKTradeStation-Trigger-PlayerDistant]
+	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-EnemyNear]
+	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-NeutralNear]
+	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-FriendlyNear]
 	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-Despawn]
 	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-DespawnMES]
 	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-Compromised]
@@ -30,7 +65,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-NPCTradeStation-Trigger-PlayerDistant</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-BTFNTradeStation-Trigger-PlayerDistant</SubtypeId>
       </Id>
       <Description>
 
@@ -41,7 +76,7 @@
 	  [TargetDistance:50000]
 	  [MaxActions:1]
 	  
-	  [Actions:GVE-RE-Boss-NPCTradeStation-Action-PlayerDistant]
+	  [Actions:GVE-RE-Boss-BTFNTradeStation-Action-PlayerDistant]
 	  
       </Description>      
     </EntityComponent>
@@ -49,7 +84,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-NPCTradeStation-Action-PlayerDistant</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-BTFNTradeStation-Action-PlayerDistant</SubtypeId>
       </Id>
       <Description>
 
@@ -61,23 +96,18 @@
 	  [AntennaRangeChangeAmount:50000]
 	  
       [UseChatBroadcast:true]
-      [ChatData:GVE-RE-Boss-NPCTradeStation-Chat-PlayerDistant]
+      [ChatData:GVE-RE-Boss-BTFNTradeStation-Chat-PlayerDistant]
 	  
 	  [SpawnEncounter:true]
 	  [Spawner:GVE-RE-Boss-NPCTradeStation-Spawner-Defenses]
 	  
-	  [CreateKnownPlayerArea:true]
-	  [KnownPlayerAreaRadius:5000]
-	  [KnownPlayerAreaTimer:60]
-	  [KnownPlayerAreaMaxSpawns:20]
-
       </Description>
     </EntityComponent>
 	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-NPCTradeStation-Chat-PlayerDistant</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-BTFNTradeStation-Chat-PlayerDistant</SubtypeId>
       </Id>
       <Description>
 
@@ -92,14 +122,82 @@
       [Color:Red]
       
       [ChatMessages:{GPS}]
-      [ChatAudio:ArcHudGPSNotification2]
+      [ChatAudio:ArcHudGPSNotification1]
       [BroadcastChatType:Chat]
 	  [SendToAllOnlinePlayers:true]
-	  [GPSLabel:Trade Station]
+	  [GPSLabel:BTFN Trade Station]
 
       </Description>      
     </EntityComponent>
 
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-MONKTradeStation-Trigger-PlayerDistant</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [TargetDistance:50000]
+	  [MaxActions:1]
+	  
+	  [Actions:GVE-RE-Boss-MONKTradeStation-Action-PlayerDistant]
+	  
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-MONKTradeStation-Action-PlayerDistant</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [ChangeAntennaRanges:true]
+	  [AntennaNamesForRangeChange:NPC Antenna]
+	  [AntennaRangeChangeType:Set]
+	  [AntennaRangeChangeAmount:50000]
+	  
+      [UseChatBroadcast:true]
+      [ChatData:GVE-RE-Boss-MONKTradeStation-Chat-PlayerDistant]
+	  
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-RE-Boss-NPCTradeStation-Spawner-Defenses]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-MONKTradeStation-Chat-PlayerDistant</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:false]
+      [Author:{GridName}]
+      [Color:Red]
+      
+      [ChatMessages:{GPS}]
+      [ChatAudio:ArcHudGPSNotification1]
+      [BroadcastChatType:Chat]
+	  [SendToAllOnlinePlayers:true]
+	  [GPSLabel:MONK Trade Station]
+
+      </Description>      
+    </EntityComponent>
+	
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -127,7 +225,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-NPCTradeStation-Trigger-TargetNear</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-NPCTradeStation-Trigger-EnemyNear</SubtypeId>
       </Id>
       <Description>
 
@@ -136,12 +234,16 @@
       [Type:PlayerNear]
 	  [UseTrigger:true]
 	  [TargetDistance:5000]
-	  [MinCooldownMs:30000]
-	  [MaxCooldownMs:60000]
+	  [MinCooldownMs:15000]
+	  [MaxCooldownMs:30000]
 	  [StartsReady:false]
 	  [MaxActions:1]
 	  
-	  [Actions:GVE-RE-Boss-NPCTradeStation-Action-TargetNear]
+	  [MinPlayerReputation:-1501]
+	  [MaxPlayerReputation:-500]
+	  [CustomReputationRangeCheck:5000]
+	  
+	  [Actions:GVE-RE-Boss-NPCTradeStation-Action-EnemyNear]
 	  
       </Description>      
     </EntityComponent>
@@ -149,7 +251,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-NPCTradeStation-Action-TargetNear</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-NPCTradeStation-Action-EnemyNear</SubtypeId>
       </Id>
       <Description>
 
@@ -161,10 +263,15 @@
 	  [AntennaRangeChangeAmount:50000]
 	  
       [UseChatBroadcast:true]
-      [ChatData:GVE-RE-Boss-NPCTradeStation-Chat-TargetNear]
+      [ChatData:GVE-RE-Boss-NPCTradeStation-Chat-EnemyNear]
 	  
 	  [SpawnEncounter:true]
 	  [Spawner:GVE-RE-Boss-NPCTradeStation-Spawner-Defenses]
+	  
+	  [CreateKnownPlayerArea:true]
+	  [KnownPlayerAreaRadius:5000]
+	  [KnownPlayerAreaTimer:60]
+	  [KnownPlayerAreaMaxSpawns:20]
 	  
       </Description>
     </EntityComponent>
@@ -172,7 +279,76 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-NPCTradeStation-Chat-TargetNear</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-NPCTradeStation-Chat-EnemyNear</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      [Author:{GridName}]
+      [Color:Red]
+      
+      [ChatMessages:Enemy Detected, deploying defenses.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  [SendToAllOnlinePlayers:true]
+
+      [ChatMessages:Enemies approaching, requesting backup!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  [SendToAllOnlinePlayers:true]
+
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-NPCTradeStation-Trigger-NeutralNear</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [TargetDistance:5000]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	  
+	  [MinPlayerReputation:-499]
+	  [MaxPlayerReputation:499]
+	  [CustomReputationRangeCheck:5000]
+	  
+	  [Actions:GVE-RE-Boss-NPCTradeStation-Action-NeutralNear]
+	  
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-NPCTradeStation-Action-NeutralNear</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+      [UseChatBroadcast:true]
+      [ChatData:GVE-RE-Boss-NPCTradeStation-Chat-NeutralNear]
+	  	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-NPCTradeStation-Chat-NeutralNear</SubtypeId>
       </Id>
       <Description>
 
@@ -186,10 +362,83 @@
       [Author:{GridName}]
       [Color:White]
       
-      [ChatMessages:Enemy Detected, deploying defenses.]
+      [ChatMessages:Warning {PlayerName}, the store is only open to allies.]
       [ChatAudio:ArcHudGPSNotification2]
-      [BroadcastChatType:Both]
-	  [SendToAllOnlinePlayers:true]
+      [BroadcastChatType:Chat]
+	  [SendToAllOnlinePlayers:false]
+
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-NPCTradeStation-Trigger-FriendlyNear</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [TargetDistance:5000]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	  
+	  [MinPlayerReputation:500]
+	  [MaxPlayerReputation:1501]
+	  [CustomReputationRangeCheck:5000]
+	  
+	  [Actions:GVE-RE-Boss-NPCTradeStation-Action-FriendlyNear]
+	  
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-NPCTradeStation-Action-FriendlyNear</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [EnableBlocks:true]
+	  [EnableBlockNames:NPC Door]
+	  [EnableBlockStates:On]
+	  [EnableBlockNames:NPC LCD]
+	  [EnableBlockStates:On]
+	  [EnableBlockNames:NPC Store]
+	  [EnableBlockStates:On]
+
+	  
+      [UseChatBroadcast:true]
+      [ChatData:GVE-RE-Boss-NPCTradeStation-Chat-FriendlyNear]
+	  	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-NPCTradeStation-Chat-FriendlyNear</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:false]
+      [Author:{GridName}]
+      [Color:Green]
+      
+      [ChatMessages:Welcome {PlayerName}, the store is open for trade.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  [SendToAllOnlinePlayers:false]
 
       </Description>      
     </EntityComponent>
@@ -281,7 +530,7 @@
       [Author:{GridName}]
       [Color:White]
       
-      [ChatMessages:NPC Trade Station Removed]
+      [ChatMessages:NPC Trade Station has closed.]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
 	  [SendToAllOnlinePlayers:true]

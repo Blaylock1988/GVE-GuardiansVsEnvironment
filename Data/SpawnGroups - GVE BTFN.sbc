@@ -54,7 +54,7 @@
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:false]
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Trade Station NatoLetter-RandomNumber]
+			[RandomGridNamePattern: NeutralAdjective BaddieNoun Trade Station]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 
 			</Description>
@@ -62,14 +62,14 @@
 			<IsPirate>true</IsPirate>
 			<Frequency>5.0</Frequency>
 			<Prefabs>
-				<Prefab SubtypeId="GVE-NPC Echo Trade Station">
+				<Prefab SubtypeId="GVE-NPC Birfield Trade Station">
 					<Position>
 						<X>0.0</X>
 						<Y>0.0</Y>
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
-					<Behaviour>GVE-RE-Boss-NPCTradeStation-Behavior-Start</Behaviour>
+					<Behaviour>GVE-RE-Boss-BTFNTradeStation-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>

@@ -18,7 +18,7 @@
 	  [UseTargetRefresh:true]
 	  [TimeUntilNextRefresh:15]
 	  [TimeUntilNextEvaluation:5]
-	  [MaxDistance:15000]
+	  [MaxDistance:10000]
       [GetTargetBy:Random]
 	  [MatchAllFilters:Relation]
 	  [MatchAllFilters:OutsideOfSafezone]
@@ -30,32 +30,6 @@
 	  [UsePartialNameMatching:true]
 	  [MinTargetValue:10]
 	  [MaxTargetValue:99999]
-      
-      </Description>
-    </EntityComponent>
-
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-Generic-TargetProfile-GVE+NPCs</SubtypeId>
-      </Id>
-      <Description>
-
-      [RivalAI Target]
-      
-      [UseCustomTargeting:true]
-      [Target:PlayerAndGrid]
-	  [UseTargetRefresh:true]
-	  [TimeUntilNextRefresh:15]
-	  [TimeUntilNextEvaluation:5]
-	  [MaxDistance:10000]
-      [GetTargetBy:HighestTargetValue]
-	  [MatchAllFilters:Relation]
-	  [MatchAllFilters:OutsideOfSafezone]
-	  [MatchNoneFilters:Faction]
-      [Relations:Enemy]
-	  [FactionTargets:GVE+]
-	  
       
       </Description>
     </EntityComponent>
@@ -325,11 +299,11 @@
       </Description>
     </EntityComponent>
 
-	<!--GVE+ Call DDS Fighters 1 every 60-120 seconds with Chat-->
+	<!--MONK Call DDS Fighters 1 every 60-120 seconds with Chat-->
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-Generic-Trigger-GVE+CallDDSFighters</SubtypeId>
+          <SubtypeId>GVE-Generic-Trigger-MONKCallDDSFighters</SubtypeId>
       </Id>
       <Description>
 
@@ -342,7 +316,7 @@
 	  [MinCooldownMs:60000]
 	  [MaxCooldownMs:180000]
 
-	  [Actions:GVE-Generic-Action-GVE+CallDDSFighters]
+	  [Actions:GVE-Generic-Action-MONKCallDDSFighters]
 
       </Description>
     </EntityComponent>
@@ -350,17 +324,17 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-Generic-Action-GVE+CallDDSFighters</SubtypeId>
+          <SubtypeId>GVE-Generic-Action-MONKCallDDSFighters</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Action]
 	  
 	  [UseChatBroadcast:true]
-	  [ChatData:GVE-Generic-Chat-GVE+CallDDSFighters]
+	  [ChatData:GVE-Generic-Chat-MONKCallDDSFighters]
 
 	  [SpawnEncounter:true]
-	  [Spawner:GVE-Generic-Spawner-GVE+CallDDSFighters]
+	  [Spawner:GVE-Generic-Spawner-MONKCallDDSFighters]
 	  
       </Description>
     </EntityComponent>
@@ -368,7 +342,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-Generic-Chat-GVE+CallDDSFighters</SubtypeId>
+          <SubtypeId>GVE-Generic-Chat-MONKCallDDSFighters</SubtypeId>
       </Id>
       <Description>
 
@@ -404,7 +378,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-Generic-Spawner-GVE+CallDDSFighters</SubtypeId>
+          <SubtypeId>GVE-Generic-Spawner-MONKCallDDSFighters</SubtypeId>
       </Id>
       <Description>
 
@@ -413,8 +387,8 @@
       [UseSpawn:true]
       [StartsReady:true]
       
-      [SpawnGroups:(NPC-GVE) GVE+ Defense Fighter Cyclone]
-	  [SpawnGroups:(NPC-GVE) GVE+ Defense Impaler]
+      [SpawnGroups:(NPC-GVE) MONK Defense Fighter Cyclone]
+	  [SpawnGroups:(NPC-GVE) MONK Defense Impaler]
 
       [MinDistance:400]
       [MaxDistance:700]
@@ -447,7 +421,7 @@
 	  
       </Description>      
     </EntityComponent>
-		
+	
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -463,17 +437,33 @@
 	  [ChangeAttackerReputation:true]
 	  [ChangeAttackerReputationFaction:SPRT]
 	  [ChangeAttackerReputationAmount:-5]
+	  [ChangeAttackerReputationFaction:GVE+]
+	  [ChangeAttackerReputationAmount:5]
 	  [ReputationChangesForAllAttackPlayerFactionMembers:true]
 	  
       </Description>
     </EntityComponent>
 	
-	<!--Upon GVE+ Taking Damage: Switch Target, Generic Battle Chatter, drop rep with GVE+-->
+	<!--Upon MONK Taking Damage: Switch Target, Generic Battle Chatter, drop rep with MONK-->
 		
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-Generic-Trigger-GVE+TakeDamage</SubtypeId>
+          <SubtypeId>GVE-Generic-TriggerGroup-MONKTakeDamage</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI TriggerGroup]
+	  [Triggers:GVE-Generic-Trigger-MONKTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-MONKTakeDamageInitial]
+      
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Trigger-MONKTakeDamage</SubtypeId>
       </Id>
       <Description>
 
@@ -481,15 +471,38 @@
 	  
       [Type:Damage]
 	  [UseTrigger:true]
-	  [MinCooldownMs:5000]
-	  [MaxCooldownMs:10000]
+	  [StartsReady:true]
 	  
 	  [DamageTypes:Explosion]
 	  [DamageTypes:Rocket]
 	  [DamageTypes:Bullet]
 	  [DamageTypes:Destruction]
 
-	  [Actions:GVE-Generic-Action-GVE+TakeDamage]
+	  [Actions:GVE-Generic-Action-MONKTakeDamage]
+	  
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Trigger-MONKTakeDamageInitial</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Damage]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	  
+	  [DamageTypes:Explosion]
+	  [DamageTypes:Rocket]
+	  [DamageTypes:Bullet]
+	  [DamageTypes:Destruction]
+
+	  [Actions:GVE-Generic-Action-MONKTakeDamageInitial]
 	  
       </Description>      
     </EntityComponent>
@@ -497,20 +510,39 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-Generic-Action-GVE+TakeDamage</SubtypeId>
+          <SubtypeId>GVE-Generic-Action-MONKTakeDamage</SubtypeId>
       </Id>
       <Description>
 
       [RivalAI Action]
 	      
       [UseChatBroadcast:true]
-	  [ChatData:GVE-Generic-Chat-GVE+AttackedByPlayer]
+	  [ChatData:GVE-Generic-Chat-SPRTBattleChatter]
+	  
+	  [SwitchToReceivedTarget:true]
 	  
 	  [ChangeAttackerReputation:true]
-	  [ChangeAttackerReputationFaction:GVE+]
-	  [ChangeAttackerReputationAmount:-5]
 	  [ChangeAttackerReputationFaction:BTFN]
-	  [ChangeAttackerReputationAmount:5]
+	  [ChangeAttackerReputationAmount:1]
+	  [ReputationChangesForAllAttackPlayerFactionMembers:true]
+	  
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Action-MONKTakeDamageInitial</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+	  [ChangeAttackerReputation:true]
+	  [ChangeAttackerReputationFaction:MONK]
+	  [ChangeAttackerReputationAmount:-200]
+	  [ChangeAttackerReputationFaction:BTFN]
+	  [ChangeAttackerReputationAmount:200]
 	  [ReputationChangesForAllAttackPlayerFactionMembers:true]
 	  
       </Description>
@@ -518,6 +550,20 @@
 
 	<!--Upon BTFN Taking Damage: Switch Target, Generic Battle Chatter, Drop rep with BTFN-->
 		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-TriggerGroup-BTFNTakeDamage</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI TriggerGroup]
+	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamageInitial]
+      
+      </Description>
+    </EntityComponent>
+
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -529,8 +575,7 @@
 	  
       [Type:Damage]
 	  [UseTrigger:true]
-	  [MinCooldownMs:5000]
-	  [MaxCooldownMs:10000]
+	  [StartsReady:true]
 	  
 	  [DamageTypes:Explosion]
 	  [DamageTypes:Rocket]
@@ -538,6 +583,30 @@
 	  [DamageTypes:Destruction]
 
 	  [Actions:GVE-Generic-Action-BTFNTakeDamage]
+	  
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Trigger-BTFNTakeDamageInitial</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Damage]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	  
+	  [DamageTypes:Explosion]
+	  [DamageTypes:Rocket]
+	  [DamageTypes:Bullet]
+	  [DamageTypes:Destruction]
+
+	  [Actions:GVE-Generic-Action-BTFNTakeDamageInitial]
 	  
       </Description>      
     </EntityComponent>
@@ -554,11 +623,30 @@
       [UseChatBroadcast:true]
 	  [ChatData:GVE-Generic-Chat-SPRTBattleChatter]
 	  
+	  [SwitchToReceivedTarget:true]
+	  
+	  [ChangeAttackerReputation:true]
+	  [ChangeAttackerReputationFaction:MONK]
+	  [ChangeAttackerReputationAmount:1]
+	  [ReputationChangesForAllAttackPlayerFactionMembers:true]
+	  
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Action-BTFNTakeDamageInitial</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
 	  [ChangeAttackerReputation:true]
 	  [ChangeAttackerReputationFaction:BTFN]
-	  [ChangeAttackerReputationAmount:-5]
-	  [ChangeAttackerReputationFaction:GVE+]
-	  [ChangeAttackerReputationAmount:5]
+	  [ChangeAttackerReputationAmount:-200]
+	  [ChangeAttackerReputationFaction:MONK]
+	  [ChangeAttackerReputationAmount:200]
 	  [ReputationChangesForAllAttackPlayerFactionMembers:true]
 	  
       </Description>
@@ -864,11 +952,11 @@
       </Description>
     </EntityComponent>
 	
-	<!--Generic GVE+ Chat when attacked by players-->
+	<!--Generic MONK Chat when attacked by players-->
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-Generic-Chat-GVE+AttackedByPlayer</SubtypeId>
+          <SubtypeId>GVE-Generic-Chat-AttackedByFriendlyPlayer</SubtypeId>
       </Id>
       <Description>
 
