@@ -36,7 +36,7 @@
 			<FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon> <!--Game or Mod Path For Texture File-->
 		</Faction>
 
-		<Faction Tag="MONK" Founder="Pepe-san">
+		<Faction Tag="MONK" Founder="Pepe San">
 			<Id>
 				<TypeId>MyObjectBuilder_FactionDefinition</TypeId> <!--Do Not Edit-->
 				<SubtypeId>(NPC-GVE) MonkaSyndicate</SubtypeId> <!--Must Be Unique-->
