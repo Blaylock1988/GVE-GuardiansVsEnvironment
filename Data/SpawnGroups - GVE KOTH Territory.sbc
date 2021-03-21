@@ -3,8 +3,7 @@
 	<SpawnGroups>
 	<!--Do Not Edit Above Here-->
 		
-		<!--KOTH Territory Definition--> 
-
+		<!--KOTH Territory Definition-->
 		<SpawnGroup>
 		   <Id>
 			  <TypeId>SpawnGroupDefinition</TypeId>
@@ -44,10 +43,11 @@
 
 		<!--SPRT Encounters--> 
 		
+		<!--Donnager: 2500-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH Donnager</SubtypeId>
+				<SubtypeId>(NPC-GVE) KOTH SPRT Donnager</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -69,11 +69,17 @@
 			
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:5]
+			[MinimumPlayers:3]
 			
 			[UniqueEncounter:true]
 			
 			[Territory:KOTH Territory]		
+			[MinDistanceFromTerritoryCenter:4000]
+				
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:10000]
+			[ThreatScoreMinimum:3000]
+			[ThreatScoreMaximum:-1]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -135,15 +141,16 @@
 			</Prefabs>
 		</SpawnGroup>
 		
+		<!--Lexington: 1013-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH SPRT Lexington</SubtypeId>
+				<SubtypeId>(NPC-GVE) KOTH SPRT Lexington</SubtypeId> 
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
-			[SpaceRandomEncounter:false]
+			[SpaceRandomEncounter:true]
 			
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
@@ -157,12 +164,19 @@
 			[MinimumPlayerCredits:5000000]
 			
 			[FactionOwner:SPRT]
-			
+			[MinDistanceFromTerritoryCenter:3000]
+			[MaxDistanceFromTerritoryCenter:6000]
+				
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:10000]
+			[ThreatScoreMinimum:1000]
+			[ThreatScoreMaximum:-1]
+						
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:2]
 			
-			[UsePlayerFactionReputation:true]
+			[UsePlayerFactionReputation:false]
 			[PlayerReputationCheckRadius:10000]
 			[MinimumReputation:-1501]
 			[MaximumReputation:-500]
@@ -170,6 +184,12 @@
 			[UniqueEncounter:true]
 			
 			[Territory:KOTH Territory]		
+			[MinDistanceFromTerritoryCenter:3000]
+				
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:10000]
+			[ThreatScoreMinimum:3000]
+			[ThreatScoreMaximum:-1]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -233,6 +253,7 @@
 
 		<!--BTFN Encounters-->
 		
+		<!--Roughneck: 889-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
@@ -255,8 +276,14 @@
 			[MinimumPlayerCredits:5000000]
 			
 			[FactionOwner:BTFN]
-			
-			[UsePlayerCountCheck:true]
+			[MinDistanceFromTerritoryCenter:4000]
+				
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:10000]
+			[ThreatScoreMinimum:2000]
+			[ThreatScoreMaximum:-1]
+						
+			[UsePlayerCountCheck:false]
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:3]
 			
@@ -329,6 +356,7 @@
 			</Prefabs>
 		</SpawnGroup>
 
+		<!--Eclipse: 1203-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
@@ -351,8 +379,14 @@
 			[MinimumPlayerCredits:5000000]
 			
 			[FactionOwner:BTFN]
-			
-			[UsePlayerCountCheck:true]
+			[MinDistanceFromTerritoryCenter:4000]
+				
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:10000]
+			[ThreatScoreMinimum:1000]
+			[ThreatScoreMaximum:-1]
+						
+			[UsePlayerCountCheck:false]
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:2]
 			
@@ -425,6 +459,7 @@
 			</Prefabs>
 		</SpawnGroup>
 
+		<!--Tempano Ravager: 627-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
@@ -447,8 +482,14 @@
 			[MinimumPlayerCredits:1000000]
 			
 			[FactionOwner:BTFN]
-			
-			[UsePlayerCountCheck:true]
+			[MinDistanceFromTerritoryCenter:4000]
+				
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:10000]
+			[ThreatScoreMinimum:500]
+			[ThreatScoreMaximum:2000]
+						
+			[UsePlayerCountCheck:false]
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:1]
 			
@@ -519,102 +560,7 @@
 			</Prefabs>
 		</SpawnGroup>
 
-		<SpawnGroup>
-			<Id>
-				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH BTFN Strike Cyclone</SubtypeId>
-			</Id>
-			<Description>
-
-			[Modular Encounters SpawnGroup]
-			[SpaceRandomEncounter:true]
-			
-			[IgnoreCleanupRules:false]
-			[ReplenishSystems:true]
-			[SpawnRandomCargo:false]
-			[DisableDampeners:true]
-
-			[UsePlayerCredits:false]
-			[IncludeAllPlayersInRadius:true]
-			[IncludeFactionBalance:true]
-			[PlayerCreditsCheckRadius:10000]
-			[MinimumPlayerCredits:5000000]
-			
-			[FactionOwner:BTFN]
-			
-			[UsePlayerCountCheck:false]
-			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:2]
-			
-			[UsePlayerFactionReputation:true]
-			[PlayerReputationCheckRadius:10000]
-			[MinimumReputation:-1501]
-			[MaximumReputation:-500]
-			
-			[UniqueEncounter:true]
-			
-			[Territory:KOTH Territory]		
-						
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
-			[IgnoreGlobalBlockReplacer:false]
-			
-			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
-			[AllowPartialNames:true]	
-			
-			[OverrideBlockDamageModifier:false]
-			[BlockDamageModifier:100]
-			[GridsAreDestructable:true]
-			[GridsAreEditable:false]
-
-			[ShiftBlockColorsHue:true]
-			[RandomHueShift:true]
-
-			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: InsectNoun Strike Cyclone]
-			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
-			
-			[ConfigureSpecialNpcThrusters:true]
-			[RestrictNpcIonThrust:true]
-			[NpcIonThrustPowerMultiply:0.0001]
-			[RestrictNpcAtmoThrust:true]
-			[NpcAtmoThrustPowerMultiply:0.0001]
-			[RestrictNpcHydroThrust:true]
-			[NpcHydroThrustPowerMultiply:0.0001]
-			
-			[ChangeTurretSettings:true]
-			[TurretRange:1500]
-			[TurretIdleRotation:false]
-			[TurretTargetMeteors:false]
-			[TurretTargetMissiles:false]
-			[TurretTargetCharacters:true]
-			[TurretTargetSmallGrids:true]
-			[TurretTargetLargeGrids:true]
-			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
-			
-			[RivalAiSpawn:true]
-			[RivalAiSpaceSpawn:true]
-			[UseRivalAi:true]
-			[RivalAiReplaceRemoteControl:true]
-			
-			</Description>
-			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
-			<IsPirate>true</IsPirate>
-			<Frequency>5.0</Frequency>
-			<Prefabs>
-				<Prefab SubtypeId="GVE-NPC Cyclone Fighter Bomber">
-					<Position>
-						<X>0.0</X>
-						<Y>0.0</Y>
-						<Z>0.0</Z>
-					</Position>
-					<Speed>50</Speed>
-					<Behaviour>GVE-BTFN-Behavior-Strike-Test</Behaviour>
-				</Prefab>
-			</Prefabs>
-		</SpawnGroup>
-
+		<!--Wildfire: 147-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
@@ -637,8 +583,14 @@
 			[MinimumPlayerCredits:1000000]
 			
 			[FactionOwner:BTFN]
-			
-			[UsePlayerCountCheck:true]
+			[MinDistanceFromTerritoryCenter:2000]
+				
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:10000]
+			[ThreatScoreMinimum:100]
+			[ThreatScoreMaximum:1000]
+						
+			[UsePlayerCountCheck:false]
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:2]
 			
@@ -711,6 +663,116 @@
 			</Prefabs>
 		</SpawnGroup>		
 
+		<!--Cyclone: 86-->
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) KOTH BTFN Strike Cyclone</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[SpaceRandomEncounter:true]
+			
+			[IgnoreCleanupRules:false]
+			[ReplenishSystems:true]
+			[SpawnRandomCargo:false]
+			[DisableDampeners:true]
+
+			[UsePlayerCredits:false]
+			[IncludeAllPlayersInRadius:true]
+			[IncludeFactionBalance:true]
+			[PlayerCreditsCheckRadius:10000]
+			[MinimumPlayerCredits:5000000]
+			
+			[FactionOwner:BTFN]
+			[MinDistanceFromTerritoryCenter:2000]
+				
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:10000]
+			[ThreatScoreMinimum:0]
+			[ThreatScoreMaximum:1000]
+
+			[UsePlayerCountCheck:false]
+			[PlayerCountCheckRadius:10000]
+			[MinimumPlayers:2]
+			
+			[UsePlayerFactionReputation:true]
+			[PlayerReputationCheckRadius:10000]
+			[MinimumReputation:-1501]
+			[MaximumReputation:-500]
+			
+			[UniqueEncounter:true]
+			
+			[Territory:KOTH Territory]		
+			[MinDistanceFromTerritoryCenter:3000]
+				
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:10000]
+			[ThreatScoreMinimum:5]
+			[ThreatScoreMaximum:-1]
+						
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[IgnoreGlobalBlockReplacer:false]
+			
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: InsectNoun Strike Cyclone]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[RivalAiSpawn:true]
+			[RivalAiSpaceSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Cyclone Fighter Bomber">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+					<Behaviour>GVE-BTFN-Behavior-Strike-Test</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!--Friendly Cyclone: 86-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
@@ -733,7 +795,13 @@
 			[MinimumPlayerCredits:5000000]
 			
 			[FactionOwner:BTFN]
-			
+			[MinDistanceFromTerritoryCenter:2000]
+				
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:10000]
+			[ThreatScoreMinimum:1000]
+			[ThreatScoreMaximum:1000]
+
 			[UsePlayerCountCheck:false]
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:1]
@@ -809,6 +877,7 @@
 
 		<!--MONK Encounters-->
 
+		<!--Rocinante: 666-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
@@ -831,8 +900,14 @@
 			[MinimumPlayerCredits:5000000]
 			
 			[FactionOwner:MONK]
-			
-			[UsePlayerCountCheck:true]
+			[MinDistanceFromTerritoryCenter:4000]
+				
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:10000]
+			[ThreatScoreMinimum:2000]
+			[ThreatScoreMaximum:-1]
+						
+			[UsePlayerCountCheck:false]
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:3]
 			
@@ -906,6 +981,7 @@
 			</Prefabs>
 		</SpawnGroup>
 
+		<!--Proteus: 781-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
@@ -928,8 +1004,14 @@
 			[MinimumPlayerCredits:5000000]
 			
 			[FactionOwner:MONK]
-			
-			[UsePlayerCountCheck:true]
+			[MinDistanceFromTerritoryCenter:4000]
+				
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:10000]
+			[ThreatScoreMinimum:1000]
+			[ThreatScoreMaximum:-1]
+						
+			[UsePlayerCountCheck:false]
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:2]
 			
@@ -1002,6 +1084,7 @@
 			</Prefabs>
 		</SpawnGroup>
 
+		<!--Tempano Ravager: 627-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
@@ -1024,8 +1107,14 @@
 			[MinimumPlayerCredits:1000000]
 			
 			[FactionOwner:MONK]
-			
-			[UsePlayerCountCheck:true]
+			[MinDistanceFromTerritoryCenter:4000]
+				
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:10000]
+			[ThreatScoreMinimum:500]
+			[ThreatScoreMaximum:2000]
+						
+			[UsePlayerCountCheck:false]
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:1]
 			
@@ -1099,6 +1188,7 @@
 			</Prefabs>
 		</SpawnGroup>
 
+		<!--Cyclone: 86-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
@@ -1121,17 +1211,23 @@
 			[MinimumPlayerCredits:100000]
 			
 			[FactionOwner:MONK]
-			
+			[MinDistanceFromTerritoryCenter:2000]
+				
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:10000]
+			[ThreatScoreMinimum:100]
+			[ThreatScoreMaximum:1000]
+						
 			[UsePlayerCountCheck:false]
 			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:1]
+			[MinimumPlayers:2]
+			
+			[UniqueEncounter:true]
 			
 			[UsePlayerFactionReputation:true]
 			[PlayerReputationCheckRadius:10000]
 			[MinimumReputation:-1501]
 			[MaximumReputation:-500]
-			
-			[UniqueEncounter:true]
 			
 			[Territory:KOTH Territory]		
 						
@@ -1195,6 +1291,7 @@
 			</Prefabs>
 		</SpawnGroup>
 		
+		<!--Impaler: 65-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
@@ -1222,7 +1319,13 @@
 			[MaximumReputation:-500]
 			
 			[FactionOwner:MONK]
-			
+			[MinDistanceFromTerritoryCenter:2000]
+				
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:10000]
+			[ThreatScoreMinimum:0]
+			[ThreatScoreMaximum:1000]
+
 			[UsePlayerCountCheck:false]
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:2]
@@ -1291,6 +1394,7 @@
 			</Prefabs>
 		</SpawnGroup>
 		
+		<!--Friendly Cyclone: 86-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
@@ -1313,7 +1417,13 @@
 			[MinimumPlayerCredits:5000000]
 			
 			[FactionOwner:MONK]
-			
+			[MinDistanceFromTerritoryCenter:2000]
+				
+			[UseThreatLevelCheck:true]
+			[ThreatLevelCheckRange:10000]
+			[ThreatScoreMinimum:500]
+			[ThreatScoreMaximum:1000]
+
 			[UsePlayerCountCheck:false]
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:1]

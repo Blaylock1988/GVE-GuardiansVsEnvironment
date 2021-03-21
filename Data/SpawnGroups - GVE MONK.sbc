@@ -8,7 +8,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) MONK Trade Station</SubtypeId>
+				<SubtypeId>(NPC-GVE) MONK Trade Station</SubtypeId> <!--Threat Score: 313-->
 			</Id>
 			<Description>
 
@@ -75,11 +75,12 @@
 		</SpawnGroup>
 		
 		<!--MONK Encounters-->
-
+		
+		<!--Rocinante: 666-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) MONK Defense Rocinante</SubtypeId>
+				<SubtypeId>(NPC-GVE) MONK Defense Rocinante</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -101,8 +102,8 @@
 			
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
-			[KnownPlayerLocationMinSpawnedEncounters:6]
-			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			[KnownPlayerLocationMinSpawnedEncounters:4]
+			[KnownPlayerLocationMaxSpawnedEncounters:6]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -165,10 +166,11 @@
 			</Prefabs>
 		</SpawnGroup>
 
+		<!--Proteus: 781-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) MONK Defense Proteus</SubtypeId>
+				<SubtypeId>(NPC-GVE) MONK Defense Proteus</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -191,7 +193,7 @@
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:3]
-			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:5]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -253,10 +255,11 @@
 			</Prefabs>
 		</SpawnGroup>
 
+		<!--Tempano Ravager: 627-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) MONK Defense Tempano Ravager</SubtypeId>
+				<SubtypeId>(NPC-GVE) MONK Defense Tempano Ravager</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -279,7 +282,7 @@
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:2]
-			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:4]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -339,10 +342,11 @@
 			</Prefabs>
 		</SpawnGroup>
 
+		<!--Cyclone: 86-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) MONK Defense Fighter Cyclone</SubtypeId>
+				<SubtypeId>(NPC-GVE) MONK Defense Fighter Cyclone</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -364,8 +368,8 @@
 			
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
-			[KnownPlayerLocationMinSpawnedEncounters:-1]
-			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			[KnownPlayerLocationMinSpawnedEncounters:1]
+			[KnownPlayerLocationMaxSpawnedEncounters:3]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -427,10 +431,11 @@
 			</Prefabs>
 		</SpawnGroup>
 		
+		<!--Impaler: 65-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) MONK Defense Impaler</SubtypeId>
+				<SubtypeId>(NPC-GVE) MONK Defense Impaler</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -452,8 +457,8 @@
 			
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
-			[KnownPlayerLocationMinSpawnedEncounters:-1]
-			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			[KnownPlayerLocationMinSpawnedEncounters:0]
+			[KnownPlayerLocationMaxSpawnedEncounters:2]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]

@@ -8,7 +8,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) BTFN Trade Station</SubtypeId>
+				<SubtypeId>(NPC-GVE) BTFN Trade Station</SubtypeId> <!--Threat Score: 369-->
 			</Id>
 			<Description>
 
@@ -76,10 +76,11 @@
 
 		<!--BTFN Encounters-->
 
+		<!--Roughneck: 889-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) BTFN Defense Roughneck</SubtypeId>
+				<SubtypeId>(NPC-GVE) BTFN Defense Roughneck</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -95,14 +96,14 @@
 			
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:4]
+			[MinimumPlayers:1]
 						
 			[UniqueEncounter:true]
 			
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
-			[KnownPlayerLocationMinSpawnedEncounters:6]
-			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			[KnownPlayerLocationMinSpawnedEncounters:5]
+			[KnownPlayerLocationMaxSpawnedEncounters:7]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -164,10 +165,11 @@
 			</Prefabs>
 		</SpawnGroup>
 		
+		<!--Eclipse: 1203-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) BTFN Defense Eclipse</SubtypeId>
+				<SubtypeId>(NPC-GVE) BTFN Defense Eclipse</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -183,14 +185,14 @@
 			
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:3]
+			[MinimumPlayers:1]
 						
 			[UniqueEncounter:true]
 			
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
-			[KnownPlayerLocationMinSpawnedEncounters:3]
-			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			[KnownPlayerLocationMinSpawnedEncounters:4]
+			[KnownPlayerLocationMaxSpawnedEncounters:6]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -252,6 +254,7 @@
 			</Prefabs>
 		</SpawnGroup>
 
+		<!--Tempano Ravager: 627-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
@@ -271,14 +274,14 @@
 			
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:2]
+			[MinimumPlayers:1]
 						
 			[UniqueEncounter:true]
 			
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:2]
-			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:4]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -338,10 +341,100 @@
 			</Prefabs>
 		</SpawnGroup>
 
+		<!--Wildfire: 147-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) BTFN Defense Strike Cyclone</SubtypeId>
+				<SubtypeId>(NPC-GVE) BTFN Defense Fighter Wildfire</SubtypeId> 
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[SpaceRandomEncounter:true]
+			
+			[IgnoreCleanupRules:false]
+			[ReplenishSystems:true]
+			[SpawnRandomCargo:false]
+			[DisableDampeners:true]
+			
+			[FactionOwner:BTFN]
+			
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:10000]
+			[MinimumPlayers:1]
+			
+			[UniqueEncounter:true]
+						
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:1]
+			[KnownPlayerLocationMaxSpawnedEncounters:3]
+						
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[IgnoreGlobalBlockReplacer:false]
+			
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: InsectNoun Wildfire Heavy Fighter]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			[RivalAiSpawn:true]
+			[RivalAiSpaceSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Wildfire Heavy Fighter">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+					<Behaviour>GVE-BTFN-Behavior-Fighter-Test</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>		
+
+		<!--Cyclone: 86-->
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) BTFN Defense Strike Cyclone</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -363,8 +456,8 @@
 			
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
-			[KnownPlayerLocationMinSpawnedEncounters:-1]
-			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			[KnownPlayerLocationMinSpawnedEncounters:0]
+			[KnownPlayerLocationMaxSpawnedEncounters:2]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -426,93 +519,6 @@
 			</Prefabs>
 		</SpawnGroup>
 
-		<SpawnGroup>
-			<Id>
-				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) BTFN Defense Fighter Wildfire</SubtypeId>
-			</Id>
-			<Description>
-
-			[Modular Encounters SpawnGroup]
-			[SpaceRandomEncounter:true]
-			
-			[IgnoreCleanupRules:false]
-			[ReplenishSystems:true]
-			[SpawnRandomCargo:false]
-			[DisableDampeners:true]
-			
-			[FactionOwner:BTFN]
-			
-			[UsePlayerCountCheck:true]
-			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:1]
-			
-			[UniqueEncounter:true]
-						
-			[UseKnownPlayerLocations:true]
-			[KnownPlayerLocationMustMatchFaction:true]
-			[KnownPlayerLocationMinSpawnedEncounters:-1]
-			[KnownPlayerLocationMaxSpawnedEncounters:-1]
-						
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
-			[IgnoreGlobalBlockReplacer:false]
-			
-			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
-			[AllowPartialNames:true]	
-			
-			[OverrideBlockDamageModifier:false]
-			[BlockDamageModifier:100]
-			[GridsAreDestructable:true]
-			[GridsAreEditable:false]
-
-			[ShiftBlockColorsHue:true]
-			[RandomHueShift:true]
-
-			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: InsectNoun Wildfire Heavy Fighter]
-			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
-			
-			[ConfigureSpecialNpcThrusters:true]
-			[RestrictNpcIonThrust:true]
-			[NpcIonThrustPowerMultiply:0.0001]
-			[RestrictNpcAtmoThrust:true]
-			[NpcAtmoThrustPowerMultiply:0.0001]
-			[RestrictNpcHydroThrust:true]
-			[NpcHydroThrustPowerMultiply:0.0001]
-			
-			[ChangeTurretSettings:true]
-			[TurretRange:1500]
-			[TurretIdleRotation:false]
-			[TurretTargetMeteors:false]
-			[TurretTargetMissiles:false]
-			[TurretTargetCharacters:true]
-			[TurretTargetSmallGrids:true]
-			[TurretTargetLargeGrids:true]
-			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
-			
-			[RivalAiSpawn:true]
-			[RivalAiSpaceSpawn:true]
-			[UseRivalAi:true]
-			[RivalAiReplaceRemoteControl:true]
-			
-			</Description>
-			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
-			<IsPirate>true</IsPirate>
-			<Frequency>5.0</Frequency>
-			<Prefabs>
-				<Prefab SubtypeId="GVE-NPC Wildfire Heavy Fighter">
-					<Position>
-						<X>0.0</X>
-						<Y>0.0</Y>
-						<Z>0.0</Z>
-					</Position>
-					<Speed>50</Speed>
-					<Behaviour>GVE-BTFN-Behavior-Fighter-Test</Behaviour>
-				</Prefab>
-			</Prefabs>
-		</SpawnGroup>		
 
 	<!--Do Not Edit Below Here-->
 	</SpawnGroups>
