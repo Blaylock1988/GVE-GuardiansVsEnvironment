@@ -189,6 +189,7 @@
       [RivalAI Spawn]
       
       [UseSpawn:true]
+	  [SpawningType:CustomSpawn]
       [StartsReady:true]
       
       [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
@@ -288,14 +289,17 @@
       [RivalAI Spawn]
       
       [UseSpawn:true]
+	  [SpawningType:CustomSpawn]
       [StartsReady:true]
       
-      [SpawnGroups:(NPC-GVE) BTFN Defense Strike Cyclone]
-	  [SpawnGroups:(NPC-GVE) BTFN Defense Fighter Wildfire]
+      [SpawnGroups:(NPC-GVE) BTFN Reinforcement Strike Cyclone]
+	  [SpawnGroups:(NPC-GVE) BTFN Reinforcement Fighter Wildfire]
 
-      [MinDistance:400]
+      [UseRelativeSpawnPosition:false]
+	  [MinDistance:400]
       [MaxDistance:700]
-      
+      [IgnoreSafetyChecks:false]
+	  
       </Description>
     </EntityComponent>
 
@@ -385,14 +389,17 @@
       [RivalAI Spawn]
       
       [UseSpawn:true]
+	  [SpawningType:CustomSpawn]
       [StartsReady:true]
       
-      [SpawnGroups:(NPC-GVE) MONK Defense Fighter Cyclone]
-	  [SpawnGroups:(NPC-GVE) MONK Defense Impaler]
+      [SpawnGroups:(NPC-GVE) MONK Reinforcement Fighter Cyclone]
+	  [SpawnGroups:(NPC-GVE) MONK Reinforcement Impaler]
 
-      [MinDistance:400]
+      [UseRelativeSpawnPosition:false]
+	  [MinDistance:400]
       [MaxDistance:700]
-      
+      [IgnoreSafetyChecks:false]
+
       </Description>
     </EntityComponent>
 
@@ -719,7 +726,7 @@
       </Description>
     </EntityComponent>
 	
-		<!--future improvements coming to RAI to make this work better-->
+	<!--future improvements coming to RAI to make this work better-->
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
