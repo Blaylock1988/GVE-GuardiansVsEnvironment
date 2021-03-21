@@ -66,7 +66,7 @@
 			[MinimumPlayerCredits:10000000]
 			
 			[FactionOwner:SPRT]
-			
+
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:3]
@@ -117,9 +117,8 @@
 			[TurretTargetSmallGrids:true]
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
+			[TurretTargetNeutrals:false]
 			
-			[RivalAiSpawn:true]
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
@@ -164,8 +163,6 @@
 			[MinimumPlayerCredits:5000000]
 			
 			[FactionOwner:SPRT]
-			[MinDistanceFromTerritoryCenter:3000]
-			[MaxDistanceFromTerritoryCenter:6000]
 				
 			[UseThreatLevelCheck:true]
 			[ThreatLevelCheckRange:10000]
@@ -227,9 +224,8 @@
 			[TurretTargetSmallGrids:true]
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
+			[TurretTargetNeutrals:false]
 			
-			[RivalAiSpawn:true]
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]			
@@ -276,17 +272,12 @@
 			[MinimumPlayerCredits:5000000]
 			
 			[FactionOwner:BTFN]
-			[MinDistanceFromTerritoryCenter:4000]
 				
 			[UseThreatLevelCheck:true]
 			[ThreatLevelCheckRange:10000]
 			[ThreatScoreMinimum:2000]
 			[ThreatScoreMaximum:-1]
 						
-			[UsePlayerCountCheck:false]
-			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:3]
-			
 			[UsePlayerFactionReputation:true]
 			[PlayerReputationCheckRadius:10000]
 			[MinimumReputation:-1501]
@@ -332,9 +323,8 @@
 			[TurretTargetSmallGrids:true]
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
+			[TurretTargetNeutrals:false]
 			
-			[RivalAiSpawn:true]
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]					
@@ -376,20 +366,15 @@
 			[IncludeAllPlayersInRadius:true]
 			[IncludeFactionBalance:true]
 			[PlayerCreditsCheckRadius:10000]
-			[MinimumPlayerCredits:5000000]
+			[MinimumPlayerCredits:1000000]
 			
 			[FactionOwner:BTFN]
-			[MinDistanceFromTerritoryCenter:4000]
 				
 			[UseThreatLevelCheck:true]
 			[ThreatLevelCheckRange:10000]
 			[ThreatScoreMinimum:1000]
 			[ThreatScoreMaximum:-1]
 						
-			[UsePlayerCountCheck:false]
-			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:2]
-			
 			[UsePlayerFactionReputation:true]
 			[PlayerReputationCheckRadius:10000]
 			[MinimumReputation:-1501]
@@ -435,9 +420,8 @@
 			[TurretTargetSmallGrids:true]
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
+			[TurretTargetNeutrals:false]
 			
-			[RivalAiSpawn:true]
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
@@ -482,17 +466,12 @@
 			[MinimumPlayerCredits:1000000]
 			
 			[FactionOwner:BTFN]
-			[MinDistanceFromTerritoryCenter:4000]
 				
 			[UseThreatLevelCheck:true]
 			[ThreatLevelCheckRange:10000]
 			[ThreatScoreMinimum:500]
 			[ThreatScoreMaximum:2000]
 						
-			[UsePlayerCountCheck:false]
-			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:1]
-			
 			[UsePlayerFactionReputation:true]
 			[PlayerReputationCheckRadius:10000]
 			[MinimumReputation:-1501]
@@ -535,9 +514,8 @@
 			[TurretTargetSmallGrids:true]
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
+			[TurretTargetNeutrals:false]
 			
-			[RivalAiSpawn:true]
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]					
@@ -580,10 +558,9 @@
 			[IncludeAllPlayersInRadius:true]
 			[IncludeFactionBalance:true]
 			[PlayerCreditsCheckRadius:10000]
-			[MinimumPlayerCredits:1000000]
+			[MinimumPlayerCredits:500000]
 			
 			[FactionOwner:BTFN]
-			[MinDistanceFromTerritoryCenter:2000]
 				
 			[UseThreatLevelCheck:true]
 			[ThreatLevelCheckRange:10000]
@@ -639,9 +616,8 @@
 			[TurretTargetSmallGrids:true]
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
+			[TurretTargetNeutrals:false]
 			
-			[RivalAiSpawn:true]
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
@@ -678,39 +654,22 @@
 			[ReplenishSystems:true]
 			[SpawnRandomCargo:false]
 			[DisableDampeners:true]
-
-			[UsePlayerCredits:false]
-			[IncludeAllPlayersInRadius:true]
-			[IncludeFactionBalance:true]
-			[PlayerCreditsCheckRadius:10000]
-			[MinimumPlayerCredits:5000000]
-			
-			[FactionOwner:BTFN]
-			[MinDistanceFromTerritoryCenter:2000]
-				
-			[UseThreatLevelCheck:true]
-			[ThreatLevelCheckRange:10000]
-			[ThreatScoreMinimum:0]
-			[ThreatScoreMaximum:1000]
-
-			[UsePlayerCountCheck:false]
-			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:2]
 			
 			[UsePlayerFactionReputation:true]
 			[PlayerReputationCheckRadius:10000]
 			[MinimumReputation:-1501]
 			[MaximumReputation:-500]
 			
-			[UniqueEncounter:true]
-			
-			[Territory:KOTH Territory]		
-			[MinDistanceFromTerritoryCenter:3000]
+			[FactionOwner:BTFN]
 				
 			[UseThreatLevelCheck:true]
 			[ThreatLevelCheckRange:10000]
-			[ThreatScoreMinimum:5]
-			[ThreatScoreMaximum:-1]
+			[ThreatScoreMinimum:0]
+			[ThreatScoreMaximum:1000]
+			
+			[UniqueEncounter:true]
+			
+			[Territory:KOTH Territory]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -728,7 +687,7 @@
 			[RandomHueShift:true]
 
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: InsectNoun Strike Cyclone]
+			[RandomGridNamePattern: Impaler Drone GreekLetter-RandomNumber]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			[ConfigureSpecialNpcThrusters:true]
@@ -748,9 +707,8 @@
 			[TurretTargetSmallGrids:true]
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
+			[TurretTargetNeutrals:false]
 			
-			[RivalAiSpawn:true]
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
@@ -788,12 +746,6 @@
 			[SpawnRandomCargo:false]
 			[DisableDampeners:true]
 
-			[UsePlayerCredits:false]
-			[IncludeAllPlayersInRadius:true]
-			[IncludeFactionBalance:true]
-			[PlayerCreditsCheckRadius:10000]
-			[MinimumPlayerCredits:5000000]
-			
 			[FactionOwner:BTFN]
 			[MinDistanceFromTerritoryCenter:2000]
 				
@@ -802,10 +754,6 @@
 			[ThreatScoreMinimum:1000]
 			[ThreatScoreMaximum:1000]
 
-			[UsePlayerCountCheck:false]
-			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:1]
-			
 			[UsePlayerFactionReputation:true]
 			[PlayerReputationCheckRadius:10000]
 			[MinimumReputation:500]
@@ -851,9 +799,8 @@
 			[TurretTargetSmallGrids:true]
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
+			[TurretTargetNeutrals:false]
 			
-			[RivalAiSpawn:true]
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
@@ -886,7 +833,7 @@
 			<Description>
 
 			[Modular Encounters SpawnGroup]
-			[SpaceRandomEncounter:false]
+			[SpaceRandomEncounter:true]
 			
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
@@ -900,17 +847,12 @@
 			[MinimumPlayerCredits:5000000]
 			
 			[FactionOwner:MONK]
-			[MinDistanceFromTerritoryCenter:4000]
 				
 			[UseThreatLevelCheck:true]
 			[ThreatLevelCheckRange:10000]
 			[ThreatScoreMinimum:2000]
 			[ThreatScoreMaximum:-1]
 						
-			[UsePlayerCountCheck:false]
-			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:3]
-			
 			[UsePlayerFactionReputation:true]
 			[PlayerReputationCheckRadius:10000]
 			[MinimumReputation:-1501]
@@ -957,9 +899,8 @@
 			[TurretTargetSmallGrids:true]
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
+			[TurretTargetNeutrals:false]
 			
-			[RivalAiSpawn:true]
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]			
@@ -1001,20 +942,15 @@
 			[IncludeAllPlayersInRadius:true]
 			[IncludeFactionBalance:true]
 			[PlayerCreditsCheckRadius:10000]
-			[MinimumPlayerCredits:5000000]
+			[MinimumPlayerCredits:1000000]
 			
 			[FactionOwner:MONK]
-			[MinDistanceFromTerritoryCenter:4000]
 				
 			[UseThreatLevelCheck:true]
 			[ThreatLevelCheckRange:10000]
 			[ThreatScoreMinimum:1000]
 			[ThreatScoreMaximum:-1]
 						
-			[UsePlayerCountCheck:false]
-			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:2]
-			
 			[UsePlayerFactionReputation:true]
 			[PlayerReputationCheckRadius:10000]
 			[MinimumReputation:-1501]
@@ -1060,9 +996,8 @@
 			[TurretTargetSmallGrids:true]
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
+			[TurretTargetNeutrals:false]
 			
-			[RivalAiSpawn:true]
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]			
@@ -1104,20 +1039,15 @@
 			[IncludeAllPlayersInRadius:true]
 			[IncludeFactionBalance:true]
 			[PlayerCreditsCheckRadius:10000]
-			[MinimumPlayerCredits:1000000]
+			[MinimumPlayerCredits:500000]
 			
 			[FactionOwner:MONK]
-			[MinDistanceFromTerritoryCenter:4000]
 				
 			[UseThreatLevelCheck:true]
 			[ThreatLevelCheckRange:10000]
 			[ThreatScoreMinimum:500]
 			[ThreatScoreMaximum:2000]
 						
-			[UsePlayerCountCheck:false]
-			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:1]
-			
 			[UsePlayerFactionReputation:true]
 			[PlayerReputationCheckRadius:10000]
 			[MinimumReputation:-1501]
@@ -1163,9 +1093,8 @@
 			[TurretTargetSmallGrids:true]
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
+			[TurretTargetNeutrals:false]
 			
-			[RivalAiSpawn:true]
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]					
@@ -1203,25 +1132,14 @@
 			[ReplenishSystems:true]
 			[SpawnRandomCargo:false]
 			[DisableDampeners:true]
-
-			[UsePlayerCredits:false]
-			[IncludeAllPlayersInRadius:true]
-			[IncludeFactionBalance:true]
-			[PlayerCreditsCheckRadius:10000]
-			[MinimumPlayerCredits:100000]
 			
 			[FactionOwner:MONK]
-			[MinDistanceFromTerritoryCenter:2000]
 				
 			[UseThreatLevelCheck:true]
 			[ThreatLevelCheckRange:10000]
 			[ThreatScoreMinimum:100]
 			[ThreatScoreMaximum:1000]
 						
-			[UsePlayerCountCheck:false]
-			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:2]
-			
 			[UniqueEncounter:true]
 			
 			[UsePlayerFactionReputation:true]
@@ -1267,9 +1185,8 @@
 			[TurretTargetSmallGrids:true]
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
+			[TurretTargetNeutrals:false]
 			
-			[RivalAiSpawn:true]
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
@@ -1306,12 +1223,6 @@
 			[ReplenishSystems:true]
 			[SpawnRandomCargo:false]
 			[DisableDampeners:true]
-
-			[UsePlayerCredits:false]
-			[IncludeAllPlayersInRadius:true]
-			[IncludeFactionBalance:true]
-			[PlayerCreditsCheckRadius:10000]
-			[MinimumPlayerCredits:5000000]
 			
 			[UsePlayerFactionReputation:true]
 			[PlayerReputationCheckRadius:10000]
@@ -1319,20 +1230,15 @@
 			[MaximumReputation:-500]
 			
 			[FactionOwner:MONK]
-			[MinDistanceFromTerritoryCenter:2000]
 				
 			[UseThreatLevelCheck:true]
 			[ThreatLevelCheckRange:10000]
 			[ThreatScoreMinimum:0]
 			[ThreatScoreMaximum:1000]
-
-			[UsePlayerCountCheck:false]
-			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:2]
 			
 			[UniqueEncounter:true]
 			
-			[Territory:KOTH Territory]		
+			[Territory:KOTH Territory]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
@@ -1370,9 +1276,8 @@
 			[TurretTargetSmallGrids:true]
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
+			[TurretTargetNeutrals:false]
 			
-			[RivalAiSpawn:true]
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
@@ -1410,23 +1315,12 @@
 			[SpawnRandomCargo:false]
 			[DisableDampeners:true]
 
-			[UsePlayerCredits:false]
-			[IncludeAllPlayersInRadius:true]
-			[IncludeFactionBalance:true]
-			[PlayerCreditsCheckRadius:10000]
-			[MinimumPlayerCredits:5000000]
-			
 			[FactionOwner:MONK]
-			[MinDistanceFromTerritoryCenter:2000]
 				
 			[UseThreatLevelCheck:true]
 			[ThreatLevelCheckRange:10000]
 			[ThreatScoreMinimum:500]
 			[ThreatScoreMaximum:1000]
-
-			[UsePlayerCountCheck:false]
-			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:1]
 			
 			[UsePlayerFactionReputation:true]
 			[PlayerReputationCheckRadius:10000]
@@ -1473,9 +1367,8 @@
 			[TurretTargetSmallGrids:true]
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
+			[TurretTargetNeutrals:false]
 			
-			[RivalAiSpawn:true]
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
