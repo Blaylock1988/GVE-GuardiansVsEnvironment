@@ -142,9 +142,8 @@
 			[TurretTargetSmallGrids:true]
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
+			[TurretTargetNeutrals:false]
 			
-			[RivalAiSpawn:true]
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]			
@@ -231,9 +230,8 @@
 			[TurretTargetSmallGrids:true]
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
+			[TurretTargetNeutrals:false]
 			
-			[RivalAiSpawn:true]
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]			
@@ -317,9 +315,8 @@
 			[TurretTargetSmallGrids:true]
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
+			[TurretTargetNeutrals:false]
 			
-			[RivalAiSpawn:true]
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]					
@@ -359,10 +356,6 @@
 			[DisableDampeners:true]
 			
 			[FactionOwner:MONK]
-			
-			[UsePlayerCountCheck:false]
-			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:1]
 			
 			[UniqueEncounter:true]
 			
@@ -407,9 +400,8 @@
 			[TurretTargetSmallGrids:true]
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
+			[TurretTargetNeutrals:false]
 			
-			[RivalAiSpawn:true]
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
@@ -448,11 +440,7 @@
 			[DisableDampeners:true]
 			
 			[FactionOwner:MONK]
-			
-			[UsePlayerCountCheck:false]
-			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:1]
-			
+						
 			[UniqueEncounter:true]
 			
 			[UseKnownPlayerLocations:true]
@@ -496,9 +484,160 @@
 			[TurretTargetSmallGrids:true]
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
-			[TurretTargetNeutrals:true]
+			[TurretTargetNeutrals:false]
 			
-			[RivalAiSpawn:true]
+			[RivalAiSpaceSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Impaler">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+					<Behaviour>GVE-MONK-Behavior-Fighter-Test</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<!--Reinforcement Cyclone: 86-->
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) MONK Reinforcement Fighter Cyclone</SubtypeId> 
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[IgnoreCleanupRules:false]
+			[ReplenishSystems:true]
+			[SpawnRandomCargo:false]
+			[DisableDampeners:true]
+			
+			[FactionOwner:MONK]
+									
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[IgnoreGlobalBlockReplacer:false]
+			
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Fighter Cyclone GreekLetter-RandomNumber]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:false]
+			
+			[RivalAiSpaceSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Cyclone Fighter Bomber">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>50</Speed>
+					<Behaviour>GVE-MONK-Behavior-Fighter-Test</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<!--Reinforcement Impaler: 65-->
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE) MONK Reinforcement Impaler</SubtypeId> 
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[IgnoreCleanupRules:false]
+			[ReplenishSystems:true]
+			[SpawnRandomCargo:false]
+			[DisableDampeners:true]
+			
+			[FactionOwner:MONK]
+						
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
+			[IgnoreGlobalBlockReplacer:false]
+			
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Fighter Cyclone GreekLetter-RandomNumber]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustPowerMultiply:0.0001]
+			
+			[ChangeTurretSettings:true]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:false]
+			
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
