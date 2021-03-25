@@ -41,6 +41,7 @@
 	  [UseNoTargetTimer:true]
 	  [NoTargetTimerTrigger:600]
 	  [UseRetreatTimer:false]
+	  [RemoteControlCode:Solo-Donnager]
 	  
 	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 		  
@@ -91,6 +92,7 @@
 	  [UseNoTargetTimer:true]
 	  [NoTargetTimerTrigger:600]
 	  [UseRetreatTimer:false]
+	  [RemoteControlCode:Solo-Lexington]
 	  	  
 	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 		  

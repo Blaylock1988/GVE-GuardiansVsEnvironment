@@ -8,7 +8,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) BTFN Trade Station</SubtypeId> <!--Threat Score: 369-->
+				<SubtypeId>(NPC-GVE)-BTFN-TradeStation</SubtypeId> <!--Threat Score: 369-->
 			</Id>
 			<Description>
 
@@ -24,7 +24,6 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
 			[ReplenishSystems:true]
-			[UniqueEncounter:true]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
 			
@@ -80,7 +79,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) BTFN Defense Roughneck</SubtypeId> 
+				<SubtypeId>(NPC-GVE)-Defense-BTFN-Roughneck</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -97,8 +96,6 @@
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:1]
-						
-			[UniqueEncounter:true]
 			
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
@@ -143,6 +140,10 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:false]
 			
+			[UseRemoteControlCodeRestrictions:true]			
+			[RemoteControlCode:Solo-Roughneck]
+			[RemoteControlCodeMinDistance:9999999]
+
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]					
@@ -168,7 +169,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) BTFN Defense Eclipse</SubtypeId> 
+				<SubtypeId>(NPC-GVE)-Defense-BTFN-Eclipse</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -185,8 +186,6 @@
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:1]
-						
-			[UniqueEncounter:true]
 			
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
@@ -256,7 +255,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) BTFN Defense Tempano Ravager</SubtypeId>
+				<SubtypeId>(NPC-GVE)-Defense-BTFN-TempanoRavager</SubtypeId>
 			</Id>
 			<Description>
 
@@ -273,8 +272,6 @@
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:1]
-						
-			[UniqueEncounter:true]
 			
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
@@ -342,7 +339,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) BTFN Defense Fighter Wildfire</SubtypeId> 
+				<SubtypeId>(NPC-GVE)-Defense-BTFN-Wildfire</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -360,8 +357,6 @@
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:1]
 			
-			[UniqueEncounter:true]
-						
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:1]
@@ -371,6 +366,7 @@
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
 			[IgnoreGlobalBlockReplacer:false]
 			
+			[EraseIngameScripts:true]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:true]	
 			
@@ -430,7 +426,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) BTFN Defense Strike Cyclone</SubtypeId> 
+				<SubtypeId>(NPC-GVE)-Defense-BTFN-StrikeCyclone</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -448,8 +444,6 @@
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:1]
 						
-			[UniqueEncounter:true]
-			
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:0]
@@ -459,6 +453,7 @@
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
 			[IgnoreGlobalBlockReplacer:false]
 			
+			[EraseIngameScripts:true]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:true]	
 			
@@ -514,13 +509,11 @@
 			</Prefabs>
 		</SpawnGroup>
 
-
-
 		<!--Reinforcement Wildfire: 147-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) BTFN Reinforcement Fighter Wildfire</SubtypeId> 
+				<SubtypeId>(NPC-GVE)-Reinforcement-BTFN-DDSWildfire</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -596,7 +589,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) BTFN Reinforcement Strike Cyclone</SubtypeId> 
+				<SubtypeId>(NPC-GVE)-Reinforcement-BTFN-DDSStrikeCyclone</SubtypeId> 
 			</Id>
 			<Description>
 

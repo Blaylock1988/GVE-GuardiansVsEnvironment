@@ -8,7 +8,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) MONK Trade Station</SubtypeId> <!--Threat Score: 313-->
+				<SubtypeId>(NPC-GVE)-MONK-TradeStation</SubtypeId> <!--Threat Score: 313-->
 			</Id>
 			<Description>
 
@@ -24,7 +24,6 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
 			[ReplenishSystems:true]
-			[UniqueEncounter:true]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
 			
@@ -80,7 +79,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) MONK Defense Rocinante</SubtypeId> 
+				<SubtypeId>(NPC-GVE)-Defense-MONK-Rocinante</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -97,8 +96,6 @@
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:1]
-			
-			[UniqueEncounter:true]
 			
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
@@ -144,6 +141,10 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:false]
 			
+			[UseRemoteControlCodeRestrictions:true]			
+			[RemoteControlCode:Solo-Rocinante]
+			[RemoteControlCodeMinDistance:9999999]
+
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]			
@@ -169,7 +170,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) MONK Defense Proteus</SubtypeId> 
+				<SubtypeId>(NPC-GVE)-Defense-MONK-Proteus</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -186,8 +187,6 @@
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:1]
-			
-			[UniqueEncounter:true]
 			
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
@@ -257,7 +256,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) MONK Defense Tempano Ravager</SubtypeId> 
+				<SubtypeId>(NPC-GVE)-Defense-MONK-TempanoRavager</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -274,8 +273,6 @@
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:1]
-			
-			[UniqueEncounter:true]
 			
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
@@ -343,7 +340,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) MONK Defense Fighter Cyclone</SubtypeId> 
+				<SubtypeId>(NPC-GVE)-Defense-MONK-FighterCyclone</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -357,8 +354,6 @@
 			
 			[FactionOwner:MONK]
 			
-			[UniqueEncounter:true]
-			
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:1]
@@ -368,6 +363,7 @@
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
 			[IgnoreGlobalBlockReplacer:false]
 			
+			[EraseIngameScripts:true]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:true]	
 			
@@ -427,7 +423,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) MONK Defense Impaler</SubtypeId> 
+				<SubtypeId>(NPC-GVE)-Defense-MONK-Impaler</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -441,8 +437,6 @@
 			
 			[FactionOwner:MONK]
 						
-			[UniqueEncounter:true]
-			
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:0]
@@ -452,6 +446,7 @@
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
 			[IgnoreGlobalBlockReplacer:false]
 			
+			[EraseIngameScripts:true]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:true]	
 			
@@ -511,7 +506,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) MONK Reinforcement Fighter Cyclone</SubtypeId> 
+				<SubtypeId>(NPC-GVE)-Reinforcement-MONK-DDSFighterCyclone</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -587,7 +582,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) MONK Reinforcement Impaler</SubtypeId> 
+				<SubtypeId>(NPC-GVE)-Reinforcement-MONK-Impaler</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -616,7 +611,7 @@
 			[RandomHueShift:true]
 
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Fighter Cyclone GreekLetter-RandomNumber]
+			[RandomGridNamePattern: Impaler Drone GreekLetter-RandomNumber]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			[ConfigureSpecialNpcThrusters:true]

@@ -167,6 +167,7 @@
 	  [UseNoTargetTimer:true]
 	  [NoTargetTimerTrigger:600]
 	  [UseRetreatTimer:false]
+	  [RemoteControlCode:Solo-Rocinante]
 	  	  
 	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 		  
@@ -329,6 +330,7 @@
 	  [StrafeMinimumSafeAngleFromTarget:35]
 	  [AngleAllowedForForwardThrust:60]
 	  [MaxVelocityAngleForSpeedControl:35]
+	  [RemoteControlCode:Solo-MONK-FriendlyFighter]
 	  
 	  [UseStaticGuns:true]
 	  [UseTurrets:true]

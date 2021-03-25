@@ -7,7 +7,7 @@
 		<SpawnGroup>
 		   <Id>
 			  <TypeId>SpawnGroupDefinition</TypeId>
-			  <SubtypeId>(NPC-GVE) KOTH Territory</SubtypeId>
+			  <SubtypeId>(NPC-GVE)-KOTH-Territory</SubtypeId>
 		   </Id>
 		   <Description>
 
@@ -47,7 +47,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH SPRT Donnager</SubtypeId> 
+				<SubtypeId>(NPC-GVE)-KOTH-SPRT-Donnager</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -64,14 +64,13 @@
 			[IncludeFactionBalance:true]
 			[PlayerCreditsCheckRadius:10000]
 			[MinimumPlayerCredits:10000000]
+			[MaximumPlayerCredits:-1]
 			
 			[FactionOwner:SPRT]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:3]
-			
-			[UniqueEncounter:true]
+			[MinimumPlayers:3]			
 			
 			[Territory:KOTH Territory]		
 			[MinDistanceFromTerritoryCenter:4000]
@@ -119,6 +118,10 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:false]
 			
+			[UseRemoteControlCodeRestrictions:true]			
+			[RemoteControlCode:Solo-Donnager]
+			[RemoteControlCodeMinDistance:9999999]
+			
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
@@ -144,7 +147,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH SPRT Lexington</SubtypeId> 
+				<SubtypeId>(NPC-GVE)-KOTH-SPRT-Lexington</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -161,6 +164,7 @@
 			[IncludeFactionBalance:true]
 			[PlayerCreditsCheckRadius:10000]
 			[MinimumPlayerCredits:5000000]
+			[MaximumPlayerCredits:-1]
 			
 			[FactionOwner:SPRT]
 				
@@ -177,8 +181,6 @@
 			[PlayerReputationCheckRadius:10000]
 			[MinimumReputation:-1501]
 			[MaximumReputation:-500]
-			
-			[UniqueEncounter:true]
 			
 			[Territory:KOTH Territory]		
 			[MinDistanceFromTerritoryCenter:3000]
@@ -253,7 +255,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH BTFN Roughneck</SubtypeId>
+				<SubtypeId>(NPC-GVE)-KOTH-BTFN-Roughneck</SubtypeId>
 			</Id>
 			<Description>
 
@@ -270,6 +272,7 @@
 			[IncludeFactionBalance:true]
 			[PlayerCreditsCheckRadius:10000]
 			[MinimumPlayerCredits:5000000]
+			[MaximumPlayerCredits:-1]
 			
 			[FactionOwner:BTFN]
 				
@@ -282,8 +285,6 @@
 			[PlayerReputationCheckRadius:10000]
 			[MinimumReputation:-1501]
 			[MaximumReputation:-500]
-			
-			[UniqueEncounter:true]
 			
 			[Territory:KOTH Territory]		
 						
@@ -325,6 +326,10 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:false]
 			
+			[UseRemoteControlCodeRestrictions:true]			
+			[RemoteControlCode:Solo-Roughneck]
+			[RemoteControlCodeMinDistance:9999999]
+			
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]					
@@ -350,7 +355,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH BTFN Eclipse</SubtypeId>
+				<SubtypeId>(NPC-GVE)-KOTH-BTFN-Eclipse</SubtypeId>
 			</Id>
 			<Description>
 
@@ -367,6 +372,7 @@
 			[IncludeFactionBalance:true]
 			[PlayerCreditsCheckRadius:10000]
 			[MinimumPlayerCredits:1000000]
+			[MaximumPlayerCredits:-1]
 			
 			[FactionOwner:BTFN]
 				
@@ -379,8 +385,6 @@
 			[PlayerReputationCheckRadius:10000]
 			[MinimumReputation:-1501]
 			[MaximumReputation:-500]
-			
-			[UniqueEncounter:true]
 			
 			[Territory:KOTH Territory]		
 						
@@ -447,7 +451,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH BTFN Tempano Ravager</SubtypeId>
+				<SubtypeId>(NPC-GVE)-KOTH-BTFN-TempanoRavager</SubtypeId>
 			</Id>
 			<Description>
 
@@ -464,6 +468,7 @@
 			[IncludeFactionBalance:true]
 			[PlayerCreditsCheckRadius:10000]
 			[MinimumPlayerCredits:1000000]
+			[MaximumPlayerCredits:-1]
 			
 			[FactionOwner:BTFN]
 				
@@ -476,8 +481,6 @@
 			[PlayerReputationCheckRadius:10000]
 			[MinimumReputation:-1501]
 			[MaximumReputation:-500]
-			
-			[UniqueEncounter:true]
 			
 			[Territory:KOTH Territory]		
 						
@@ -542,7 +545,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH BTFN Fighter Wildfire</SubtypeId>
+				<SubtypeId>(NPC-GVE)-KOTH-BTFN-Wildfire</SubtypeId>
 			</Id>
 			<Description>
 
@@ -559,6 +562,7 @@
 			[IncludeFactionBalance:true]
 			[PlayerCreditsCheckRadius:10000]
 			[MinimumPlayerCredits:500000]
+			[MaximumPlayerCredits:-1]
 			
 			[FactionOwner:BTFN]
 				
@@ -571,8 +575,6 @@
 			[PlayerCountCheckRadius:10000]
 			[MinimumPlayers:2]
 			
-			[UniqueEncounter:true]
-			
 			[UsePlayerFactionReputation:true]
 			[PlayerReputationCheckRadius:10000]
 			[MinimumReputation:-1501]
@@ -584,6 +586,7 @@
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
 			[IgnoreGlobalBlockReplacer:false]
 			
+			[EraseIngameScripts:true]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:true]	
 			
@@ -643,7 +646,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH BTFN Strike Cyclone</SubtypeId>
+				<SubtypeId>(NPC-GVE)-KOTH-BTFN-StrikeCyclone</SubtypeId>
 			</Id>
 			<Description>
 
@@ -667,14 +670,13 @@
 			[ThreatScoreMinimum:0]
 			[ThreatScoreMaximum:1000]
 			
-			[UniqueEncounter:true]
-			
 			[Territory:KOTH Territory]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
 			[IgnoreGlobalBlockReplacer:false]
 			
+			[EraseIngameScripts:true]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:true]	
 			
@@ -687,7 +689,7 @@
 			[RandomHueShift:true]
 
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Impaler Drone GreekLetter-RandomNumber]
+			[RandomGridNamePattern: InsectNoun Strike Cyclone]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			[ConfigureSpecialNpcThrusters:true]
@@ -734,7 +736,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH BTFN Friendly Fighter</SubtypeId>
+				<SubtypeId>(NPC-GVE)-KOTH-BTFN-FriendlyFighterCyclone</SubtypeId>
 			</Id>
 			<Description>
 
@@ -759,14 +761,13 @@
 			[MinimumReputation:500]
 			[MaximumReputation:1501]
 			
-			[UniqueEncounter:true]
-			
 			[Territory:KOTH Territory]		
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
 			[IgnoreGlobalBlockReplacer:false]
 			
+			[EraseIngameScripts:true]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:true]	
 			
@@ -801,6 +802,10 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:false]
 			
+			[UseRemoteControlCodeRestrictions:true]			
+			[RemoteControlCode:Solo-BTFN-FriendlyFighter]
+			[RemoteControlCodeMinDistance:9999999]
+			
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
@@ -828,7 +833,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH MONK Rocinante</SubtypeId>
+				<SubtypeId>(NPC-GVE)-KOTH-MONK-Rocinante</SubtypeId>
 			</Id>
 			<Description>
 
@@ -845,6 +850,7 @@
 			[IncludeFactionBalance:true]
 			[PlayerCreditsCheckRadius:10000]
 			[MinimumPlayerCredits:5000000]
+			[MaximumPlayerCredits:-1]
 			
 			[FactionOwner:MONK]
 				
@@ -857,8 +863,6 @@
 			[PlayerReputationCheckRadius:10000]
 			[MinimumReputation:-1501]
 			[MaximumReputation:-500]
-			
-			[UniqueEncounter:true]
 			
 			[Territory:KOTH Territory]		
 						
@@ -900,6 +904,10 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:false]
+
+			[UseRemoteControlCodeRestrictions:true]			
+			[RemoteControlCode:Solo-Rocinante]
+			[RemoteControlCodeMinDistance:9999999]
 			
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
@@ -926,7 +934,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH MONK Proteus</SubtypeId>
+				<SubtypeId>(NPC-GVE)-KOTH-MONK-Proteus</SubtypeId>
 			</Id>
 			<Description>
 
@@ -943,6 +951,7 @@
 			[IncludeFactionBalance:true]
 			[PlayerCreditsCheckRadius:10000]
 			[MinimumPlayerCredits:1000000]
+			[MaximumPlayerCredits:-1]
 			
 			[FactionOwner:MONK]
 				
@@ -955,8 +964,6 @@
 			[PlayerReputationCheckRadius:10000]
 			[MinimumReputation:-1501]
 			[MaximumReputation:-500]
-			
-			[UniqueEncounter:true]
 			
 			[Territory:KOTH Territory]		
 						
@@ -1023,7 +1030,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH MONK Tempano Ravager</SubtypeId>
+				<SubtypeId>(NPC-GVE)-KOTH-MONK-TempanoRavager</SubtypeId>
 			</Id>
 			<Description>
 
@@ -1039,9 +1046,10 @@
 			[IncludeAllPlayersInRadius:true]
 			[IncludeFactionBalance:true]
 			[PlayerCreditsCheckRadius:10000]
-			[MinimumPlayerCredits:500000]
+			[MinimumPlayerCredits:1000000]
+			[MaximumPlayerCredits:-1]
 			
-			[FactionOwner:MONK]
+			[FactionOwner:BTFN]
 				
 			[UseThreatLevelCheck:true]
 			[ThreatLevelCheckRange:10000]
@@ -1053,17 +1061,12 @@
 			[MinimumReputation:-1501]
 			[MaximumReputation:-500]
 			
-			[UniqueEncounter:true]
-			
 			[Territory:KOTH Territory]		
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
 			[IgnoreGlobalBlockReplacer:false]
-			
-			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
-			[AllowPartialNames:true]	
-			
+						
 			[OverrideBlockDamageModifier:false]
 			[BlockDamageModifier:100]
 			[GridsAreDestructable:true]
@@ -1121,7 +1124,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH MONK Fighter Cyclone</SubtypeId>
+				<SubtypeId>(NPC-GVE)-KOTH-MONK-FighterCyclone</SubtypeId>
 			</Id>
 			<Description>
 
@@ -1140,8 +1143,6 @@
 			[ThreatScoreMinimum:100]
 			[ThreatScoreMaximum:1000]
 						
-			[UniqueEncounter:true]
-			
 			[UsePlayerFactionReputation:true]
 			[PlayerReputationCheckRadius:10000]
 			[MinimumReputation:-1501]
@@ -1153,6 +1154,7 @@
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
 			[IgnoreGlobalBlockReplacer:false]
 			
+			[EraseIngameScripts:true]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:true]	
 			
@@ -1202,7 +1204,7 @@
 						<Y>0.0</Y>
 						<Z>0.0</Z>
 					</Position>
-					<Speed>50</Speed>
+					<Speed>0</Speed>
 					<Behaviour>GVE-MONK-Behavior-Fighter-Test</Behaviour>
 				</Prefab>
 			</Prefabs>
@@ -1212,7 +1214,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH MONK Impaler</SubtypeId>
+				<SubtypeId>(NPC-GVE)-KOTH-MONK-Impaler</SubtypeId>
 			</Id>
 			<Description>
 
@@ -1236,14 +1238,13 @@
 			[ThreatScoreMinimum:0]
 			[ThreatScoreMaximum:1000]
 			
-			[UniqueEncounter:true]
-			
 			[Territory:KOTH Territory]
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
 			[IgnoreGlobalBlockReplacer:false]
 			
+			[EraseIngameScripts:true]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:true]	
 			
@@ -1278,6 +1279,10 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:false]
 			
+			[UseRemoteControlCodeRestrictions:true]			
+			[RemoteControlCode:Solo-MONK-FriendlyFighter]
+			[RemoteControlCodeMinDistance:9999999]
+			
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
@@ -1293,7 +1298,7 @@
 						<Y>0.0</Y>
 						<Z>0.0</Z>
 					</Position>
-					<Speed>50</Speed>
+					<Speed>0</Speed>
 					<Behaviour>GVE-MONK-Behavior-Fighter-Test</Behaviour>
 				</Prefab>
 			</Prefabs>
@@ -1303,7 +1308,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) KOTH MONK Friendly Fighter</SubtypeId>
+				<SubtypeId>(NPC-GVE)-KOTH-MONK-FriendlyFighterCyclone</SubtypeId>
 			</Id>
 			<Description>
 
@@ -1327,14 +1332,13 @@
 			[MinimumReputation:500]
 			[MaximumReputation:1501]
 			
-			[UniqueEncounter:true]
-			
 			[Territory:KOTH Territory]		
 						
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-NpcThrusters-Atmo,MES-NpcThrusters-Hydro]
 			[IgnoreGlobalBlockReplacer:false]
 			
+			[EraseIngameScripts:true]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:true]	
 			

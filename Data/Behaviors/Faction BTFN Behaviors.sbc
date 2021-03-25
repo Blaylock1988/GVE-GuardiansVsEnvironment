@@ -148,6 +148,7 @@
 	  [UseNoTargetTimer:true]
 	  [NoTargetTimerTrigger:600]
 	  [UseRetreatTimer:false]
+	  [RemoteControlCode:Solo-Roughneck]
 	  	  
 	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 		  
@@ -309,6 +310,7 @@
 	  [StrafeMinimumSafeAngleFromTarget:35]
 	  [AngleAllowedForForwardThrust:60]
 	  [MaxVelocityAngleForSpeedControl:35]
+	  [RemoteControlCode:Solo-BTFN-FriendlyFighter]
 	  
 	  [UseStaticGuns:true]
 	  [UseTurrets:true]
