@@ -156,7 +156,7 @@
       [StartsReady:true]
       [Chance:50]
       [BroadcastRandomly:true]
-      
+	  [SendToAllOnlinePlayers:true]
       [Author:{GridName}]
       [Color:Red]
       
@@ -192,10 +192,10 @@
 	  [SpawningType:CustomSpawn]
       [StartsReady:true]
       
-      [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
-	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
-	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
-	  [SpawnGroups:(NPC-GVE) Impaler]
+      [SpawnGroups:(NPC-GVE)-SPRT-DDSFighterCyclone]
+	  [SpawnGroups:(NPC-GVE)-SPRT-DDSStrikeCyclone]
+	  [SpawnGroups:(NPC-GVE)-SPRT-DDSWildfire]
+	  [SpawnGroups:(NPC-GVE)-SPRT-Impaler]
 
       [MinDistance:400]
       [MaxDistance:700]
@@ -256,7 +256,7 @@
       [StartsReady:true]
       [Chance:50]
       [BroadcastRandomly:true]
-      
+	  [SendToAllOnlinePlayers:true]
       [Author:{GridName}]
       [Color:Red]
       
@@ -292,8 +292,8 @@
 	  [SpawningType:CustomSpawn]
       [StartsReady:true]
       
-      [SpawnGroups:(NPC-GVE) BTFN Reinforcement Strike Cyclone]
-	  [SpawnGroups:(NPC-GVE) BTFN Reinforcement Fighter Wildfire]
+      [SpawnGroups:(NPC-GVE)-Reinforcement-BTFN-DDSStrikeCyclone]
+	  [SpawnGroups:(NPC-GVE)-Reinforcement-BTFN-DDSWildfire]
 
       [UseRelativeSpawnPosition:false]
 	  [MinDistance:400]
@@ -356,7 +356,7 @@
       [StartsReady:true]
       [Chance:50]
       [BroadcastRandomly:true]
-      
+	  [SendToAllOnlinePlayers:true]
       [Author:{GridName}]
       [Color:Red]
       
@@ -392,8 +392,8 @@
 	  [SpawningType:CustomSpawn]
       [StartsReady:true]
       
-      [SpawnGroups:(NPC-GVE) MONK Reinforcement Fighter Cyclone]
-	  [SpawnGroups:(NPC-GVE) MONK Reinforcement Impaler]
+      [SpawnGroups:(NPC-GVE)-Reinforcement-MONK-DDSFighterCyclone]
+	  [SpawnGroups:(NPC-GVE)-Reinforcement-MONK-Impaler]
 
       [UseRelativeSpawnPosition:false]
 	  [MinDistance:400]
@@ -856,7 +856,7 @@
       [Chance:100]
       [MaxChats:1]
       [BroadcastRandomly:true]
-      
+	  [SendToAllOnlinePlayers:true]    
       [Author:{GridName}]
       [Color:Red]
       
@@ -897,6 +897,7 @@
       [StartsReady:true]
       [Chance:10]
       [BroadcastRandomly:true]
+	  [SendToAllOnlinePlayers:true]
       [Author:{GridName}]
       [Color:Red]
       
@@ -905,6 +906,10 @@
       [BroadcastChatType:Chat]
 	  
 	  [ChatMessages:Your mother was a hamster and your father smelt of elderberries!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      [ChatMessages:Its just a flesh wound.]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Chat]
 
@@ -975,6 +980,7 @@
       [StartsReady:true]
       [Chance:100]
       [BroadcastRandomly:true]
+	  [SendToAllOnlinePlayers:true]
       [Author:{GridName}]
       [Color:White]
       
@@ -1026,9 +1032,7 @@
       [Chance:100]
       [MaxChats:1]
       [BroadcastRandomly:true]
-	  [IgnoreAntennaRequirement:true]
-	  [IgnoredAntennaRangeOverride:60000]
-      
+	  [SendToAllOnlinePlayers:true]
       [Author:{GridName}]
       [Color:Red]
       
@@ -1068,7 +1072,7 @@
       [Chance:100]
       [MaxChats:1]
       [BroadcastRandomly:true]
-      
+	  [SendToAllOnlinePlayers:true]
       [Author:{GridName}]
       [Color:Red]
       

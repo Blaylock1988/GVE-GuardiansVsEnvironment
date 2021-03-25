@@ -8,7 +8,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Stalinium Territory Player Announcer</SubtypeId>
+				<SubtypeId>(NPC-GVE)-GVE+-Boss-StaliniumTerritoryPlayerAnnouncer</SubtypeId>
 			</Id>
 			<Description>
 
@@ -61,7 +61,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Boss Donnager</SubtypeId>
+				<SubtypeId>(NPC-GVE)-SPRT-Boss-Donnager</SubtypeId>
 			</Id>
 			<Description>
 
@@ -140,7 +140,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Boss Roughneck</SubtypeId>
+				<SubtypeId>(NPC-GVE)-SPRT-Boss-Roughneck</SubtypeId>
 			</Id>
 			<Description>
 
@@ -220,7 +220,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Boss Fighter Swarm</SubtypeId>
+				<SubtypeId>(NPC-GVE)-SPRT-Boss-Fighter-Swarm</SubtypeId>
 			</Id>
 			<Description>
 
@@ -328,7 +328,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Stalinium Territory Nauvoo Distress</SubtypeId>
+				<SubtypeId>(NPC-GVE)-GVE+-Boss-StaliniumTerritoryNauvooDistress</SubtypeId>
 			</Id>
 			<Description>
 
@@ -413,7 +413,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Rocinante</SubtypeId>
+				<SubtypeId>(NPC-GVE)-SPRT-Rocinante</SubtypeId>
 			</Id>
 			<Description>
 
@@ -491,7 +491,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Donnager</SubtypeId>
+				<SubtypeId>(NPC-GVE)-SPRT-Donnager</SubtypeId>
 			</Id>
 			<Description>
 
@@ -567,7 +567,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Roughneck</SubtypeId>
+				<SubtypeId>(NPC-GVE)-SPRT-Roughneck</SubtypeId>
 			</Id>
 			<Description>
 
@@ -644,7 +644,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Lexington</SubtypeId>
+				<SubtypeId>(NPC-GVE)-SPRT-Lexington</SubtypeId>
 			</Id>
 			<Description>
 
@@ -720,7 +720,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) DDS Fighter Cyclone</SubtypeId>
+				<SubtypeId>(NPC-GVE)-SPRT-DDSFighterCyclone</SubtypeId>
 			</Id>
 			<Description>
 
@@ -797,7 +797,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) DDS Strike Cyclone</SubtypeId>
+				<SubtypeId>(NPC-GVE)-SPRT-DDSStrikeCyclone</SubtypeId>
 			</Id>
 			<Description>
 
@@ -869,7 +869,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) DDS Fighter Wildfire</SubtypeId>
+				<SubtypeId>(NPC-GVE)-SPRT-DDSWildfire</SubtypeId>
 			</Id>
 			<Description>
 
@@ -940,7 +940,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Tempano Ravager</SubtypeId>
+				<SubtypeId>(NPC-GVE)-SPRT-TempanoRavager</SubtypeId>
 			</Id>
 			<Description>
 
@@ -1015,7 +1015,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Eclipse</SubtypeId>
+				<SubtypeId>(NPC-GVE)-SPRT-Eclipse</SubtypeId>
 			</Id>
 			<Description>
 
@@ -1091,7 +1091,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Proteus</SubtypeId>
+				<SubtypeId>(NPC-GVE)-SPRT-Proteus</SubtypeId>
 			</Id>
 			<Description>
 
@@ -1167,7 +1167,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Impaler</SubtypeId>
+				<SubtypeId>(NPC-GVE)-SPRT-Impaler</SubtypeId>
 			</Id>
 			<Description>
 
@@ -1243,7 +1243,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) GVE+ Figther</SubtypeId>
+				<SubtypeId>(NPC-GVE)-GVE+-FigtherCyclone</SubtypeId>
 			</Id>
 			<Description>
 
@@ -1320,7 +1320,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Starport</SubtypeId>
+				<SubtypeId>(NPC-GVE)-GVE+-Starport</SubtypeId>
 			</Id>
 			<Description>
 
@@ -1379,7 +1379,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Defend Echo Station</SubtypeId>
+				<SubtypeId>(NPC-GVE)-GVE+-DefendEchoStation</SubtypeId>
 			</Id>
 			<Description>
 
@@ -1448,7 +1448,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Wave Spawner</SubtypeId>
+				<SubtypeId>(NPC-GVE)-GVE+-WaveSpawner</SubtypeId>
 			</Id>
 			<Description>
 
@@ -1504,7 +1504,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE) Reward Drop</SubtypeId>
+				<SubtypeId>(NPC-GVE)-GVE+-RewardDrop</SubtypeId>
 			</Id>
 			<Description>
 
