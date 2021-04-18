@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-TargetBrick-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Passive]
+
+	  [UseRetreatTimer:false]
+	  [UseNoTargetTimer:false]
+	  [UsePlayerDistanceTimer:false]  
+	  
+	  [TriggerGroups:GVE-Generic-TriggerGroup-SPRTTakeDamage]
+	  
+	  [Triggers:GVE-NPC-TargetBrick-Trigger-PlayerNear]
+	  [Triggers:GVE-NPC-TargetBrick-Trigger-Despawn]
+	  [Triggers:GVE-NPC-TargetBrick-Trigger-DespawnMES]
+	  [Triggers:GVE-NPC-TargetBrick-Trigger-Compromised]
+	  	  
+	  [TargetData: GVE-Generic-TargetProfile-EnemyPlayers]
+	  
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-TargetBrick-Trigger-PlayerNear</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [TargetDistance:15000]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	  	  
+	  [Actions:GVE-NPC-TargetBrick-Action-PlayerNear]
+	  
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-TargetBrick-Action-PlayerNear</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+      [UseChatBroadcast:true]
+      [ChatData:GVE-NPC-TargetBrick-Chat-PlayerNear]
+	  	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-TargetBrick-Chat-PlayerNear</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:false]
+	  [IgnoreAntennaRequirement:true]
+	  [IgnoredAntennaRangeOverride:50000]
+      [Author:{GridName}]
+      [Color:Red]
+      
+      [ChatMessages:A Target has been spawned.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Notify]
+	  [SendToAllOnlinePlayers:false]
+
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-TargetBrick-Trigger-Despawn</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Despawn]
+	  [UseTrigger:true]
+	  [MaxActions:1]
+	  
+	  [Actions:GVE-NPC-TargetBrick-Action-Despawned]
+	  
+      </Description>      
+    </EntityComponent>
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-TargetBrick-Trigger-DespawnMES</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:DespawnMES]
+	  [UseTrigger:true]
+	  [MaxActions:1]
+	  
+	  [Actions:GVE-NPC-TargetBrick-Action-Despawned]
+	  
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-TargetBrick-Action-Despawned</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+      [UseChatBroadcast:true]
+      [ChatData:GVE-NPC-TargetBrick-Chat-Despawned]
+
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-TargetBrick-Chat-Despawned</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:false]
+	  [IgnoreAntennaRequirement:true]
+	  [IgnoredAntennaRangeOverride:50000]
+      [Author:{GridName}]
+      [Color:Red]
+      
+      [ChatMessages:Target has despawned]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Notify]
+	  [SendToAllOnlinePlayers:false]
+
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-TargetBrick-Trigger-Compromised</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Compromised]
+	  [UseTrigger:true]
+	  [MaxActions:1]
+	  
+	  [Actions:GVE-NPC-TargetBrick-Action-Compromised]
+	  
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-TargetBrick-Action-Compromised</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [SelfDestruct:true]
+	  [StaggerWarheadDetonation:true]
+	  
+	  [GenerateExplosion:true]
+	  [ExplosionRange:30]
+	  [ExplosionDamage:15000]
+	  	  
+	  [SpawnEncounter:true]
+	  [Spawner:GVE-NPC-TargetBrick-Spawner-Compromised]
+		 
+      [UseChatBroadcast:true]
+      [ChatData:GVE-NPC-TargetBrick-Chat-Compromised]
+
+      </Description>
+    </EntityComponent>
+	
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-TargetBrick-Spawner-Compromised</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Spawn]
+	        
+      [UseSpawn:true]
+	  [SpawningType:CustomSpawn]
+      [StartsReady:true]
+      
+      [SpawnGroups:(NPC-GVE)-Practice-SPRT-TargetBrick]
+
+      [MinDistance:400]
+      [MaxDistance:700]
+
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-TargetBrick-Chat-Compromised</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+	  [IgnoreAntennaRequirement:true]
+	  [IgnoredAntennaRangeOverride:50000]
+      [BroadcastRandomly:false]
+      [Author:{GridName}]
+      [Color:Red]
+      
+      [ChatMessages:Target Destroyed]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Notify]
+	  [SendToAllOnlinePlayers:false]
+
+      </Description>      
+    </EntityComponent>
+		
+  </EntityComponents>
+</Definitions>
