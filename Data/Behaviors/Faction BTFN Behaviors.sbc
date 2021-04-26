@@ -49,7 +49,7 @@
 		  
 	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamage]
 	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamageInitial]
-
+	  [Triggers:GVE-Generic-Trigger-SPRTTargetAcquiredChatter]
 	  [Triggers:GVE-Generic-Trigger-BTFNCallDDSFighters]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
@@ -105,7 +105,7 @@
 	
 	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamage]
 	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamageInitial]
-
+	  [Triggers:GVE-Generic-Trigger-SPRTTargetAcquiredChatter]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  
@@ -154,7 +154,7 @@
 		  
 	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamage]
 	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamageInitial]
-
+	  [Triggers:GVE-Generic-Trigger-SPRTTargetAcquiredChatter]
 	  [Triggers:GVE-Generic-Trigger-BTFNCallDDSFighters]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
@@ -207,7 +207,7 @@
 		  
 	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamage]
 	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamageInitial]
-
+	  [Triggers:GVE-Generic-Trigger-SPRTTargetAcquiredChatter]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 
@@ -270,7 +270,7 @@
 		  
 	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamage]
 	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamageInitial]
-
+	  [Triggers:GVE-Generic-Trigger-SPRTTargetAcquiredChatter]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  [Triggers:GVE-Generic-Trigger-FighterBarrelRoll]
@@ -337,7 +337,7 @@
 	  
 	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamage]
 	  [Triggers:GVE-Generic-Trigger-BTFNTakeDamageInitial]
-
+	  [Triggers:GVE-Generic-Trigger-SPRTTargetAcquiredChatter]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  [Triggers:GVE-Generic-Trigger-FighterBarrelRoll]

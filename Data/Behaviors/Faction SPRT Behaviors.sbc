@@ -45,6 +45,7 @@
 	  
 	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 		  
+	  [Triggers:GVE-Generic-Trigger-SPRTTargetAcquiredChatter]
 	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
 	  [Triggers:GVE-Generic-Trigger-SPRTCallDDSFighters]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
@@ -96,81 +97,9 @@
 	  	  
 	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 		  
+	  [Triggers:GVE-Generic-Trigger-SPRTTargetAcquiredChatter]
 	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
 	  [Triggers:GVE-Generic-Trigger-SPRTCallDDSFighters]
-	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
-	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
-	  
-      </Description>
-    </EntityComponent>
-
-	<!-- Broken behaviors -->
-
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-TempanoRavager-Behavior-Start-Broken</SubtypeId> <!--Horsefighter not compatible with switchtoreceivedtarget-->
-      </Id>
-      <Description>
-	  
-	  [RivalAI Behavior]
-	  
-      [BehaviorName:HorseFighter]
-	  
-	  [UseVelocityCollisionEvasion:true]
-	  [CollisionEvasionWaypointDistance:400]
-	  [CollisionEvasionResumeDistance:150]
-	  [CollisionEvasionResumeTime:10]
-	  [WaypointTolerance:50]
-	  [UseProjectileLeadPrediction:true]
-	  [OffsetSpaceMinDistFromTarget:300]
-	  [OffsetSpaceMaxDistFromTarget:1000]
-	  [PadDistanceFromTarget:0]
-	  [RotationMultiplier:2]
-	  [IdealMaxSpeed:90]
-	  [IdealMinSpeed:80]
-	  [MaxSpeedTolerance:10]
-	  [SlowDownOnWaypointApproach:false]
-	  [ExtraSlowDownDistance:0]
-	  [AllowStrafing:true]
-	  [StrafeMinDurationMs:5000]
-	  [StrafeMaxDurationMs:10000]
-	  [StrafeMinCooldownMs:5000]
-	  [StrafeMaxCooldownMs:5000]
-	  [StrafeSpeedCutOff:80]
-	  [StrafeDistanceCutOff:700]
-	  [StrafeMinimumTargetDistance:350]
-	  [StrafeMinimumSafeAngleFromTarget:35]
-	  [AngleAllowedForForwardThrust:45]
-	  [MaxVelocityAngleForSpeedControl:30]
-	  
-	  [UseStaticGuns:true]
-	  [UseTurrets:true]
-	  [MaxStaticWeaponRange:800]
-	  [WeaponMaxAngleFromTarget:5]
-	  [UseBarrageFire:false]
-	  [MaxFireRateForBarrageWeapons:20]
-	  [UseAmmoReplenish:true]
-	  [AmmoReplenishClipAmount:100]
-	  
-	  [UsePlayerDistanceTimer:true]
-	  [PlayerDistanceTimerTrigger:5]
-	  [PlayerDistanceTrigger:50000]
-	  [UseNoTargetTimer:false]
-	  [NoTargetTimerTrigger:0]
-	  [UseRetreatTimer:false]
-	  [RetreatTimerTrigger:0]
-	  [RetreatDespawnDistance:0]
-	  
-	  [HorseFighterWaypointWaitTimeTrigger:0]
-	  [HorseFighterWaypointAbandonTimeTrigger:30]
-	  [HorseFighterTimeApproaching:10]
-	  [HorseFighterTimeEngaging:15]
-	  [HorseFighterEngageDistanceSpace:700]
-	  [HorseFighterDisengageDistanceSpace:2000]
-	  	  
-	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
-	
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  
