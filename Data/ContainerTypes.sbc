@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<ContainerTypes>
+		<!-- Space Derelict Ship Cargo -->
+		<ContainerType CountMin="2" CountMax="5">
+			<Id>
+				<TypeId>ContainerTypeDefinition</TypeId>
+				<SubtypeId>GVE-Derelict-Rare</SubtypeId>
+			</Id>
+			<Items>
+				<Item AmountMin="1000" AmountMax="1000000">
+					<Frequency>1</Frequency>
+					<Id>
+						<TypeId>PhysicalObject</TypeId>
+						<SubtypeId>SpaceCredit</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5" AmountMax="25">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>ACCOIN</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5" AmountMax="25">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Platinum</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5" AmountMax="25">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Uranium</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5" AmountMax="25">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Component</TypeId>
+						<SubtypeId>Lense</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5" AmountMax="25">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Component</TypeId>
+						<SubtypeId>Thrust</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5" AmountMax="25">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Component</TypeId>
+						<SubtypeId>Reactor</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="10" AmountMax="100">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>AmmoMagazine</TypeId>
+						<SubtypeId>NATO_5p56x45mm</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="5" AmountMax="50">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>AmmoMagazine</TypeId>
+						<SubtypeId>NATO_25x184mm</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="1" AmountMax="1">
+					<Frequency>1</Frequency>
+					<Id>
+						<TypeId>PhysicalGunObject</TypeId>
+						<SubtypeId>HandDrill4Item</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="1" AmountMax="1">
+					<Frequency>1</Frequency>
+					<Id>
+						<TypeId>PhysicalGunObject</TypeId>
+						<SubtypeId>AngleGrinder4Item</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="1" AmountMax="1">
+					<Frequency>1</Frequency>
+					<Id>
+						<TypeId>PhysicalGunObject</TypeId>
+						<SubtypeId>Welder4Item</SubtypeId>
+					</Id>
+				</Item>
+			</Items>
+		</ContainerType>
+	</ContainerTypes>
+</Definitions>
