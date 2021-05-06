@@ -15,9 +15,10 @@
 			<AcceptHumans>false</AcceptHumans>
 			<AutoAcceptMember>false</AutoAcceptMember>
 			<StartingBalance>100000000</StartingBalance>
-			<Type>None</Type> <!--None, Miner, Trader, Builder-->
+			<Type>Builder</Type> <!--None, Miner, Trader, Builder, PlayerMade-->
 			<DiscoveredByDefault>false</DiscoveredByDefault>
 			<FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon> <!--Game or Mod Path For Texture File-->
+			<Description>Guardians Faction</Description>
 		</Faction>
 		
 		<Faction Tag="BTFN" Founder="The Shadow Broker">
@@ -31,9 +32,10 @@
 			<AcceptHumans>false</AcceptHumans>
 			<AutoAcceptMember>false</AutoAcceptMember>
 			<StartingBalance>100000000</StartingBalance>
-			<Type>None</Type> <!--None, Miner, Trader, Builder-->
+			<Type>Trader</Type> <!--None, Miner, Trader, Builder, PlayerMade-->
 			<DiscoveredByDefault>false</DiscoveredByDefault>
 			<FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon> <!--Game or Mod Path For Texture File-->
+			<Description>Bylen Trade Federation</Description>
 		</Faction>
 
 		<Faction Tag="MONK" Founder="Pepe San">
@@ -47,25 +49,12 @@
 			<AcceptHumans>false</AcceptHumans>
 			<AutoAcceptMember>false</AutoAcceptMember>
 			<StartingBalance>100000000</StartingBalance>
-			<Type>None</Type> <!--None, Miner, Trader, Builder-->
+			<Type>Miner</Type> <!--None, Miner, Trader, Builder, PlayerMade-->
 			<DiscoveredByDefault>false</DiscoveredByDefault>
 			<FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon> <!--Game or Mod Path For Texture File-->
+			<Description>MonkaSyndicate</Description>
 		</Faction>
 		
-		<!--GVE needs to be loaded AFTER Reavers for this to work correctly-->
-		<Faction Tag="REAVER" Founder="Miranda Survivors"> 
-		    <Id>
-			  <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
-			  <SubtypeId>Reavers</SubtypeId>
-		    </Id>
-		    <DisplayName>Reavers</DisplayName>
-		    <IsDefault>true</IsDefault>
-		    <DefaultRelation>Enemies</DefaultRelation>
-		    <AcceptHumans>false</AcceptHumans>
-		    <AutoAcceptMember>false</AutoAcceptMember>
-			<DiscoveredByDefault>false</DiscoveredByDefault>
-			<FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon> <!--Game or Mod Path For Texture File-->
-		</Faction>
 	<!--Do Not Edit Below Here-->
 	</Factions>
 </Definitions>

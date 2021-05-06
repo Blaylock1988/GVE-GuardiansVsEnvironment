@@ -15,11 +15,13 @@
 
 	  [UseRetreatTimer:false]
 	  [UseNoTargetTimer:false]
-	  [UsePlayerDistanceTimer:false]  
+	  [UsePlayerDistanceTimer:false]
+	  [RemoteControlCode:(NPC-GVE)-BTFN-TradeStation]
 	  
 	  [TriggerGroups:GVE-Generic-TriggerGroup-BTFNTakeDamage]
 	  
 	  [Triggers:GVE-RE-Boss-BTFNTradeStation-Trigger-PlayerDistant]
+	  [Triggers:GVE-RE-Boss-BTFNTradeStation-Trigger-GPSAnnounce]
 	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-EnemyNear]
 	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-NeutralNear]
 	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-FriendlyNear]
@@ -46,10 +48,12 @@
 	  [UseRetreatTimer:false]
 	  [UseNoTargetTimer:false]
 	  [UsePlayerDistanceTimer:false]  
+	  [RemoteControlCode:(NPC-GVE)-MONK-TradeStation]
 	  
 	  [TriggerGroups:GVE-Generic-TriggerGroup-MONKTakeDamage]
 	  
 	  [Triggers:GVE-RE-Boss-MONKTradeStation-Trigger-PlayerDistant]
+	  [Triggers:GVE-RE-Boss-BTFNTradeStation-Trigger-GPSAnnounce]
 	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-EnemyNear]
 	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-NeutralNear]
 	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-FriendlyNear]
@@ -94,9 +98,9 @@
 	  [AntennaNamesForRangeChange:NPC Antenna]
 	  [AntennaRangeChangeType:Set]
 	  [AntennaRangeChangeAmount:50000]
-	  
-      [UseChatBroadcast:true]
-      [ChatData:GVE-RE-Boss-BTFNTradeStation-Chat-PlayerDistant]
+
+	  [CreateKnownPlayerArea:true]
+	  [KnownPlayerAreaRadius:5000]
 	  
 	  [SpawnEncounter:true]
 	  [Spawner:GVE-RE-Boss-NPCTradeStation-Spawner-Defenses]
@@ -104,10 +108,45 @@
       </Description>
     </EntityComponent>
 	
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-BTFNTradeStation-Trigger-GPSAnnounce</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+	  [Type:Timer]
+	  [UseTrigger:true]
+	  [MinCooldownMs:10800000]
+      [MaxCooldownMs:21600000]
+	  [StartsReady:true]
+	  
+	  [Actions:GVE-RE-Boss-BTFNTradeStation-Action-GPSAnnounce]
+	  
+      </Description>      
+    </EntityComponent>
+
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-BTFNTradeStation-Chat-PlayerDistant</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-BTFNTradeStation-Action-GPSAnnounce</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+      [UseChatBroadcast:true]
+      [ChatData:GVE-RE-Boss-BTFNTradeStation-Chat-GPSAnnounce]
+	  	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-BTFNTradeStation-Chat-GPSAnnounce</SubtypeId>
       </Id>
       <Description>
 
@@ -116,10 +155,9 @@
       [UseChat:true]
       [StartsReady:true]
       [Chance:100]
-      [MaxChats:1]
       [BroadcastRandomly:false]
       [Author:{GridName}]
-      [Color:Red]
+      [Color:Yellow]
       
       [ChatMessages:{GPS}]
       [ChatAudio:ArcHudGPSNotification1]
@@ -163,8 +201,8 @@
 	  [AntennaRangeChangeType:Set]
 	  [AntennaRangeChangeAmount:50000]
 	  
-      [UseChatBroadcast:true]
-      [ChatData:GVE-RE-Boss-MONKTradeStation-Chat-PlayerDistant]
+	  [CreateKnownPlayerArea:true]
+	  [KnownPlayerAreaRadius:5000]
 	  
 	  [SpawnEncounter:true]
 	  [Spawner:GVE-RE-Boss-NPCTradeStation-Spawner-Defenses]
@@ -172,10 +210,45 @@
       </Description>
     </EntityComponent>
 	
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-MONKTradeStation-Trigger-GPSAnnounce</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+	  [Type:Timer]
+	  [UseTrigger:true]
+	  [MinCooldownMs:10800000]
+      [MaxCooldownMs:21600000]
+	  [StartsReady:true]
+	  
+	  [Actions:GVE-RE-Boss-MONKTradeStation-Action-GPSAnnounce]
+	  
+      </Description>      
+    </EntityComponent>
+
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>GVE-RE-Boss-MONKTradeStation-Chat-PlayerDistant</SubtypeId>
+          <SubtypeId>GVE-RE-Boss-MONKTradeStation-Action-GPSAnnounce</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+      [UseChatBroadcast:true]
+      [ChatData:GVE-RE-Boss-MONKTradeStation-Chat-GPSAnnounce]
+	  	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-RE-Boss-MONKTradeStation-Chat-GPSAnnounce</SubtypeId>
       </Id>
       <Description>
 
@@ -184,10 +257,9 @@
       [UseChat:true]
       [StartsReady:true]
       [Chance:100]
-      [MaxChats:1]
       [BroadcastRandomly:false]
       [Author:{GridName}]
-      [Color:Red]
+      [Color:White]
       
       [ChatMessages:{GPS}]
       [ChatAudio:ArcHudGPSNotification1]
@@ -211,9 +283,8 @@
       
 	  [SpawningType:RandomEncounter]
       [StartsReady:true]
-      [SpawnMinCooldown:60]
-      [SpawnMinCooldown:120]
-      [MaxSpawns:8]
+      [SpawnMinCooldown:300]
+      [SpawnMinCooldown:600]
             
       [MinDistance:2000]
       [MaxDistance:4000]
@@ -234,10 +305,9 @@
       [Type:PlayerNear]
 	  [UseTrigger:true]
 	  [TargetDistance:5000]
-	  [MinCooldownMs:15000]
-	  [MaxCooldownMs:30000]
-	  [StartsReady:false]
-	  [MaxActions:1]
+	  [MinCooldownMs:10800000]
+      [MaxCooldownMs:21600000]
+	  [StartsReady:true]
 	  
 	  [MinPlayerReputation:-1501]
 	  [MaxPlayerReputation:-500]
@@ -257,21 +327,19 @@
 
       [RivalAI Action]
 	  
-	  [ChangeAntennaRanges:true]
-	  [AntennaNamesForRangeChange:NPC Antenna]
-	  [AntennaRangeChangeType:Set]
-	  [AntennaRangeChangeAmount:50000]
+	  [DisableBlocks:true]
+	  [DisableBlockNames:NPC Door]
+	  [DisableBlockStates:On]
+	  [DisableBlockNames:NPC LCD]
+	  [DisableBlockStates:On]
+	  [DisableBlockNames:NPC Store]
+	  [DisableBlockStates:On]
 	  
       [UseChatBroadcast:true]
       [ChatData:GVE-RE-Boss-NPCTradeStation-Chat-EnemyNear]
 	  
 	  [SpawnEncounter:true]
 	  [Spawner:GVE-RE-Boss-NPCTradeStation-Spawner-Defenses]
-	  
-	  [CreateKnownPlayerArea:true]
-	  [KnownPlayerAreaRadius:5000]
-	  [KnownPlayerAreaTimer:60]
-	  [KnownPlayerAreaMaxSpawns:20]
 	  
       </Description>
     </EntityComponent>
@@ -288,20 +356,21 @@
       [UseChat:true]
       [StartsReady:true]
       [Chance:100]
-      [MaxChats:1]
       [BroadcastRandomly:true]
+	  [IgnoreAntennaRequirement:true]
+	  [IgnoredAntennaRangeOverride:50000]
       [Author:{GridName}]
       [Color:Red]
       
       [ChatMessages:Enemy Detected, deploying defenses.]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Chat]
-	  [SendToAllOnlinePlayers:true]
+	  [SendToAllOnlinePlayers:false]
 
       [ChatMessages:Enemies approaching, requesting backup!]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Chat]
-	  [SendToAllOnlinePlayers:true]
+	  [SendToAllOnlinePlayers:false]
 
       </Description>      
     </EntityComponent>
@@ -318,8 +387,9 @@
       [Type:PlayerNear]
 	  [UseTrigger:true]
 	  [TargetDistance:5000]
+	  [MinCooldownMs:10800000]
+      [MaxCooldownMs:21600000]
 	  [StartsReady:true]
-	  [MaxActions:1]
 	  
 	  [MinPlayerReputation:-499]
 	  [MaxPlayerReputation:499]
@@ -357,8 +427,9 @@
       [UseChat:true]
       [StartsReady:true]
       [Chance:100]
-      [MaxChats:1]
       [BroadcastRandomly:false]
+	  [IgnoreAntennaRequirement:true]
+	  [IgnoredAntennaRangeOverride:50000]
       [Author:{GridName}]
       [Color:White]
       
@@ -382,8 +453,9 @@
       [Type:PlayerNear]
 	  [UseTrigger:true]
 	  [TargetDistance:5000]
+	  [MinCooldownMs:10800000]
+      [MaxCooldownMs:21600000]
 	  [StartsReady:true]
-	  [MaxActions:1]
 	  
 	  [MinPlayerReputation:500]
 	  [MaxPlayerReputation:1501]
@@ -410,7 +482,6 @@
 	  [EnableBlockStates:On]
 	  [EnableBlockNames:NPC Store]
 	  [EnableBlockStates:On]
-
 	  
       [UseChatBroadcast:true]
       [ChatData:GVE-RE-Boss-NPCTradeStation-Chat-FriendlyNear]
@@ -430,8 +501,9 @@
       [UseChat:true]
       [StartsReady:true]
       [Chance:100]
-      [MaxChats:1]
       [BroadcastRandomly:false]
+	  [IgnoreAntennaRequirement:true]
+	  [IgnoredAntennaRangeOverride:50000]
       [Author:{GridName}]
       [Color:Green]
       
