@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+	<!-- Basic Patrol Behavior -->
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PatrolBehavior</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:CargoShip]	  
+
+	  [FlyLevelWithGravity:true]
+	  [IdealPlanetAltitude:150]
+	  [AltitudeTolerance:25]
+	  [IdealMaxSpeed:50]
+	  [MaxSpeedTolerance:10]
+	  
+	  [Triggers:PatrolTrigger]
+	  
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PatrolTrigger</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+	  [UseTrigger:true]
+	  [Type:PlayerNear]
+	  [TargetDistance:1000]
+
+	  [Actions:PatrolAction]	  
+	  
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PatrolAction</SubtypeId>
+      </Id>
+      <Description>
+	  
+      [RivalAI Action]
+	  
+	  [SwitchToBehavior:true]
+	  [NewBehavior:SCRP-FighterBehavior]
+	  
+	  
+      </Description>
+    </EntityComponent>	
+	
+
+	<!-- Drone Basic Behavior -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>SCRP-FighterBehavior</SubtypeId>
+      </Id>
+      <Description>
+	  
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Fighter]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<!-- Defensive Behavior -->
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>SCRP-DefenseBehavior</SubtypeId>
+      </Id>
+      <Description>
+	  
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Passive]
+	  [Triggers:SCRP-DefenseTrigger]
+	  
+      </Description>
+    </EntityComponent>	
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>SCRP-DefenseTrigger</SubtypeId>
+      </Id>
+      <Description>
+	  
+      [RivalAI Trigger]
+	  
+	  [UseTrigger:true]
+	  [Type:PlayerNear]
+	  [TargetDistance:1000]
+	  
+	  [Actions:SCRP-DefenseAction]
+	  
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>SCRP-DefenseAction</SubtypeId>
+      </Id>
+      <Description>
+	  
+      [RivalAI Action]
+	  
+	  [SpawnEncounter:true]
+	  [Spawner:SCRP-DefenseDroneSpawn]
+	  
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>SCRP-DefenseDroneSpawn</SubtypeId>
+      </Id>
+      <Description>
+	  
+      [RivalAI Spawn]
+	  
+      [UseSpawn:true]
+      [StartsReady:true]
+
+	  [SpawnGroups:[NPC Drone] Reaper]
+	  [SpawnGroups:[NPC Drone] Revenant]
+	  [SpawnGroups:[NPC Drone] Wasp]
+	  [SpawnGroups:[NPC Drone] Hornet]
+	  
+      [MaxSpawns:2]	  
+
+      [UseRelativeSpawnPosition:false]
+      [MinDistance:100]
+      [MaxDistance:200]
+	  [MinAltitude:100]
+	  [MaxAltitude:200]
+      [IgnoreSafetyChecks:false]
+	  
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

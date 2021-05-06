@@ -1,0 +1,960 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<SpawnGroups>
+		
+		<!--[NPC Wreck] - Tempest MK1-->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>[NPC Wreck - Dusty] Tempest MK1</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Medium]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+			
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]	
+				
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Tempest MK1">
+					<Position>
+						<X>0.0</X>
+						<Y>7.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!--[NPC Wreck] - Ceverus -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>[NPC Wreck - Dusty] Ceverus</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Medium]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+		
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]			
+				
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Ceverus">
+					<Position>
+						<X>0.0</X>
+						<Y>2.5</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>			
+
+		<!--[NPC Wreck] - MPC-2 -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>[NPC Wreck - Dusty] MPC-2</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Medium]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+		
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]				
+				
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] MPC-2">
+					<Position>
+						<X>0.0</X>
+						<Y>1.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!--[NPC Wreck] - MPC-3 Riot RAM -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>[NPC Wreck - Dusty] MPC-3 Riot RAM</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Medium]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+		
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]				
+				
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] MPC-3 Riot RAM">
+					<Position>
+						<X>0.0</X>
+						<Y>2.5</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!--[NPC Wreck] - MPC-4 -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>[NPC Wreck - Dusty] MPC-4</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Medium]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+		
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]				
+				
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] MPC-4 ">
+					<Position>
+						<X>0.0</X>
+						<Y>-2.5</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>		
+
+		<!--[NPC Wreck] - Rhino -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>[NPC Wreck - Dusty] Rhino</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Medium]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+		
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]				
+				
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Rhino">
+					<Position>
+						<X>0.0</X>
+						<Y>5.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>	
+
+		<!--[NPC Wreck] - Icarus -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>[NPC Wreck - Dusty] Icarus</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Medium]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+		
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]		
+				
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Icarus">
+					<Position>
+						<X>0.0</X>
+						<Y>10.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<!--[NPC Wreck] - Kaiju -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>[NPC Wreck - Dusty] Kaiju</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Medium]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+		
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]			
+				
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Kaiju Frigate">
+					<Position>
+						<X>0.0</X>
+						<Y>1.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!--[NPC Wreck] - Kestrel -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>[NPC Wreck - Dusty] Kestrel</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Medium]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+		
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]			
+				
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Kestrel">
+					<Position>
+						<X>0.0</X>
+						<Y>-2.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!--[NPC Wreck] - Ketar MK1 -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>[NPC Wreck - Dusty] Ketar MK1</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Medium]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+		
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]			
+				
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Ketar MK1">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>			
+
+		<!--[NPC Wreck] - Blood Star  -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>[NPC Wreck - Dusty] Blood Star</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Medium]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+		
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[DisableBlocksWithName:Blood]
+			[AllowPartialNames:true]			
+				
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Blood Star ">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>			
+
+		<!--[NPC Wreck] - Hermes -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>[NPC Wreck - Dusty] Hermes</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Medium]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+		
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]			
+				
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Hermes">
+					<Position>
+						<X>0.0</X>
+						<Y>1.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!--[NPC Wreck] - Liberty -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>[NPC Wreck - Dusty] Liberty</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Large]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+		
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]			
+				
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>3.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Liberty ">
+					<Position>
+						<X>0.0</X>
+						<Y>-20.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<!--[NPC Wreck] - Skimmer -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>[NPC Wreck - Dusty] Skimmer</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Large]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+		
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]			
+				
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>3.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Skimmer">
+					<Position>
+						<X>0.0</X>
+						<Y>12.5</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!-- [NPC Wreck] - Helios Frigate -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>[NPC Wreck - Dusty] Helios</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Large]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+		
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]			
+				
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>3.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Helios Frigate">
+					<Position>
+						<X>0.0</X>
+						<Y>5.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>			
+
+		<!--[NPC Wreck] - Skywarden -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>[NPC Wreck - Dusty] Skywarden</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Large]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+		
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]			
+				
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>3.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Skywarden Back">
+					<Position>
+						<X>-10.0</X>
+						<Y>15.0</Y>
+						<Z>80.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+				<Prefab SubtypeId="[NPC Wreck] Skywarden Front">
+					<Position>
+						<X>40.0</X>
+						<Y>12.5</Y>
+						<Z>-80.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>				
+			</Prefabs>
+		</SpawnGroup>
+		
+		<!--[NPC Outpost] - Tower -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>[NPC Outpost] Tower</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Medium]
+			[PlanetRequiresAtmo:true]			
+			[ForceStaticGrid:true]
+
+			[FactionOwner:SPRT]			
+			
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			[ReplenishSystems:true]
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]				
+
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Outpost] Tower">
+					<Position>
+						<X>0.0</X>
+						<Y>10.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Watchtower</BeaconText>						
+					<Behaviour>SPRT-DefenseBehavior</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!--[NPC Ruins] Office V1 -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>[NPC Ruins] Office V1</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Medium]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+								
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Ruins] Office V1">
+					<Position>
+						<X>0.0</X>
+						<Y>10.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour></Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+
+
+	</SpawnGroups>
+</Definitions>
