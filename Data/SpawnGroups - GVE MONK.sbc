@@ -23,18 +23,24 @@
 			
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
+			[IgnoreCleanupRules:true]
 			[ReplenishSystems:true]
+			[ForceStaticGrid:true]
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
 			
+			[UseRemoteControlCodeRestrictions:true]
+			[RemoteControlCode:(NPC-GVE)-MONK-TradeStation]
+			[RemoteControlCodeMinDistance:9999999]
+
 			[GridsAreDestructable:true]
 			[GridsAreEditable:false]
 			[ForceStaticGrid:true]
 			[OverrideBlockDamageModifier:true]
 			[BlockDamageModifier:25]
 			
-			[UseBlockReplacerProfile:true]
-			[BlockReplacerProfileNames:MES-ProprietaryValuableBlocks,MES-ProprietaryCompRichBlocks,MES-DisposableNpcBeacons]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-JumpDrive-Large]
 			[IgnoreGlobalBlockReplacer:true]
 			[ConvertToHeavyArmor:true]
 			
@@ -49,7 +55,6 @@
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:false]
 			
-			[IgnoreCleanupRules:false]
 			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 2, Disposable Beacon,Disposable Beacon 2]
 			[AllowPartialNames:false]
 			[UseRandomNameGenerator:true]
