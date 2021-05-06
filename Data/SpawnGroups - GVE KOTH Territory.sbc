@@ -73,7 +73,6 @@
 			[MinimumPlayers:3]			
 			
 			[Territory:KOTH Territory]		
-			[MinDistanceFromTerritoryCenter:4000]
 				
 			[UseThreatLevelCheck:true]
 			[ThreatLevelCheckRange:10000]
@@ -183,7 +182,6 @@
 			[MaximumReputation:-500]
 			
 			[Territory:KOTH Territory]		
-			[MinDistanceFromTerritoryCenter:3000]
 				
 			[UseThreatLevelCheck:true]
 			[ThreatLevelCheckRange:10000]
@@ -378,7 +376,7 @@
 				
 			[UseThreatLevelCheck:true]
 			[ThreatLevelCheckRange:10000]
-			[ThreatScoreMinimum:1000]
+			[ThreatScoreMinimum:1200]
 			[ThreatScoreMaximum:-1]
 						
 			[UsePlayerFactionReputation:true]
@@ -474,7 +472,7 @@
 				
 			[UseThreatLevelCheck:true]
 			[ThreatLevelCheckRange:10000]
-			[ThreatScoreMinimum:500]
+			[ThreatScoreMinimum:600]
 			[ThreatScoreMaximum:2000]
 						
 			[UsePlayerFactionReputation:true]
@@ -556,13 +554,6 @@
 			[ReplenishSystems:true]
 			[SpawnRandomCargo:false]
 			[DisableDampeners:true]
-
-			[UsePlayerCredits:false]
-			[IncludeAllPlayersInRadius:true]
-			[IncludeFactionBalance:true]
-			[PlayerCreditsCheckRadius:10000]
-			[MinimumPlayerCredits:500000]
-			[MaximumPlayerCredits:-1]
 			
 			[FactionOwner:BTFN]
 				
@@ -571,10 +562,6 @@
 			[ThreatScoreMinimum:100]
 			[ThreatScoreMaximum:1000]
 						
-			[UsePlayerCountCheck:false]
-			[PlayerCountCheckRadius:10000]
-			[MinimumPlayers:2]
-			
 			[UsePlayerFactionReputation:true]
 			[PlayerReputationCheckRadius:10000]
 			[MinimumReputation:-1501]
@@ -749,12 +736,12 @@
 			[DisableDampeners:true]
 
 			[FactionOwner:BTFN]
-			[MinDistanceFromTerritoryCenter:2000]
 				
 			[UseThreatLevelCheck:true]
 			[ThreatLevelCheckRange:10000]
-			[ThreatScoreMinimum:1000]
-			[ThreatScoreMaximum:1000]
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatScoreMinimum:2000]
+			[ThreatScoreMaximum:-1]
 
 			[UsePlayerFactionReputation:true]
 			[PlayerReputationCheckRadius:10000]
@@ -1053,7 +1040,7 @@
 				
 			[UseThreatLevelCheck:true]
 			[ThreatLevelCheckRange:10000]
-			[ThreatScoreMinimum:500]
+			[ThreatScoreMinimum:600]
 			[ThreatScoreMaximum:2000]
 						
 			[UsePlayerFactionReputation:true]
@@ -1324,9 +1311,10 @@
 				
 			[UseThreatLevelCheck:true]
 			[ThreatLevelCheckRange:10000]
-			[ThreatScoreMinimum:500]
-			[ThreatScoreMaximum:1000]
-			
+			[ThreatIncludeOtherNpcOwners:true]
+			[ThreatScoreMinimum:2000]
+			[ThreatScoreMaximum:-1]
+
 			[UsePlayerFactionReputation:true]
 			[PlayerReputationCheckRadius:10000]
 			[MinimumReputation:500]
@@ -1372,6 +1360,10 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:false]
+			
+			[UseRemoteControlCodeRestrictions:true]			
+			[RemoteControlCode:Solo-MONK-FriendlyFighter]
+			[RemoteControlCodeMinDistance:9999999]
 			
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
