@@ -15,11 +15,11 @@
       
       [UseCustomTargeting:true]
       [Target:PlayerAndGrid]
-	  [UseTargetRefresh:true]
-	  [TimeUntilNextRefresh:15]
-	  [TimeUntilNextEvaluation:5]
+	  [UseTargetRefresh:false]
+	  [TimeUntilNextRefresh:5]
+	  [TimeUntilNextEvaluation:10]
 	  [MaxDistance:10000]
-      [GetTargetBy:Random]
+      [GetTargetBy:ClosestDistance]
 	  [MatchAllFilters:Relation]
 	  [MatchAllFilters:OutsideOfSafezone]
 	  [MatchNoneFilters:Name]
@@ -96,7 +96,7 @@
 
       [RivalAI Action]
 	  
-	  [Chance:30]
+	  [Chance:35]
 	  
       [BarrelRoll:true]
 	  
@@ -726,7 +726,7 @@
       </Description>
     </EntityComponent>
 	
-	<!--future improvements coming to RAI to make this work better-->
+		<!--future improvements coming to RAI to make this work better-->
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -745,6 +745,41 @@
       </Description>
     </EntityComponent>
 	
+	<!--NPC Chat when target is acquired-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Trigger-SPRTTargetAcquiredChatter</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:AcquiredTarget]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	  	  
+	  [Actions:GVE-Generic-Action-SPRTDefeated]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Action-SPRTTargetAcquiredChatter</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	        
+      [UseChatBroadcast:true]
+      [ChatData:GVE-Generic-Chat-SPRTTargetAcquiredChatter]
+
+      </Description>
+    </EntityComponent>
+
 	<!--NPC Retreat when all guns are disabled-->
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
@@ -963,6 +998,51 @@
 
       </Description>
     </EntityComponent>
+
+	<!--Generic SPRT Target Acquired Chatter-->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-Generic-Chat-SPRTTargetAcquiredChatter</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:50]
+      [BroadcastRandomly:true]
+	  [SendToAllOnlinePlayers:true]
+      [Author:{GridName}]
+      [Color:Red]
+      
+      [ChatMessages:Target acquired.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  
+	  [ChatMessages:Target locked.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      [ChatMessages:Enemy ship in-sight.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      [ChatMessages:Lock S-Foils in attack position.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      [ChatMessages:I'm moving in.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      [ChatMessages:Tangos in-bound.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
 	
 	<!--Generic MONK Chat when attacked by players-->
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -1066,8 +1146,6 @@
       [RivalAI Chat]
       
       [UseChat:true]
-	  [MinTime:10]
-	  [MaxTime:15]
       [StartsReady:true]
       [Chance:100]
       [MaxChats:1]
@@ -1088,7 +1166,7 @@
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Chat]
 	  
-	  [ChatMessages:It appears I've underestimated {PlayerName}]
+	  [ChatMessages:I underestimated {PlayerName}]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Chat]
 	  
