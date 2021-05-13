@@ -1688,7 +1688,7 @@
               <EntityId>77682579396035995</EntityId>
               <Min x="4" y="3" z="-1" />
               <BlockOrientation Forward="Up" Up="Left" />
-              <CustomName>Beacon</CustomName>
+              <CustomName>Proprietary Beacon</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>

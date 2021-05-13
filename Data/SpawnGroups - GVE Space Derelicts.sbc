@@ -8,7 +8,7 @@
 		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
 			<Id>
 				<TypeId>Inventory</TypeId>
-				<SubtypeId>GVE-Dereliction-NonArmor</SubtypeId>
+				<SubtypeId>GVE-Dereliction-NonArmor-DamageOnly-Normal</SubtypeId>
 			</Id>
 			<Description>
 
@@ -39,6 +39,42 @@
 			</Description>
 		</EntityComponent>
 
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>GVE-Dereliction-NonArmor-DamageOnly-DamageOnly</SubtypeId>
+			</Id>
+			<Description>
+
+			[MES Dereliction]
+
+			[Blocks:MyObjectBuilder_Thrust/(null)]
+			[Blocks:MyObjectBuilder_Refinery/(null)]
+			[Blocks:MyObjectBuilder_OxygenGenerator/(null)]
+			[Blocks:MyObjectBuilder_UpgradeModule/(null)]
+			[Blocks:MyObjectBuilder_BatteryBlock/(null)]
+			[Blocks:MyObjectBuilder_HydrogenEngine/(null)]
+			[Blocks:MyObjectBuilder_Reactor/(null)]
+			[Blocks:MyObjectBuilder_Drill/(null)]
+			[Blocks:MyObjectBuilder_ShipGrinder/(null)]
+			[Blocks:MyObjectBuilder_ShipWelder/(null)]
+			[Blocks:MyObjectBuilder_Gyro/(null)]
+			[Blocks:MyObjectBuilder_OxygenTank/(null)]
+			[Blocks:MyObjectBuilder_Assembler/(null)]
+			[Blocks:MyObjectBuilder_Projector/(null)]
+			[Blocks:MyObjectBuilder_Gyro/(null)]
+			[MatchOnlyTypeId:true]
+
+			[Chance:25]
+			[UseSeparatePercentages:true]
+			[MinIntegrityPercentage:40]
+			[MaxIntegrityPercentage:70]
+			[MinBuildPercentage:100]
+			[MaxBuildPercentage:100]
+
+			</Description>
+		</EntityComponent>
+
 	</EntityComponents>
 
 	<!--Derelict SpawnGroups-->
@@ -52,12 +88,15 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>GVE-Derelict Military1</SubtypeId> 
+				<SubtypeId>(NPC-GVE)-SpaceDerelict-SPRT-Military1</SubtypeId> 
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 			[BossEncounterSpace:true]
+
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
 
 			[BossCustomAnnounceEnable:true]
 			[BossCustomAnnounceAuthor:GVE+]
@@ -71,12 +110,14 @@
 			[ForceStaticGrid:false]
 			[ClearGridInventories:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-JumpDrive-Large]
 			
 			[FactionOwner:SPRT]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999999]
-			[MinimumPlayers:1]	
+			[MinimumPlayers:2]	
 
 			[UseRemoteControlCodeRestrictions:true]
 			[RemoteControlCode:GVE-Derelict]
@@ -94,7 +135,11 @@
 			[RandomHueShift:true]
 
 			[UseGridDereliction:true]
-			[DerelictionProfiles:GVE-Dereliction-NonArmor]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly-DamageOnly]
+			
+			[UseBlockReplacer:false]
+			[ReplaceBlockOld:LargeBlockRadioAntenna]
+			[ReplaceBlockNew:ProprietaryNpcLargeBlockBeacon]
 
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Military Derelict]
@@ -134,15 +179,944 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Space Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-SpaceDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
+		</SpawnGroup>
+
+		<!--GVE-Derelict Pilgrim A: Low-->
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-SpaceDerelict-Pilgrim A</SubtypeId> 
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[BossEncounterSpace:true]
+
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:GVE+]
+			[BossCustomAnnounceMessage:A space derelict has been reported]
+			[BossCustomGPSLabel:Space Derelict]
+			
+			[IgnoreGlobalBlockReplacer:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[DisableDampeners:false]
+			[ForceStaticGrid:false]
+			[ClearGridInventories:true]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-JumpDrive-Large]
+			
+			[FactionOwner:SPRT]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999999]
+			[MinimumPlayers:2]	
+
+			[UseRemoteControlCodeRestrictions:true]
+			[RemoteControlCode:GVE-Derelict]
+			[RemoteControlCodeMinDistance:9999999]
+												
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:true]
+
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			
+			[UseBlockReplacer:false]
+			[ReplaceBlockOld:LargeBlockRadioAntenna]
+			[ReplaceBlockNew:ProprietaryNpcLargeBlockBeacon]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: MushStation Derelict]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:20]
+			[MaximumBlocksPercent:50]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+						
+			[ChangeTurretSettings:false]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-Derelict Pilgrim A">
+				    <Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Space Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-SpaceDerelictPassive-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!--GVE-Derelict Ambasador B: shooty grinders-->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-SpaceDerelict-Ambasador B</SubtypeId> 
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[BossEncounterSpace:true]
+
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:GVE+]
+			[BossCustomAnnounceMessage:A space derelict has been reported]
+			[BossCustomGPSLabel:Space Derelict]
+			
+			[IgnoreGlobalBlockReplacer:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[DisableDampeners:false]
+			[ForceStaticGrid:false]
+			[ClearGridInventories:true]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-JumpDrive-Large]
+			
+			[FactionOwner:SPRT]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999999]
+			[MinimumPlayers:2]	
+
+			[UseRemoteControlCodeRestrictions:true]
+			[RemoteControlCode:GVE-Derelict]
+			[RemoteControlCodeMinDistance:9999999]
+												
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:true]
+
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			
+			[UseBlockReplacer:false]
+			[ReplaceBlockOld:LargeBlockRadioAntenna]
+			[ReplaceBlockNew:ProprietaryNpcLargeBlockBeacon]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: MushStation Derelict]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:20]
+			[MaximumBlocksPercent:50]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+						
+			[ChangeTurretSettings:false]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-Derelict Ambasador B">
+				    <Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Space Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-SpaceDerelictPassive-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!--GVE-Derelict Haunted Section-->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-SpaceDerelict-Haunted Section</SubtypeId> 
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[BossEncounterSpace:true]
+
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:GVE+]
+			[BossCustomAnnounceMessage:A space derelict has been reported]
+			[BossCustomGPSLabel:Space Derelict]
+			
+			[IgnoreGlobalBlockReplacer:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[DisableDampeners:false]
+			[ForceStaticGrid:false]
+			[ClearGridInventories:true]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-JumpDrive-Large]
+			
+			[FactionOwner:SPRT]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999999]
+			[MinimumPlayers:2]	
+
+			[UseRemoteControlCodeRestrictions:true]
+			[RemoteControlCode:GVE-Derelict]
+			[RemoteControlCodeMinDistance:9999999]
+												
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:true]
+
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			
+			[UseBlockReplacer:false]
+			[ReplaceBlockOld:LargeBlockRadioAntenna]
+			[ReplaceBlockNew:ProprietaryNpcLargeBlockBeacon]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: MushStation Derelict]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:20]
+			[MaximumBlocksPercent:50]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+						
+			[ChangeTurretSettings:false]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-Derelict Haunted Section">
+				    <Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Space Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-SpaceDerelictPassive-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!--GVE-Derelict RespawnShip-->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-SpaceDerelict-RespawnShip</SubtypeId> 
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[BossEncounterSpace:true]
+
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:GVE+]
+			[BossCustomAnnounceMessage:A space derelict has been reported]
+			[BossCustomGPSLabel:Space Derelict]
+			
+			[IgnoreGlobalBlockReplacer:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[DisableDampeners:false]
+			[ForceStaticGrid:false]
+			[ClearGridInventories:true]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-JumpDrive-Large]
+			
+			[FactionOwner:SPRT]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999999]
+			[MinimumPlayers:2]	
+
+			[UseRemoteControlCodeRestrictions:true]
+			[RemoteControlCode:GVE-Derelict]
+			[RemoteControlCodeMinDistance:9999999]
+												
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:true]
+
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			
+			[UseBlockReplacer:false]
+			[ReplaceBlockOld:LargeBlockRadioAntenna]
+			[ReplaceBlockNew:ProprietaryNpcLargeBlockBeacon]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: MushStation Derelict]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:20]
+			[MaximumBlocksPercent:50]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+						
+			[ChangeTurretSettings:false]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-Derelict RespawnShip">
+				    <Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Space Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-SpaceDerelictPassive-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!--GVE-Derelict Severed Bow-->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-SpaceDerelict-Severed Bow</SubtypeId> 
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[BossEncounterSpace:true]
+
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:GVE+]
+			[BossCustomAnnounceMessage:A space derelict has been reported]
+			[BossCustomGPSLabel:Space Derelict]
+			
+			[IgnoreGlobalBlockReplacer:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[DisableDampeners:false]
+			[ForceStaticGrid:false]
+			[ClearGridInventories:true]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-JumpDrive-Large]
+			
+			[FactionOwner:SPRT]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999999]
+			[MinimumPlayers:2]	
+
+			[UseRemoteControlCodeRestrictions:true]
+			[RemoteControlCode:GVE-Derelict]
+			[RemoteControlCodeMinDistance:9999999]
+												
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:true]
+
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			
+			[UseBlockReplacer:false]
+			[ReplaceBlockOld:LargeBlockRadioAntenna]
+			[ReplaceBlockNew:ProprietaryNpcLargeBlockBeacon]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: MushStation Derelict]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:20]
+			[MaximumBlocksPercent:50]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+						
+			[ChangeTurretSettings:false]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-Derelict Severed Bow">
+				    <Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Space Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-SpaceDerelictPassive-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!--GVE-Derelict Pilgrim B: Low-->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-SpaceDerelict-Pilgrim B</SubtypeId> 
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[BossEncounterSpace:true]
+
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:GVE+]
+			[BossCustomAnnounceMessage:A space derelict has been reported]
+			[BossCustomGPSLabel:Space Derelict]
+			
+			[IgnoreGlobalBlockReplacer:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[DisableDampeners:false]
+			[ForceStaticGrid:false]
+			[ClearGridInventories:true]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-JumpDrive-Large]
+			
+			[FactionOwner:SPRT]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999999]
+			[MinimumPlayers:2]	
+
+			[UseRemoteControlCodeRestrictions:true]
+			[RemoteControlCode:GVE-Derelict]
+			[RemoteControlCodeMinDistance:9999999]
+												
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:true]
+
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			
+			[UseBlockReplacer:false]
+			[ReplaceBlockOld:LargeBlockRadioAntenna]
+			[ReplaceBlockNew:ProprietaryNpcLargeBlockBeacon]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: MushStation Derelict]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:20]
+			[MaximumBlocksPercent:50]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+						
+			[ChangeTurretSettings:false]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-Derelict Pilgrim B">
+				    <Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Space Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-SpaceDerelictPassive-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!--GVE-Derelict MushStation A: Low-->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-SpaceDerelict-MushStation A</SubtypeId> 
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[BossEncounterSpace:true]
+
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:GVE+]
+			[BossCustomAnnounceMessage:A space derelict has been reported]
+			[BossCustomGPSLabel:Space Derelict]
+			
+			[IgnoreGlobalBlockReplacer:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[DisableDampeners:false]
+			[ForceStaticGrid:false]
+			[ClearGridInventories:true]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-JumpDrive-Large]
+			
+			[FactionOwner:SPRT]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999999]
+			[MinimumPlayers:2]	
+
+			[UseRemoteControlCodeRestrictions:true]
+			[RemoteControlCode:GVE-Derelict]
+			[RemoteControlCodeMinDistance:9999999]
+												
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:true]
+
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			
+			[UseBlockReplacer:false]
+			[ReplaceBlockOld:LargeBlockRadioAntenna]
+			[ReplaceBlockNew:ProprietaryNpcLargeBlockBeacon]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: MushStation Derelict]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:20]
+			[MaximumBlocksPercent:50]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+						
+			[ChangeTurretSettings:false]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-Derelict MushStation A">
+				    <Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Space Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-SpaceDerelictPassive-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!--GVE-Derelict MushStation B: Low-->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-SpaceDerelict-MushStation B</SubtypeId> 
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[BossEncounterSpace:true]
+
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:GVE+]
+			[BossCustomAnnounceMessage:A space derelict has been reported]
+			[BossCustomGPSLabel:Space Derelict]
+			
+			[IgnoreGlobalBlockReplacer:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[DisableDampeners:false]
+			[ForceStaticGrid:false]
+			[ClearGridInventories:true]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-JumpDrive-Large]
+			
+			[FactionOwner:SPRT]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999999]
+			[MinimumPlayers:2]	
+
+			[UseRemoteControlCodeRestrictions:true]
+			[RemoteControlCode:GVE-Derelict]
+			[RemoteControlCodeMinDistance:9999999]
+												
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:true]
+
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			
+			[UseBlockReplacer:false]
+			[ReplaceBlockOld:LargeBlockRadioAntenna]
+			[ReplaceBlockNew:ProprietaryNpcLargeBlockBeacon]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: MushStation Derelict]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:20]
+			[MaximumBlocksPercent:50]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+						
+			[ChangeTurretSettings:false]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-Derelict MushStation B">
+				    <Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Space Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-SpaceDerelictPassive-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!--GVE-Derelict Encounter Minefield: Low-->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-SpaceDerelict-Encounter Minefield</SubtypeId> 
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[BossEncounterSpace:true]
+
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:GVE+]
+			[BossCustomAnnounceMessage:A space derelict has been reported]
+			[BossCustomGPSLabel:Space Derelict]
+			
+			[IgnoreGlobalBlockReplacer:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[DisableDampeners:false]
+			[ForceStaticGrid:false]
+			[ClearGridInventories:true]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-JumpDrive-Large]
+			
+			[FactionOwner:SPRT]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999999]
+			[MinimumPlayers:2]	
+
+			[UseRemoteControlCodeRestrictions:true]
+			[RemoteControlCode:GVE-Derelict]
+			[RemoteControlCodeMinDistance:9999999]
+												
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:true]
+
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			
+			[UseBlockReplacer:false]
+			[ReplaceBlockOld:LargeBlockRadioAntenna]
+			[ReplaceBlockNew:ProprietaryNpcLargeBlockBeacon]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: MushStation Derelict]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:20]
+			[MaximumBlocksPercent:50]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+						
+			[ChangeTurretSettings:false]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+			  <Prefab SubtypeId="Encounter Minefield">
+				<Position>
+					<X>-12.6414585</X>
+					<Y>65.64354</Y>
+					<Z>6.571386</Z>
+				</Position>
+					<Speed>0</Speed>
+					<BeaconText>Space Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-SpaceDerelictPassive-Behavior-Start</Behaviour>
+			  </Prefab>
+			</Prefabs>
+			<Voxels>
+			  <Voxel StorageName="many_small_asteroids">
+				<Offset>
+				  <X>0</X>
+				  <Y>0</Y>
+				  <Z>0</Z>
+				</Offset>
+				<CenterOffset>true</CenterOffset>
+			  </Voxel>
+			</Voxels>
 		</SpawnGroup>
 
 		<!--GVE-Derelict Ghoul Corvette B: Attack behavior-->
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>GVE-Derelict Ghoul Corvette B</SubtypeId> 
+				<SubtypeId>(NPC-GVE)-SpaceDerelict-SPRT-Ghoul Corvette B</SubtypeId> 
 			</Id>
 			<Description>
 
@@ -161,12 +1135,14 @@
 			[ForceStaticGrid:false]
 			[ClearGridInventories:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-JumpDrive-Large]
 			
 			[FactionOwner:SPRT]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999999]
-			[MinimumPlayers:1]			
+			[MinimumPlayers:2]			
 												
 			[UseRemoteControlCodeRestrictions:true]
 			[RemoteControlCode:GVE-Derelict]
@@ -184,7 +1160,7 @@
 			[RandomHueShift:true]
 
 			[UseGridDereliction:false]
-			[DerelictionProfiles:GVE-Dereliction-NonArmor]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 
 			[UseRandomNameGenerator:true]
 			[RandomGridNamePattern: Ghoul Corvette Derelict]
@@ -229,7 +1205,202 @@
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
-		
+
+		<!--GVE-Derelict Hydro Tanker-->
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-SpaceDerelict-SPRT-Hydro Tanker</SubtypeId> 
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[BossEncounterSpace:true]
+
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:GVE+]
+			[BossCustomAnnounceMessage:A space derelict has been reported]
+			[BossCustomGPSLabel:Space Derelict]
+			
+			[IgnoreGlobalBlockReplacer:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[DisableDampeners:false]
+			[ForceStaticGrid:false]
+			[ClearGridInventories:true]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-JumpDrive-Large]
+			
+			[FactionOwner:SPRT]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999999]
+			[MinimumPlayers:2]			
+												
+			[UseRemoteControlCodeRestrictions:true]
+			[RemoteControlCode:GVE-Derelict]
+			[RemoteControlCodeMinDistance:9999999]
+
+			[DisableBlocksWithName:Beacon,Survival]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:true]
+
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+
+			[UseGridDereliction:false]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Ghoul Corvette Derelict]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:20]
+			[MaximumBlocksPercent:50]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+						
+			[ChangeTurretSettings:false]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-Derelict Hydro Tanker">
+				    <Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Space Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-SpaceDerelictPassive-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+				
+		<!--GVE-Derelict Imp B: Attack behavior-->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-SpaceDerelict-SPRT-Imp B</SubtypeId> 
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[BossEncounterSpace:true]
+
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:GVE+]
+			[BossCustomAnnounceMessage:A space derelict has been reported]
+			[BossCustomGPSLabel:Space Derelict]
+			
+			[IgnoreGlobalBlockReplacer:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[DisableDampeners:false]
+			[ForceStaticGrid:false]
+			[ClearGridInventories:true]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-JumpDrive-Large]
+			
+			[FactionOwner:SPRT]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999999]
+			[MinimumPlayers:2]			
+												
+			[UseRemoteControlCodeRestrictions:true]
+			[RemoteControlCode:GVE-Derelict]
+			[RemoteControlCodeMinDistance:9999999]
+
+			[DisableBlocksWithName:Beacon,Survival]
+			[AllowPartialNames:true]	
+			
+			[OverrideBlockDamageModifier:false]
+			[BlockDamageModifier:100]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:true]
+
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+
+			[UseGridDereliction:false]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			
+			[RemoveVoxelsIfGridRemoved:true]
+
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: RoidStation Derelict]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:20]
+			[MaximumBlocksPercent:50]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+						
+			[ChangeTurretSettings:false]
+			[TurretRange:1500]
+			[TurretIdleRotation:false]
+			[TurretTargetMeteors:false]
+			[TurretTargetMissiles:false]
+			[TurretTargetCharacters:true]
+			[TurretTargetSmallGrids:true]
+			[TurretTargetLargeGrids:true]
+			[TurretTargetStations:true]
+			[TurretTargetNeutrals:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-Derelict Imp B">
+				  <Position>
+					<X>0.0</X>
+					<Y>0.0</Y>
+					<Z>0.0</Z>
+				  </Position>
+				  <Speed>0</Speed>
+				  <Behaviour>DefaultDirect</Behaviour>
+				  <BehaviourActivationDistance>3000</BehaviourActivationDistance>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+				
 	<!--Do Not Edit Below Here-->
 	</SpawnGroups>
 </Definitions>
