@@ -2,7 +2,7 @@
 <Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Prefabs>
     <Prefab xsi:type="MyObjectBuilder_PrefabDefinition">
-      <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="[NPC Wreck] Liberty " />
+      <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="[NPC Wreck] Liberty" />
       <CubeGrids>
         <CubeGrid>
           <SubtypeName />
@@ -29209,7 +29209,7 @@ public class RuntimeTracker
               <ShowInInventory>true</ShowInInventory>
               <Enabled>true</Enabled>
               <BroadcastRadius>9999999</BroadcastRadius>
-              <HudText>Liberty</HudText>
+              <HudText>Crashed Ship</HudText>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>

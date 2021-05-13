@@ -2,12 +2,192 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<SpawnGroups>
 		
-		<!--[NPC Wreck] - Tempest MK1-->
+		<!--[NPC Wreck] - Thornback Ray-->
 		
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Wreck - Dusty] Tempest MK1</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Thornback Ray</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Small]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[PlanetWhitelist:Galados_V]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:2]
+			
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+			
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]	
+				
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Thornback Ray">
+					<Position>
+						<X>0.0</X>
+						<Y>3.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!--[NPC Wreck] - Prowler-->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Prowler</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Large]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[PlanetWhitelist:Galados_V]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:2]
+			
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+			
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]	
+				
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Prowler">
+					<Position>
+						<X>0.0</X>
+						<Y>5.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!--[NPC Wreck] - Raptor-->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Raptor</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Small]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[PlanetWhitelist:Galados_V]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:2]
+			
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+			
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]	
+				
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Raptor">
+					<Position>
+						<X>0.0</X>
+						<Y>4.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!--[NPC Wreck] - Roach-->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Roach</SubtypeId>
 			</Id>
 			<Description>
 
@@ -20,6 +200,72 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
+			[PlanetWhitelist:Galados_V]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:4]
+			
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+			
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]	
+				
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Roach">
+					<Position>
+						<X>0.0</X>
+						<Y>2.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!--[NPC Wreck] - Tempest MK1-->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Tempest MK1</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Medium]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[PlanetWhitelist:Galados_V]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:4]
+			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
 			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
@@ -61,7 +307,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Wreck - Dusty] Ceverus</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Ceverus</SubtypeId>
 			</Id>
 			<Description>
 
@@ -74,6 +320,12 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
+			[PlanetWhitelist:Galados_V]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:4]
+			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
 			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
@@ -115,19 +367,25 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Wreck - Dusty] MPC-2</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-MPC-2</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 				
 			[PlanetaryInstallation:true]
-			[PlanetaryInstallationType:Medium]		
+			[PlanetaryInstallationType:Small]		
 			[FactionOwner:SPRT]
 			[ForceStaticGrid:true]
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
+			[PlanetWhitelist:Galados_V]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:2]
+			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
 			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
@@ -169,7 +427,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Wreck - Dusty] MPC-3 Riot RAM</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-MPC-3 Riot RAM</SubtypeId>
 			</Id>
 			<Description>
 
@@ -182,6 +440,12 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
+			[PlanetWhitelist:Galados_V]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:4]
+			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
 			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
@@ -218,12 +482,12 @@
 			</Prefabs>
 		</SpawnGroup>
 
-		<!--[NPC Wreck] - MPC-4 -->
+		<!--[NPC Wreck] - MPC-4-->
 		
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Wreck - Dusty] MPC-4</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-MPC-4</SubtypeId>
 			</Id>
 			<Description>
 
@@ -236,6 +500,12 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
+			[PlanetWhitelist:Galados_V]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:4]
+			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
 			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
@@ -261,7 +531,7 @@
 			<IsPirate>true</IsPirate> <!--Do not edit-->
 			<Frequency>5.0</Frequency>
 			<Prefabs>
-				<Prefab SubtypeId="[NPC Wreck] MPC-4 ">
+				<Prefab SubtypeId="[NPC Wreck] MPC-4">
 					<Position>
 						<X>0.0</X>
 						<Y>-2.5</Y>
@@ -277,7 +547,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Wreck - Dusty] Rhino</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Rhino</SubtypeId>
 			</Id>
 			<Description>
 
@@ -290,6 +560,12 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
+			[PlanetWhitelist:Galados_V]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:4]
+			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
 			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
@@ -331,7 +607,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Wreck - Dusty] Icarus</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Icarus</SubtypeId>
 			</Id>
 			<Description>
 
@@ -344,6 +620,12 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
+			[PlanetWhitelist:Galados_V]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:4]
+			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
 			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
@@ -385,7 +667,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Wreck - Dusty] Kaiju</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Kaiju</SubtypeId>
 			</Id>
 			<Description>
 
@@ -398,6 +680,12 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
+			[PlanetWhitelist:Galados_V]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:4]
+			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
 			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
@@ -439,7 +727,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Wreck - Dusty] Kestrel</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Kestrel</SubtypeId>
 			</Id>
 			<Description>
 
@@ -452,6 +740,12 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
+			[PlanetWhitelist:Galados_V]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:4]
+			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
 			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
@@ -488,24 +782,30 @@
 			</Prefabs>
 		</SpawnGroup>
 
-		<!--[NPC Wreck] - Ketar MK1 -->
+		<!--[NPC Wreck] - Aggressor -->
 		
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Wreck - Dusty] Ketar MK1</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Aggressor</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 				
 			[PlanetaryInstallation:true]
-			[PlanetaryInstallationType:Medium]		
+			[PlanetaryInstallationType:Small]		
 			[FactionOwner:SPRT]
 			[ForceStaticGrid:true]
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
+			[PlanetWhitelist:Galados_V]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:2]
+			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
 			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
@@ -527,6 +827,72 @@
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
 				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Aggressor">
+					<Position>
+						<X>0.0</X>
+						<Y>7.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>			
+
+		<!--[NPC Wreck] - Ketar MK1 -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Ketar MK1</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Small]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[PlanetWhitelist:Galados_V]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:2]
+			
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+		
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]			
+				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
 			<Frequency>5.0</Frequency>
@@ -547,19 +913,25 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Wreck - Dusty] Blood Star</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Blood Star</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 				
 			[PlanetaryInstallation:true]
-			[PlanetaryInstallationType:Medium]		
+			[PlanetaryInstallationType:Small]		
 			[FactionOwner:SPRT]
 			[ForceStaticGrid:true]
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
+			[PlanetWhitelist:Galados_V]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:4]
+			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
 			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
@@ -581,6 +953,9 @@
 			[DisableBlocksWithName:Blood]
 			[AllowPartialNames:true]			
 				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
 			<Frequency>5.0</Frequency>
@@ -601,7 +976,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Wreck - Dusty] Hermes</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Hermes</SubtypeId>
 			</Id>
 			<Description>
 
@@ -614,6 +989,12 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
+			[PlanetWhitelist:Galados_V]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:4]
+			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
 			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
@@ -635,6 +1016,9 @@
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
 				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
 			<Frequency>5.0</Frequency>
@@ -655,7 +1039,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Wreck - Dusty] Liberty</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Liberty</SubtypeId>
 			</Id>
 			<Description>
 
@@ -668,12 +1052,19 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
+			[PlanetWhitelist:Galados_V]
+			
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:6]
+			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
 			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
 			[MinPercentageSkinRandomBlocks:10]
 			[MaxPercentageSkinRandomBlocks:25]				
 			
+			[EraseIngameScripts:true]
 			[ReduceBlockBuildStates:true]
 			[MinimumBlocksPercent:10]
 			[MaximumBlocksPercent:25]
@@ -689,11 +1080,14 @@
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
 				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
 			<Frequency>3.0</Frequency>
 			<Prefabs>
-				<Prefab SubtypeId="[NPC Wreck] Liberty ">
+				<Prefab SubtypeId="[NPC Wreck] Liberty">
 					<Position>
 						<X>0.0</X>
 						<Y>-20.0</Y>
@@ -709,7 +1103,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Wreck - Dusty] Skimmer</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Skimmer</SubtypeId>
 			</Id>
 			<Description>
 
@@ -722,6 +1116,12 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
+			[PlanetWhitelist:Galados_V]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:6]
+			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
 			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
@@ -743,6 +1143,9 @@
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
 				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
 			<Frequency>3.0</Frequency>
@@ -763,7 +1166,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Wreck - Dusty] Helios</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Helios</SubtypeId>
 			</Id>
 			<Description>
 
@@ -776,6 +1179,12 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
+			[PlanetWhitelist:Galados_V]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:6]
+			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
 			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
@@ -797,6 +1206,9 @@
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
 				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
 			<Frequency>3.0</Frequency>
@@ -813,11 +1225,83 @@
 		</SpawnGroup>			
 
 		<!--[NPC Wreck] - Skywarden -->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Skywarden</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Large]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100},{X:100 Y:100 Z:100}]
+
+			[PlanetWhitelist:Galados_V,Pertam]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:6]
+			
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[EraseIngameScripts:true]
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:5]
+			[MaximumBlocksPercent:20]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+			
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:true]
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]
+
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>3.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Skywarden Back">
+					<Position>
+						<X>-10.0</X>
+						<Y>23.0</Y>
+						<Z>85.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+				<Prefab SubtypeId="[NPC Wreck] Skywarden Front">
+					<Position>
+						<X>40.0</X>
+						<Y>16.5</Y>
+						<Z>-85.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>				
+			</Prefabs>
+		</SpawnGroup>		
+		
+		<!--[NPC Wreck] - Kratos -->
 		
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Wreck - Dusty] Skywarden</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Kratos</SubtypeId>
 			</Id>
 			<Description>
 
@@ -830,18 +1314,28 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
+			[PlanetWhitelist:Galados_V,Pertam]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:6]
+			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
 			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
 			[MinPercentageSkinRandomBlocks:10]
 			[MaxPercentageSkinRandomBlocks:25]				
 			
+			[EraseIngameScripts:true]
 			[ReduceBlockBuildStates:true]
 			[MinimumBlocksPercent:10]
 			[MaximumBlocksPercent:25]
 			[MinimumBuildPercent:50]
 			[MaximumBuildPercent:70]
-		
+			
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:true]
 			[IgnoreCleanupRules:true]
@@ -855,31 +1349,23 @@
 			<IsPirate>true</IsPirate> <!--Do not edit-->
 			<Frequency>3.0</Frequency>
 			<Prefabs>
-				<Prefab SubtypeId="[NPC Wreck] Skywarden Back">
+				<Prefab SubtypeId="[NPC Wreck] Kratos">
 					<Position>
-						<X>-10.0</X>
-						<Y>15.0</Y>
-						<Z>80.0</Z>
+						<X>0</X>
+						<Y>5</Y>
+						<Z>0</Z>
 					</Position>
 					<Speed>0</Speed>
 				</Prefab>
-				<Prefab SubtypeId="[NPC Wreck] Skywarden Front">
-					<Position>
-						<X>40.0</X>
-						<Y>12.5</Y>
-						<Z>-80.0</Z>
-					</Position>
-					<Speed>0</Speed>
-				</Prefab>				
 			</Prefabs>
 		</SpawnGroup>
-		
+
 		<!--[NPC Outpost] - Tower -->
 		
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Outpost] Tower</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Tower</SubtypeId>
 			</Id>
 			<Description>
 
@@ -889,7 +1375,13 @@
 			[PlanetaryInstallationType:Medium]
 			[PlanetRequiresAtmo:true]			
 			[ForceStaticGrid:true]
+			
+			[PlanetWhitelist:Galados_V]
 
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:4]
+			
 			[FactionOwner:SPRT]			
 			
 			[UseRivalAi:true]
@@ -927,17 +1419,26 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Ruins] Office V1</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Office V1</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 			
+			[PlanetWhitelist:Galados_V]
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Medium]		
 			[FactionOwner:SPRT]
 			[ForceStaticGrid:true]
 								
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:4]
+			
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
 			<Frequency>5.0</Frequency>
@@ -953,8 +1454,6 @@
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
-
-
 
 	</SpawnGroups>
 </Definitions>

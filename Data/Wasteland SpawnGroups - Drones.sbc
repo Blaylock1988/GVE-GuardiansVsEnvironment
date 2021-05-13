@@ -7,7 +7,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Drone] Reaper</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Reaper</SubtypeId>
 			</Id>
 			<Description>
 
@@ -45,7 +45,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Drone] Revenant</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Revenant</SubtypeId>
 			</Id>
 			<Description>
 
@@ -83,7 +83,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Drone] Wasp</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Wasp</SubtypeId>
 			</Id>
 			<Description>
 
@@ -121,7 +121,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>[NPC Drone] Hornet</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Hornet</SubtypeId>
 			</Id>
 			<Description>
 
