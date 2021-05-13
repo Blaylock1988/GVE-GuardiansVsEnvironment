@@ -54,8 +54,7 @@
       [RivalAI Action]
 	  
 	  [SwitchToBehavior:true]
-	  [NewBehavior:SCRP-FighterBehavior]
-	  
+	  [NewBehavior:SPRT-FighterBehavior]
 	  
       </Description>
     </EntityComponent>	
@@ -66,7 +65,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>SCRP-FighterBehavior</SubtypeId>
+          <SubtypeId>SPRT-FighterBehavior</SubtypeId>
       </Id>
       <Description>
 	  
@@ -74,6 +73,11 @@
 	  
       [BehaviorName:Fighter]
 	  
+	  [Triggers:GVE-Generic-Trigger-SPRTTakeDamage]
+	  [Triggers:GVE-Generic-Trigger-SPRTTargetAcquiredChatter]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
+  
       </Description>
     </EntityComponent>
 	
@@ -82,14 +86,14 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>SCRP-DefenseBehavior</SubtypeId>
+          <SubtypeId>SPRT-DefenseBehavior</SubtypeId>
       </Id>
       <Description>
 	  
       [RivalAI Behavior]
 	  
       [BehaviorName:Passive]
-	  [Triggers:SCRP-DefenseTrigger]
+	  [Triggers:SPRT-DefenseTrigger]
 	  
       </Description>
     </EntityComponent>	
@@ -97,7 +101,7 @@
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>SCRP-DefenseTrigger</SubtypeId>
+          <SubtypeId>SPRT-DefenseTrigger</SubtypeId>
       </Id>
       <Description>
 	  
@@ -107,7 +111,7 @@
 	  [Type:PlayerNear]
 	  [TargetDistance:1000]
 	  
-	  [Actions:SCRP-DefenseAction]
+	  [Actions:SPRT-DefenseAction]
 	  
       </Description>
     </EntityComponent>
@@ -115,14 +119,14 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>SCRP-DefenseAction</SubtypeId>
+          <SubtypeId>SPRT-DefenseAction</SubtypeId>
       </Id>
       <Description>
 	  
       [RivalAI Action]
 	  
 	  [SpawnEncounter:true]
-	  [Spawner:SCRP-DefenseDroneSpawn]
+	  [Spawner:SPRT-DefenseDroneSpawn]
 	  
       </Description>
     </EntityComponent>
@@ -130,7 +134,7 @@
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>SCRP-DefenseDroneSpawn</SubtypeId>
+          <SubtypeId>SPRT-DefenseDroneSpawn</SubtypeId>
       </Id>
       <Description>
 	  
@@ -139,10 +143,10 @@
       [UseSpawn:true]
       [StartsReady:true]
 
-	  [SpawnGroups:[NPC Drone] Reaper]
-	  [SpawnGroups:[NPC Drone] Revenant]
-	  [SpawnGroups:[NPC Drone] Wasp]
-	  [SpawnGroups:[NPC Drone] Hornet]
+	  [SpawnGroups:(NPC-GVE)-PlanetDefense-SPRT-Reaper]
+	  [SpawnGroups:(NPC-GVE)-PlanetDefense-SPRT-Revenant]
+	  [SpawnGroups:(NPC-GVE)-PlanetDefense-SPRT-Wasp]
+	  [SpawnGroups:(NPC-GVE)-PlanetDefense-SPRT-Hornet]
 	  
       [MaxSpawns:2]	  
 
