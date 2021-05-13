@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-SpaceDerelictPassive-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Passive]
+
+	  [UseRetreatTimer:false]
+	  [UseNoTargetTimer:false]
+	  [UsePlayerDistanceTimer:true]
+	  [PlayerDistanceTimerTrigger:1800]
+	  [PlayerDistanceTrigger:20000]
+	  	  
+	  [Triggers:GVE-NPC-SpaceDerelictPassive-Trigger-Despawn]
+	  [Triggers:GVE-NPC-SpaceDerelictPassive-Trigger-DespawnMES]
+	  	  
+	  [TargetData: GVE-Generic-TargetProfile-EnemyPlayers]
+	  
+	  [RemoteControlCode:GVE-Derelict]
+	  
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-SpaceDerelictPassive-Trigger-Despawn</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Despawn]
+	  [UseTrigger:true]
+	  [MaxActions:1]
+	  
+	  [Actions:GVE-NPC-SpaceDerelictPassive-Action-Despawned]
+	  
+      </Description>      
+    </EntityComponent>
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-SpaceDerelictPassive-Trigger-DespawnMES</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:DespawnMES]
+	  [UseTrigger:true]
+	  [MaxActions:1]
+	  
+	  [Actions:GVE-NPC-SpaceDerelictPassive-Action-Despawned]
+	  
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-SpaceDerelictPassive-Action-Despawned</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+      [UseChatBroadcast:true]
+      [ChatData:GVE-NPC-SpaceDerelictPassive-Chat-Despawned]
+
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-SpaceDerelictPassive-Chat-Despawned</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:false]
+      [Author:GVE+]
+      [Color:White]
+      
+      [ChatMessages:The Space Derelict has disappeared]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Both]
+	  [SendToAllOnlinePlayers:true]
+
+      </Description>      
+    </EntityComponent>
+		
+  </EntityComponents>
+</Definitions>
