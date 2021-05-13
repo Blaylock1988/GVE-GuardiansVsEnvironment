@@ -101,11 +101,11 @@
 
       [MaxSpawns:8]
       
-      [SpawnGroups:(NPC-GVE) DDS Fighter Cyclone]
-	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
-	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
-	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
-	  [SpawnGroups:(NPC-GVE) Impaler]
+      [SpawnGroups:(NPC-GVE)-SPRT-DDSFighterCyclone]
+	  [SpawnGroups:(NPC-GVE)-SPRT-DDSStrikeCyclone]
+	  [SpawnGroups:(NPC-GVE)-SPRT-DDSWildfire]
+	  [SpawnGroups:(NPC-GVE)-SPRT-TempanoRavager]
+	  [SpawnGroups:(NPC-GVE)-SPRT-Impaler]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:1000]

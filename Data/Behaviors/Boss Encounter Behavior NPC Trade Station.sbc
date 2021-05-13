@@ -53,7 +53,7 @@
 	  [TriggerGroups:GVE-Generic-TriggerGroup-MONKTakeDamage]
 	  
 	  [Triggers:GVE-RE-Boss-MONKTradeStation-Trigger-PlayerDistant]
-	  [Triggers:GVE-RE-Boss-BTFNTradeStation-Trigger-GPSAnnounce]
+	  [Triggers:GVE-RE-Boss-MONKTradeStation-Trigger-GPSAnnounce]
 	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-EnemyNear]
 	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-NeutralNear]
 	  [Triggers:GVE-RE-Boss-NPCTradeStation-Trigger-FriendlyNear]

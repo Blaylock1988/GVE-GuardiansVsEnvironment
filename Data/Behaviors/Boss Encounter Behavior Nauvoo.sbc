@@ -22,6 +22,7 @@
 	  [NoTargetTimerTrigger:600]
 	  [UseRetreatTimer:false]
 	  
+	  [Triggers:GVE-RE-Boss-Nauvoo-Trigger-TakeDamage]
 	  [Triggers:GVE-RE-Boss-Nauvoo-Trigger-PlayerDistant]
 	  [Triggers:GVE-RE-Boss-Nauvoo-Trigger-PlayerApproach]
 	  [Triggers:GVE-RE-Boss-Nauvoo-Trigger-SpawnPirates]
@@ -194,7 +195,6 @@
       [Type:Damage]
 	  [UseTrigger:true]
 	  [DamageTypes:Any]
-	  [MaxActions:1]
 
 	  [Actions:GVE-RE-Boss-Nauvoo-Action-TakeDamage]
 	  
@@ -233,11 +233,13 @@
       [RivalAI Chat]
       
       [UseChat:true]
+	  [MinTime:30]
+	  [MaxTime:90]
       [StartsReady:true]
       [Chance:100]
-      [MaxChats:1]
       [BroadcastRandomly:true]
-      [Author:Nauvoo]
+	  [SendToAllOnlinePlayers:true]
+      [Author:{GridName}]
       [Color:White]
       
       [ChatMessages:No don't shoot us!]
@@ -351,14 +353,14 @@
 
       [MaxSpawns:7]
       
-	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
-	  [SpawnGroups:(NPC-GVE) DDS Fighter Wildfire]
-	  [SpawnGroups:(NPC-GVE) DDS Strike Cyclone]
-	  [SpawnGroups:(NPC-GVE) Tempano Ravager]
-	  [SpawnGroups:(NPC-GVE) Lexington]
-	  [SpawnGroups:(NPC-GVE) Eclipse]
-	  [SpawnGroups:(NPC-GVE) Proteus]
-	  [SpawnGroups:(NPC-GVE) Impaler]
+	  [SpawnGroups:(NPC-GVE)-SPRT-TempanoRavager]
+	  [SpawnGroups:(NPC-GVE)-SPRT-DDSWildfire]
+	  [SpawnGroups:(NPC-GVE)-SPRT-DDSStrikeCyclone]
+	  [SpawnGroups:(NPC-GVE)-SPRT-TempanoRavager]
+	  [SpawnGroups:(NPC-GVE)-SPRT-Lexington]
+	  [SpawnGroups:(NPC-GVE)-SPRT-Eclipse]
+	  [SpawnGroups:(NPC-GVE)-SPRT-Proteus]
+	  [SpawnGroups:(NPC-GVE)-SPRT-Impaler]
 
       [UseRelativeSpawnPosition:false]
       [MinDistance:850]
