@@ -54,6 +54,7 @@
 	  [Triggers:GVE-Generic-Trigger-MONKCallDDSFighters]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
+	  [Triggers:GVE-Generic-Trigger-SPRTCantFly]
 	  
       </Description>
     </EntityComponent>
@@ -124,6 +125,7 @@
 	  [Triggers:GVE-Generic-Trigger-SPRTTargetAcquiredChatter]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
+	  [Triggers:GVE-Generic-Trigger-SPRTCantFly]
 	  
       </Description>
     </EntityComponent>
@@ -175,9 +177,10 @@
 	  [Triggers:GVE-Generic-Trigger-MONKTakeDamageInitial]
 	  [Triggers:GVE-Generic-Trigger-SPRTTargetAcquiredChatter]
 	  [Triggers:GVE-Generic-Trigger-MONKCallDDSFighters]
-	  [Triggers:GVE-Generic-Trigger-MONKDefeated]
+	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  [Triggers:GVE-Generic-Trigger-FighterBarrelRoll]
+	  [Triggers:GVE-Generic-Trigger-SPRTCantFly]
 	  
       </Description>
     </EntityComponent>
@@ -230,6 +233,7 @@
 	  [Triggers:GVE-Generic-Trigger-SPRTTargetAcquiredChatter]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
+	  [Triggers:GVE-Generic-Trigger-SPRTCantFly]
 
       </Description>
     </EntityComponent>
@@ -294,6 +298,7 @@
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  [Triggers:GVE-Generic-Trigger-FighterBarrelRoll]
+	  [Triggers:GVE-Generic-Trigger-SPRTCantFly]
 	  
       </Description>
     </EntityComponent>
@@ -361,6 +366,7 @@
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
 	  [Triggers:GVE-Generic-Trigger-FighterBarrelRoll]
+	  [Triggers:GVE-Generic-Trigger-SPRTCantFly]
 	  
       </Description>
     </EntityComponent>

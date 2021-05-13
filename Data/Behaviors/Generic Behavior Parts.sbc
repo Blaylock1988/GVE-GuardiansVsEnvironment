@@ -760,7 +760,7 @@
 	  [StartsReady:true]
 	  [MaxActions:1]
 	  	  
-	  [Actions:GVE-Generic-Action-SPRTDefeated]
+	  [Actions:GVE-Generic-Action-SPRTTargetAcquiredChatter]
 
       </Description>
     </EntityComponent>

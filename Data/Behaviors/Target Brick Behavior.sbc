@@ -16,9 +16,7 @@
 	  [UseRetreatTimer:false]
 	  [UseNoTargetTimer:false]
 	  [UsePlayerDistanceTimer:false]  
-	  
-	  [TriggerGroups:GVE-Generic-TriggerGroup-SPRTTakeDamage]
-	  
+	  	  
 	  [Triggers:GVE-NPC-TargetBrick-Trigger-PlayerNear]
 	  [Triggers:GVE-NPC-TargetBrick-Trigger-Despawn]
 	  [Triggers:GVE-NPC-TargetBrick-Trigger-DespawnMES]

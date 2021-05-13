@@ -50,6 +50,7 @@
 	  [Triggers:GVE-Generic-Trigger-SPRTCallDDSFighters]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
+	  [Triggers:GVE-Generic-Trigger-SPRTCantFly]
 	  
       </Description>
     </EntityComponent>
@@ -102,6 +103,7 @@
 	  [Triggers:GVE-Generic-Trigger-SPRTCallDDSFighters]
 	  [Triggers:GVE-Generic-Trigger-SPRTDefeated]
 	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
+	  [Triggers:GVE-Generic-Trigger-SPRTCantFly]
 	  
       </Description>
     </EntityComponent>
