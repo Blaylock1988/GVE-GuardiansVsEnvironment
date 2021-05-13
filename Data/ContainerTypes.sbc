@@ -71,6 +71,13 @@
 						<SubtypeId>NATO_25x184mm</SubtypeId>
 					</Id>
 				</Item>
+				<Item AmountMin="5" AmountMax="50">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>AmmoMagazine</TypeId>
+						<SubtypeId>Missile200mm</SubtypeId>
+					</Id>
+				</Item>
 				<Item AmountMin="1" AmountMax="1">
 					<Frequency>1</Frequency>
 					<Id>
