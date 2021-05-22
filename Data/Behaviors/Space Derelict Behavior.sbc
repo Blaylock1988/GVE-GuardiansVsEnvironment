@@ -22,7 +22,7 @@
 	  [Triggers:GVE-NPC-SpaceDerelictPassive-Trigger-Despawn]
 	  [Triggers:GVE-NPC-SpaceDerelictPassive-Trigger-DespawnMES]
 	  	  
-	  [TargetData: GVE-Generic-TargetProfile-EnemyPlayers]
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 	  
 	  [RemoteControlCode:GVE-Derelict]
 	  

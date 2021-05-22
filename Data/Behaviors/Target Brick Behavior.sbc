@@ -22,7 +22,7 @@
 	  [Triggers:GVE-NPC-TargetBrick-Trigger-DespawnMES]
 	  [Triggers:GVE-NPC-TargetBrick-Trigger-Compromised]
 	  	  
-	  [TargetData: GVE-Generic-TargetProfile-EnemyPlayers]
+	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 	  
       </Description>
     </EntityComponent>
