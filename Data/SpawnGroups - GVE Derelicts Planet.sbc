@@ -34,7 +34,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -60,7 +60,7 @@
 			[ReplaceArmorBlocksWithModules:true]
 			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
 			
-			[DisableBlocksWithName:Survival]
+			[DisableBlocksWithName:Survival,Turret]
 			[AllowPartialNames:true]	
 				
 			</Description>
@@ -112,11 +112,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:1]
+			[MinimumPlayers:6]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -190,7 +190,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -216,7 +216,7 @@
 			[ReplaceArmorBlocksWithModules:true]
 			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
 			
-			[DisableBlocksWithName:Survival]
+			[DisableBlocksWithName:Survival,Turret]
 			[AllowPartialNames:true]	
 				
 			</Description>
@@ -268,11 +268,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:1]
+			[MinimumPlayers:3]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -346,11 +346,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:1]
+			[MinimumPlayers:3]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -424,11 +424,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:1]
+			[MinimumPlayers:3]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -502,7 +502,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -580,11 +580,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:1]
+			[MinimumPlayers:3]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -658,11 +658,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:1]
+			[MinimumPlayers:3]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -736,11 +736,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:1]
+			[MinimumPlayers:3]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -814,11 +814,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:1]
+			[MinimumPlayers:3]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -892,11 +892,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:1]
+			[MinimumPlayers:3]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -968,11 +968,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:1]
+			[MinimumPlayers:3]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -1046,7 +1046,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1125,7 +1125,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1203,11 +1203,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:1]
+			[MinimumPlayers:3]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -1250,7 +1250,7 @@
 			</Prefabs>
 		</SpawnGroup>			
 
-		<!--[NPC Wreck] - Ketar MK1 -->
+		<!--[NPC Wreck] - Ketar MK1 Need to add an RAI remote!-->
 		
 		<SpawnGroup>
 			<Id>
@@ -1282,7 +1282,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1306,7 +1306,7 @@
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
-			[DisableBlocksWithName:Survival]
+			[DisableBlocksWithName:Survival,Turret]
 			[AllowPartialNames:true]			
 				
 			[UseGridDereliction:true]
@@ -1361,7 +1361,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1385,7 +1385,7 @@
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
-			[DisableBlocksWithName:Blood]
+			[DisableBlocksWithName:Blood,Turret]
 			[AllowPartialNames:true]			
 				
 			[UseGridDereliction:true]
@@ -1440,11 +1440,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:1]
+			[MinimumPlayers:3]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -1519,7 +1519,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 			
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1599,7 +1599,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1678,7 +1678,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1757,7 +1757,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1836,7 +1836,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100},{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1924,7 +1924,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -2002,11 +2002,11 @@
 			[PlanetRequiresAtmo:true]			
 			[ForceStaticGrid:true]
 			
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:1]
+			[MinimumPlayers:3]
 			
 			[FactionOwner:SPRT]			
 			
@@ -2062,7 +2062,7 @@
 			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
 			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
 
-			[PlanetWhitelist:Galados_V,Pertam]
+			[PlanetWhitelist:Galados_V]
 
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Medium]		
@@ -2071,7 +2071,7 @@
 								
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:1]
+			[MinimumPlayers:3]
 			
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
