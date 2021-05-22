@@ -13,7 +13,7 @@
 
       [RivalAI Behavior]
 	  
-      [BehaviorName:CargoShip]	  
+      [BehaviorName:Horsefly]	  
 
 	  [FlyLevelWithGravity:true]
 	  [IdealPlanetAltitude:150]
