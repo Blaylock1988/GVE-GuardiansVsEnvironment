@@ -6,18 +6,18 @@
       <CubeGrids>
         <CubeGrid>
           <SubtypeName />
-          <EntityId>77801832200379666</EntityId>
+          <EntityId>90408574038321775</EntityId>
           <PersistentFlags>CastShadows InScene</PersistentFlags>
-          <Name>119580455138916135</Name>
+          <Name>90408574038321775</Name>
           <PositionAndOrientation>
-            <Position x="15146.548507732763" y="11879.75356352724" z="-75000.3551850676" />
-            <Forward x="-0.2175091" y="0.10826005" z="-0.970035851" />
-            <Up x="0.09791579" y="0.9912366" z="0.0886706859" />
+            <Position x="0" y="0" z="0" />
+            <Forward x="-0.008526241" y="0.7070811" z="0.7070811" />
+            <Up x="-0.6392406" y="-0.547610343" z="0.539902151" />
             <Orientation>
-              <X>0.049654007</X>
-              <Y>0.111877419</Y>
-              <Z>-0.0437741652</Z>
-              <W>0.991514862</W>
+              <X>0.869432449</X>
+              <Y>-0.312454462</Y>
+              <Z>0.133762613</Z>
+              <W>0.3585624</W>
             </Orientation>
           </PositionAndOrientation>
           <LocalPositionAndOrientation xsi:nil="true" />
@@ -25,14 +25,13 @@
           <CubeBlocks>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Cockpit">
               <SubtypeName>LargeBlockCockpitIndustrial</SubtypeName>
-              <EntityId>114212466156814283</EntityId>
-              <Name>114212466156814283</Name>
+              <EntityId>115738655135376154</EntityId>
               <Min x="0" y="6" z="6" />
-              <IntegrityPercent>0.357142717</IntegrityPercent>
-              <BuildPercent>0.357142717</BuildPercent>
+              <IntegrityPercent>0.3571427</IntegrityPercent>
+              <BuildPercent>0.3571427</BuildPercent>
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -72,7 +71,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>View</Action>
-                      <BlockEntityId>96602556317579756</BlockEntityId>
+                      <BlockEntityId>81737006782864251</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -81,7 +80,7 @@
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>OnOff</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>114212466156814283</BlockEntityId>
+                      <BlockEntityId>115738655135376154</BlockEntityId>
                       <GroupName>Turrets buzzard</GroupName>
                     </Data>
                   </Slot>
@@ -91,7 +90,7 @@
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>Add Top Part</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>114212466156814283</BlockEntityId>
+                      <BlockEntityId>115738655135376154</BlockEntityId>
                       <GroupName>Wheels buzzard</GroupName>
                     </Data>
                   </Slot>
@@ -101,7 +100,7 @@
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>IncreaseStrength</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>114212466156814283</BlockEntityId>
+                      <BlockEntityId>115738655135376154</BlockEntityId>
                       <GroupName>Wheels buzzard</GroupName>
                     </Data>
                   </Slot>
@@ -111,7 +110,7 @@
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>DecreaseStrength</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>114212466156814283</BlockEntityId>
+                      <BlockEntityId>115738655135376154</BlockEntityId>
                       <GroupName>Wheels buzzard</GroupName>
                     </Data>
                   </Slot>
@@ -120,7 +119,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>Override</Action>
-                      <BlockEntityId>118655065806436439</BlockEntityId>
+                      <BlockEntityId>102445558564622212</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -128,7 +127,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>Override</Action>
-                      <BlockEntityId>88359557138070357</BlockEntityId>
+                      <BlockEntityId>73736238119580006</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -137,7 +136,7 @@
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>OnOff</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>114212466156814283</BlockEntityId>
+                      <BlockEntityId>115738655135376154</BlockEntityId>
                       <GroupName>BACKUP GYROS</GroupName>
                     </Data>
                   </Slot>
@@ -162,7 +161,7 @@
               <PilotRelativeWorld>
                 <Position x="0.93872904777526855" y="-1.17709481716156" z="3.9862864017486572" />
                 <Forward x="-0.186802089" y="0.0214616936" z="-0.982163131" />
-                <Up x="0.0372965038" y="0.9991955" z="0.0147402827" />
+                <Up x="0.0372965038" y="0.9991955" z="0.0147402836" />
                 <Orientation>
                   <X>0.009092591</X>
                   <Y>0.0939987749</Y>
@@ -174,11 +173,9 @@
               <IsInFirstPersonView>true</IsInFirstPersonView>
               <OxygenLevel>0.8</OxygenLevel>
               <PilotJetpackEnabled xsi:nil="true" />
-              <Panels />
               <TextPanels>
                 <MySerializedTextPanelData>
                   <ChangeInterval>0</ChangeInterval>
-                  <SelectedImages />
                   <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
                   <FontSize>1</FontSize>
                   <ShowText>NONE</ShowText>
@@ -233,7 +230,6 @@
                 </MySerializedTextPanelData>
                 <MySerializedTextPanelData>
                   <ChangeInterval>0</ChangeInterval>
-                  <SelectedImages />
                   <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
                   <FontSize>1</FontSize>
                   <ShowText>NONE</ShowText>
@@ -288,7 +284,6 @@
                 </MySerializedTextPanelData>
                 <MySerializedTextPanelData>
                   <ChangeInterval>0</ChangeInterval>
-                  <SelectedImages />
                   <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
                   <FontSize>1</FontSize>
                   <ShowText>NONE</ShowText>
@@ -343,7 +338,6 @@
                 </MySerializedTextPanelData>
                 <MySerializedTextPanelData>
                   <ChangeInterval>0</ChangeInterval>
-                  <SelectedImages />
                   <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
                   <FontSize>1</FontSize>
                   <ShowText>NONE</ShowText>
@@ -398,7 +392,6 @@
                 </MySerializedTextPanelData>
                 <MySerializedTextPanelData>
                   <ChangeInterval>0</ChangeInterval>
-                  <SelectedImages />
                   <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
                   <FontSize>1</FontSize>
                   <ShowText>NONE</ShowText>
@@ -453,7 +446,6 @@
                 </MySerializedTextPanelData>
                 <MySerializedTextPanelData>
                   <ChangeInterval>0</ChangeInterval>
-                  <SelectedImages />
                   <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
                   <FontSize>1</FontSize>
                   <ShowText>NONE</ShowText>
@@ -508,13 +500,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>LargeBlockBatteryBlock</SubtypeName>
-              <EntityId>75392476360560527</EntityId>
-              <Name>75392476360560527</Name>
+              <EntityId>130130135206601264</EntityId>
               <Min x="1" y="5" z="7" />
               <BlockOrientation Forward="Backward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Battery 4</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -530,15 +521,14 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>LargeBlockBatteryBlock</SubtypeName>
-              <EntityId>83831102165235736</EntityId>
-              <Name>83831102165235736</Name>
+              <EntityId>92944880296955208</EntityId>
               <Min x="-1" y="5" z="9" />
               <IntegrityPercent>0.375</IntegrityPercent>
               <BuildPercent>0.375</BuildPercent>
               <BlockOrientation Forward="Backward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Battery 3</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -554,15 +544,14 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>LargeBlockBatteryBlock</SubtypeName>
-              <EntityId>127432533873037638</EntityId>
-              <Name>127432533873037638</Name>
+              <EntityId>114816650174783495</EntityId>
               <Min x="-1" y="5" z="8" />
               <IntegrityPercent>0.375</IntegrityPercent>
               <BuildPercent>0.375</BuildPercent>
               <BlockOrientation Forward="Backward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Battery 2</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -578,15 +567,14 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>LargeBlockBatteryBlock</SubtypeName>
-              <EntityId>112033680325363738</EntityId>
-              <Name>112033680325363738</Name>
+              <EntityId>134777034733577143</EntityId>
               <Min x="-1" y="5" z="7" />
               <IntegrityPercent>0.25</IntegrityPercent>
               <BuildPercent>0.25</BuildPercent>
               <BlockOrientation Forward="Backward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Battery</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -602,135 +590,109 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>111898390166347520</EntityId>
-              <Name>111898390166347520</Name>
+              <EntityId>119625569057280469</EntityId>
               <Min x="-1" y="4" z="9" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>141911611874004332</EntityId>
-              <Name>141911611874004332</Name>
+              <EntityId>97985358709306304</EntityId>
               <Min x="1" y="4" z="9" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>134358770351922066</EntityId>
-              <Name>134358770351922066</Name>
+              <EntityId>114409677458056103</EntityId>
               <Min x="0" y="4" z="10" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>97431220479194506</EntityId>
-              <Name>97431220479194506</Name>
+              <EntityId>97969942551096202</EntityId>
               <Min x="-1" y="4" z="8" />
               <IntegrityPercent>0.5185184</IntegrityPercent>
               <BuildPercent>0.5185184</BuildPercent>
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>135377396306652841</EntityId>
-              <Name>135377396306652841</Name>
+              <EntityId>88115404332352943</EntityId>
               <Min x="1" y="4" z="8" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>100439817736017155</EntityId>
-              <Name>100439817736017155</Name>
+              <EntityId>142835195191477048</EntityId>
               <Min x="0" y="4" z="9" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>102336757769710160</EntityId>
-              <Name>102336757769710160</Name>
+              <EntityId>109783014188841606</EntityId>
               <Min x="0" y="4" z="8" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>94795327141968577</EntityId>
-              <Name>94795327141968577</Name>
+              <EntityId>76807013563265018</EntityId>
               <Min x="1" y="4" z="5" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>106863395567119987</EntityId>
-              <Name>106863395567119987</Name>
+              <EntityId>122739195511085143</EntityId>
               <Min x="1" y="4" z="4" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>96674429965667835</EntityId>
-              <Name>96674429965667835</Name>
+              <EntityId>102500486441056490</EntityId>
               <Min x="0" y="4" z="5" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>95749664476086929</EntityId>
-              <Name>95749664476086929</Name>
+              <EntityId>100628361444971119</EntityId>
               <Min x="0" y="4" z="4" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCorner</SubtypeName>
-              <EntityId>135907656107806787</EntityId>
-              <Name>135907656107806787</Name>
+              <EntityId>105502925519001790</EntityId>
               <Min x="1" y="4" z="1" />
               <BlockOrientation Forward="Up" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_MotorSuspension">
               <SubtypeName>Suspension3x3mirrored</SubtypeName>
-              <EntityId>89288656245042565</EntityId>
-              <Name>89288656245042565</Name>
+              <EntityId>140481298959900083</EntityId>
               <Min x="1" y="4" z="2" />
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
               <CustomName>Wheel Suspension 3x3 Left 3</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -763,13 +725,11 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_MotorSuspension">
               <SubtypeName>Suspension3x3</SubtypeName>
-              <EntityId>128541268102068142</EntityId>
-              <Name>128541268102068142</Name>
+              <EntityId>123931896998624837</EntityId>
               <Min x="-2" y="4" z="2" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
               <CustomName>Wheel Suspension 3x3 Right 3</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -802,13 +762,11 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_MotorSuspension">
               <SubtypeName>Suspension3x3mirrored</SubtypeName>
-              <EntityId>105639226442773666</EntityId>
-              <Name>105639226442773666</Name>
+              <EntityId>124665509222783747</EntityId>
               <Min x="1" y="4" z="6" />
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
               <CustomName>Wheel Suspension 3x3 Left 2</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -842,15 +800,14 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>LargeBlockBatteryBlock</SubtypeName>
-              <EntityId>94979215516577753</EntityId>
-              <Name>94979215516577753</Name>
+              <EntityId>89972742516231474</EntityId>
               <Min x="1" y="5" z="9" />
               <IntegrityPercent>0.375</IntegrityPercent>
               <BuildPercent>0.375</BuildPercent>
               <BlockOrientation Forward="Backward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Battery 6</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -866,15 +823,14 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>LargeBlockBatteryBlock</SubtypeName>
-              <EntityId>82483711760382891</EntityId>
-              <Name>82483711760382891</Name>
+              <EntityId>78576669505898305</EntityId>
               <Min x="1" y="5" z="8" />
               <IntegrityPercent>0.375</IntegrityPercent>
               <BuildPercent>0.375</BuildPercent>
               <BlockOrientation Forward="Backward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Battery 5</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -890,13 +846,11 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_MotorSuspension">
               <SubtypeName>Suspension3x3</SubtypeName>
-              <EntityId>106719659857005700</EntityId>
-              <Name>106719659857005700</Name>
+              <EntityId>89804323607070942</EntityId>
               <Min x="-2" y="4" z="10" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
               <CustomName>Wheel Suspension 3x3 Right</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -929,13 +883,11 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_MotorSuspension">
               <SubtypeName>Suspension3x3</SubtypeName>
-              <EntityId>138146353215259143</EntityId>
-              <Name>138146353215259143</Name>
+              <EntityId>124331519631851616</EntityId>
               <Min x="-2" y="4" z="6" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
               <CustomName>Wheel Suspension 3x3 Right 2</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -969,13 +921,11 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_MotorSuspension">
               <SubtypeName>Suspension3x3mirrored</SubtypeName>
-              <EntityId>112972957356371382</EntityId>
-              <Name>112972957356371382</Name>
+              <EntityId>125369546454286691</EntityId>
               <Min x="1" y="4" z="10" />
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
               <CustomName>Wheel Suspension 3x3 Left</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -1008,265 +958,214 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCorner</SubtypeName>
-              <EntityId>130063914259189606</EntityId>
-              <Name>130063914259189606</Name>
+              <EntityId>126716250328389951</EntityId>
               <Min x="1" y="4" z="12" />
               <BlockOrientation Forward="Down" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCorner</SubtypeName>
-              <EntityId>94680022233717967</EntityId>
-              <Name>94680022233717967</Name>
+              <EntityId>92115992546745732</EntityId>
               <Min x="-1" y="4" z="12" />
               <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorInvCorner</SubtypeName>
-              <EntityId>127220117466075571</EntityId>
-              <Name>127220117466075571</Name>
+              <EntityId>89088596353266317</EntityId>
               <Min x="-1" y="4" z="11" />
               <BlockOrientation Forward="Down" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorSide</SubtypeName>
-              <EntityId>75651445805614288</EntityId>
-              <Name>75651445805614288</Name>
+              <EntityId>101582890611358605</EntityId>
               <Min x="0" y="4" z="12" />
               <BlockOrientation Forward="Down" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorInvCorner</SubtypeName>
-              <EntityId>83207328730584123</EntityId>
-              <Name>83207328730584123</Name>
+              <EntityId>121631230595187467</EntityId>
               <Min x="1" y="4" z="11" />
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>89057389261017715</EntityId>
-              <Name>89057389261017715</Name>
+              <EntityId>129447515009986749</EntityId>
               <Min x="0" y="4" z="11" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCorner</SubtypeName>
-              <EntityId>88307838969822812</EntityId>
-              <Name>88307838969822812</Name>
+              <EntityId>73325581103852025</EntityId>
               <Min x="-1" y="4" z="1" />
               <IntegrityPercent>0.8333335</IntegrityPercent>
               <BuildPercent>0.8333335</BuildPercent>
               <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>72616246525207884</EntityId>
-              <Name>72616246525207884</Name>
+              <EntityId>126368009673739165</EntityId>
               <Min x="0" y="4" z="3" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>78365135316019216</EntityId>
-              <Name>78365135316019216</Name>
+              <EntityId>85728972046494261</EntityId>
               <Min x="-1" y="4" z="3" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>118642197466900009</EntityId>
-              <Name>118642197466900009</Name>
+              <EntityId>123848196987157249</EntityId>
               <Min x="0" y="4" z="6" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>118799035262084551</EntityId>
-              <Name>118799035262084551</Name>
+              <EntityId>89274022802818799</EntityId>
               <Min x="0" y="4" z="7" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorSide</SubtypeName>
-              <EntityId>134188311678502619</EntityId>
-              <Name>134188311678502619</Name>
+              <EntityId>83220434863553087</EntityId>
               <Min x="0" y="4" z="1" />
               <IntegrityPercent>0.857143044</IntegrityPercent>
               <BuildPercent>0.857143044</BuildPercent>
               <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>120285596319120336</EntityId>
-              <Name>120285596319120336</Name>
+              <EntityId>77701496359590767</EntityId>
               <Min x="0" y="4" z="2" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>141870370215073448</EntityId>
-              <Name>141870370215073448</Name>
+              <EntityId>105439880497936057</EntityId>
               <Min x="1" y="4" z="3" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>140783150059267071</EntityId>
-              <Name>140783150059267071</Name>
+              <EntityId>98674700407335379</EntityId>
               <Min x="-1" y="4" z="4" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>110368755569838274</EntityId>
-              <Name>110368755569838274</Name>
+              <EntityId>135888068975411244</EntityId>
               <Min x="-1" y="4" z="5" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>94246073566161418</EntityId>
-              <Name>94246073566161418</Name>
+              <EntityId>112675716821923027</EntityId>
               <Min x="1" y="4" z="7" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>83046373094621434</EntityId>
-              <Name>83046373094621434</Name>
+              <EntityId>110055530641649393</EntityId>
               <Min x="1" y="5" z="2" />
               <BlockOrientation Forward="Backward" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>139446764430938189</EntityId>
-              <Name>139446764430938189</Name>
+              <EntityId>119948543700400644</EntityId>
               <Min x="-1" y="5" z="2" />
               <BlockOrientation Forward="Backward" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>83111312242913671</EntityId>
-              <Name>83111312242913671</Name>
+              <EntityId>138631437589806140</EntityId>
               <Min x="1" y="5" z="6" />
               <BlockOrientation Forward="Backward" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>107524143038161933</EntityId>
-              <Name>107524143038161933</Name>
+              <EntityId>118723742186267987</EntityId>
               <Min x="1" y="5" z="10" />
               <BlockOrientation Forward="Backward" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>127354202882520149</EntityId>
-              <Name>127354202882520149</Name>
+              <EntityId>80594312644015448</EntityId>
               <Min x="-1" y="5" z="6" />
               <BlockOrientation Forward="Backward" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorCenter</SubtypeName>
-              <EntityId>96438306540631457</EntityId>
-              <Name>96438306540631457</Name>
+              <EntityId>128141689298409658</EntityId>
               <Min x="-1" y="5" z="10" />
               <BlockOrientation Forward="Backward" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
               <SubtypeName>LargeBlockConveyor</SubtypeName>
-              <EntityId>82184946993642491</EntityId>
-              <Name>82184946993642491</Name>
+              <EntityId>95621300653792009</EntityId>
               <Min x="0" y="5" z="10" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
               <SubtypeName>LargeBlockConveyor</SubtypeName>
-              <EntityId>86052697063793496</EntityId>
-              <Name>86052697063793496</Name>
+              <EntityId>74369403264074369</EntityId>
               <Min x="0" y="5" z="6" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_SmallMissileLauncher">
               <SubtypeName>LargeMissileLauncher</SubtypeName>
-              <EntityId>121289270371864658</EntityId>
-              <Name>121289270371864658</Name>
+              <EntityId>128064600452763860</EntityId>
               <Min x="0" y="5" z="1" />
               <BlockOrientation Forward="Forward" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -1306,14 +1205,13 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CargoContainer">
               <SubtypeName>LargeBlockSmallContainer</SubtypeName>
-              <EntityId>102222884905309549</EntityId>
-              <Name>102222884905309549</Name>
+              <EntityId>127488337641344734</EntityId>
               <Min x="0" y="5" z="3" />
               <IntegrityPercent>0.8</IntegrityPercent>
               <BuildPercent>0.8</BuildPercent>
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -1339,14 +1237,13 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CargoContainer">
               <SubtypeName>LargeBlockSmallContainer</SubtypeName>
-              <EntityId>100031986935197966</EntityId>
-              <Name>100031986935197966</Name>
+              <EntityId>105177480612395805</EntityId>
               <Min x="0" y="5" z="4" />
               <IntegrityPercent>0.8</IntegrityPercent>
               <BuildPercent>0.8</BuildPercent>
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -1372,13 +1269,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_SurvivalKit">
               <SubtypeName>SurvivalKitLarge</SubtypeName>
-              <EntityId>90331474434179600</EntityId>
-              <Name>90331474434179600</Name>
+              <EntityId>115148135854941154</EntityId>
               <Min x="0" y="5" z="5" />
               <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -1418,7 +1314,7 @@
                       <TimerEnabled>true</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame10</TimerType>
-                      <FramesFromLastTrigger>10</FramesFromLastTrigger>
+                      <FramesFromLastTrigger>30</FramesFromLastTrigger>
                       <TimerTickInFrames>60</TimerTickInFrames>
                       <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
                     </Component>
@@ -1440,14 +1336,13 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CargoContainer">
               <SubtypeName>LargeBlockSmallContainer</SubtypeName>
-              <EntityId>120879248837364227</EntityId>
-              <Name>120879248837364227</Name>
+              <EntityId>115806019751924688</EntityId>
               <Min x="0" y="5" z="7" />
               <IntegrityPercent>0.8666667</IntegrityPercent>
               <BuildPercent>0.8666667</BuildPercent>
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -1473,12 +1368,11 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CargoContainer">
               <SubtypeName>LargeBlockSmallContainer</SubtypeName>
-              <EntityId>110351696155008013</EntityId>
-              <Name>110351696155008013</Name>
+              <EntityId>105162347275650645</EntityId>
               <Min x="0" y="5" z="8" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -1504,12 +1398,11 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CargoContainer">
               <SubtypeName>LargeBlockSmallContainer</SubtypeName>
-              <EntityId>125618406870877240</EntityId>
-              <Name>125618406870877240</Name>
+              <EntityId>134130462198768318</EntityId>
               <Min x="0" y="5" z="9" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -1535,14 +1428,13 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CargoContainer">
               <SubtypeName>LargeBlockSmallContainer</SubtypeName>
-              <EntityId>77784091932637549</EntityId>
-              <Name>77784091932637549</Name>
+              <EntityId>92939293126338971</EntityId>
               <Min x="0" y="5" z="11" />
               <IntegrityPercent>0.8666667</IntegrityPercent>
               <BuildPercent>0.8666667</BuildPercent>
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -1568,13 +1460,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ShipConnector">
               <SubtypeName>Connector</SubtypeName>
-              <EntityId>100516804900866325</EntityId>
-              <Name>100516804900866325</Name>
+              <EntityId>80403723282979701</EntityId>
               <Min x="0" y="5" z="12" />
               <BlockOrientation Forward="Backward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <DeformationRatio>0.5</DeformationRatio>
               <ComponentContainer>
                 <Components>
@@ -1600,7 +1491,7 @@
                       <TimerEnabled>true</TimerEnabled>
                       <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
                       <TimerType>Frame10</TimerType>
-                      <FramesFromLastTrigger>70</FramesFromLastTrigger>
+                      <FramesFromLastTrigger>30</FramesFromLastTrigger>
                       <TimerTickInFrames>80</TimerTickInFrames>
                       <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
                     </Component>
@@ -1622,14 +1513,13 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_SmallMissileLauncher">
               <SubtypeName>LargeMissileLauncher</SubtypeName>
-              <EntityId>77390999379926596</EntityId>
-              <Name>77390999379926596</Name>
+              <EntityId>74154976173896992</EntityId>
               <Min x="0" y="6" z="1" />
               <IntegrityPercent>0.7333336</IntegrityPercent>
               <BuildPercent>0.7333336</BuildPercent>
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -1673,7 +1563,6 @@
               <BlockOrientation Forward="Backward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Base</SubtypeName>
@@ -1681,7 +1570,6 @@
               <BlockOrientation Forward="Backward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Base</SubtypeName>
@@ -1689,7 +1577,6 @@
               <BlockOrientation Forward="Backward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Base</SubtypeName>
@@ -1697,7 +1584,6 @@
               <BlockOrientation Forward="Backward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner2Base</SubtypeName>
@@ -1705,7 +1591,6 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner2Base</SubtypeName>
@@ -1715,33 +1600,28 @@
               <BlockOrientation Forward="Down" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Base</SubtypeName>
-              <EntityId>117860095863128634</EntityId>
-              <Name>117860095863128634</Name>
+              <EntityId>113083864608971309</EntityId>
               <Min x="0" y="7" z="1" />
               <IntegrityPercent>0.666666746</IntegrityPercent>
               <BuildPercent>0.666666746</BuildPercent>
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="1" y="6" z="2" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-1" y="6" z="2" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Tip</SubtypeName>
@@ -1749,7 +1629,6 @@
               <BlockOrientation Forward="Forward" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Base</SubtypeName>
@@ -1757,14 +1636,12 @@
               <BlockOrientation Forward="Forward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-2" y="7" z="5" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Tip</SubtypeName>
@@ -1772,7 +1649,6 @@
               <BlockOrientation Forward="Forward" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Base</SubtypeName>
@@ -1780,7 +1656,6 @@
               <BlockOrientation Forward="Forward" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Tip</SubtypeName>
@@ -1790,45 +1665,38 @@
               <BlockOrientation Forward="Forward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Tip</SubtypeName>
-              <EntityId>134119119055403531</EntityId>
-              <Name>134119119055403531</Name>
+              <EntityId>90963646221516918</EntityId>
               <Min x="2" y="7" z="3" />
               <IntegrityPercent>0.7333334</IntegrityPercent>
               <BuildPercent>0.7333334</BuildPercent>
               <BlockOrientation Forward="Forward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="2" y="7" z="5" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-2" y="6" z="3" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ReflectorLight">
               <SubtypeName>LargeBlockFrontLight</SubtypeName>
-              <EntityId>120513047840959560</EntityId>
-              <Name>120513047840959560</Name>
+              <EntityId>131116448038540348</EntityId>
               <Min x="2" y="6" z="2" />
               <IntegrityPercent>0.85</IntegrityPercent>
               <BuildPercent>0.85</BuildPercent>
               <BlockOrientation Forward="Forward" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
               <CustomName>Spotlight</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -1851,19 +1719,16 @@
               <Min x="2" y="6" z="3" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ReflectorLight">
               <SubtypeName>LargeBlockFrontLight</SubtypeName>
-              <EntityId>88819029912989599</EntityId>
-              <Name>88819029912989599</Name>
+              <EntityId>115693197899348356</EntityId>
               <Min x="-2" y="6" z="2" />
               <IntegrityPercent>0.8</IntegrityPercent>
               <BuildPercent>0.8</BuildPercent>
               <BlockOrientation Forward="Forward" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
               <CustomName>Spotlight 2</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -1886,14 +1751,12 @@
               <Min x="-2" y="6" z="4" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="2" y="6" z="4" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Tip</SubtypeName>
@@ -1901,14 +1764,12 @@
               <BlockOrientation Forward="Backward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="3" y="6" z="4" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Tip</SubtypeName>
@@ -1916,28 +1777,24 @@
               <BlockOrientation Forward="Backward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="3" y="6" z="5" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="3" y="6" z="6" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-3" y="6" z="6" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner2Base</SubtypeName>
@@ -1947,7 +1804,6 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Base</SubtypeName>
@@ -1955,7 +1811,6 @@
               <BlockOrientation Forward="Forward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner2Base</SubtypeName>
@@ -1963,7 +1818,6 @@
               <BlockOrientation Forward="Down" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Base</SubtypeName>
@@ -1971,7 +1825,6 @@
               <BlockOrientation Forward="Forward" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope</SubtypeName>
@@ -1979,7 +1832,6 @@
               <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope</SubtypeName>
@@ -1987,7 +1839,6 @@
               <BlockOrientation Forward="Down" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner2Base</SubtypeName>
@@ -1995,7 +1846,6 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner2Base</SubtypeName>
@@ -2003,7 +1853,6 @@
               <BlockOrientation Forward="Down" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Tip</SubtypeName>
@@ -2011,19 +1860,16 @@
               <BlockOrientation Forward="Forward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Tip</SubtypeName>
-              <EntityId>98825461072056102</EntityId>
-              <Name>98825461072056102</Name>
+              <EntityId>115772351823688353</EntityId>
               <Min x="-3" y="7" z="6" />
               <IntegrityPercent>0.7333334</IntegrityPercent>
               <BuildPercent>0.7333334</BuildPercent>
               <BlockOrientation Forward="Forward" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfSlopeArmorBlock</SubtypeName>
@@ -2031,7 +1877,6 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfSlopeArmorBlock</SubtypeName>
@@ -2039,19 +1884,16 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner2Tip</SubtypeName>
-              <EntityId>142308938612103206</EntityId>
-              <Name>142308938612103206</Name>
+              <EntityId>125203741643021321</EntityId>
               <Min x="4" y="7" z="6" />
               <IntegrityPercent>0.4</IntegrityPercent>
               <BuildPercent>0.4</BuildPercent>
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner2Tip</SubtypeName>
@@ -2059,7 +1901,6 @@
               <BlockOrientation Forward="Backward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfSlopeArmorBlock</SubtypeName>
@@ -2067,7 +1908,6 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfSlopeArmorBlock</SubtypeName>
@@ -2075,7 +1915,6 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfSlopeArmorBlock</SubtypeName>
@@ -2083,7 +1922,6 @@
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfSlopeArmorBlock</SubtypeName>
@@ -2091,7 +1929,6 @@
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfSlopeArmorBlock</SubtypeName>
@@ -2099,7 +1936,6 @@
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfSlopeArmorBlock</SubtypeName>
@@ -2107,100 +1943,83 @@
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorSide</SubtypeName>
-              <EntityId>74753139268003202</EntityId>
-              <Name>74753139268003202</Name>
+              <EntityId>112319400121010162</EntityId>
               <Min x="3" y="7" z="7" />
               <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorSide</SubtypeName>
-              <EntityId>93091766644441301</EntityId>
-              <Name>93091766644441301</Name>
+              <EntityId>139845822852808649</EntityId>
               <Min x="-3" y="7" z="7" />
               <IntegrityPercent>0.833333552</IntegrityPercent>
               <BuildPercent>0.833333552</BuildPercent>
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorSide</SubtypeName>
-              <EntityId>106158426704930686</EntityId>
-              <Name>106158426704930686</Name>
+              <EntityId>129780750876301925</EntityId>
               <Min x="3" y="7" z="9" />
               <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorSide</SubtypeName>
-              <EntityId>136206193190764748</EntityId>
-              <Name>136206193190764748</Name>
+              <EntityId>140754677249923257</EntityId>
               <Min x="-3" y="7" z="9" />
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Wheel">
               <SubtypeName>OffroadWheel1x1</SubtypeName>
-              <EntityId>136713972813756982</EntityId>
-              <Name>136713972813756982</Name>
+              <EntityId>90461689187255165</EntityId>
               <Min x="3" y="7" z="8" />
               <IntegrityPercent>0.6666666</IntegrityPercent>
               <BuildPercent>0.6666666</BuildPercent>
               <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
               <YieldLastComponent>true</YieldLastComponent>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Wheel">
               <SubtypeName>OffroadWheel1x1</SubtypeName>
-              <EntityId>136354548231954886</EntityId>
-              <Name>136354548231954886</Name>
+              <EntityId>120375458983831458</EntityId>
               <Min x="-3" y="7" z="8" />
               <IntegrityPercent>0.6666666</IntegrityPercent>
               <BuildPercent>0.6666666</BuildPercent>
               <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
               <YieldLastComponent>true</YieldLastComponent>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Wheel">
               <SubtypeName>OffroadWheel1x1</SubtypeName>
-              <EntityId>90398460834469390</EntityId>
-              <Name>90398460834469390</Name>
+              <EntityId>76272184399282091</EntityId>
               <Min x="3" y="7" z="10" />
               <IntegrityPercent>0.333333284</IntegrityPercent>
               <BuildPercent>0.333333284</BuildPercent>
               <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
               <YieldLastComponent>true</YieldLastComponent>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Wheel">
               <SubtypeName>OffroadWheel1x1</SubtypeName>
-              <EntityId>91312497578720172</EntityId>
-              <Name>91312497578720172</Name>
+              <EntityId>124259198027410234</EntityId>
               <Min x="-3" y="7" z="10" />
               <IntegrityPercent>0.6666666</IntegrityPercent>
               <BuildPercent>0.6666666</BuildPercent>
               <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
               <YieldLastComponent>true</YieldLastComponent>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
@@ -2209,14 +2028,12 @@
               <BlockOrientation Forward="Forward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner2Tip</SubtypeName>
               <Min x="-4" y="7" z="11" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Tip</SubtypeName>
@@ -2224,7 +2041,6 @@
               <BlockOrientation Forward="Backward" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Tip</SubtypeName>
@@ -2232,38 +2048,32 @@
               <BlockOrientation Forward="Backward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner</SubtypeName>
-              <EntityId>134263933203403037</EntityId>
-              <Name>134263933203403037</Name>
+              <EntityId>72795419045118667</EntityId>
               <Min x="3" y="7" z="12" />
               <IntegrityPercent>0.333333373</IntegrityPercent>
               <BuildPercent>0.333333373</BuildPercent>
               <BlockOrientation Forward="Forward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner</SubtypeName>
               <Min x="-3" y="7" z="12" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Tip</SubtypeName>
-              <EntityId>103932739527054721</EntityId>
-              <Name>103932739527054721</Name>
+              <EntityId>78309052066501144</EntityId>
               <Min x="2" y="7" z="12" />
               <IntegrityPercent>0.3333334</IntegrityPercent>
               <BuildPercent>0.3333334</BuildPercent>
               <BlockOrientation Forward="Right" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Tip</SubtypeName>
@@ -2271,27 +2081,22 @@
               <BlockOrientation Forward="Left" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorSide</SubtypeName>
-              <EntityId>80521217828907804</EntityId>
-              <Name>80521217828907804</Name>
+              <EntityId>112073992834039853</EntityId>
               <Min x="-1" y="7" z="12" />
               <BlockOrientation Forward="Down" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>ArmorSide</SubtypeName>
-              <EntityId>96634946962917689</EntityId>
-              <Name>96634946962917689</Name>
+              <EntityId>108706390005508532</EntityId>
               <Min x="1" y="7" z="12" />
               <BlockOrientation Forward="Down" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner2Base</SubtypeName>
@@ -2299,7 +2104,6 @@
               <BlockOrientation Forward="Right" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner2Base</SubtypeName>
@@ -2307,7 +2111,6 @@
               <BlockOrientation Forward="Forward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner2Tip</SubtypeName>
@@ -2315,7 +2118,6 @@
               <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner2Tip</SubtypeName>
@@ -2323,7 +2125,6 @@
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Base</SubtypeName>
@@ -2331,7 +2132,6 @@
               <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Base</SubtypeName>
@@ -2339,7 +2139,6 @@
               <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Tip</SubtypeName>
@@ -2347,7 +2146,6 @@
               <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Tip</SubtypeName>
@@ -2355,41 +2153,34 @@
               <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Ladder2">
               <SubtypeName />
-              <EntityId>78786267711402141</EntityId>
-              <Name>78786267711402141</Name>
+              <EntityId>83146383901371693</EntityId>
               <Min x="1" y="5" z="13" />
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-1" y="5" z="12" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Ladder2">
               <SubtypeName />
-              <EntityId>78421695472369144</EntityId>
-              <Name>78421695472369144</Name>
+              <EntityId>86992097599576508</EntityId>
               <Min x="-1" y="5" z="13" />
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="1" y="5" z="12" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorHalfSlopeInverted</SubtypeName>
@@ -2397,7 +2188,6 @@
               <BlockOrientation Forward="Left" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner2Tip</SubtypeName>
@@ -2405,28 +2195,24 @@
               <BlockOrientation Forward="Right" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfSlopeArmorBlock</SubtypeName>
               <Min x="0" y="7" z="13" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfSlopeArmorBlock</SubtypeName>
               <Min x="1" y="7" z="13" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfSlopeArmorBlock</SubtypeName>
               <Min x="-1" y="7" z="13" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlopedCornerTip</SubtypeName>
@@ -2434,7 +2220,6 @@
               <BlockOrientation Forward="Down" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Base</SubtypeName>
@@ -2442,17 +2227,14 @@
               <BlockOrientation Forward="Backward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_InteriorLight">
               <SubtypeName>SmallLight</SubtypeName>
-              <EntityId>94940446684961866</EntityId>
-              <Name>94940446684961866</Name>
+              <EntityId>73980671363673492</EntityId>
               <Min x="0" y="6" z="5" />
               <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
               <CustomName>Interior Light</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -2475,18 +2257,16 @@
               <BlockOrientation Forward="Backward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CameraBlock">
               <SubtypeName>LargeCameraBlock</SubtypeName>
-              <EntityId>96602556317579756</EntityId>
-              <Name>96602556317579756</Name>
+              <EntityId>81737006782864251</EntityId>
               <Min x="0" y="7" z="0" />
               <IntegrityPercent>0.8333334</IntegrityPercent>
               <BuildPercent>0.8333334</BuildPercent>
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Camera</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -2501,23 +2281,20 @@
               <Min x="-3" y="6" z="5" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-3" y="6" z="4" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_InteriorTurret">
               <SubtypeName>LargeInteriorTurret</SubtypeName>
-              <EntityId>131156766225575474</EntityId>
-              <Name>131156766225575474</Name>
+              <EntityId>81135742437421620</EntityId>
               <Min x="3" y="7" z="3" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -2573,18 +2350,17 @@
                 <RemainingAmmosList />
                 <LastShootTime>637461225304121605</LastShootTime>
               </GunBase>
-              <EnableIdleRotation>true</EnableIdleRotation>
+              <EnableIdleRotation>false</EnableIdleRotation>
               <PreviousIdleRotationState>true</PreviousIdleRotationState>
               <TargetCharacters>true</TargetCharacters>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_InteriorTurret">
               <SubtypeName>LargeInteriorTurret</SubtypeName>
-              <EntityId>120475826960969150</EntityId>
-              <Name>120475826960969150</Name>
+              <EntityId>134829168080908943</EntityId>
               <Min x="-3" y="7" z="3" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -2640,7 +2416,7 @@
                 <RemainingAmmosList />
                 <LastShootTime>637461225336973980</LastShootTime>
               </GunBase>
-              <EnableIdleRotation>true</EnableIdleRotation>
+              <EnableIdleRotation>false</EnableIdleRotation>
               <PreviousIdleRotationState>true</PreviousIdleRotationState>
               <TargetCharacters>true</TargetCharacters>
             </MyObjectBuilder_CubeBlock>
@@ -2649,56 +2425,48 @@
               <Min x="3" y="6" z="7" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="3" y="6" z="8" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="3" y="6" z="9" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="3" y="6" z="10" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-3" y="6" z="7" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-3" y="6" z="8" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-3" y="6" z="9" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-3" y="6" z="10" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Base</SubtypeName>
@@ -2706,7 +2474,6 @@
               <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Base</SubtypeName>
@@ -2714,7 +2481,6 @@
               <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlopedCornerTip</SubtypeName>
@@ -2722,7 +2488,6 @@
               <BlockOrientation Forward="Down" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlopedCornerTip</SubtypeName>
@@ -2730,7 +2495,6 @@
               <BlockOrientation Forward="Forward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlopedCornerTip</SubtypeName>
@@ -2738,7 +2502,6 @@
               <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlopedCornerTip</SubtypeName>
@@ -2746,7 +2509,6 @@
               <BlockOrientation Forward="Backward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorHalfSlopedCornerBase</SubtypeName>
@@ -2754,7 +2516,6 @@
               <BlockOrientation Forward="Forward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorHalfSlopedCornerBase</SubtypeName>
@@ -2762,19 +2523,16 @@
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorHalfSlopedCornerBase</SubtypeName>
-              <EntityId>139691578473088212</EntityId>
-              <Name>139691578473088212</Name>
+              <EntityId>119761531002315161</EntityId>
               <Min x="4" y="6" z="7" />
               <IntegrityPercent>0.7</IntegrityPercent>
               <BuildPercent>0.7</BuildPercent>
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorHalfSlopedCornerBase</SubtypeName>
@@ -2782,19 +2540,16 @@
               <BlockOrientation Forward="Backward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
-              <EntityId>110346813497421811</EntityId>
-              <Name>110346813497421811</Name>
+              <EntityId>82523099847463860</EntityId>
               <Min x="4" y="6" z="8" />
               <IntegrityPercent>0.7</IntegrityPercent>
               <BuildPercent>0.7</BuildPercent>
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
@@ -2802,7 +2557,6 @@
               <BlockOrientation Forward="Right" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
@@ -2810,7 +2564,6 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
@@ -2818,7 +2571,6 @@
               <BlockOrientation Forward="Right" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
@@ -2827,38 +2579,32 @@
               <BuildPercent>0.9</BuildPercent>
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="0" y="7" z="3" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="0" y="7" z="4" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="0" y="7" z="5" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_InteriorLight">
               <SubtypeName>SmallLight</SubtypeName>
-              <EntityId>120413170588783262</EntityId>
-              <Name>120413170588783262</Name>
+              <EntityId>109500175120083879</EntityId>
               <Min x="0" y="6" z="11" />
               <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
               <CustomName>Interior Light 2</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -2880,237 +2626,202 @@
               <Min x="0" y="7" z="8" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>GratedStairs</SubtypeName>
-              <EntityId>93941815796244395</EntityId>
-              <Name>93941815796244395</Name>
+              <EntityId>115748049678223928</EntityId>
               <Min x="0" y="6" z="10" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>GratedStairs</SubtypeName>
-              <EntityId>92939838050485423</EntityId>
-              <Name>92939838050485423</Name>
+              <EntityId>82944613081094286</EntityId>
               <Min x="0" y="7" z="9" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="0" y="7" z="11" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-1" y="7" z="11" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-1" y="7" z="10" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-1" y="7" z="9" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-1" y="7" z="8" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-1" y="7" z="7" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-1" y="7" z="6" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-1" y="7" z="5" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-1" y="7" z="4" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-2" y="7" z="11" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-2" y="7" z="10" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-2" y="7" z="9" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-2" y="7" z="8" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-2" y="7" z="7" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-2" y="7" z="6" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="1" y="7" z="11" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="1" y="7" z="10" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="1" y="7" z="9" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="1" y="7" z="8" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="1" y="7" z="7" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="1" y="7" z="6" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="1" y="7" z="5" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="1" y="7" z="4" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="2" y="7" z="11" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="2" y="7" z="10" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="2" y="7" z="9" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="2" y="7" z="8" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="2" y="7" z="7" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="2" y="7" z="6" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_InteriorTurret">
               <SubtypeName>LargeInteriorTurret</SubtypeName>
-              <EntityId>97449003466696381</EntityId>
-              <Name>97449003466696381</Name>
+              <EntityId>113623619467078473</EntityId>
               <Min x="-2" y="8" z="5" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -3166,18 +2877,17 @@
                 <RemainingAmmosList />
                 <LastShootTime>637461225984952405</LastShootTime>
               </GunBase>
-              <EnableIdleRotation>true</EnableIdleRotation>
+              <EnableIdleRotation>false</EnableIdleRotation>
               <PreviousIdleRotationState>true</PreviousIdleRotationState>
               <TargetCharacters>true</TargetCharacters>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_InteriorTurret">
               <SubtypeName>LargeInteriorTurret</SubtypeName>
-              <EntityId>76747878960706852</EntityId>
-              <Name>76747878960706852</Name>
+              <EntityId>140629883273706188</EntityId>
               <Min x="-1" y="8" z="4" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -3233,7 +2943,7 @@
                 <RemainingAmmosList />
                 <LastShootTime>637461225353619620</LastShootTime>
               </GunBase>
-              <EnableIdleRotation>true</EnableIdleRotation>
+              <EnableIdleRotation>false</EnableIdleRotation>
               <PreviousIdleRotationState>true</PreviousIdleRotationState>
               <TargetCharacters>true</TargetCharacters>
             </MyObjectBuilder_CubeBlock>
@@ -3242,7 +2952,6 @@
               <Min x="1" y="8" z="3" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlopedCornerTip</SubtypeName>
@@ -3250,14 +2959,12 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlopedCornerTip</SubtypeName>
               <Min x="2" y="8" z="4" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlopedCornerTip</SubtypeName>
@@ -3265,7 +2972,6 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Tip</SubtypeName>
@@ -3273,7 +2979,6 @@
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
@@ -3281,19 +2986,16 @@
               <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Tip</SubtypeName>
-              <EntityId>74168865230618329</EntityId>
-              <Name>74168865230618329</Name>
+              <EntityId>101824636620221148</EntityId>
               <Min x="-1" y="8" z="6" />
               <IntegrityPercent>0.4</IntegrityPercent>
               <BuildPercent>0.4</BuildPercent>
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Tip</SubtypeName>
@@ -3301,7 +3003,6 @@
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorHalfSlopedCornerBase</SubtypeName>
@@ -3309,7 +3010,6 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorHalfSlopedCornerBase</SubtypeName>
@@ -3317,39 +3017,35 @@
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="0" y="7" z="7" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="0" y="7" z="6" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Beacon">
-              <SubtypeName>LargeBlockBeacon</SubtypeName>
-              <EntityId>74090095286441697</EntityId>
-              <Name>74090095286441697</Name>
+              <SubtypeName>ProprietaryNpcLargeBlockBeacon</SubtypeName>
+              <EntityId>119485518699666039</EntityId>
               <Min x="0" y="6" z="7" />
               <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0.130555555" y="-0.77" z="-0.12" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
-              <CustomName>Beacon</CustomName>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>Proprietary Beacon</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
               <ShowInToolbarConfig>true</ShowInToolbarConfig>
               <ShowInInventory>true</ShowInInventory>
               <Enabled>true</Enabled>
-              <BroadcastRadius>50000</BroadcastRadius>
-              <HudText>Buzzard</HudText>
+              <BroadcastRadius>500000</BroadcastRadius>
+              <HudText>Planet Derelict</HudText>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Tip</SubtypeName>
@@ -3357,14 +3053,12 @@
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Tip</SubtypeName>
               <Min x="0" y="8" z="5" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Tip</SubtypeName>
@@ -3372,7 +3066,6 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Tip</SubtypeName>
@@ -3380,7 +3073,6 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Tip</SubtypeName>
@@ -3388,7 +3080,6 @@
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Tip</SubtypeName>
@@ -3396,7 +3087,6 @@
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Tip</SubtypeName>
@@ -3404,19 +3094,16 @@
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorHalfSlopedCornerBase</SubtypeName>
-              <EntityId>119195246612795335</EntityId>
-              <Name>119195246612795335</Name>
+              <EntityId>101067761290520069</EntityId>
               <Min x="-1" y="8" z="10" />
               <IntegrityPercent>0.7</IntegrityPercent>
               <BuildPercent>0.7</BuildPercent>
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorHalfSlopedCornerBase</SubtypeName>
@@ -3424,18 +3111,15 @@
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorHalfSlopedCornerBase</SubtypeName>
-              <EntityId>106466848535175364</EntityId>
-              <Name>106466848535175364</Name>
+              <EntityId>103687123719889463</EntityId>
               <Min x="-1" y="8" z="5" />
               <IntegrityPercent>0.7</IntegrityPercent>
               <BuildPercent>0.7</BuildPercent>
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorHalfSlopedCornerBase</SubtypeName>
@@ -3443,17 +3127,15 @@
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_InteriorTurret">
               <SubtypeName>LargeInteriorTurret</SubtypeName>
-              <EntityId>124317082341241396</EntityId>
-              <Name>124317082341241396</Name>
+              <EntityId>126795178484312101</EntityId>
               <Min x="2" y="8" z="7" />
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -3509,21 +3191,20 @@
                 <RemainingAmmosList />
                 <LastShootTime>637461225372125411</LastShootTime>
               </GunBase>
-              <EnableIdleRotation>true</EnableIdleRotation>
+              <EnableIdleRotation>false</EnableIdleRotation>
               <PreviousIdleRotationState>true</PreviousIdleRotationState>
               <TargetCharacters>true</TargetCharacters>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_InteriorTurret">
               <SubtypeName>LargeInteriorTurret</SubtypeName>
-              <EntityId>84099754678625567</EntityId>
-              <Name>84099754678625567</Name>
+              <EntityId>139428822456791425</EntityId>
               <Min x="2" y="8" z="9" />
               <IntegrityPercent>0.3750001</IntegrityPercent>
               <BuildPercent>0.3750001</BuildPercent>
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -3579,21 +3260,20 @@
                 <RemainingAmmosList />
                 <LastShootTime>637461225378952228</LastShootTime>
               </GunBase>
-              <EnableIdleRotation>true</EnableIdleRotation>
+              <EnableIdleRotation>false</EnableIdleRotation>
               <PreviousIdleRotationState>true</PreviousIdleRotationState>
               <TargetCharacters>true</TargetCharacters>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_InteriorTurret">
               <SubtypeName>LargeInteriorTurret</SubtypeName>
-              <EntityId>114580538295470254</EntityId>
-              <Name>114580538295470254</Name>
+              <EntityId>142999905247910865</EntityId>
               <Min x="2" y="8" z="11" />
               <IntegrityPercent>0.3750001</IntegrityPercent>
               <BuildPercent>0.3750001</BuildPercent>
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -3649,21 +3329,20 @@
                 <RemainingAmmosList />
                 <LastShootTime>637461225982284483</LastShootTime>
               </GunBase>
-              <EnableIdleRotation>true</EnableIdleRotation>
+              <EnableIdleRotation>false</EnableIdleRotation>
               <PreviousIdleRotationState>true</PreviousIdleRotationState>
               <TargetCharacters>true</TargetCharacters>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_InteriorTurret">
               <SubtypeName>LargeInteriorTurret</SubtypeName>
-              <EntityId>83923750367330391</EntityId>
-              <Name>83923750367330391</Name>
+              <EntityId>115307596167550018</EntityId>
               <Min x="-2" y="8" z="11" />
               <IntegrityPercent>0.3750001</IntegrityPercent>
               <BuildPercent>0.3750001</BuildPercent>
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -3719,7 +3398,7 @@
                 <RemainingAmmosList />
                 <LastShootTime>637461225387619293</LastShootTime>
               </GunBase>
-              <EnableIdleRotation>true</EnableIdleRotation>
+              <EnableIdleRotation>false</EnableIdleRotation>
               <PreviousIdleRotationState>true</PreviousIdleRotationState>
               <TargetCharacters>true</TargetCharacters>
             </MyObjectBuilder_CubeBlock>
@@ -3729,19 +3408,16 @@
               <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
-              <EntityId>122928428379662043</EntityId>
-              <Name>122928428379662043</Name>
+              <EntityId>103200935720056105</EntityId>
               <Min x="2" y="8" z="10" />
               <IntegrityPercent>0.5</IntegrityPercent>
               <BuildPercent>0.5</BuildPercent>
               <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
@@ -3749,7 +3425,6 @@
               <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
@@ -3757,18 +3432,15 @@
               <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Tip</SubtypeName>
-              <EntityId>84903348588644246</EntityId>
-              <Name>84903348588644246</Name>
+              <EntityId>128051411885190756</EntityId>
               <Min x="-1" y="8" z="11" />
               <IntegrityPercent>0.4</IntegrityPercent>
               <BuildPercent>0.4</BuildPercent>
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
@@ -3776,14 +3448,12 @@
               <BlockOrientation Forward="Down" Up="Forward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Tip</SubtypeName>
               <Min x="1" y="8" z="11" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner2Tip</SubtypeName>
@@ -3791,7 +3461,6 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner2Tip</SubtypeName>
@@ -3799,7 +3468,6 @@
               <BlockOrientation Forward="Right" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner2Tip</SubtypeName>
@@ -3807,14 +3475,12 @@
               <BlockOrientation Forward="Forward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner2Tip</SubtypeName>
               <Min x="-3" y="8" z="11" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfSlopeArmorBlock</SubtypeName>
@@ -3822,7 +3488,6 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfSlopeArmorBlock</SubtypeName>
@@ -3830,7 +3495,6 @@
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfSlopeArmorBlock</SubtypeName>
@@ -3838,7 +3502,6 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfSlopeArmorBlock</SubtypeName>
@@ -3846,7 +3509,6 @@
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner2Tip</SubtypeName>
@@ -3854,7 +3516,6 @@
               <BlockOrientation Forward="Backward" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorCorner2Tip</SubtypeName>
@@ -3862,57 +3523,47 @@
               <BlockOrientation Forward="Backward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeCoverWall</SubtypeName>
-              <EntityId>117656509112999734</EntityId>
-              <Name>117656509112999734</Name>
+              <EntityId>92451501199314226</EntityId>
               <Min x="3" y="8" z="7" />
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeCoverWall</SubtypeName>
-              <EntityId>74566455059092698</EntityId>
-              <Name>74566455059092698</Name>
+              <EntityId>135932618091921195</EntityId>
               <Min x="3" y="8" z="9" />
               <BlockOrientation Forward="Right" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeCoverWall</SubtypeName>
-              <EntityId>83897592142344186</EntityId>
-              <Name>83897592142344186</Name>
+              <EntityId>115023509764236120</EntityId>
               <Min x="-3" y="8" z="7" />
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeCoverWall</SubtypeName>
-              <EntityId>89028780909406356</EntityId>
-              <Name>89028780909406356</Name>
+              <EntityId>123381294550198765</EntityId>
               <Min x="-3" y="8" z="9" />
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>LargeBlockBatteryBlock</SubtypeName>
-              <EntityId>119745577269977298</EntityId>
-              <Name>119745577269977298</Name>
+              <EntityId>140194019713129166</EntityId>
               <Min x="-1" y="5" z="11" />
               <BlockOrientation Forward="Backward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Battery 7</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -3928,15 +3579,14 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>LargeBlockBatteryBlock</SubtypeName>
-              <EntityId>95414269033528389</EntityId>
-              <Name>95414269033528389</Name>
+              <EntityId>112440331292571821</EntityId>
               <Min x="1" y="5" z="11" />
               <IntegrityPercent>0.375</IntegrityPercent>
               <BuildPercent>0.375</BuildPercent>
               <BlockOrientation Forward="Backward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Battery 8</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -3952,13 +3602,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>LargeBlockBatteryBlock</SubtypeName>
-              <EntityId>113376671747401470</EntityId>
-              <Name>113376671747401470</Name>
+              <EntityId>114830375302041228</EntityId>
               <Min x="-1" y="5" z="3" />
               <BlockOrientation Forward="Backward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Battery 9</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -3974,13 +3623,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>LargeBlockBatteryBlock</SubtypeName>
-              <EntityId>138560570477133108</EntityId>
-              <Name>138560570477133108</Name>
+              <EntityId>106133510189400628</EntityId>
               <Min x="-1" y="5" z="4" />
               <BlockOrientation Forward="Backward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Battery 10</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -3996,13 +3644,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>LargeBlockBatteryBlock</SubtypeName>
-              <EntityId>72115111902790104</EntityId>
-              <Name>72115111902790104</Name>
+              <EntityId>81357582893608008</EntityId>
               <Min x="-1" y="5" z="5" />
               <BlockOrientation Forward="Backward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Battery 11</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -4018,13 +3665,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>LargeBlockBatteryBlock</SubtypeName>
-              <EntityId>84863400565033734</EntityId>
-              <Name>84863400565033734</Name>
+              <EntityId>93136908273752816</EntityId>
               <Min x="1" y="5" z="3" />
               <BlockOrientation Forward="Backward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Battery 12</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -4040,13 +3686,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>LargeBlockBatteryBlock</SubtypeName>
-              <EntityId>87757496099157974</EntityId>
-              <Name>87757496099157974</Name>
+              <EntityId>123432309535547417</EntityId>
               <Min x="1" y="5" z="4" />
               <BlockOrientation Forward="Backward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Battery 13</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -4062,15 +3707,14 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
               <SubtypeName>LargeBlockBatteryBlock</SubtypeName>
-              <EntityId>126621136558519118</EntityId>
-              <Name>126621136558519118</Name>
+              <EntityId>132985347090093314</EntityId>
               <Min x="1" y="5" z="5" />
               <IntegrityPercent>0.375</IntegrityPercent>
               <BuildPercent>0.375</BuildPercent>
               <BlockOrientation Forward="Backward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Battery 14</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -4090,7 +3734,6 @@
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Heavy_Rust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope</SubtypeName>
@@ -4098,7 +3741,6 @@
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope</SubtypeName>
@@ -4106,7 +3748,6 @@
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope</SubtypeName>
@@ -4114,7 +3755,6 @@
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Tip</SubtypeName>
@@ -4122,14 +3762,12 @@
               <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="0" y="6" z="12" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
@@ -4137,7 +3775,6 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
@@ -4145,7 +3782,6 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
@@ -4153,7 +3789,6 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
@@ -4161,7 +3796,6 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
@@ -4169,7 +3803,6 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
@@ -4177,7 +3810,6 @@
               <BlockOrientation Forward="Left" Up="Up" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorHalfSlopeInverted</SubtypeName>
@@ -4185,7 +3817,6 @@
               <BlockOrientation Forward="Down" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
@@ -4193,7 +3824,6 @@
               <BlockOrientation Forward="Right" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
@@ -4201,7 +3831,6 @@
               <BlockOrientation Forward="Right" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
@@ -4209,7 +3838,6 @@
               <BlockOrientation Forward="Right" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
@@ -4217,7 +3845,6 @@
               <BlockOrientation Forward="Right" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
@@ -4225,7 +3852,6 @@
               <BlockOrientation Forward="Right" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeHalfArmorBlock</SubtypeName>
@@ -4233,7 +3859,6 @@
               <BlockOrientation Forward="Right" Up="Down" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorHalfSlopeInverted</SubtypeName>
@@ -4241,30 +3866,26 @@
               <BlockOrientation Forward="Up" Up="Backward" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-1" y="6" z="3" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="1" y="6" z="3" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Cockpit">
               <SubtypeName>LargeBlockCockpitIndustrial</SubtypeName>
-              <EntityId>98628475867607119</EntityId>
-              <Name>98628475867607119</Name>
+              <EntityId>84489013790787710</EntityId>
               <Min x="0" y="6" z="9" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <ComponentContainer>
                 <Components>
                   <ComponentData>
@@ -4290,7 +3911,7 @@
               <UseSingleWeaponMode>false</UseSingleWeaponMode>
               <Toolbar>
                 <ToolbarType>Character</ToolbarType>
-                <SelectedSlot xsi:nil="true" />
+                <SelectedSlot>0</SelectedSlot>
                 <Slots>
                   <Slot>
                     <Index>0</Index>
@@ -4304,7 +3925,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>View</Action>
-                      <BlockEntityId>96602556317579756</BlockEntityId>
+                      <BlockEntityId>81737006782864251</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -4313,7 +3934,7 @@
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>OnOff</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>98628475867607119</BlockEntityId>
+                      <BlockEntityId>84489013790787710</BlockEntityId>
                       <GroupName>Turrets buzzard</GroupName>
                     </Data>
                   </Slot>
@@ -4323,7 +3944,7 @@
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>Add Top Part</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>98628475867607119</BlockEntityId>
+                      <BlockEntityId>84489013790787710</BlockEntityId>
                       <GroupName>Wheels buzzard</GroupName>
                     </Data>
                   </Slot>
@@ -4333,7 +3954,7 @@
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>IncreaseStrength</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>98628475867607119</BlockEntityId>
+                      <BlockEntityId>84489013790787710</BlockEntityId>
                       <GroupName>Wheels buzzard</GroupName>
                     </Data>
                   </Slot>
@@ -4343,7 +3964,7 @@
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>DecreaseStrength</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>98628475867607119</BlockEntityId>
+                      <BlockEntityId>84489013790787710</BlockEntityId>
                       <GroupName>Wheels buzzard</GroupName>
                     </Data>
                   </Slot>
@@ -4352,7 +3973,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>Override</Action>
-                      <BlockEntityId>118655065806436439</BlockEntityId>
+                      <BlockEntityId>102445558564622212</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -4360,7 +3981,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>Override</Action>
-                      <BlockEntityId>88359557138070357</BlockEntityId>
+                      <BlockEntityId>73736238119580006</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -4369,7 +3990,7 @@
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>OnOff</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>98628475867607119</BlockEntityId>
+                      <BlockEntityId>84489013790787710</BlockEntityId>
                       <GroupName>BACKUP GYROS</GroupName>
                     </Data>
                   </Slot>
@@ -4387,7 +4008,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>Override</Action>
-                      <BlockEntityId>118655065806436439</BlockEntityId>
+                      <BlockEntityId>102445558564622212</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -4395,7 +4016,7 @@
                     <Item />
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
                       <Action>Override</Action>
-                      <BlockEntityId>88359557138070357</BlockEntityId>
+                      <BlockEntityId>73736238119580006</BlockEntityId>
                     </Data>
                   </Slot>
                   <Slot>
@@ -4404,7 +4025,7 @@
                     <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
                       <Action>OnOff</Action>
                       <GridEntityId>0</GridEntityId>
-                      <BlockEntityId>98628475867607119</BlockEntityId>
+                      <BlockEntityId>84489013790787710</BlockEntityId>
                       <GroupName>BACKUP GYROS</GroupName>
                     </Data>
                   </Slot>
@@ -4418,25 +4039,23 @@
                 <SlotsGamepad />
               </BuildToolbar>
               <PilotRelativeWorld>
-                <Position x="-1.9833166599273682" y="-0.99170243740081787" z="3.3576855659484863" />
-                <Forward x="0.6181898" y="-0.363176972" z="-0.6970967" />
-                <Up x="0.0837085545" y="0.9122337" z="-0.401026875" />
+                <Position x="2.1039590835571289" y="-1.2636268138885498" z="-1.1469480991363525" />
+                <Forward x="-0.8071993" y="-0.148106322" z="0.571396351" />
+                <Up x="-0.210591391" y="0.976566434" z="-0.0443714" />
                 <Orientation>
-                  <X>-0.207502067</X>
-                  <Y>-0.329233259</Y>
-                  <Z>0.028740935</Z>
-                  <W>0.9207184</W>
+                  <X>-0.104157068</X>
+                  <Y>0.880255342</Y>
+                  <Z>0.0294616129</Z>
+                  <W>0.461989015</W>
                 </Orientation>
               </PilotRelativeWorld>
               <PilotGunDefinition xsi:nil="true" />
               <IsInFirstPersonView>true</IsInFirstPersonView>
               <OxygenLevel>0.8</OxygenLevel>
               <PilotJetpackEnabled xsi:nil="true" />
-              <Panels />
               <TextPanels>
                 <MySerializedTextPanelData>
                   <ChangeInterval>0</ChangeInterval>
-                  <SelectedImages />
                   <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
                   <FontSize>1</FontSize>
                   <ShowText>NONE</ShowText>
@@ -4491,7 +4110,6 @@
                 </MySerializedTextPanelData>
                 <MySerializedTextPanelData>
                   <ChangeInterval>0</ChangeInterval>
-                  <SelectedImages />
                   <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
                   <FontSize>1</FontSize>
                   <ShowText>NONE</ShowText>
@@ -4546,7 +4164,6 @@
                 </MySerializedTextPanelData>
                 <MySerializedTextPanelData>
                   <ChangeInterval>0</ChangeInterval>
-                  <SelectedImages />
                   <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
                   <FontSize>1</FontSize>
                   <ShowText>NONE</ShowText>
@@ -4601,7 +4218,6 @@
                 </MySerializedTextPanelData>
                 <MySerializedTextPanelData>
                   <ChangeInterval>0</ChangeInterval>
-                  <SelectedImages />
                   <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
                   <FontSize>1</FontSize>
                   <ShowText>NONE</ShowText>
@@ -4656,7 +4272,6 @@
                 </MySerializedTextPanelData>
                 <MySerializedTextPanelData>
                   <ChangeInterval>0</ChangeInterval>
-                  <SelectedImages />
                   <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
                   <FontSize>1</FontSize>
                   <ShowText>NONE</ShowText>
@@ -4711,7 +4326,6 @@
                 </MySerializedTextPanelData>
                 <MySerializedTextPanelData>
                   <ChangeInterval>0</ChangeInterval>
-                  <SelectedImages />
                   <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
                   <FontSize>1</FontSize>
                   <ShowText>NONE</ShowText>
@@ -4766,13 +4380,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
               <SubtypeName>LargeBlockGyro</SubtypeName>
-              <EntityId>96093666358051302</EntityId>
-              <Name>96093666358051302</Name>
+              <EntityId>73828714051274348</EntityId>
               <Min x="-2" y="6" z="8" />
               <BlockOrientation Forward="Down" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Gyroscope 5</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -4782,13 +4395,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
               <SubtypeName>LargeBlockGyro</SubtypeName>
-              <EntityId>114172080072265743</EntityId>
-              <Name>114172080072265743</Name>
+              <EntityId>129871439005426807</EntityId>
               <Min x="-2" y="6" z="7" />
               <BlockOrientation Forward="Down" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Gyroscope 6</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -4798,13 +4410,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
               <SubtypeName>LargeBlockGyro</SubtypeName>
-              <EntityId>94090247391731465</EntityId>
-              <Name>94090247391731465</Name>
+              <EntityId>130371731710889909</EntityId>
               <Min x="-2" y="6" z="5" />
               <BlockOrientation Forward="Down" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Gyroscope 7</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -4814,13 +4425,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
               <SubtypeName>LargeBlockGyro</SubtypeName>
-              <EntityId>109961789078117257</EntityId>
-              <Name>109961789078117257</Name>
+              <EntityId>82987247477884098</EntityId>
               <Min x="2" y="6" z="8" />
               <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Gyroscope 8</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -4830,13 +4440,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
               <SubtypeName>LargeBlockGyro</SubtypeName>
-              <EntityId>96835463178261465</EntityId>
-              <Name>96835463178261465</Name>
+              <EntityId>73662077883329267</EntityId>
               <Min x="2" y="6" z="7" />
               <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Gyroscope 9</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -4846,13 +4455,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
               <SubtypeName>LargeBlockGyro</SubtypeName>
-              <EntityId>88359557138070357</EntityId>
-              <Name>88359557138070357</Name>
+              <EntityId>73736238119580006</EntityId>
               <Min x="2" y="6" z="6" />
               <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Gyroscope AIM ASSIST 1</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -4862,13 +4470,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
               <SubtypeName>LargeBlockGyro</SubtypeName>
-              <EntityId>118655065806436439</EntityId>
-              <Name>118655065806436439</Name>
+              <EntityId>102445558564622212</EntityId>
               <Min x="2" y="6" z="5" />
               <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Gyroscope AIM ASSIST 2</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -4882,7 +4489,6 @@
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope</SubtypeName>
@@ -4890,7 +4496,6 @@
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope</SubtypeName>
@@ -4898,7 +4503,6 @@
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope</SubtypeName>
@@ -4906,7 +4510,6 @@
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope</SubtypeName>
@@ -4914,7 +4517,6 @@
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope</SubtypeName>
@@ -4922,7 +4524,6 @@
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope</SubtypeName>
@@ -4930,7 +4531,6 @@
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope</SubtypeName>
@@ -4938,7 +4538,6 @@
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope</SubtypeName>
@@ -4946,7 +4545,6 @@
               <BlockOrientation Forward="Up" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope</SubtypeName>
@@ -4954,17 +4552,15 @@
               <BlockOrientation Forward="Up" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
               <SubtypeName>LargeBlockGyro</SubtypeName>
-              <EntityId>79901375498676765</EntityId>
-              <Name>79901375498676765</Name>
+              <EntityId>88694383171228174</EntityId>
               <Min x="-2" y="6" z="6" />
               <BlockOrientation Forward="Down" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Gyroscope 22</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -4974,15 +4570,14 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
               <SubtypeName>LargeBlockGyro</SubtypeName>
-              <EntityId>87399948244140571</EntityId>
-              <Name>87399948244140571</Name>
+              <EntityId>79929865360419195</EntityId>
               <Min x="-2" y="6" z="9" />
               <IntegrityPercent>0.75</IntegrityPercent>
               <BuildPercent>0.75</BuildPercent>
               <BlockOrientation Forward="Down" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Gyroscope 23</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -4992,15 +4587,14 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
               <SubtypeName>LargeBlockGyro</SubtypeName>
-              <EntityId>75212670900781682</EntityId>
-              <Name>75212670900781682</Name>
+              <EntityId>133639575175218486</EntityId>
               <Min x="-2" y="6" z="10" />
               <IntegrityPercent>0.625</IntegrityPercent>
               <BuildPercent>0.625</BuildPercent>
               <BlockOrientation Forward="Down" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Gyroscope 24</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -5010,14 +4604,13 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_AirtightSlideDoor">
               <SubtypeName>LargeBlockSlideDoor</SubtypeName>
-              <EntityId>124513332375488778</EntityId>
-              <Name>124513332375488778</Name>
+              <EntityId>107465979671966974</EntityId>
               <Min x="1" y="6" z="12" />
               <IntegrityPercent>0.266666323</IntegrityPercent>
               <BuildPercent>0.266666323</BuildPercent>
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Sliding Door 3</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -5030,13 +4623,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
               <SubtypeName>LargeBlockGyro</SubtypeName>
-              <EntityId>93625187496276614</EntityId>
-              <Name>93625187496276614</Name>
+              <EntityId>101469178214918473</EntityId>
               <Min x="2" y="6" z="9" />
               <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Gyroscope 26</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -5046,13 +4638,12 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
               <SubtypeName>LargeBlockGyro</SubtypeName>
-              <EntityId>118591326609747200</EntityId>
-              <Name>118591326609747200</Name>
+              <EntityId>82514034657768776</EntityId>
               <Min x="2" y="6" z="10" />
               <BlockOrientation Forward="Down" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Gyroscope 27</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -5062,12 +4653,11 @@
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_AirtightSlideDoor">
               <SubtypeName>LargeBlockSlideDoor</SubtypeName>
-              <EntityId>100422108165031516</EntityId>
-              <Name>100422108165031516</Name>
+              <EntityId>88866320062048014</EntityId>
               <Min x="-1" y="6" z="12" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+              <ShareMode>Faction</ShareMode>
               <CustomName>Sliding Door 2</CustomName>
               <ShowOnHUD>false</ShowOnHUD>
               <ShowInTerminal>true</ShowInTerminal>
@@ -5083,21 +4673,18 @@
               <Min x="0" y="8" z="12" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="-2" y="6" z="11" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorBlock</SubtypeName>
               <Min x="2" y="6" z="11" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Tip</SubtypeName>
@@ -5105,7 +4692,6 @@
               <BlockOrientation Forward="Forward" Up="Right" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorSlope2Tip</SubtypeName>
@@ -5113,11 +4699,25 @@
               <BlockOrientation Forward="Forward" Up="Left" />
               <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
               <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
-              <BuiltBy>144115188075855895</BuiltBy>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Beacon">
+              <SubtypeName>NoFlyZoneLarge</SubtypeName>
+              <EntityId>97675470280317560</EntityId>
+              <Min x="0" y="6" z="3" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.43" />
+              <SkinSubtypeId>Dust_Armor</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>Thrust Inhibitor</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <Enabled>true</Enabled>
+              <BroadcastRadius>5000</BroadcastRadius>
+              <HudText />
             </MyObjectBuilder_CubeBlock>
           </CubeBlocks>
           <IsStatic>true</IsStatic>
-          <XMirroxPlane x="0" y="4" z="0" />
           <ConveyorLines>
             <MyObjectBuilder_ConveyorLine>
               <StartPosition x="0" y="5" z="12" />
@@ -5328,13 +4928,15 @@
           <Handbrake>true</Handbrake>
           <DisplayName>[NPC Wreck] Buzzard</DisplayName>
           <DestructibleBlocks>true</DestructibleBlocks>
+          <CreatePhysics>false</CreatePhysics>
+          <EnableSmallToLargeConnections>false</EnableSmallToLargeConnections>
           <IsRespawnGrid>false</IsRespawnGrid>
-          <LocalCoordSys>2</LocalCoordSys>
+          <LocalCoordSys>53</LocalCoordSys>
           <TargetingTargets />
+          <GridPresenceTier>Tier1</GridPresenceTier>
         </CubeGrid>
       </CubeGrids>
       <EnvironmentType>None</EnvironmentType>
     </Prefab>
   </Prefabs>
 </Definitions>
-<!-- Saved '2021-05-04T00:38:27.3003834+03:00' with SEToolbox version '1.198.24.1' -->

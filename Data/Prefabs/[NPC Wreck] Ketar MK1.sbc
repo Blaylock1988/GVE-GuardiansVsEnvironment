@@ -1594,7 +1594,7 @@
               <ShowInInventory>true</ShowInInventory>
               <Enabled>true</Enabled>
               <BroadcastRadius>9999999</BroadcastRadius>
-              <HudText>Ketar MK1</HudText>
+              <HudText></HudText>
             </MyObjectBuilder_CubeBlock>
             <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
               <SubtypeName>LargeBlockArmorInvCorner2Base</SubtypeName>
