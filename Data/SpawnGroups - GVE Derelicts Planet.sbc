@@ -13,6 +13,20 @@
 
 			[Modular Encounters SpawnGroup]
 				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Small]		
 			[FactionOwner:SPRT]
@@ -20,11 +34,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:2]
+			[MinimumPlayers:1]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -39,10 +53,12 @@
 			[MaximumBuildPercent:70]
 			
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
 			
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]	
@@ -58,6 +74,8 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -73,6 +91,20 @@
 
 			[Modular Encounters SpawnGroup]
 				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Large]		
 			[FactionOwner:SPRT]
@@ -80,11 +112,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:2]
+			[MinimumPlayers:1]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -99,10 +131,12 @@
 			[MaximumBuildPercent:70]
 			
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
 			
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]	
@@ -118,6 +152,8 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -133,6 +169,20 @@
 
 			[Modular Encounters SpawnGroup]
 				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Small]		
 			[FactionOwner:SPRT]
@@ -140,11 +190,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:2]
+			[MinimumPlayers:1]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -159,10 +209,12 @@
 			[MaximumBuildPercent:70]
 			
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
 			
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]	
@@ -178,6 +230,8 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -193,6 +247,20 @@
 
 			[Modular Encounters SpawnGroup]
 				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Medium]		
 			[FactionOwner:SPRT]
@@ -200,11 +268,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:4]
+			[MinimumPlayers:1]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -219,10 +287,12 @@
 			[MaximumBuildPercent:70]
 			
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
 			
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]	
@@ -238,6 +308,8 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -253,6 +325,20 @@
 
 			[Modular Encounters SpawnGroup]
 				
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Medium]		
 			[FactionOwner:SPRT]
@@ -260,11 +346,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:4]
+			[MinimumPlayers:1]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -279,10 +365,12 @@
 			[MaximumBuildPercent:70]
 			
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
 			
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]	
@@ -298,6 +386,8 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -313,6 +403,20 @@
 
 			[Modular Encounters SpawnGroup]
 				
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Medium]		
 			[FactionOwner:SPRT]
@@ -320,11 +424,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:4]
+			[MinimumPlayers:1]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -339,10 +443,12 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
@@ -358,6 +464,8 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>			
@@ -371,8 +479,22 @@
 			</Id>
 			<Description>
 
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
 			[Modular Encounters SpawnGroup]
 				
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Small]		
 			[FactionOwner:SPRT]
@@ -380,11 +502,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:2]
+			[MinimumPlayers:1]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -399,10 +521,12 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]				
@@ -418,6 +542,8 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -433,6 +559,20 @@
 
 			[Modular Encounters SpawnGroup]
 				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Medium]		
 			[FactionOwner:SPRT]
@@ -440,11 +580,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:4]
+			[MinimumPlayers:1]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -459,10 +599,12 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]				
@@ -478,6 +620,8 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -493,6 +637,20 @@
 
 			[Modular Encounters SpawnGroup]
 				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Medium]		
 			[FactionOwner:SPRT]
@@ -500,11 +658,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:4]
+			[MinimumPlayers:1]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -519,10 +677,12 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]				
@@ -538,6 +698,8 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>		
@@ -553,6 +715,20 @@
 
 			[Modular Encounters SpawnGroup]
 				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Medium]		
 			[FactionOwner:SPRT]
@@ -560,11 +736,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:4]
+			[MinimumPlayers:1]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -579,10 +755,12 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]				
@@ -594,10 +772,12 @@
 				<Prefab SubtypeId="[NPC Wreck] Rhino">
 					<Position>
 						<X>0.0</X>
-						<Y>5.0</Y>
+						<Y>7.0</Y>
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>	
@@ -613,6 +793,20 @@
 
 			[Modular Encounters SpawnGroup]
 				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Medium]		
 			[FactionOwner:SPRT]
@@ -620,11 +814,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:4]
+			[MinimumPlayers:1]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -639,10 +833,12 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+			[ReplaceArmorBlocksWithModules:true]
+			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]		
@@ -658,6 +854,8 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -673,6 +871,20 @@
 
 			[Modular Encounters SpawnGroup]
 				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Medium]		
 			[FactionOwner:SPRT]
@@ -680,11 +892,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:4]
+			[MinimumPlayers:1]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -699,8 +911,8 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
@@ -714,10 +926,12 @@
 				<Prefab SubtypeId="[NPC Wreck] Kaiju Frigate">
 					<Position>
 						<X>0.0</X>
-						<Y>1.0</Y>
+						<Y>10.0</Y>
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -733,6 +947,20 @@
 
 			[Modular Encounters SpawnGroup]
 				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Medium]		
 			[FactionOwner:SPRT]
@@ -740,11 +968,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:4]
+			[MinimumPlayers:1]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -759,13 +987,15 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
 			[DisableBlocksWithName:Survival]
-			[AllowPartialNames:true]			
+			[AllowPartialNames:true]	
+
+			[CutVoxelsAtAirtightCells:true]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -778,6 +1008,8 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -793,6 +1025,20 @@
 
 			[Modular Encounters SpawnGroup]
 				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Small]		
 			[FactionOwner:SPRT]
@@ -800,11 +1046,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:2]
+			[MinimumPlayers:1]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -819,8 +1065,8 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
@@ -837,25 +1083,41 @@
 				<Prefab SubtypeId="[NPC Wreck] Aggressor">
 					<Position>
 						<X>0.0</X>
-						<Y>7.0</Y>
+						<Y>5.0</Y>
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>			
 
-		<!--[NPC Wreck] - Ketar MK1 -->
+		<!--[NPC Wreck] - Buzzard -->
 		
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Ketar MK1</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Buzzard</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Small]		
 			[FactionOwner:SPRT]
@@ -863,11 +1125,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:2]
+			[MinimumPlayers:1]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -882,8 +1144,165 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[DisableBlocksWithName:Survival,Turret]
+			[AllowPartialNames:true]			
+				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Buzzard">
+					<Position>
+						<X>0.0</X>
+						<Y>5.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>			
+
+		<!--[NPC Wreck] - Cerverus -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Cerverus</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Medium]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[PlanetWhitelist:Galados_V,Pertam]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:1]
+			
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+		
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]			
+				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Cerverus">
+					<Position>
+						<X>0.0</X>
+						<Y>5.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>			
+
+		<!--[NPC Wreck] - Ketar MK1 -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Ketar MK1</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Small]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[PlanetWhitelist:Galados_V,Pertam]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:1]
+			
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+		
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
@@ -904,11 +1323,13 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>			
 
-		<!--[NPC Wreck] - Blood Star  -->
+		<!--[NPC Wreck] - Blood Star-->
 		
 		<SpawnGroup>
 			<Id>
@@ -919,6 +1340,20 @@
 
 			[Modular Encounters SpawnGroup]
 				
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Small]		
 			[FactionOwner:SPRT]
@@ -926,11 +1361,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:4]
+			[MinimumPlayers:1]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -945,8 +1380,8 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
@@ -960,13 +1395,15 @@
 			<IsPirate>true</IsPirate> <!--Do not edit-->
 			<Frequency>5.0</Frequency>
 			<Prefabs>
-				<Prefab SubtypeId="[NPC Wreck] Blood Star ">
+				<Prefab SubtypeId="[NPC Wreck] Blood Star">
 					<Position>
 						<X>0.0</X>
 						<Y>0.0</Y>
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>			
@@ -982,6 +1419,20 @@
 
 			[Modular Encounters SpawnGroup]
 				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Medium]		
 			[FactionOwner:SPRT]
@@ -989,11 +1440,11 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:4]
+			[MinimumPlayers:1]
 			
 			[AssignGridSkin:Dust_Armor]
 			[SkinRandomBlocks:true]
@@ -1008,8 +1459,8 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
@@ -1026,10 +1477,12 @@
 				<Prefab SubtypeId="[NPC Wreck] Hermes">
 					<Position>
 						<X>0.0</X>
-						<Y>1.0</Y>
+						<Y>25.0</Y>
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -1045,6 +1498,20 @@
 
 			[Modular Encounters SpawnGroup]
 				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Large]		
 			[FactionOwner:SPRT]
@@ -1052,7 +1519,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 			
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1072,8 +1539,8 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
@@ -1094,21 +1561,37 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
 		
-		<!--[NPC Wreck] - Skimmer -->
+		<!--[NPC Wreck] - Mammoth -->
 		
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Skimmer</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Mammoth</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Large]		
 			[FactionOwner:SPRT]
@@ -1116,7 +1599,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1135,8 +1618,87 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
+			[ReplenishSystems:false]
+			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[DisableBlocksWithName:Survival]
+			[AllowPartialNames:true]			
+				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>3.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Wreck] Mammoth">
+					<Position>
+						<X>0.0</X>
+						<Y>12.5</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<!--[NPC Wreck] - Skimmer -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Skimmer</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
+			[PlanetaryInstallation:true]
+			[PlanetaryInstallationType:Large]		
+			[FactionOwner:SPRT]
+			[ForceStaticGrid:true]
+			
+			[RotateInstallations:{X:100 Y:100 Z:100}]
+
+			[PlanetWhitelist:Galados_V,Pertam]
+
+			[UsePlayerCountCheck:true]
+			[PlayerCountCheckRadius:999999]
+			[MinimumPlayers:6]
+			
+			[AssignGridSkin:Dust_Armor]
+			[SkinRandomBlocks:true]
+			[SkinRandomBlocksTextures:Heavy_Rust_Armor]
+			[MinPercentageSkinRandomBlocks:10]
+			[MaxPercentageSkinRandomBlocks:25]				
+			
+			[ReduceBlockBuildStates:true]
+			[MinimumBlocksPercent:10]
+			[MaximumBlocksPercent:25]
+			[MinimumBuildPercent:50]
+			[MaximumBuildPercent:70]
+		
+			[IgnoreGlobalBlockReplacer:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
@@ -1157,6 +1719,8 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -1172,6 +1736,20 @@
 
 			[Modular Encounters SpawnGroup]
 				
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Large]		
 			[FactionOwner:SPRT]
@@ -1179,7 +1757,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1198,8 +1776,8 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
@@ -1220,6 +1798,8 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>			
@@ -1235,6 +1815,20 @@
 
 			[Modular Encounters SpawnGroup]
 				
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Large]		
 			[FactionOwner:SPRT]
@@ -1265,8 +1859,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
@@ -1292,6 +1886,8 @@
 						<Z>-85.0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>				
 			</Prefabs>
 		</SpawnGroup>		
@@ -1307,6 +1903,20 @@
 
 			[Modular Encounters SpawnGroup]
 				
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Large]		
 			[FactionOwner:SPRT]
@@ -1337,8 +1947,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
@@ -1356,6 +1966,8 @@
 						<Z>0</Z>
 					</Position>
 					<Speed>0</Speed>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -1371,26 +1983,37 @@
 
 			[Modular Encounters SpawnGroup]
 			
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Medium]
 			[PlanetRequiresAtmo:true]			
 			[ForceStaticGrid:true]
 			
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:4]
+			[MinimumPlayers:1]
 			
 			[FactionOwner:SPRT]			
 			
-			[UseRivalAi:true]
-			[RivalAiReplaceRemoteControl:true]
-			
 			[ReplenishSystems:true]
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:true]
-			[IgnoreCleanupRules:true]
+			[ClearGridInventories:false]
+			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 			
@@ -1408,7 +2031,7 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
-					<BeaconText>Watchtower</BeaconText>						
+					<BeaconText>Planet Derelict</BeaconText>						
 					<Behaviour>SPRT-DefenseBehavior</Behaviour>
 				</Prefab>
 			</Prefabs>
@@ -1425,7 +2048,21 @@
 
 			[Modular Encounters SpawnGroup]
 			
-			[PlanetWhitelist:Galados_V]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[ClearAuthorship:true]
+			[UseBlockReplacer:true]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/LargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Beacon/ProprietaryNpcLargeBlockBeacon]
+			[ReplaceBlockNew:MyObjectBuilder_Beacon/NoFlyNpcLargeBlockBeacon]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge]
+			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
+
+			[PlanetWhitelist:Galados_V,Pertam]
 
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Medium]		
@@ -1434,7 +2071,7 @@
 								
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
-			[MinimumPlayers:4]
+			[MinimumPlayers:1]
 			
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
@@ -1446,11 +2083,12 @@
 				<Prefab SubtypeId="[NPC Ruins] Office V1">
 					<Position>
 						<X>0.0</X>
-						<Y>10.0</Y>
+						<Y>0.0</Y>
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
-					<Behaviour></Behaviour>
+					<BeaconText>Planet Derelict</BeaconText>						
+					<Behaviour>GVE-NPC-PlanetDerelictPassive-Behavior-Start</Behaviour>
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
