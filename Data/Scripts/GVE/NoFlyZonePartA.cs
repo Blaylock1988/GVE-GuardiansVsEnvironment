@@ -39,7 +39,7 @@ namespace NoFlyZone
 		private bool InBeaconRange = false;
         private bool InDisablePlayerDampingRange = false;
         private bool InDisablePlayerThrustRange = false;
-		private double MaxHeight = 15; 
+		private double MaxHeight = 50; 
 		private int ZoneRange = 5000;
         private int NoDampingRange = 4000;
         private int NoThrustRange = 3000;

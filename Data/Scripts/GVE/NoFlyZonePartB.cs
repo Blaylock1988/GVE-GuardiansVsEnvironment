@@ -23,7 +23,7 @@ namespace NoFlyZone
         private IMyThrust thruster;
         private IMyCubeBlock thrustdef;
         private IMyPlayer client;
-		private double MaxHeight = 15; 
+		private double MaxHeight = 50; 
 		private int ThrusterDisableDistance = 3000; //distance from beacon
         private bool isServer;
         private bool inZone;
