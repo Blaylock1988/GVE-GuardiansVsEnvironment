@@ -64,13 +64,38 @@
 			[Blocks:MyObjectBuilder_Assembler/(null)]
 			[Blocks:MyObjectBuilder_Projector/(null)]
 			[Blocks:MyObjectBuilder_Gyro/(null)]
-			[Blocks:MyObjectBuilder_LargeTurretBase/(null)]
 			[MatchOnlyTypeId:true]
 
 			[Chance:25]
 			[UseSeparatePercentages:true]
 			[MinIntegrityPercentage:40]
 			[MaxIntegrityPercentage:70]
+			[MinBuildPercentage:100]
+			[MaxBuildPercentage:100]
+
+			</Description>
+		</EntityComponent>
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>GVE-Dereliction-DerelictTurrets</SubtypeId>
+			</Id>
+			<Description>
+
+			[MES Dereliction]
+
+			[Blocks:MyObjectBuilder_LargeGatlingTurret/(null)]
+			[Blocks:MyObjectBuilder_LargeGatlingTurret/SmallGatlingTurret]
+			[Blocks:MyObjectBuilder_LargeMissileTurret/(null)]
+			[Blocks:MyObjectBuilder_LargeMissileTurret/SmallMissileTurret]
+			[Blocks:MyObjectBuilder_InteriorTurret/LargeInteriorTurret]
+			[MatchOnlyTypeId:true]
+
+			[Chance:75]
+			[UseSeparatePercentages:true]
+			[MinIntegrityPercentage:20]
+			[MaxIntegrityPercentage:60]
 			[MinBuildPercentage:100]
 			[MaxBuildPercentage:100]
 

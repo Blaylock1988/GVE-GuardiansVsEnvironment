@@ -60,8 +60,14 @@
 			[ReplaceArmorBlocksWithModules:true]
 			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
 			
-			[DisableBlocksWithName:Survival,Turret]
+			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]	
+
+			[CutVoxelsAtAirtightCells:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -140,6 +146,12 @@
 			
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]	
+
+			[CutVoxelsAtAirtightCells:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -216,8 +228,14 @@
 			[ReplaceArmorBlocksWithModules:true]
 			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
 			
-			[DisableBlocksWithName:Survival,Turret]
+			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]	
+
+			[CutVoxelsAtAirtightCells:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -296,6 +314,12 @@
 			
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]	
+
+			[CutVoxelsAtAirtightCells:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -374,6 +398,12 @@
 			
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]	
+
+			[CutVoxelsAtAirtightCells:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -452,6 +482,12 @@
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
+
+			[CutVoxelsAtAirtightCells:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -530,6 +566,12 @@
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]				
+
+			[CutVoxelsAtAirtightCells:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -608,6 +650,12 @@
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]				
+
+			[CutVoxelsAtAirtightCells:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -686,6 +734,12 @@
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]				
+
+			[CutVoxelsAtAirtightCells:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -764,6 +818,12 @@
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]				
+
+			[CutVoxelsAtAirtightCells:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -842,6 +902,12 @@
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]		
+
+			[CutVoxelsAtAirtightCells:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -918,6 +984,12 @@
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
+
+			[CutVoxelsAtAirtightCells:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -996,6 +1068,10 @@
 			[AllowPartialNames:true]	
 
 			[CutVoxelsAtAirtightCells:true]
+
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1072,9 +1148,12 @@
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
+
+			[CutVoxelsAtAirtightCells:true]
 				
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1149,11 +1228,14 @@
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
-			[DisableBlocksWithName:Survival,Turret]
+			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
+
+			[CutVoxelsAtAirtightCells:true]
 				
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1229,9 +1311,12 @@
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
+
+			[CutVoxelsAtAirtightCells:true]
 				
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1306,11 +1391,14 @@
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
-			[DisableBlocksWithName:Survival,Turret]
+			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
+
+			[CutVoxelsAtAirtightCells:true]
 				
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1385,11 +1473,14 @@
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
-			[DisableBlocksWithName:Blood,Turret]
+			[DisableBlocksWithName:Blood]
 			[AllowPartialNames:true]			
+
+			[CutVoxelsAtAirtightCells:true]
 				
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1466,9 +1557,12 @@
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
+
+			[CutVoxelsAtAirtightCells:true]
 				
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1546,9 +1640,12 @@
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
+
+			[CutVoxelsAtAirtightCells:true]
 				
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1625,9 +1722,12 @@
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
+
+			[CutVoxelsAtAirtightCells:true]
 				
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1704,9 +1804,12 @@
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
+
+			[CutVoxelsAtAirtightCells:true]
 				
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1783,9 +1886,12 @@
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
+
+			[CutVoxelsAtAirtightCells:true]
 				
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1857,12 +1963,15 @@
 			
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[CutVoxelsAtAirtightCells:true]
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]
@@ -1945,12 +2054,15 @@
 			
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[CutVoxelsAtAirtightCells:true]
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
@@ -2016,6 +2128,8 @@
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:false]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
+
+			[CutVoxelsAtAirtightCells:true]
 			
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]				
@@ -2072,9 +2186,12 @@
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
 			[MinimumPlayers:3]
+
+			[CutVoxelsAtAirtightCells:true]
 			
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
