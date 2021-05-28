@@ -17,14 +17,16 @@
 	  [UseNoTargetTimer:false]
 	  [UsePlayerDistanceTimer:true]
 	  [PlayerDistanceTimerTrigger:1800]
-	  [PlayerDistanceTrigger:20000]
+	  [PlayerDistanceTrigger:15000]
 	  	  
 	  [Triggers:GVE-NPC-PlanetDerelictPassive-Trigger-PlayerNear]
 	  [Triggers:GVE-NPC-PlanetDerelictPassive-Trigger-Spawned]
 	  [Triggers:GVE-NPC-PlanetDerelictPassive-Trigger-Lightning]
 	  [Triggers:GVE-NPC-PlanetDerelictPassive-Trigger-Despawn]
 	  [Triggers:GVE-NPC-PlanetDerelictPassive-Trigger-DespawnMES]
-	  	  
+	  [Triggers:GVE-NPC-PlanetDerelictPassive-Trigger-Compromised]
+	  [Triggers:GVE-NPC-PlanetDerelictPassive-Trigger-InhibitorBeaconDisabled]
+
 	  [TargetData:GVE-Generic-TargetProfile-EnemyPlayers]
 	  
 	  [RemoteControlCode:GVE-Derelict]
@@ -268,6 +270,7 @@
 	  
       </Description>      
     </EntityComponent>
+
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -318,13 +321,130 @@
       [Author:GVE+]
       [Color:White]
       
-      [ChatMessages:The Space Derelict has disappeared]
+      [ChatMessages:A Derelict has disappeared]
       [ChatAudio:ArcHudGPSNotification2]
       [BroadcastChatType:Both]
 	  [SendToAllOnlinePlayers:true]
 
       </Description>      
     </EntityComponent>
-		
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-PlanetDerelictPassive-Trigger-Compromised</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Compromised]
+	  [UseTrigger:true]
+	  [MaxActions:1]
+	  
+	  [Actions:GVE-NPC-PlanetDerelictPassive-Action-Compromised]
+	  
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-PlanetDerelictPassive-Action-Compromised</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+      [UseChatBroadcast:true]
+      [ChatData:GVE-NPC-PlanetDerelictPassive-Chat-Compromised]
+
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-PlanetDerelictPassive-Chat-Compromised</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:false]
+      [Author:GVE+]
+      [Color:White]
+      
+      [ChatMessages:A Derelict has been disabled.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Both]
+	  [SendToAllOnlinePlayers:true]
+
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-PlanetDerelictPassive-Trigger-InhibitorBeaconDisabled</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Timer]
+	  [UseTrigger:true]
+	  [MinCooldownMs:10000]
+	  [MaxCooldownMs:10000]
+	  [StartsReady:false]
+	  
+	  [Conditions:GVE-NPC-PlanetDerelictPassive-Condition-InhibitorBeaconDisabled]
+	  	  
+	  [Actions:GVE-NPC-PlanetDerelictPassive-Action-InhibitorBeaconDisabled]
+	  
+      </Description>      
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-PlanetDerelictPassive-Condition-InhibitorBeaconDisabled</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Condition]
+	  
+      [UseConditions:true]
+      [MatchAnyCondition:false]
+
+	  [UseRequiredFunctionalBlocks:true]
+	  [RequiredNoneFunctionalBlockNames:Proprietary Beacon]
+	  [RequiredNoneFunctionalBlockNames:Planet Derelict]
+            
+      </Description>
+      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-PlanetDerelictPassive-Action-InhibitorBeaconDisabled</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+
+      [UseChatBroadcast:true]
+      [ChatData:GVE-NPC-PlanetDerelictPassive-Chat-Compromised]
+	  
+	  [TerminateBehavior:true]
+	  	  
+      </Description>
+    </EntityComponent>
+			
   </EntityComponents>
 </Definitions>
