@@ -61,6 +61,8 @@
 			[RandomGridNamePattern: NeutralAdjective BaddieNoun Trade Station]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 
+			[RequireAllMods:2298319442,2388326362]
+			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
 			<IsPirate>true</IsPirate>
@@ -153,6 +155,8 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]					
 			
+			[RequireAllMods:2298319442]
+
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
 			<IsPirate>true</IsPirate>
@@ -239,6 +243,8 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
 			
+			[RequireAllMods:2298319442]
+			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
 			<IsPirate>true</IsPirate>
@@ -321,6 +327,8 @@
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]					
+			
+			[RequireAllMods:2298319442]
 
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -410,6 +418,8 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
 			
+			[RequireAllMods:2298319442]
+			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
 			<IsPirate>true</IsPirate>
@@ -497,6 +507,8 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
 			
+			[RequireAllMods:2298319442]
+			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
 			<IsPirate>true</IsPirate>
@@ -573,6 +585,8 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
 			
+			[RequireAllMods:2298319442]
+			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
 			<IsPirate>true</IsPirate>
@@ -648,6 +662,8 @@
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
+			
+			[RequireAllMods:2298319442]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->

@@ -55,7 +55,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 			[ReplaceArmorBlocksWithModules:true]
 			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
@@ -68,6 +68,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -139,7 +141,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 			[ReplaceArmorBlocksWithModules:true]
 			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
@@ -152,6 +154,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -223,7 +227,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 			[ReplaceArmorBlocksWithModules:true]
 			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
@@ -236,6 +240,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -307,7 +313,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 			[ReplaceArmorBlocksWithModules:true]
 			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
@@ -320,6 +326,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -391,7 +399,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 			[ReplaceArmorBlocksWithModules:true]
 			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
@@ -404,6 +412,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -475,7 +485,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 			[ReplaceArmorBlocksWithModules:true]
 			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
@@ -488,6 +498,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -559,7 +571,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 			[ReplaceArmorBlocksWithModules:true]
 			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
@@ -572,6 +584,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -643,7 +657,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 			[ReplaceArmorBlocksWithModules:true]
 			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
@@ -656,6 +670,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -727,7 +743,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 			[ReplaceArmorBlocksWithModules:true]
 			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
@@ -740,6 +756,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -811,7 +829,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 			[ReplaceArmorBlocksWithModules:true]
 			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
@@ -824,6 +842,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -895,7 +915,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 			[ReplaceArmorBlocksWithModules:true]
 			[ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Thrust-Large]
@@ -908,6 +928,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -979,7 +1001,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
 			[DisableBlocksWithName:Survival]
@@ -990,6 +1012,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1061,7 +1085,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
 			[DisableBlocksWithName:Survival]
@@ -1072,6 +1096,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1143,7 +1169,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
 			[DisableBlocksWithName:Survival]
@@ -1154,6 +1180,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1225,7 +1253,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
 			[DisableBlocksWithName:Survival]
@@ -1236,6 +1264,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1306,7 +1336,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
 			[DisableBlocksWithName:Survival]
@@ -1317,6 +1347,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1388,7 +1420,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
 			[DisableBlocksWithName:Survival]
@@ -1399,6 +1431,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1470,7 +1504,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
 			[DisableBlocksWithName:Blood]
@@ -1481,6 +1515,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1552,7 +1588,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
 			[DisableBlocksWithName:Survival]
@@ -1563,6 +1599,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1635,7 +1673,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
 			[DisableBlocksWithName:Survival]
@@ -1646,6 +1684,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1717,7 +1757,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
 			[DisableBlocksWithName:Survival]
@@ -1728,6 +1768,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1799,7 +1841,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
 			[DisableBlocksWithName:Survival]
@@ -1810,6 +1852,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1881,7 +1925,7 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
 			[DisableBlocksWithName:Survival]
@@ -1892,6 +1936,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1968,13 +2014,15 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
 			[CutVoxelsAtAirtightCells:true]
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]
+				
+			[RequireAllMods:2298319442]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -2059,13 +2107,15 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
 			[CutVoxelsAtAirtightCells:true]
 
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
+				
+			[RequireAllMods:2298319442]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -2126,13 +2176,15 @@
 			[IgnoreGlobalBlockReplacer:true]
 			[ClearGridInventories:false]
 			[IgnoreCleanupRules:false]
-			[ReplenishSystems:false]
+			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
 
 			[CutVoxelsAtAirtightCells:true]
 			
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]				
+				
+			[RequireAllMods:2298319442]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -2192,6 +2244,8 @@
 			[UseGridDereliction:true]
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->

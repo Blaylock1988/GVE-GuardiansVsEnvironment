@@ -2,9 +2,64 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<SpawnGroups>
 	<!--Do Not Edit Above Here-->
-
+	
 		<!--Boss Encounters-->
 		
+		<!-- Steam ID 76561198128673384 doesnt know how to read the mod description -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-GVE+-Boss-NoPublicUse</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[BossEncounterSpace:false]
+			[FactionOwner:GVE+]
+			
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:GVE+ Listening Post]
+			[BossCustomAnnounceMessage:Player Activity Alert in Stalinium Nebula]
+			[BossCustomGPSLabel:Player Activity Alert]
+			
+			[Territory:SPRT Territory]
+			[MaxDistanceFromTerritoryCenter:10000]
+				
+			[UseRivalAi:false]
+			[RivalAiReplaceRemoteControl:false]
+			[ReplenishSystems:true]
+			[UniqueEncounter:true]
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+			[GridsAreDestructable:false]
+			[GridsAreEditable:false]
+			[ForceStaticGrid:true]
+			[IgnoreCleanupRules:true]
+			[DisableBlocksWithName:Beacon,NPC Beacon,Beacon 1,Beacon 5,Disposable Beacon,Disposable Beacon 5]
+			[AllowPartialNames:false]
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Listening Post: Player Alert NatoLetter-RandomNumberRandomChar]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="GVE-NPC Player Announcer">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>GVE-RE-Boss-PlayerAnnouncer-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->

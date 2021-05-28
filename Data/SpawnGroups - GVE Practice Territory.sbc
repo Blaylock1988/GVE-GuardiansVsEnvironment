@@ -23,7 +23,7 @@
 		   [AnnounceArriveDepart:true]
 		   [CustomArriveMessage:Entering Practice Territory. A target will spawn momentarily]
 		   [CustomDepartMessage:Exiting Practice Territory]
-
+			
 		   </Description>
 		   <Icon>Textures\GUI\Icons\Fake.dds</Icon>
 		   <Frequency>30.0</Frequency>
@@ -90,6 +90,8 @@
 			[RivalAiSpaceSpawn:true]
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
+			
+			[RequireAllMods:2298319442]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->

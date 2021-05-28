@@ -62,9 +62,6 @@
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
 
-			[UseGridDereliction:true]
-			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly-DamageOnly]
-			
 			[UseBlockReplacer:false]
 			[ReplaceBlockOld:LargeBlockRadioAntenna]
 			[ReplaceBlockNew:ProprietaryNpcLargeBlockBeacon]
@@ -94,7 +91,13 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
-			
+				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
+
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
 			<IsPirate>true</IsPirate>
@@ -169,9 +172,6 @@
 
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
-
-			[UseGridDereliction:true]
-			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			
 			[UseBlockReplacer:false]
 			[ReplaceBlockOld:LargeBlockRadioAntenna]
@@ -202,6 +202,12 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
+				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -278,9 +284,6 @@
 
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
-
-			[UseGridDereliction:true]
-			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			
 			[UseBlockReplacer:false]
 			[ReplaceBlockOld:LargeBlockRadioAntenna]
@@ -311,6 +314,12 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
+				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -388,9 +397,6 @@
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
 
-			[UseGridDereliction:true]
-			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
-			
 			[UseBlockReplacer:false]
 			[ReplaceBlockOld:LargeBlockRadioAntenna]
 			[ReplaceBlockNew:ProprietaryNpcLargeBlockBeacon]
@@ -420,6 +426,12 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
+				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -497,9 +509,6 @@
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
 
-			[UseGridDereliction:true]
-			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
-			
 			[UseBlockReplacer:false]
 			[ReplaceBlockOld:LargeBlockRadioAntenna]
 			[ReplaceBlockNew:ProprietaryNpcLargeBlockBeacon]
@@ -529,6 +538,12 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
+				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -606,9 +621,6 @@
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
 
-			[UseGridDereliction:true]
-			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
-			
 			[UseBlockReplacer:false]
 			[ReplaceBlockOld:LargeBlockRadioAntenna]
 			[ReplaceBlockNew:ProprietaryNpcLargeBlockBeacon]
@@ -638,6 +650,12 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
+				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -715,9 +733,6 @@
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
 
-			[UseGridDereliction:true]
-			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
-			
 			[UseBlockReplacer:false]
 			[ReplaceBlockOld:LargeBlockRadioAntenna]
 			[ReplaceBlockNew:ProprietaryNpcLargeBlockBeacon]
@@ -747,6 +762,12 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
+				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -824,9 +845,6 @@
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
 
-			[UseGridDereliction:true]
-			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
-			
 			[UseBlockReplacer:false]
 			[ReplaceBlockOld:LargeBlockRadioAntenna]
 			[ReplaceBlockNew:ProprietaryNpcLargeBlockBeacon]
@@ -856,6 +874,12 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
+				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -933,9 +957,6 @@
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
 
-			[UseGridDereliction:true]
-			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
-			
 			[UseBlockReplacer:false]
 			[ReplaceBlockOld:LargeBlockRadioAntenna]
 			[ReplaceBlockNew:ProprietaryNpcLargeBlockBeacon]
@@ -965,6 +986,12 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
+				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -1042,9 +1069,6 @@
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
 
-			[UseGridDereliction:true]
-			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
-			
 			[UseBlockReplacer:false]
 			[ReplaceBlockOld:LargeBlockRadioAntenna]
 			[ReplaceBlockNew:ProprietaryNpcLargeBlockBeacon]
@@ -1074,6 +1098,12 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
+				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -1157,9 +1187,6 @@
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
 
-			[UseGridDereliction:false]
-			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
-
 			[UseRandomNameGenerator:false]
 			[RandomGridNamePattern: Ghoul Corvette Derelict]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
@@ -1185,6 +1212,12 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
+				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -1261,9 +1294,6 @@
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
 
-			[UseGridDereliction:false]
-			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
-
 			[UseRandomNameGenerator:false]
 			[RandomGridNamePattern: Ghoul Corvette Derelict]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
@@ -1289,6 +1319,12 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
+				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -1363,9 +1399,6 @@
 			[ShiftBlockColorsHue:true]
 			[RandomHueShift:true]
 
-			[UseGridDereliction:false]
-			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
-			
 			[RemoveVoxelsIfGridRemoved:true]
 
 			[UseRandomNameGenerator:false]
@@ -1393,6 +1426,12 @@
 			[TurretTargetLargeGrids:true]
 			[TurretTargetStations:true]
 			[TurretTargetNeutrals:true]
+				
+			[UseGridDereliction:true]
+			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
+			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
+				
+			[RequireAllMods:2298319442]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -1411,7 +1450,6 @@
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
-
 				
 	<!--Do Not Edit Below Here-->
 	</SpawnGroups>
