@@ -129,21 +129,21 @@ namespace NoFlyZone
 						{
 
 							MyVisualScriptLogicProvider.ShowNotificationLocal("[WARNING:] Entering Thruster Inhibitor Field!", 14000, "White");
-							MyVisualScriptLogicProvider.ShowNotificationLocal("Jetpacks and Large Grid thrusters above 15m altutude will be disabled.", 15000, "White");
+							MyVisualScriptLogicProvider.ShowNotificationLocal("Jetpacks and Large Grid thrusters above 50m altutude will be disabled.", 15000, "White");
 
 						}
 
 						if (inDisablePlayerDampingRange && !InDisablePlayerDampingRange) 
 						{
 
-							MyVisualScriptLogicProvider.ShowNotificationLocal("[WARNING:] Jetpack Dampers above 15m altutude have been disabled!", 16000, "White");
+							MyVisualScriptLogicProvider.ShowNotificationLocal("[WARNING:] Jetpack Dampers above 50m altutude have been disabled!", 16000, "White");
 
 						}
 
 						if (inDisablePlayerThrustRange && !InDisablePlayerThrustRange) 
 						{
 
-							MyVisualScriptLogicProvider.ShowNotificationLocal("[WARNING:]Jetpacks and Large Grid thrusters above 15m altutude have been disabled!", 17000, "White");
+							MyVisualScriptLogicProvider.ShowNotificationLocal("[WARNING:]Jetpacks and Large Grid thrusters above 50m altutude have been disabled!", 17000, "White");
 
 						}
 		
