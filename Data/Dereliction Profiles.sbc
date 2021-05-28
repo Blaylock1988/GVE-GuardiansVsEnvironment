@@ -92,9 +92,9 @@
 			[Blocks:MyObjectBuilder_InteriorTurret/LargeInteriorTurret]
 			[MatchOnlyTypeId:true]
 
-			[Chance:75]
+			[Chance:70]
 			[UseSeparatePercentages:true]
-			[MinIntegrityPercentage:20]
+			[MinIntegrityPercentage:1]
 			[MaxIntegrityPercentage:60]
 			[MinBuildPercentage:100]
 			[MaxBuildPercentage:100]
