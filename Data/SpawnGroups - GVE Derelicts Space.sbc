@@ -45,7 +45,7 @@
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999999]
-			[MinimumPlayers:2]	
+			[MinimumPlayers:1]	
 
 			[UseRemoteControlCodeRestrictions:true]
 			[RemoteControlCode:GVE-Derelict]
@@ -156,7 +156,7 @@
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999999]
-			[MinimumPlayers:2]	
+			[MinimumPlayers:1]	
 
 			[UseRemoteControlCodeRestrictions:true]
 			[RemoteControlCode:GVE-Derelict]
@@ -268,7 +268,7 @@
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999999]
-			[MinimumPlayers:2]	
+			[MinimumPlayers:1]	
 
 			[UseRemoteControlCodeRestrictions:true]
 			[RemoteControlCode:GVE-Derelict]
@@ -380,7 +380,7 @@
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999999]
-			[MinimumPlayers:2]	
+			[MinimumPlayers:1]	
 
 			[UseRemoteControlCodeRestrictions:true]
 			[RemoteControlCode:GVE-Derelict]
@@ -492,7 +492,7 @@
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999999]
-			[MinimumPlayers:2]	
+			[MinimumPlayers:1]	
 
 			[UseRemoteControlCodeRestrictions:true]
 			[RemoteControlCode:GVE-Derelict]
@@ -716,7 +716,7 @@
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999999]
-			[MinimumPlayers:2]	
+			[MinimumPlayers:1]	
 
 			[UseRemoteControlCodeRestrictions:true]
 			[RemoteControlCode:GVE-Derelict]
@@ -940,7 +940,7 @@
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999999]
-			[MinimumPlayers:2]	
+			[MinimumPlayers:1]	
 
 			[UseRemoteControlCodeRestrictions:true]
 			[RemoteControlCode:GVE-Derelict]
@@ -1052,7 +1052,7 @@
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999999]
-			[MinimumPlayers:2]	
+			[MinimumPlayers:1]	
 
 			[UseRemoteControlCodeRestrictions:true]
 			[RemoteControlCode:GVE-Derelict]
@@ -1170,7 +1170,7 @@
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999999]
-			[MinimumPlayers:2]			
+			[MinimumPlayers:1]			
 												
 			[UseRemoteControlCodeRestrictions:true]
 			[RemoteControlCode:GVE-Derelict]
@@ -1382,7 +1382,7 @@
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999999]
-			[MinimumPlayers:2]			
+			[MinimumPlayers:1]			
 												
 			[UseRemoteControlCodeRestrictions:true]
 			[RemoteControlCode:GVE-Derelict]
