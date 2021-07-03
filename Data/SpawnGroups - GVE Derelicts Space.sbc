@@ -96,7 +96,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -207,7 +207,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -319,7 +319,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -431,7 +431,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -543,7 +543,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -655,7 +655,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -767,7 +767,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -879,7 +879,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -991,7 +991,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -1103,7 +1103,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -1217,7 +1217,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -1324,7 +1324,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -1431,7 +1431,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->

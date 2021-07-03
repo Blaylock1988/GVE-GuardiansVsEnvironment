@@ -125,7 +125,7 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
 			
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2532246756]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -232,7 +232,7 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]			
 			
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2532246756]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -336,7 +336,7 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]					
 			
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2532246756]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -434,7 +434,7 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
 			
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2532246756]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -529,7 +529,7 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]					
 			
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2532246756]
 
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -622,7 +622,7 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
 			
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2532246756]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -714,7 +714,7 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
 			
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2532246756]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -811,7 +811,7 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
 			
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2532246756]
 						
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -916,7 +916,7 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]			
 			
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2532246756]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -1014,7 +1014,7 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]			
 			
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2532246756]
 
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -1109,7 +1109,7 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]					
 			
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2532246756]
 
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -1202,7 +1202,7 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
 			
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2532246756]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -1298,7 +1298,7 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
 			
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2532246756]
 			
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
@@ -1395,7 +1395,7 @@
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
 			
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2532246756]
 						
 			</Description>
 			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->

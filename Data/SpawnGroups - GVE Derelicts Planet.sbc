@@ -69,7 +69,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -155,7 +155,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -241,7 +241,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -327,7 +327,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -413,7 +413,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -499,7 +499,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -585,7 +585,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -671,7 +671,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -757,7 +757,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -843,7 +843,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -929,7 +929,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1013,7 +1013,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1097,7 +1097,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1181,7 +1181,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1265,7 +1265,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1348,7 +1348,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1432,7 +1432,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1516,7 +1516,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1600,7 +1600,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1685,7 +1685,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1769,7 +1769,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1853,7 +1853,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1937,7 +1937,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -2022,7 +2022,7 @@
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -2115,7 +2115,7 @@
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -2184,7 +2184,7 @@
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]				
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -2245,7 +2245,7 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAllMods:2298319442]
+			[RequireAnyMods:2298319442,2533245328]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
