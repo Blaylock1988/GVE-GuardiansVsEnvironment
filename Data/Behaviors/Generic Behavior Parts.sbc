@@ -780,7 +780,7 @@
       </Description>
     </EntityComponent>
 
-	<!--NPC Retreat when all guns are disabled-->
+	<!--NPC Retreat when all guns are disabled, does not work with WC1-->
 	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
@@ -791,7 +791,7 @@
       [RivalAI Trigger]
 	  
       [Type:NoWeapon]
-	  [UseTrigger:true]
+	  [UseTrigger:false]
 	  [MinCooldownMs:15000]
 	  [MaxCooldownMs:15000]
 	  [StartsReady:false]
