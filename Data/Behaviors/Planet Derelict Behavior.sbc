@@ -441,6 +441,10 @@
       [UseChatBroadcast:true]
       [ChatData:GVE-NPC-PlanetDerelictPassive-Chat-Compromised]
 	  
+	  [RazeBlocksWithNames:true]
+	  [RazeBlocksNames:Proprietary Beacon]
+	  [RazeBlocksNames:Planet Derelict]
+	
 	  [TerminateBehavior:true]
 	  	  
       </Description>
