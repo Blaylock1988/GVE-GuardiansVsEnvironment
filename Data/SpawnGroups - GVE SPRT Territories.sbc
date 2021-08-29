@@ -2,45 +2,8 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<SpawnGroups>
 	<!--Do Not Edit Above Here-->
-	
+			
 		<!--<SpawnGroup>
-		   <Id>
-			  <TypeId>SpawnGroupDefinition</TypeId>
-			  <SubtypeId>(NPC-GVE) Wave Spawner Territory</SubtypeId>
-		   </Id>
-		   <Description>
-
-		   [Modular Encounters Territory]
-		   
-		   [Name:GVE+ Territory]
-		   [Type:Static]
-		   [Active:false]
-		   [Radius:50000]
-		   [CoordsX:442100]
-		   [CoordsY:96000]
-		   [CoordsZ:251800]
-		   [AnnounceArriveDepart:true]
-		   [CustomArriveMessage:Now entering the GVE+ Territory. Beware of pirate raids.]
-		   [CustomDepartMessage:Now leaving the GVE+ Territory.]
-
-		   </Description>
-		   <Icon>Textures\GUI\Icons\Fake.dds</Icon>
-		   <Frequency>30.0</Frequency>
-		   <IsPirate>true</IsPirate>
-		   <Prefabs>
-			  <Prefab SubtypeId="GVE-NPC Player Announcer">
-				 <Position>
-					<X>0.0</X>
-					<Y>0.0</Y>
-					<Z>0.0</Z>
-				 </Position>
-				 <BeaconText>Super Gremlin</BeaconText>
-				 <Speed>0</Speed>
-			  </Prefab>
-		   </Prefabs>
-		</SpawnGroup>-->
-		
-		<SpawnGroup>
 		   <Id>
 			  <TypeId>SpawnGroupDefinition</TypeId>
 			  <SubtypeId>(NPC-GVE) Inner Worlds Territory</SubtypeId>
@@ -59,6 +22,43 @@
 		   [AnnounceArriveDepart:true]
 		   [CustomArriveMessage:Returning to inner worlds region.]
 		   [CustomDepartMessage:Approaching deep space. Beware of unknown dangers.]
+
+		   </Description>
+		   <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+		   <Frequency>30.0</Frequency>
+		   <IsPirate>true</IsPirate>
+		   <Prefabs>
+			  <Prefab SubtypeId="GVE-NPC Player Announcer">
+				 <Position>
+					<X>0.0</X>
+					<Y>0.0</Y>
+					<Z>0.0</Z>
+				 </Position>
+				 <BeaconText>Super Gremlin</BeaconText>
+				 <Speed>0</Speed>
+			  </Prefab>
+		   </Prefabs>
+		</SpawnGroup>-->
+
+		<SpawnGroup>
+		   <Id>
+			  <TypeId>SpawnGroupDefinition</TypeId>
+			  <SubtypeId>(NPC-GVE) Kimi Research Territory</SubtypeId>
+		   </Id>
+		   <Description>
+
+		   [Modular Encounters Territory]
+		   
+		   [Name:Kimi Research Territory]
+		   [Type:Static]
+		   [Active:true]
+		   [Radius:30000]
+		   [CoordsX:1411761]
+		   [CoordsY:1016885]
+		   [CoordsZ:117299]
+		   [AnnounceArriveDepart:true]
+		   [CustomArriveMessage:Entering Kimi Anomoly Nebula.]
+		   [CustomDepartMessage:Exiting Kimi Anomoly Nebula.]
 
 		   </Description>
 		   <Icon>Textures\GUI\Icons\Fake.dds</Icon>

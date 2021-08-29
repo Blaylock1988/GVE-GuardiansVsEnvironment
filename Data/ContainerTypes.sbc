@@ -2,12 +2,40 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<ContainerTypes>
 		<!-- Space Derelict Ship Cargo -->
-		<ContainerType CountMin="2" CountMax="5">
+		<ContainerType CountMin="3" CountMax="5">
 			<Id>
 				<TypeId>ContainerTypeDefinition</TypeId>
 				<SubtypeId>GVE-Derelict-Rare</SubtypeId>
 			</Id>
 			<Items>
+				<Item AmountMin="1" AmountMax="1">
+					<Frequency>1</Frequency>
+					<Id>
+						<TypeId>Component</TypeId>
+						<SubtypeId>AQD_Comp_ResearchMaterial</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="1" AmountMax="1">
+					<Frequency>0.5</Frequency>
+					<Id>
+						<TypeId>Component</TypeId>
+						<SubtypeId>AQD_Comp_EnhancedResearchMaterial</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="1" AmountMax="1">
+					<Frequency>0.25</Frequency>
+					<Id>
+						<TypeId>Component</TypeId>
+						<SubtypeId>AQD_Comp_AdvancedResearchMaterial</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="1" AmountMax="1">
+					<Frequency>0.1</Frequency>
+					<Id>
+						<TypeId>Component</TypeId>
+						<SubtypeId>AQD_Comp_EliteResearchMaterial</SubtypeId>
+					</Id>
+				</Item>
 				<Item AmountMin="1000" AmountMax="1000000">
 					<Frequency>1</Frequency>
 					<Id>
@@ -40,7 +68,7 @@
 					<Frequency>1.0</Frequency>
 					<Id>
 						<TypeId>Component</TypeId>
-						<SubtypeId>Lense</SubtypeId>
+						<SubtypeId>Lens</SubtypeId>
 					</Id>
 				</Item>
 				<Item AmountMin="5" AmountMax="25">
@@ -104,6 +132,42 @@
 					<Id>
 						<TypeId>Component</TypeId>
 						<SubtypeId>TurboEncabulator</SubtypeId>
+					</Id>
+				</Item>
+			</Items>
+		</ContainerType>
+		<ContainerType CountMin="2" CountMax="5">
+			<Id>
+				<TypeId>ContainerTypeDefinition</TypeId>
+				<SubtypeId>GVE-Derelict-ResearchMaterials</SubtypeId>
+			</Id>
+			<Items>
+				<Item AmountMin="1" AmountMax="1">
+					<Frequency>1</Frequency>
+					<Id>
+						<TypeId>Component</TypeId>
+						<SubtypeId>AQD_Comp_ResearchMaterial</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="1" AmountMax="1">
+					<Frequency>0.5</Frequency>
+					<Id>
+						<TypeId>Component</TypeId>
+						<SubtypeId>AQD_Comp_EnhancedResearchMaterial</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="1" AmountMax="1">
+					<Frequency>0.25</Frequency>
+					<Id>
+						<TypeId>Component</TypeId>
+						<SubtypeId>AQD_Comp_AdvancedResearchMaterial</SubtypeId>
+					</Id>
+				</Item>
+				<Item AmountMin="1" AmountMax="1">
+					<Frequency>0.1</Frequency>
+					<Id>
+						<TypeId>Component</TypeId>
+						<SubtypeId>AQD_Comp_EliteResearchMaterial</SubtypeId>
 					</Id>
 				</Item>
 			</Items>

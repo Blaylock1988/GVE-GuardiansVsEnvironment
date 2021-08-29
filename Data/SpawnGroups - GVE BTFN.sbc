@@ -3,8 +3,6 @@
 	<SpawnGroups>
 	<!--Do Not Edit Above Here-->
 				
-		<!-- BTFN Territory GPS:NPC Starport:442100:96000:251700:#FF1AFF00: -->
-		
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
@@ -13,6 +11,8 @@
 			<Description>
 
 			[Modular Encounters SpawnGroup]
+			
+			[Territory:Kimi Research Territory]
 			
 			[BossEncounterSpace:true]
 			[FactionOwner:BTFN]

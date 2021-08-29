@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Factions>
+	<!--Do Not Edit Above Here-->
+
+
+		<Faction Tag="T_ALPHA" Founder="T_ALPHA Founder">
+			<Id>
+				<TypeId>MyObjectBuilder_FactionDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>T_ALPHA</SubtypeId> <!--Must Be Unique-->
+			</Id>
+			<DisplayName>T_ALPHA</DisplayName>
+			<IsDefault>true</IsDefault>
+			<DefaultRelation>Enemies</DefaultRelation> <!--Enemies, Neutral, Friends-->
+			<AcceptHumans>false</AcceptHumans>
+			<AutoAcceptMember>false</AutoAcceptMember>
+			<StartingBalance>0</StartingBalance>
+			<Type>None</Type> <!--None, Miner, Trader, Builder, PlayerMade-->
+			<DiscoveredByDefault>false</DiscoveredByDefault>
+			<FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon> <!--Game or Mod Path For Texture File-->
+			<Description>T_ALPHA</Description>
+		</Faction>
+		<Faction Tag="T_BRAVO" Founder="T_BRAVO Founder">
+			<Id>
+				<TypeId>MyObjectBuilder_FactionDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>T_BRAVO</SubtypeId> <!--Must Be Unique-->
+			</Id>
+			<DisplayName>T_BRAVO</DisplayName>
+			<IsDefault>true</IsDefault>
+			<DefaultRelation>Enemies</DefaultRelation> <!--Enemies, Neutral, Friends-->
+			<AcceptHumans>false</AcceptHumans>
+			<AutoAcceptMember>false</AutoAcceptMember>
+			<StartingBalance>0</StartingBalance>
+			<Type>None</Type> <!--None, Miner, Trader, Builder, PlayerMade-->
+			<DiscoveredByDefault>false</DiscoveredByDefault>
+			<FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon> <!--Game or Mod Path For Texture File-->
+			<Description>T_BRAVO</Description>
+		</Faction>
+		<Faction Tag="T_CHARLIE" Founder="T_CHARLIE Founder">
+			<Id>
+				<TypeId>MyObjectBuilder_FactionDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>T_CHARLIE</SubtypeId> <!--Must Be Unique-->
+			</Id>
+			<DisplayName>T_CHARLIE</DisplayName>
+			<IsDefault>true</IsDefault>
+			<DefaultRelation>Enemies</DefaultRelation> <!--Enemies, Neutral, Friends-->
+			<AcceptHumans>false</AcceptHumans>
+			<AutoAcceptMember>false</AutoAcceptMember>
+			<StartingBalance>0</StartingBalance>
+			<Type>None</Type> <!--None, Miner, Trader, Builder, PlayerMade-->
+			<DiscoveredByDefault>false</DiscoveredByDefault>
+			<FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon> <!--Game or Mod Path For Texture File-->
+			<Description>T_CHARLIE</Description>
+		</Faction>
+		<Faction Tag="T_DELTA" Founder="T_DELTA Founder">
+			<Id>
+				<TypeId>MyObjectBuilder_FactionDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>T_DELTA</SubtypeId> <!--Must Be Unique-->
+			</Id>
+			<DisplayName>T_DELTA</DisplayName>
+			<IsDefault>true</IsDefault>
+			<DefaultRelation>Enemies</DefaultRelation> <!--Enemies, Neutral, Friends-->
+			<AcceptHumans>false</AcceptHumans>
+			<AutoAcceptMember>false</AutoAcceptMember>
+			<StartingBalance>0</StartingBalance>
+			<Type>None</Type> <!--None, Miner, Trader, Builder, PlayerMade-->
+			<DiscoveredByDefault>false</DiscoveredByDefault>
+			<FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon> <!--Game or Mod Path For Texture File-->
+			<Description>T_DELTA</Description>
+		</Faction>
+		<Faction Tag="T_ECHO" Founder="T_ECHO Founder">
+			<Id>
+				<TypeId>MyObjectBuilder_FactionDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>T_ECHO</SubtypeId> <!--Must Be Unique-->
+			</Id>
+			<DisplayName>T_ECHO</DisplayName>
+			<IsDefault>true</IsDefault>
+			<DefaultRelation>Enemies</DefaultRelation> <!--Enemies, Neutral, Friends-->
+			<AcceptHumans>false</AcceptHumans>
+			<AutoAcceptMember>false</AutoAcceptMember>
+			<StartingBalance>0</StartingBalance>
+			<Type>None</Type> <!--None, Miner, Trader, Builder, PlayerMade-->
+			<DiscoveredByDefault>false</DiscoveredByDefault>
+			<FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon> <!--Game or Mod Path For Texture File-->
+			<Description>T_ECHO</Description>
+		</Faction>
+		
+	<!--Do Not Edit Below Here-->
+	</Factions>
+</Definitions>

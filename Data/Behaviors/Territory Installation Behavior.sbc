@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-InstallationAI-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Passive]
+
+	  [UseRetreatTimer:false]
+	  [UseNoTargetTimer:false]
+	  [UsePlayerDistanceTimer:false]  
+	  
+	  [UseStaticGuns:true]
+	  [MaxStaticWeaponRange:4000]
+	  [WeaponMaxAngleFromTarget:360]
+	  [UseTurrets:true]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:25]
+	  [MaxAmmoReplenishments:99999999]
+	  	  
+	  [Triggers:GVE-NPC-InstallationAI-Trigger-AcquiredTarget]
+	  [Triggers:GVE-NPC-InstallationAI-Trigger-LostTarget]
+	  [Triggers:GVE-NPC-InstallationAI-Trigger-Compromised]
+	  	  
+	  [TargetData:GVE-NPC-InstallationAI-TargetProfile-EnemyPlayers]
+	  
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-InstallationAI-TargetProfile-EnemyPlayers</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Target]
+      
+      [UseCustomTargeting:true]
+      [Target:Grid]
+	  [TimeUntilNextEvaluation:10]
+	  [MaxDistance:4000]
+      [GetTargetBy:ClosestDistance]
+	  [MatchAllFilters:Relation]
+	  [MatchAllFilters:OutsideOfSafezone]
+	  [MatchAllFilters:Powered]
+	  [MatchNoneFilters:Name]
+      [Relations:Enemy]
+	  [Names:Listening Post]
+	  [Names:GVE-NPC KOTH [nozone]]
+	  [UsePartialNameMatching:true]
+      
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-InstallationAI-Trigger-AcquiredTarget</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:AcquiredTarget]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  	  
+	  [Actions:GVE-NPC-InstallationAI-Action-AcquiredTarget]
+	  
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-InstallationAI-Action-AcquiredTarget-Unused</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+      [UseChatBroadcast:true]
+      [ChatData:GVE-NPC-InstallationAI-Chat-AcquiredTarget]
+	  
+	  [EnableBlocks:true]
+	  [EnableBlockNames:[Missile] Large Archer Pod]
+	  [EnableBlockStates:On]
+	  [EnableBlockNames:[Torpedo] Shiva Launcher Pod]
+	  [EnableBlockStates:On]
+	  [EnableBlockNames:[Mine] Moray Launcher System]
+	  [EnableBlockStates:On]
+	  [EnableBlockNames:[Missile] Small Archer Pod]
+	  [EnableBlockStates:On]
+	  	  
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-InstallationAI-Action-AcquiredTarget</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+      [UseChatBroadcast:true]
+      [ChatData:GVE-NPC-InstallationAI-Chat-AcquiredTarget]
+	  
+	  [ToggleBlocksOfType:true]
+	  [BlockTypesToToggle:MyObjectBuilder_ConveyorSorter/MXA_ArcherPods]
+	  [BlockTypeToggles:On]
+	  [BlockTypesToToggle:MyObjectBuilder_SmallMissileLauncherReload/SmallRocketLauncherReload]
+	  [BlockTypeToggles:On]
+	  [BlockTypesToToggle:MyObjectBuilder_ConveyorSorter/MXA_Shiva]
+	  [BlockTypeToggles:On]
+	  [BlockTypesToToggle:MyObjectBuilder_ConveyorSorter/MXA_Moray]
+	  [BlockTypeToggles:On]
+	  	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-InstallationAI-Chat-AcquiredTarget</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [BroadcastRandomly:false]
+	  [IgnoreAntennaRequirement:true]
+	  [IgnoredAntennaRangeOverride:5000]
+      [Author:Territory Defenses]
+      [Color:Red]
+      
+      [ChatMessages:Enemy in range. Launching missiles.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  [SendToAllOnlinePlayers:false]
+
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-InstallationAI-Trigger-LostTarget</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:LostTarget]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  	  
+	  [Actions:GVE-NPC-InstallationAI-Action-LostTarget]
+	  
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-InstallationAI-Action-LostTarget-Unused</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+	  [EnableBlocks:true]
+	  [EnableBlockNames:[Missile] Large Archer Pod]
+	  [EnableBlockStates:Off]
+	  [EnableBlockNames:[Torpedo] Shiva Launcher Pod]
+	  [EnableBlockStates:Off]
+	  [EnableBlockNames:[Mine] Moray Launcher System]
+	  [EnableBlockStates:Off]
+	  [EnableBlockNames:[Missile] Small Archer Pod]
+	  [EnableBlockStates:Off]
+	  	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-InstallationAI-Action-LostTarget</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+	  [ToggleBlocksOfType:true]
+	  [BlockTypesToToggle:MyObjectBuilder_ConveyorSorter/MXA_ArcherPods]
+	  [BlockTypeToggles:Off]
+	  [BlockTypesToToggle:MyObjectBuilder_SmallMissileLauncherReload/SmallRocketLauncherReload]
+	  [BlockTypeToggles:Off]
+	  [BlockTypesToToggle:MyObjectBuilder_ConveyorSorter/MXA_Shiva]
+	  [BlockTypeToggles:Off]
+	  [BlockTypesToToggle:MyObjectBuilder_ConveyorSorter/MXA_Moray]
+	  [BlockTypeToggles:Off]
+	  	  
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-InstallationAI-Trigger-Compromised</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Compromised]
+	  [UseTrigger:true]
+	  
+	  [Actions:GVE-NPC-InstallationAI-Action-Compromised]
+	  
+      </Description>      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-InstallationAI-Action-Compromised-Unused</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+      [UseChatBroadcast:true]
+      [ChatData:GVE-NPC-InstallationAI-Chat-Compromised]
+	  
+	  [EnableBlocks:true]
+	  [EnableBlockNames:[Missile] Large Archer Pod]
+	  [EnableBlockStates:Off]
+	  [EnableBlockNames:[Torpedo] Shiva Launcher Pod]
+	  [EnableBlockStates:Off]
+	  [EnableBlockNames:[Mine] Moray Launcher System]
+	  [EnableBlockStates:Off]
+	  [EnableBlockNames:[Missile] Small Archer Pod]
+	  [EnableBlockStates:Off]
+	  	  
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-InstallationAI-Action-Compromised</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  	  
+      [UseChatBroadcast:true]
+      [ChatData:GVE-NPC-InstallationAI-Chat-Compromised]
+	  
+	  [ToggleBlocksOfType:true]
+	  [BlockTypesToToggle:MyObjectBuilder_ConveyorSorter/MXA_ArcherPods]
+	  [BlockTypeToggles:Off]
+	  [BlockTypesToToggle:MyObjectBuilder_SmallMissileLauncherReload/SmallRocketLauncherReload]
+	  [BlockTypeToggles:Off]
+	  [BlockTypesToToggle:MyObjectBuilder_ConveyorSorter/MXA_Shiva]
+	  [BlockTypeToggles:Off]
+	  [BlockTypesToToggle:MyObjectBuilder_ConveyorSorter/MXA_Moray]
+	  [BlockTypeToggles:Off]
+	  	  
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>GVE-NPC-InstallationAI-Chat-Compromised</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [BroadcastRandomly:false]
+	  [IgnoreAntennaRequirement:true]
+	  [IgnoredAntennaRangeOverride:5000]
+      [Author:Territory Defenses]
+      [Color:Red]
+      
+      [ChatMessages:Missiles offline.]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+	  [SendToAllOnlinePlayers:false]
+
+      </Description>      
+    </EntityComponent>
+		
+  </EntityComponents>
+</Definitions>

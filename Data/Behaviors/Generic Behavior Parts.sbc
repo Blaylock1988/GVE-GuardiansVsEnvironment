@@ -693,7 +693,7 @@
 	  
 	  [GenerateExplosion:true]
 	  [ExplosionRange:30]
-	  [ExplosionDamage:15000]
+	  [ExplosionDamage:10000]
 	  
       [UseChatBroadcast:true]
       [ChatData:GVE-Generic-Chat-SPRTDefeated]

@@ -1283,12 +1283,12 @@
 			</Prefabs>
 		</SpawnGroup>			
 
-		<!--[NPC Wreck] - Cerverus -->
+		<!--[NPC Wreck] - Ceverus -->
 		
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Cerverus</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDerelict-SPRT-Ceverus</SubtypeId>
 			</Id>
 			<Description>
 
@@ -1354,7 +1354,7 @@
 			<IsPirate>true</IsPirate> <!--Do not edit-->
 			<Frequency>5.0</Frequency>
 			<Prefabs>
-				<Prefab SubtypeId="[NPC Wreck] Cerverus">
+				<Prefab SubtypeId="[NPC Wreck] Ceverus">
 					<Position>
 						<X>0.0</X>
 						<Y>5.0</Y>

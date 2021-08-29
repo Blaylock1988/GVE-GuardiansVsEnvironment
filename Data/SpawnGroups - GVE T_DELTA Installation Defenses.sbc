@@ -7,16 +7,22 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Reaper</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-T_DELTA-Reaper</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
-			[AdminSpawnOnly:true]
-			[AtmosphericCargoShip:true]
 			
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			
+			[AtmosphericCargoShip:true]
+			[SkipAirDensityCheck:true]
+
 			[PlanetRequiresAtmo:true]
-			[FactionOwner:SPRT]
+			[FactionOwner:T_DELTA]
 			
 			[UseRivalAi:true]
 			[RivalAiSpawn:true]
@@ -47,16 +53,22 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Revenant</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-T_DELTA-Revenant</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
-			[AdminSpawnOnly:true]
-			[AtmosphericCargoShip:true]
 			
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			
+			[AtmosphericCargoShip:true]
+			[SkipAirDensityCheck:true]
+
 			[PlanetRequiresAtmo:true]
-			[FactionOwner:SPRT]
+			[FactionOwner:T_DELTA]
 			
 			[UseRivalAi:true]
 			[RivalAiSpawn:true]
@@ -87,16 +99,22 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Wasp</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-T_DELTA-Wasp</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
-			[AdminSpawnOnly:true]
-			[AtmosphericCargoShip:true]
 			
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			
+			[AtmosphericCargoShip:true]
+			[SkipAirDensityCheck:true]
+
 			[PlanetRequiresAtmo:true]
-			[FactionOwner:SPRT]
+			[FactionOwner:T_DELTA]
 			
 			[UseRivalAi:true]
 			[RivalAiSpawn:true]
@@ -127,16 +145,22 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Hornet</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-T_DELTA-Hornet</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
-			[AdminSpawnOnly:true]
-			[AtmosphericCargoShip:true]
 			
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			
+			[AtmosphericCargoShip:true]
+			[SkipAirDensityCheck:true]
+
 			[PlanetRequiresAtmo:true]
-			[FactionOwner:SPRT]
+			[FactionOwner:T_DELTA]
 			
 			[UseRivalAi:true]
 			[RivalAiSpawn:true]
