@@ -12,15 +12,14 @@
 			<Description>
 
 			[Modular Encounters SpawnGroup]
-			
+
+			[AtmosphericCargoShip:true]
+
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:-1]
 			[KnownPlayerLocationMaxSpawnedEncounters:-1]
 			
-			[AtmosphericCargoShip:true]
-			[SkipAirDensityCheck:true]
-
 			[PlanetRequiresAtmo:true]
 			[FactionOwner:T_DELTA]
 			
@@ -29,8 +28,26 @@
 			[RivalAiReplaceRemoteControl:true]
 			
 			[ReplenishSystems:true]			
-			[ReactorsOn:true]			
-				
+			[ReactorsOn:true]
+
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
+			[BlockReplacerProfileNames:MES-Armor-HeavyToLight]
+
+			[DisableGyroOverride:true]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustForceMultiply:2]
+			[NpcIonThrustPowerMultiply:0.01]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustForceMultiply:2]
+			[NpcAtmoThrustPowerMultiply:0.01]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustForceMultiply:2]
+			[NpcHydroThrustPowerMultiply:0.01]
+			
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
 			<Frequency>0.1</Frequency>
@@ -43,7 +60,7 @@
 					</Position>
 					<Speed>0</Speed>
 					<BeaconText>Reaper</BeaconText>					
-					<Behaviour>SPRT-FighterBehavior</Behaviour>					
+					<Behaviour>InstallationDrone-HorseFighter-Behavior-Start</Behaviour>					
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -58,15 +75,9 @@
 			<Description>
 
 			[Modular Encounters SpawnGroup]
-			
-			[UseKnownPlayerLocations:true]
-			[KnownPlayerLocationMustMatchFaction:true]
-			[KnownPlayerLocationMinSpawnedEncounters:-1]
-			[KnownPlayerLocationMaxSpawnedEncounters:-1]
-			
+			[AdminSpawnOnly:true]
 			[AtmosphericCargoShip:true]
-			[SkipAirDensityCheck:true]
-
+			
 			[PlanetRequiresAtmo:true]
 			[FactionOwner:T_DELTA]
 			
@@ -76,7 +87,25 @@
 			
 			[ReplenishSystems:true]			
 			[ReactorsOn:true]			
-				
+			
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
+			[BlockReplacerProfileNames:MES-Armor-HeavyToLight]
+
+			[DisableGyroOverride:true]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustForceMultiply:2]
+			[NpcIonThrustPowerMultiply:0.01]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustForceMultiply:2]
+			[NpcAtmoThrustPowerMultiply:0.01]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustForceMultiply:2]
+			[NpcHydroThrustPowerMultiply:0.01]
+			
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
 			<Frequency>0.1</Frequency>
@@ -89,7 +118,65 @@
 					</Position>
 					<Speed>0</Speed>
 					<BeaconText>Revenant</BeaconText>					
-					<Behaviour>SPRT-FighterBehavior</Behaviour>					
+					<Behaviour>InstallationDrone-HorseFighter-Behavior-Start</Behaviour>					
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!-- [NPC Drone] Slicer -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDefense-T_DELTA-Slicer</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[AdminSpawnOnly:true]
+			[AtmosphericCargoShip:true]
+			
+			[PlanetRequiresAtmo:true]
+			[FactionOwner:T_DELTA]
+			
+			[UseRivalAi:true]
+			[RivalAiSpawn:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			[ReplenishSystems:true]			
+			[ReactorsOn:true]			
+			
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
+			[BlockReplacerProfileNames:MES-Armor-HeavyToLight]
+
+			[DisableGyroOverride:true]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustForceMultiply:2]
+			[NpcIonThrustPowerMultiply:0.01]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustForceMultiply:2]
+			[NpcAtmoThrustPowerMultiply:0.01]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustForceMultiply:2]
+			[NpcHydroThrustPowerMultiply:0.01]
+			
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>0.1</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Drone] Slicer">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Revenant</BeaconText>					
+					<Behaviour>InstallationDrone-HorseFighter-Behavior-Start</Behaviour>					
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -104,15 +191,9 @@
 			<Description>
 
 			[Modular Encounters SpawnGroup]
-			
-			[UseKnownPlayerLocations:true]
-			[KnownPlayerLocationMustMatchFaction:true]
-			[KnownPlayerLocationMinSpawnedEncounters:-1]
-			[KnownPlayerLocationMaxSpawnedEncounters:-1]
-			
+			[AdminSpawnOnly:true]
 			[AtmosphericCargoShip:true]
-			[SkipAirDensityCheck:true]
-
+			
 			[PlanetRequiresAtmo:true]
 			[FactionOwner:T_DELTA]
 			
@@ -123,6 +204,24 @@
 			[ReplenishSystems:true]			
 			[ReactorsOn:true]			
 				
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
+			[BlockReplacerProfileNames:MES-Armor-HeavyToLight]
+
+			[DisableGyroOverride:true]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustForceMultiply:2]
+			[NpcIonThrustPowerMultiply:0.01]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustForceMultiply:2]
+			[NpcAtmoThrustPowerMultiply:0.01]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustForceMultiply:2]
+			[NpcHydroThrustPowerMultiply:0.01]
+			
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
 			<Frequency>0.1</Frequency>
@@ -135,7 +234,7 @@
 					</Position>
 					<Speed>0</Speed>
 					<BeaconText>Wasp</BeaconText>					
-					<Behaviour>SPRT-FighterBehavior</Behaviour>					
+					<Behaviour>InstallationDrone-HorseFighter-Behavior-Start</Behaviour>					
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>			
@@ -150,15 +249,9 @@
 			<Description>
 
 			[Modular Encounters SpawnGroup]
-			
-			[UseKnownPlayerLocations:true]
-			[KnownPlayerLocationMustMatchFaction:true]
-			[KnownPlayerLocationMinSpawnedEncounters:-1]
-			[KnownPlayerLocationMaxSpawnedEncounters:-1]
-			
+			[AdminSpawnOnly:true]
 			[AtmosphericCargoShip:true]
-			[SkipAirDensityCheck:true]
-
+			
 			[PlanetRequiresAtmo:true]
 			[FactionOwner:T_DELTA]
 			
@@ -169,6 +262,24 @@
 			[ReplenishSystems:true]			
 			[ReactorsOn:true]			
 				
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
+			[BlockReplacerProfileNames:MES-Armor-HeavyToLight]
+
+			[DisableGyroOverride:true]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustForceMultiply:2]
+			[NpcIonThrustPowerMultiply:0.01]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustForceMultiply:2]
+			[NpcAtmoThrustPowerMultiply:0.01]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustForceMultiply:2]
+			[NpcHydroThrustPowerMultiply:0.01]
+
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
 			<Frequency>0.1</Frequency>
@@ -181,7 +292,7 @@
 					</Position>
 					<Speed>0</Speed>
 					<BeaconText>Hornet</BeaconText>					
-					<Behaviour>SPRT-FighterBehavior</Behaviour>					
+					<Behaviour>InstallationDrone-Hornet-Behavior-Start</Behaviour>					
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>			

@@ -1,0 +1,458 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+	<!-- Hornet Drone Behavior -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>InstallationDrone-Hornet-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+	  
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Horsefly]
+
+	  [UseStaticGuns:true]
+	  [MaxStaticWeaponRange:1500]
+	  [WeaponMaxAngleFromTarget:10]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:10]
+	  [MaxAmmoReplenishments:99999999]
+	  
+	  [AutopilotData:InstallationDrone-Hornet-Autopilot]
+
+	  [Triggers:InstallationDrone-Trigger-FireGuns]
+	  [Triggers:InstallationDrone-Trigger-StopGuns]
+	  [Triggers:GVE-Generic-Trigger-SPRTTargetAcquiredChatter]
+	  [Triggers:InstallationDrone-Trigger-Crashed]
+	  [Triggers:InstallationDrone-Trigger-Compromised]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
+  
+      </Description>
+    </EntityComponent>
+
+	<!-- Hornet Autopilot -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>InstallationDrone-Hornet-Autopilot</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Autopilot]
+      
+	  [UseVelocityCollisionEvasion:true]
+
+      [RotationMultiplier:1]
+	  [DisableInertiaDampeners:false]
+      [FlyLevelWithGravity:false]
+      [LevelWithGravityWhenIdle:true]
+	  [MaxVerticalSpeed:20]
+	  [IdealPlanetAltitude:250]
+	  [MinimumPlanetAltitude:150]
+	  [AltitudeTolerance:50]
+	  [CollisionEvasionWaypointCalculatedAwayFromEntity:true]
+      [WaypointTolerance:100]
+      [IdealMinSpeed:50]
+      [IdealMaxSpeed:75]
+
+      [OffsetSpaceMinDistFromTarget:900]
+      [OffsetSpaceMaxDistFromTarget:1500]
+      [OffsetPlanetMinDistFromTarget:500]
+      [OffsetPlanetMaxDistFromTarget:1500]
+      [OffsetPlanetMinTargetAltitude:15]
+      [OffsetPlanetMaxTargetAltitude:100]
+	  
+	  [MaxVerticalSpeed:20]
+
+      [ReverseOffsetDistAltAboveHeight:false]
+      [ReverseOffsetHeight:0]
+	  [AngleAllowedForForwardThrust:90]
+      
+      </Description>
+    </EntityComponent>
+
+	<!-- Strike Drone Behavior -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>InstallationDrone-HorseFighter-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+	  
+      [RivalAI Behavior]
+	  
+      [BehaviorName:HorseFighter]
+
+	  [UseStaticGuns:true]
+	  [MaxStaticWeaponRange:1500]
+	  [WeaponMaxAngleFromTarget:10]
+	  [UseAmmoReplenish:true]
+	  [AmmoReplenishClipAmount:10]
+	  [MaxAmmoReplenishments:99999999]
+	  
+	  [HorseFighterTimeApproaching:10]
+	  [HorseFighterTimeEngaging:10]
+
+	  [AutopilotData:InstallationDrone-HorseFighter-Autopilot]
+
+	  [Triggers:InstallationDrone-Trigger-FireGuns]
+	  [Triggers:InstallationDrone-Trigger-StopGuns]
+	  [Triggers:GVE-Generic-Trigger-SPRTTargetAcquiredChatter]
+	  [Triggers:InstallationDrone-Trigger-Crashed]
+	  [Triggers:InstallationDrone-Trigger-Compromised]
+	  [Triggers:GVE-Generic-Trigger-SPRTNoWeapon]
+  
+      </Description>
+    </EntityComponent>
+
+	<!-- Strike Autopilot -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>InstallationDrone-HorseFighter-Autopilot</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Autopilot]
+      
+	  [UseVelocityCollisionEvasion:true]
+	  [CollisionEvasionWaypointDistance:50]
+      [CollisionFallEvasionWaypointDistance:35]
+
+	  [UseProjectileLeadPrediction:true]
+
+      [RotationMultiplier:1]
+	  [DisableInertiaDampeners:false]
+      [FlyLevelWithGravity:false]
+      [LevelWithGravityWhenIdle:true]
+	  [MaxVerticalSpeed:20]
+	  [IdealPlanetAltitude:250]
+	  [MinimumPlanetAltitude:150]
+	  [AltitudeTolerance:50]
+	  [CollisionEvasionWaypointCalculatedAwayFromEntity:true]
+      [WaypointTolerance:100]
+      [IdealMinSpeed:50]
+      [IdealMaxSpeed:75]
+      [SlowDownOnWaypointApproach:true]
+      [ExtraSlowDownDistance:25]
+
+      [OffsetSpaceMinDistFromTarget:250]
+      [OffsetSpaceMaxDistFromTarget:500]
+      [OffsetPlanetMinDistFromTarget:250]
+      [OffsetPlanetMaxDistFromTarget:500]
+      [OffsetPlanetMinTargetAltitude:-200]
+      [OffsetPlanetMaxTargetAltitude:200]
+      [AllowStrafing:true]
+      [StrafeMinDurationMs:1000]
+      [StrafeMaxDurationMs:1500]
+	  [StrafeMinCooldownMs:0]
+	  [StrafeMaxCooldownMs:1]
+      [StrafeSpeedCutOff:45]	  
+	  [StrafeMinimumTargetDistance:400]
+	  [StrafeMinimumSafeAngleFromTarget:30]
+
+      [ReverseOffsetDistAltAboveHeight:false]
+      [ReverseOffsetHeight:0]
+	  [AngleAllowedForForwardThrust:90]
+      
+      </Description>
+    </EntityComponent>
+
+	<!-- Action group to fire fixed guns because of a bug in WC2 right now -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>InstallationDrone-Trigger-FireGuns</SubtypeId>
+      </Id>
+      <Description>
+	  
+      [RivalAI Trigger]
+	  
+	  [UseTrigger:true]
+	  [Type:TargetNear]
+	  
+	  [TargetDistance:1000]
+	  
+	  [Conditions:InstallationDrone-Condition-FireGuns]
+	  
+	  [Actions:InstallationDrone-Action-FireGuns]
+	  
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>InstallationDrone-Condition-FireGuns</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Condition]
+      
+      [UseConditions:true]
+      [MatchAnyCondition:true]
+	  
+	  [CheckTargetAngleFromForward:true]
+	  [MinTargetAngle:0]
+	  [MaxTargetAngle:15]
+      
+      </Description> 
+    </EntityComponent>		
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>InstallationDrone-Action-FireGuns</SubtypeId>
+      </Id>
+      <Description>
+	  
+      [RivalAI Action]
+	  	  
+	  [ToggleBlocksOfType:true]
+	  [BlockTypesToToggle:MyObjectBuilder_SmallGatlingGun/]
+	  [BlockTypeToggles:On]
+	  [BlockTypesToToggle:MyObjectBuilder_SmallGatlingGun/null]
+	  [BlockTypeToggles:On]
+	  [BlockTypesToToggle:MyObjectBuilder_SmallMissileLauncher/]
+	  [BlockTypeToggles:On]
+	  [BlockTypesToToggle:MyObjectBuilder_SmallMissileLauncher/SmallMissileLauncher_Temporary]
+	  [BlockTypeToggles:On]
+	  [BlockTypesToToggle:MyObjectBuilder_SmallMissileLauncher/null]
+	  [BlockTypeToggles:On]
+	  [BlockTypesToToggle:MyObjectBuilder_SmallMissileLauncher/LargeMissileLauncher]
+	  [BlockTypeToggles:On]
+	  [BlockTypesToToggle:MyObjectBuilder_SmallMissileLauncherReload/SmallRocketLauncherReload]
+	  [BlockTypeToggles:On]
+	  
+	  [ResetCooldownTimeOfTriggers:true]
+	  [ResetTriggerCooldownNames:InstallationDrone-Trigger-StopGuns]
+	  
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>InstallationDrone-Trigger-StopGuns</SubtypeId>
+      </Id>
+      <Description>
+	  
+      [RivalAI Trigger]
+	  
+	  [UseTrigger:true]
+	  [Type:Timer]
+	  [MinCooldownMs:1000]
+	  [MaxCooldownMs:1000]
+	  	  
+	  [Actions:InstallationDrone-Action-StopGuns]
+	  
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>InstallationDrone-Action-StopGuns</SubtypeId>
+      </Id>
+      <Description>
+	  
+      [RivalAI Action]
+	  
+	  [ToggleBlocksOfType:true]
+	  [BlockTypesToToggle:MyObjectBuilder_SmallGatlingGun/]
+	  [BlockTypeToggles:Off]
+	  [BlockTypesToToggle:MyObjectBuilder_SmallGatlingGun/null]
+	  [BlockTypeToggles:Off]
+	  [BlockTypesToToggle:MyObjectBuilder_SmallMissileLauncher/]
+	  [BlockTypeToggles:Off]
+	  [BlockTypesToToggle:MyObjectBuilder_SmallMissileLauncher/SmallMissileLauncher_Temporary]
+	  [BlockTypeToggles:Off]
+	  [BlockTypesToToggle:MyObjectBuilder_SmallMissileLauncher/null]
+	  [BlockTypeToggles:Off]
+	  [BlockTypesToToggle:MyObjectBuilder_SmallMissileLauncher/LargeMissileLauncher]
+	  [BlockTypeToggles:Off]
+	  [BlockTypesToToggle:MyObjectBuilder_SmallMissileLauncherReload/SmallRocketLauncherReload]
+	  [BlockTypeToggles:Off]
+	  
+      </Description>
+    </EntityComponent>
+	
+	<!-- Trigger sequence when Drone crashes into the ground -->
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>InstallationDrone-Trigger-Crashed</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+	  [Type:Timer]
+	  [UseTrigger:true]
+	  [StartsReady:false]
+	  [MinCooldownMs:5000]
+	  [MaxCooldownMs:5000]
+	  [MaxActions:1]
+	  [ActionExecution:All]
+	  
+	  [Conditions:InstallationDrone-Condition-Crashed]
+	  
+	  [Actions:InstallationDrone-Action-Crashed]
+      
+      </Description>
+    </EntityComponent>
+      
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>InstallationDrone-Condition-Crashed</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Condition]
+      
+      [UseConditions:true]
+      [MatchAnyCondition:false]
+      
+	  [CheckGridSpeed:true]
+	  [MinGridSpeed:0]
+	  [MaxGridSpeed:10]
+	  
+	  [AltitudeCheck:true]
+	  [MinAltitude:-999999]
+	  [MaxAltitude:5]
+	  
+      </Description>
+    </EntityComponent>
+	  
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>InstallationDrone-Action-Crashed</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [DisableTriggers:true]
+	  [DisableTriggerNames:InstallationDrone-Trigger-Compromised]
+	  
+	  [GenerateExplosion:true]
+	  [ExplosionRange:25]
+	  [ExplosionDamage:5000]
+	  [ExplosionIgnoresVoxels:true]
+      
+      [UseChatBroadcast:true]
+      [ChatData:InstallationDrone-Chat-Crashed]
+	  	  
+	  [TerminateBehavior:true]
+
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>InstallationDrone-Chat-Crashed</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      
+      [Author:{GridName}]
+      [Color:White]
+      
+      [ChatMessages:A defense drone has crashed.]
+      [ChatAudio:GreetingSoundId-A]
+      [BroadcastChatType:Notify]
+	  [SendToAllOnlinePlayers:true]
+
+      </Description>
+    </EntityComponent>
+		
+	<!-- Trigger sequence when plane RAI Remote is disabled -->
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>InstallationDrone-Trigger-Compromised</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+	  [Type:Compromised]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	  [ActionExecution:All]
+	  	  
+	  [Actions:InstallationDrone-Action-Compromised]
+      
+      </Description>
+    </EntityComponent>
+      	  
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>InstallationDrone-Action-Compromised</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [DisableTriggers:true]
+	  [DisableTriggerNames:InstallationDrone-Trigger-Crashed]
+	  
+	  [GenerateExplosion:true]
+	  [ExplosionRange:25]
+	  [ExplosionDamage:5000]
+	  [ExplosionIgnoresVoxels:true]
+      
+      [UseChatBroadcast:true]
+      [ChatData:InstallationDrone-Chat-Compromised]
+	  
+	  [TerminateBehavior:true]
+	  
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>InstallationDrone-Chat-Compromised</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      
+      [Author:{GridName}]
+      [Color:White]
+      
+      [ChatMessages:A defense drone has been shot down.]
+      [ChatAudio:GreetingSoundId-A]
+      [BroadcastChatType:Notify]
+	  [SendToAllOnlinePlayers:true]
+
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

@@ -2,7 +2,7 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <EntityComponents>
 
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
       <Id>
           <TypeId>Inventory</TypeId>
           <SubtypeId>GVE-NPC-PlanetDerelictPassive-Behavior-Start</SubtypeId>
@@ -447,6 +447,85 @@
 	
 	  [TerminateBehavior:true]
 	  	  
+      </Description>
+    </EntityComponent>
+
+	<!-- Behavior for (NPC-GVE)-PlanetDerelict-SPRT-Tower -->
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>SPRT-DefenseBehavior</SubtypeId>
+      </Id>
+      <Description>
+	  
+      [RivalAI Behavior]
+	  
+      [BehaviorName:Passive]
+	  [Triggers:SPRT-DefenseTrigger]
+	  
+      </Description>
+    </EntityComponent>	
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>SPRT-DefenseTrigger</SubtypeId>
+      </Id>
+      <Description>
+	  
+      [RivalAI Trigger]
+	  
+	  [UseTrigger:true]
+	  [Type:PlayerNear]
+	  [TargetDistance:1000]
+	  
+	  [Actions:SPRT-DefenseAction]
+	  
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>SPRT-DefenseAction</SubtypeId>
+      </Id>
+      <Description>
+	  
+      [RivalAI Action]
+	  
+	  [SpawnEncounter:true]
+	  [Spawner:SPRT-DefenseDroneSpawn]
+	  
+      </Description>
+    </EntityComponent>
+		
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>SPRT-DefenseDroneSpawn</SubtypeId>
+      </Id>
+      <Description>
+	  
+      [RivalAI Spawn]
+	  
+      [UseSpawn:true]
+      [StartsReady:true]
+
+	  [SpawnGroups:(NPC-GVE)-PlanetDefense-SPRT-Reaper]
+	  [SpawnGroups:(NPC-GVE)-PlanetDefense-SPRT-Revenant]
+	  [SpawnGroups:(NPC-GVE)-PlanetDefense-SPRT-Wasp]
+	  [SpawnGroups:(NPC-GVE)-PlanetDefense-SPRT-Hornet]
+	  
+      [MaxSpawns:2]	  
+
+      [UseRelativeSpawnPosition:false]
+      [MinDistance:100]
+      [MaxDistance:200]
+	  [MinAltitude:100]
+	  [MaxAltitude:200]
+      [IgnoreSafetyChecks:false]
+	  
       </Description>
     </EntityComponent>
 			

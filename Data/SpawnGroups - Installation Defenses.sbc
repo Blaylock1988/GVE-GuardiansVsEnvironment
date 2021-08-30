@@ -7,21 +7,16 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ALPHA-Reaper</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Reaper</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
-
+			[AdminSpawnOnly:true]
 			[AtmosphericCargoShip:true]
-
-			[UseKnownPlayerLocations:true]
-			[KnownPlayerLocationMustMatchFaction:true]
-			[KnownPlayerLocationMinSpawnedEncounters:-1]
-			[KnownPlayerLocationMaxSpawnedEncounters:-1]
 			
 			[PlanetRequiresAtmo:true]
-			[FactionOwner:T_ALPHA]
+			[FactionOwner:SPRT]
 			
 			[UseRivalAi:true]
 			[RivalAiSpawn:true]
@@ -70,7 +65,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ALPHA-Revenant</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Revenant</SubtypeId>
 			</Id>
 			<Description>
 
@@ -79,7 +74,7 @@
 			[AtmosphericCargoShip:true]
 			
 			[PlanetRequiresAtmo:true]
-			[FactionOwner:T_ALPHA]
+			[FactionOwner:SPRT]
 			
 			[UseRivalAi:true]
 			[RivalAiSpawn:true]
@@ -128,7 +123,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ALPHA-Slicer</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Slicer</SubtypeId>
 			</Id>
 			<Description>
 
@@ -137,7 +132,7 @@
 			[AtmosphericCargoShip:true]
 			
 			[PlanetRequiresAtmo:true]
-			[FactionOwner:T_ALPHA]
+			[FactionOwner:SPRT]
 			
 			[UseRivalAi:true]
 			[RivalAiSpawn:true]
@@ -186,7 +181,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ALPHA-Wasp</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Wasp</SubtypeId>
 			</Id>
 			<Description>
 
@@ -195,7 +190,7 @@
 			[AtmosphericCargoShip:true]
 			
 			[PlanetRequiresAtmo:true]
-			[FactionOwner:T_ALPHA]
+			[FactionOwner:SPRT]
 			
 			[UseRivalAi:true]
 			[RivalAiSpawn:true]
@@ -244,7 +239,7 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ALPHA-Hornet</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Hornet</SubtypeId>
 			</Id>
 			<Description>
 
@@ -253,7 +248,7 @@
 			[AtmosphericCargoShip:true]
 			
 			[PlanetRequiresAtmo:true]
-			[FactionOwner:T_ALPHA]
+			[FactionOwner:SPRT]
 			
 			[UseRivalAi:true]
 			[RivalAiSpawn:true]
