@@ -170,7 +170,7 @@
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
-					<BeaconText>Revenant</BeaconText>					
+					<BeaconText>Slicer</BeaconText>					
 					<Behaviour>InstallationDrone-HorseFighter-Behavior-Start</Behaviour>					
 				</Prefab>
 			</Prefabs>
