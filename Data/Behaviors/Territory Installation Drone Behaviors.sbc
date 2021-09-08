@@ -770,6 +770,9 @@
       [UseChatBroadcast:true]
       [ChatData:InstallationDrone-Chat-Crashed]
 	  	  
+	  [ForceDespawn:true]
+	  [ChangeInertiaDampeners:true]
+	  [InertiaDampenersEnable:false]
 	  [TerminateBehavior:true]
 
       </Description>
@@ -843,6 +846,9 @@
       [UseChatBroadcast:true]
       [ChatData:InstallationDrone-Chat-Compromised]
 	  
+	  [ForceDespawn:true]
+	  [ChangeInertiaDampeners:true]
+	  [InertiaDampenersEnable:false]
 	  [TerminateBehavior:true]
 	  
       </Description>

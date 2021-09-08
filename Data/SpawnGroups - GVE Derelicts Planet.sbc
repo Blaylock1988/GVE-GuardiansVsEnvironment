@@ -34,7 +34,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -53,7 +53,7 @@
 			[MaximumBuildPercent:70]
 			
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -69,7 +69,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -120,7 +121,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -139,7 +140,7 @@
 			[MaximumBuildPercent:70]
 			
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -155,7 +156,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -206,7 +208,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -225,7 +227,7 @@
 			[MaximumBuildPercent:70]
 			
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -241,7 +243,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -292,7 +295,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -311,7 +314,7 @@
 			[MaximumBuildPercent:70]
 			
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -327,7 +330,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -378,7 +382,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -397,7 +401,7 @@
 			[MaximumBuildPercent:70]
 			
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -413,7 +417,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -464,7 +469,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -483,7 +488,7 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -499,7 +504,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -550,7 +556,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -569,7 +575,7 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -585,7 +591,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -636,7 +643,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -655,7 +662,7 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -671,7 +678,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -722,7 +730,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -741,7 +749,7 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -757,7 +765,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -808,7 +817,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -827,7 +836,7 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -843,7 +852,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -894,7 +904,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -913,7 +923,7 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -929,7 +939,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -980,7 +991,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -999,7 +1010,7 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -1013,7 +1024,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1064,7 +1076,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1083,7 +1095,7 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -1097,7 +1109,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1148,7 +1161,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1167,7 +1180,7 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -1181,7 +1194,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1190,7 +1204,7 @@
 				<Prefab SubtypeId="[NPC Wreck] Aggressor">
 					<Position>
 						<X>0.0</X>
-						<Y>5.0</Y>
+						<Y>2.0</Y>
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
@@ -1232,7 +1246,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1251,7 +1265,7 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -1265,7 +1279,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1315,7 +1330,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1334,7 +1349,7 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -1348,7 +1363,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1399,7 +1415,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1418,7 +1434,7 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -1432,7 +1448,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1483,7 +1500,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1502,7 +1519,7 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -1516,7 +1533,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1525,7 +1543,7 @@
 				<Prefab SubtypeId="[NPC Wreck] Blood Star">
 					<Position>
 						<X>0.0</X>
-						<Y>-6.0</Y>
+						<Y>-3.0</Y>
 						<Z>0.0</Z>
 					</Position>
 					<Speed>0</Speed>
@@ -1567,7 +1585,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1586,7 +1604,7 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -1600,7 +1618,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1651,7 +1670,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 			
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1671,7 +1690,7 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -1685,7 +1704,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1736,7 +1756,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1755,7 +1775,7 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -1769,7 +1789,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1820,7 +1841,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1839,7 +1860,7 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -1853,7 +1874,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1904,7 +1926,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1923,7 +1945,7 @@
 			[MaximumBuildPercent:70]
 		
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -1937,7 +1959,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -1988,7 +2011,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100},{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -2012,7 +2035,7 @@
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -2022,7 +2045,8 @@
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -2081,7 +2105,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -2105,7 +2129,7 @@
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -2115,7 +2139,8 @@
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]			
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 				
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -2164,7 +2189,7 @@
 			[PlanetRequiresAtmo:true]			
 			[ForceStaticGrid:true]
 			
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -2174,7 +2199,7 @@
 			
 			[ReplenishSystems:true]
 			[IgnoreGlobalBlockReplacer:true]
-			[ClearGridInventories:false]
+			[ClearGridInventories:true]
 			[IgnoreCleanupRules:false]
 			[ReplenishSystems:true]
 			[AssignContainerTypesToAllCargo:GVE-Derelict-Rare]
@@ -2184,7 +2209,8 @@
 			[DisableBlocksWithName:Survival]
 			[AllowPartialNames:true]				
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -2228,7 +2254,7 @@
 			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
 			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
 
-			[PlanetWhitelist:Galados]
+			[PlanetWhitelist:Galados,Galados_V]
 
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Medium]		
@@ -2245,7 +2271,8 @@
 			[DerelictionProfiles:GVE-Dereliction-NonArmor-DamageOnly]
 			[DerelictionProfiles:GVE-Dereliction-DerelictTurrets]
 				
-			[RequireAnyMods:2298319442,2533245328]
+			[EnableBlocksWithName:Turret,turret,interior,Interior]
+			[AllowPartialNames:true]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
