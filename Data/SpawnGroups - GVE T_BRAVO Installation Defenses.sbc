@@ -12,42 +12,39 @@
 			<Description>
 
 			[Modular Encounters SpawnGroup]
-
-			[AtmosphericCargoShip:true]
-
+						
+			[FactionOwner:T_BRAVO]
+			[AdminSpawnOnly:false]
 			[UseKnownPlayerLocations:true]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:-1]
 			[KnownPlayerLocationMaxSpawnedEncounters:-1]
-			
-			[PlanetRequiresAtmo:true]
-			[FactionOwner:T_BRAVO]
-			
 			[UseRivalAi:true]
-			[RivalAiSpawn:true]
 			[RivalAiReplaceRemoteControl:true]
-			
 			[ReplenishSystems:true]			
 			[ReactorsOn:true]
+			[ForceStaticGrid:false]
+			[DisableGyroOverride:true]
+
+			[AtmosphericCargoShip:true]
+			[PlanetRequiresAtmo:true]
 
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
 			[BlockReplacerProfileNames:MES-Armor-HeavyToLight]
-
-			[DisableGyroOverride:true]
 			[ConfigureSpecialNpcThrusters:true]
 			[RestrictNpcIonThrust:true]
 			[NpcIonThrustForceMultiply:2]
-			[NpcIonThrustPowerMultiply:0.01]
+			[NpcIonThrustPowerMultiply:0.0001]
 			[RestrictNpcAtmoThrust:true]
 			[NpcAtmoThrustForceMultiply:2]
-			[NpcAtmoThrustPowerMultiply:0.01]
+			[NpcAtmoThrustPowerMultiply:0.0001]
 			[RestrictNpcHydroThrust:true]
 			[NpcHydroThrustForceMultiply:2]
-			[NpcHydroThrustPowerMultiply:0.01]
-			
+			[NpcHydroThrustPowerMultiply:0.000001]
+
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
 			<Frequency>0.1</Frequency>
@@ -75,37 +72,39 @@
 			<Description>
 
 			[Modular Encounters SpawnGroup]
-			[AdminSpawnOnly:true]
-			[AtmosphericCargoShip:true]
-			
-			[PlanetRequiresAtmo:true]
+						
 			[FactionOwner:T_BRAVO]
-			
+			[AdminSpawnOnly:false]
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
 			[UseRivalAi:true]
-			[RivalAiSpawn:true]
 			[RivalAiReplaceRemoteControl:true]
-			
 			[ReplenishSystems:true]			
-			[ReactorsOn:true]			
-			
+			[ReactorsOn:true]
+			[ForceStaticGrid:false]
+			[DisableGyroOverride:true]
+
+			[AtmosphericCargoShip:true]
+			[PlanetRequiresAtmo:true]
+
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
 			[BlockReplacerProfileNames:MES-Armor-HeavyToLight]
-
-			[DisableGyroOverride:true]
 			[ConfigureSpecialNpcThrusters:true]
 			[RestrictNpcIonThrust:true]
 			[NpcIonThrustForceMultiply:2]
-			[NpcIonThrustPowerMultiply:0.01]
+			[NpcIonThrustPowerMultiply:0.0001]
 			[RestrictNpcAtmoThrust:true]
 			[NpcAtmoThrustForceMultiply:2]
-			[NpcAtmoThrustPowerMultiply:0.01]
+			[NpcAtmoThrustPowerMultiply:0.0001]
 			[RestrictNpcHydroThrust:true]
 			[NpcHydroThrustForceMultiply:2]
-			[NpcHydroThrustPowerMultiply:0.01]
-			
+			[NpcHydroThrustPowerMultiply:0.000001]
+
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
 			<Frequency>0.1</Frequency>
@@ -133,36 +132,38 @@
 			<Description>
 
 			[Modular Encounters SpawnGroup]
-			[AdminSpawnOnly:true]
-			[AtmosphericCargoShip:true]
-			
-			[PlanetRequiresAtmo:true]
+						
 			[FactionOwner:T_BRAVO]
-			
+			[AdminSpawnOnly:false]
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
 			[UseRivalAi:true]
-			[RivalAiSpawn:true]
 			[RivalAiReplaceRemoteControl:true]
-			
 			[ReplenishSystems:true]			
-			[ReactorsOn:true]			
-			
+			[ReactorsOn:true]
+			[ForceStaticGrid:false]
+			[DisableGyroOverride:true]
+
+			[AtmosphericCargoShip:true]
+			[PlanetRequiresAtmo:true]
+
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
 			[BlockReplacerProfileNames:MES-Armor-HeavyToLight]
-
-			[DisableGyroOverride:true]
 			[ConfigureSpecialNpcThrusters:true]
 			[RestrictNpcIonThrust:true]
 			[NpcIonThrustForceMultiply:2]
-			[NpcIonThrustPowerMultiply:0.01]
+			[NpcIonThrustPowerMultiply:0.0001]
 			[RestrictNpcAtmoThrust:true]
 			[NpcAtmoThrustForceMultiply:2]
-			[NpcAtmoThrustPowerMultiply:0.01]
+			[NpcAtmoThrustPowerMultiply:0.0001]
 			[RestrictNpcHydroThrust:true]
 			[NpcHydroThrustForceMultiply:2]
-			[NpcHydroThrustPowerMultiply:0.01]
+			[NpcHydroThrustPowerMultiply:0.000001]
 			
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -176,7 +177,7 @@
 					</Position>
 					<Speed>0</Speed>
 					<BeaconText>Slicer</BeaconText>					
-					<Behaviour>InstallationDrone-HorseFighter-Behavior-Start</Behaviour>					
+					<Behaviour>InstallationDrone-Horsefly-Behavior-Start</Behaviour>					
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
@@ -191,37 +192,39 @@
 			<Description>
 
 			[Modular Encounters SpawnGroup]
-			[AdminSpawnOnly:true]
-			[AtmosphericCargoShip:true]
-			
-			[PlanetRequiresAtmo:true]
+						
 			[FactionOwner:T_BRAVO]
-			
+			[AdminSpawnOnly:false]
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
 			[UseRivalAi:true]
-			[RivalAiSpawn:true]
 			[RivalAiReplaceRemoteControl:true]
-			
 			[ReplenishSystems:true]			
-			[ReactorsOn:true]			
-				
+			[ReactorsOn:true]
+			[ForceStaticGrid:false]
+			[DisableGyroOverride:true]
+
+			[AtmosphericCargoShip:true]
+			[PlanetRequiresAtmo:true]
+
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
 			[BlockReplacerProfileNames:MES-Armor-HeavyToLight]
-
-			[DisableGyroOverride:true]
 			[ConfigureSpecialNpcThrusters:true]
 			[RestrictNpcIonThrust:true]
 			[NpcIonThrustForceMultiply:2]
-			[NpcIonThrustPowerMultiply:0.01]
+			[NpcIonThrustPowerMultiply:0.0001]
 			[RestrictNpcAtmoThrust:true]
 			[NpcAtmoThrustForceMultiply:2]
-			[NpcAtmoThrustPowerMultiply:0.01]
+			[NpcAtmoThrustPowerMultiply:0.0001]
 			[RestrictNpcHydroThrust:true]
 			[NpcHydroThrustForceMultiply:2]
-			[NpcHydroThrustPowerMultiply:0.01]
-			
+			[NpcHydroThrustPowerMultiply:0.000001]
+
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
 			<Frequency>0.1</Frequency>
@@ -249,36 +252,38 @@
 			<Description>
 
 			[Modular Encounters SpawnGroup]
-			[AdminSpawnOnly:true]
-			[AtmosphericCargoShip:true]
-			
-			[PlanetRequiresAtmo:true]
+						
 			[FactionOwner:T_BRAVO]
-			
+			[AdminSpawnOnly:false]
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
 			[UseRivalAi:true]
-			[RivalAiSpawn:true]
 			[RivalAiReplaceRemoteControl:true]
-			
 			[ReplenishSystems:true]			
-			[ReactorsOn:true]			
-				
+			[ReactorsOn:true]
+			[ForceStaticGrid:false]
+			[DisableGyroOverride:true]
+
+			[AtmosphericCargoShip:true]
+			[PlanetRequiresAtmo:true]
+
 			[UseBlockReplacerProfile:true]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
 			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
 			[BlockReplacerProfileNames:MES-Armor-HeavyToLight]
-
-			[DisableGyroOverride:true]
 			[ConfigureSpecialNpcThrusters:true]
 			[RestrictNpcIonThrust:true]
 			[NpcIonThrustForceMultiply:2]
-			[NpcIonThrustPowerMultiply:0.01]
+			[NpcIonThrustPowerMultiply:0.0001]
 			[RestrictNpcAtmoThrust:true]
 			[NpcAtmoThrustForceMultiply:2]
-			[NpcAtmoThrustPowerMultiply:0.01]
+			[NpcAtmoThrustPowerMultiply:0.0001]
 			[RestrictNpcHydroThrust:true]
 			[NpcHydroThrustForceMultiply:2]
-			[NpcHydroThrustPowerMultiply:0.01]
+			[NpcHydroThrustPowerMultiply:0.000001]
 
 			</Description>
 			<IsPirate>true</IsPirate> <!--Do not edit-->
@@ -292,10 +297,702 @@
 					</Position>
 					<Speed>0</Speed>
 					<BeaconText>Hornet</BeaconText>					
-					<Behaviour>InstallationDrone-Hornet-Behavior-Start</Behaviour>					
+					<Behaviour>InstallationDrone-Horsefly-Behavior-Start</Behaviour>					
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>			
 				
+		<!-- [NPC Drone] Foxhound -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDefense-T_BRAVO-Foxhound</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+						
+			[FactionOwner:T_BRAVO]
+			[AdminSpawnOnly:false]
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ReplenishSystems:true]			
+			[ReactorsOn:true]
+			[ForceStaticGrid:false]
+			[DisableGyroOverride:true]
+
+			[AtmosphericCargoShip:true]
+			[PlanetRequiresAtmo:false]
+			[SpaceRandomEncounter:true]
+
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
+			[BlockReplacerProfileNames:MES-Armor-HeavyToLight]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustForceMultiply:2]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustForceMultiply:2]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustForceMultiply:2]
+			[NpcHydroThrustPowerMultiply:0.000001]
+			
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>0.1</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Drone] Foxhound">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Foxhound</BeaconText>					
+					<Behaviour>InstallationDrone-HorseFighter-Behavior-Start</Behaviour>					
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!-- [NPC Drone] Dragoon -->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDefense-T_BRAVO-Dragoon</SubtypeId>
+			</Id>
+			<Description>
+			
+			[Modular Encounters SpawnGroup]
+						
+			[FactionOwner:T_BRAVO]
+			[AdminSpawnOnly:false]
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ReplenishSystems:true]			
+			[ReactorsOn:true]
+			[ForceStaticGrid:false]
+			[DisableGyroOverride:true]
+
+			[AtmosphericCargoShip:true]
+			[PlanetRequiresAtmo:false]
+			[SpaceRandomEncounter:false]
+			[CargoShipTerrainPath:true]
+			[CustomPathStartAltitude:20]
+			[CustomPathEndAltitude:20]			
+
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
+			[BlockReplacerProfileNames:MES-Armor-LightToHeavy]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustForceMultiply:2]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustForceMultiply:2]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustForceMultiply:4]
+			[NpcHydroThrustPowerMultiply:0.000001]
+
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>0.1</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Drone] Dragoon Hover">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Dragoon</BeaconText>					
+					<Behaviour>InstallationDrone-Rover-Behavior-Start</Behaviour>					
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!-- [NPC Drone] Pollux -->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDefense-T_BRAVO-Pollux</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+						
+			[FactionOwner:T_BRAVO]
+			[AdminSpawnOnly:false]
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ReplenishSystems:true]			
+			[ReactorsOn:true]
+			[ForceStaticGrid:false]
+			[DisableGyroOverride:true]
+
+			[AtmosphericCargoShip:true]
+			[PlanetRequiresAtmo:false]
+			[SpaceRandomEncounter:false]
+			[CargoShipTerrainPath:true]
+			[CustomPathStartAltitude:20]
+			[CustomPathEndAltitude:20]			
+
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
+			[BlockReplacerProfileNames:MES-Armor-LightToHeavy]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustForceMultiply:2]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustForceMultiply:2]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustForceMultiply:4]
+			[NpcHydroThrustPowerMultiply:0.000001]
+
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>0.1</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Drone] Pollux Hover">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Pollux</BeaconText>					
+					<Behaviour>InstallationDrone-Rover-Behavior-Start</Behaviour>					
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!-- [NPC Drone] Stryker -->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDefense-T_BRAVO-Stryker</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+						
+			[FactionOwner:T_BRAVO]
+			[AdminSpawnOnly:false]
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ReplenishSystems:true]			
+			[ReactorsOn:true]
+			[ForceStaticGrid:false]
+			[DisableGyroOverride:true]
+
+			[AtmosphericCargoShip:true]
+			[PlanetRequiresAtmo:false]
+			[SpaceRandomEncounter:false]
+			[CargoShipTerrainPath:true]
+			[CustomPathStartAltitude:20]
+			[CustomPathEndAltitude:20]			
+
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
+			[BlockReplacerProfileNames:MES-Armor-LightToHeavy]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustForceMultiply:2]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustForceMultiply:2]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustForceMultiply:4]
+			[NpcHydroThrustPowerMultiply:0.000001]
+
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>0.1</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Drone] Stryker Hover">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Stryker</BeaconText>					
+					<Behaviour>InstallationDrone-Rover-Behavior-Start</Behaviour>					
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!-- [NPC Drone] Shuttle -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDefense-T_BRAVO-Shuttle</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+						
+			[FactionOwner:T_BRAVO]
+			[AdminSpawnOnly:false]
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ReplenishSystems:true]			
+			[ReactorsOn:true]
+			[ForceStaticGrid:false]
+			[DisableGyroOverride:true]
+
+			[AtmosphericCargoShip:true]
+			[PlanetRequiresAtmo:false]
+			[SpaceRandomEncounter:true]
+
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
+			[BlockReplacerProfileNames:MES-Armor-HeavyToLight]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustForceMultiply:2]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustForceMultiply:2]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustForceMultiply:2]
+			[NpcHydroThrustPowerMultiply:0.000001]
+
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>0.1</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Drone] Shuttle">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Hornet</BeaconText>					
+					<Behaviour>InstallationDrone-LargeHorseFighter-Behavior-Start</Behaviour>					
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>			
+
+		<!-- [NPC Drone] GR-650 -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDefense-T_BRAVO-GR-650</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+						
+			[FactionOwner:T_BRAVO]
+			[AdminSpawnOnly:false]
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ReplenishSystems:true]			
+			[ReactorsOn:true]
+			[ForceStaticGrid:false]
+			[DisableGyroOverride:true]
+
+			[AtmosphericCargoShip:true]
+			[PlanetRequiresAtmo:false]
+			[SpaceRandomEncounter:true]
+
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
+			[BlockReplacerProfileNames:MES-Armor-HeavyToLight]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustForceMultiply:2]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustForceMultiply:2]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustForceMultiply:2]
+			[NpcHydroThrustPowerMultiply:0.000001]
+
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>0.1</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Drone] GR-650">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>GR-650</BeaconText>					
+					<Behaviour>InstallationDrone-LargeHorseFighter-Behavior-Start</Behaviour>					
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>			
+
+		<!-- [NPC Drone] Denizen -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDefense-T_BRAVO-Denizen</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+						
+			[FactionOwner:T_BRAVO]
+			[AdminSpawnOnly:false]
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ReplenishSystems:true]			
+			[ReactorsOn:true]
+			[ForceStaticGrid:false]
+			[DisableGyroOverride:true]
+
+			[AtmosphericCargoShip:true]
+			[PlanetRequiresAtmo:false]
+			[SpaceRandomEncounter:true]
+
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
+			[BlockReplacerProfileNames:MES-Armor-HeavyToLight]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustForceMultiply:2]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustForceMultiply:2]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustForceMultiply:2]
+			[NpcHydroThrustPowerMultiply:0.000001]
+
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>0.1</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Drone] Denizen">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Denizen</BeaconText>					
+					<Behaviour>InstallationDrone-LargeHorseFighter-Behavior-Start</Behaviour>					
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>			
+
+		<!-- [NPC Drone] Denizen Hover -->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDefense-T_BRAVO-DenizenHover</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+						
+			[FactionOwner:T_BRAVO]
+			[AdminSpawnOnly:false]
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ReplenishSystems:true]			
+			[ReactorsOn:true]
+			[ForceStaticGrid:false]
+			[DisableGyroOverride:true]
+
+			[AtmosphericCargoShip:true]
+			[PlanetRequiresAtmo:false]
+			[SpaceRandomEncounter:false]
+			[CargoShipTerrainPath:true]
+			[CustomPathStartAltitude:30]
+			[CustomPathEndAltitude:30]			
+
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
+			[BlockReplacerProfileNames:MES-Armor-HeavyToLight]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustForceMultiply:2]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustForceMultiply:2]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustForceMultiply:2]
+			[NpcHydroThrustPowerMultiply:0.000001]
+
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>0.1</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Drone] Denizen Hover">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Denizen Hover</BeaconText>					
+					<Behaviour>InstallationDrone-Rover-Behavior-Start</Behaviour>					
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!-- [NPC Drone] Kerrim Turret Hover -->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDefense-T_BRAVO-KerrimRailgun</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+						
+			[FactionOwner:T_BRAVO]
+			[AdminSpawnOnly:false]
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ReplenishSystems:true]			
+			[ReactorsOn:true]
+			[ForceStaticGrid:false]
+			[DisableGyroOverride:true]
+
+			[AtmosphericCargoShip:true]
+			[PlanetRequiresAtmo:false]
+			[SpaceRandomEncounter:false]
+			[CargoShipTerrainPath:true]
+			[CustomPathStartAltitude:30]
+			[CustomPathEndAltitude:30]			
+
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
+			[BlockReplacerProfileNames:MES-Armor-HeavyToLight]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustForceMultiply:2]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustForceMultiply:2]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustForceMultiply:3]
+			[NpcHydroThrustPowerMultiply:0.000001]
+
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>0.1</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Drone] Kerrim Railgun">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Kerrim Turret</BeaconText>					
+					<Behaviour>InstallationDrone-Rover-Behavior-Start</Behaviour>					
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!-- [NPC Drone] Kerrim Turret Hover -->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDefense-T_BRAVO-KerrimCannon</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+						
+			[FactionOwner:T_BRAVO]
+			[AdminSpawnOnly:false]
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ReplenishSystems:true]			
+			[ReactorsOn:true]
+			[ForceStaticGrid:false]
+			[DisableGyroOverride:true]
+
+			[AtmosphericCargoShip:true]
+			[PlanetRequiresAtmo:false]
+			[SpaceRandomEncounter:false]
+			[CargoShipTerrainPath:true]
+			[CustomPathStartAltitude:30]
+			[CustomPathEndAltitude:30]			
+
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
+			[BlockReplacerProfileNames:MES-Armor-HeavyToLight]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustForceMultiply:2]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustForceMultiply:2]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustForceMultiply:3]
+			[NpcHydroThrustPowerMultiply:0.000001]
+
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>0.1</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Drone] Kerrim Cannon">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Kerrim Turret</BeaconText>					
+					<Behaviour>InstallationDrone-Rover-Behavior-Start</Behaviour>					
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<!-- [NPC Drone] Kerrim Missle Hover -->
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-PlanetDefense-T_BRAVO-KerrimMissile</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+						
+			[FactionOwner:T_BRAVO]
+			[AdminSpawnOnly:false]
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			[ReplenishSystems:true]			
+			[ReactorsOn:true]
+			[ForceStaticGrid:false]
+			[DisableGyroOverride:true]
+
+			[AtmosphericCargoShip:true]
+			[PlanetRequiresAtmo:false]
+			[SpaceRandomEncounter:false]
+			[CargoShipTerrainPath:true]
+			[CustomPathStartAltitude:30]
+			[CustomPathEndAltitude:30]			
+
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Atmo]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Hydro] 	
+			[BlockReplacerProfileNames:MES-Armor-HeavyToLight]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:true]
+			[NpcIonThrustForceMultiply:2]
+			[NpcIonThrustPowerMultiply:0.0001]
+			[RestrictNpcAtmoThrust:true]
+			[NpcAtmoThrustForceMultiply:2]
+			[NpcAtmoThrustPowerMultiply:0.0001]
+			[RestrictNpcHydroThrust:true]
+			[NpcHydroThrustForceMultiply:3]
+			[NpcHydroThrustPowerMultiply:0.000001]
+
+			</Description>
+			<IsPirate>true</IsPirate> <!--Do not edit-->
+			<Frequency>0.1</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[NPC Drone] Kerrim Missle">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<BeaconText>Kerrim Missle</BeaconText>					
+					<Behaviour>InstallationDrone-Rover-Behavior-Start</Behaviour>					
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
 	</SpawnGroups>
 </Definitions>

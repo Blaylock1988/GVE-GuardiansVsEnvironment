@@ -272,6 +272,196 @@
 			</Prefabs>
 		</SpawnGroup>
 
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-Installation-ShieldSpace</SubtypeId> 
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[PlanetaryInstallation:true]
+			[AdminSpawnOnly:true]
+			
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:true]
+			[ForceStaticGrid:true]
+			
+			[FactionOwner:SPRT]
+			
+			[RivalAiSpaceSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[GV8] Installation Shield (Space)">
+					<Position>
+						<X>0.0</X>
+						<Y>1000</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>GVE-NPC-InstallationAI-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-Installation-DroneSpace</SubtypeId> 
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[PlanetaryInstallation:true]
+			[AdminSpawnOnly:true]
+			
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:true]
+			[ForceStaticGrid:true]
+			
+			[FactionOwner:SPRT]
+			
+			[RivalAiSpaceSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[GV8] Installation Drone (Space)">
+					<Position>
+						<X>0.0</X>
+						<Y>1000</Y>
+						<Z>0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>GVE-NPC-InstallationAI-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-Installation-PowerSpace</SubtypeId> 
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[PlanetaryInstallation:true]
+			[AdminSpawnOnly:true]
+			
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:true]
+			[ForceStaticGrid:true]
+			
+			[FactionOwner:SPRT]
+			
+			[RivalAiSpaceSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[GV8] Installation Power (Space)">
+					<Position>
+						<X>0.0</X>
+						<Y>1000</Y>
+						<Z>0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>GVE-NPC-InstallationAI-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-Installation-RefinerySpace</SubtypeId> 
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[PlanetaryInstallation:true]
+			[AdminSpawnOnly:true]
+			
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:true]
+			[ForceStaticGrid:true]
+			
+			[FactionOwner:SPRT]
+			
+			[RivalAiSpaceSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[GV8] Installation Refinery (Space)">
+					<Position>
+						<X>0.0</X>
+						<Y>1000</Y>
+						<Z>0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>GVE-NPC-InstallationAI-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-GVE)-Installation-ResearchSpace</SubtypeId> 
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[PlanetaryInstallation:true]
+			[AdminSpawnOnly:true]
+			
+			[IgnoreCleanupRules:true]
+			[ReplenishSystems:true]
+			[ForceStaticGrid:true]
+			
+			[FactionOwner:SPRT]
+			
+			[RivalAiSpaceSpawn:true]
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="[GV8] Installation Research (Space)">
+					<Position>
+						<X>0.0</X>
+						<Y>1000</Y>
+						<Z>0</Z>
+					</Position>
+					<Speed>0</Speed>
+					<Behaviour>GVE-NPC-InstallationAI-Behavior-Start</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
 	<!--Do Not Edit Below Here-->
 	</SpawnGroups>
 </Definitions>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<EntityComponents>
+
+		<!-- Spawn Condition profiles are completely broken right now-->
+
+		<!-- [NPC Drone] SPRT Spawn Conditions -->
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-SpawnCondition</SubtypeId>
+			</Id>
+			<Description>
+
+			[MES Spawn Conditions]
+
+			[AdminSpawnOnly:false]
+			[FactionOwner:SPRT]
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+
+			</Description>
+		</EntityComponent>
+	
+		<!-- [NPC Drone] T_ALPHA Spawn Conditions -->
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ALPHA-SpawnCondition</SubtypeId>
+			</Id>
+			<Description>
+
+			[MES Spawn Conditions]
+
+			[AdminSpawnOnly:false]
+			[FactionOwner:T_ALPHA]
+			[UseKnownPlayerLocations:true]
+			[KnownPlayerLocationMustMatchFaction:true]
+			[KnownPlayerLocationMinSpawnedEncounters:-1]
+			[KnownPlayerLocationMaxSpawnedEncounters:-1]
+
+			</Description>
+		</EntityComponent>
+		
+	</EntityComponents>
+</Definitions>

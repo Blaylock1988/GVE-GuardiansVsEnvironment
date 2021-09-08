@@ -34,7 +34,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -120,7 +120,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -206,7 +206,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -292,7 +292,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -378,7 +378,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -464,7 +464,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -550,7 +550,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -636,7 +636,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -722,7 +722,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -808,7 +808,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -894,7 +894,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -980,7 +980,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1064,7 +1064,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1148,7 +1148,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1232,7 +1232,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1315,7 +1315,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1399,7 +1399,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1483,7 +1483,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1567,7 +1567,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1651,7 +1651,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 			
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1736,7 +1736,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1820,7 +1820,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1904,7 +1904,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -1988,7 +1988,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100},{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -2081,7 +2081,7 @@
 			
 			[RotateInstallations:{X:100 Y:100 Z:100}]
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -2164,7 +2164,7 @@
 			[PlanetRequiresAtmo:true]			
 			[ForceStaticGrid:true]
 			
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[UsePlayerCountCheck:true]
 			[PlayerCountCheckRadius:999999]
@@ -2228,7 +2228,7 @@
 			[ReplaceBlockOld:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
 			[ReplaceBlockNew:MyObjectBuilder_RemoteControl/RivalAIRemoteControlLarge] 
 
-			[PlanetWhitelist:Galados_V]
+			[PlanetWhitelist:Galados]
 
 			[PlanetaryInstallation:true]
 			[PlanetaryInstallationType:Medium]		

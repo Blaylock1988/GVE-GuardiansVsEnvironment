@@ -7,15 +7,15 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ECHO-Reaper</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Reaper</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 						
-			[FactionOwner:T_ECHO]
-			[AdminSpawnOnly:false]
-			[UseKnownPlayerLocations:true]
+			[FactionOwner:SPRT]
+			[AdminSpawnOnly:true]
+			[UseKnownPlayerLocations:false]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:-1]
 			[KnownPlayerLocationMaxSpawnedEncounters:-1]
@@ -67,15 +67,15 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ECHO-Revenant</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Revenant</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 						
-			[FactionOwner:T_ECHO]
-			[AdminSpawnOnly:false]
-			[UseKnownPlayerLocations:true]
+			[FactionOwner:SPRT]
+			[AdminSpawnOnly:true]
+			[UseKnownPlayerLocations:false]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:-1]
 			[KnownPlayerLocationMaxSpawnedEncounters:-1]
@@ -127,15 +127,15 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ECHO-Slicer</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Slicer</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 						
-			[FactionOwner:T_ECHO]
-			[AdminSpawnOnly:false]
-			[UseKnownPlayerLocations:true]
+			[FactionOwner:SPRT]
+			[AdminSpawnOnly:true]
+			[UseKnownPlayerLocations:false]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:-1]
 			[KnownPlayerLocationMaxSpawnedEncounters:-1]
@@ -187,15 +187,15 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ECHO-Wasp</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Wasp</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 						
-			[FactionOwner:T_ECHO]
-			[AdminSpawnOnly:false]
-			[UseKnownPlayerLocations:true]
+			[FactionOwner:SPRT]
+			[AdminSpawnOnly:true]
+			[UseKnownPlayerLocations:false]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:-1]
 			[KnownPlayerLocationMaxSpawnedEncounters:-1]
@@ -247,15 +247,15 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ECHO-Hornet</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Hornet</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 						
-			[FactionOwner:T_ECHO]
-			[AdminSpawnOnly:false]
-			[UseKnownPlayerLocations:true]
+			[FactionOwner:SPRT]
+			[AdminSpawnOnly:true]
+			[UseKnownPlayerLocations:false]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:-1]
 			[KnownPlayerLocationMaxSpawnedEncounters:-1]
@@ -307,15 +307,15 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ECHO-Foxhound</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Foxhound</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 						
-			[FactionOwner:T_ECHO]
-			[AdminSpawnOnly:false]
-			[UseKnownPlayerLocations:true]
+			[FactionOwner:SPRT]
+			[AdminSpawnOnly:true]
+			[UseKnownPlayerLocations:false]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:-1]
 			[KnownPlayerLocationMaxSpawnedEncounters:-1]
@@ -368,15 +368,15 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ECHO-Dragoon</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Dragoon</SubtypeId>
 			</Id>
 			<Description>
 			
 			[Modular Encounters SpawnGroup]
 						
-			[FactionOwner:T_ECHO]
-			[AdminSpawnOnly:false]
-			[UseKnownPlayerLocations:true]
+			[FactionOwner:SPRT]
+			[AdminSpawnOnly:true]
+			[UseKnownPlayerLocations:false]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:-1]
 			[KnownPlayerLocationMaxSpawnedEncounters:-1]
@@ -432,15 +432,15 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ECHO-Pollux</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Pollux</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 						
-			[FactionOwner:T_ECHO]
-			[AdminSpawnOnly:false]
-			[UseKnownPlayerLocations:true]
+			[FactionOwner:SPRT]
+			[AdminSpawnOnly:true]
+			[UseKnownPlayerLocations:false]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:-1]
 			[KnownPlayerLocationMaxSpawnedEncounters:-1]
@@ -496,15 +496,15 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ECHO-Stryker</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Stryker</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 						
-			[FactionOwner:T_ECHO]
-			[AdminSpawnOnly:false]
-			[UseKnownPlayerLocations:true]
+			[FactionOwner:SPRT]
+			[AdminSpawnOnly:true]
+			[UseKnownPlayerLocations:false]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:-1]
 			[KnownPlayerLocationMaxSpawnedEncounters:-1]
@@ -560,15 +560,15 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ECHO-Shuttle</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Shuttle</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 						
-			[FactionOwner:T_ECHO]
-			[AdminSpawnOnly:false]
-			[UseKnownPlayerLocations:true]
+			[FactionOwner:SPRT]
+			[AdminSpawnOnly:true]
+			[UseKnownPlayerLocations:false]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:-1]
 			[KnownPlayerLocationMaxSpawnedEncounters:-1]
@@ -621,15 +621,15 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ECHO-GR-650</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-GR-650</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 						
-			[FactionOwner:T_ECHO]
-			[AdminSpawnOnly:false]
-			[UseKnownPlayerLocations:true]
+			[FactionOwner:SPRT]
+			[AdminSpawnOnly:true]
+			[UseKnownPlayerLocations:false]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:-1]
 			[KnownPlayerLocationMaxSpawnedEncounters:-1]
@@ -682,15 +682,15 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ECHO-Denizen</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-Denizen</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 						
-			[FactionOwner:T_ECHO]
-			[AdminSpawnOnly:false]
-			[UseKnownPlayerLocations:true]
+			[FactionOwner:SPRT]
+			[AdminSpawnOnly:true]
+			[UseKnownPlayerLocations:false]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:-1]
 			[KnownPlayerLocationMaxSpawnedEncounters:-1]
@@ -743,15 +743,15 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ECHO-DenizenHover</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-DenizenHover</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 						
-			[FactionOwner:T_ECHO]
-			[AdminSpawnOnly:false]
-			[UseKnownPlayerLocations:true]
+			[FactionOwner:SPRT]
+			[AdminSpawnOnly:true]
+			[UseKnownPlayerLocations:false]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:-1]
 			[KnownPlayerLocationMaxSpawnedEncounters:-1]
@@ -807,15 +807,15 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ECHO-KerrimRailgun</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-KerrimRailgun</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 						
-			[FactionOwner:T_ECHO]
-			[AdminSpawnOnly:false]
-			[UseKnownPlayerLocations:true]
+			[FactionOwner:SPRT]
+			[AdminSpawnOnly:true]
+			[UseKnownPlayerLocations:false]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:-1]
 			[KnownPlayerLocationMaxSpawnedEncounters:-1]
@@ -871,15 +871,15 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ECHO-KerrimCannon</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-KerrimCannon</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 						
-			[FactionOwner:T_ECHO]
-			[AdminSpawnOnly:false]
-			[UseKnownPlayerLocations:true]
+			[FactionOwner:SPRT]
+			[AdminSpawnOnly:true]
+			[UseKnownPlayerLocations:false]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:-1]
 			[KnownPlayerLocationMaxSpawnedEncounters:-1]
@@ -935,15 +935,15 @@
 		<SpawnGroup>
 			<Id>
 				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
-				<SubtypeId>(NPC-GVE)-PlanetDefense-T_ECHO-KerrimMissile</SubtypeId>
+				<SubtypeId>(NPC-GVE)-PlanetDefense-SPRT-KerrimMissile</SubtypeId>
 			</Id>
 			<Description>
 
 			[Modular Encounters SpawnGroup]
 						
-			[FactionOwner:T_ECHO]
-			[AdminSpawnOnly:false]
-			[UseKnownPlayerLocations:true]
+			[FactionOwner:SPRT]
+			[AdminSpawnOnly:true]
+			[UseKnownPlayerLocations:false]
 			[KnownPlayerLocationMustMatchFaction:true]
 			[KnownPlayerLocationMinSpawnedEncounters:-1]
 			[KnownPlayerLocationMaxSpawnedEncounters:-1]
